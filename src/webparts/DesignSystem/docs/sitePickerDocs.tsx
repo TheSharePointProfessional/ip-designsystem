@@ -1,4 +1,4 @@
-import { ComponentDocumentation, ComponentDemo } from "./demos";
+import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
 import SitePicker from "../../../components/SitePicker/SitePicker";
 import { getCurrentWebUrl as getCurrentSiteUrl } from "../../../core/utils/sharepointUtils";

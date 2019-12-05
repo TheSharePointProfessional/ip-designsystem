@@ -1,17 +1,24 @@
-import { ComponentDemo } from "./demos";
+import { ComponentDemo } from "./docs";
 import Card from "../../../components/card/Card";
 import React from "react";
+
+let documentation = {
+  title: "Card",
+  id: "Card",
+  description:
+    "The Card component is frequently used to display a list of items with imagery. Often it is shown in a grid.",
+  demos: [],
+};
 
 let basicUsage = {
   title: "Basic Usage",
   slug: "basic-usage",
-  description:
-    "Basic usage of a card. You can just wrap your own markup in a Card component.",
+  description: "Basic usage of a card. You can just wrap your own markup in a Card component.",
   scope: { Card: Card },
   code: `<Card>
 <h1>I am a card</h1>
 <p>And I am the description of a card</p>        
-</Card>`
+</Card>`,
 };
 
 let cardTitle = {
@@ -29,8 +36,7 @@ let cardTitle = {
           <code>url</code> - Optional, allows you make the title clickable
         </li>
         <li>
-          <code>as</code> - Optional, allows you to Heading level (h1, h2, h3
-          etc...)
+          <code>as</code> - Optional, allows you to Heading level (h1, h2, h3 etc...)
         </li>
         <li>
           <code>className</code> - Optional, allows you to add a custom class
@@ -71,7 +77,7 @@ let cardTitle = {
     </Card.Description>
   </Card>
 
-</Card.Grid>`
+</Card.Grid>`,
 };
 
 let cardDescription: ComponentDemo = {
@@ -81,16 +87,14 @@ let cardDescription: ComponentDemo = {
   description: (
     <div>
       <p>
-        Use <code>Card.Description</code> to render paragraphs of text. It
-        doesn't do much except give your <code>p</code> tag a little breathing
-        room with padding.
+        Use <code>Card.Description</code> to render paragraphs of text. It doesn't do much except
+        give your <code>p</code> tag a little breathing room with padding.
       </p>
 
       <h4>Props</h4>
       <ul>
         <li>
-          <code>as</code> - Optional, allows you to control the DOM element
-          (div, p, span etc...)
+          <code>as</code> - Optional, allows you to control the DOM element (div, p, span etc...)
         </li>
         <li>
           <code>className</code> - Optional, allows you to add a custom class
@@ -104,9 +108,10 @@ let cardDescription: ComponentDemo = {
   I am a card description.
   </Card.Description>
 </Card>
-  `
+  `,
 };
-let cardDemos: ComponentDemo[] = [basicUsage, cardTitle, cardDescription];
+
+documentation.demos = [basicUsage, cardTitle, cardDescription];
 
 // Basic Usage
 // Card Title
@@ -117,4 +122,4 @@ let cardDemos: ComponentDemo[] = [basicUsage, cardTitle, cardDescription];
 // Card Tags
 // Url
 
-export default cardDemos;
+export default documentation;

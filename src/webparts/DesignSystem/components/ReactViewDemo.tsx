@@ -1,13 +1,13 @@
 import React from "react";
-import { ComponentDemo } from "../demos/demos";
+import { ComponentDemo } from "../docs/docs";
 import styled from "styled-components";
 import { useView, Compiler, Editor, Error, ActionButtons } from "react-view";
 import presetTypescript from "@babel/preset-typescript";
 
-function ReactViewDemo({ demo }: ReactViewDemoProps) {
+export default function ReactViewDemo({ demo }: ReactViewDemoProps) {
   const params = useView({
     initialCode: demo.code,
-    scope: demo.scope
+    scope: demo.scope,
   });
   return (
     <StyledContainer>
@@ -30,8 +30,6 @@ function ReactViewDemo({ demo }: ReactViewDemoProps) {
     </StyledContainer>
   );
 }
-
-export default React.memo(ReactViewDemo);
 
 export interface ReactViewDemoProps {
   demo: ComponentDemo;

@@ -42,6 +42,7 @@ export default class SitePicker extends React.Component<SitePickerProps, SitePic
           disabled={siteChoice === SiteChoiceType.ThisSite}
           url={this.props.siteUrl}
           onChange={this.onChange}
+          key={this.props.siteUrl + siteChoice}
         />
       </div>
     );

@@ -6,7 +6,7 @@ import styled, { ThemeProvider } from "styled-components";
 import Nav from "./Nav";
 import ReactViewDemo from "./ReactViewDemo";
 
-import components from "../demos/demos";
+import components from "../docs/docs";
 import usePersistedState from "../../../hooks/usePersistedState";
 
 const Container = styled.div`
@@ -27,9 +27,10 @@ function DesignSystem(props: DesignSystemProps) {
       <Container>
         <StyledContent>
           <Nav active={component.id} onChange={setActiveComponent} />
-          <div>
+          <div key={component.id}>
             <h1>{component.title}</h1>
             <p>{component.description}</p>
+            <h3>Usage Examples</h3>
             <ul>
               {component.demos.map((demo) => (
                 <li>

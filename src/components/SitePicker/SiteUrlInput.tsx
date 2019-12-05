@@ -83,6 +83,7 @@ export default class SiteUrlInput extends React.PureComponent<
 
         <div className={inputClass}>
           <TextField
+            key={this.props.url}
             disabled={this.props.disabled}
             value={this.state.value}
             onChanged={this.onInput}

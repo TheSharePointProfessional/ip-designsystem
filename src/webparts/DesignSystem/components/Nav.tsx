@@ -1,24 +1,20 @@
 import React from "react";
-import components from "../demos/demos";
+import components from "../docs/docs";
 import styled from "styled-components";
 import { Nav as FabricNav, INavLink } from "office-ui-fabric-react/lib/Nav";
 function Nav({ active, onChange }: NavProps) {
-  let links = components.map(c => ({
+  let links = components.map((c) => ({
     key: c.id,
     name: c.title,
     url: "#",
-    title: c.title
+    title: c.title,
   }));
   const onLinkClick = (event, item: INavLink) => {
     onChange(item.key);
   };
   return (
     <StyledNav>
-      <FabricNav
-        groups={[{ links }]}
-        onLinkClick={onLinkClick}
-        selectedKey={active}
-      />
+      <FabricNav groups={[{ links }]} onLinkClick={onLinkClick} selectedKey={active} />
     </StyledNav>
   );
 }
