@@ -1,7 +1,7 @@
 import cardDocs from "./cardDocs";
 import sitePickerDocs from "./sitePickerDocs";
 import dateRangeTextDocs from "./dateRangeTextDocs";
-
+import bigDateDocs from "./bigDateDocs";
 export interface ComponentDemo {
   title: string;
   slug: string;
@@ -17,6 +17,11 @@ export interface ComponentDocumentation {
   demos: ComponentDemo[];
 }
 
-let components: ComponentDocumentation[] = [cardDocs, sitePickerDocs, dateRangeTextDocs];
+let components: ComponentDocumentation[] = [
+  cardDocs,
+  sitePickerDocs,
+  dateRangeTextDocs,
+  bigDateDocs,
+];
 
 export default components.sort((a, b) => (a.title < b.title ? -1 : 1));
