@@ -10,6 +10,65 @@ let documentation = {
   demos: [],
 };
 
+let fullUsage = {
+  title: "Full Usage",
+  slug: "full-usage",
+  description: "Shows how to leverage all the available sub components",
+  scope: { Card: Card },
+  code: `<Card.Grid size={275}>
+
+  <Card>
+    <Card.Image
+      size={200}
+      url="https://www.google.com/search?q=zebra+canyon+escalante+utah"
+      src="https://s27363.pcdn.co/wp-content/uploads/2017/09/Zebra-Slot-Canyon.jpg.optimal.jpg"
+    ></Card.Image>
+    <Card.Title url="https://www.google.com/search?q=zebra+canyon+escalante+utah">
+      Clickable Card Title below Image
+    </Card.Title>
+    <Card.Tags
+      tags={[
+        { label: "ReadOnly Tag" },
+        { label: "Clickable Tag", url: "#" }
+      ]}
+    />
+    <Card.Description>
+      This card shows how to use an Image, Title, Tags,
+      Footer, and Info. In this exampe the card is below
+      the image.
+    </Card.Description>
+    <Card.Footer>
+      <Card.Info>Jan 2, 2018</Card.Info>
+      <Card.Info>35 views</Card.Info>
+    </Card.Footer>
+  </Card>
+
+  <Card centered>
+    <Card.Title>Card Title Above Image</Card.Title>
+    <Card.Tags
+      tags={[
+        { label: "ReadOnly Tag" },
+        { label: "Clickable Tag", url: "#" }
+      ]}
+    />
+    <Card.Image
+      url="https://www.google.com/search?q=zebra+canyon+escalante+utah"
+      src="https://s27363.pcdn.co/wp-content/uploads/2017/09/Zebra-Slot-Canyon.jpg.optimal.jpg"
+    ></Card.Image>
+
+    <Card.Description>
+      This card shows how to use an Image, Title, Tags,
+      Footer, and Info. In this exampe the card is below
+      the image.
+    </Card.Description>
+    <Card.Footer>
+      <Card.Info>Jan 2, 2018</Card.Info>
+      <Card.Info>35 views</Card.Info>
+    </Card.Footer>
+  </Card>
+
+</Card.Grid>`,
+};
 let basicUsage = {
   title: "Basic Usage",
   slug: "basic-usage",
@@ -111,7 +170,7 @@ let cardDescription: ComponentDemo = {
   `,
 };
 
-documentation.demos = [basicUsage, cardTitle, cardDescription];
+documentation.demos = [fullUsage, basicUsage, cardTitle, cardDescription];
 
 // Basic Usage
 // Card Title

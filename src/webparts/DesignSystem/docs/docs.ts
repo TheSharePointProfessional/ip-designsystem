@@ -1,5 +1,6 @@
 import cardDocs from "./cardDocs";
 import sitePickerDocs from "./sitePickerDocs";
+import dateRangeTextDocs from "./dateRangeTextDocs";
 
 export interface ComponentDemo {
   title: string;
@@ -16,6 +17,6 @@ export interface ComponentDocumentation {
   demos: ComponentDemo[];
 }
 
-let components: ComponentDocumentation[] = [cardDocs, sitePickerDocs];
+let components: ComponentDocumentation[] = [cardDocs, sitePickerDocs, dateRangeTextDocs];
 
 export default components.sort((a, b) => (a.title < b.title ? -1 : 1));

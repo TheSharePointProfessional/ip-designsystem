@@ -2,6 +2,7 @@ import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
 import SitePicker from "../../../components/SitePicker/SitePicker";
 import { getCurrentWebUrl as getCurrentSiteUrl } from "../../../core/utils/sharepointUtils";
+import PropsTable from "./PropsTable";
 
 let basicUsage: ComponentDemo = {
   title: "Basic Usage",
@@ -42,51 +43,29 @@ let documentation: ComponentDocumentation = {
         Anytime the user changes the value, <code>SiteUrlInput</code> will trigger the{" "}
         <code>onChange</code> passing the new absolute site url and whether that url is valid.
       </p>
-      <h3>Props</h3>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Type</th>
-            <th>Required</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <strong>siteUrl</strong>
-            </td>
-            <td>
-              <code>string</code>
-            </td>
-            <td>Required</td>
-            <td>The absolute url of the site </td>
-          </tr>
-          <tr>
-            <td>
-              <strong>onChange</strong>
-            </td>
-            <td>
-              <code>(newValue:string) =&gt; void</code>
-            </td>
-            <td>Required</td>
-            <td>
-              The function to call when the user changes the site. It will not fire for invalid
-              sites.
-            </td>
-          </tr>
-          <tr>
-            <td>label</td>
-            <td>
-              <code>string</code>
-            </td>
-            <td>Optional</td>
-            <td>Input label. If you don&#39;t pass one, a label won&#39;t be rendered.</td>
-          </tr>
-        </tbody>
-      </table>
+      <PropsTable
+        props={[
+          {
+            name: "siteUrl",
+            type: "string",
+            isRequired: true,
+            description: "The absolute url of the site",
+          },
+          {
+            name: "onChange",
+            type: "(newValue:string) => void",
+            isRequired: true,
+            description:
+              "The function to call when the user changes the site. It will not fire for invalid sites.",
+          },
+          {
+            name: "label",
+            type: "string",
+            isRequired: false,
+            description: "Input label. If you don't pass one, a label won't be rendered.",
+          },
+        ]}
+      />
     </>
   ),
   demos: [basicUsage],

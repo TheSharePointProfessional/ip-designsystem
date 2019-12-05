@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { DisplayMode } from "@microsoft/sp-core-library";
-import WebPartTitle from "../../../components/webpart_title/WebPartTitle";
 import { IReadonlyTheme } from "@microsoft/sp-component-base";
 import styled, { ThemeProvider } from "styled-components";
 import Nav from "./Nav";
@@ -28,9 +27,9 @@ function DesignSystem(props: DesignSystemProps) {
         <StyledContent>
           <Nav active={component.id} onChange={setActiveComponent} />
           <div key={component.id}>
-            <h1>{component.title}</h1>
+            <StyledComponentTitle>{component.title}</StyledComponentTitle>
             <p>{component.description}</p>
-            <h3>Usage Examples</h3>
+            <h3>Examples</h3>
             <ul>
               {component.demos.map((demo) => (
                 <li>
@@ -69,9 +68,17 @@ const StyledContent = styled.div`
   code {
     color: #bd7a27;
   }
+  th {
+    background: #eee;
+  }
   th,
   td {
     text-align: left;
     padding: 5px 10px;
+    border-bottom: 1px solid #eee;
   }
+`;
+
+const StyledComponentTitle = styled.div`
+  font-size: 32px;
 `;
