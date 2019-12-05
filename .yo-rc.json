@@ -1,0 +1,31 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "environment": "spo",
+    "framework": "react",
+    "version": "1.9.1",
+    "packageManager": "npm",
+    "whichFolder": "current",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "isCreatingSolution": true,
+    "libraryName": "ip-designsystem",
+    "libraryId": "e42545c3-4555-4aa5-a4a9-96ade9af1a9d",
+    "componentType": "webpart"
+  },
+  "@pnp/generator-spfx": {
+    "framework": "react",
+    "pnpFramework": "reactjs.plus",
+    "pnp-libraries": [
+      "@pnp/spfx-property-controls",
+      "@pnp/spfx-controls-react",
+      "ouifr@6fluent",
+      "rush@3.5"
+    ],
+    "pnp-ci": "azure",
+    "pnp-vetting": [
+      "webpack-analyzer"
+    ],
+    "spfxenv": "spo",
+    "pnp-testing": []
+  }
+}
