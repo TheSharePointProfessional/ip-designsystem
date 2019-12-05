@@ -43,7 +43,7 @@ let fullUsage = {
     </Card.Footer>
   </Card>
 
-  <Card centered>
+  <Card>
     <Card.Title>Card Title Above Image</Card.Title>
     <Card.Tags
       tags={[
