@@ -1,16 +1,19 @@
 {
-	"$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
-	"version": "2.0",
-	"bundles": {
-		"ip-designsystem-bundle": {
-			"components": [
-				{
-					"entrypoint": "./lib/webparts/DeleteMe/DeleteMeWebPart.js",
-					"manifest": "./src/webparts/DeleteMe/DeleteMeWebPart.manifest.json"
-				}
-			]
-		}
-	},
-	"externals": {},
-	"localizedResources": {}
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "ip-designsystem-bundle": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/DesignSystem/DesignSystemWebPart.js",
+          "manifest": "./src/webparts/DesignSystem/DesignSystemWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+  }
 }

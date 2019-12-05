@@ -4,11 +4,11 @@ import * as ReactDom from 'react-dom';
 import { Version } from '@microsoft/sp-core-library';
 import { BaseClientSideWebPart, IPropertyPaneConfiguration } from '@microsoft/sp-webpart-base';
 
-import DeleteMe, { DeleteMeProps } from "./components/DeleteMe";
-import { WebPartProperties, getPropertyPane } from "./DeleteMeProperties";
+import DesignSystem, { DesignSystemProps } from "./components/DesignSystem";
+import { WebPartProperties, getPropertyPane } from "./DesignSystemProperties";
 import { ThemeProvider, IReadonlyTheme, ThemeChangedEventArgs } from "@microsoft/sp-component-base";
 
-export default class DeleteMeWebPart extends BaseClientSideWebPart<WebPartProperties> {
+export default class DesignSystemWebPart extends BaseClientSideWebPart<WebPartProperties> {
     _themeProvider: ThemeProvider;
     _theme: IReadonlyTheme;
 
@@ -37,7 +37,7 @@ export default class DeleteMeWebPart extends BaseClientSideWebPart<WebPartProper
 
     public render(): void {
       
-        let props : DeleteMeProps = {
+        let props : DesignSystemProps = {
             webpart: {
                 title: this.properties.title,
                 displayMode: this.displayMode,
@@ -46,7 +46,7 @@ export default class DeleteMeWebPart extends BaseClientSideWebPart<WebPartProper
                 theme: this._theme
             },
         }
-        var element = React.createElement(DeleteMe, props);
+        var element = React.createElement(DesignSystem, props);
         ReactDom.render(element, this.domElement);
     }
   
