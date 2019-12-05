@@ -45,7 +45,7 @@ let documentation: ComponentDocumentation = {
     },
     {
       title: "Multi Day",
-      description: "For a multi-day date range, on an all day event",
+      description: "For a multi-day date range, with explicit start and end times.",
       slug: "multi-day",
       code: `<DateRangeText
         start={new Date("December 17, 2019 14:00:00")}
