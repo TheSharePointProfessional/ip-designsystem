@@ -7,6 +7,7 @@ import Nav from "./Nav";
 import ReactViewDemo from "./ReactViewDemo";
 
 import components from "../demos/demos";
+import usePersistedState from "../../../hooks/usePersistedState";
 
 const Container = styled.div`
   position: relative;
@@ -16,25 +17,27 @@ const Container = styled.div`
 `;
 
 function DesignSystem(props: DesignSystemProps) {
-  let [activeComponent, setActiveComponent] = useState("Card");
-  let component = components.find(c => c.id === activeComponent);
-  console.log(activeComponent, component);
+  let [activeComponent, setActiveComponent] = usePersistedState(
+    "Card",
+    "designsystem: activeComponent"
+  );
+  let component = components.find((c) => c.id === activeComponent) || components[0];
   return (
     <ThemeProvider theme={props.webpart.theme}>
       <Container>
         <StyledContent>
-          <Nav active={activeComponent} onChange={setActiveComponent} />
+          <Nav active={component.id} onChange={setActiveComponent} />
           <div>
             <h1>{component.title}</h1>
             <p>{component.description}</p>
             <ul>
-              {component.demos.map(demo => (
+              {component.demos.map((demo) => (
                 <li>
                   <a href={"#" + demo.slug}>{demo.title}</a>
                 </li>
               ))}
             </ul>
-            {component.demos.map(demo => (
+            {component.demos.map((demo) => (
               <ReactViewDemo demo={demo} />
             ))}
           </div>
@@ -62,4 +65,12 @@ const StyledContent = styled.div`
   gap: 20px;
   width: 100%;
   max-width: 1600px;
+  code {
+    color: #bd7a27;
+  }
+  th,
+  td {
+    text-align: left;
+    padding: 5px 10px;
+  }
 `;

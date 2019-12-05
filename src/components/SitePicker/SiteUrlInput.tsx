@@ -11,7 +11,10 @@ const getSitePath = (absoluteUrl: string) => {
   return absoluteUrl.substring(siteUrlIndex);
 };
 
-export default class SiteUrlInput extends React.PureComponent<SiteUrlInputProps, SiteUrlInputState> {
+export default class SiteUrlInput extends React.PureComponent<
+  SiteUrlInputProps,
+  SiteUrlInputState
+> {
   state = {
     value: getSitePath(this.props.url) || "",
     isLoading: false,
@@ -34,13 +37,13 @@ export default class SiteUrlInput extends React.PureComponent<SiteUrlInputProps,
     this.onChange(this.state.value);
   }
 
-  processUrl = value => {
+  processUrl = (value) => {
     // remove the leading slash if it is there
     // if (value[value.length - 1] === "/") value = value.substr(0, value.length - 1);
     return getUrlPrefix() + value;
   };
 
-  onChange = async value => {
+  onChange = async (value) => {
     this.setState({ isLoading: true, value });
     let url = value ? this.processUrl(value) : "";
 
@@ -49,7 +52,7 @@ export default class SiteUrlInput extends React.PureComponent<SiteUrlInputProps,
     if (this.props.onChange) this.props.onChange(url, isValid);
   };
 
-  onInput = value => {
+  onInput = (value) => {
     this.setState({ isValid: null, value: value });
     this.debouncedOnChange(value);
   };
@@ -65,9 +68,13 @@ export default class SiteUrlInput extends React.PureComponent<SiteUrlInputProps,
   render() {
     let inputClass = [
       styles.inputContainer,
-      this.state.isValid === null ? styles.loading : this.state.isValid ? styles.success : styles.error,
+      this.state.isValid === null
+        ? styles.loading
+        : this.state.isValid
+        ? styles.success
+        : styles.error,
     ]
-      .filter(c => c)
+      .filter((c) => c)
       .join(" ");
 
     return (
@@ -75,7 +82,12 @@ export default class SiteUrlInput extends React.PureComponent<SiteUrlInputProps,
         {this.props.label && <div className={styles.label}>{this.props.label}</div>}
 
         <div className={inputClass}>
-          <TextField value={this.state.value} onChanged={this.onInput} placeholder="/sites/yoursite" />
+          <TextField
+            disabled={this.props.disabled}
+            value={this.state.value}
+            onChanged={this.onInput}
+            placeholder="/sites/yoursite"
+          />
           {this.state.value && <div className={styles.message}>{this.renderMessage()}</div>}
         </div>
       </div>
@@ -97,4 +109,5 @@ export interface SiteUrlInputProps {
   url?: string;
   onChange?: (url, isValid) => void;
   label?: string;
+  disabled: boolean;
 }

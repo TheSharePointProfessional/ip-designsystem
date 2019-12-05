@@ -1,7 +1,7 @@
 import * as React from "react";
 import styles from "./SitePicker.module.scss";
 import SiteChoiceGroup, { SiteChoiceType } from "./siteChoiceGroup";
-import SiteUrlInput from "../../components/site-url-input/SiteUrlInput";
+import SiteUrlInput from "./SiteUrlInput";
 import { getCurrentWebUrl as getCurrentSiteUrl } from "../../core/utils/sharepointUtils";
 
 const checkIsThisSite = function(siteUrl, currentSiteUrl) {
@@ -19,29 +19,30 @@ export default class SitePicker extends React.Component<SitePickerProps, SitePic
     let siteUrl = null;
     if (isValid) {
       siteUrl = url;
+      if (this.props.onChange) this.props.onChange(siteUrl);
     }
-    if (this.props.onChange) this.props.onChange(siteUrl);
   };
   onChoiceGroupChange = (choiceKey: SiteChoiceType) => {
-    let siteUrl = null;
+    this.setState({ siteChoice: choiceKey });
     if (choiceKey === SiteChoiceType.ThisSite) {
-      siteUrl = getCurrentSiteUrl();
+      this.props.onChange(getCurrentSiteUrl);
     }
-    this.props.onChange(siteUrl);
-    setTimeout(() => this.setState({ siteChoice: choiceKey }), 100);
   };
   render() {
-    console.log(this.props.siteUrl);
+    let siteChoice = this.state.siteChoice;
+
     return (
       <div className={styles.sitePicker}>
         <SiteChoiceGroup
           label={this.props.label}
-          value={this.state.siteChoice}
+          value={siteChoice}
           onChange={this.onChoiceGroupChange}
         />
-        {this.state.siteChoice !== SiteChoiceType.ThisSite && (
-          <SiteUrlInput url={this.props.siteUrl} onChange={this.onChange} />
-        )}
+        <SiteUrlInput
+          disabled={siteChoice === SiteChoiceType.ThisSite}
+          url={this.props.siteUrl}
+          onChange={this.onChange}
+        />
       </div>
     );
   }
@@ -55,6 +56,6 @@ export interface SitePickerProps {
 }
 
 export interface SitePickerState {
-  siteChoice: SiteChoiceType;
   urlIsValid: boolean;
+  siteChoice: SiteChoiceType;
 }

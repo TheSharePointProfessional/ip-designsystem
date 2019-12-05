@@ -1,4 +1,5 @@
 import cardDemos from "./cardDemos";
+import sitePickerDocs from "./sitePickerDocs";
 
 export interface ComponentDemo {
   title: string;
@@ -21,34 +22,28 @@ let components: ComponentDocumentation[] = [
     id: "Card",
     description:
       "The Card component is frequently used to display a list of items with imagery. Often it is shown in a grid.",
-    demos: cardDemos
+    demos: cardDemos,
   },
   {
     title: "Link Tiles",
     id: "LinkTiles",
     description: "This is the Link Tiles description",
-    demos: []
+    demos: [],
   },
-  {
-    title: "Site Picker",
-    id: "SitePicker",
-    description:
-      "Give you options of 'This site' or 'Other'.  If you choose 'Other', it allows you to enter a site url and automatically validates the url for you.",
-    demos: []
-  },
+  sitePickerDocs,
   {
     title: "Big Date",
     id: "BigDate",
     description: "Renders a big date. Looks nice over the top of images",
-    demos: []
+    demos: [],
   },
   {
     title: "Icon Image",
     id: "IconImage",
     description:
       "React component to that allows you to pass in either a image url or a single word for a Fabric icon",
-    demos: []
-  }
+    demos: [],
+  },
 ];
 
 export default components.sort((a, b) => (a.title < b.title ? -1 : 1));
