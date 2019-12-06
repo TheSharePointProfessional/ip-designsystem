@@ -64,7 +64,7 @@ const StyledContent = styled.div`
   grid-template-rows: 1fr;
   gap: 20px;
   width: 100%;
-  max-width: 1600px;
+  max-width: 1640px;
   code {
     color: #bd7a27;
   }
