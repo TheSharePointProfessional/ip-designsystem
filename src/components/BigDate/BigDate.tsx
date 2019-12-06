@@ -20,9 +20,9 @@ const StyledBigDate = styled.div`
   width: 100px;
   height: 100px;
   color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   > * {
     position: relative;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   }
   .month {
     text-transform: uppercase;

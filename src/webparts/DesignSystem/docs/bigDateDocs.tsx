@@ -43,8 +43,19 @@ let documentation: ComponentDocumentation = {
       description: "",
       scope: { BigDate },
       code: `<div style={{ background:"#387c9c", borderRadius:"50%" }}>
- <BigDate date={new Date()} />
+  <BigDate date={new Date()} />
 </div>`,
+    },
+    {
+      title: "Styles override",
+      slug: "styles-override",
+      description: "Shows how you can pass a styles object to set inline styles",
+      scope: { BigDate },
+      code: `<BigDate 
+  date={new Date()} 
+  styles={{ color: "#387c9c", textShadow: "none" }} 
+/>
+`,
     },
   ],
 };

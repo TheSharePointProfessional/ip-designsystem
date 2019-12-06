@@ -25,7 +25,12 @@ let documentation: ComponentDocumentation = {
       title: "Single Day",
       description: "For a single day date range",
       slug: "single-day",
-      code: `<DateRangeText start={new Date("December 17, 2019 14:00:00")} end={new Date("December 17, 2019 16:00:00")}  />`,
+      code: `<h1>
+  <DateRangeText
+    start={new Date("December 17, 2019 14:00:00")}
+    end={new Date("December 17, 2019 16:00:00")}
+  />
+</h1>`,
       scope: {
         DateRangeText: DateRangeText,
         addDays: addDays,
@@ -36,7 +41,9 @@ let documentation: ComponentDocumentation = {
       title: "Single Day - All Day",
       description: "For a single day date range on an all day event.",
       slug: "single-day-all-day",
-      code: `<DateRangeText start={new Date("11/12/2019")} />`,
+      code: `<h1>
+  <DateRangeText start={new Date("11/12/2019")} />
+</h1>`,
       scope: {
         DateRangeText: DateRangeText,
         addDays: addDays,
@@ -47,10 +54,12 @@ let documentation: ComponentDocumentation = {
       title: "Multi Day",
       description: "For a multi-day date range, with explicit start and end times.",
       slug: "multi-day",
-      code: `<DateRangeText
-        start={new Date("December 17, 2019 14:00:00")}
-        end={new Date("December 19, 2019 16:00:00")}
-      />`,
+      code: `<h1>
+  <DateRangeText
+    start={new Date("December 17, 2019 14:00:00")}
+    end={new Date("December 19, 2019 16:00:00")}
+  />
+</h1>`,
       scope: {
         DateRangeText: DateRangeText,
         addDays: addDays,
@@ -60,7 +69,12 @@ let documentation: ComponentDocumentation = {
       title: "Multi Day - All Day",
       description: "For a multi-day date range, on an all day event",
       slug: "multi-day-all-day",
-      code: `<DateRangeText start={new Date("11/12/2019")} end={new Date("11/15/2019")} />`,
+      code: `<h1>
+  <DateRangeText
+    start={new Date("11/12/2019")}
+    end={new Date("11/15/2019")}
+  />
+</h1>`,
       scope: {
         DateRangeText: DateRangeText,
         addDays: addDays,
