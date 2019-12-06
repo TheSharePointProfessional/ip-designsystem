@@ -84,7 +84,7 @@ let documentation: ComponentDocumentation = {
   ),
   demos: [
     {
-      title: "Card Grid",
+      title: "Card Grid (1000 items)",
       description: (
         <>
           <p>Example showing 1000 cards, but so only a subset are actually on the DOM at once.</p>
