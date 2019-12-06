@@ -20,6 +20,7 @@ const StyledBigDate = styled.div`
   width: 100px;
   height: 100px;
   color: #fff;
+  font-size: 18px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   > * {
     position: relative;
@@ -27,12 +28,12 @@ const StyledBigDate = styled.div`
   .month {
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 1em;
+    line-height: 0.8em;
   }
   .date {
-    font-size: 28px;
-    line-height: 28px;
+    font-size: 2em;
+    line-height: 0.85em;
     font-weight: 600;
   }
 `;

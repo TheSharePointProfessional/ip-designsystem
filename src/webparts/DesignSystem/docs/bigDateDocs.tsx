@@ -53,7 +53,7 @@ let documentation: ComponentDocumentation = {
       scope: { BigDate },
       code: `<BigDate 
   date={new Date()} 
-  styles={{ color: "#387c9c", textShadow: "none" }} 
+  styles={{ fontSize: "36px", color: "#387c9c", textShadow: "none" }} 
 />
 `,
     },
