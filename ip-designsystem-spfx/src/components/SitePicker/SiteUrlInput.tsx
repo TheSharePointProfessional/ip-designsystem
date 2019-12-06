@@ -118,10 +118,10 @@ const StyledContainer = styled.div`
   .inputContainer {
     margin-top: 5px;
     &.success .message {
-      color: $ms-color-teal;
+      color: ${(props) => props.theme.palette.teal};
     }
     &.error .message {
-      color: $ms-color-redDark;
+      color: ${(props) => props.theme.palette.redDark};
     }
     &.loading .message {
       color: #888;
