@@ -1,5 +1,6 @@
 import { ComponentDemo } from "./docs";
 import Card from "../../../components/Card/Card";
+import BigDate from "../../../components/BigDate/BigDate";
 import React from "react";
 import PropsTable from "./PropsTable";
 
@@ -98,8 +99,8 @@ let basicUsage = {
   description: "Basic usage of a card. You can just wrap your own markup in a Card component.",
   scope: { Card: Card },
   code: `<Card>
-<h1>I am a card</h1>
-<p>And I am the description of a card</p>        
+  <h1>I am a card</h1>
+  <p>And I am the description of a card</p>        
 </Card>`,
 };
 
@@ -193,7 +194,26 @@ let cardDescription: ComponentDemo = {
   `,
 };
 
-documentation.demos = [fullUsage, basicUsage, cardTitle, cardDescription];
+let cardImageWithOverlay: ComponentDemo = {
+  title: "Card with Image Overlay",
+  description: "Shows a card with an image, but that image has a custom overlay",
+  slug: "card-with-overay",
+  scope: { Card, BigDate },
+  code: `<Card>
+  <Card.Image src="https://s27363.pcdn.co/wp-content/uploads/2017/09/Zebra-Slot-Canyon.jpg.optimal.jpg">
+    <BigDate
+      date={new Date()}
+      styles={{ fontSize: "30px" }}
+    />
+  </Card.Image>
+  <Card.Title>Card with Image Overlay</Card.Title>
+  <Card.Description>
+    I am a card with an image that has a custom overlay.
+  </Card.Description>
+</Card>`,
+};
+
+documentation.demos = [fullUsage, basicUsage, cardTitle, cardDescription, cardImageWithOverlay];
 
 // Basic Usage
 // Card Title
