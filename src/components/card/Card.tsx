@@ -13,10 +13,7 @@ const CLASS_NAME = "skyline-card";
 const StyledGrid = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(${props => props.size || 300}px, 1fr)
-  );
+  grid-template-columns: repeat(auto-fill, minmax(${(props) => props.size || 300}px, 1fr));
   gap: 10px;
 `;
 export default class Card extends React.PureComponent<CardProps, {}> {
@@ -30,19 +27,22 @@ export default class Card extends React.PureComponent<CardProps, {}> {
   static Footer = CardFooter;
   static Grid = StyledGrid;
   render() {
-    let { className = "", children, centered } = this.props;
+    let { className = "", children, centered, styles } = this.props;
 
-    let cssClass = [CLASS_NAME, centered ? "centered" : "", className]
-      .filter(Boolean)
-      .join(" ");
+    let cssClass = [CLASS_NAME, centered ? "centered" : "", className].filter(Boolean).join(" ");
 
-    return <StyledCard className={cssClass}>{children}</StyledCard>;
+    return (
+      <StyledCard style={styles} className={cssClass}>
+        {children}
+      </StyledCard>
+    );
   }
 }
 
 export interface CardProps {
   className?: string;
   centered?: boolean;
+  styles?: any;
 }
 
 const StyledCard = styled.div`
@@ -50,7 +50,7 @@ const StyledCard = styled.div`
   display: inline-flex;
   flex-direction: column;
   /* justify-content: space-evenly; */
-  border: 1px solid ${props => props.theme.semanticColors.variantBorder};
+  border: 1px solid ${(props) => props.theme.semanticColors.variantBorder};
   border-radius: 5px;
     overflow: hidden;
   &.centered {
@@ -59,7 +59,7 @@ const StyledCard = styled.div`
   }
 
   /* &:hover {
-    border-color: ${props => props.theme.palette.themePrimary};
+    border-color: ${(props) => props.theme.palette.themePrimary};
   } */
   > * {
       margin: 0 12px;

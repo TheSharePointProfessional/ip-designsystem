@@ -2,6 +2,8 @@ import cardDocs from "./cardDocs";
 import sitePickerDocs from "./sitePickerDocs";
 import dateRangeTextDocs from "./dateRangeTextDocs";
 import bigDateDocs from "./bigDateDocs";
+import virtualizeGridDocs from "./virtualizedGridDocs";
+
 export interface ComponentDemo {
   title: string;
   slug: string;
@@ -22,6 +24,7 @@ let components: ComponentDocumentation[] = [
   sitePickerDocs,
   dateRangeTextDocs,
   bigDateDocs,
+  virtualizeGridDocs,
 ];
 
 export default components.sort((a, b) => (a.title < b.title ? -1 : 1));
