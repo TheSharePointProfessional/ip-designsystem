@@ -1,0 +1,33 @@
+{
+  "name": "ip-designsystem-web",
+  "version": "1.0.0",
+  "description": "A way to view your components outside of SharePoint for a faster feedback loop",
+  "main": "entry.tsx",
+  "scripts": {
+    "prebuild": "npm run clean && node tasks/build.js",
+    "build": "parcel build index.html --detailed-report",
+    "prestart": "node tasks/build.js",
+    "start": "parcel index.html --open",
+    "predeploy": "npm run build",
+    "deploy": "netlify deploy --prod --dir=dist",
+    "clean": "rimraf .cache && rimraf dist"
+  },
+  "author": "Andrew Petersen",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-typescript": "^7.7.4",
+    "@microsoft/sp-core-library": "^1.9.1",
+    "@pnp/spfx-controls-react": "^1.15.0",
+    "date-fns": "^2.8.1",
+    "office-ui-fabric-react": "^7.69.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "spscript": "^4.2.0",
+    "styled-components": "^4.4.1"
+  },
+  "devDependencies": {
+    "fs-extra": "^8.1.0",
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.7.3"
+  }
+}

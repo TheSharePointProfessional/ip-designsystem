@@ -49,7 +49,7 @@ function DesignSystem(props: DesignSystemProps) {
 export default React.memo(DesignSystem);
 
 export interface DesignSystemProps {
-  webpart: {
+  webpart?: {
     title: string;
     displayMode: DisplayMode;
     updateProperty: (key: string, value: string) => void;
