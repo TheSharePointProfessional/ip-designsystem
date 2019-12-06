@@ -18,7 +18,7 @@ let basicUsage: ComponentDemo = {
   };
 
   return (
-    <div style={{ width: "400px" }}>
+    <div style={{ width: "400px", padding:"10px", border: "1px solid #ccc" }}>
       <h4>{siteUrl}</h4>
       <SitePicker url={siteUrl} onChange={onSiteChange} />
     </div>
