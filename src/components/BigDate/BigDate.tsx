@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { format } from "date-fns";
-export default function BigDate({ date = new Date(), className = "" }) {
+export default function BigDate({ date = new Date(), className = "", styles = {} }) {
   return (
-    <StyledBigDate className={className}>
+    <StyledBigDate className={className} style={styles}>
       <div className="month">{format(date, "MMM")}</div>
       <div className="date">{format(date, "d")}</div>
     </StyledBigDate>

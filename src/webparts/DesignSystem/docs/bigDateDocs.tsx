@@ -26,6 +26,12 @@ let documentation: ComponentDocumentation = {
             type: "string",
             description: "If you want to tack on your own class name.",
           },
+          {
+            name: "styles",
+            isRequired: false,
+            type: "Object",
+            description: "A styles object you can pass in to add inline styles.",
+          },
         ]}
       />
     </>
