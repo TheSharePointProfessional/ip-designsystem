@@ -16,6 +16,8 @@ const Container = styled.div`
 `;
 
 function DesignSystem(props: DesignSystemProps) {
+  console.log("THEME!!!", props.webpart.theme);
+  console.log(JSON.stringify(props.webpart.theme));
   let [activeComponent, setActiveComponent] = usePersistedState(
     "Card",
     "designsystem: activeComponent"
@@ -49,9 +51,9 @@ function DesignSystem(props: DesignSystemProps) {
 export default React.memo(DesignSystem);
 
 export interface DesignSystemProps {
-  webpart: {
+  webpart?: {
     title: string;
-    displayMode: DisplayMode;
+    displayMode?: DisplayMode;
     updateProperty: (key: string, value: string) => void;
     webUrl: string;
     theme: IReadonlyTheme;

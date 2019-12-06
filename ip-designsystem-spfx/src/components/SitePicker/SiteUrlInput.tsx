@@ -1,6 +1,7 @@
 import * as React from "react";
 import { TextField } from "office-ui-fabric-react/lib/TextField";
-import styles from "./SiteUrlInput.module.scss";
+import styled from "styled-components";
+
 import * as SPScript from "spscript";
 import { debounce } from "../../core/utils/utils";
 
@@ -67,19 +68,15 @@ export default class SiteUrlInput extends React.PureComponent<
 
   render() {
     let inputClass = [
-      styles.inputContainer,
-      this.state.isValid === null
-        ? styles.loading
-        : this.state.isValid
-        ? styles.success
-        : styles.error,
+      "inputContainer",
+      this.state.isValid === null ? "loading" : this.state.isValid ? "success" : "error",
     ]
       .filter((c) => c)
       .join(" ");
 
     return (
-      <div>
-        {this.props.label && <div className={styles.label}>{this.props.label}</div>}
+      <StyledContainer>
+        {this.props.label && <div className="label">{this.props.label}</div>}
 
         <div className={inputClass}>
           <TextField
@@ -89,9 +86,9 @@ export default class SiteUrlInput extends React.PureComponent<
             onChanged={this.onInput}
             placeholder="/sites/yoursite"
           />
-          {this.state.value && <div className={styles.message}>{this.renderMessage()}</div>}
+          {this.state.value && <div className="message">{this.renderMessage()}</div>}
         </div>
-      </div>
+      </StyledContainer>
     );
   }
 }
@@ -112,3 +109,36 @@ export interface SiteUrlInputProps {
   label?: string;
   disabled: boolean;
 }
+
+const StyledContainer = styled.div`
+  .label {
+    font-size: 14px;
+  }
+
+  .inputContainer {
+    margin-top: 5px;
+    &.success .message {
+      color: ${(props) => props.theme.palette.teal};
+    }
+    &.error .message {
+      color: ${(props) => props.theme.palette.redDark};
+    }
+    &.loading .message {
+      color: #888;
+    }
+
+    label {
+      margin-right: 2px !important;
+    }
+  }
+
+  .siteInput {
+    padding: 5px;
+    overflow-x: scroll;
+  }
+
+  .message {
+    font-size: 12px;
+    // text-align: center;
+  }
+`;
