@@ -1,8 +1,8 @@
 import * as React from "react";
-import styles from "./SitePicker.module.scss";
 import SiteChoiceGroup, { SiteChoiceType } from "./siteChoiceGroup";
 import SiteUrlInput from "./SiteUrlInput";
 import { getCurrentWebUrl as getCurrentSiteUrl } from "../../core/utils/sharepointUtils";
+import styled from "styled-components";
 
 const checkIsThisSite = function(siteUrl, currentSiteUrl) {
   return !siteUrl || siteUrl.toLowerCase() === currentSiteUrl.toLowerCase();
@@ -32,7 +32,7 @@ export default class SitePicker extends React.Component<SitePickerProps, SitePic
     let siteChoice = this.state.siteChoice;
 
     return (
-      <div className={styles.sitePicker}>
+      <StyledContainer className="site-picker">
         <SiteChoiceGroup
           label={this.props.label}
           value={siteChoice}
@@ -44,11 +44,15 @@ export default class SitePicker extends React.Component<SitePickerProps, SitePic
           onChange={this.onChange}
           key={this.props.siteUrl + siteChoice}
         />
-      </div>
+      </StyledContainer>
     );
   }
 }
 
+const StyledContainer = styled.div`
+  position: relative;
+  box-sizing: border-box;
+`;
 export interface SitePickerProps {
   //props
   siteUrl: string;
