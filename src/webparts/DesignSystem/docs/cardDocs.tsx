@@ -1,12 +1,35 @@
 import { ComponentDemo } from "./docs";
-import Card from "../../../components/card/Card";
+import Card from "../../../components/Card/Card";
 import React from "react";
+import PropsTable from "./PropsTable";
 
 let documentation = {
   title: "Card",
   id: "Card",
-  description:
-    "The Card component is frequently used to display a list of items with imagery. Often it is shown in a grid.",
+  description: (
+    <>
+      <p>
+        The Card component is frequently used to display a list of items with imagery. Often it is
+        shown in a grid.
+      </p>
+      <PropsTable
+        props={[
+          {
+            name: "className",
+            isRequired: false,
+            type: "string",
+            description: "If you want to tack on your own class name.",
+          },
+          {
+            name: "styles",
+            isRequired: false,
+            type: "Object",
+            description: "A styles object you can pass in to add inline styles.",
+          },
+        ]}
+      />
+    </>
+  ),
   demos: [],
 };
 

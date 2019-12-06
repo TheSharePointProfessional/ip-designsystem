@@ -1,7 +1,7 @@
 import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
 import VirtualizedGrid from "../../../components/VirtualizedGrid/VirtualizedGrid";
-import Card from "../../../components/card/Card";
+import Card from "../../../components/Card/Card";
 import PropsTable from "./PropsTable";
 
 const images = [
@@ -26,10 +26,11 @@ let documentation: ComponentDocumentation = {
         Sometimes you have a ton of items to potentially show, but you don't want to actually add
         them to the DOM until the user scrolls them into view.
       </p>
+      <p>When setting it up...</p>
       <ul>
         <li>
-          The parent container (the element wrapping the <code>VirtualizedGrid</code> should have an
-          explicit width.
+          The parent container, the element wrapping the <code>VirtualizedGrid</code>, should have
+          an explicit width.
         </li>
         <li>
           The you probably also want to put a <code>width:100%</code> on whatever your Grid Item
