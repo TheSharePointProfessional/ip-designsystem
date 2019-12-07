@@ -68,21 +68,20 @@ let docs: ComponentDocumentation = {
       slug: "basic-usage",
       description: (
         <>
-          <p></p>
+          <p>You can type in the input or click the color square.</p>
         </>
       ),
       code: `() => {
   let [color, setColor] = React.useState("#008080");
   
   return (
-    <div style={{ width: "300px" }}>
+    <div style={{ width: "200px" }}>
     
       <h1 style={{ color }}>{color}</h1>
       
       <ColorPicker
         value={color}
         onChange={(newColor) => setColor(newColor)}
-        label="Choose a color"
       />
       
     </div>
