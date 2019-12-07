@@ -67,6 +67,51 @@ let docs: ComponentDocumentation = {
 }`,
       scope: { ThemeColorPicker, React },
     },
+    {
+      title: "Get Hex Color",
+      slug: "get-hex-color",
+      description: `Shows how you can get the hex color code of a Theme param key`,
+      scope: { ThemeColorPicker },
+      code: `<div style={{ display: "flex" }}>
+
+      <div style={{ marginRight: "20px" }}>
+        <div
+          style={{
+            background: ThemeColorPicker.getHexColor("primary"),
+            width: "50px",
+            height: "50px",
+            borderRadius: "50%"
+          }}
+        />
+        <div>Primary</div>
+      </div>
+    
+      <div style={{ marginRight: "20px" }}>
+        <div
+          style={{
+            background: ThemeColorPicker.getHexColor("secondary"),
+            width: "50px",
+            height: "50px",
+            borderRadius: "50%"
+          }}
+        />
+        <div>Secondary</div>
+      </div>
+    
+      <div>
+        <div
+          style={{
+            background: ThemeColorPicker.getHexColor("tertiary"),
+            width: "50px",
+            height: "50px",
+            borderRadius: "50%"
+          }}
+        />
+        <div>Tertiary</div>
+      </div>
+      
+    </div>`,
+    },
   ],
 };
 
