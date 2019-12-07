@@ -8,7 +8,7 @@ import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/prism";
 import { getPortalsTheme } from "../../../components/PortalsThemeProvider/PortalsThemeProvider";
 import styled from "styled-components";
 
-const StyledColorSwatch = styled.div`
+export const StyledColorSwatch = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;

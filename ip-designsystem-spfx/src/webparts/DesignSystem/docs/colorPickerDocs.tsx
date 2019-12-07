@@ -2,6 +2,26 @@ import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
 import ThemeColorPicker from "../../../components/ColorPicker/ThemeColorPicker";
 import PropsTable from "./PropsTable";
+import styled from "styled-components";
+
+export const StyledColorSwatch = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+
+  padding: 10px;
+  text-align: center;
+  .hex {
+    font-family: monospace;
+  }
+  .color {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+`;
 
 let docs: ComponentDocumentation = {
   title: "Theme Color Picker",
@@ -71,44 +91,38 @@ let docs: ComponentDocumentation = {
       title: "Get Hex Color",
       slug: "get-hex-color",
       description: `Shows how you can get the hex color code of a Theme param key`,
-      scope: { ThemeColorPicker },
+      scope: { ThemeColorPicker, StyledColorSwatch },
       code: `<div style={{ display: "flex" }}>
+      
+      <StyledColorSwatch>
+        <div className='color' style={{ background: ThemeColorPicker.getHexColor("primary")}} />
+        <div>
+          <b>Primary</b>
+        </div>
+        <div>
+          <code>{ThemeColorPicker.getHexColor("primary")}</code>
+        </div>
+      </StyledColorSwatch>
 
-      <div style={{ marginRight: "20px" }}>
-        <div
-          style={{
-            background: ThemeColorPicker.getHexColor("primary"),
-            width: "50px",
-            height: "50px",
-            borderRadius: "50%"
-          }}
-        />
-        <div>Primary</div>
-      </div>
-    
-      <div style={{ marginRight: "20px" }}>
-        <div
-          style={{
-            background: ThemeColorPicker.getHexColor("secondary"),
-            width: "50px",
-            height: "50px",
-            borderRadius: "50%"
-          }}
-        />
-        <div>Secondary</div>
-      </div>
-    
-      <div>
-        <div
-          style={{
-            background: ThemeColorPicker.getHexColor("tertiary"),
-            width: "50px",
-            height: "50px",
-            borderRadius: "50%"
-          }}
-        />
-        <div>Tertiary</div>
-      </div>
+      <StyledColorSwatch>
+        <div className='color' style={{ background: ThemeColorPicker.getHexColor("secondary")}} />
+        <div>
+          <b>Secondary</b>
+        </div>
+        <div>
+          <code>{ThemeColorPicker.getHexColor("secondary")}</code>
+        </div>
+      </StyledColorSwatch>
+
+      <StyledColorSwatch>
+        <div className='color' style={{ background: ThemeColorPicker.getHexColor("tertiary")}} />
+        <div>
+          <b>Tertiary</b>
+        </div>
+        <div>
+          <code>{ThemeColorPicker.getHexColor("tertiary")}</code>
+        </div>
+      </StyledColorSwatch>
       
     </div>`,
     },
