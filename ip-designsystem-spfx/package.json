@@ -55,13 +55,13 @@
     "@types/react-dom": "16.8.3",
     "@types/webpack-env": "1.13.1",
     "ajv": "~5.2.2",
+    "fs-extra": "^8.1.0",
     "gulp": "~3.9.1",
     "gulp-sequence": "1.0.0",
-    "typescript": "~3.5.x",
-    "fs-extra": "^8.1.0",
     "node-sass": "^4.13.0",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-bundle-visualiser": "^1.2.0",
+    "typescript": "~3.5.x",
     "webpack-bundle-analyzer": "^3.5.1"
   }
 }

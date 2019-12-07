@@ -18,10 +18,7 @@ export default function ReactViewDemo({ demo }: ReactViewDemoProps) {
           <Compiler {...params.compilerProps} presets={[presetTypescript]} />
         </StyledCompiler>
         <Error {...params.errorProps} />
-        <StyledEditor>
-          <Editor {...params.editorProps} language="tsx" />
-        </StyledEditor>
-
+        <Editor {...params.editorProps} language="tsx" />
         <StyledActionButtons>
           <ActionButtons {...params.actions} />
         </StyledActionButtons>

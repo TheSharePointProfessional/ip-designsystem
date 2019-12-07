@@ -2,6 +2,8 @@ import React from "react";
 import { ThemeProvider } from "styled-components";
 import DesignSystem from "../../src/webparts/DesignSystem/components/DesignSystem";
 import theme from "./mockTheme";
+import { initializeIcons } from "@uifabric/icons";
+initializeIcons();
 const webpart = {
   theme: theme as any,
   title: "Design System - Out of SPFx",

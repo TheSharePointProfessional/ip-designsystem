@@ -1,18 +1,26 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
+import { getValue } from "../../core/utils/utils";
 
+declare global {
+  interface Window {
+    _portalsTheme: any;
+  }
+}
+let _theme = {};
 export default function PortalsThemeProvider({ theme, children }) {
-  return (
-    <ThemeProvider
-      theme={{
-        ...theme,
-        global: (window as any).__themeState__.theme || {
-          ...theme.semanticColors,
-          ...theme.palette,
-        },
-      }}
-    >
-      {children}
-    </ThemeProvider>
-  );
+  _theme = {
+    ...theme,
+    global: (window as any).__themeState__.theme || {
+      ...theme.semanticColors,
+      ...theme.palette,
+    },
+  };
+  return <ThemeProvider theme={_theme}>{children}</ThemeProvider>;
+}
+
+export function getThemeValue(path: string, fallback: string) {
+  console.log("TCL: getThemeValue -> path", path, _theme);
+
+  return getValue(_theme, path) || fallback;
 }

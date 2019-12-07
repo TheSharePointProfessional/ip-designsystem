@@ -1,6 +1,6 @@
-import * as React from "react";
-import { Placeholder } from "@pnp/spfx-controls-react/lib/Placeholder";
-import * as SPScript from "spscript";
+import React from "react";
+// import { Placeholder } from "@pnp/spfx-controls-react/lib/Placeholder";
+import SPScript from "spscript";
 import { Spinner } from "office-ui-fabric-react/lib/Spinner";
 import { getSiteUrl } from "../core/utils/sharepointUtils";
 import useDebounce from "./useDebounce";
@@ -75,7 +75,10 @@ const initialState: SiteDataState<any> = {
 
 export function useSiteData<T>(params: SiteDataParams<T>) {
   let [state, dispatch] = React.useReducer(siteDataReducer, initialState);
-  let debouncedDataKey = useDebounce(`${params.dataKey}${params.siteUrl}`, params.debounceDelay || 250);
+  let debouncedDataKey = useDebounce(
+    `${params.dataKey}${params.siteUrl}`,
+    params.debounceDelay || 250
+  );
 
   React.useEffect(() => {
     const asyncWork = async () => {
@@ -115,10 +118,10 @@ export function useSiteData<T>(params: SiteDataParams<T>) {
   } as SiteDataState<T>;
 }
 
-export const InvalidSitePlaceholder = React.memo(function InvalidSitePlaceholder(props: { message: string }) {
-  let message = props.message || "Please connect to a valid site";
-  return <Placeholder iconName="Warning" iconText="Invalid Site" description={message} />;
-});
+// export const InvalidSitePlaceholder = React.memo(function InvalidSitePlaceholder(props: { message: string }) {
+//   let message = props.message || "Please connect to a valid site";
+//   return <Placeholder iconName="Warning" iconText="Invalid Site" description={message} />;
+// });
 
 export const Loading = React.memo(() => {
   return (

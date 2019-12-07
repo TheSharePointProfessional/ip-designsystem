@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { DisplayMode } from "@microsoft/sp-core-library";
 import { IReadonlyTheme } from "@microsoft/sp-component-base";
-import styled, { ThemeProvider } from "styled-components";
+import PortalsThemeProvider from "../../../components/PortalsThemeProvider/PortalsThemeProvider";
+
+import styled from "styled-components";
 import Nav from "./Nav";
 import ReactViewDemo from "./ReactViewDemo";
 
@@ -17,35 +19,34 @@ const Container = styled.div`
 
 function DesignSystem(props: DesignSystemProps) {
   console.log("THEME!!!", props.webpart.theme);
-  console.log(JSON.stringify(props.webpart.theme));
   let [activeComponent, setActiveComponent] = usePersistedState(
     "Card",
     "designsystem: activeComponent"
   );
   let component = components.find((c) => c.id === activeComponent) || components[0];
   return (
-    <ThemeProvider theme={props.webpart.theme}>
+    <PortalsThemeProvider theme={props.webpart.theme}>
       <Container>
         <StyledContent>
           <Nav active={component.id} onChange={setActiveComponent} />
           <div key={component.id}>
             <StyledComponentTitle>{component.title}</StyledComponentTitle>
-            <p>{component.description}</p>
+            <div>{component.description}</div>
             <h3>Examples</h3>
             <ul>
               {component.demos.map((demo) => (
-                <li>
+                <li key={demo.slug}>
                   <a href={"#" + demo.slug}>{demo.title}</a>
                 </li>
               ))}
             </ul>
             {component.demos.map((demo) => (
-              <ReactViewDemo demo={demo} />
+              <ReactViewDemo key={demo.slug} demo={demo} />
             ))}
           </div>
         </StyledContent>
       </Container>
-    </ThemeProvider>
+    </PortalsThemeProvider>
   );
 }
 export default React.memo(DesignSystem);

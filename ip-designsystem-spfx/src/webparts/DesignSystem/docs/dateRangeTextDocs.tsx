@@ -9,8 +9,8 @@ let documentation: ComponentDocumentation = {
   description: (
     <>
       <p>
-        Takes in two dates and display them as a string. Useful for displaying an Event's start and
-        end dates as a single string.
+        Takes in a two dates and displays them as a string. Useful for displaying an Event's start
+        and end dates as a single string.
       </p>
       <PropsTable
         props={[
