@@ -1,6 +1,6 @@
 import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
-import ThemeColorPicker from "../../../components/ColorPicker/ThemeColorPicker";
+import ColorPicker from "../../../components/ColorPicker/ColorPicker";
 import PropsTable from "./PropsTable";
 import styled from "styled-components";
 
@@ -24,15 +24,18 @@ export const StyledColorSwatch = styled.div`
 `;
 
 let docs: ComponentDocumentation = {
-  title: "Theme Color Picker",
+  title: "Color Picker",
   description: (
     <>
-      <p>Lets you choose between Primary, Secondary, Tertiary, or a completely custom color.</p>
+      <p>
+        Lets you choose a custom color with direct text entry or by popping open an advanced color
+        picker.
+      </p>
       <PropsTable
         props={[
           {
             name: "value",
-            description: `A theme color ("primary", "secondary" or "tertiary") or a hex color ("#a4c200").`,
+            description: `A valid CSS color (hex, rgba etc...)`,
             isRequired: true,
             type: "string",
           },
@@ -49,82 +52,43 @@ let docs: ComponentDocumentation = {
             type: "string",
           },
           {
-            name: "ThemeColorPicker.getHexColor()",
-            description: `Pass in a value like "primary" and get back the hex color code based on the current theme. If you pass a hex code, you get the same color back.`,
+            name: "className",
             isRequired: false,
-            type: "(color: ThemeColor | string) => string",
+            type: "string",
+            description: "If you want to tack on your own class name.",
           },
         ]}
       />
     </>
   ),
-  id: "ThemeColorPicker",
+  id: "ColorPicker",
   demos: [
     {
       title: "Basic Usage",
       slug: "basic-usage",
       description: (
         <>
-          <p>Shows how to setup the picker as well as turn it's value into a real color.</p>
+          <p></p>
         </>
       ),
       code: `() => {
-  let [color, setColor] = React.useState("secondary");
+  let [color, setColor] = React.useState("#008080");
   
   return (
     <div style={{ width: "300px" }}>
     
-      <h1 style={{ color: ThemeColorPicker.getHexColor(color)}}>{color}</h1>
+      <h1 style={{ color }}>{color}</h1>
       
-      <ThemeColorPicker
+      <ColorPicker
         value={color}
-        onChange={setColor}
-        label="Choose theme color"
+        onChange={(newColor) => setColor(newColor)}
+        label="Choose a color"
       />
       
     </div>
   );
 }`,
-      scope: { ThemeColorPicker, React },
-    },
-    {
-      title: "Get Hex Color",
-      slug: "get-hex-color",
-      description: `Shows how you can get the hex color code of a Theme param key`,
-      scope: { ThemeColorPicker, StyledColorSwatch },
-      code: `<div style={{ display: "flex" }}>
-      
-      <StyledColorSwatch>
-        <div className='color' style={{ background: ThemeColorPicker.getHexColor("primary")}} />
-        <div>
-          <b>Primary</b>
-        </div>
-        <div>
-          <code>{ThemeColorPicker.getHexColor("primary")}</code>
-        </div>
-      </StyledColorSwatch>
-
-      <StyledColorSwatch>
-        <div className='color' style={{ background: ThemeColorPicker.getHexColor("secondary")}} />
-        <div>
-          <b>Secondary</b>
-        </div>
-        <div>
-          <code>{ThemeColorPicker.getHexColor("secondary")}</code>
-        </div>
-      </StyledColorSwatch>
-
-      <StyledColorSwatch>
-        <div className='color' style={{ background: ThemeColorPicker.getHexColor("tertiary")}} />
-        <div>
-          <b>Tertiary</b>
-        </div>
-        <div>
-          <code>{ThemeColorPicker.getHexColor("tertiary")}</code>
-        </div>
-      </StyledColorSwatch>
-      
-    </div>`,
+      scope: { ColorPicker, React },
     },
   ],
 };

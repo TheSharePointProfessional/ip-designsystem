@@ -3,9 +3,10 @@ import sitePickerDocs from "./sitePickerDocs";
 import dateRangeTextDocs from "./dateRangeTextDocs";
 import bigDateDocs from "./bigDateDocs";
 import virtualizeGridDocs from "./virtualizedGridDocs";
-import colorPickerDocs from "./colorPickerDocs";
+import themeColorPickerDocs from "./themeColorPickerDocs";
 import themeProviderDocs from "./portalsThemeProviderDocs";
 import themePreviewDocs from "./themePreviewDocs";
+import colorPickerDocs from "./colorPickerDocs";
 
 export interface ComponentDemo {
   title: string;
@@ -28,9 +29,10 @@ let components: ComponentDocumentation[] = [
   dateRangeTextDocs,
   bigDateDocs,
   virtualizeGridDocs,
-  colorPickerDocs,
+  themeColorPickerDocs,
   themeProviderDocs,
   themePreviewDocs,
+  colorPickerDocs,
 ];
 
 export default components.sort((a, b) => (a.title < b.title ? -1 : 1));

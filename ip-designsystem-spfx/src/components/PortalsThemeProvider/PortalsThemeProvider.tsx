@@ -27,7 +27,5 @@ export function getPortalsTheme() {
 }
 
 export function getThemeValue(path: string, fallback: string) {
-  console.log("TCL: getThemeValue -> path", path, _theme);
-
   return getValue(_theme, path) || fallback;
 }

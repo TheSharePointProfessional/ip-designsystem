@@ -26,7 +26,7 @@ export default class ColorPicker extends React.PureComponent<ColorPickerProps, C
     );
   };
   getColor = () => {
-    return this.props.value || "blue";
+    return this.props.value;
   };
   openPicker = () => {
     this.setState({ pickerVisible: true });

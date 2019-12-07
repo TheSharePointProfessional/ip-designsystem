@@ -21,14 +21,14 @@ export default function ThemePreview() {
         <PivotItem headerText="Palette">
           <StyledSwatches>
             {getThemeColors(theme.palette, filter).map((color) => (
-              <ColorPreview {...color} />
+              <ColorPreview key={color.label} {...color} />
             ))}
           </StyledSwatches>
         </PivotItem>
         <PivotItem headerText="Semantic">
           <StyledSwatches>
             {getThemeColors(theme.semanticColors, filter).map((color) => (
-              <ColorPreview {...color} />
+              <ColorPreview key={color.label} {...color} />
             ))}
           </StyledSwatches>
         </PivotItem>
@@ -36,7 +36,7 @@ export default function ThemePreview() {
         <PivotItem headerText="Global">
           <StyledSwatches>
             {getThemeColors(theme.global, filter).map((color) => (
-              <ColorPreview {...color} />
+              <ColorPreview key={color.label} {...color} />
             ))}
           </StyledSwatches>
         </PivotItem>
