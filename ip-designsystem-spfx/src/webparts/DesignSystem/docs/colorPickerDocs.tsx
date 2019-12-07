@@ -28,8 +28,7 @@ let docs: ComponentDocumentation = {
   description: (
     <>
       <p>
-        Lets you choose a custom color with direct text entry or by popping open an advanced color
-        picker.
+        Lets you choose a custom color with either direct text entry or an advanced color picker.
       </p>
       <PropsTable
         props={[

@@ -69,7 +69,37 @@ let themeColorPickerDocs: ComponentDocumentation = {
         </>
       ),
       code: `() => {
-  let [color, setColor] = React.useState("secondary");
+  let [color, setColor] = React.useState("themeSecondary");
+  
+  return (
+    <div style={{ width: "300px" }}>
+    
+      <h1 style={{ color: ThemeColorPicker.getHexColor(color)}}>{color}</h1>
+      
+      <ThemeColorPicker
+        value={color}
+        onChange={setColor}
+        label="Choose theme color"
+      />
+      
+    </div>
+  );
+}`,
+      scope: { ThemeColorPicker, React },
+    },
+    {
+      title: "Other Theme Params",
+      slug: "other-theme-param",
+      description: (
+        <>
+          <p>
+            In Other mode, in addition to HEX codes, you can enter any valid theme param (a property
+            on <code>theme.palette</code>).
+          </p>
+        </>
+      ),
+      code: `() => {
+  let [color, setColor] = React.useState("themeLighterAlt");
   
   return (
     <div style={{ width: "300px" }}>
@@ -94,37 +124,37 @@ let themeColorPickerDocs: ComponentDocumentation = {
       scope: { ThemeColorPicker, StyledColorSwatch },
       code: `<div style={{ display: "flex" }}>
       
-      <StyledColorSwatch>
-        <div className='color' style={{ background: ThemeColorPicker.getHexColor("primary")}} />
-        <div>
-          <b>Primary</b>
-        </div>
-        <div>
-          <code>{ThemeColorPicker.getHexColor("primary")}</code>
-        </div>
-      </StyledColorSwatch>
+  <StyledColorSwatch>
+    <div className='color' style={{ background: ThemeColorPicker.getHexColor("themePrimary")}} />
+    <div>
+      <b>Primary</b>
+    </div>
+    <div>
+      <code>{ThemeColorPicker.getHexColor("themePrimary")}</code>
+    </div>
+  </StyledColorSwatch>
 
-      <StyledColorSwatch>
-        <div className='color' style={{ background: ThemeColorPicker.getHexColor("secondary")}} />
-        <div>
-          <b>Secondary</b>
-        </div>
-        <div>
-          <code>{ThemeColorPicker.getHexColor("secondary")}</code>
-        </div>
-      </StyledColorSwatch>
+  <StyledColorSwatch>
+    <div className='color' style={{ background: ThemeColorPicker.getHexColor("themeSecondary")}} />
+    <div>
+      <b>Secondary</b>
+    </div>
+    <div>
+      <code>{ThemeColorPicker.getHexColor("themeSecondary")}</code>
+    </div>
+  </StyledColorSwatch>
 
-      <StyledColorSwatch>
-        <div className='color' style={{ background: ThemeColorPicker.getHexColor("tertiary")}} />
-        <div>
-          <b>Tertiary</b>
-        </div>
-        <div>
-          <code>{ThemeColorPicker.getHexColor("tertiary")}</code>
-        </div>
-      </StyledColorSwatch>
-      
-    </div>`,
+  <StyledColorSwatch>
+    <div className='color' style={{ background: ThemeColorPicker.getHexColor("themeTertiary")}} />
+    <div>
+      <b>Tertiary</b>
+    </div>
+    <div>
+      <code>{ThemeColorPicker.getHexColor("themeTertiary")}</code>
+    </div>
+  </StyledColorSwatch>
+  
+</div>`,
     },
   ],
 };

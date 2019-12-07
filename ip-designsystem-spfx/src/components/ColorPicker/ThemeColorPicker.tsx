@@ -5,17 +5,16 @@ import { getThemeValue } from "../PortalsThemeProvider/PortalsThemeProvider";
 
 import ColorPicker from "./ColorPicker";
 const options = [
-  { key: "primary", text: "Theme Primary" },
-  { key: "secondary", text: "Theme Secondary" },
-  { key: "tertiary", text: "Theme Tertiary" },
-  { key: "white", text: "White" },
+  { key: "themePrimary", text: "Theme Primary" },
+  { key: "themeSecondary", text: "Theme Secondary" },
+  { key: "themeTertiary", text: "Theme Tertiary" },
+  { key: "white", text: "White (Theme)" },
   { key: "other", text: "Other" },
 ];
 
-export const getHexColor = function(color: ThemeColor | string): string {
-  if (!checkIsThemeColor(color)) return color;
-  let path = "palette.theme" + color.charAt(0).toUpperCase() + color.slice(1);
-  return getThemeValue(path, "#2D5F9C");
+export const getHexColor = function(color: string): string {
+  // if (!checkIsThemeColor(color)) return color;
+  return getThemeValue("palette." + color, color);
 };
 export const checkIsThemeColor = function(color: ThemeColor | string): boolean {
   if (!color) return false;

@@ -4,6 +4,7 @@ import { ColorPicker as FabricColorPicker } from "office-ui-fabric-react/lib/Col
 import { TextField } from "office-ui-fabric-react/lib/TextField";
 import { Callout, DirectionalHint } from "office-ui-fabric-react/lib/Callout";
 import styled from "styled-components";
+import { getThemeValue } from "../PortalsThemeProvider/PortalsThemeProvider";
 export default class ColorPicker extends React.PureComponent<ColorPickerProps, ColorPickerState> {
   elem: HTMLDivElement;
   state = {
@@ -40,7 +41,7 @@ export default class ColorPicker extends React.PureComponent<ColorPickerProps, C
           <TextField value={this.getColor()} onChanged={this.props.onChange} />
           <span
             className={"square"}
-            style={{ background: this.getColor() }}
+            style={{ background: getThemeValue("palette." + this.getColor(), this.getColor()) }}
             onClick={this.openPicker}
           />
         </div>
