@@ -63,14 +63,15 @@ export function ColorPreview({ hex = "", label = "" }) {
 
 const getThemeColors = function(themeArea, filter = "") {
   if (!themeArea) return [];
-
   return Object.keys(themeArea)
+    .filter((themeParam) => typeof themeArea[themeParam] === "string")
     .map((themeParam) => ({
       hex: themeArea[themeParam],
       label: themeParam,
     }))
     .filter((color) => {
       if (!filter) return true;
+      if (!color) return false;
       return (
         color.hex.toLowerCase().indexOf(filter.toLowerCase()) > -1 ||
         color.label.toLowerCase().indexOf(filter.toLowerCase()) > -1
