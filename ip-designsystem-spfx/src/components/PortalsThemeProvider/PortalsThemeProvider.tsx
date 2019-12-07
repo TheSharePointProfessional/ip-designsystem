@@ -23,7 +23,7 @@ export default function PortalsThemeProvider({ theme, children }) {
 }
 
 export function getPortalsTheme() {
-  return _theme;
+  return _theme as any;
 }
 
 export function getThemeValue(path: string, fallback: string) {

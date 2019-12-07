@@ -122,8 +122,8 @@ let docs: ComponentDocumentation = {
                                 style={{ background: theme.getValue("palette." + themeParam) }}
                             />
                             <div>
-                                <div>{theme.getValue("palette." + themeParam)}</div>
                                 <div><b>{themeParam}</b></div>
+                                <div><code>{theme.getValue("palette." + themeParam)}</code></div>
                             </div>
                         </StyledColorSwatch>
                     ))

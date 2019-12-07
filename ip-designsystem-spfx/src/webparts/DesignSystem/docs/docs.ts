@@ -5,6 +5,7 @@ import bigDateDocs from "./bigDateDocs";
 import virtualizeGridDocs from "./virtualizedGridDocs";
 import colorPickerDocs from "./colorPickerDocs";
 import themeProviderDocs from "./portalsThemeProviderDocs";
+import themePreviewDocs from "./themePreviewDocs";
 
 export interface ComponentDemo {
   title: string;
@@ -29,6 +30,7 @@ let components: ComponentDocumentation[] = [
   virtualizeGridDocs,
   colorPickerDocs,
   themeProviderDocs,
+  themePreviewDocs,
 ];
 
 export default components.sort((a, b) => (a.title < b.title ? -1 : 1));
