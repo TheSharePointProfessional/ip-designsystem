@@ -15,8 +15,15 @@ export default function PortalsThemeProvider({ theme, children }) {
       ...theme.semanticColors,
       ...theme.palette,
     },
+    getValue: function(path: string, fallback = "#f00") {
+      return getValue(this, path) || fallback;
+    },
   };
   return <ThemeProvider theme={_theme}>{children}</ThemeProvider>;
+}
+
+export function getPortalsTheme() {
+  return _theme;
 }
 
 export function getThemeValue(path: string, fallback: string) {

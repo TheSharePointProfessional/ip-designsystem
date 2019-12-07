@@ -68,6 +68,12 @@ const StyledContent = styled.div`
   gap: 20px;
   width: 100%;
   max-width: 1640px;
+  pre {
+    /* padding: 10px;
+    background: #222;
+    color: #eee; */
+    /* border-radius: 5px; */
+  }
   code {
     color: #bd7a27;
   }

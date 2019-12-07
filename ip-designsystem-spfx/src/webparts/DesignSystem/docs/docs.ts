@@ -4,6 +4,7 @@ import dateRangeTextDocs from "./dateRangeTextDocs";
 import bigDateDocs from "./bigDateDocs";
 import virtualizeGridDocs from "./virtualizedGridDocs";
 import colorPickerDocs from "./colorPickerDocs";
+import themeProviderDocs from "./portalsThemeProviderDocs";
 
 export interface ComponentDemo {
   title: string;
@@ -27,6 +28,7 @@ let components: ComponentDocumentation[] = [
   bigDateDocs,
   virtualizeGridDocs,
   colorPickerDocs,
+  themeProviderDocs,
 ];
 
 export default components.sort((a, b) => (a.title < b.title ? -1 : 1));
