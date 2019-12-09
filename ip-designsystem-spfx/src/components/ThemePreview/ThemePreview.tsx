@@ -33,13 +33,13 @@ export default function ThemePreview() {
           </StyledSwatches>
         </PivotItem>
 
-        <PivotItem headerText="Global">
+        {/* <PivotItem headerText="Global">
           <StyledSwatches>
             {getThemeColors(theme.global, filter).map((color) => (
               <ColorPreview key={color.label} {...color} />
             ))}
           </StyledSwatches>
-        </PivotItem>
+        </PivotItem> */}
       </Pivot>
     </StyledContainer>
   );
