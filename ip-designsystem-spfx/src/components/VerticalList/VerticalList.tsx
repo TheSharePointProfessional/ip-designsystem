@@ -25,7 +25,7 @@ let StyledContent = styled.div`
 export default class VerticalList<T> extends React.PureComponent<VerticalListProps<T>, {}> {
   static Item = VerticalItem;
   static Title = Title;
-  static Thumbnail = ItemThumbnail;
+  static Image = ItemThumbnail;
   static Tags = Tags;
   static Description = StyledDescription;
   static Info = Info;

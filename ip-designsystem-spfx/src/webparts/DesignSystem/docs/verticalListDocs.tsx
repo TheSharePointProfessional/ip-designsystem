@@ -32,14 +32,14 @@ let docs: ComponentDocumentation = {
       code: `<div style={{ width: "100%" }}>
   {items.slice(0, 3).map(item => (
     <VerticalList.Item key={item.title}>
-      <VerticalList.Thumbnail
+      <VerticalList.Image
         src={item.image}
         url="#"
         height="120px"
         width="230px"
       >
         <BigDate date={new Date()} />
-      </VerticalList.Thumbnail>
+      </VerticalList.Image>
       <VerticalList.Content>
         <VerticalList.Tags
           tags={[
