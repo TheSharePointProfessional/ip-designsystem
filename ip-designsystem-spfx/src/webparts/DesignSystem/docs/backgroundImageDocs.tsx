@@ -31,6 +31,13 @@ let docs: ComponentDocumentation = {
             type: "string",
           },
           {
+            name: "style",
+            isRequired: false,
+            type: "Object",
+            description:
+              "A styles object you can use to add inline styles. Make sure to specify a width and height using the style object. If you don't specify a width and height, it will use 100% of parent.",
+          },
+          {
             name: "url",
             isRequired: false,
             type: "string",
@@ -49,12 +56,6 @@ let docs: ComponentDocumentation = {
             type: "string",
             description: "If you want to tack on your own class name.",
           },
-          {
-            name: "style",
-            isRequired: false,
-            type: "Object",
-            description: "A styles object you can use to add inline styles.",
-          },
         ]}
       />
     </>
@@ -62,13 +63,35 @@ let docs: ComponentDocumentation = {
   demos: [
     {
       title: "Basic Usage",
-      description: "Make sure to specify a width and height using the style object.",
+      description:
+        "Make sure to specify a width and height using the style object. If you don't specify a width and height, it will use 100% of parent.",
       slug: "basic-usage",
-      scope: { BackgroundImage },
-      code: `<BackgroundImage
-    style={{ width: "200px", height: "200px" }}
-    src="https://www.nationalgeographic.com/content/dam/expeditions/destinations/north-america/private/Yosemite/Hero-Yosemite.jpg"
-/>`,
+      scope: {
+        BackgroundImage,
+        imageUrl:
+          "https://www.nationalgeographic.com/content/dam/expeditions/destinations/north-america/private/Yosemite/Hero-Yosemite.jpg",
+      },
+      code: `<div style={{ display: "flex", flexWrap: "wrap" }}>
+
+    <BackgroundImage
+        style={{ width: "200px", height: "200px" }}
+        src={imageUrl}
+    />
+
+    <div style={{ width: "10px" }}></div>
+
+    <BackgroundImage
+        style={{ width: "550px", height: "200px" }}
+        src={imageUrl}
+    />
+
+    <div style={{ width: "10px" }}></div>
+
+    <div style={{ width: "100px", height: "200px" }}>
+        <BackgroundImage src={imageUrl} />
+    </div>
+    
+</div>`,
     },
     {
       title: "Interactive Demo",
