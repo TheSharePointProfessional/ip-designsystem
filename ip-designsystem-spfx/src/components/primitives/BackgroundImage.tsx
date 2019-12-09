@@ -4,12 +4,12 @@ import Link from "./Link";
 
 const CLASS_NAME = "background-image";
 
-export default function BackgroundImage({ children, src, url = "", className = "", styles = {} }) {
+export default function BackgroundImage({ children, src, url = "", className = "", style = {} }) {
   let cssClass = [CLASS_NAME, className].filter(Boolean).join(" ");
   let imageStyles = { backgroundImage: `url('${src}')` };
 
   return (
-    <StyledImageContainer className={cssClass} style={styles}>
+    <StyledImageContainer className={cssClass} style={style}>
       <Link href={url} className={className}>
         <div className="img" style={imageStyles}>
           {children}

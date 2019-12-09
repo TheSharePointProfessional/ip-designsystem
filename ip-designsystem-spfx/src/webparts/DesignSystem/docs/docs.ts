@@ -8,6 +8,7 @@ import themeProviderDocs from "./portalsThemeProviderDocs";
 import themePreviewDocs from "./themePreviewDocs";
 import colorPickerDocs from "./colorPickerDocs";
 import verticalListDocs from "./verticalListDocs";
+import backgroundImageDocs from "./backgroundImageDocs";
 
 export interface ComponentDemo {
   title: string;
@@ -35,6 +36,7 @@ let components: ComponentDocumentation[] = [
   themePreviewDocs,
   colorPickerDocs,
   verticalListDocs,
+  backgroundImageDocs,
 ];
 
 export default components.sort((a, b) => (a.title < b.title ? -1 : 1));
