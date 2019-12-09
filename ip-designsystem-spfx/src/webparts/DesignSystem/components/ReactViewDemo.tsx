@@ -17,11 +17,11 @@ export default function ReactViewDemo({ demo }: ReactViewDemoProps) {
         <StyledCompiler>
           <Compiler {...params.compilerProps} presets={[presetTypescript]} />
         </StyledCompiler>
-        <Error {...params.errorProps} />
         <Editor {...params.editorProps} language="tsx" />
         <StyledActionButtons>
           <ActionButtons {...params.actions} />
         </StyledActionButtons>
+        <Error {...params.errorProps} />
       </StyledCenteredStuff>
       <hr />
     </StyledContainer>

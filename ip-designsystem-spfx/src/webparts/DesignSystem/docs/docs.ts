@@ -7,6 +7,7 @@ import themeColorPickerDocs from "./themeColorPickerDocs";
 import themeProviderDocs from "./portalsThemeProviderDocs";
 import themePreviewDocs from "./themePreviewDocs";
 import colorPickerDocs from "./colorPickerDocs";
+import verticalListDocs from "./verticalListDocs";
 
 export interface ComponentDemo {
   title: string;
@@ -33,6 +34,7 @@ let components: ComponentDocumentation[] = [
   themeProviderDocs,
   themePreviewDocs,
   colorPickerDocs,
+  verticalListDocs,
 ];
 
 export default components.sort((a, b) => (a.title < b.title ? -1 : 1));

@@ -1,44 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import CardLink from "./CardLink";
+import BackgroundImage from "../primitives/BackgroundImage";
 
 const CLASS_NAME = "card-image";
 const DEFAULT_SIZE = 160;
-export default function CardImage({
-  children,
-  url = "",
-  src,
-  className = "",
-  size = DEFAULT_SIZE,
-}) {
-  let cssClass = [CLASS_NAME, className].filter(Boolean).join(" ");
-  let inlineStyles = { backgroundImage: `url('${src}')` };
-  return (
-    <StyledImageContainer className={cssClass} size={size}>
-      <CardLink href={url} className={className}>
-        <div className="img" style={inlineStyles}>
-          {children}
-        </div>
-      </CardLink>
-    </StyledImageContainer>
-  );
+export default function CardImage({ size = DEFAULT_SIZE, ...props }) {
+  let cssClass = [CLASS_NAME, props.className].filter(Boolean).join(" ");
+  return <StyledCardImage {...props} size={size} className={cssClass} />;
 }
 
-const StyledImageContainer = styled.div`
-  /* font-weight: 200; */
+const StyledCardImage = styled(BackgroundImage)`
   height: ${(props) => (props.size || DEFAULT_SIZE) + "px"};
-  width: 100%;
-  opacity: 1;
-  /* margin: 0 0 10px 0 !important; */
-  a .img:hover {
-    opacity: 0.85;
-  }
-  div.img {
-    background-size: cover;
-    height: 100%;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 `;

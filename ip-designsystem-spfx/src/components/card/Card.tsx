@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import CardLink from "./CardLink";
-import CardTitle from "./CardTitle";
+import Link from "../primitives/Link";
+import Title from "../primitives/Title";
 import CardDescription from "./CardDescription";
-import CardTags, { CardTag } from "./CardTags";
-import CardInfo from "./CardInfo";
+import Tags, { Tag } from "../primitives/Tags";
+import Info from "../primitives/Info";
 import CardImage from "./CardImage";
 import CardFooter from "./CardFooter";
 
@@ -17,12 +17,12 @@ const StyledGrid = styled.div`
   gap: 10px;
 `;
 export default class Card extends React.PureComponent<CardProps, {}> {
-  static Title = CardTitle;
+  static Title = Title;
   static Description = CardDescription;
-  static Link = CardLink;
-  static Tags = CardTags;
-  static Tag = CardTag;
-  static Info = CardInfo;
+  static Link = Link;
+  static Tags = Tags;
+  static Tag = Tag;
+  static Info = Info;
   static Image = CardImage;
   static Footer = CardFooter;
   static Grid = StyledGrid;
@@ -74,6 +74,6 @@ const StyledCard = styled.div`
       }
   }
   > .card-image {
-      margin: 12px 0;
+      margin: 12px auto;
   }
 `;
