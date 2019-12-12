@@ -4,7 +4,13 @@ import Link from "./Link";
 
 const CLASS_NAME = "background-image";
 
-export default function BackgroundImage({ children, src, url = "", className = "", style = {} }) {
+export default function BackgroundImage({
+  children = null,
+  src,
+  url = "",
+  className = "",
+  style = {},
+}) {
   let cssClass = [CLASS_NAME, className].filter(Boolean).join(" ");
   let imageStyles = { backgroundImage: `url('${src}')` };
 
