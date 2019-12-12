@@ -27,7 +27,7 @@ let documentation: ComponentDocumentation = {
             description: "If you want to tack on your own class name.",
           },
           {
-            name: "styles",
+            name: "style",
             isRequired: false,
             type: "Object",
             description: "A styles object you can pass in to add inline styles.",
@@ -53,7 +53,7 @@ let documentation: ComponentDocumentation = {
       scope: { BigDate },
       code: `<BigDate 
   date={new Date()} 
-  styles={{ fontSize: "36px", color: "#387c9c", textShadow: "none" }} 
+  style={{ fontSize: "36px", color: "#387c9c", textShadow: "none" }} 
 />
 `,
     },
