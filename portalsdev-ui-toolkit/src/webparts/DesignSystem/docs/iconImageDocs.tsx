@@ -1,5 +1,6 @@
 import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
+import Link from "../../../components/primitives/Link";
 import IconImage from "../../../components/IconImage/IconImage";
 import PropsTable from "./PropsTable";
 import styled from "styled-components";
@@ -97,6 +98,20 @@ let docs: ComponentDocumentation = {
     Circle
   </div>
 </div>
+      `,
+    },
+    {
+      title: "Using As A Link",
+      description: "",
+      slug: "icon-image-link",
+      scope: {
+        IconImage,
+        Link,
+      },
+      code: `
+<Link href="google.com">
+  <IconImage icon="vacation" />
+</Link>
       `,
     },
   ],

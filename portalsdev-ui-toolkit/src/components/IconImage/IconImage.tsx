@@ -56,6 +56,9 @@ const StyledContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  a > &:hover {
+    opacity: 0.85;
+  }
   &.circle {
     border-radius: 50%;
   }
