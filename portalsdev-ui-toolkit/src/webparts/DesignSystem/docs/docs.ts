@@ -10,6 +10,7 @@ import colorPickerDocs from "./colorPickerDocs";
 import verticalListDocs from "./verticalListDocs";
 import backgroundImageDocs from "./backgroundImageDocs";
 import iconImageDocs from "./iconImageDocs";
+import linkTileDocs from "./linkTileDocs";
 
 export interface ComponentDemo {
   title: string;
@@ -39,6 +40,7 @@ let components: ComponentDocumentation[] = [
   verticalListDocs,
   backgroundImageDocs,
   iconImageDocs,
+  linkTileDocs,
 ];
 
 export default components.sort((a, b) => (a.title < b.title ? -1 : 1));
