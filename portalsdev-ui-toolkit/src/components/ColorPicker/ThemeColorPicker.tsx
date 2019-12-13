@@ -14,6 +14,15 @@ const options = [
 
 export const getHexColor = function(color: string): string {
   // if (!checkIsThemeColor(color)) return color;
+  if (color === "primary") {
+    color = "themePrimary";
+  }
+  if (color === "secondary") {
+    color = "themeSecondary";
+  }
+  if (color === "tertiary") {
+    color = "themeTertiary";
+  }
   return getThemeValue("palette." + color, color);
 };
 export const checkIsThemeColor = function(color: ThemeColor | string): boolean {
