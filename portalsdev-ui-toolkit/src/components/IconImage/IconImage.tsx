@@ -6,7 +6,7 @@ import BackgroundImage from "../primitives/BackgroundImage";
 
 const CLASS_NAME = "icon-image";
 
-const defaultProps: IconImageProps = {
+export const defaultIconImageProps: IconImageProps = {
   icon: "Photo2",
   width: 120,
   height: 120,
@@ -17,7 +17,7 @@ const defaultProps: IconImageProps = {
 };
 
 export default function IconImage(props: IconImageProps) {
-  let fullProps = { ...defaultProps, ...props };
+  let fullProps = { ...defaultIconImageProps, ...props };
 
   let cssClass = [CLASS_NAME, fullProps.className, fullProps.circle ? "circle" : ""]
     .filter(Boolean)
@@ -40,9 +40,9 @@ const checkIsIconName = function(icon: string): boolean {
   return wordRegex.test(icon);
 };
 
-const getIconFontSize = function(width, height) {
+export const getIconFontSize = function(width, height, percentage = 50) {
   let smallerDimension = width < height ? width : height;
-  return smallerDimension * 0.5 + "px";
+  return smallerDimension * (percentage / 100) + "px";
 };
 
 const StyledContainer = styled.div`
