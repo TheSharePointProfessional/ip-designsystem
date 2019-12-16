@@ -36,7 +36,7 @@
     "react": "16.8.5",
     "react-dom": "16.8.5",
     "react-syntax-highlighter": "^11.0.2",
-    "react-view": "^2.0.2",
+    "react-view": "github:droopytersen/react-view",
     "refractor": "^2.10.0",
     "spscript": "^4.2.0"
   },
@@ -47,7 +47,6 @@
     "styled-components": ">= 4"
   },
   "devDependencies": {
-    "styled-components": "^4.4.1",
     "@microsoft/rush-stack-compiler-3.5": "~0.2.x",
     "@microsoft/sp-build-web": "1.9.1",
     "@microsoft/sp-module-interfaces": "1.9.1",
@@ -66,6 +65,7 @@
     "node-sass": "^4.13.0",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-bundle-visualiser": "^1.2.0",
+    "styled-components": "^4.4.1",
     "typescript": "~3.5.x",
     "webpack-bundle-analyzer": "^3.5.1"
   }
