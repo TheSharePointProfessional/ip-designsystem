@@ -11,6 +11,7 @@ import verticalListDocs from "./verticalListDocs";
 import backgroundImageDocs from "./backgroundImageDocs";
 import iconImageDocs from "./iconImageDocs";
 import linkTileDocs from "./linkTileDocs";
+import flexGridDocs from "./flexGridDocs";
 
 export interface ComponentDemo {
   title: string;
@@ -41,6 +42,7 @@ let components: ComponentDocumentation[] = [
   backgroundImageDocs,
   iconImageDocs,
   linkTileDocs,
+  flexGridDocs,
 ];
 
 export default components.sort((a, b) => (a.title < b.title ? -1 : 1));

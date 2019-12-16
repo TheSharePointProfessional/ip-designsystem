@@ -38,13 +38,16 @@
     "react-syntax-highlighter": "^11.0.2",
     "react-view": "^2.0.2",
     "refractor": "^2.10.0",
-    "spscript": "^4.2.0",
-    "styled-components": "^4.4.1"
+    "spscript": "^4.2.0"
   },
   "resolutions": {
     "@types/react": "16.8.8"
   },
+  "peerDependencies": {
+    "styled-components": ">= 4"
+  },
   "devDependencies": {
+    "styled-components": "^4.4.1",
     "@microsoft/rush-stack-compiler-3.5": "~0.2.x",
     "@microsoft/sp-build-web": "1.9.1",
     "@microsoft/sp-module-interfaces": "1.9.1",
