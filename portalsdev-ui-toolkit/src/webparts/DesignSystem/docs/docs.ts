@@ -9,7 +9,7 @@ import themePreviewDocs from "./themePreviewDocs";
 import colorPickerDocs from "./colorPickerDocs";
 import verticalListDocs from "./verticalListDocs";
 import backgroundImageDocs from "./backgroundImageDocs";
-import flexGridDocs from "./flexGridDocs";
+import gridDocs from "./gridDocs";
 
 export interface ComponentDemo {
   title: string;
@@ -38,7 +38,7 @@ let components: ComponentDocumentation[] = [
   colorPickerDocs,
   verticalListDocs,
   backgroundImageDocs,
-  flexGridDocs,
+  gridDocs,
 ];
 
 export default components.sort((a, b) => (a.title < b.title ? -1 : 1));

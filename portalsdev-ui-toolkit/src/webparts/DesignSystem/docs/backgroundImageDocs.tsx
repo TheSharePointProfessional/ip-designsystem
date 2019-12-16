@@ -1,10 +1,8 @@
 import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
 import BackgroundImage from "../../../components/primitives/BackgroundImage";
-import FlexGrid from "../../../components/primitives/FlexGrid";
 import BigDate from "../../../components/BigDate/BigDate";
 import PropsTable from "./PropsTable";
-import styled from "styled-components";
 
 let docs: ComponentDocumentation = {
   title: "Image",
