@@ -5,7 +5,6 @@ import IconImage, {
   getIconFontSize,
 } from "../IconImage/IconImage";
 import Link from "../primitives/Link";
-import { JSXElement } from "@babel/types";
 import styled from "styled-components";
 import { getHexColor } from "../ColorPicker/ThemeColorPicker";
 
@@ -43,7 +42,7 @@ const StyledCaptionOverlay = styled.div`
   bottom: 0;
   left: 0;
   right: 0;
-  color: ${(prop) => prop.iconColor};
+  color: ${(prop) => getHexColor(prop.iconColor)};
   padding: 10px 5px;
   transition: top 0.2s ease-out, background-color 0.3s ease-out;
   font-size: ${(props) => getCaptionFontSize(props.width, props.height)};
@@ -58,7 +57,7 @@ const StyledCaptionOverlay = styled.div`
 
 const StyledLinkContainer = styled(Link)`
   position: relative;
-  .icon-image > * {
+  .icon-image > i {
     margin-bottom: ${(props) => Math.floor(props.height * 0.2)}px;
     font-size: ${(props) => getIconFontSize(props.width, props.height, 40)};
   }
@@ -66,7 +65,8 @@ const StyledLinkContainer = styled(Link)`
 
 export interface LinkTileProps extends IconImageProps {
   href: string;
-  children?: JSXElement;
+  children: any;
   showHoverOverlay?: boolean;
   hoverColor?: string;
+  [key: string]: any;
 }
