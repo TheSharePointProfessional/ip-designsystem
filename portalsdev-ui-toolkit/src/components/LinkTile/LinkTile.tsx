@@ -18,7 +18,7 @@ function LinkTile(props: LinkTileProps) {
   return (
     <StyledLinkContainer {...defaultIconImageProps} {...props} className={cssClass}>
       <IconImage {...props} />
-      <StyledCaptionOverlay {...defaultIconImageProps} {...props}>
+      <StyledCaptionOverlay {...defaultIconImageProps} {...props} className="caption-overlay">
         {props.children}
       </StyledCaptionOverlay>
     </StyledLinkContainer>
@@ -47,6 +47,7 @@ const StyledCaptionOverlay = styled.div`
   transition: top 0.2s ease-out, background-color 0.3s ease-out;
   font-size: ${(props) => getCaptionFontSize(props.width, props.height)};
   opacity: 0.8;
+  pointer-events: none;
   .hoverable:hover & {
     top: 0;
     opacity: 1;
