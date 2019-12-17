@@ -30,7 +30,7 @@ export default class ColorPicker extends React.PureComponent<ColorPickerProps, C
     return this.props.value;
   };
   openPicker = () => {
-    this.setState({ pickerVisible: true });
+    this.setState({ pickerVisible: this.props.disabled ? false : true });
   };
   render() {
     let cssClass = ["colorPicker", this.props.className].filter((c) => c).join(" ");
@@ -38,7 +38,11 @@ export default class ColorPicker extends React.PureComponent<ColorPickerProps, C
       <StyledContainer ref={(el) => (this.elem = el)} className={cssClass}>
         {this.props.label && <div className={"label"}>{this.props.label}</div>}
         <div className={"inputGrouping"}>
-          <TextField value={this.getColor()} onChanged={this.props.onChange} />
+          <TextField
+            value={this.getColor()}
+            onChanged={this.props.onChange}
+            disabled={this.props.disabled}
+          />
           <span
             className={"square"}
             style={{ background: getThemeValue("palette." + this.getColor(), this.getColor()) }}
@@ -59,6 +63,7 @@ export interface ColorPickerProps {
   onChange: (newColor: string) => void;
   label?: string;
   className?: string;
+  disabled?: boolean;
 }
 
 const StyledContainer = styled.div`
