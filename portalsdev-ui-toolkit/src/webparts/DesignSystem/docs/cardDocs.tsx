@@ -22,7 +22,7 @@ let documentation = {
             description: "If you want to tack on your own class name.",
           },
           {
-            name: "styles",
+            name: "style",
             isRequired: false,
             type: "Object",
             description: "A styles object you can pass in to add inline styles.",
@@ -203,7 +203,7 @@ let cardImageWithOverlay: ComponentDemo = {
   <Card.Image src="https://s27363.pcdn.co/wp-content/uploads/2017/09/Zebra-Slot-Canyon.jpg.optimal.jpg">
     <BigDate
       date={new Date()}
-      styles={{ fontSize: "30px" }}
+      style={{ fontSize: "30px" }}
     />
   </Card.Image>
   <Card.Title>Card with Image Overlay</Card.Title>

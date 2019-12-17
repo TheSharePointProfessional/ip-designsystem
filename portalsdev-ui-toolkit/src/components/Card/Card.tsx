@@ -27,12 +27,12 @@ export default class Card extends React.PureComponent<CardProps, {}> {
   static Footer = CardFooter;
   static Grid = StyledGrid;
   render() {
-    let { className = "", children, centered, styles } = this.props;
+    let { className = "", children, centered, ...additionalProps } = this.props;
 
     let cssClass = [CLASS_NAME, centered ? "centered" : "", className].filter(Boolean).join(" ");
 
     return (
-      <StyledCard style={styles} className={cssClass}>
+      <StyledCard {...additionalProps} className={cssClass}>
         {children}
       </StyledCard>
     );
