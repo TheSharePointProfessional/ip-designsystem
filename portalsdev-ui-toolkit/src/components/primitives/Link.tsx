@@ -3,16 +3,23 @@ import styled from "styled-components";
 import { parse as parseUrl } from "url";
 
 const CLASS_NAME = "custom-link";
+export interface LinkProps {
+  href: string;
+  target?: string;
+  className?: string;
+  dataInterception?: "off" | "on";
+  [key: string]: any;
+}
 
-export default function Link({
+const Link: React.FC<LinkProps> = ({
   href = "",
-  children,
   target = "",
   className = "",
   dataInterception = "off",
+  children,
   ...additionalProps
-}) {
-  if (!href) return children;
+}) => {
+  if (!href) return <>{children}</>;
   let computedTarget = calculateLinkTarget(href, target);
   let cssClass = [CLASS_NAME, className].filter(Boolean).join(" ");
   let props = {
@@ -23,7 +30,9 @@ export default function Link({
     ...additionalProps,
   };
   return <StyledLink {...props}>{children}</StyledLink>;
-}
+};
+
+export default Link;
 
 const StyledLink = styled.a`
   text-decoration: none;
