@@ -9,13 +9,13 @@ export default function BackgroundImage({
   src,
   url = "",
   className = "",
-  style = {},
+  ...additionalProps
 }) {
   let cssClass = [CLASS_NAME, className].filter(Boolean).join(" ");
   let imageStyles = { backgroundImage: `url('${src}')` };
 
   return (
-    <StyledImageContainer className={cssClass} style={style}>
+    <StyledImageContainer {...additionalProps} className={cssClass}>
       <Link href={url} className={className}>
         <div className="img" style={imageStyles}>
           {children}
