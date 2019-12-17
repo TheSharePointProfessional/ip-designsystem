@@ -9,8 +9,8 @@ export default function Link({
   children,
   target = "",
   className = "",
-  styles = {},
   dataInterception = "off",
+  ...additionalProps
 }) {
   if (!href) return children;
   let computedTarget = calculateLinkTarget(href, target);
@@ -20,7 +20,7 @@ export default function Link({
     target: computedTarget,
     className: cssClass,
     "data-interception": dataInterception,
-    style: styles,
+    ...additionalProps,
   };
   return <StyledLink {...props}>{children}</StyledLink>;
 }
