@@ -81,6 +81,13 @@ let themeColorPickerDocs: ComponentDocumentation = {
         onChange={setColor}
         label="Choose theme color"
       />
+      <h2>Disabled</h2>
+      <ThemeColorPicker
+        value={color}
+        onChange={setColor}
+        label="Choose theme color"
+        disabled={true}
+      />
       
     </div>
   );
