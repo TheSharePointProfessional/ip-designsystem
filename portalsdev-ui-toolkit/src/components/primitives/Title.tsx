@@ -2,19 +2,35 @@ import React from "react";
 import styled from "styled-components";
 import Link from "./Link";
 
-const CLASS_NAME = "primitive-title";
+const CLASS_NAME = "title-ui-toolkit";
 
-export default function Title({ children, url = "", className = "", as = "h3" }) {
+export interface TitleProps {
+  // props
+  url?: string;
+  as?: string;
+  className?: string;
+  [key: string]: any;
+}
+
+const Title: React.FC<TitleProps> = ({
+  url = "",
+  as = "h3",
+  children,
+  className = "",
+  ...additionalProps
+}) => {
   let cssClass = [CLASS_NAME, className].filter(Boolean).join(" ");
 
   return (
     <Link href={url} className={className}>
-      <StyledTitle as={as} className={cssClass}>
+      <StyledTitle {...additionalProps} as={as} className={cssClass}>
         {children}
       </StyledTitle>
     </Link>
   );
-}
+};
+
+export default Title;
 
 const StyledTitle = styled.h3`
   margin: 0;
