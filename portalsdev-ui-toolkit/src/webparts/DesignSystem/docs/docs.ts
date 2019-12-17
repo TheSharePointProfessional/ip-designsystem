@@ -9,6 +9,8 @@ import themePreviewDocs from "./themePreviewDocs";
 import colorPickerDocs from "./colorPickerDocs";
 import verticalListDocs from "./verticalListDocs";
 import backgroundImageDocs from "./backgroundImageDocs";
+import iconImageDocs from "./iconImageDocs";
+import linkTileDocs from "./linkTileDocs";
 import gridDocs from "./gridDocs";
 
 export interface ComponentDemo {
@@ -38,6 +40,8 @@ let components: ComponentDocumentation[] = [
   colorPickerDocs,
   verticalListDocs,
   backgroundImageDocs,
+  iconImageDocs,
+  linkTileDocs,
   gridDocs,
 ];
 

@@ -14,6 +14,15 @@ const options = [
 
 export const getHexColor = function(color: string): string {
   // if (!checkIsThemeColor(color)) return color;
+  if (color === "primary") {
+    color = "themePrimary";
+  }
+  if (color === "secondary") {
+    color = "themeSecondary";
+  }
+  if (color === "tertiary") {
+    color = "themeTertiary";
+  }
   return getThemeValue("palette." + color, color);
 };
 export const checkIsThemeColor = function(color: ThemeColor | string): boolean {
@@ -49,9 +58,14 @@ export default class ThemeColorPicker extends React.PureComponent<ThemeColorPick
           options={options}
           selectedKey={this.state.dropdownValue}
           onChanged={this.onDropdownChange}
+          disabled={this.props.disabled}
         />
         {this.state.dropdownValue === "other" && (
-          <ColorPicker value={this.state.otherColor} onChange={this.onOtherColorChange} />
+          <ColorPicker
+            value={this.state.otherColor}
+            onChange={this.onOtherColorChange}
+            disabled={this.props.disabled}
+          />
         )}
       </StyledContainer>
     );
@@ -62,6 +76,7 @@ export interface ThemeColorPickerProps {
   value: string;
   label?: string;
   onChange: (value: string) => void;
+  disabled?: boolean;
 }
 const _getOtherColorValue = function(propValue = "primary") {
   // If the color string is passed in as the value, there will be no option matches
