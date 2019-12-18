@@ -8,7 +8,7 @@ A suite of React components that we can leverage inside of our SPFx projects.
 
 ## Using it to develop in another project
 
-### Linking Strategy
+### With `npm link`
 
 What if we want to use the UI Toolkit in another project but don't want to publish the Toolkit as a publicly available NPM package?
 
