@@ -7,15 +7,10 @@ import Tags, { Tag } from "../primitives/Tags";
 import Info from "../primitives/Info";
 import CardImage from "./CardImage";
 import CardFooter from "./CardFooter";
+import Grid from "../Grid/Grid";
 
-const CLASS_NAME = "skyline-card";
+const CLASS_NAME = "card-ui-toolkit";
 
-const StyledGrid = styled.div`
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(${(props) => props.size || 300}px, 1fr));
-  gap: 10px;
-`;
 export default class Card extends React.PureComponent<CardProps, {}> {
   static Title = Title;
   static Description = CardDescription;
@@ -25,7 +20,7 @@ export default class Card extends React.PureComponent<CardProps, {}> {
   static Info = Info;
   static Image = CardImage;
   static Footer = CardFooter;
-  static Grid = StyledGrid;
+  static Grid = Grid;
   render() {
     let { className = "", children, centered, ...additionalProps } = this.props;
 
