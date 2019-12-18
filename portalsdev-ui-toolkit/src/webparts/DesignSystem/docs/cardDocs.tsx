@@ -39,7 +39,7 @@ let fullUsage = {
   slug: "full-usage",
   description: "Shows how to leverage all the available sub components",
   scope: { Card: Card },
-  code: `<Card.Grid size={275}>
+  code: `<Card.Grid size="275px">
 
   <Card>
     <Card.Image
