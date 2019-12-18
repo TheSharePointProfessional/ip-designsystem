@@ -8,14 +8,14 @@ declare global {
 }
 let supportsGrid = window.CSS && window.CSS.supports && window.CSS.supports("display", "grid");
 
-export default function Grid({
+const Grid: React.FC<GridProps> = ({
   gap = 20,
   size = "200px",
   children,
   mode = "best",
   shouldFlex = true,
   ...rest
-}: GridProps) {
+}) => {
   let isFlexbox = !supportsGrid || mode === "flex";
   let GridComponent = isFlexbox ? StyledFlexGrid : StyledGrid;
 
@@ -25,14 +25,15 @@ export default function Grid({
       {isFlexbox && Array.from(new Array(12), () => <div className="flex-grid-blank" />)}
     </GridComponent>
   );
-}
+};
+
+export default Grid;
 
 export interface GridProps {
-  gap: number;
-  size: string;
-  children?: ReactElement<any> | null;
-  mode: "best" | "grid" | "flex";
-  shouldFlex: boolean;
+  gap?: number;
+  size?: string;
+  mode?: "best" | "grid" | "flex";
+  shouldFlex?: boolean;
   [key: string]: any;
 }
 
