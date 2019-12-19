@@ -1,14 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import BackgroundImage from "../primitives/BackgroundImage";
+import Thumbnail from "../primitives/Thumbnail";
 import Title from "../primitives/Title";
-import Tags from "../primitives/Tags";
-import Info from "../primitives/Info";
+import Tags, { Tag } from "../primitives/Tags";
+import VerticalItemDescription from "./VerticalItemDescription";
 
-let StyledDescription = styled.p`
-  margin: 0 0;
-  color: ${(props) => props.theme.semanticColors.bodyText};
-`;
+import Info from "../primitives/Info";
 
 let StyledFooter = styled.div`
   display: flex;
@@ -22,38 +19,28 @@ let StyledContent = styled.div`
   flex: 2 1 80%;
 `;
 
-export default class VerticalList<T> extends React.PureComponent<VerticalListProps<T>, {}> {
-  static Item = VerticalItem;
-  static Title = Title;
-  static Image = ItemThumbnail;
-  static Tags = Tags;
-  static Description = StyledDescription;
-  static Info = Info;
-  static Content = StyledContent;
-  static Footer = StyledFooter;
-}
-
 export interface VerticalListProps<T> {
   items: T;
   renderItem: (item: T) => JSX.Element;
 }
 
 const CLASS_NAME = "vertical-item";
-export function VerticalItem({ children, className = "", style = {} }) {
+export const VerticalItem: React.FC<VerticalItemProps> = function({
+  children,
+  className = "",
+  ...rest
+}) {
   let cssClass = [CLASS_NAME, className].filter(Boolean).join(" ");
   return (
-    <StyledVerticalItem className={cssClass} style={style}>
+    <StyledVerticalItem {...rest} className={cssClass}>
       {children}
     </StyledVerticalItem>
   );
-}
+};
 
 export interface VerticalItemProps {
-  title: string | JSX.Element;
-  thumbnail: string | JSX.Element;
-  url?: string;
-  tags?: { label: string; url?: string }[];
-  description: string | JSX.Element;
+  className?: string;
+  [key: string]: any;
 }
 
 let StyledVerticalItem = styled.div`
@@ -77,25 +64,14 @@ let StyledVerticalItem = styled.div`
   }
 `;
 
-export function ItemThumbnail({
-  children,
-  circle = false,
-  width = "100px",
-  height = "100px",
-  ...rest
-}) {
-  return (
-    <StyledThumbnail shape={circle ? "circle" : ""} height={height} width={width} {...rest}>
-      {children}
-    </StyledThumbnail>
-  );
+export default class VerticalList<T> extends React.PureComponent<VerticalListProps<T>, {}> {
+  static Item = VerticalItem;
+  static Title = Title;
+  static Image = Thumbnail;
+  static Tags = Tags;
+  static Tag = Tag;
+  static Description = VerticalItemDescription;
+  static Info = Info;
+  static Content = StyledContent;
+  static Footer = StyledFooter;
 }
-
-let StyledThumbnail = styled(BackgroundImage)`
-  /* flex: 1 1 ${(props) => props.width}; */
-  width: ${(props) => props.width};
-  height: ${(props) => props.height};
-  color: ${(props) => props.theme.palette.white};
-  border-radius: ${(props) => (props.shape === "circle" ? "50%" : 0)};
-  /* margin: 0 16px; */
-`;
