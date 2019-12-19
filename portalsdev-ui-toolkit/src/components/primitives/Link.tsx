@@ -37,9 +37,9 @@ export default Link;
 const StyledLink = styled.a`
   text-decoration: none;
   padding: 0;
-  color: ${(props) => props.theme.semanticColors.bodyText};
+  color: ${(props) => props.theme.semanticColors.link};
   &:hover {
-    color: ${(props) => props.theme.palette.themePrimary};
+    color: ${(props) => props.theme.semanticColors.linkHovered};
   }
 `;
 

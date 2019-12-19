@@ -35,4 +35,8 @@ export default Title;
 const StyledTitle = styled.h3`
   margin: 0;
   padding-bottom: 2px;
+  color: ${(props) => props.theme.semanticColors.bodyText};
+  &:hover {
+    color: ${(props) => props.theme.palette.themePrimary};
+  }
 `;
