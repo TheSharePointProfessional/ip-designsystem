@@ -16,16 +16,14 @@
 //   );
 // }
 
-import React from "react";
+import React, { ReactElement, useEffect } from "react";
 import shave from "shave";
-
-import styled from "styled-components";
 
 const CLASS_NAME = "shaved";
 
 export interface ShaveProps {
   // props
-  el?: string;
+  el?: any;
   maxHeight?: number;
   enabled?: boolean;
   className?: string;
@@ -43,11 +41,24 @@ const Shave: React.FC<ShaveProps> = ({
   let cssClass = [CLASS_NAME, className].filter(Boolean).join(" ");
   let Element = el as any;
   let elemRef = React.useRef(null);
-  React.useEffect(() => {
-    if (enabled) {
-      shave(elemRef.current, maxHeight);
-    }
-  }, [children, maxHeight, enabled]);
+
+  useEffect(() => {
+    const tryShave = () => {
+      if (elemRef.current && enabled) {
+        shave(elemRef.current, maxHeight);
+      }
+    };
+
+    tryShave();
+
+    // Reshave when the window size changes
+    window.addEventListener("resize", tryShave);
+
+    // When the effect dependencies change, the effect runs again.
+    // But first, the previous effect will be cleaned up by invoking
+    // the cleanup function that the effect returns.
+    return () => window.removeEventListener("resize", tryShave);
+  }, [maxHeight, enabled, children]);
 
   return (
     <Element
