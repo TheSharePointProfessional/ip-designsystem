@@ -6,7 +6,10 @@ const DATE_FORMAT = "EEE, MMM do";
 const getTimeFormat = (date: Date) => (getMinutes(date) === 0 ? "haaaa" : "h:mmaaaa");
 
 export default function DateRangeText(event: DateRangeTextProps) {
+  if (!event.start) return null;
+
   let singleDay =
+    (event.start && !event.end) ||
     format(event.start, DATE_FORMAT) === format(event.end || event.start, DATE_FORMAT);
 
   if (singleDay) {
@@ -25,8 +28,15 @@ const renderSingleDayAllDay = (event) => <span>{format(event.start, DATE_FORMAT)
 // Single day (not all day) - DATE, STARTTIME - ENDTIME
 const renderSingleDay = (event) => (
   <span>
-    {format(event.start, DATE_FORMAT)}, {format(event.start, getTimeFormat(event.start))} -{" "}
-    {format(event.end, getTimeFormat(event.end))}
+    <span>
+      {format(event.start, DATE_FORMAT)}, {format(event.start, getTimeFormat(event.start))}
+    </span>
+    {event.end && (
+      <>
+        <span> - </span>
+        <span>{format(event.end, getTimeFormat(event.end))} </span>
+      </>
+    )}
   </span>
 );
 // Multi day all day event, render both dates
