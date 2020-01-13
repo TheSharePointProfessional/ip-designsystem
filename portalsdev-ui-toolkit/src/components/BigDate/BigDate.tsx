@@ -1,10 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import { format } from "date-fns";
+import { format, isValid } from "date-fns";
 
 const CLASS_NAME = "big-date";
 
 export default function BigDate({ date = new Date(), className = "", ...rest }) {
+  if (!isValid(date)) {
+    //console.log("BigDate: Invalid Date");
+    return null;
+  }
   let cssClass = [CLASS_NAME, className].filter(Boolean).join(" ");
   return (
     <StyledBigDate className={cssClass} {...rest}>

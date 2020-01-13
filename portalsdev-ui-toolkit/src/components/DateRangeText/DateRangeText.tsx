@@ -1,12 +1,12 @@
 import React from "react";
-import { format, startOfDay, isEqual, getMinutes } from "date-fns";
+import { format, startOfDay, isEqual, getMinutes, isValid } from "date-fns";
 
 const DATE_FORMAT = "EEE, MMM do";
 
 const getTimeFormat = (date: Date) => (getMinutes(date) === 0 ? "haaaa" : "h:mmaaaa");
 
 export default function DateRangeText(event: DateRangeTextProps) {
-  if (!event.start) return null;
+  if (!isValid(event.start)) return null;
 
   let singleDay =
     (event.start && !event.end) ||
@@ -31,7 +31,7 @@ const renderSingleDay = (event) => (
     <span>
       {format(event.start, DATE_FORMAT)}, {format(event.start, getTimeFormat(event.start))}
     </span>
-    {event.end && (
+    {isValid(event.end) && (
       <>
         <span> - </span>
         <span>{format(event.end, getTimeFormat(event.end))} </span>
