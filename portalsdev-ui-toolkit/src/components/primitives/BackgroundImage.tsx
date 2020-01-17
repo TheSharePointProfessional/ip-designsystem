@@ -16,7 +16,7 @@ export default function BackgroundImage({
 
   return (
     <StyledImageContainer {...additionalProps} className={cssClass}>
-      <Link href={url} className={className}>
+      <Link href={url} className={className} {...additionalProps}>
         <div className="img" style={imageStyles}>
           {children}
         </div>
