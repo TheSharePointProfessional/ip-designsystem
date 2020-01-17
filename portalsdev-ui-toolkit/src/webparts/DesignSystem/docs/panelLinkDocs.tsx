@@ -1,6 +1,7 @@
 import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
 import PanelLink from "../../../components/PanelLink/PanelLink";
+import Card from "../../../components/Card/Card";
 import PropsTable from "./PropsTable";
 import styled from "styled-components";
 
@@ -45,7 +46,36 @@ let docs: ComponentDocumentation = {
       scope: {
         PanelLink,
       },
-      code: `<PanelLink href="https://en.wikipedia.org/wiki/React_(web_framework)" >React Wiki</PanelLink>`,
+      code: `
+<div>
+  <PanelLink
+    href="https://en.wikipedia.org/wiki/React_(web_framework)"
+    title="React Wiki"
+  >
+    Click Me
+  </PanelLink>
+  <br/>
+  <PanelLink
+    href="https://en.wikipedia.org/wiki/React_(web_framework)"
+    title="React Wiki"
+  >
+    <button>Click Me</button>
+  </PanelLink>
+</div>
+`,
+    },
+    {
+      title: "With a Card component",
+      description: "",
+      slug: "with-card",
+      scope: {
+        PanelLink,
+        Card,
+      },
+      code: `<PanelLink href="https://en.wikipedia.org/wiki/React_(web_framework)" title="React Wiki" ><Card>
+  <h1>I am a card</h1>
+  <p>And I am the description of a card</p>        
+</Card></PanelLink>`,
     },
   ],
 };
