@@ -43,21 +43,26 @@ function PanelLink(props: PanelLinkProps) {
   const closePanel = () => setIsOpen(false);
   return (
     <>
-      <StyledLink href="#" onClick={openPanel}>
-        {props.children}
-      </StyledLink>
+      <StyledLink onClick={openPanel}>{props.children}</StyledLink>
       <StyledPanel
         isOpen={isOpen}
         onDismiss={closePanel}
         isLightDismiss
-        type={getPanelSize(props.size)}
-        onRenderNavigation={() => renderNavigation(props.children, closePanel)}
+        type={getPanelSize(props.panelSize)}
+        onRenderNavigation={() => renderNavigation(props.title, closePanel)}
         onRenderBody={() => renderContent(props.href)}
       ></StyledPanel>
     </>
   );
 }
 export default React.memo(PanelLink);
+
+export interface PanelLinkProps {
+  href: string;
+  title?: string;
+  panelSize?: "small" | "medium" | "large";
+  children?: any;
+}
 
 const StyledPanel = styled(Panel)`
   .panel-navigation {
@@ -100,12 +105,7 @@ const StyledLink = styled.a`
   padding: 0;
   color: ${(props) => props.theme.semanticColors.link};
   &:hover {
+    cursor: pointer;
     color: ${(props) => props.theme.semanticColors.linkHovered};
   }
 `;
-
-export interface PanelLinkProps {
-  href: string;
-  size?: "small" | "medium" | "large";
-  children;
-}
