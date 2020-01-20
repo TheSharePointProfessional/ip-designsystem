@@ -21,14 +21,13 @@ let docs: ComponentDocumentation = {
             type: "string",
           },
           {
-            name: "children",
-            isRequired: true,
-            description:
-              "The child element will be rendered as the link text and in the panel header.",
-            type: "any",
+            name: "title",
+            isRequired: false,
+            description: "The title will render in the panel header area.",
+            type: "string",
           },
           {
-            name: "size",
+            name: "panelSize",
             isRequired: false,
             description:
               "Allows setting the size of the panel. You have options of 'small', 'medium', or 'large' with the default being 'medium'.",
