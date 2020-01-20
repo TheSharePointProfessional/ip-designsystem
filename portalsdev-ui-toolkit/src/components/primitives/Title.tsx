@@ -22,7 +22,7 @@ const Title: React.FC<TitleProps> = ({
   let cssClass = [CLASS_NAME, className].filter(Boolean).join(" ");
 
   return (
-    <Link href={url} className={className}>
+    <Link href={url} className={className} {...additionalProps}>
       <StyledTitle {...additionalProps} as={as} className={cssClass}>
         {children}
       </StyledTitle>
