@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 import * as SPScript from "spscript";
 import { debounce } from "../../core/utils/utils";
+import { getThemeValue } from "../PortalsThemeProvider/PortalsThemeProvider";
 
 const getSitePath = (absoluteUrl: string) => {
   if (!absoluteUrl) return null;
@@ -19,7 +20,7 @@ export default class SiteUrlInput extends React.PureComponent<
   state = {
     value: getSitePath(this.props.url) || "",
     isLoading: false,
-    isValid: false,
+    isValid: false
   };
 
   // Try to make a REST API call to get Web info
@@ -38,13 +39,13 @@ export default class SiteUrlInput extends React.PureComponent<
     this.onChange(this.state.value);
   }
 
-  processUrl = (value) => {
+  processUrl = value => {
     // remove the leading slash if it is there
     // if (value[value.length - 1] === "/") value = value.substr(0, value.length - 1);
     return getUrlPrefix() + value;
   };
 
-  onChange = async (value) => {
+  onChange = async value => {
     this.setState({ isLoading: true, value });
     let url = value ? this.processUrl(value) : "";
 
@@ -53,7 +54,7 @@ export default class SiteUrlInput extends React.PureComponent<
     if (this.props.onChange) this.props.onChange(url, isValid);
   };
 
-  onInput = (value) => {
+  onInput = value => {
     this.setState({ isValid: null, value: value });
     this.debouncedOnChange(value);
   };
@@ -69,9 +70,13 @@ export default class SiteUrlInput extends React.PureComponent<
   render() {
     let inputClass = [
       "inputContainer",
-      this.state.isValid === null ? "loading" : this.state.isValid ? "success" : "error",
+      this.state.isValid === null
+        ? "loading"
+        : this.state.isValid
+        ? "success"
+        : "error"
     ]
-      .filter((c) => c)
+      .filter(c => c)
       .join(" ");
 
     return (
@@ -86,7 +91,9 @@ export default class SiteUrlInput extends React.PureComponent<
             onChanged={this.onInput}
             placeholder="/sites/yoursite"
           />
-          {this.state.value && <div className="message">{this.renderMessage()}</div>}
+          {this.state.value && (
+            <div className="message">{this.renderMessage()}</div>
+          )}
         </div>
       </StyledContainer>
     );
@@ -118,10 +125,11 @@ const StyledContainer = styled.div`
   .inputContainer {
     margin-top: 5px;
     &.success .message {
-      color: ${(props) => props.theme.getValue("palette.teal", "#008080")};
+      color: ${props => getThemeValue("palette.teal", "#008080", props.theme)};
     }
     &.error .message {
-      color: ${(props) => props.theme.getValue("palette.redDark", "#8A0002")};
+      color: ${props =>
+        getThemeValue("palette.redDark", "#8A0002", props.theme)};
     }
     &.loading .message {
       color: #888;

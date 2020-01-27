@@ -8,12 +8,15 @@ const checkIsThisSite = function(siteUrl, currentSiteUrl) {
   return !siteUrl || siteUrl.toLowerCase() === currentSiteUrl.toLowerCase();
 };
 
-export default class SitePicker extends React.Component<SitePickerProps, SitePickerState> {
+export default class SitePicker extends React.Component<
+  SitePickerProps,
+  SitePickerState
+> {
   state = {
     siteChoice: checkIsThisSite(this.props.siteUrl, getCurrentSiteUrl())
       ? SiteChoiceType.ThisSite
       : SiteChoiceType.Other,
-    urlIsValid: false,
+    urlIsValid: false
   };
   onChange = (url: string, isValid: boolean) => {
     let siteUrl = null;
@@ -25,7 +28,7 @@ export default class SitePicker extends React.Component<SitePickerProps, SitePic
   onChoiceGroupChange = (choiceKey: SiteChoiceType) => {
     this.setState({ siteChoice: choiceKey });
     if (choiceKey === SiteChoiceType.ThisSite) {
-      this.props.onChange(getCurrentSiteUrl);
+      this.props.onChange(getCurrentSiteUrl());
     }
   };
   render() {

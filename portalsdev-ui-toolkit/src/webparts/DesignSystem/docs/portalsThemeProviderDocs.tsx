@@ -5,7 +5,10 @@ import PropsTable from "./PropsTable";
 import { prism as codeStyle } from "react-syntax-highlighter/dist/esm/styles/prism";
 import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/prism";
 // import SyntaxHighlighter from "react-syntax-highlighter";
-import { getPortalsTheme } from "../../../components/PortalsThemeProvider/PortalsThemeProvider";
+import {
+  getPortalsTheme,
+  getThemeValue,
+} from "../../../components/PortalsThemeProvider/PortalsThemeProvider";
 import styled from "styled-components";
 
 export const StyledColorSwatch = styled.div`
@@ -50,11 +53,11 @@ let docs: ComponentDocumentation = {
       <SyntaxHighlighter language="scss" style={codeStyle}>
         {`margin-top: 5px;
 &.success .message {
-    color: \${(props) => props.theme.getValue("palette.teal", "#008080")};
+    color: \${(props) => getThemeValue("palette.teal", "#008080", props.theme)};
 }
 &.error .message {
     font-size: 14px;
-    color: \${(props) => props.theme.getValue("palette.redDark", "#8A0002")};
+    color: \${(props) => getThemeValue("palette.redDark", "#8A0002", props.theme)};
 }`}
       </SyntaxHighlighter>
       <h3>Setup</h3>
@@ -100,7 +103,7 @@ let docs: ComponentDocumentation = {
       description:
         "You can also get the full theme object with the named export 'getPortalsTheme'.",
       slug: "get-portals-theme",
-      scope: { getPortalsTheme, StyledColorSwatch },
+      scope: { getPortalsTheme, getThemeValue, StyledColorSwatch },
       code: `import { getPortalsTheme } from "../../components/PortalsThemeProvider/PortalsThemeProvider";
 
 () => {
@@ -119,11 +122,11 @@ let docs: ComponentDocumentation = {
                         <StyledColorSwatch>
                             <div
                             className="color"
-                                style={{ background: theme.getValue("palette." + themeParam) }}
+                                style={{ background: getThemeValue("palette." + themeParam) }}
                             />
                             <div>
                                 <div><b>{themeParam}</b></div>
-                                <div><code>{theme.getValue("palette." + themeParam)}</code></div>
+                                <div><code>{getThemeValue("palette." + themeParam)}</code></div>
                             </div>
                         </StyledColorSwatch>
                     ))
