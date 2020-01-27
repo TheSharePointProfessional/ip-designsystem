@@ -21,11 +21,13 @@ export interface TagProps {
 }
 const TAG_CLASS_NAME = "tag";
 
-export function Tag({ url = "", className = "", children }) {
+export function Tag({ url = "", className = "", children, ...additionalProps }) {
   let cssClass = [TAG_CLASS_NAME, className].filter(Boolean).join(" ");
   return (
     <StyledTag className={cssClass}>
-      <Link href={url}>{children}</Link>
+      <Link href={url} {...additionalProps}>
+        {children}
+      </Link>
     </StyledTag>
   );
 }

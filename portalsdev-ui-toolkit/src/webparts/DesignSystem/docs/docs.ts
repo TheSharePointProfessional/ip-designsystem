@@ -12,6 +12,7 @@ import backgroundImageDocs from "./backgroundImageDocs";
 import iconImageDocs from "./iconImageDocs";
 import linkTileDocs from "./linkTileDocs";
 import gridDocs from "./gridDocs";
+import panelLinkDocs from "./panelLinkDocs";
 
 export interface ComponentDemo {
   title: string;
@@ -43,6 +44,7 @@ let components: ComponentDocumentation[] = [
   iconImageDocs,
   linkTileDocs,
   gridDocs,
+  panelLinkDocs,
 ];
 
 export default components.sort((a, b) => (a.title < b.title ? -1 : 1));

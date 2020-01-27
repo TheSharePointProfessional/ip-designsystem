@@ -1,17 +1,35 @@
 import React from "react";
 import styled from "styled-components";
 import { parse as parseUrl } from "url";
+import PanelLink from "../PanelLink/PanelLink";
 
 const CLASS_NAME = "custom-link";
 export interface LinkProps {
   href: string;
   target?: string;
-  className?: string;
-  dataInterception?: "off" | "on";
   [key: string]: any;
 }
 
-const Link: React.FC<LinkProps> = ({
+const Link: React.FC<LinkProps> = ({ href = "", target = "", children, ...additionalProps }) => {
+  //Used by items like card title to render either a link or as just text
+  if (!href) return <>{children}</>;
+  let computedTarget = calculateLinkTarget(href, target);
+  if (computedTarget === "panel") {
+    return (
+      <PanelLink href={href} {...additionalProps}>
+        {children}
+      </PanelLink>
+    );
+  } else {
+    return (
+      <HyperLink href={href} {...additionalProps}>
+        {children}
+      </HyperLink>
+    );
+  }
+};
+
+const HyperLink: React.FC<LinkProps> = ({
   href = "",
   target = "",
   className = "",
