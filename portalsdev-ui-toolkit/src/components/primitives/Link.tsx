@@ -13,8 +13,8 @@ export interface LinkProps {
 const Link: React.FC<LinkProps> = ({ href = "", target = "", children, ...additionalProps }) => {
   //Used by items like card title to render either a link or as just text
   if (!href) return <>{children}</>;
-  let computedTarget = calculateLinkTarget(href, target);
-  if (computedTarget === "panel") {
+
+  if (target === "panel") {
     return (
       <PanelLink href={href} {...additionalProps}>
         {children}
@@ -22,14 +22,14 @@ const Link: React.FC<LinkProps> = ({ href = "", target = "", children, ...additi
     );
   } else {
     return (
-      <HyperLink href={href} {...additionalProps}>
+      <HyperLink href={href} target={target} {...additionalProps}>
         {children}
       </HyperLink>
     );
   }
 };
 
-const HyperLink: React.FC<LinkProps> = ({
+export const HyperLink: React.FC<LinkProps> = ({
   href = "",
   target = "",
   className = "",

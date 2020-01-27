@@ -2,6 +2,7 @@ import React from "react";
 import { Panel, PanelType } from "office-ui-fabric-react/lib/Panel";
 import { IconButton } from "office-ui-fabric-react/lib/Button";
 import { initializeIcons } from "@uifabric/icons";
+import { HyperLink } from "../primitives/Link";
 import styled from "styled-components";
 
 initializeIcons();
@@ -36,21 +37,36 @@ const renderContent = (url) => {
   );
 };
 
-function PanelLink(props: PanelLinkProps) {
+function PanelLink({
+  href,
+  title,
+  children,
+  panelSize = "medium",
+  ...additionalProps
+}: PanelLinkProps) {
   let [isOpen, setIsOpen] = React.useState(false);
 
-  const openPanel = () => setIsOpen(true);
+  const handleLinkClick = (e) => {
+    e.preventDefault();
+    setIsOpen(true);
+    if (additionalProps.onClick) {
+      additionalProps.onClick(e);
+    }
+  };
   const closePanel = () => setIsOpen(false);
   return (
     <>
-      <StyledLink onClick={openPanel}>{props.children}</StyledLink>
+      {/* <StyledLink onClick={handleLinkClick}>{children}</StyledLink> */}
+      <HyperLink {...additionalProps} href={href} onClick={handleLinkClick}>
+        {children}
+      </HyperLink>
       <StyledPanel
         isOpen={isOpen}
         onDismiss={closePanel}
         isLightDismiss
-        type={getPanelSize(props.panelSize)}
-        onRenderNavigation={() => renderNavigation(props.title, closePanel)}
-        onRenderBody={() => renderContent(props.href)}
+        type={getPanelSize(panelSize)}
+        onRenderNavigation={() => renderNavigation(title, closePanel)}
+        onRenderBody={() => renderContent(href)}
       ></StyledPanel>
     </>
   );
@@ -62,6 +78,7 @@ export interface PanelLinkProps {
   title?: string;
   panelSize?: "small" | "medium" | "large";
   children?: any;
+  [key: string]: any;
 }
 
 const StyledPanel = styled(Panel)`
@@ -71,7 +88,6 @@ const StyledPanel = styled(Panel)`
     padding: 10px;
     max-height: 52px;
     background: ${(props) => props.theme.palette.themePrimary};
-    /* color: ${(props) => props.theme.semanticColors.bodyText}; */
     color: white;
     .panel-title {
       font-size: 24px;
@@ -97,15 +113,5 @@ const StyledPanel = styled(Panel)`
   iframe {
     height: 100%;
     width: 100%;
-  }
-`;
-
-const StyledLink = styled.a`
-  text-decoration: none;
-  padding: 0;
-  color: ${(props) => props.theme.semanticColors.link};
-  &:hover {
-    cursor: pointer;
-    color: ${(props) => props.theme.semanticColors.linkHovered};
   }
 `;
