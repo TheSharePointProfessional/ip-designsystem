@@ -47,6 +47,9 @@
   "peerDependencies": {
     "styled-components": ">= 4"
   },
+  "browserslist": [
+    "last 2 Chrome versions"
+],
   "devDependencies": {
     "@microsoft/rush-stack-compiler-3.5": "~0.2.x",
     "@microsoft/sp-build-web": "1.9.1",
