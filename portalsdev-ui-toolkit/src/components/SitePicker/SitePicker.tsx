@@ -8,15 +8,12 @@ const checkIsThisSite = function(siteUrl, currentSiteUrl) {
   return !siteUrl || siteUrl.toLowerCase() === currentSiteUrl.toLowerCase();
 };
 
-export default class SitePicker extends React.Component<
-  SitePickerProps,
-  SitePickerState
-> {
+export default class SitePicker extends React.Component<SitePickerProps, SitePickerState> {
   state = {
     siteChoice: checkIsThisSite(this.props.siteUrl, getCurrentSiteUrl())
       ? SiteChoiceType.ThisSite
       : SiteChoiceType.Other,
-    urlIsValid: false
+    urlIsValid: false,
   };
   onChange = (url: string, isValid: boolean) => {
     let siteUrl = null;
@@ -36,6 +33,7 @@ export default class SitePicker extends React.Component<
 
     return (
       <StyledContainer className="site-picker">
+        <span className="connected-to">Currently Connected to: {this.props.siteUrl}</span>
         <SiteChoiceGroup
           label={this.props.label}
           value={siteChoice}
@@ -45,7 +43,6 @@ export default class SitePicker extends React.Component<
           disabled={siteChoice === SiteChoiceType.ThisSite}
           url={this.props.siteUrl}
           onChange={this.onChange}
-          key={this.props.siteUrl + siteChoice}
         />
       </StyledContainer>
     );
@@ -55,6 +52,9 @@ export default class SitePicker extends React.Component<
 const StyledContainer = styled.div`
   position: relative;
   box-sizing: border-box;
+  .connected-to {
+    font-size: 12px;
+  }
 `;
 export interface SitePickerProps {
   //props
