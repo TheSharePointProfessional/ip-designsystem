@@ -51,6 +51,7 @@ export default class PropertyFieldThemeColor
       onChange: (newValue) => {
         this.properties.onUpdate(this.targetProperty, newValue);
       },
+      disabled: this.properties.disabled
     };
     var reactComponent = React.createElement(ThemeColorPicker, props);
     ReactDOM.render(reactComponent, elem);
