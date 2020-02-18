@@ -12,6 +12,7 @@ export interface PropertyFieldThemeColorProperties {
   onUpdate: (targetProp: string, newValue: any) => void;
   value: string;
   label: string;
+  disabled?: boolean;
 }
 
 export interface _PropertyFieldThemeColorProperties
