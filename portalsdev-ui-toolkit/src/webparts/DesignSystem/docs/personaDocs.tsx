@@ -9,7 +9,10 @@ let documentation: ComponentDocumentation = {
   id: "Persona",
   description: (
     <>
-      <p>Displays a user with a photo and title.</p>
+      <p>
+        Displays a user with a photo and title, can be configured to show subtitle and information
+        as well as a call to action button.
+      </p>
       <PropsTable
         props={[
           {
