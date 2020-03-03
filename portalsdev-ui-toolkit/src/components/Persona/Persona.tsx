@@ -2,6 +2,7 @@ import React from "react";
 import Thumbnail from "../primitives/Thumbnail";
 import Link from "../primitives/Link";
 import styled from "styled-components";
+import { getSiteUrl } from "../../core/utils/sharepointUtils";
 
 function Persona({
   photo,
@@ -12,6 +13,11 @@ function Persona({
   callToAction,
   orientation = "horizontal",
 }: PersonaProps) {
+  let profilePicture = (photo) => {
+    let siteUrl = getSiteUrl();
+    return photo ? photo : `${siteUrl}/_layouts/15/userphoto.aspx?size=L`;
+  };
+
   return (
     <ConditionalWrapper
       condition={linkUrl && !callToAction}
@@ -22,7 +28,7 @@ function Persona({
       )}
     >
       <StyledPersona orientation={orientation} className="persona">
-        <Thumbnail src={photo} shape="circle" className="photo" />
+        <Thumbnail src={profilePicture(photo)} shape="circle" className="photo" />
         <div className="details">
           <div className="textWrapper">
             <div className="title">{title}</div>
