@@ -2,6 +2,7 @@ import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
 import Persona from "../../../components/Persona/Persona";
 import Card from "../../../components/Card/Card";
+import Grid from "../../../components/Grid/Grid";
 import PropsTable from "./PropsTable";
 
 let documentation: ComponentDocumentation = {
@@ -16,10 +17,49 @@ let documentation: ComponentDocumentation = {
       <PropsTable
         props={[
           {
-            name: "date",
+            name: "photo",
             isRequired: true,
-            type: "Date",
-            description: "The date to be display",
+            type: "String",
+            description: "Renders a circle image",
+          },
+          {
+            name: "title",
+            isRequired: true,
+            type: "String",
+            description: "This is the primary text, usually used for a users name.",
+          },
+          {
+            name: "subTitle",
+            isRequired: false,
+            type: "String",
+            description: "This is secondary text, slightly lighter in focus and size than title.",
+          },
+          {
+            name: "info",
+            isRequired: false,
+            type: "String",
+            description: "This is secondary text, slightly smaller in size than subTitle.",
+          },
+          {
+            name: "linkUrl",
+            isRequired: false,
+            type: "String",
+            description:
+              "If provided this will wrap the persona in a link that will open the linkUrl provided in a new tab. If there is also a call to action provided, a button will render in the Persona instead of the whole Persona being clickable.",
+          },
+          {
+            name: "callToAction",
+            isRequired: false,
+            type: "String",
+            description:
+              "This will render a button with the provided text below the title if and only if a linkUrl is provided.",
+          },
+          {
+            name: "orientation",
+            isRequired: false,
+            type: "horizontal | vertical",
+            description:
+              "Defaults to horizontal, this changes the items orientation to render the details below the photo, 'vertical' or beside it.",
           },
           {
             name: "className",
@@ -49,7 +89,7 @@ let documentation: ComponentDocumentation = {
     subTitle="Software Engineer"
     info="Modern Workplace"
     callToAction="Learn More"
-    linkUrl="google.com"
+    linkUrl="https://wikipedia.com"
 />`,
     },
     {
@@ -64,7 +104,7 @@ let documentation: ComponentDocumentation = {
         subTitle="Software Engineer"
         info="Modern Workplace"
         callToAction="Learn More"
-        linkUrl="google.com"
+        linkUrl="https://wikipedia.com"
     />
 </Card>`,
     },
@@ -108,7 +148,7 @@ return (
             subTitle="Software Engineer"
             info="Modern Workplace"
             callToAction="Learn More"
-            linkUrl="google.com"
+            linkUrl="https://wikipedia.com"
         />
     </Card>
     </>
@@ -127,7 +167,7 @@ return (
         title="Will Spiering"
         subTitle="Software Engineer"
         callToAction="Learn More"
-        linkUrl="google.com"
+        linkUrl="https://wikipedia.com"
     />
 </Card>`,
     },
@@ -141,7 +181,7 @@ return (
         photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
         title="Will Spiering"
         callToAction="Learn More"
-        linkUrl="google.com"
+        linkUrl="https://wikipedia.com"
     />
 </Card>`,
     },
@@ -149,15 +189,57 @@ return (
       title: "No Call to Action",
       slug: "no-call-to-action",
       description: "",
-      scope: { Persona, Card },
-      code: `<Card>
+      scope: { Persona },
+      code: `<Persona 
+    photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    title="Will Spiering"
+    subTitle="Software Engineer"
+    linkUrl="https://wikipedia.com"
+/>`,
+    },
+    {
+      title: "Inside Grid",
+      slug: "inside-grid",
+      description: "",
+      scope: { Persona, Grid },
+      code: `<Grid size="250px">
     <Persona 
         photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
         title="Will Spiering"
         subTitle="Software Engineer"
-        linkUrl="google.com"
+        linkUrl="https://wikipedia.com"
     />
-</Card>`,
+    <Persona 
+        photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        title="Will Spiering"
+        subTitle="Software Engineer"
+        linkUrl="https://wikipedia.com"
+    />
+    <Persona 
+        photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        title="Will Spiering"
+        subTitle="Software Engineer"
+        linkUrl="https://wikipedia.com"
+    />
+    <Persona 
+        photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        title="Will Spiering"
+        subTitle="Software Engineer"
+        linkUrl="https://wikipedia.com"
+    />
+    <Persona 
+        photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        title="Will Spiering"
+        subTitle="Software Engineer"
+        linkUrl="https://wikipedia.com"
+    />
+    <Persona 
+        photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        title="Will Spiering"
+        subTitle="Software Engineer"
+        linkUrl="https://wikipedia.com"
+    />
+</Grid>`,
     },
   ],
 };
