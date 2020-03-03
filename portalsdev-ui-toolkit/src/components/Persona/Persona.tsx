@@ -13,27 +13,36 @@ function Persona({
   orientation = "horizontal",
 }: PersonaProps) {
   return (
-    <StyledPersona orientation={orientation} className="persona">
-      <Thumbnail src={photo} shape="circle" className="photo" />
-      <div className="details">
-        <div className="textWrapper">
-          <div className="title">{title}</div>
-          {subTitle && <div className="subtitle">{subTitle}</div>}
-          {info && <div className="info">{info}</div>}
+    <ConditionalWrapper
+      condition={linkUrl && !callToAction}
+      wrapper={(children) => (
+        <StyledPersonaLink href={linkUrl} className="personaLink">
+          {children}
+        </StyledPersonaLink>
+      )}
+    >
+      <StyledPersona orientation={orientation} className="persona">
+        <Thumbnail src={photo} shape="circle" className="photo" />
+        <div className="details">
+          <div className="textWrapper">
+            <div className="title">{title}</div>
+            {subTitle && <div className="subtitle">{subTitle}</div>}
+            {info && <div className="info">{info}</div>}
+          </div>
+          {linkUrl && callToAction && (
+            <Link href={linkUrl} className="callToAction">
+              {callToAction}
+            </Link>
+          )}
         </div>
-        {linkUrl && callToAction && (
-          <Link href={linkUrl} className="callToAction">
-            {callToAction}
-          </Link>
-        )}
-      </div>
-    </StyledPersona>
+      </StyledPersona>
+    </ConditionalWrapper>
   );
 }
 export default React.memo(Persona);
 
 export interface PersonaProps {
-  photo?: string;
+  photo: string;
   title: string;
   subTitle?: string;
   info?: string;
@@ -41,6 +50,10 @@ export interface PersonaProps {
   callToAction?: string;
   orientation?: "horizontal" | "vertical";
 }
+
+const ConditionalWrapper = ({ condition, wrapper, children }) => {
+  return condition ? wrapper(children) : children;
+};
 
 const StyledPersona = styled.div`
   display: flex;
@@ -92,5 +105,21 @@ const StyledPersona = styled.div`
       outline: none;
       cursor: pointer;
     }
+  }
+`;
+
+const StyledPersonaLink = styled(Link)`
+  border-radius: 5px;
+  :hover {
+    background: ${(props) => props.theme.palette.themeSecondary};
+    .title,
+    .subtitle,
+    .info {
+      color: ${(props) => props.theme.palette.white};
+      text-decoration: none;
+    }
+  }
+  .persona {
+    padding: 10px;
   }
 `;
