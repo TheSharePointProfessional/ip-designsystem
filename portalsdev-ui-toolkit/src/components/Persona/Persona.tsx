@@ -19,14 +19,7 @@ function Persona({
   };
 
   return (
-    <ConditionalWrapper
-      condition={linkUrl && !callToAction}
-      wrapper={(children) => (
-        <StyledPersonaLink href={linkUrl} className="personaLink">
-          {children}
-        </StyledPersonaLink>
-      )}
-    >
+    <StyledPersonaLink href={callToAction ? "" : linkUrl} className="personaLink">
       <StyledPersona orientation={orientation} className="persona">
         <Thumbnail src={profilePicture(photo)} shape="circle" className="photo" />
         <div className="details">
@@ -42,13 +35,13 @@ function Persona({
           )}
         </div>
       </StyledPersona>
-    </ConditionalWrapper>
+    </StyledPersonaLink>
   );
 }
 export default React.memo(Persona);
 
 export interface PersonaProps {
-  photo: string;
+  photo?: string;
   title: string;
   subTitle?: string;
   info?: string;
@@ -57,21 +50,18 @@ export interface PersonaProps {
   orientation?: "horizontal" | "vertical";
 }
 
-const ConditionalWrapper = ({ condition, wrapper, children }) => {
-  return condition ? wrapper(children) : children;
-};
-
 const StyledPersona = styled.div`
   display: flex;
   flex-direction: ${(props) => (props.orientation === "horizontal" ? "row" : "column")};
-  justify-content: space-around;
+  justify-content: ${(props) =>
+    props.orientation === "horizontal" ? "flex-start" : "space-around"};
   align-items: center;
   padding: 5px;
   .details {
-    text-align: center;
+    text-align: ${(props) => (props.orientation === "horizontal" ? "left" : "center")};
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: ${(props) => (props.orientation === "horizontal" ? "flex-start" : "center")};
     justify-content: space-between;
     padding: 5px;
   }
