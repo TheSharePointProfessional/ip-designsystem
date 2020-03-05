@@ -1,7 +1,6 @@
 import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
 import Persona from "../../../components/Persona/Persona";
-import Card from "../../../components/Card/Card";
 import Grid from "../../../components/Grid/Grid";
 import PropsTable from "./PropsTable";
 
@@ -62,6 +61,12 @@ let documentation: ComponentDocumentation = {
               "Defaults to horizontal, this changes the items orientation to render the details below the photo, 'vertical' or beside it.",
           },
           {
+            name: "isCard",
+            isRequired: false,
+            type: "boolean",
+            description: "Defaults to false, if true will render the persona inside a card.",
+          },
+          {
             name: "className",
             isRequired: false,
             type: "string",
@@ -96,23 +101,22 @@ let documentation: ComponentDocumentation = {
       title: "Inside Card",
       slug: "inside-card",
       description: "",
-      scope: { Persona, Card },
-      code: `<Card>
-    <Persona 
-        photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-        title="Will Spiering"
-        subTitle="Software Engineer"
-        info="Modern Workplace"
-        callToAction="Learn More"
-        linkUrl="https://wikipedia.com"
-    />
-</Card>`,
+      scope: { Persona },
+      code: `<Persona 
+    photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    title="Will Spiering"
+    subTitle="Software Engineer"
+    info="Modern Workplace"
+    callToAction="Learn More"
+    linkUrl="https://wikipedia.com"
+    isCard
+/>`,
     },
     {
       title: "Item Orientation",
       slug: "item-orientation",
       description: "",
-      scope: { Persona, Card },
+      scope: { Persona },
       code: `()=> {
 let [orientation, setOrientation] = React.useState("horizontal");
 
@@ -140,17 +144,16 @@ return (
         <label htmlFor="vertical">Vertical</label>
         <br />
     </div>
-    <Card>
-        <Persona
-            orientation={orientation}
-            photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-            title="Will Spiering"
-            subTitle="Software Engineer"
-            info="Modern Workplace"
-            callToAction="Learn More"
-            linkUrl="https://wikipedia.com"
-        />
-    </Card>
+      <Persona
+          orientation={orientation}
+          photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          title="Will Spiering"
+          subTitle="Software Engineer"
+          info="Modern Workplace"
+          callToAction="Learn More"
+          linkUrl="https://wikipedia.com"
+          isCard
+      />
     </>
 );
 }
@@ -160,30 +163,26 @@ return (
       title: "No Info",
       slug: "no-info",
       description: "",
-      scope: { Persona, Card },
-      code: `<Card>
-    <Persona 
-        photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-        title="Will Spiering"
-        subTitle="Software Engineer"
-        callToAction="Learn More"
-        linkUrl="https://wikipedia.com"
-    />
-</Card>`,
+      scope: { Persona },
+      code: `<Persona 
+    photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    title="Will Spiering"
+    subTitle="Software Engineer"
+    callToAction="Learn More"
+    linkUrl="https://wikipedia.com"
+/>`,
     },
     {
       title: "No Subtitle",
       slug: "no-subtitle",
       description: "",
-      scope: { Persona, Card },
-      code: `<Card>
-    <Persona 
-        photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-        title="Will Spiering"
-        callToAction="Learn More"
-        linkUrl="https://wikipedia.com"
-    />
-</Card>`,
+      scope: { Persona },
+      code: `<Persona 
+    photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    title="Will Spiering"
+    callToAction="Learn More"
+    linkUrl="https://wikipedia.com"
+/>`,
     },
     {
       title: "No Call to Action",
