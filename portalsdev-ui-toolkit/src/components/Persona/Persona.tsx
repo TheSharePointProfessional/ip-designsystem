@@ -3,6 +3,7 @@ import Thumbnail from "../primitives/Thumbnail";
 import Link from "../primitives/Link";
 import styled from "styled-components";
 import { getSiteUrl } from "../../core/utils/sharepointUtils";
+import Card from "../Card/Card";
 
 function Persona({
   photo,
@@ -12,30 +13,44 @@ function Persona({
   linkUrl,
   callToAction,
   orientation = "horizontal",
+  isCard,
 }: PersonaProps) {
   let profilePicture = (photo) => {
     let siteUrl = getSiteUrl();
     return photo ? photo : `${siteUrl}/_layouts/15/userphoto.aspx?size=L`;
   };
 
-  return (
-    <StyledPersonaLink href={callToAction ? "" : linkUrl} className="personaLink">
-      <StyledPersona orientation={orientation} className="persona">
-        <Thumbnail src={profilePicture(photo)} shape="circle" className="photo" />
-        <div className="details">
-          <div className="textWrapper">
-            <div className="title">{title}</div>
-            {subTitle && <div className="subtitle">{subTitle}</div>}
-            {info && <div className="info">{info}</div>}
-          </div>
-          {linkUrl && callToAction && (
-            <Link href={linkUrl} className="callToAction">
-              {callToAction}
-            </Link>
-          )}
+  let persona = (
+    <StyledPersona orientation={orientation} className="persona" callToAction={callToAction}>
+      <Thumbnail src={profilePicture(photo)} shape="circle" className="photo" />
+      <div className="details">
+        <div className="textWrapper">
+          <div className="title">{title}</div>
+          {subTitle && <div className="subtitle">{subTitle}</div>}
+          {info && <div className="info">{info}</div>}
         </div>
-      </StyledPersona>
-    </StyledPersonaLink>
+        {linkUrl && callToAction && (
+          <Link href={linkUrl} className="callToAction">
+            {callToAction}
+          </Link>
+        )}
+      </div>
+    </StyledPersona>
+  );
+
+  const renderContent = () => {
+    if (isCard) {
+      return <StyledPersonaCard className="personaCard">{persona}</StyledPersonaCard>;
+    }
+    return persona;
+  };
+
+  return (
+    <div className="personaWrapper">
+      <StyledPersonaLink href={callToAction ? "" : linkUrl} className="personaLink">
+        {renderContent()}
+      </StyledPersonaLink>
+    </div>
   );
 }
 export default React.memo(Persona);
@@ -48,6 +63,7 @@ export interface PersonaProps {
   linkUrl?: string;
   callToAction?: string;
   orientation?: "horizontal" | "vertical";
+  isCard?: boolean;
 }
 
 const StyledPersona = styled.div`
@@ -57,11 +73,16 @@ const StyledPersona = styled.div`
     props.orientation === "horizontal" ? "flex-start" : "space-around"};
   align-items: center;
   padding: 5px;
+  .photo {
+    margin-right: ${(props) => (props.orientation === "horizontal" ? "10px" : 0)};
+  }
   .details {
-    text-align: ${(props) => (props.orientation === "horizontal" ? "left" : "center")};
+    text-align: ${(props) =>
+      props.orientation === "horizontal" && !props.callToAction ? "left" : "center"};
     display: flex;
     flex-direction: column;
-    align-items: ${(props) => (props.orientation === "horizontal" ? "flex-start" : "center")};
+    align-items: ${(props) =>
+      props.orientation === "horizontal" && !props.callToAction ? "flex-start" : "center"};
     justify-content: space-between;
     padding: 5px;
   }
@@ -105,8 +126,12 @@ const StyledPersona = styled.div`
 `;
 
 const StyledPersonaLink = styled(Link)`
-  border-radius: 5px;
-  :hover {
+  > .persona {
+    border-radius: 5px;
+    padding: 10px;
+  }
+  :hover > .persona,
+  :hover > .personaCard {
     background: ${(props) => props.theme.palette.themeSecondary};
     .title,
     .subtitle,
@@ -115,7 +140,14 @@ const StyledPersonaLink = styled(Link)`
       text-decoration: none;
     }
   }
+`;
+
+const StyledPersonaCard = styled(Card)`
   .persona {
-    padding: 10px;
+    padding: 5px;
+    .details {
+      text-align: center;
+      align-items: center;
+    }
   }
 `;
