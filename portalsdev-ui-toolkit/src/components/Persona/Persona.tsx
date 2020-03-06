@@ -143,6 +143,7 @@ const StyledPersonaLink = styled(Link)`
 `;
 
 const StyledPersonaCard = styled(Card)`
+  box-sizing: border-box;
   .persona {
     padding: 5px;
     .details {
