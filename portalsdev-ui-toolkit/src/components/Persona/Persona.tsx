@@ -144,6 +144,7 @@ const StyledPersonaLink = styled(Link)`
 
 const StyledPersonaCard = styled(Card)`
   box-sizing: border-box;
+  width: 100%;
   .persona {
     padding: 5px;
     .details {
