@@ -13,44 +13,44 @@ function Persona({
   linkUrl,
   callToAction,
   orientation = "horizontal",
-  isCard,
+  photoSize,
 }: PersonaProps) {
   let profilePicture = (photo) => {
     let siteUrl = getSiteUrl();
     return photo ? photo : `${siteUrl}/_layouts/15/userphoto.aspx?size=L`;
   };
 
-  let persona = (
-    <StyledPersona orientation={orientation} className="persona" callToAction={callToAction}>
-      <Thumbnail src={profilePicture(photo)} shape="circle" className="photo" />
-      <div className="details">
-        <div className="textWrapper">
-          <div className="title">{title}</div>
-          {subTitle && <div className="subtitle">{subTitle}</div>}
-          {info && <div className="info">{info}</div>}
-        </div>
-        {linkUrl && callToAction && (
-          <Link href={linkUrl} className="callToAction">
-            {callToAction}
-          </Link>
-        )}
-      </div>
-    </StyledPersona>
-  );
-
-  const renderContent = () => {
-    if (isCard) {
-      return <StyledPersonaCard className="personaCard">{persona}</StyledPersonaCard>;
-    }
-    return persona;
-  };
-
   return (
-    <div className="personaWrapper">
-      <StyledPersonaLink href={callToAction ? "" : linkUrl} className="personaLink">
-        {renderContent()}
-      </StyledPersonaLink>
-    </div>
+    <StyledPersonaWrapper
+      className="personaWrapper"
+      orientation={orientation}
+      callToAction={callToAction}
+      photoSize={photoSize}
+    >
+      <Link href={callToAction ? "" : linkUrl} className="personaLink">
+        <div className="persona">
+          <Thumbnail
+            src={profilePicture(photo)}
+            shape="circle"
+            className="photo"
+            height={photoSize}
+            width={photoSize}
+          />
+          <div className="details">
+            <div className="textWrapper">
+              <div className="title">{title}</div>
+              {subTitle && <div className="subtitle">{subTitle}</div>}
+              {info && <div className="info">{info}</div>}
+            </div>
+            {linkUrl && callToAction && (
+              <Link href={linkUrl} className="callToAction">
+                {callToAction}
+              </Link>
+            )}
+          </div>
+        </div>
+      </Link>
+    </StyledPersonaWrapper>
   );
 }
 export default React.memo(Persona);
@@ -63,81 +63,79 @@ export interface PersonaProps {
   linkUrl?: string;
   callToAction?: string;
   orientation?: "horizontal" | "vertical";
-  isCard?: boolean;
+  photoSize?: string;
 }
 
-const StyledPersona = styled.div`
-  display: flex;
-  flex-direction: ${(props) => (props.orientation === "horizontal" ? "row" : "column")};
-  justify-content: ${(props) =>
-    props.orientation === "horizontal" ? "flex-start" : "space-around"};
-  align-items: center;
-  padding: 5px;
-  .photo {
-    margin-right: ${(props) => (props.orientation === "horizontal" ? "10px" : 0)};
-  }
-  .details {
-    text-align: ${(props) =>
-      props.orientation === "horizontal" && !props.callToAction ? "left" : "center"};
-    display: flex;
-    flex-direction: column;
-    align-items: ${(props) =>
-      props.orientation === "horizontal" && !props.callToAction ? "flex-start" : "center"};
-    justify-content: space-between;
-    padding: 5px;
-  }
-  .textWrapper {
-  }
-  .title {
-    color: ${(props) => props.theme.semanticColors.bodyText};
-    font-weight: 600;
-    font-size: 15px;
-    line-height: normal;
-  }
-  .subtitle {
-    color: ${(props) => props.theme.semanticColors.bodySubtext};
-    font-size: 13px;
-    line-height: normal;
-  }
-  .info {
-    color: ${(props) => props.theme.semanticColors.bodySubtext};
-    font-size: 12px;
-    line-height: normal;
-  }
-  .callToAction {
-    margin-top: 10px;
-    color: #fff;
-    background: ${(props) => props.theme.palette.themePrimary};
-    padding: 8px 20px;
-    text-decoration: none;
-    border-radius: 20px;
-    display: inline-block;
-    font-size: 13px;
-    border: none;
-    &:hover,
-    &:active,
-    &:focus {
-      color: #fff;
-      background-color: ${(props) => props.theme.palette.themeSecondary};
-      outline: none;
-      cursor: pointer;
+const StyledPersonaWrapper = styled.div`
+  .personaLink {
+    > .persona {
+      border-radius: 5px;
+      padding: 10px;
+    }
+    :hover > .persona {
+      background: ${(props) => props.theme.palette.themeSecondary};
+      .title,
+      .subtitle,
+      .info {
+        color: ${(props) => props.theme.palette.white};
+        text-decoration: none;
+      }
     }
   }
-`;
-
-const StyledPersonaLink = styled(Link)`
-  > .persona {
-    border-radius: 5px;
-    padding: 10px;
-  }
-  :hover > .persona,
-  :hover > .personaCard {
-    background: ${(props) => props.theme.palette.themeSecondary};
-    .title,
-    .subtitle,
+  .persona {
+    display: flex;
+    flex-direction: ${(props) => (props.orientation === "horizontal" ? "row" : "column")};
+    justify-content: ${(props) =>
+      props.orientation === "horizontal" ? "flex-start" : "space-around"};
+    align-items: center;
+    padding: 5px;
+    .photo {
+      margin-right: ${(props) => (props.orientation === "horizontal" ? "10px" : 0)};
+    }
+    .details {
+      text-align: ${(props) => (props.orientation === "horizontal" ? "left" : "center")};
+      display: flex;
+      flex-direction: column;
+      align-items: ${(props) => (props.orientation === "horizontal" ? "flex-start" : "center")};
+      justify-content: space-between;
+      padding: 5px;
+    }
+    .textWrapper {
+    }
+    .title {
+      color: ${(props) => props.theme.semanticColors.bodyText};
+      font-weight: 600;
+      font-size: 15px;
+      line-height: normal;
+    }
+    .subtitle {
+      color: ${(props) => props.theme.semanticColors.bodySubtext};
+      font-size: 13px;
+      line-height: normal;
+    }
     .info {
-      color: ${(props) => props.theme.palette.white};
+      color: ${(props) => props.theme.semanticColors.bodySubtext};
+      font-size: 12px;
+      line-height: normal;
+    }
+    .callToAction {
+      margin-top: 10px;
+      color: #fff;
+      background: ${(props) => props.theme.palette.themePrimary};
+      padding: 8px 20px;
       text-decoration: none;
+      border-radius: 20px;
+      display: inline-block;
+      font-size: 13px;
+      border: none;
+      &:hover,
+      &:active,
+      &:focus {
+        color: #fff;
+        background-color: ${(props) => props.theme.palette.themeSecondary};
+        outline: none;
+        cursor: pointer;
+      }
     }
   }
 `;
