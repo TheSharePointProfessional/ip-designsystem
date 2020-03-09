@@ -1,6 +1,7 @@
 import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
 import Persona from "../../../components/Persona/Persona";
+import PersonaCard from "../../../components/Persona/PersonaCard";
 import Grid from "../../../components/Grid/Grid";
 import PropsTable from "./PropsTable";
 
@@ -61,10 +62,11 @@ let documentation: ComponentDocumentation = {
               "Defaults to horizontal, this changes the items orientation to render the details below the photo, 'vertical' or beside it.",
           },
           {
-            name: "isCard",
+            name: "photoSize",
             isRequired: false,
-            type: "boolean",
-            description: "Defaults to false, if true will render the persona inside a card.",
+            type: "String",
+            description:
+              "Defaults to 100px, this sets the height and width of the photo to be the same height to maintain the correct aspect ratio",
           },
           {
             name: "className",
@@ -100,16 +102,16 @@ let documentation: ComponentDocumentation = {
     {
       title: "Inside Card",
       slug: "inside-card",
-      description: "",
-      scope: { Persona },
-      code: `<Persona 
+      description:
+        "To render the persona inside a card, use the PersonaCard component. It uses the same props as the default Persona but the text and call to action are always centered.",
+      scope: { PersonaCard },
+      code: `<PersonaCard 
     photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
     title="Will Spiering"
     subTitle="Software Engineer"
     info="Modern Workplace"
     callToAction="Learn More"
     linkUrl="https://wikipedia.com"
-    isCard
 />`,
     },
     {
@@ -152,7 +154,6 @@ return (
           info="Modern Workplace"
           callToAction="Learn More"
           linkUrl="https://wikipedia.com"
-          isCard
       />
     </>
 );
