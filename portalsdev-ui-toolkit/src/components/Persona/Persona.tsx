@@ -3,7 +3,6 @@ import Thumbnail from "../primitives/Thumbnail";
 import Link from "../primitives/Link";
 import styled from "styled-components";
 import { getSiteUrl } from "../../core/utils/sharepointUtils";
-import Card from "../Card/Card";
 
 function Persona({
   photo,
@@ -136,18 +135,6 @@ const StyledPersonaWrapper = styled.div`
         outline: none;
         cursor: pointer;
       }
-    }
-  }
-`;
-
-const StyledPersonaCard = styled(Card)`
-  box-sizing: border-box;
-  width: 100%;
-  .persona {
-    padding: 5px;
-    .details {
-      text-align: center;
-      align-items: center;
     }
   }
 `;
