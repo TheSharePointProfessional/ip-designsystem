@@ -30,8 +30,8 @@ let docs: ComponentDocumentation = {
             name: "panelSize",
             isRequired: false,
             description:
-              "Allows setting the size of the panel. You have options of 'small', 'medium', or 'large' with the default being 'medium'.",
-            type: "string",
+              "Allows setting the size of the panel. You have options of 'small', 'medium', 'large', or a number value. The default is 'medium'. If you use a number that will be the width of the panel in pixels, and if the screen size is equal to or less than this value it behaves as a fluid full width panel.",
+            type: "string | number",
           },
         ]}
       />

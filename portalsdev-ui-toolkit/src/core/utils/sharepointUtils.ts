@@ -1,3 +1,5 @@
+import SPScript from "spscript";
+
 export function checkIsSharePointLink(url: string) {
   return url && url.search(/\.sharepoint\.com/i) > -1;
 }
@@ -10,7 +12,8 @@ export function getCurrentSiteCollectionUrl() {
 }
 
 export function getSiteUrl(url?: string) {
-  if (!url && window.__portalsDev && window.__portalsDev.siteUrl) return window.__portalsDev.siteUrl;
+  if (!url && window.__portalsDev && window.__portalsDev.siteUrl)
+    return window.__portalsDev.siteUrl;
 
   url = (url || window.location.href).toLowerCase();
   let managedPathIndex = url.search(/\/sites\/|\/teams\//i);
@@ -20,7 +23,7 @@ export function getSiteUrl(url?: string) {
     url.indexOf("/", managedPathIndex + 7),
     url.indexOf("?", managedPathIndex + 7),
     url.indexOf("#", managedPathIndex + 7),
-  ].filter(i => i > -1);
+  ].filter((i) => i > -1);
   let targetIndex = Math.min(...trailingCharIndexes);
   if (targetIndex > -1) {
     siteUrl = url.substring(0, targetIndex);
@@ -41,6 +44,15 @@ export function getTenant(url?: string) {
   return subdomain.split("-")[0];
 }
 
+export async function checkListExists(siteUrl: string, listName: string) {
+  try {
+    let ctx = SPScript.createContext(siteUrl);
+    let listInfo = await ctx.lists(listName).getInfo();
+    return true;
+  } catch (err) {
+    return false;
+  }
+}
 
 declare global {
   interface Window {

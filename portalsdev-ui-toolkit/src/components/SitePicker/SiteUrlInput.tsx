@@ -5,104 +5,98 @@ import styled from "styled-components";
 import * as SPScript from "spscript";
 import { debounce } from "../../core/utils/utils";
 import { getThemeValue } from "../PortalsThemeProvider/PortalsThemeProvider";
+import { useState, useReducer } from "react";
+import useDebounce from "../../hooks/useDebounce";
 
-const getSitePath = (absoluteUrl: string) => {
-  if (!absoluteUrl) return null;
-  let siteUrlIndex = absoluteUrl.toLowerCase().search(/\/sites\/|\/teams\//i);
-  if (siteUrlIndex < 0) return null;
-  return absoluteUrl.substring(siteUrlIndex);
-};
+function reducer(state, action) {
+  switch (action.type) {
+    case "value:change":
+      return {
+        ...state,
+        isValid: null,
+        value: action.value,
+      };
+    case "validate:start":
+      return {
+        ...state,
+        isValid: null,
+        isLoading: true,
+      };
+    case "validate:complete":
+      return {
+        ...state,
+        isValid: action.isValid,
+        isLoading: false,
+      };
 
-export default class SiteUrlInput extends React.PureComponent<
-  SiteUrlInputProps,
-  SiteUrlInputState
-> {
-  state = {
-    value: getSitePath(this.props.url) || "",
-    isLoading: false,
-    isValid: false
-  };
-
-  // Try to make a REST API call to get Web info
-  validateUrl = async function(url) {
-    if (!url) return false;
-    try {
-      let ctx = SPScript.createContext(url);
-      let data = await ctx.get("/web");
-      return true;
-    } catch (err) {
-      return false;
-    }
-  };
-
-  async componentDidMount() {
-    this.onChange(this.state.value);
-  }
-
-  processUrl = value => {
-    // remove the leading slash if it is there
-    // if (value[value.length - 1] === "/") value = value.substr(0, value.length - 1);
-    return getUrlPrefix() + value;
-  };
-
-  onChange = async value => {
-    this.setState({ isLoading: true, value });
-    let url = value ? this.processUrl(value) : "";
-
-    let isValid = await this.validateUrl(url);
-    this.setState({ isValid, isLoading: false });
-    if (this.props.onChange) this.props.onChange(url, isValid);
-  };
-
-  onInput = value => {
-    this.setState({ isValid: null, value: value });
-    this.debouncedOnChange(value);
-  };
-
-  renderMessage = () => {
-    if (this.state.isLoading) return "Loading...";
-    if (this.state.isValid) return "Succesfully Connected";
-    if (!this.state.isValid) return "Unable to connect to site";
-  };
-
-  debouncedOnChange = debounce(this.onChange, 700) as any;
-
-  render() {
-    let inputClass = [
-      "inputContainer",
-      this.state.isValid === null
-        ? "loading"
-        : this.state.isValid
-        ? "success"
-        : "error"
-    ]
-      .filter(c => c)
-      .join(" ");
-
-    return (
-      <StyledContainer>
-        {this.props.label && <div className="label">{this.props.label}</div>}
-
-        <div className={inputClass}>
-          <TextField
-            key={this.props.url}
-            disabled={this.props.disabled}
-            value={this.state.value}
-            onChanged={this.onInput}
-            placeholder="/sites/yoursite"
-          />
-          {this.state.value && (
-            <div className="message">{this.renderMessage()}</div>
-          )}
-        </div>
-      </StyledContainer>
-    );
+    default:
+      throw new Error("Invalid action");
   }
 }
 
-let getUrlPrefix = function() {
-  return `https://${window.location.host}`;
+const getInitialState = (url) => {
+  return {
+    isValid: null,
+    isLoading: false,
+    value: getSitePath(url) || "",
+  };
 };
+export default function SiteUrlInput(props: SiteUrlInputProps) {
+  const [state, dispatch] = useReducer(reducer, getInitialState(props.url));
+
+  // Validate the site after waiting for user to finish typing
+  // Debounced effect for the text box changing
+  let debouncedValue = useDebounce(state.value, 600);
+  React.useEffect(() => {
+    let isMounted = true;
+    let doAsync = async () => {
+      dispatch({ type: "validate:start" });
+      let url = debouncedValue ? processUrl(debouncedValue) : "";
+      let isValid = await validateUrl(url);
+      if (!isMounted) return;
+      dispatch({ type: "validate:complete", isValid });
+    };
+    doAsync();
+    return () => (isMounted = false);
+  }, [debouncedValue]);
+
+  // If it's done loading, trigger the parent change event
+  React.useEffect(() => {
+    if (!props.disabled && state.isValid && !state.isLoading && debouncedValue && props.onChange) {
+      console.log("INPUT", state.isValid, debouncedValue);
+      return props.onChange(processUrl(debouncedValue), state.isValid);
+    }
+  }, [state.isValid, debouncedValue, state.isLoading, props.disabled]);
+
+  const renderMessage = () => {
+    if (state.isLoading) return "Loading...";
+    if (state.isValid) return "Succesfully Connected";
+    if (!state.isValid) return "Unable to connect to site";
+  };
+
+  let inputClass = [
+    "inputContainer",
+    state.isValid === null ? "loading" : state.isValid ? "success" : "error",
+  ]
+    .filter((c) => c)
+    .join(" ");
+
+  return (
+    <StyledContainer>
+      {props.label && <div className="label">{props.label}</div>}
+
+      <div className={inputClass}>
+        <TextField
+          disabled={props.disabled}
+          value={state.value}
+          onChange={(e, value) => dispatch({ type: "value:change", value })}
+          placeholder="/sites/yoursite"
+        />
+        {state.value && <div className="message">{renderMessage()}</div>}
+      </div>
+    </StyledContainer>
+  );
+}
 
 export interface SiteUrlInputState {
   value: string;
@@ -125,11 +119,10 @@ const StyledContainer = styled.div`
   .inputContainer {
     margin-top: 5px;
     &.success .message {
-      color: ${props => getThemeValue("palette.teal", "#008080", props.theme)};
+      color: ${(props) => getThemeValue("palette.teal", "#008080", props.theme)};
     }
     &.error .message {
-      color: ${props =>
-        getThemeValue("palette.redDark", "#8A0002", props.theme)};
+      color: ${(props) => getThemeValue("palette.redDark", "#8A0002", props.theme)};
     }
     &.loading .message {
       color: #888;
@@ -150,3 +143,31 @@ const StyledContainer = styled.div`
     // text-align: center;
   }
 `;
+
+const getSitePath = (absoluteUrl: string) => {
+  if (!absoluteUrl) return null;
+  let siteUrlIndex = absoluteUrl.toLowerCase().search(/\/sites\/|\/teams\//i);
+  if (siteUrlIndex < 0) return null;
+  return absoluteUrl.substring(siteUrlIndex);
+};
+
+const validateUrl = async function(url) {
+  if (!url) return false;
+  try {
+    let ctx = SPScript.createContext(url);
+    let data = await ctx.get("/web");
+    return true;
+  } catch (err) {
+    return false;
+  }
+};
+
+const processUrl = (value) => {
+  // remove the leading slash if it is there
+  // if (value[value.length - 1] === "/") value = value.substr(0, value.length - 1);
+  return getUrlPrefix() + value;
+};
+
+const getUrlPrefix = function() {
+  return `https://${window.location.host}`;
+};
