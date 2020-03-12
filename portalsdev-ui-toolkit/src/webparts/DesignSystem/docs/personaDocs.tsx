@@ -1,7 +1,7 @@
 import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
 import Persona from "../../../components/Persona/Persona";
-import PersonaCard from "../../../components/Persona/PersonaCard";
+import Card from "../../../components/Card/Card";
 import Grid from "../../../components/Grid/Grid";
 import PropsTable from "./PropsTable";
 
@@ -89,7 +89,7 @@ let documentation: ComponentDocumentation = {
       title: "Basic Usage",
       slug: "basic-usage",
       description: "",
-      scope: { Persona },
+      scope: { Persona, Card },
       code: `<Persona 
     photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
     title="Will Spiering"
@@ -104,21 +104,22 @@ let documentation: ComponentDocumentation = {
       slug: "inside-card",
       description:
         "To render the persona inside a card, use the PersonaCard component. It uses the same props as the default Persona but the text and call to action are always centered.",
-      scope: { PersonaCard },
-      code: `<PersonaCard 
+      scope: { Persona, Card },
+      code: `<Persona 
     photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
     title="Will Spiering"
     subTitle="Software Engineer"
     info="Modern Workplace"
     callToAction="Learn More"
     linkUrl="https://wikipedia.com"
+    as={Card}
 />`,
     },
     {
       title: "Item Orientation",
       slug: "item-orientation",
       description: "",
-      scope: { Persona },
+      scope: { Persona, Card },
       code: `()=> {
 let [orientation, setOrientation] = React.useState("horizontal");
 
@@ -164,7 +165,7 @@ return (
       title: "No Info",
       slug: "no-info",
       description: "",
-      scope: { Persona },
+      scope: { Persona, Card },
       code: `<Persona 
     photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
     title="Will Spiering"
@@ -177,7 +178,7 @@ return (
       title: "No Subtitle",
       slug: "no-subtitle",
       description: "",
-      scope: { Persona },
+      scope: { Persona, Card },
       code: `<Persona 
     photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
     title="Will Spiering"
@@ -189,7 +190,7 @@ return (
       title: "No Call to Action",
       slug: "no-call-to-action",
       description: "",
-      scope: { Persona },
+      scope: { Persona, Card },
       code: `<Persona 
     photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
     title="Will Spiering"
@@ -201,7 +202,7 @@ return (
       title: "Inside Grid",
       slug: "inside-grid",
       description: "",
-      scope: { Persona, Grid },
+      scope: { Persona, Grid, Card },
       code: `<Grid size="250px">
     <Persona 
         photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"

@@ -3,6 +3,7 @@ import Thumbnail from "../primitives/Thumbnail";
 import Link from "../primitives/Link";
 import styled from "styled-components";
 import { getSiteUrl } from "../../core/utils/sharepointUtils";
+import Card from "../Card/Card";
 
 function Persona({
   photo,
@@ -13,6 +14,8 @@ function Persona({
   callToAction,
   orientation = "horizontal",
   photoSize,
+  as = "div",
+  ...rest
 }: PersonaProps) {
   let profilePicture = (photo) => {
     let siteUrl = getSiteUrl();
@@ -20,14 +23,9 @@ function Persona({
   };
 
   return (
-    <StyledPersonaWrapper
-      className="personaWrapper"
-      orientation={orientation}
-      callToAction={callToAction}
-      photoSize={photoSize}
-    >
+    <StyledPersonaWrapper as={as} {...rest}>
       <Link href={callToAction ? "" : linkUrl} className="personaLink">
-        <div className="persona">
+        <StyledPersona className="persona" orientation={orientation}>
           <Thumbnail
             src={profilePicture(photo)}
             shape="circle"
@@ -35,7 +33,7 @@ function Persona({
             height={photoSize}
             width={photoSize}
           />
-          <div className="details">
+          <div className={"details " + orientation}>
             <div className="textWrapper">
               <div className="title">{title}</div>
               {subTitle && <div className="subtitle">{subTitle}</div>}
@@ -47,11 +45,12 @@ function Persona({
               </Link>
             )}
           </div>
-        </div>
+        </StyledPersona>
       </Link>
     </StyledPersonaWrapper>
   );
 }
+
 export default React.memo(Persona);
 
 export interface PersonaProps {
@@ -63,25 +62,32 @@ export interface PersonaProps {
   callToAction?: string;
   orientation?: "horizontal" | "vertical";
   photoSize?: string;
+  as?: any;
+  [key: string]: any;
 }
 
 const StyledPersonaWrapper = styled.div`
-  .personaLink {
-    > .persona {
-      border-radius: 5px;
-      padding: 10px;
-    }
-    :hover > .persona {
-      background: ${(props) => props.theme.palette.themeSecondary};
-      .title,
-      .subtitle,
-      .info {
-        color: ${(props) => props.theme.palette.white};
-        text-decoration: none;
+  &:not(.card-ui-toolkit) {
+    .personaLink {
+      > .persona {
+        border-radius: 5px;
+        padding: 10px;
+      }
+      &:hover > .persona {
+        background: ${(props) => props.theme.palette.themeSecondary};
+        .title,
+        .subtitle,
+        .info {
+          color: ${(props) => props.theme.palette.white};
+          text-decoration: none;
+        }
       }
     }
   }
-  .persona {
+`;
+
+const StyledPersona = styled.div`
+    padding:10px;
     display: flex;
     flex-direction: ${(props) => (props.orientation === "horizontal" ? "row" : "column")};
     justify-content: ${(props) =>
@@ -92,7 +98,9 @@ const StyledPersonaWrapper = styled.div`
       margin-right: ${(props) => (props.orientation === "horizontal" ? "10px" : 0)};
     }
     .details {
-      text-align: ${(props) => (props.orientation === "horizontal" ? "left" : "center")};
+      &.vertical, .centered & {
+        text-align: center;
+      }
       display: flex;
       flex-direction: column;
       align-items: ${(props) => (props.orientation === "horizontal" ? "flex-start" : "center")};
