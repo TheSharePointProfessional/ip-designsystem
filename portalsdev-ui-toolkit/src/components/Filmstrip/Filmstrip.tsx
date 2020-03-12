@@ -8,6 +8,7 @@ const Filmstrip: React.FC<FilmstripProps> = function({
   width = 400,
   children,
   className = "",
+  spacing = 25,
   ...rest
 }) {
   let cssClass = [CLASS_NAME, className].filter(Boolean).join(" ");
@@ -20,6 +21,7 @@ const Filmstrip: React.FC<FilmstripProps> = function({
       itemMinWidth: width,
       autopageDelay: 5000,
       autopage: false,
+      spacing,
     }
   );
 
@@ -38,10 +40,10 @@ const Filmstrip: React.FC<FilmstripProps> = function({
   // }, [itemWidth]);
 
   return (
-    <div style={{ position: "relative" }}>
-      <StyleFilmstrip ref={containerRef} className={cssClass} itemWidth={itemWidth}>
+    <StyledPane className={cssClass} ref={containerRef}>
+      <StyledItems itemWidth={itemWidth} className="filmstrip-items" spacing={spacing}>
         {children}
-      </StyleFilmstrip>
+      </StyledItems>
       {!paging.isDisabled && (
         <StyledPagingButton onClick={paging.goBack} className="prev">
           Prev
@@ -50,7 +52,7 @@ const Filmstrip: React.FC<FilmstripProps> = function({
       <StyledPagingButton onClick={paging.goForward} className="next">
         Next
       </StyledPagingButton>
-    </div>
+    </StyledPane>
   );
 };
 export default Filmstrip;
@@ -62,7 +64,7 @@ export interface FilmstripProps {
 
 const StyledPagingButton = styled.button`
   position: absolute;
-  top: 50%;
+  bottom: 50%;
   &.next {
     right: 0px;
   }
@@ -70,7 +72,15 @@ const StyledPagingButton = styled.button`
     left: 0px;
   }
 `;
-const StyleFilmstrip = styled.div`
+
+const StyledPane = styled.div`
+  position: relative;
+  width: 100%;
+  margin-right: -${(props) => props.spacing}px;
+  box-sizing: border-box;
+`;
+const StyledItems = styled.div`
+  width: 100%;
   position: relative;
   box-sizing: border-box;
   display: flex;
@@ -78,10 +88,13 @@ const StyleFilmstrip = styled.div`
   -webkit-overflow-scrolling: touch;
   overflow-x: scroll;
   scroll-behavior: smooth;
-  margin-right: -10px;
+  margin-right: -${(props) => props.spacing}px;
+  padding-bottom: 16px;
   > * {
-    flex: 0 0 ${(props) => props.itemWidth}px;
-    margin-right: 10px;
+    box-sizing: border-box;
+
+    flex: 0 0 ${(props) => Math.ceil(props.itemWidth)}px;
+    margin-right: ${(props) => props.spacing}px;
     scroll-snap-align: start;
   }
 `;

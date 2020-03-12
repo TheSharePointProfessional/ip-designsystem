@@ -20,14 +20,21 @@ const defaults: FilmstripOptions = {
 
 const useFilmstrip = function<T>(
   totalCount: number,
-  containerRef: React.MutableRefObject<Element>,
+  paneRef: React.MutableRefObject<Element>,
   opts = defaults
 ) {
+  // Keep track of the 'filmstrip-items' ref which is used for scrolling
+  let itemsRef = useRef(paneRef.current);
+  useEffect(() => {
+    itemsRef.current = paneRef.current.querySelector(".filmstrip-items") as any;
+  }, [paneRef.current]);
+
   let { itemMinWidth, spacing, autopage, autopageDelay } = {
     ...defaults,
     ...opts,
   };
-  let [numItemsThatFit, itemWidth, parentWidth] = useHowManyFit(itemMinWidth, containerRef, {
+  // Figure out how many items fit based on the size of the Pane (topmost) element
+  let [numItemsThatFit, itemWidth, parentWidth] = useHowManyFit(itemMinWidth, paneRef, {
     spacing,
   });
 
@@ -57,26 +64,26 @@ const useFilmstrip = function<T>(
       //   paging.goTo(currentPage);
       // }
     };
-    if (containerRef.current) {
+    if (itemsRef.current) {
       console.log("Adding scroll event");
-      containerRef.current.addEventListener("scroll", handler);
+      itemsRef.current.addEventListener("scroll", handler);
     }
-    () => containerRef.current.removeEventListener("scroll", handler);
+    () => itemsRef.current.removeEventListener("scroll", handler);
   }, [itemWidth, paging.currentPage]);
 
   useEffect(() => {
-    if (containerRef.current) {
+    console.log("Scrolling", itemsRef.current);
+    if (itemsRef.current) {
       console.log("scrolling", scrollPosition);
-      containerRef.current.scrollTo(scrollPosition, 0);
+      itemsRef.current.scrollTo(scrollPosition, 0);
     }
   }, [scrollPosition]);
 
   let isDisabled = totalCount <= numItemsThatFit;
-  let isHovered = useHover(containerRef);
+  let isHovered = useHover(paneRef);
   // if they passed a small number, they probably meant seconds, so multiply by 1000
   autopageDelay = autopageDelay < 100 ? autopageDelay * 1000 : autopageDelay;
 
-  console.log("Delay", autopageDelay, opts);
   // Pause on hover
   if (isHovered || !autopage || isDisabled) {
     autopageDelay = 0;
