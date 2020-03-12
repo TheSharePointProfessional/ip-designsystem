@@ -3,33 +3,34 @@ import useHowManyFit from "../../hooks/useHowManyFit";
 import { usePaging, usePagedItems } from "../../hooks/usePaging";
 import useHover from "../../hooks/useHover";
 import useInterval from "../../hooks/useInterval";
+import useComponentSize from "../../hooks/useComponentSize";
+import useScrollSync from "./useScrollSync";
 
 export interface FilmstripOptions {
   itemMinWidth?: number;
   spacing?: number;
-  autopage?: boolean;
-  autopageDelay?: number;
+  autopage?: number;
 }
 
 const defaults: FilmstripOptions = {
   itemMinWidth: 300,
   spacing: 10,
-  autopage: true,
-  autopageDelay: 5000,
+  autopage: 0,
 };
 
-const useFilmstrip = function<T>(
+export default function useFilmstrip(
   totalCount: number,
   paneRef: React.MutableRefObject<Element>,
   opts = defaults
 ) {
   // Keep track of the 'filmstrip-items' ref which is used for scrolling
-  let itemsRef = useRef(paneRef.current);
+  let itemsRef = useRef<any>(paneRef.current ? paneRef.current.firstChild : null);
+
   useEffect(() => {
-    itemsRef.current = paneRef.current.querySelector(".filmstrip-items") as any;
+    itemsRef.current = paneRef.current.firstChild;
   }, [paneRef.current]);
 
-  let { itemMinWidth, spacing, autopage, autopageDelay } = {
+  let { itemMinWidth, spacing, autopage } = {
     ...defaults,
     ...opts,
   };
@@ -43,52 +44,28 @@ const useFilmstrip = function<T>(
   }
   let paging = usePaging(totalCount);
 
-  // Track scroll position in State
-  let [scrollPosition, setScrollPosition] = useState(0);
-
-  // Set scroll position based on the current page
+  // Cycle back to the beginning
   useEffect(() => {
-    // If we can't fill a full frame with items, cycle back to the beginning
+    // Ex: 10 items w/ 3 per frame
+    // When current page is 8, we'll see 8,9,10. If we hit "next", we want to go back to 1.
     if (paging.currentPage + numItemsThatFit > totalCount + 1) {
+      console.log(paging.currentPage, numItemsThatFit, totalCount);
       paging.goTo(1);
-    } else {
-      setScrollPosition((paging.currentPage - 1) * itemWidth);
     }
   }, [paging.currentPage, numItemsThatFit, totalCount]);
 
-  useEffect(() => {
-    const handler = (e) => {
-      let currentPage = Math.ceil(e.target.scrollLeft / itemWidth);
-      console.log("CURRENT PAGE", e.target.scrollLeft, currentPage, paging.currentPage);
-      // if (paging.currentPage !== currentPage) {
-      //   paging.goTo(currentPage);
-      // }
-    };
-    if (itemsRef.current) {
-      console.log("Adding scroll event");
-      itemsRef.current.addEventListener("scroll", handler);
-    }
-    () => itemsRef.current.removeEventListener("scroll", handler);
-  }, [itemWidth, paging.currentPage]);
-
-  useEffect(() => {
-    console.log("Scrolling", itemsRef.current);
-    if (itemsRef.current) {
-      console.log("scrolling", scrollPosition);
-      itemsRef.current.scrollTo(scrollPosition, 0);
-    }
-  }, [scrollPosition]);
+  let { scrollPosition, isScrolling } = useScrollSync({ itemsRef, itemWidth, paging });
 
   let isDisabled = totalCount <= numItemsThatFit;
   let isHovered = useHover(paneRef);
-  // if they passed a small number, they probably meant seconds, so multiply by 1000
-  autopageDelay = autopageDelay < 100 ? autopageDelay * 1000 : autopageDelay;
-
-  // Pause on hover
-  if (isHovered || !autopage || isDisabled) {
-    autopageDelay = 0;
+  if (autopage && autopage < 100) {
+    autopage = autopage * 1000;
   }
-  useInterval(paging.goForward, autopageDelay, [autopageDelay, paging.currentPage].join(""));
+  // Pause on hover or active scrolling
+  if (isHovered || isScrolling || isDisabled) {
+    autopage = 0;
+  }
+  useInterval(paging.goForward, autopage, [autopage, paging.currentPage].join(""));
 
   return {
     scrollPosition,
@@ -96,7 +73,18 @@ const useFilmstrip = function<T>(
     itemWidth,
     numItemsThatFit,
     parentWidth,
+    itemHeight: getItemHeight(itemsRef),
   };
-};
+}
 
-export default useFilmstrip;
+const getItemHeight = function(itemsRef) {
+  if (
+    itemsRef &&
+    itemsRef.current &&
+    itemsRef.current.firstChild &&
+    itemsRef.current.firstChild.offsetHeight
+  ) {
+    return itemsRef.current.firstChild.offsetHeight;
+  }
+  return 0;
+};
