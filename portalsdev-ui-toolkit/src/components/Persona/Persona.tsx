@@ -13,6 +13,8 @@ function Persona({
   callToAction,
   orientation = "horizontal",
   photoSize,
+  as = "div",
+  ...rest
 }: PersonaProps) {
   let profilePicture = (photo) => {
     let siteUrl = getSiteUrl();
@@ -20,14 +22,9 @@ function Persona({
   };
 
   return (
-    <StyledPersonaWrapper
-      className="personaWrapper"
-      orientation={orientation}
-      callToAction={callToAction}
-      photoSize={photoSize}
-    >
+    <StyledPersonaWrapper as={as} {...rest}>
       <Link href={callToAction ? "" : linkUrl} className="personaLink">
-        <div className="persona">
+        <StyledPersona className={"persona " + orientation}>
           <Thumbnail
             src={profilePicture(photo)}
             shape="circle"
@@ -35,7 +32,7 @@ function Persona({
             height={photoSize}
             width={photoSize}
           />
-          <div className="details">
+          <div className={"details"}>
             <div className="textWrapper">
               <div className="title">{title}</div>
               {subTitle && <div className="subtitle">{subTitle}</div>}
@@ -47,11 +44,12 @@ function Persona({
               </Link>
             )}
           </div>
-        </div>
+        </StyledPersona>
       </Link>
     </StyledPersonaWrapper>
   );
 }
+
 export default React.memo(Persona);
 
 export interface PersonaProps {
@@ -63,78 +61,90 @@ export interface PersonaProps {
   callToAction?: string;
   orientation?: "horizontal" | "vertical";
   photoSize?: string;
+  as?: any;
+  [key: string]: any;
 }
 
 const StyledPersonaWrapper = styled.div`
-  .personaLink {
-    > .persona {
-      border-radius: 5px;
-      padding: 10px;
-    }
-    :hover > .persona {
-      background: ${(props) => props.theme.palette.themeSecondary};
-      .title,
-      .subtitle,
-      .info {
-        color: ${(props) => props.theme.palette.white};
-        text-decoration: none;
+  &:not(.card-ui-toolkit) {
+    .personaLink {
+      > .persona {
+        border-radius: 5px;
+        padding: 10px;
+      }
+      &:hover > .persona {
+        background: ${(props) => props.theme.palette.themeSecondary};
+        .title,
+        .subtitle,
+        .info {
+          color: ${(props) => props.theme.palette.white};
+          text-decoration: none;
+        }
       }
     }
   }
-  .persona {
-    display: flex;
-    flex-direction: ${(props) => (props.orientation === "horizontal" ? "row" : "column")};
-    justify-content: ${(props) =>
-      props.orientation === "horizontal" ? "flex-start" : "space-around"};
-    align-items: center;
-    padding: 5px;
-    .photo {
-      margin-right: ${(props) => (props.orientation === "horizontal" ? "10px" : 0)};
-    }
+`;
+
+const StyledPersona = styled.div`
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+
+  &.vertical {
+    flex-direction: column;
+    justify-content: space-around;
     .details {
-      text-align: ${(props) => (props.orientation === "horizontal" ? "left" : "center")};
-      display: flex;
-      flex-direction: column;
-      align-items: ${(props) => (props.orientation === "horizontal" ? "flex-start" : "center")};
-      justify-content: space-between;
-      padding: 5px;
+      text-align: center;
+      align-items: center;
     }
-    .textWrapper {
+  }
+  &.horizontal {
+    .photo {
+      margin-right: 10px;
     }
-    .title {
-      color: ${(props) => props.theme.semanticColors.bodyText};
-      font-weight: 600;
-      font-size: 15px;
-      line-height: normal;
-    }
-    .subtitle {
-      color: ${(props) => props.theme.semanticColors.bodySubtext};
-      font-size: 13px;
-      line-height: normal;
-    }
-    .info {
-      color: ${(props) => props.theme.semanticColors.bodySubtext};
-      font-size: 12px;
-      line-height: normal;
-    }
-    .callToAction {
-      margin-top: 10px;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: flex-start;
+  }
+  .title {
+    color: ${(props) => props.theme.semanticColors.bodyText};
+    font-weight: 600;
+    font-size: 15px;
+    line-height: normal;
+  }
+  .subtitle {
+    color: ${(props) => props.theme.semanticColors.bodySubtext};
+    font-size: 13px;
+    line-height: normal;
+  }
+  .info {
+    color: ${(props) => props.theme.semanticColors.bodyText};
+    font-size: 12px;
+    line-height: normal;
+  }
+  .callToAction {
+    margin-top: 10px;
+    color: #fff;
+    background: ${(props) => props.theme.palette.themePrimary};
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 13px;
+    border: none;
+    &:hover,
+    &:active,
+    &:focus {
       color: #fff;
-      background: ${(props) => props.theme.palette.themePrimary};
-      padding: 8px 20px;
-      text-decoration: none;
-      border-radius: 20px;
-      display: inline-block;
-      font-size: 13px;
-      border: none;
-      &:hover,
-      &:active,
-      &:focus {
-        color: #fff;
-        background-color: ${(props) => props.theme.palette.themeSecondary};
-        outline: none;
-        cursor: pointer;
-      }
+      background-color: ${(props) => props.theme.palette.themeSecondary};
+      outline: none;
+      cursor: pointer;
     }
   }
 `;
