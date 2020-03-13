@@ -87,62 +87,60 @@ const StyledPersonaWrapper = styled.div`
 `;
 
 const StyledPersona = styled.div`
-    padding:10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: ${(props) => (props.orientation === "horizontal" ? "row" : "column")};
+  justify-content: ${(props) =>
+    props.orientation === "horizontal" ? "flex-start" : "space-around"};
+  align-items: center;
+  padding: 5px;
+  .photo {
+    margin-right: ${(props) => (props.orientation === "horizontal" ? "10px" : 0)};
+  }
+  .details {
+    &.vertical,
+    .centered & {
+      text-align: center;
+    }
     display: flex;
-    flex-direction: ${(props) => (props.orientation === "horizontal" ? "row" : "column")};
-    justify-content: ${(props) =>
-      props.orientation === "horizontal" ? "flex-start" : "space-around"};
-    align-items: center;
+    flex-direction: column;
+    align-items: ${(props) => (props.orientation === "horizontal" ? "flex-start" : "center")};
+    justify-content: space-between;
     padding: 5px;
-    .photo {
-      margin-right: ${(props) => (props.orientation === "horizontal" ? "10px" : 0)};
-    }
-    .details {
-      &.vertical, .centered & {
-        text-align: center;
-      }
-      display: flex;
-      flex-direction: column;
-      align-items: ${(props) => (props.orientation === "horizontal" ? "flex-start" : "center")};
-      justify-content: space-between;
-      padding: 5px;
-    }
-    .textWrapper {
-    }
-    .title {
-      color: ${(props) => props.theme.semanticColors.bodyText};
-      font-weight: 600;
-      font-size: 15px;
-      line-height: normal;
-    }
-    .subtitle {
-      color: ${(props) => props.theme.semanticColors.bodySubtext};
-      font-size: 13px;
-      line-height: normal;
-    }
-    .info {
-      color: ${(props) => props.theme.semanticColors.bodySubtext};
-      font-size: 12px;
-      line-height: normal;
-    }
-    .callToAction {
-      margin-top: 10px;
+  }
+  .title {
+    color: ${(props) => props.theme.semanticColors.bodyText};
+    font-weight: 600;
+    font-size: 15px;
+    line-height: normal;
+  }
+  .subtitle {
+    color: ${(props) => props.theme.semanticColors.bodySubtext};
+    font-size: 13px;
+    line-height: normal;
+  }
+  .info {
+    color: ${(props) => props.theme.semanticColors.bodySubtext};
+    font-size: 12px;
+    line-height: normal;
+  }
+  .callToAction {
+    margin-top: 10px;
+    color: #fff;
+    background: ${(props) => props.theme.palette.themePrimary};
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 13px;
+    border: none;
+    &:hover,
+    &:active,
+    &:focus {
       color: #fff;
-      background: ${(props) => props.theme.palette.themePrimary};
-      padding: 8px 20px;
-      text-decoration: none;
-      border-radius: 20px;
-      display: inline-block;
-      font-size: 13px;
-      border: none;
-      &:hover,
-      &:active,
-      &:focus {
-        color: #fff;
-        background-color: ${(props) => props.theme.palette.themeSecondary};
-        outline: none;
-        cursor: pointer;
-      }
+      background-color: ${(props) => props.theme.palette.themeSecondary};
+      outline: none;
+      cursor: pointer;
     }
   }
 `;
