@@ -100,20 +100,20 @@ let documentation: ComponentDocumentation = {
 />`,
     },
     {
-      title: "Inside Card",
+      title: "Persona Card",
       slug: "inside-card",
       description:
-        "To render the persona inside a card, use the PersonaCard component. It uses the same props as the default Persona but the text and call to action are always centered.",
+        "To render the persona as a Card, use the 'as' prop and pass the 'Card' component",
       scope: { Persona, Card },
       code: `<Persona 
-    photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-    title="Will Spiering"
-    subTitle="Software Engineer"
-    info="Modern Workplace"
-    callToAction="Learn More"
-    linkUrl="https://wikipedia.com"
-    as={Card}
-/>`,
+      photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+      title="Will Spiering"
+      subTitle="Software Engineer | Modern Workplace"
+      info="wspiering@skylinetechnologies.com"
+      callToAction="Learn More"
+      linkUrl="https://wikipedia.com"
+      as={Card}
+  />`,
     },
     {
       title: "Item Orientation",
