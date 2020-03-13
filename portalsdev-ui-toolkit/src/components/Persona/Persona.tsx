@@ -24,7 +24,7 @@ function Persona({
   return (
     <StyledPersonaWrapper as={as} {...rest}>
       <Link href={callToAction ? "" : linkUrl} className="personaLink">
-        <StyledPersona className="persona" orientation={orientation}>
+        <StyledPersona className={"persona " + orientation}>
           <Thumbnail
             src={profilePicture(photo)}
             shape="circle"
@@ -32,7 +32,7 @@ function Persona({
             height={photoSize}
             width={photoSize}
           />
-          <div className={"details " + orientation}>
+          <div className={"details"}>
             <div className="textWrapper">
               <div className="title">{title}</div>
               {subTitle && <div className="subtitle">{subTitle}</div>}
@@ -88,25 +88,29 @@ const StyledPersonaWrapper = styled.div`
 const StyledPersona = styled.div`
   padding: 10px;
   display: flex;
-  flex-direction: ${(props) => (props.orientation === "horizontal" ? "row" : "column")};
-  justify-content: ${(props) =>
-    props.orientation === "horizontal" ? "flex-start" : "space-around"};
   align-items: center;
   padding: 5px;
-  .photo {
-    margin-right: ${(props) => (props.orientation === "horizontal" ? "10px" : 0)};
+
+  &.vertical {
+    flex-direction: column;
+    justify-content: space-around;
+    .details {
+      text-align: center;
+      align-items: center;
+    }
   }
+  &.horizontal {
+    .photo {
+      margin-right: 10px;
+    }
+  }
+
   .details {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 5px;
     align-items: flex-start;
-    &.vertical,
-    .centered & {
-      text-align: center;
-      align-items: center;
-    }
   }
   .title {
     color: ${(props) => props.theme.semanticColors.bodyText};
