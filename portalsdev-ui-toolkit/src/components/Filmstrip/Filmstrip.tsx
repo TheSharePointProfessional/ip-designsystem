@@ -1,6 +1,8 @@
 import React, { useRef, useState, useEffect } from "react";
 import styled from "styled-components";
 import useFilmstrip from "./useFilmstrip";
+import { IconButton } from "office-ui-fabric-react/lib/Button";
+import { getThemeValue } from "../PortalsThemeProvider/PortalsThemeProvider";
 
 const CLASS_NAME = "filmstrip";
 
@@ -28,14 +30,18 @@ const Filmstrip: React.FC<FilmstripProps> = function({
       </StyledItems>
       <StyledOverlay>
         {!paging.isDisabled && (
-          <StyledPagingButton onClick={paging.goBack} className="prev">
-            Prev
-          </StyledPagingButton>
+          <PagerButton
+            onClick={paging.goBack}
+            className="pager-button prev"
+            iconProps={{ iconName: "ChevronLeftSmall" }}
+          ></PagerButton>
         )}
         {!paging.isDisabled && (
-          <StyledPagingButton onClick={paging.goForward} className="next">
-            Next
-          </StyledPagingButton>
+          <PagerButton
+            onClick={paging.goForward}
+            className="pager-button next"
+            iconProps={{ iconName: "ChevronRightSmall" }}
+          ></PagerButton>
         )}
       </StyledOverlay>
     </StyledPane>
@@ -64,17 +70,26 @@ const StyledOverlay = styled.div`
   align-items: center;
 `;
 
-const StyledPagingButton = styled.button`
+const PagerButton = styled(IconButton)`
   pointer-events: initial;
-
-  /* position: absolute;
-  bottom: 50%;
-  &.next {
-    right: 0px;
+  transition: opacity ease-out 200ms;
+  opacity: 0;
+  color: ${(props) => getThemeValue("palette.white", "#fff")};
+  &:hover {
+    color: ${(props) => getThemeValue("palette.white", "#fff")};
   }
-  &.prev {
-    left: 0px;
-  } */
+  background: ${(props) => getThemeValue("palette.themePrimary", "#fff")};
+  /* margin: 0 5px;
+  border-radius: 50%; */
+  /* The chevron icons don't look centered, fixing manually */
+  &.next i {
+    position: relative;
+    left: 2px;
+  }
+  &.prev i {
+    position: relative;
+    right: 2px;
+  }
 `;
 
 const StyledPane = styled.div`
@@ -84,6 +99,14 @@ const StyledPane = styled.div`
   box-sizing: border-box;
   overflow: hidden;
   height: ${(props) => props.height}px;
+  &:hover {
+    .pager-button {
+      opacity: 0.6;
+    }
+    .pager-button:hover {
+      opacity: 0.85;
+    }
+  }
 `;
 const StyledItems = styled.div`
   width: 100%;
