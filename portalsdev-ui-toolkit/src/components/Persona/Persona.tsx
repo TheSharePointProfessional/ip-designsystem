@@ -3,7 +3,6 @@ import Thumbnail from "../primitives/Thumbnail";
 import Link from "../primitives/Link";
 import styled from "styled-components";
 import { getSiteUrl } from "../../core/utils/sharepointUtils";
-import Card from "../Card/Card";
 
 function Persona({
   photo,
@@ -98,15 +97,16 @@ const StyledPersona = styled.div`
     margin-right: ${(props) => (props.orientation === "horizontal" ? "10px" : 0)};
   }
   .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: flex-start;
     &.vertical,
     .centered & {
       text-align: center;
+      align-items: center;
     }
-    display: flex;
-    flex-direction: column;
-    align-items: ${(props) => (props.orientation === "horizontal" ? "flex-start" : "center")};
-    justify-content: space-between;
-    padding: 5px;
   }
   .title {
     color: ${(props) => props.theme.semanticColors.bodyText};
@@ -120,7 +120,7 @@ const StyledPersona = styled.div`
     line-height: normal;
   }
   .info {
-    color: ${(props) => props.theme.semanticColors.bodySubtext};
+    color: ${(props) => props.theme.semanticColors.bodyText};
     font-size: 12px;
     line-height: normal;
   }
