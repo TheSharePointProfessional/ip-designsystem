@@ -95,6 +95,30 @@ let themeColorPickerDocs: ComponentDocumentation = {
       scope: { ThemeColorPicker, React },
     },
     {
+      title: "Extra Options",
+      description: "You can include extra choices for the dropdown via the 'extraOptions' prop",
+      slug: "extra-options",
+      scope: { ThemeColorPicker, StyledColorSwatch },
+      code: `() => {
+        let [color, setColor] = React.useState("steelblue");
+        
+        return (
+          <div style={{ width: "300px" }}>
+          
+            <h1 style={{ color: ThemeColorPicker.getHexColor(color)}}>{color}</h1>
+            
+            <ThemeColorPicker
+              value={color}
+              onChange={setColor}
+              label="Choose theme color"
+              extraOptions={[{ key:"steelblue", text:"Steel Blue"}, {key:"transparent", text:"Transparent"}]}
+            />
+            
+          </div>
+        );
+      }`,
+    },
+    {
       title: "Other Theme Params",
       slug: "other-theme-param",
       description: (
