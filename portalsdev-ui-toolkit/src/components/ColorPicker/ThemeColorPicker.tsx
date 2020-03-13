@@ -9,6 +9,7 @@ const options = [
   { key: "themeSecondary", text: "Theme Secondary" },
   { key: "themeTertiary", text: "Theme Tertiary" },
   { key: "white", text: "White (Theme)" },
+  // Allow injecting options here
   { key: "other", text: "Other" },
 ];
 
@@ -51,11 +52,18 @@ export default class ThemeColorPicker extends React.PureComponent<ThemeColorPick
     this.props.onChange(color);
   };
   render() {
+    console.log("Extra Optinos", this.props);
+    let extraOptions =
+      this.props.extraOptions && this.props.extraOptions.length ? this.props.extraOptions : [];
+    // TODO Add polyfill for reverse
+    let [otherOption, ...firstOptions] = options.reverse();
+
+    let allOptions = [...firstOptions.reverse(), ...extraOptions, otherOption];
     return (
       <StyledContainer>
         <Dropdown
           label={this.props.label}
-          options={options}
+          options={allOptions}
           selectedKey={this.state.dropdownValue}
           onChanged={this.onDropdownChange}
           disabled={this.props.disabled}
@@ -77,6 +85,7 @@ export interface ThemeColorPickerProps {
   label?: string;
   onChange: (value: string) => void;
   disabled?: boolean;
+  extraOptions?: { key: string; text: string }[];
 }
 const _getOtherColorValue = function(propValue = "primary") {
   // If the color string is passed in as the value, there will be no option matches
