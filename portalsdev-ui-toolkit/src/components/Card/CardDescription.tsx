@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Shave from "../Shave/Shave";
 
 const CLASS_NAME = "card-description";
-export default function CardDescription({ children, className = "", as = "p", shave = 100 }) {
+export default function CardDescription({ children, className = "", as = "p", shave = 0 }) {
   let cssClass = [CLASS_NAME, className].filter(Boolean).join(" ");
   return (
     <Shave
