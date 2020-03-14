@@ -2,10 +2,19 @@ import React from "react";
 import { ComponentDocumentation } from "./docs";
 import Filmstrip from "../../../components/Filmstrip/Filmstrip";
 import Card from "../../../components/Card/Card";
+import Grid from "../../../components/Grid/Grid";
 import PropsTable from "./PropsTable";
 
+const images = [
+  "https://thumbs-prod.si-cdn.com/EmpGS8PcTnjeik1JWjCHuDPPeyQ=/800x600/filters:no_upscale()/https://public-media.si-cdn.com/filer/cb/87/cb87fada-31dd-40eb-8d1d-e3b5d738d327/istock-120911394.jpg",
+  "https://adventureisoutthere-exploreidaho.weebly.com/uploads/2/7/8/4/27843901/8719353_orig.jpg",
+  "https://live.staticflickr.com/5826/30451145465_83cc33a27f_b.jpg",
+  "https://www.nationalgeographic.com/content/dam/expeditions/destinations/north-america/private/Yosemite/Hero-Yosemite.jpg",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqBxpA4RYwsIVGWSXbO3xMTbNTjNXV9_O3ODGUSPrk7_dt2_Yd&s",
+];
 let items = Array.from(new Array(10)).map((_, i) => ({
   title: "Item " + (i + 1),
+  image: images[i % images.length],
   description: "This is the items's description",
 }));
 
@@ -82,13 +91,59 @@ let documentation: ComponentDocumentation = {
       code: `
 <Filmstrip autopage={2000}>
 {items.map(item => (
-  <Card key={item.title}>
+  <Card className='virtualized-card' styles={{ width: "100%" }}>
+    <Card.Image src={item.image} />
     <Card.Title>{item.title}</Card.Title>
     <Card.Description>{item.description}</Card.Description>
   </Card>
 ))}
 </Filmstrip>
       `,
+    },
+    {
+      title: "Layout Toggling",
+      description: "This example shows how you could toggle between Grid and Filmstrip",
+      slug: "item-mapping",
+      scope: { Filmstrip, items, Card, Grid },
+      code: `() => {
+  let [layout, setLayout] = React.useState("filmstrip");
+  let [size, setSize] = React.useState(300);
+  let LayoutComponent = layout === "grid" ? Grid : Filmstrip;
+  let layoutProps = {
+    size: size + "px",
+    width: size,
+    autopage: 4000,
+  }
+  return (
+    <>
+    <div style={{width: "100%", marginBottom:"30px"}}>
+
+    <label>
+      Choose a Layout: 
+      <select name='layout' value={layout} onChange={e => setLayout(e.currentTarget.value)}>
+        <option>grid</option>
+        <option>filmstrip</option>
+      </select>
+    </label>
+
+    <label>
+      Choose a size:
+      <input type='number' value={size} onChange={e => setSize(e.target.value)}/>
+    </label>
+    </div>
+
+    <LayoutComponent {...layoutProps}>
+    {items.map(item => (
+      <Card className='virtualized-card' styles={{ width: "100%" }}>
+        <Card.Image src={item.image} />
+        <Card.Title>{item.title}</Card.Title>
+        <Card.Description>{item.description}</Card.Description>
+      </Card>
+    ))}
+    </LayoutComponent>
+    </>
+  )
+}`,
     },
   ],
 };
