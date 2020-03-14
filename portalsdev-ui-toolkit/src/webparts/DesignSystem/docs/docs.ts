@@ -14,6 +14,7 @@ import linkTileDocs from "./linkTileDocs";
 import gridDocs from "./gridDocs";
 import panelLinkDocs from "./panelLinkDocs";
 import personaDocs from "./personaDocs";
+import filmstripDocs from "./filmstripDocs";
 
 export interface ComponentDemo {
   title: string;
@@ -47,6 +48,7 @@ let components: ComponentDocumentation[] = [
   gridDocs,
   panelLinkDocs,
   personaDocs,
+  filmstripDocs,
 ];
 
 export default components.sort((a, b) => (a.title < b.title ? -1 : 1));

@@ -36,7 +36,8 @@ const StyledTitle = styled.h3`
   margin: 0;
   padding-bottom: 2px;
   color: ${(props) => props.theme.semanticColors.bodyText};
-  &:hover {
+
+  a &:hover {
     color: ${(props) => props.theme.palette.themePrimary};
   }
 `;
