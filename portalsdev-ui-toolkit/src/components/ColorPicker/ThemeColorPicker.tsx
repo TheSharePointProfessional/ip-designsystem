@@ -13,7 +13,10 @@ const options = [
   { key: "other", text: "Other" },
 ];
 
-export const getHexColor = function(color: string): string {
+export const getHexColor = function(
+  color: string,
+  namespace: "palette" | "global" | "semanticColors" = "palette"
+): string {
   // if (!checkIsThemeColor(color)) return color;
   if (color === "primary") {
     color = "themePrimary";
@@ -24,7 +27,7 @@ export const getHexColor = function(color: string): string {
   if (color === "tertiary") {
     color = "themeTertiary";
   }
-  return getThemeValue("palette." + color, color);
+  return getThemeValue(namespace + "." + color, color);
 };
 export const checkIsThemeColor = function(color: ThemeColor | string): boolean {
   if (!color) return false;
