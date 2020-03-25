@@ -40,6 +40,7 @@ const StyledImageContainer = styled.div`
   div.img {
     background-size: cover;
     height: 100%;
+    width: 100%;
     background-position: center;
     display: flex;
     justify-content: center;
