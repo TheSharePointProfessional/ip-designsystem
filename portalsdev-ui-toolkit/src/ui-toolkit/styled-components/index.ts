@@ -1,6 +1,9 @@
 import _styled, { ThemeProvider as SCThemeProvider } from "styled-components";
 
+// Global Decarlartions to make Typescript happy
 declare var SC_PREFIX: string;
+declare var process: any;
+
 const getPrefix = () => {
   try {
     // console.log("PROCESS", process.env.SC_PREFIX);
