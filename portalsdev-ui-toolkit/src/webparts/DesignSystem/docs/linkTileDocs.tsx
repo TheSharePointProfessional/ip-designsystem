@@ -2,7 +2,7 @@ import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
 import LinkTile from "ui-toolkit/components/LinkTile/LinkTile";
 import PropsTable from "./PropsTable";
-import styled from "styled-components";
+import styled from "ui-toolkit/styled-components";
 
 let docs: ComponentDocumentation = {
   title: "Link Tile",

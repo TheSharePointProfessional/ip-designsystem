@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentDemo } from "../docs/docs";
-import styled from "styled-components";
+import styled from "ui-toolkit/styled-components";
 import { useView, Compiler, Editor, Error, ActionButtons } from "react-view";
 import presetTypescript from "@babel/preset-typescript";
 

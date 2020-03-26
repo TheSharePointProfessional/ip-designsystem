@@ -1,6 +1,6 @@
 import React from "react";
 import components from "../docs/docs";
-import styled from "styled-components";
+import styled from "ui-toolkit/styled-components";
 import { Nav as FabricNav, INavLink } from "office-ui-fabric-react/lib/Nav";
 function Nav({ active, onChange }: NavProps) {
   let links = components.map((c) => ({

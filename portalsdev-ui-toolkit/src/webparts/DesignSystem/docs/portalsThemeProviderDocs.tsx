@@ -9,7 +9,7 @@ import {
   getPortalsTheme,
   getThemeValue,
 } from "ui-toolkit/components/PortalsThemeProvider/PortalsThemeProvider";
-import styled from "styled-components";
+import styled from "ui-toolkit/styled-components";
 
 export const StyledColorSwatch = styled.div`
   display: flex;

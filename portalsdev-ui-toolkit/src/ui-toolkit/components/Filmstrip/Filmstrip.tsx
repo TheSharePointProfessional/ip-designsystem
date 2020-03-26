@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import styled from "styled-components";
+import styled from "ui-toolkit/styled-components";
 import useFilmstrip from "./useFilmstrip";
 import { IconButton } from "office-ui-fabric-react/lib/Button";
 import { getThemeValue } from "../PortalsThemeProvider/PortalsThemeProvider";

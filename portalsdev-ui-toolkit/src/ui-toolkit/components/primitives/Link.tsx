@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "ui-toolkit/styled-components";
 import { parse as parseUrl } from "url";
 import PanelLink from "../PanelLink/PanelLink";
 

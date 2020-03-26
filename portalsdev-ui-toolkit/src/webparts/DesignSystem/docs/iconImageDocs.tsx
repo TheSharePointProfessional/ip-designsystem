@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Link from "ui-toolkit/components/primitives/Link";
 import IconImage from "ui-toolkit/components/IconImage/IconImage";
 import PropsTable from "./PropsTable";
-import styled from "styled-components";
+import styled from "ui-toolkit/styled-components";
 
 let docs: ComponentDocumentation = {
   title: "Icon Image",

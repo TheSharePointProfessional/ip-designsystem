@@ -2,7 +2,7 @@ import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
 import ThemeColorPicker from "ui-toolkit/components/ColorPicker/ThemeColorPicker";
 import PropsTable from "./PropsTable";
-import styled from "styled-components";
+import styled from "ui-toolkit/styled-components";
 
 export const StyledColorSwatch = styled.div`
   display: flex;

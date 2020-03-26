@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import PanelLink from "ui-toolkit/components/PanelLink/PanelLink";
 import Card from "ui-toolkit/components/Card/Card";
 import PropsTable from "./PropsTable";
-import styled from "styled-components";
+import styled from "ui-toolkit/styled-components";
 
 let docs: ComponentDocumentation = {
   title: "Panel Link",

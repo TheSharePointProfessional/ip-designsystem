@@ -1,7 +1,7 @@
 import React from "react";
 import Thumbnail from "../primitives/Thumbnail";
 import Link from "../primitives/Link";
-import styled from "styled-components";
+import styled from "ui-toolkit/styled-components";
 import { getSiteUrl } from "../../core/utils/sharepointUtils";
 
 function Persona({

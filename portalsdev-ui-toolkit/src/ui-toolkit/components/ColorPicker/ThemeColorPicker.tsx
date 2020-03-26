@@ -1,6 +1,6 @@
 import React from "react";
 import { Dropdown } from "office-ui-fabric-react/lib/Dropdown";
-import styled from "styled-components";
+import styled from "ui-toolkit/styled-components";
 import { getThemeValue } from "../PortalsThemeProvider/PortalsThemeProvider";
 
 import ColorPicker from "./ColorPicker";

@@ -3,7 +3,7 @@ import { Panel, PanelType } from "office-ui-fabric-react/lib/Panel";
 import { IconButton } from "office-ui-fabric-react/lib/Button";
 import { initializeIcons } from "@uifabric/icons";
 import { HyperLink } from "../primitives/Link";
-import styled from "styled-components";
+import styled from "ui-toolkit/styled-components";
 
 initializeIcons();
 
