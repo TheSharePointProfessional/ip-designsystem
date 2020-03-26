@@ -1,4 +1,7 @@
-"use strict";
+let package = require("./package.json");
+const webpack = require("webpack");
+
+("use strict");
 
 // check if gulp dist was called
 if (process.argv.indexOf("dist") !== -1) {
@@ -26,6 +29,8 @@ gulp.task("dev", gulpSequence("clean", "bundle", "package-solution"));
  */
 const bundleAnalyzer = require("webpack-bundle-analyzer");
 
+const getAcronym = (str) => str.match(/\b(\w)/g).join("");
+
 build.configureWebpack.mergeConfig({
   additionalConfiguration: (generatedConfiguration) => {
     const lastDirName = path.basename(__dirname);
@@ -34,6 +39,12 @@ build.configureWebpack.mergeConfig({
       "ui-toolkit": path.resolve(__dirname, "./lib/ui-toolkit/"),
     };
 
+    generatedConfiguration.plugins.push(
+      new webpack.DefinePlugin({
+        SC_PREFIX: JSON.stringify(getAcronym(package.name).toLowerCase()),
+      })
+    );
+    generatedConfiguration.node = { fs: "empty" };
     generatedConfiguration.plugins.push(
       new bundleAnalyzer.BundleAnalyzerPlugin({
         openAnalyzer: false,

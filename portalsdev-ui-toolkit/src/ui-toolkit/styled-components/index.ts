@@ -1,6 +1,15 @@
 import _styled, { ThemeProvider as SCThemeProvider } from "styled-components";
 
-const PREFIX = "droopy";
+declare var SC_PREFIX: string;
+const getPrefix = () => {
+  try {
+    // console.log("PROCESS", process.env.SC_PREFIX);
+    return SC_PREFIX || process.env.SC_PREFIX || "put";
+  } catch (err) {
+    return "put";
+  }
+};
+const PREFIX = getPrefix();
 export const ThemeProvider = SCThemeProvider;
 let styled = (tag) => {
   return _styled(tag).withConfig({ displayName: PREFIX });

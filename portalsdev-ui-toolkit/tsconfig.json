@@ -16,7 +16,7 @@
     "strictNullChecks": false,
     "noUnusedLocals": false,
     "typeRoots": ["./node_modules/@types", "./node_modules/@microsoft"],
-    "types": ["es6-promise", "webpack-env"],
+    "types": ["es6-promise", "webpack-env", "node"],
     "lib": ["es2017", "dom"],
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true
