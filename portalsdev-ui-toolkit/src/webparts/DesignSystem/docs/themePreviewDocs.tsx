@@ -1,6 +1,6 @@
 import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
-import ThemePreview from "../../../components/ThemePreview/ThemePreview";
+import ThemePreview from "ui-toolkit/components/ThemePreview/ThemePreview";
 import PropsTable from "./PropsTable";
 
 let docs: ComponentDocumentation = {

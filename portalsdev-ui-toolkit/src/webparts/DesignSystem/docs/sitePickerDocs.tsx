@@ -1,7 +1,7 @@
 import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
-import SitePicker from "../../../components/SitePicker/SitePicker";
-import { getCurrentWebUrl as getCurrentSiteUrl } from "../../../core/utils/sharepointUtils";
+import SitePicker from "ui-toolkit/components/SitePicker/SitePicker";
+import { getCurrentWebUrl as getCurrentSiteUrl } from "ui-toolkit/core/utils/sharepointUtils";
 import PropsTable from "./PropsTable";
 
 let basicUsage: ComponentDemo = {

@@ -1,7 +1,7 @@
 import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
-import PanelLink from "../../../components/PanelLink/PanelLink";
-import Card from "../../../components/Card/Card";
+import PanelLink from "ui-toolkit/components/PanelLink/PanelLink";
+import Card from "ui-toolkit/components/Card/Card";
 import PropsTable from "./PropsTable";
 import styled from "styled-components";
 

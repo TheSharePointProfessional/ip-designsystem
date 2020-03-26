@@ -1,7 +1,7 @@
 import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
-import BackgroundImage from "../../../components/primitives/BackgroundImage";
-import BigDate from "../../../components/BigDate/BigDate";
+import BackgroundImage from "ui-toolkit/components/primitives/BackgroundImage";
+import BigDate from "ui-toolkit/components/BigDate/BigDate";
 import PropsTable from "./PropsTable";
 
 let docs: ComponentDocumentation = {

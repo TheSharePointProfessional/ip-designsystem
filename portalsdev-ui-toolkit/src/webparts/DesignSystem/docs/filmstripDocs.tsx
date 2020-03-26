@@ -1,8 +1,8 @@
 import React from "react";
 import { ComponentDocumentation } from "./docs";
-import Filmstrip from "../../../components/Filmstrip/Filmstrip";
-import Card from "../../../components/Card/Card";
-import Grid from "../../../components/Grid/Grid";
+import Filmstrip from "ui-toolkit/components/Filmstrip/Filmstrip";
+import Card from "ui-toolkit/components/Card/Card";
+import Grid from "ui-toolkit/components/Grid/Grid";
 import PropsTable from "./PropsTable";
 
 const images = [

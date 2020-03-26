@@ -1,6 +1,6 @@
 import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
-import DateRangeText from "../../../components/DateRangeText/DateRangeText";
+import DateRangeText from "ui-toolkit/components/DateRangeText/DateRangeText";
 import PropsTable from "./PropsTable";
 import { addDays, startOfDay } from "date-fns";
 let documentation: ComponentDocumentation = {

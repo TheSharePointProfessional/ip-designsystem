@@ -1,10 +1,10 @@
 import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
-import ThemeColorPicker from "../../../components/ColorPicker/ThemeColorPicker";
+import ThemeColorPicker from "ui-toolkit/components/ColorPicker/ThemeColorPicker";
 import PropsTable from "./PropsTable";
 import styled from "styled-components";
-import VerticalList from "../../../components/VerticalList/VerticalList";
-import BigDate from "../../../components/BigDate/BigDate";
+import VerticalList from "ui-toolkit/components/VerticalList/VerticalList";
+import BigDate from "ui-toolkit/components/BigDate/BigDate";
 
 const images = [
   "https://thumbs-prod.si-cdn.com/EmpGS8PcTnjeik1JWjCHuDPPeyQ=/800x600/filters:no_upscale()/https://public-media.si-cdn.com/filer/cb/87/cb87fada-31dd-40eb-8d1d-e3b5d738d327/istock-120911394.jpg",

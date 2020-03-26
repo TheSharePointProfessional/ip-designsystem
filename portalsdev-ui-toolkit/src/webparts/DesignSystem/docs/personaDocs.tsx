@@ -1,8 +1,8 @@
 import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
-import Persona from "../../../components/Persona/Persona";
-import Card from "../../../components/Card/Card";
-import Grid from "../../../components/Grid/Grid";
+import Persona from "ui-toolkit/components/Persona/Persona";
+import Card from "ui-toolkit/components/Card/Card";
+import Grid from "ui-toolkit/components/Grid/Grid";
 import PropsTable from "./PropsTable";
 
 let documentation: ComponentDocumentation = {

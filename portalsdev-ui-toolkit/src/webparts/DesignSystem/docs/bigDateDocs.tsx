@@ -1,6 +1,6 @@
 import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
-import BigDate from "../../../components/BigDate/BigDate";
+import BigDate from "ui-toolkit/components/BigDate/BigDate";
 import PropsTable from "./PropsTable";
 
 let documentation: ComponentDocumentation = {

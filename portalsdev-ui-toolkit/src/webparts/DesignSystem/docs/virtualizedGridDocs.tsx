@@ -1,7 +1,7 @@
 import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
-import VirtualizedGrid from "../../../components/VirtualizedGrid/VirtualizedGrid";
-import Card from "../../../components/Card/Card";
+import VirtualizedGrid from "ui-toolkit/components/VirtualizedGrid/VirtualizedGrid";
+import Card from "ui-toolkit/components/Card/Card";
 import PropsTable from "./PropsTable";
 
 const images = [

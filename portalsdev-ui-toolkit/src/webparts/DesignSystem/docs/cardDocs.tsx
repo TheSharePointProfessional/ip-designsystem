@@ -1,6 +1,6 @@
 import { ComponentDemo } from "./docs";
-import Card from "../../../components/Card/Card";
-import BigDate from "../../../components/BigDate/BigDate";
+import Card from "ui-toolkit/components/Card/Card";
+import BigDate from "ui-toolkit/components/BigDate/BigDate";
 import React from "react";
 import PropsTable from "./PropsTable";
 

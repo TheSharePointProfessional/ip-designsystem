@@ -1,6 +1,6 @@
 import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
-import LinkTile from "../../../components/LinkTile/LinkTile";
+import LinkTile from "ui-toolkit/components/LinkTile/LinkTile";
 import PropsTable from "./PropsTable";
 import styled from "styled-components";
 

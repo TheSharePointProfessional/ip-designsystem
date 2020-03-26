@@ -1,14 +1,14 @@
 import React, { useState, Suspense } from "react";
 import { DisplayMode } from "@microsoft/sp-core-library";
 import { IReadonlyTheme } from "@microsoft/sp-component-base";
-import PortalsThemeProvider from "../../../components/PortalsThemeProvider/PortalsThemeProvider";
+import PortalsThemeProvider from "ui-toolkit/components/PortalsThemeProvider/PortalsThemeProvider";
 
 import styled from "styled-components";
 import Nav from "./Nav";
 // import ReactViewDemo from "./ReactViewDemo";
 const ReactViewDemo = React.lazy(() => import("./ReactViewDemo"));
 import components from "../docs/docs";
-import usePersistedState from "../../../hooks/usePersistedState";
+import usePersistedState from "ui-toolkit/hooks/usePersistedState";
 
 const Container = styled.div`
   position: relative;

@@ -1,7 +1,7 @@
 import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
-import Link from "../../../components/primitives/Link";
-import IconImage from "../../../components/IconImage/IconImage";
+import Link from "ui-toolkit/components/primitives/Link";
+import IconImage from "ui-toolkit/components/IconImage/IconImage";
 import PropsTable from "./PropsTable";
 import styled from "styled-components";
 

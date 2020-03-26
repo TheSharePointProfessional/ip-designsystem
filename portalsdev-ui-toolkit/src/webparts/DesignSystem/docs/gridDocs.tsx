@@ -1,7 +1,7 @@
 import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
-import BackgroundImage from "../../../components/primitives/BackgroundImage";
-import Grid from "../../../components/Grid/Grid";
+import BackgroundImage from "ui-toolkit/components/primitives/BackgroundImage";
+import Grid from "ui-toolkit/components/Grid/Grid";
 import PropsTable from "./PropsTable";
 
 let docs: ComponentDocumentation = {

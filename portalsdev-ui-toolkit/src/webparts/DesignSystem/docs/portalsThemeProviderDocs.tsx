@@ -1,6 +1,6 @@
 import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
-import DateRangeText from "../../../components/DateRangeText/DateRangeText";
+import DateRangeText from "ui-toolkit/components/DateRangeText/DateRangeText";
 import PropsTable from "./PropsTable";
 import { prism as codeStyle } from "react-syntax-highlighter/dist/esm/styles/prism";
 import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/prism";
@@ -8,7 +8,7 @@ import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/prism";
 import {
   getPortalsTheme,
   getThemeValue,
-} from "../../../components/PortalsThemeProvider/PortalsThemeProvider";
+} from "ui-toolkit/components/PortalsThemeProvider/PortalsThemeProvider";
 import styled from "styled-components";
 
 export const StyledColorSwatch = styled.div`

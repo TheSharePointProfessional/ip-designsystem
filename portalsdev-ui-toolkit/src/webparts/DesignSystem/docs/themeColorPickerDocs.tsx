@@ -1,6 +1,6 @@
 import { ComponentDocumentation, ComponentDemo } from "./docs";
 import React, { useState } from "react";
-import ThemeColorPicker from "../../../components/ColorPicker/ThemeColorPicker";
+import ThemeColorPicker from "ui-toolkit/components/ColorPicker/ThemeColorPicker";
 import PropsTable from "./PropsTable";
 import styled from "styled-components";
 
