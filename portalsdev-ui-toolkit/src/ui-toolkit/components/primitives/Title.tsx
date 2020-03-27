@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "ui-toolkit/styled-components";
 import Link from "./Link";
+import { getThemeValue } from "../PortalsThemeProvider/PortalsThemeProvider";
 
 const CLASS_NAME = "title-ui-toolkit";
 
@@ -39,5 +40,11 @@ const StyledTitle = styled.h3`
 
   a &:hover {
     color: ${(props) => props.theme.palette.themePrimary};
+  }
+  .ignore-variant & {
+    color: ${(props) => getThemeValue("global.bodyText", "#444")};
+  }
+  .ignore-variant a &:hover {
+    color: ${(props) => getThemeValue("global.themePrimary", "#555")};
   }
 `;
