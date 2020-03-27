@@ -9,7 +9,7 @@ export default function useShave(maxHeight) {
 
   useLayoutEffect(() => {
     const tryShave = () => {
-      if (elemRef.current && enabled) {
+      if (elemRef.current && enabled && maxHeight) {
         shave(elemRef.current, maxHeight);
       }
       setCanTruncate(elemRef.current.offsetHeight >= maxHeight);
