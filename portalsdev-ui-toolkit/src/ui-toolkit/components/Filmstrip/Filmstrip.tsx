@@ -77,8 +77,9 @@ const PagerButton = styled(IconButton)`
   color: ${(props) => getThemeValue("palette.white", "#fff")};
   &:hover {
     color: ${(props) => getThemeValue("palette.white", "#fff")};
+    background: ${(props) => getThemeValue("palette.themePrimary", "blue")};
   }
-  background: ${(props) => getThemeValue("palette.themePrimary", "#fff")};
+  background: ${(props) => getThemeValue("palette.themePrimary", "blue")};
   /* margin: 0 5px;
   border-radius: 50%; */
   /* The chevron icons don't look centered, fixing manually */
