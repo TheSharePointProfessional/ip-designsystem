@@ -1,6 +1,7 @@
 import _styled, { ThemeProvider as SCThemeProvider } from "styled-components";
 
 declare var SC_PREFIX: string;
+declare var process: any;
 const getPrefix = () => {
   try {
     // console.log("PROCESS", process.env.SC_PREFIX);
@@ -9,6 +10,7 @@ const getPrefix = () => {
     return "put";
   }
 };
+
 const PREFIX = getPrefix();
 export const ThemeProvider = SCThemeProvider;
 let styled = (tag) => {
