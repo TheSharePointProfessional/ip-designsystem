@@ -12,6 +12,7 @@ const getPrefix = () => {
     return "put";
   }
 };
+
 const PREFIX = getPrefix();
 export const ThemeProvider = SCThemeProvider;
 let styled = (tag) => {
