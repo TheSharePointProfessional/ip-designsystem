@@ -17,7 +17,7 @@ const PortalsThemeProvider: React.FC<PortalsThemeProviderProps> = ({ children, t
       ...theme.semanticColors,
       ...theme.palette,
     },
-    getValue: function(path: string, fallback = "#f00") {
+    getValue: function (path: string, fallback = "#f00") {
       return getValue(this, path) || fallback;
     },
   };
@@ -43,6 +43,25 @@ export function getPortalsTheme() {
     };
   }
   return theme;
+}
+
+// getThemeColor("red") => "#f00"
+// getThemeColor("bodyText") => theme.semanticColor.bodyText
+// getThemeColor("themePrimary") => theme.palette.themePrimary
+// getThemeColor("bodyText", true) => theme.global.bodyText
+
+export function getThemeColor(color: string, obeyVariant = true) {
+  if (!obeyVariant) {
+    return getThemeColorByNamespace(color, null, "global") || color;
+  }
+
+  let semanticColor = getThemeColorByNamespace(color, null, "semanticColors");
+  let paletteColor = getThemeColorByNamespace(color, null, "palette");
+  return semanticColor || paletteColor || color;
+}
+
+function getThemeColorByNamespace(color: string, fallback: string, namespace: string) {
+  return getThemeValue(`${namespace}.${color}`, fallback);
 }
 
 export function getThemeValue(path: string, fallback: string, theme?: any) {
