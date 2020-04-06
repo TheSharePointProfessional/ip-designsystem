@@ -158,7 +158,11 @@ var domElements = [
 
 // let styled = _styled;
 domElements.forEach((key) => {
-  styled[key] = _styled[key].withConfig({ displayName: PREFIX });
+  try {
+    styled[key] = _styled[key].withConfig({ displayName: PREFIX });
+  } catch {
+    console.log("Styled Components doesn't recognize element type: ", key);
+  }
 });
 
 export default styled as any;
