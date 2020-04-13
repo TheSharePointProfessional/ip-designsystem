@@ -1,0 +1,49 @@
+import BigDate from "./BigDate.tsx";
+import { PropsTable, Showcase } from "docs";
+
+export const metadata = {
+  sort: 2,
+  parent: "",
+};
+
+# BigDate
+
+```tsx
+import { BigDate } from "ui-toolkit/components";
+```
+
+Displays a date nice and big with white text and a text shadows. <b>Looks good over images or
+background colors</b>.
+
+<Showcase>
+  <div style={{ display: "grid", gap: "40px", gridTemplateColumns: "100px 100px 100px 100px" }}>
+    <BigDate date={new Date()} />
+    <BigDate date={new Date()} style={{ background: "steelblue" }} />
+    <BigDate date={new Date()} style={{ background: "steelblue", borderRadius: "50%" }} />
+    <BigDate date={new Date()} style={{ fontSize: "36px", color: "#387c9c", textShadow: "none" }} />
+  </div>
+</Showcase>
+
+## Props
+
+<PropsTable name="BigDateProps" />
+
+## Basic Usage
+
+```tsx live=true
+<BigDate date={new Date()} />
+```
+
+## Style Overrides
+
+You can pass a `style` object to style things directly.
+
+```tsx live=true
+<div style={{ display: "grid", gap: "40px", gridTemplateColumns: "100px 100px 100px" }}>
+  <BigDate date={new Date()} style={{ background: "steelblue" }} />
+
+  <BigDate date={new Date()} style={{ background: "steelblue", borderRadius: "50%" }} />
+
+  <BigDate date={new Date()} style={{ fontSize: "36px", color: "#387c9c", textShadow: "none" }} />
+</div>
+```
