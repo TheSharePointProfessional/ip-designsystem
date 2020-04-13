@@ -29,6 +29,11 @@ export default function Menu({ setActive, active }) {
             ))}
           </MenuItems>
         </li>
+
+        <li className="label">
+          Hooks
+          <MenuItems items={hooksItems} setActive={setActive} active={active}></MenuItems>
+        </li>
       </MenuItems>
     </StyledSideMenu>
   );

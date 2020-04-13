@@ -45,6 +45,9 @@ const StyledLayout = styled.div`
   gap: 1px 1px;
   grid-template-areas: "header header" "side-menu content";
 
+  p > code {
+    color: #bd7a27;
+  }
   .side-menu {
     grid-area: side-menu;
     border-right: 1px solid #eee;

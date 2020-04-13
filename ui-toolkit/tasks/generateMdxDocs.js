@@ -8,6 +8,7 @@ let doWork = async () => {
   let filepaths = await glob("src/ui-toolkit/**/*.mdx");
   console.log(filepaths);
   let files = filepaths.map(processFile).sort(compareFiles);
+  console.log("doWork -> files", files);
   let fileContents = renderFileTemplate(files);
   //   console.log("doWork -> fileContents", fileContents);
   try {
@@ -26,10 +27,11 @@ let processFile = (filepath) => {
   let menuPath = parsedFile.dir.replace("src/ui-toolkit", "").substr(1);
   let section = "";
   let parsedMenuPath = path.parse(menuPath);
+  console.log("processFile -> parsedMenuPath", parsedMenuPath);
   if (parsedMenuPath.dir === "components") {
     section = "components";
   }
-  if (parsedMenuPath.dir === "hooks") {
+  if (parsedMenuPath.dir === "hooks" || parsedMenuPath.base === "hooks") {
     section = "hooks";
   }
   if (parsedMenuPath.dir === "core") {
@@ -38,7 +40,7 @@ let processFile = (filepath) => {
 
   let parent = section && parsedParent.name !== parsedFile.name ? parsedParent.name : "";
   return {
-    title: parsedFile.name,
+    title: capitalize(parsedFile.name),
     section,
     parent,
     filepath: filepath.replace("src/", ""),
@@ -86,3 +88,8 @@ export default docs;
 `;
 };
 doWork();
+
+const capitalize = (str) => {
+  if (!str) return "";
+  return str.substr(0, 1).toUpperCase() + str.substr(1);
+};

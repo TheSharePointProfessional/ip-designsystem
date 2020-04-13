@@ -8613,7 +8613,7 @@ export default {
         }
       ]
     },
-    "useDebounce": {
+    "useDebouncedValue": {
       "fileName": "src\\ui-toolkit\\hooks\\useDebounce.ts",
       "flags": {
         "isExported": true,
@@ -8626,12 +8626,12 @@ export default {
         "isStatic": false
       },
       "kind": "method",
-      "name": "useDebounce",
+      "name": "useDebouncedValue",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\hooks\\useDebounce.ts",
           "kind": "signature",
-          "name": "useDebounce",
+          "name": "useDebouncedValue",
           "parameters": [
             {
               "flags": {
@@ -8666,6 +8666,78 @@ export default {
           ],
           "returnType": "any",
           "type": "(value: any, delay: any) => any"
+        }
+      ]
+    },
+    "useDebouncedEffect": {
+      "fileName": "src\\ui-toolkit\\hooks\\useDebounce.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "useDebouncedEffect",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useDebounce.ts",
+          "kind": "signature",
+          "name": "useDebouncedEffect",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "effectFn",
+              "type": "any"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "value",
+              "type": "any"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "delay",
+              "defaultValue": "250",
+              "type": "number"
+            }
+          ],
+          "returnType": "void",
+          "type": "(effectFn: any, value: any, delay?: number) => void"
         }
       ]
     },
@@ -10162,8 +10234,8 @@ export default {
         }
       ]
     },
-    "ThumbnailProps": {
-      "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+    "Window": {
+      "fileName": "src\\ui-toolkit\\components\\Grid\\Grid.tsx",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -10175,39 +10247,15 @@ export default {
         "isStatic": false
       },
       "kind": "interface",
-      "name": "ThumbnailProps",
-      "indexSignature": {
-        "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
-        "kind": "signature",
-        "name": "__index",
-        "parameters": [
-          {
-            "flags": {
-              "isExported": true,
-              "isExternal": false,
-              "isOptional": false,
-              "isPrivate": false,
-              "isProtected": false,
-              "isPublic": false,
-              "isRest": false,
-              "isStatic": false
-            },
-            "kind": "parameter",
-            "name": "key",
-            "type": "string"
-          }
-        ],
-        "returnType": "any",
-        "type": "{ [key: string]: any }"
-      },
+      "name": "Window",
       "methods": [],
       "properties": [
         {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+          "fileName": "src\\ui-toolkit\\components\\Grid\\Grid.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
-            "isOptional": true,
+            "isOptional": false,
             "isPrivate": false,
             "isProtected": false,
             "isPublic": false,
@@ -10215,56 +10263,8 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "className",
-          "type": "string"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "height",
-          "type": "string"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "shape",
-          "type": "\"circle\" | \"rectangle\" | \"square\""
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "width",
-          "type": "string"
+          "name": "CSS",
+          "type": "any"
         }
       ]
     },
@@ -10363,40 +10363,6 @@ export default {
           "kind": "property",
           "name": "theme",
           "type": "IReadonlyTheme"
-        }
-      ]
-    },
-    "Window": {
-      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "interface",
-      "name": "Window",
-      "methods": [],
-      "properties": [
-        {
-          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "__portalsDev",
-          "type": ""
         }
       ]
     },
@@ -11827,6 +11793,112 @@ export default {
         }
       ]
     },
+    "ThumbnailProps": {
+      "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "ThumbnailProps",
+      "indexSignature": {
+        "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+        "kind": "signature",
+        "name": "__index",
+        "parameters": [
+          {
+            "flags": {
+              "isExported": true,
+              "isExternal": false,
+              "isOptional": false,
+              "isPrivate": false,
+              "isProtected": false,
+              "isPublic": false,
+              "isRest": false,
+              "isStatic": false
+            },
+            "kind": "parameter",
+            "name": "key",
+            "type": "string"
+          }
+        ],
+        "returnType": "any",
+        "type": "{ [key: string]: any }"
+      },
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "className",
+          "type": "string"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "height",
+          "type": "string"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "shape",
+          "type": "\"circle\" | \"rectangle\" | \"square\""
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "width",
+          "type": "string"
+        }
+      ]
+    },
     "PanelLinkProps": {
       "fileName": "src\\ui-toolkit\\components\\PanelLink\\PanelLink.tsx",
       "flags": {
@@ -12496,6 +12568,70 @@ export default {
           "kind": "property",
           "name": "value",
           "type": "SiteChoiceType"
+        }
+      ]
+    },
+    "UseDebounceParams": {
+      "fileName": "src\\ui-toolkit\\hooks\\useDebounce.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "UseDebounceParams",
+      "methods": [],
+      "properties": [
+        {
+          "documentation": {
+            "contents": [
+              "<p>Milliseconds, how long to wait before actually updating</p>\n"
+            ],
+            "contentsRaw": "Milliseconds, how long to wait before actually updating",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\hooks\\useDebounce.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "delay",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Whatever value you want to track</p>\n"
+            ],
+            "contentsRaw": "Whatever value you want to track",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\hooks\\useDebounce.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "value",
+          "type": "any"
         }
       ]
     },

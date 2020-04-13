@@ -31,3 +31,8 @@ obj
 # Styles Generated Code
 *.scss.ts
 .cache
+
+ClientSideAssets/**/*.js
+ClientSideAssets/**/*.css
+ClientSideAssets/**/*.map
+ClientSideAssets/**/*.html

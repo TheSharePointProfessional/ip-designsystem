@@ -4,6 +4,8 @@ import HomeDocs, { metadata as HomeMetadata } from "ui-toolkit/Home.mdx"
 import PersonaDocs, { metadata as PersonaMetadata } from "ui-toolkit/components/Persona/Persona.mdx"
 import TextDocs, { metadata as TextMetadata } from "ui-toolkit/components/primitives/Text.mdx"
 import TitleDocs, { metadata as TitleMetadata } from "ui-toolkit/components/primitives/Title.mdx"
+import UseDebouncedEffectDocs, { metadata as UseDebouncedEffectMetadata } from "ui-toolkit/hooks/useDebouncedEffect.mdx"
+import UseDebouncedValueDocs, { metadata as UseDebouncedValueMetadata } from "ui-toolkit/hooks/useDebouncedValue.mdx"
 
 const docs = [
        {
@@ -40,6 +42,20 @@ const docs = [
         sort: TitleMetadata?.sort ?? 9999,
         parent: TitleMetadata?.parent || "primitives",
         render: () => <TitleDocs />,
+    },
+   {
+        title: "UseDebouncedEffect",
+        section: "hooks",
+        sort: UseDebouncedEffectMetadata?.sort ?? 9999,
+        parent: UseDebouncedEffectMetadata?.parent || "hooks",
+        render: () => <UseDebouncedEffectDocs />,
+    },
+   {
+        title: "UseDebouncedValue",
+        section: "hooks",
+        sort: UseDebouncedValueMetadata?.sort ?? 9999,
+        parent: UseDebouncedValueMetadata?.parent || "hooks",
+        render: () => <UseDebouncedValueDocs />,
     },
 ];
 export default docs;
