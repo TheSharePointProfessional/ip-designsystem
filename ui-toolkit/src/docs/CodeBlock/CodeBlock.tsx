@@ -31,7 +31,7 @@ export function SyntaxHighlighter({ code, className }) {
 }
 
 export function Playground({ code }) {
-  let [showCode, setShowCode] = React.useState(true);
+  let [showCode, setShowCode] = React.useState(false);
   return (
     <LiveProvider code={code} scope={scope} theme={{ plain: {}, styles: [] }}>
       <StyledPreview />

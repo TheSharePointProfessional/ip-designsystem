@@ -2168,7 +2168,130 @@ export default {
           "parameters": [
             {
               "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "any",
+          "type": "(__namedParameters: ) => any"
+        }
+      ]
+    },
+    "Link": {
+      "fileName": "src\\ui-toolkit\\components\\primitives\\Link.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "Link",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Link.tsx",
+          "kind": "signature",
+          "name": "Link",
+          "parameters": [
+            {
+              "flags": {
                 "isExported": false,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "any",
+          "type": "(__namedParameters: ) => any"
+        }
+      ]
+    },
+    "HyperLink": {
+      "fileName": "src\\ui-toolkit\\components\\primitives\\Link.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "HyperLink",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Link.tsx",
+          "kind": "signature",
+          "name": "HyperLink",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "any",
+          "type": "(__namedParameters: ) => any"
+        }
+      ]
+    },
+    "Title": {
+      "fileName": "src\\ui-toolkit\\components\\primitives\\Title.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "Title",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Title.tsx",
+          "kind": "signature",
+          "name": "Title",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
                 "isExternal": false,
                 "isOptional": false,
                 "isPrivate": false,
@@ -2442,129 +2565,6 @@ export default {
           "fileName": "src\\App.tsx",
           "kind": "signature",
           "name": "App",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": false,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
-        }
-      ]
-    },
-    "Link": {
-      "fileName": "src\\ui-toolkit\\components\\primitives\\Link.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "Link",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Link.tsx",
-          "kind": "signature",
-          "name": "Link",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": false,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
-        }
-      ]
-    },
-    "HyperLink": {
-      "fileName": "src\\ui-toolkit\\components\\primitives\\Link.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "HyperLink",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Link.tsx",
-          "kind": "signature",
-          "name": "HyperLink",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
-        }
-      ]
-    },
-    "Title": {
-      "fileName": "src\\ui-toolkit\\components\\primitives\\Title.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "Title",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Title.tsx",
-          "kind": "signature",
-          "name": "Title",
           "parameters": [
             {
               "flags": {
@@ -5937,6 +5937,13 @@ export default {
       "methods": [],
       "properties": [
         {
+          "documentation": {
+            "contents": [
+              "<p>The type of HTML Element. Defaults to div.</p>\n"
+            ],
+            "contentsRaw": "The type of HTML Element. Defaults to div.",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\primitives\\Text.tsx",
           "flags": {
             "isExported": true,
@@ -5953,6 +5960,13 @@ export default {
           "type": "string"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Optional class name to use for styling.</p>\n"
+            ],
+            "contentsRaw": "Optional class name to use for styling.",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\primitives\\Text.tsx",
           "flags": {
             "isExported": true,
@@ -5969,6 +5983,13 @@ export default {
           "type": "string"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Allows CSS color values or theme parameters.</p>\n"
+            ],
+            "contentsRaw": "Allows CSS color values or theme parameters.",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\primitives\\Text.tsx",
           "flags": {
             "isExported": true,
@@ -6207,6 +6228,13 @@ export default {
       "methods": [],
       "properties": [
         {
+          "documentation": {
+            "contents": [
+              "<p>The type of HTML Element. Defaults to h3.</p>\n"
+            ],
+            "contentsRaw": "The type of HTML Element. Defaults to h3.",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\primitives\\Title.tsx",
           "flags": {
             "isExported": true,
@@ -6223,6 +6251,13 @@ export default {
           "type": "string"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Optional class name to use for styling.</p>\n"
+            ],
+            "contentsRaw": "Optional class name to use for styling.",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\primitives\\Title.tsx",
           "flags": {
             "isExported": true,
@@ -6239,6 +6274,36 @@ export default {
           "type": "string"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Allows CSS color values or theme parameters.</p>\n"
+            ],
+            "contentsRaw": "Allows CSS color values or theme parameters.",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Title.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "color",
+          "type": "any"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>If provided, the Title will be rendered as a link.</p>\n"
+            ],
+            "contentsRaw": "If provided, the Title will be rendered as a link.",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\primitives\\Title.tsx",
           "flags": {
             "isExported": true,

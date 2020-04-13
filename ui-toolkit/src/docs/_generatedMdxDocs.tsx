@@ -2,6 +2,7 @@ import React from "react";
 import BigDateDocs, { metadata as BigDateMetadata } from "ui-toolkit/components/BigDate/BigDate.mdx"
 import HomeDocs, { metadata as HomeMetadata } from "ui-toolkit/Home.mdx"
 import TextDocs, { metadata as TextMetadata } from "ui-toolkit/components/primitives/Text.mdx"
+import TitleDocs, { metadata as TitleMetadata } from "ui-toolkit/components/primitives/Title.mdx"
 
 const docs = [
        {
@@ -21,6 +22,12 @@ const docs = [
         sort: TextMetadata?.sort ?? 9999,
         parent: TextMetadata?.parent || "",
         render: () => <TextDocs />,
+    },
+   {
+        title: "Title",
+        sort: TitleMetadata?.sort ?? 9999,
+        parent: TitleMetadata?.parent || "",
+        render: () => <TitleDocs />,
     },
 ];
 export default docs;

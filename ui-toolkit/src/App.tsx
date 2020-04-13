@@ -4,6 +4,8 @@ import styled from "styled-components";
 import { Menu, docs, CodeBlock } from "docs";
 import useQueryString from "ui-toolkit/hooks/useQueryString";
 import { MDXProvider } from "@mdx-js/react";
+import PortalsThemeProvider from "ui-toolkit/components/PortalsThemeProvider/PortalsThemeProvider";
+import mockTheme from "docs/mockTheme";
 
 const components = {
   pre: CodeBlock,
@@ -16,18 +18,20 @@ function App({}) {
   let target = docs.find((d) => d.title === active);
   return (
     <Fabric>
-      <StyledLayout className="app">
-        <div className="header">
-          <h1>PortalsDev UI Toolkit</h1>
-        </div>
-        <div className="side-menu">
-          <Menu setActive={setActive} />
-        </div>
-        <div className="content">
-          <MDXProvider components={components}>{target && target.render()}</MDXProvider>
-        </div>
-      </StyledLayout>
-      <style>{`body { margin: 0; height: 100vh}`}</style>
+      <PortalsThemeProvider theme={mockTheme}>
+        <StyledLayout className="app">
+          <div className="header">
+            <h1>PortalsDev UI Toolkit</h1>
+          </div>
+          <div className="side-menu">
+            <Menu setActive={setActive} />
+          </div>
+          <div className="content">
+            <MDXProvider components={components}>{target && target.render()}</MDXProvider>
+          </div>
+        </StyledLayout>
+        <style>{`body { margin: 0; height: 100vh}`}</style>
+      </PortalsThemeProvider>
     </Fabric>
   );
 }

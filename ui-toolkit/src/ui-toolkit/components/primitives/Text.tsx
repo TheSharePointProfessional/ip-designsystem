@@ -1,17 +1,17 @@
 import React from "react";
-import styled from "ui-toolkit/styled-components";
+import styled from "../../styled-components";
 import { getThemeValue, getThemeColor } from "../PortalsThemeProvider/PortalsThemeProvider";
 
-const CLASS_NAME = "info-ui-toolkit";
+const CLASS_NAME = "put-text";
 
 export interface TextProps {
-  /** An optional class name to help with style overrides */
-  className?: string;
-  /** You can control what type of HTML it uses. Defaults to DIV. */
-  as?: string;
-  [key: string]: any;
-  /** Any valid CSS color or theme param. */
+  /** Allows CSS color values or theme parameters. */
   color?: string;
+  /** The type of HTML Element. Defaults to div. */
+  as?: string;
+  /** Optional class name to use for styling. */
+  className?: string;
+  [key: string]: any;
 }
 
 export const Text: React.FC<TextProps> = ({
