@@ -1,12 +1,11 @@
 // Find all mdx files recursively
 const path = require("path");
 const fs = require("fs");
-const fm = require("front-matter");
 const util = require("util");
 const glob = util.promisify(require("glob"));
 
 let doWork = async () => {
-  let filepaths = await glob("**/*.mdx");
+  let filepaths = await glob("src/ui-toolkit/**/*.mdx");
   console.log(filepaths);
   let files = filepaths.map(processFile).sort(compareFiles);
   let fileContents = renderFileTemplate(files);
@@ -20,10 +19,28 @@ let doWork = async () => {
 
 let processFile = (filepath) => {
   let parsedFile = path.parse(filepath);
+  let parsedParent = path.parse(parsedFile.dir);
+  // console.log("processFile -> parsedFile", parsedFile);
+  // console.log("processFile -> parent", parent);
 
+  let menuPath = parsedFile.dir.replace("src/ui-toolkit", "").substr(1);
+  let section = "";
+  let parsedMenuPath = path.parse(menuPath);
+  if (parsedMenuPath.dir === "components") {
+    section = "components";
+  }
+  if (parsedMenuPath.dir === "hooks") {
+    section = "hooks";
+  }
+  if (parsedMenuPath.dir === "core") {
+    section = "core";
+  }
+
+  let parent = section && parsedParent.name !== parsedFile.name ? parsedParent.name : "";
   return {
     title: parsedFile.name,
-    parent: "",
+    section,
+    parent,
     filepath: filepath.replace("src/", ""),
   };
 };
@@ -49,8 +66,9 @@ const writeDocEntries = (files) => {
     .map(
       (file) => `   {
         title: "${file.title}",
+        section: "${file.section}",
         sort: ${file.title}Metadata?.sort ?? 9999,
-        parent: ${file.title}Metadata?.parent || "",
+        parent: ${file.title}Metadata?.parent || "${file.parent}",
         render: () => <${file.title}Docs />,
     },`
     )

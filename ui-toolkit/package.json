@@ -6,7 +6,7 @@
   "scripts": {
     "prestart": "npm run codegen",
     "start:offline": "parcel index.html",
-    "start": "npm run start:offline",
+    "start": "concurrently \"gulp small-serve\" \"parcel src/entry.ts --out-dir ClientSideAssets\"",
     "deploy": "powershell tasks/deploy.ps1",
     "prebuild": "npm run codegen",
     "build": "parcel build src/entry.ts --out-dir ClientSideAssets --public-url /sites/apps/ClientSideAssets/ui-toolkit",
@@ -35,7 +35,6 @@
     "ajv": "~5.2.2",
     "babel-plugin-prismjs": "^2.0.1",
     "concurrently": "^5.1.0",
-    "front-matter": "^3.1.0",
     "glob": "^7.1.6",
     "gulp-sequence": "^1.0.0",
     "gulp-watch": "^5.0.1",

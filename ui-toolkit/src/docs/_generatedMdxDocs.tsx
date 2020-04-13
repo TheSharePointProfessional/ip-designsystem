@@ -8,32 +8,37 @@ import TitleDocs, { metadata as TitleMetadata } from "ui-toolkit/components/prim
 const docs = [
        {
         title: "BigDate",
+        section: "components",
         sort: BigDateMetadata?.sort ?? 9999,
         parent: BigDateMetadata?.parent || "",
         render: () => <BigDateDocs />,
     },
    {
         title: "Home",
+        section: "",
         sort: HomeMetadata?.sort ?? 9999,
         parent: HomeMetadata?.parent || "",
         render: () => <HomeDocs />,
     },
    {
         title: "Persona",
+        section: "components",
         sort: PersonaMetadata?.sort ?? 9999,
         parent: PersonaMetadata?.parent || "",
         render: () => <PersonaDocs />,
     },
    {
         title: "Text",
+        section: "components",
         sort: TextMetadata?.sort ?? 9999,
-        parent: TextMetadata?.parent || "",
+        parent: TextMetadata?.parent || "primitives",
         render: () => <TextDocs />,
     },
    {
         title: "Title",
+        section: "components",
         sort: TitleMetadata?.sort ?? 9999,
-        parent: TitleMetadata?.parent || "",
+        parent: TitleMetadata?.parent || "primitives",
         render: () => <TitleDocs />,
     },
 ];

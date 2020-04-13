@@ -24,7 +24,7 @@ function App({ theme }) {
             <h1>PortalsDev UI Toolkit</h1>
           </div>
           <div className="side-menu">
-            <Menu setActive={setActive} />
+            <Menu setActive={setActive} active={active} />
           </div>
           <div className="content">
             <Suspense fallback={<div>Loading...</div>}>
@@ -48,7 +48,7 @@ const StyledLayout = styled.div`
   .side-menu {
     grid-area: side-menu;
     border-right: 1px solid #eee;
-    padding: 20px;
+    padding: 0 0 0 15px;
   }
 
   .content {

@@ -2,11 +2,6 @@ import Personal from "./Persona.tsx";
 import Card from "../Card/Card.tsx";
 import { PropsTable, Showcase } from "docs";
 
-export const metadata = {
-  sort: 2,
-  parent: "Components",
-};
-
 # Persona
 
 ```tsx
@@ -35,15 +30,66 @@ as well as a call to action button.
 
 ## Basic Usage
 
+At minimum you should pass a `photo`, and `title`.
+
 ```tsx live=true
 <Persona
   photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
   title="Will Spiering"
   subTitle="Software Engineer"
   info="Modern Workplace"
-  callToAction="Learn More"
-  linkUrl="https://wikipedia.com"
 />
+```
+
+## Photo Size
+
+You can adjust how big the photo is to fit your scenario
+
+```tsx live=true
+<div>
+  <Persona
+    photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    title="Will Spiering"
+    photoSize="45px"
+    subTitle="Software Engineer"
+  />
+  <Persona
+    photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    title="Will Spiering"
+    photoSize="45px"
+    subTitle="Software Engineer"
+  />
+  <Persona
+    photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    title="Will Spiering"
+    photoSize="45px"
+    subTitle="Software Engineer"
+  />
+</div>
+```
+
+## Link Url and Call To action
+
+You can pass a `linkUrl` and it will send the user there on click. If you pass a `callToAction`, a button will be rendered for the link instead of having the entire persona be clickable.
+
+```tsx live=true
+<div>
+  <Persona
+    photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    title="Will Spiering"
+    subTitle="Software Engineer"
+    info="Modern Workplace"
+    linkUrl="https://wikipedia.com"
+  />
+  <Persona
+    photo="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    title="Will Spiering"
+    subTitle="Software Engineer"
+    info="Modern Workplace"
+    linkUrl="https://wikipedia.com"
+    callToAction="Learn More"
+  />
+</div>
 ```
 
 ## Persona Card
