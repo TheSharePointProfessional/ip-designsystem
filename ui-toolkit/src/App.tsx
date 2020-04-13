@@ -18,7 +18,7 @@ function App({}) {
   let target = docs.find((d) => d.title === active);
   return (
     <Fabric>
-      <PortalsThemeProvider theme={mockTheme}>
+      <PortalsThemeProvider theme={mockTheme as any}>
         <StyledLayout className="app">
           <div className="header">
             <h1>PortalsDev UI Toolkit</h1>
@@ -52,7 +52,7 @@ const StyledLayout = styled.div`
   .content {
     grid-area: content;
     padding: 0 20px 50px;
-    max-width: 1200px;
+    max-width: 1100px;
   }
 
   .header {

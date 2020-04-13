@@ -49,7 +49,7 @@ export function Playground({ code }) {
 }
 
 const StyledPreview = styled(LivePreview)`
-  border: 1px solid #eee;
+  /* border: 1px solid #eee; */
   border-radius: 4px 4px 0 0;
   padding: 10px;
   min-height: 100px;

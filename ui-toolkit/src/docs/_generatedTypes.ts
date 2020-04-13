@@ -15,9 +15,682 @@ export default {
       "kind": "class",
       "name": "Card",
       "extends": [
-        "any"
+        "PureComponent<CardProps, >"
       ],
       "methods": [
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentWillMount",
+          "inheritedFrom": "DeprecatedLifecycle.componentWillMount",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before mounting occurs, and before <code>Component#render</code>.\nAvoid introducing any side-effects or subscriptions in this method.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called immediately before mounting occurs, and before `Component#render`.\nAvoid introducing any side-effects or subscriptions in this method.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentWillMount",
+              "parameters": [],
+              "returnType": "void",
+              "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "UNSAFE_componentWillMount",
+          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillMount",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before mounting occurs, and before <code>Component#render</code>.\nAvoid introducing any side-effects or subscriptions in this method.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called immediately before mounting occurs, and before `Component#render`.\nAvoid introducing any side-effects or subscriptions in this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "UNSAFE_componentWillMount",
+              "parameters": [],
+              "returnType": "void",
+              "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "UNSAFE_componentWillUpdate",
+          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before rendering when new props or state is received. Not called for the initial render.</p>\n<p>Note: You cannot call <code>Component#setState</code> here.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called immediately before rendering when new props or state is received. Not called for the initial render.\n\nNote: You cannot call `Component#setState` here.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "UNSAFE_componentWillUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<CardProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextState",
+                  "type": "Readonly<>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<CardProps>, nextState: Readonly<>, nextContext: any) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentDidCatch",
+          "inheritedFrom": "ComponentLifecycle.componentDidCatch",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Catches exceptions generated in descendant components. Unhandled exceptions will cause\nthe entire component tree to unmount.</p>\n"
+                ],
+                "contentsRaw": "Catches exceptions generated in descendant components. Unhandled exceptions will cause\nthe entire component tree to unmount.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentDidCatch",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "error",
+                  "type": "Error"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "errorInfo",
+                  "type": "ErrorInfo"
+                }
+              ],
+              "returnType": "void",
+              "type": "(error: Error, errorInfo: ErrorInfo) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentDidMount",
+          "inheritedFrom": "ComponentLifecycle.componentDidMount",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately after a component is mounted. Setting state here will trigger re-rendering.</p>\n"
+                ],
+                "contentsRaw": "Called immediately after a component is mounted. Setting state here will trigger re-rendering.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentDidMount",
+              "parameters": [],
+              "returnType": "void",
+              "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentDidUpdate",
+          "inheritedFrom": "NewLifecycle.componentDidUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately after updating occurs. Not called for the initial render.</p>\n<p>The snapshot is only present if getSnapshotBeforeUpdate is present and returns non-null.</p>\n"
+                ],
+                "contentsRaw": "Called immediately after updating occurs. Not called for the initial render.\n\nThe snapshot is only present if getSnapshotBeforeUpdate is present and returns non-null.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentDidUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "prevProps",
+                  "type": "Readonly<CardProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "prevState",
+                  "type": "Readonly<>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": true,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "snapshot",
+                  "type": "SS"
+                }
+              ],
+              "returnType": "void",
+              "type": "(prevProps: Readonly<CardProps>, prevState: Readonly<>, snapshot?: SS) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "UNSAFE_componentWillReceiveProps",
+          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillReceiveProps",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "UNSAFE_componentWillReceiveProps",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<CardProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<CardProps>, nextContext: any) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentWillReceiveProps",
+          "inheritedFrom": "DeprecatedLifecycle.componentWillReceiveProps",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentWillReceiveProps",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<CardProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<CardProps>, nextContext: any) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentWillUnmount",
+          "inheritedFrom": "ComponentLifecycle.componentWillUnmount",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as\ncancelled network requests, or cleaning up any DOM elements created in <code>componentDidMount</code>.</p>\n"
+                ],
+                "contentsRaw": "Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as\ncancelled network requests, or cleaning up any DOM elements created in `componentDidMount`.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentWillUnmount",
+              "parameters": [],
+              "returnType": "void",
+              "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentWillUpdate",
+          "inheritedFrom": "DeprecatedLifecycle.componentWillUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before rendering when new props or state is received. Not called for the initial render.</p>\n<p>Note: You cannot call <code>Component#setState</code> here.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called immediately before rendering when new props or state is received. Not called for the initial render.\n\nNote: You cannot call `Component#setState` here.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentWillUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<CardProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextState",
+                  "type": "Readonly<>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<CardProps>, nextState: Readonly<>, nextContext: any) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "getSnapshotBeforeUpdate",
+          "inheritedFrom": "NewLifecycle.getSnapshotBeforeUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Runs before React applies the result of <code>render</code> to the document, and\nreturns an object to be given to componentDidUpdate. Useful for saving\nthings such as scroll position before <code>render</code> causes changes to it.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate prevents any of the deprecated\nlifecycle events from running.</p>\n"
+                ],
+                "contentsRaw": "Runs before React applies the result of `render` to the document, and\nreturns an object to be given to componentDidUpdate. Useful for saving\nthings such as scroll position before `render` causes changes to it.\n\nNote: the presence of getSnapshotBeforeUpdate prevents any of the deprecated\nlifecycle events from running.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "getSnapshotBeforeUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "prevProps",
+                  "type": "Readonly<CardProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "prevState",
+                  "type": "Readonly<>"
+                }
+              ],
+              "returnType": "SS | null",
+              "type": "(prevProps: Readonly<CardProps>, prevState: Readonly<>) => SS | null"
+            }
+          ]
+        },
         {
           "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
           "flags": {
@@ -38,8 +711,87 @@ export default {
               "kind": "signature",
               "name": "render",
               "parameters": [],
-              "returnType": "any",
-              "type": "() => any"
+              "returnType": "Element<>",
+              "type": "() => Element<>"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "shouldComponentUpdate",
+          "inheritedFrom": "ComponentLifecycle.shouldComponentUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called to determine whether the change in props and state should trigger a re-render.</p>\n<p><code>Component</code> always returns true.\n<code>PureComponent</code> implements a shallow comparison on props and state and returns true if any\nprops or states have changed.</p>\n<p>If false is returned, <code>Component#render</code>, <code>componentWillUpdate</code>\nand <code>componentDidUpdate</code> will not be called.</p>\n"
+                ],
+                "contentsRaw": "Called to determine whether the change in props and state should trigger a re-render.\n\n`Component` always returns true.\n`PureComponent` implements a shallow comparison on props and state and returns true if any\nprops or states have changed.\n\nIf false is returned, `Component#render`, `componentWillUpdate`\nand `componentDidUpdate` will not be called.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "shouldComponentUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<CardProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextState",
+                  "type": "Readonly<>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "boolean",
+              "type": "(nextProps: Readonly<CardProps>, nextState: Readonly<>, nextContext: any) => boolean"
             }
           ]
         }
@@ -77,7 +829,7 @@ export default {
           "kind": "property",
           "name": "Footer",
           "defaultValue": "CardFooter",
-          "type": "any"
+          "type": "FunctionComponent<CardFooterProps>"
         },
         {
           "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
@@ -94,7 +846,7 @@ export default {
           "kind": "property",
           "name": "Grid",
           "defaultValue": "Grid",
-          "type": "any"
+          "type": "FunctionComponent<GridProps>"
         },
         {
           "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
@@ -128,7 +880,7 @@ export default {
           "kind": "property",
           "name": "Info",
           "defaultValue": "Info",
-          "type": "any"
+          "type": "FunctionComponent<InfoProps>"
         },
         {
           "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
@@ -145,7 +897,7 @@ export default {
           "kind": "property",
           "name": "Link",
           "defaultValue": "Link",
-          "type": "any"
+          "type": "FunctionComponent<LinkProps>"
         },
         {
           "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
@@ -196,7 +948,7 @@ export default {
           "kind": "property",
           "name": "Title",
           "defaultValue": "Title",
-          "type": "any"
+          "type": "FunctionComponent<TitleProps>"
         }
       ],
       "accessors": []
@@ -216,9 +968,618 @@ export default {
       "kind": "class",
       "name": "ColorPicker",
       "extends": [
-        "any"
+        "PureComponent<ColorPickerProps, ColorPickerState>"
       ],
       "methods": [
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentWillUnmount",
+          "inheritedFrom": "ComponentLifecycle.componentWillUnmount",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as\ncancelled network requests, or cleaning up any DOM elements created in <code>componentDidMount</code>.</p>\n"
+                ],
+                "contentsRaw": "Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as\ncancelled network requests, or cleaning up any DOM elements created in `componentDidMount`.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentWillUnmount",
+              "parameters": [],
+              "returnType": "void",
+              "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "UNSAFE_componentWillMount",
+          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillMount",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before mounting occurs, and before <code>Component#render</code>.\nAvoid introducing any side-effects or subscriptions in this method.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called immediately before mounting occurs, and before `Component#render`.\nAvoid introducing any side-effects or subscriptions in this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "UNSAFE_componentWillMount",
+              "parameters": [],
+              "returnType": "void",
+              "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "UNSAFE_componentWillUpdate",
+          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before rendering when new props or state is received. Not called for the initial render.</p>\n<p>Note: You cannot call <code>Component#setState</code> here.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called immediately before rendering when new props or state is received. Not called for the initial render.\n\nNote: You cannot call `Component#setState` here.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "UNSAFE_componentWillUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<ColorPickerProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextState",
+                  "type": "Readonly<ColorPickerState>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<ColorPickerProps>, nextState: Readonly<ColorPickerState>, nextContext: any) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentDidCatch",
+          "inheritedFrom": "ComponentLifecycle.componentDidCatch",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Catches exceptions generated in descendant components. Unhandled exceptions will cause\nthe entire component tree to unmount.</p>\n"
+                ],
+                "contentsRaw": "Catches exceptions generated in descendant components. Unhandled exceptions will cause\nthe entire component tree to unmount.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentDidCatch",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "error",
+                  "type": "Error"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "errorInfo",
+                  "type": "ErrorInfo"
+                }
+              ],
+              "returnType": "void",
+              "type": "(error: Error, errorInfo: ErrorInfo) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentDidMount",
+          "inheritedFrom": "ComponentLifecycle.componentDidMount",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately after a component is mounted. Setting state here will trigger re-rendering.</p>\n"
+                ],
+                "contentsRaw": "Called immediately after a component is mounted. Setting state here will trigger re-rendering.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentDidMount",
+              "parameters": [],
+              "returnType": "void",
+              "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentDidUpdate",
+          "inheritedFrom": "NewLifecycle.componentDidUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately after updating occurs. Not called for the initial render.</p>\n<p>The snapshot is only present if getSnapshotBeforeUpdate is present and returns non-null.</p>\n"
+                ],
+                "contentsRaw": "Called immediately after updating occurs. Not called for the initial render.\n\nThe snapshot is only present if getSnapshotBeforeUpdate is present and returns non-null.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentDidUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "prevProps",
+                  "type": "Readonly<ColorPickerProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "prevState",
+                  "type": "Readonly<ColorPickerState>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": true,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "snapshot",
+                  "type": "SS"
+                }
+              ],
+              "returnType": "void",
+              "type": "(prevProps: Readonly<ColorPickerProps>, prevState: Readonly<ColorPickerState>, snapshot?: SS) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentWillMount",
+          "inheritedFrom": "DeprecatedLifecycle.componentWillMount",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before mounting occurs, and before <code>Component#render</code>.\nAvoid introducing any side-effects or subscriptions in this method.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called immediately before mounting occurs, and before `Component#render`.\nAvoid introducing any side-effects or subscriptions in this method.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentWillMount",
+              "parameters": [],
+              "returnType": "void",
+              "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentWillReceiveProps",
+          "inheritedFrom": "DeprecatedLifecycle.componentWillReceiveProps",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentWillReceiveProps",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<ColorPickerProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<ColorPickerProps>, nextContext: any) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "UNSAFE_componentWillReceiveProps",
+          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillReceiveProps",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "UNSAFE_componentWillReceiveProps",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<ColorPickerProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<ColorPickerProps>, nextContext: any) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentWillUpdate",
+          "inheritedFrom": "DeprecatedLifecycle.componentWillUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before rendering when new props or state is received. Not called for the initial render.</p>\n<p>Note: You cannot call <code>Component#setState</code> here.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called immediately before rendering when new props or state is received. Not called for the initial render.\n\nNote: You cannot call `Component#setState` here.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentWillUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<ColorPickerProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextState",
+                  "type": "Readonly<ColorPickerState>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<ColorPickerProps>, nextState: Readonly<ColorPickerState>, nextContext: any) => void"
+            }
+          ]
+        },
         {
           "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ColorPicker.tsx",
           "flags": {
@@ -239,8 +1600,72 @@ export default {
               "kind": "signature",
               "name": "getColor",
               "parameters": [],
-              "returnType": "any",
-              "type": "() => any"
+              "returnType": "string",
+              "type": "() => string"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "getSnapshotBeforeUpdate",
+          "inheritedFrom": "NewLifecycle.getSnapshotBeforeUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Runs before React applies the result of <code>render</code> to the document, and\nreturns an object to be given to componentDidUpdate. Useful for saving\nthings such as scroll position before <code>render</code> causes changes to it.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate prevents any of the deprecated\nlifecycle events from running.</p>\n"
+                ],
+                "contentsRaw": "Runs before React applies the result of `render` to the document, and\nreturns an object to be given to componentDidUpdate. Useful for saving\nthings such as scroll position before `render` causes changes to it.\n\nNote: the presence of getSnapshotBeforeUpdate prevents any of the deprecated\nlifecycle events from running.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "getSnapshotBeforeUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "prevProps",
+                  "type": "Readonly<ColorPickerProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "prevState",
+                  "type": "Readonly<ColorPickerState>"
+                }
+              ],
+              "returnType": "SS | null",
+              "type": "(prevProps: Readonly<ColorPickerProps>, prevState: Readonly<ColorPickerState>) => SS | null"
             }
           ]
         },
@@ -289,8 +1714,8 @@ export default {
               "kind": "signature",
               "name": "render",
               "parameters": [],
-              "returnType": "any",
-              "type": "() => any"
+              "returnType": "Element<>",
+              "type": "() => Element<>"
             }
           ]
         },
@@ -314,8 +1739,87 @@ export default {
               "kind": "signature",
               "name": "renderPicker",
               "parameters": [],
-              "returnType": "any",
-              "type": "() => any"
+              "returnType": "Element<>",
+              "type": "() => Element<>"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "shouldComponentUpdate",
+          "inheritedFrom": "ComponentLifecycle.shouldComponentUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called to determine whether the change in props and state should trigger a re-render.</p>\n<p><code>Component</code> always returns true.\n<code>PureComponent</code> implements a shallow comparison on props and state and returns true if any\nprops or states have changed.</p>\n<p>If false is returned, <code>Component#render</code>, <code>componentWillUpdate</code>\nand <code>componentDidUpdate</code> will not be called.</p>\n"
+                ],
+                "contentsRaw": "Called to determine whether the change in props and state should trigger a re-render.\n\n`Component` always returns true.\n`PureComponent` implements a shallow comparison on props and state and returns true if any\nprops or states have changed.\n\nIf false is returned, `Component#render`, `componentWillUpdate`\nand `componentDidUpdate` will not be called.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "shouldComponentUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<ColorPickerProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextState",
+                  "type": "Readonly<ColorPickerState>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "boolean",
+              "type": "(nextProps: Readonly<ColorPickerProps>, nextState: Readonly<ColorPickerState>, nextContext: any) => boolean"
             }
           ]
         }
@@ -355,9 +1859,682 @@ export default {
       "kind": "class",
       "name": "ThemeColorPicker",
       "extends": [
-        "any"
+        "PureComponent<ThemeColorPickerProps, >"
       ],
       "methods": [
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentWillReceiveProps",
+          "inheritedFrom": "DeprecatedLifecycle.componentWillReceiveProps",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentWillReceiveProps",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<ThemeColorPickerProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<ThemeColorPickerProps>, nextContext: any) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "UNSAFE_componentWillMount",
+          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillMount",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before mounting occurs, and before <code>Component#render</code>.\nAvoid introducing any side-effects or subscriptions in this method.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called immediately before mounting occurs, and before `Component#render`.\nAvoid introducing any side-effects or subscriptions in this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "UNSAFE_componentWillMount",
+              "parameters": [],
+              "returnType": "void",
+              "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "UNSAFE_componentWillUpdate",
+          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before rendering when new props or state is received. Not called for the initial render.</p>\n<p>Note: You cannot call <code>Component#setState</code> here.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called immediately before rendering when new props or state is received. Not called for the initial render.\n\nNote: You cannot call `Component#setState` here.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "UNSAFE_componentWillUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<ThemeColorPickerProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextState",
+                  "type": "Readonly<>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<ThemeColorPickerProps>, nextState: Readonly<>, nextContext: any) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentDidCatch",
+          "inheritedFrom": "ComponentLifecycle.componentDidCatch",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Catches exceptions generated in descendant components. Unhandled exceptions will cause\nthe entire component tree to unmount.</p>\n"
+                ],
+                "contentsRaw": "Catches exceptions generated in descendant components. Unhandled exceptions will cause\nthe entire component tree to unmount.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentDidCatch",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "error",
+                  "type": "Error"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "errorInfo",
+                  "type": "ErrorInfo"
+                }
+              ],
+              "returnType": "void",
+              "type": "(error: Error, errorInfo: ErrorInfo) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentDidMount",
+          "inheritedFrom": "ComponentLifecycle.componentDidMount",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately after a component is mounted. Setting state here will trigger re-rendering.</p>\n"
+                ],
+                "contentsRaw": "Called immediately after a component is mounted. Setting state here will trigger re-rendering.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentDidMount",
+              "parameters": [],
+              "returnType": "void",
+              "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentDidUpdate",
+          "inheritedFrom": "NewLifecycle.componentDidUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately after updating occurs. Not called for the initial render.</p>\n<p>The snapshot is only present if getSnapshotBeforeUpdate is present and returns non-null.</p>\n"
+                ],
+                "contentsRaw": "Called immediately after updating occurs. Not called for the initial render.\n\nThe snapshot is only present if getSnapshotBeforeUpdate is present and returns non-null.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentDidUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "prevProps",
+                  "type": "Readonly<ThemeColorPickerProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "prevState",
+                  "type": "Readonly<>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": true,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "snapshot",
+                  "type": "SS"
+                }
+              ],
+              "returnType": "void",
+              "type": "(prevProps: Readonly<ThemeColorPickerProps>, prevState: Readonly<>, snapshot?: SS) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentWillMount",
+          "inheritedFrom": "DeprecatedLifecycle.componentWillMount",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before mounting occurs, and before <code>Component#render</code>.\nAvoid introducing any side-effects or subscriptions in this method.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called immediately before mounting occurs, and before `Component#render`.\nAvoid introducing any side-effects or subscriptions in this method.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentWillMount",
+              "parameters": [],
+              "returnType": "void",
+              "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "UNSAFE_componentWillReceiveProps",
+          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillReceiveProps",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "UNSAFE_componentWillReceiveProps",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<ThemeColorPickerProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<ThemeColorPickerProps>, nextContext: any) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentWillUnmount",
+          "inheritedFrom": "ComponentLifecycle.componentWillUnmount",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as\ncancelled network requests, or cleaning up any DOM elements created in <code>componentDidMount</code>.</p>\n"
+                ],
+                "contentsRaw": "Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as\ncancelled network requests, or cleaning up any DOM elements created in `componentDidMount`.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentWillUnmount",
+              "parameters": [],
+              "returnType": "void",
+              "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentWillUpdate",
+          "inheritedFrom": "DeprecatedLifecycle.componentWillUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before rendering when new props or state is received. Not called for the initial render.</p>\n<p>Note: You cannot call <code>Component#setState</code> here.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called immediately before rendering when new props or state is received. Not called for the initial render.\n\nNote: You cannot call `Component#setState` here.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentWillUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<ThemeColorPickerProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextState",
+                  "type": "Readonly<>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<ThemeColorPickerProps>, nextState: Readonly<>, nextContext: any) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "getSnapshotBeforeUpdate",
+          "inheritedFrom": "NewLifecycle.getSnapshotBeforeUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Runs before React applies the result of <code>render</code> to the document, and\nreturns an object to be given to componentDidUpdate. Useful for saving\nthings such as scroll position before <code>render</code> causes changes to it.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate prevents any of the deprecated\nlifecycle events from running.</p>\n"
+                ],
+                "contentsRaw": "Runs before React applies the result of `render` to the document, and\nreturns an object to be given to componentDidUpdate. Useful for saving\nthings such as scroll position before `render` causes changes to it.\n\nNote: the presence of getSnapshotBeforeUpdate prevents any of the deprecated\nlifecycle events from running.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "getSnapshotBeforeUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "prevProps",
+                  "type": "Readonly<ThemeColorPickerProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "prevState",
+                  "type": "Readonly<>"
+                }
+              ],
+              "returnType": "SS | null",
+              "type": "(prevProps: Readonly<ThemeColorPickerProps>, prevState: Readonly<>) => SS | null"
+            }
+          ]
+        },
         {
           "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ThemeColorPicker.tsx",
           "flags": {
@@ -460,8 +2637,87 @@ export default {
               "kind": "signature",
               "name": "render",
               "parameters": [],
-              "returnType": "any",
-              "type": "() => any"
+              "returnType": "Element<>",
+              "type": "() => Element<>"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "shouldComponentUpdate",
+          "inheritedFrom": "ComponentLifecycle.shouldComponentUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called to determine whether the change in props and state should trigger a re-render.</p>\n<p><code>Component</code> always returns true.\n<code>PureComponent</code> implements a shallow comparison on props and state and returns true if any\nprops or states have changed.</p>\n<p>If false is returned, <code>Component#render</code>, <code>componentWillUpdate</code>\nand <code>componentDidUpdate</code> will not be called.</p>\n"
+                ],
+                "contentsRaw": "Called to determine whether the change in props and state should trigger a re-render.\n\n`Component` always returns true.\n`PureComponent` implements a shallow comparison on props and state and returns true if any\nprops or states have changed.\n\nIf false is returned, `Component#render`, `componentWillUpdate`\nand `componentDidUpdate` will not be called.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "shouldComponentUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<ThemeColorPickerProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextState",
+                  "type": "Readonly<>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "boolean",
+              "type": "(nextProps: Readonly<ThemeColorPickerProps>, nextState: Readonly<>, nextContext: any) => boolean"
             }
           ]
         }
@@ -519,9 +2775,682 @@ export default {
       "kind": "class",
       "name": "SiteChoiceGroup",
       "extends": [
-        "any"
+        "PureComponent<SiteChoiceGroupProps, >"
       ],
       "methods": [
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentWillReceiveProps",
+          "inheritedFrom": "DeprecatedLifecycle.componentWillReceiveProps",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentWillReceiveProps",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<SiteChoiceGroupProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<SiteChoiceGroupProps>, nextContext: any) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "UNSAFE_componentWillMount",
+          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillMount",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before mounting occurs, and before <code>Component#render</code>.\nAvoid introducing any side-effects or subscriptions in this method.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called immediately before mounting occurs, and before `Component#render`.\nAvoid introducing any side-effects or subscriptions in this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "UNSAFE_componentWillMount",
+              "parameters": [],
+              "returnType": "void",
+              "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "UNSAFE_componentWillUpdate",
+          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before rendering when new props or state is received. Not called for the initial render.</p>\n<p>Note: You cannot call <code>Component#setState</code> here.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called immediately before rendering when new props or state is received. Not called for the initial render.\n\nNote: You cannot call `Component#setState` here.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "UNSAFE_componentWillUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<SiteChoiceGroupProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextState",
+                  "type": "Readonly<>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<SiteChoiceGroupProps>, nextState: Readonly<>, nextContext: any) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentDidCatch",
+          "inheritedFrom": "ComponentLifecycle.componentDidCatch",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Catches exceptions generated in descendant components. Unhandled exceptions will cause\nthe entire component tree to unmount.</p>\n"
+                ],
+                "contentsRaw": "Catches exceptions generated in descendant components. Unhandled exceptions will cause\nthe entire component tree to unmount.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentDidCatch",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "error",
+                  "type": "Error"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "errorInfo",
+                  "type": "ErrorInfo"
+                }
+              ],
+              "returnType": "void",
+              "type": "(error: Error, errorInfo: ErrorInfo) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentDidMount",
+          "inheritedFrom": "ComponentLifecycle.componentDidMount",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately after a component is mounted. Setting state here will trigger re-rendering.</p>\n"
+                ],
+                "contentsRaw": "Called immediately after a component is mounted. Setting state here will trigger re-rendering.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentDidMount",
+              "parameters": [],
+              "returnType": "void",
+              "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentDidUpdate",
+          "inheritedFrom": "NewLifecycle.componentDidUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately after updating occurs. Not called for the initial render.</p>\n<p>The snapshot is only present if getSnapshotBeforeUpdate is present and returns non-null.</p>\n"
+                ],
+                "contentsRaw": "Called immediately after updating occurs. Not called for the initial render.\n\nThe snapshot is only present if getSnapshotBeforeUpdate is present and returns non-null.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentDidUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "prevProps",
+                  "type": "Readonly<SiteChoiceGroupProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "prevState",
+                  "type": "Readonly<>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": true,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "snapshot",
+                  "type": "SS"
+                }
+              ],
+              "returnType": "void",
+              "type": "(prevProps: Readonly<SiteChoiceGroupProps>, prevState: Readonly<>, snapshot?: SS) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentWillMount",
+          "inheritedFrom": "DeprecatedLifecycle.componentWillMount",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before mounting occurs, and before <code>Component#render</code>.\nAvoid introducing any side-effects or subscriptions in this method.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called immediately before mounting occurs, and before `Component#render`.\nAvoid introducing any side-effects or subscriptions in this method.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentWillMount",
+              "parameters": [],
+              "returnType": "void",
+              "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "UNSAFE_componentWillReceiveProps",
+          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillReceiveProps",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "UNSAFE_componentWillReceiveProps",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<SiteChoiceGroupProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<SiteChoiceGroupProps>, nextContext: any) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentWillUnmount",
+          "inheritedFrom": "ComponentLifecycle.componentWillUnmount",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as\ncancelled network requests, or cleaning up any DOM elements created in <code>componentDidMount</code>.</p>\n"
+                ],
+                "contentsRaw": "Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as\ncancelled network requests, or cleaning up any DOM elements created in `componentDidMount`.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentWillUnmount",
+              "parameters": [],
+              "returnType": "void",
+              "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentWillUpdate",
+          "inheritedFrom": "DeprecatedLifecycle.componentWillUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before rendering when new props or state is received. Not called for the initial render.</p>\n<p>Note: You cannot call <code>Component#setState</code> here.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called immediately before rendering when new props or state is received. Not called for the initial render.\n\nNote: You cannot call `Component#setState` here.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentWillUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<SiteChoiceGroupProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextState",
+                  "type": "Readonly<>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<SiteChoiceGroupProps>, nextState: Readonly<>, nextContext: any) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "getSnapshotBeforeUpdate",
+          "inheritedFrom": "NewLifecycle.getSnapshotBeforeUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Runs before React applies the result of <code>render</code> to the document, and\nreturns an object to be given to componentDidUpdate. Useful for saving\nthings such as scroll position before <code>render</code> causes changes to it.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate prevents any of the deprecated\nlifecycle events from running.</p>\n"
+                ],
+                "contentsRaw": "Runs before React applies the result of `render` to the document, and\nreturns an object to be given to componentDidUpdate. Useful for saving\nthings such as scroll position before `render` causes changes to it.\n\nNote: the presence of getSnapshotBeforeUpdate prevents any of the deprecated\nlifecycle events from running.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "getSnapshotBeforeUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "prevProps",
+                  "type": "Readonly<SiteChoiceGroupProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "prevState",
+                  "type": "Readonly<>"
+                }
+              ],
+              "returnType": "SS | null",
+              "type": "(prevProps: Readonly<SiteChoiceGroupProps>, prevState: Readonly<>) => SS | null"
+            }
+          ]
+        },
         {
           "fileName": "src\\ui-toolkit\\components\\SitePicker\\siteChoiceGroup.tsx",
           "flags": {
@@ -598,8 +3527,87 @@ export default {
               "kind": "signature",
               "name": "render",
               "parameters": [],
-              "returnType": "any",
-              "type": "() => any"
+              "returnType": "Element<>",
+              "type": "() => Element<>"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "shouldComponentUpdate",
+          "inheritedFrom": "ComponentLifecycle.shouldComponentUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called to determine whether the change in props and state should trigger a re-render.</p>\n<p><code>Component</code> always returns true.\n<code>PureComponent</code> implements a shallow comparison on props and state and returns true if any\nprops or states have changed.</p>\n<p>If false is returned, <code>Component#render</code>, <code>componentWillUpdate</code>\nand <code>componentDidUpdate</code> will not be called.</p>\n"
+                ],
+                "contentsRaw": "Called to determine whether the change in props and state should trigger a re-render.\n\n`Component` always returns true.\n`PureComponent` implements a shallow comparison on props and state and returns true if any\nprops or states have changed.\n\nIf false is returned, `Component#render`, `componentWillUpdate`\nand `componentDidUpdate` will not be called.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "shouldComponentUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<SiteChoiceGroupProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextState",
+                  "type": "Readonly<>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "boolean",
+              "type": "(nextProps: Readonly<SiteChoiceGroupProps>, nextState: Readonly<>, nextContext: any) => boolean"
             }
           ]
         }
@@ -622,9 +3630,724 @@ export default {
       "kind": "class",
       "name": "SitePicker",
       "extends": [
-        "any"
+        "Component<SitePickerProps, SitePickerState>"
       ],
       "methods": [
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentWillUnmount",
+          "inheritedFrom": "ComponentLifecycle.componentWillUnmount",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as\ncancelled network requests, or cleaning up any DOM elements created in <code>componentDidMount</code>.</p>\n"
+                ],
+                "contentsRaw": "Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as\ncancelled network requests, or cleaning up any DOM elements created in `componentDidMount`.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentWillUnmount",
+              "parameters": [],
+              "returnType": "void",
+              "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "UNSAFE_componentWillMount",
+          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillMount",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before mounting occurs, and before <code>Component#render</code>.\nAvoid introducing any side-effects or subscriptions in this method.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called immediately before mounting occurs, and before `Component#render`.\nAvoid introducing any side-effects or subscriptions in this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "UNSAFE_componentWillMount",
+              "parameters": [],
+              "returnType": "void",
+              "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "UNSAFE_componentWillUpdate",
+          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before rendering when new props or state is received. Not called for the initial render.</p>\n<p>Note: You cannot call <code>Component#setState</code> here.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called immediately before rendering when new props or state is received. Not called for the initial render.\n\nNote: You cannot call `Component#setState` here.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "UNSAFE_componentWillUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<SitePickerProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextState",
+                  "type": "Readonly<SitePickerState>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<SitePickerProps>, nextState: Readonly<SitePickerState>, nextContext: any) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentDidCatch",
+          "inheritedFrom": "ComponentLifecycle.componentDidCatch",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Catches exceptions generated in descendant components. Unhandled exceptions will cause\nthe entire component tree to unmount.</p>\n"
+                ],
+                "contentsRaw": "Catches exceptions generated in descendant components. Unhandled exceptions will cause\nthe entire component tree to unmount.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentDidCatch",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "error",
+                  "type": "Error"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "errorInfo",
+                  "type": "ErrorInfo"
+                }
+              ],
+              "returnType": "void",
+              "type": "(error: Error, errorInfo: ErrorInfo) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentDidMount",
+          "inheritedFrom": "ComponentLifecycle.componentDidMount",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately after a component is mounted. Setting state here will trigger re-rendering.</p>\n"
+                ],
+                "contentsRaw": "Called immediately after a component is mounted. Setting state here will trigger re-rendering.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentDidMount",
+              "parameters": [],
+              "returnType": "void",
+              "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentDidUpdate",
+          "inheritedFrom": "NewLifecycle.componentDidUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately after updating occurs. Not called for the initial render.</p>\n<p>The snapshot is only present if getSnapshotBeforeUpdate is present and returns non-null.</p>\n"
+                ],
+                "contentsRaw": "Called immediately after updating occurs. Not called for the initial render.\n\nThe snapshot is only present if getSnapshotBeforeUpdate is present and returns non-null.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentDidUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "prevProps",
+                  "type": "Readonly<SitePickerProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "prevState",
+                  "type": "Readonly<SitePickerState>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": true,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "snapshot",
+                  "type": "SS"
+                }
+              ],
+              "returnType": "void",
+              "type": "(prevProps: Readonly<SitePickerProps>, prevState: Readonly<SitePickerState>, snapshot?: SS) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentWillMount",
+          "inheritedFrom": "DeprecatedLifecycle.componentWillMount",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before mounting occurs, and before <code>Component#render</code>.\nAvoid introducing any side-effects or subscriptions in this method.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called immediately before mounting occurs, and before `Component#render`.\nAvoid introducing any side-effects or subscriptions in this method.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentWillMount",
+              "parameters": [],
+              "returnType": "void",
+              "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentWillReceiveProps",
+          "inheritedFrom": "DeprecatedLifecycle.componentWillReceiveProps",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentWillReceiveProps",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<SitePickerProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<SitePickerProps>, nextContext: any) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "UNSAFE_componentWillReceiveProps",
+          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillReceiveProps",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "UNSAFE_componentWillReceiveProps",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<SitePickerProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<SitePickerProps>, nextContext: any) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentWillUpdate",
+          "inheritedFrom": "DeprecatedLifecycle.componentWillUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before rendering when new props or state is received. Not called for the initial render.</p>\n<p>Note: You cannot call <code>Component#setState</code> here.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called immediately before rendering when new props or state is received. Not called for the initial render.\n\nNote: You cannot call `Component#setState` here.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentWillUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<SitePickerProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextState",
+                  "type": "Readonly<SitePickerState>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<SitePickerProps>, nextState: Readonly<SitePickerState>, nextContext: any) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "forceUpdate",
+          "inheritedFrom": "Component.forceUpdate",
+          "signatures": [
+            {
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "forceUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": true,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "callBack",
+                  "type": "() => void"
+                }
+              ],
+              "returnType": "void",
+              "type": "(callBack?: () => void) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "getSnapshotBeforeUpdate",
+          "inheritedFrom": "NewLifecycle.getSnapshotBeforeUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Runs before React applies the result of <code>render</code> to the document, and\nreturns an object to be given to componentDidUpdate. Useful for saving\nthings such as scroll position before <code>render</code> causes changes to it.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate prevents any of the deprecated\nlifecycle events from running.</p>\n"
+                ],
+                "contentsRaw": "Runs before React applies the result of `render` to the document, and\nreturns an object to be given to componentDidUpdate. Useful for saving\nthings such as scroll position before `render` causes changes to it.\n\nNote: the presence of getSnapshotBeforeUpdate prevents any of the deprecated\nlifecycle events from running.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "getSnapshotBeforeUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "prevProps",
+                  "type": "Readonly<SitePickerProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "prevState",
+                  "type": "Readonly<SitePickerState>"
+                }
+              ],
+              "returnType": "SS | null",
+              "type": "(prevProps: Readonly<SitePickerProps>, prevState: Readonly<SitePickerState>) => SS | null"
+            }
+          ]
+        },
         {
           "fileName": "src\\ui-toolkit\\components\\SitePicker\\SitePicker.tsx",
           "flags": {
@@ -742,14 +4465,360 @@ export default {
               "kind": "signature",
               "name": "render",
               "parameters": [],
-              "returnType": "any",
-              "type": "() => any"
+              "returnType": "Element<>",
+              "type": "() => Element<>"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "setState",
+          "inheritedFrom": "Component.setState",
+          "signatures": [
+            {
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "setState",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "state",
+                  "type": "(prevState: Readonly<SitePickerState>, props: Readonly<SitePickerProps>) => S |  | S | "
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": true,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "callback",
+                  "type": "() => void"
+                }
+              ],
+              "returnType": "void",
+              "type": "(state: (prevState: Readonly<SitePickerState>, props: Readonly<SitePickerProps>) => S |  | S | , callback?: () => void) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "shouldComponentUpdate",
+          "inheritedFrom": "ComponentLifecycle.shouldComponentUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called to determine whether the change in props and state should trigger a re-render.</p>\n<p><code>Component</code> always returns true.\n<code>PureComponent</code> implements a shallow comparison on props and state and returns true if any\nprops or states have changed.</p>\n<p>If false is returned, <code>Component#render</code>, <code>componentWillUpdate</code>\nand <code>componentDidUpdate</code> will not be called.</p>\n"
+                ],
+                "contentsRaw": "Called to determine whether the change in props and state should trigger a re-render.\n\n`Component` always returns true.\n`PureComponent` implements a shallow comparison on props and state and returns true if any\nprops or states have changed.\n\nIf false is returned, `Component#render`, `componentWillUpdate`\nand `componentDidUpdate` will not be called.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "shouldComponentUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<SitePickerProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextState",
+                  "type": "Readonly<SitePickerState>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "boolean",
+              "type": "(nextProps: Readonly<SitePickerProps>, nextState: Readonly<SitePickerState>, nextContext: any) => boolean"
             }
           ]
         }
       ],
-      "properties": [],
-      "accessors": []
+      "properties": [
+        {
+          "documentation": {
+            "contents": [
+              "<p>If set, <code>this.context</code> will be set at runtime to the current value of the given Context.</p>\n<p>Usage:</p>\n<pre><code class=\"language-ts\">type MyContext = number\nconst Ctx = React.createContext&lt;MyContext&gt;(0)\n\nclass Foo extends React.Component {\n  static contextType = Ctx\n  context!: React.ContextType&lt;typeof Ctx&gt;\n  render () {\n    return &lt;&gt;My context&#39;s value: {this.context}&lt;/&gt;;\n  }\n}</code></pre>\n",
+              {
+                "tag": "see",
+                "value": "https://reactjs.org/docs/context.html#classcontexttype"
+              }
+            ],
+            "contentsRaw": "If set, `this.context` will be set at runtime to the current value of the given Context.\n\nUsage:\n\n```ts\ntype MyContext = number\nconst Ctx = React.createContext<MyContext>(0)\n\nclass Foo extends React.Component {\n  static contextType = Ctx\n  context!: React.ContextType<typeof Ctx>\n  render () {\n    return <>My context's value: {this.context}</>;\n  }\n}\n```\n\n\n@see https://reactjs.org/docs/context.html#classcontexttype",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": true
+          },
+          "kind": "property",
+          "name": "contextType",
+          "inheritedFrom": "Component.contextType",
+          "type": "Context<any>"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>If using the new style context, re-declare this in your class to be the\n<code>React.ContextType</code> of your <code>static contextType</code>.</p>\n<pre><code class=\"language-ts\">static contextType = MyContext\ncontext!: React.ContextType&lt;typeof MyContext&gt;</code></pre>\n",
+              {
+                "tag": "see",
+                "value": "https://reactjs.org/docs/legacy-context.html"
+              }
+            ],
+            "contentsRaw": "If using the new style context, re-declare this in your class to be the\n`React.ContextType` of your `static contextType`.\n\n```ts\nstatic contextType = MyContext\ncontext!: React.ContextType<typeof MyContext>\n```\n\n\n@see https://reactjs.org/docs/legacy-context.html",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isDeprecated": "if used without a type annotation, or without static contextType",
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "context",
+          "inheritedFrom": "Component.context",
+          "type": "any"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "props",
+          "inheritedFrom": "Component.props",
+          "type": "Readonly<SitePickerProps> & Readonly<>"
+        },
+        {
+          "documentation": {
+            "contents": [],
+            "contentsRaw": "",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isDeprecated": "https://reactjs.org/docs/refs-and-the-dom.html#legacy-api-string-refs",
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "refs",
+          "inheritedFrom": "Component.refs",
+          "type": "{ [key: string]: ReactInstance }"
+        }
+      ],
+      "accessors": [],
+      "constructorType": {
+        "documentation": {
+          "contents": [
+            {
+              "tag": "see",
+              "value": "https://reactjs.org/docs/legacy-context.html"
+            }
+          ],
+          "contentsRaw": "@see https://reactjs.org/docs/legacy-context.html",
+          "metadata": {}
+        },
+        "fileName": "node_modules\\@types\\react\\index.d.ts",
+        "flags": {
+          "isDeprecated": true,
+          "isExported": true,
+          "isExternal": false,
+          "isOptional": false,
+          "isPrivate": false,
+          "isProtected": false,
+          "isPublic": false,
+          "isRest": false,
+          "isStatic": false
+        },
+        "kind": "constructor",
+        "name": "constructor",
+        "inheritedFrom": "Component.__constructor",
+        "signatures": [
+          {
+            "documentation": {
+              "contents": [
+                {
+                  "tag": "see",
+                  "value": "https://reactjs.org/docs/legacy-context.html"
+                }
+              ],
+              "contentsRaw": "@see https://reactjs.org/docs/legacy-context.html",
+              "metadata": {}
+            },
+            "fileName": "node_modules\\@types\\react\\index.d.ts",
+            "kind": "signature",
+            "name": "new SitePicker",
+            "parameters": [
+              {
+                "flags": {
+                  "isExported": true,
+                  "isExternal": false,
+                  "isOptional": false,
+                  "isPrivate": false,
+                  "isProtected": false,
+                  "isPublic": false,
+                  "isRest": false,
+                  "isStatic": false
+                },
+                "kind": "parameter",
+                "name": "props",
+                "type": "Readonly<SitePickerProps>"
+              }
+            ],
+            "returnType": "SitePicker",
+            "type": "(props: Readonly<SitePickerProps>) => SitePicker"
+          },
+          {
+            "documentation": {
+              "contents": [
+                {
+                  "tag": "see",
+                  "value": "https://reactjs.org/docs/legacy-context.html"
+                }
+              ],
+              "contentsRaw": "@see https://reactjs.org/docs/legacy-context.html",
+              "metadata": {}
+            },
+            "fileName": "node_modules\\@types\\react\\index.d.ts",
+            "kind": "signature",
+            "name": "new SitePicker",
+            "parameters": [
+              {
+                "flags": {
+                  "isExported": true,
+                  "isExternal": false,
+                  "isOptional": false,
+                  "isPrivate": false,
+                  "isProtected": false,
+                  "isPublic": false,
+                  "isRest": false,
+                  "isStatic": false
+                },
+                "kind": "parameter",
+                "name": "props",
+                "type": "SitePickerProps"
+              },
+              {
+                "flags": {
+                  "isExported": true,
+                  "isExternal": false,
+                  "isOptional": true,
+                  "isPrivate": false,
+                  "isProtected": false,
+                  "isPublic": false,
+                  "isRest": false,
+                  "isStatic": false
+                },
+                "kind": "parameter",
+                "name": "context",
+                "type": "any"
+              }
+            ],
+            "returnType": "SitePicker",
+            "type": "(props: SitePickerProps, context?: any) => SitePicker"
+          }
+        ]
+      }
     },
     "VerticalList": {
       "fileName": "src\\ui-toolkit\\components\\VerticalList\\VerticalList.tsx",
@@ -766,9 +4835,762 @@ export default {
       "kind": "class",
       "name": "VerticalList",
       "extends": [
-        "any"
+        "PureComponent<VerticalListProps<T>, >"
       ],
-      "methods": [],
+      "methods": [
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentWillMount",
+          "inheritedFrom": "DeprecatedLifecycle.componentWillMount",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before mounting occurs, and before <code>Component#render</code>.\nAvoid introducing any side-effects or subscriptions in this method.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called immediately before mounting occurs, and before `Component#render`.\nAvoid introducing any side-effects or subscriptions in this method.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentWillMount",
+              "parameters": [],
+              "returnType": "void",
+              "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "UNSAFE_componentWillMount",
+          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillMount",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before mounting occurs, and before <code>Component#render</code>.\nAvoid introducing any side-effects or subscriptions in this method.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called immediately before mounting occurs, and before `Component#render`.\nAvoid introducing any side-effects or subscriptions in this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "UNSAFE_componentWillMount",
+              "parameters": [],
+              "returnType": "void",
+              "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "UNSAFE_componentWillUpdate",
+          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before rendering when new props or state is received. Not called for the initial render.</p>\n<p>Note: You cannot call <code>Component#setState</code> here.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called immediately before rendering when new props or state is received. Not called for the initial render.\n\nNote: You cannot call `Component#setState` here.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "UNSAFE_componentWillUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<VerticalListProps<T>>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextState",
+                  "type": "Readonly<>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<VerticalListProps<T>>, nextState: Readonly<>, nextContext: any) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentDidCatch",
+          "inheritedFrom": "ComponentLifecycle.componentDidCatch",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Catches exceptions generated in descendant components. Unhandled exceptions will cause\nthe entire component tree to unmount.</p>\n"
+                ],
+                "contentsRaw": "Catches exceptions generated in descendant components. Unhandled exceptions will cause\nthe entire component tree to unmount.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentDidCatch",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "error",
+                  "type": "Error"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "errorInfo",
+                  "type": "ErrorInfo"
+                }
+              ],
+              "returnType": "void",
+              "type": "(error: Error, errorInfo: ErrorInfo) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentDidMount",
+          "inheritedFrom": "ComponentLifecycle.componentDidMount",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately after a component is mounted. Setting state here will trigger re-rendering.</p>\n"
+                ],
+                "contentsRaw": "Called immediately after a component is mounted. Setting state here will trigger re-rendering.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentDidMount",
+              "parameters": [],
+              "returnType": "void",
+              "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentDidUpdate",
+          "inheritedFrom": "NewLifecycle.componentDidUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately after updating occurs. Not called for the initial render.</p>\n<p>The snapshot is only present if getSnapshotBeforeUpdate is present and returns non-null.</p>\n"
+                ],
+                "contentsRaw": "Called immediately after updating occurs. Not called for the initial render.\n\nThe snapshot is only present if getSnapshotBeforeUpdate is present and returns non-null.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentDidUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "prevProps",
+                  "type": "Readonly<VerticalListProps<T>>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "prevState",
+                  "type": "Readonly<>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": true,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "snapshot",
+                  "type": "SS"
+                }
+              ],
+              "returnType": "void",
+              "type": "(prevProps: Readonly<VerticalListProps<T>>, prevState: Readonly<>, snapshot?: SS) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "UNSAFE_componentWillReceiveProps",
+          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillReceiveProps",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "UNSAFE_componentWillReceiveProps",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<VerticalListProps<T>>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<VerticalListProps<T>>, nextContext: any) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentWillReceiveProps",
+          "inheritedFrom": "DeprecatedLifecycle.componentWillReceiveProps",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentWillReceiveProps",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<VerticalListProps<T>>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<VerticalListProps<T>>, nextContext: any) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentWillUnmount",
+          "inheritedFrom": "ComponentLifecycle.componentWillUnmount",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as\ncancelled network requests, or cleaning up any DOM elements created in <code>componentDidMount</code>.</p>\n"
+                ],
+                "contentsRaw": "Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as\ncancelled network requests, or cleaning up any DOM elements created in `componentDidMount`.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentWillUnmount",
+              "parameters": [],
+              "returnType": "void",
+              "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "componentWillUpdate",
+          "inheritedFrom": "DeprecatedLifecycle.componentWillUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called immediately before rendering when new props or state is received. Not called for the initial render.</p>\n<p>Note: You cannot call <code>Component#setState</code> here.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called immediately before rendering when new props or state is received. Not called for the initial render.\n\nNote: You cannot call `Component#setState` here.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "componentWillUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<VerticalListProps<T>>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextState",
+                  "type": "Readonly<>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<VerticalListProps<T>>, nextState: Readonly<>, nextContext: any) => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "getSnapshotBeforeUpdate",
+          "inheritedFrom": "NewLifecycle.getSnapshotBeforeUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Runs before React applies the result of <code>render</code> to the document, and\nreturns an object to be given to componentDidUpdate. Useful for saving\nthings such as scroll position before <code>render</code> causes changes to it.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate prevents any of the deprecated\nlifecycle events from running.</p>\n"
+                ],
+                "contentsRaw": "Runs before React applies the result of `render` to the document, and\nreturns an object to be given to componentDidUpdate. Useful for saving\nthings such as scroll position before `render` causes changes to it.\n\nNote: the presence of getSnapshotBeforeUpdate prevents any of the deprecated\nlifecycle events from running.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "getSnapshotBeforeUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "prevProps",
+                  "type": "Readonly<VerticalListProps<T>>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "prevState",
+                  "type": "Readonly<>"
+                }
+              ],
+              "returnType": "SS | null",
+              "type": "(prevProps: Readonly<VerticalListProps<T>>, prevState: Readonly<>) => SS | null"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "shouldComponentUpdate",
+          "inheritedFrom": "ComponentLifecycle.shouldComponentUpdate",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called to determine whether the change in props and state should trigger a re-render.</p>\n<p><code>Component</code> always returns true.\n<code>PureComponent</code> implements a shallow comparison on props and state and returns true if any\nprops or states have changed.</p>\n<p>If false is returned, <code>Component#render</code>, <code>componentWillUpdate</code>\nand <code>componentDidUpdate</code> will not be called.</p>\n"
+                ],
+                "contentsRaw": "Called to determine whether the change in props and state should trigger a re-render.\n\n`Component` always returns true.\n`PureComponent` implements a shallow comparison on props and state and returns true if any\nprops or states have changed.\n\nIf false is returned, `Component#render`, `componentWillUpdate`\nand `componentDidUpdate` will not be called.",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "shouldComponentUpdate",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<VerticalListProps<T>>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextState",
+                  "type": "Readonly<>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "boolean",
+              "type": "(nextProps: Readonly<VerticalListProps<T>>, nextState: Readonly<>, nextContext: any) => boolean"
+            }
+          ]
+        }
+      ],
       "properties": [
         {
           "fileName": "src\\ui-toolkit\\components\\VerticalList\\VerticalList.tsx",
@@ -802,7 +5624,7 @@ export default {
           "kind": "property",
           "name": "Description",
           "defaultValue": "VerticalItemDescription",
-          "type": "any"
+          "type": "FunctionComponent<VerticalItemDescriptionProps>"
         },
         {
           "fileName": "src\\ui-toolkit\\components\\VerticalList\\VerticalList.tsx",
@@ -836,7 +5658,7 @@ export default {
           "kind": "property",
           "name": "Image",
           "defaultValue": "Thumbnail",
-          "type": "any"
+          "type": "FunctionComponent<ThumbnailProps>"
         },
         {
           "fileName": "src\\ui-toolkit\\components\\VerticalList\\VerticalList.tsx",
@@ -853,7 +5675,7 @@ export default {
           "kind": "property",
           "name": "Info",
           "defaultValue": "Info",
-          "type": "any"
+          "type": "FunctionComponent<InfoProps>"
         },
         {
           "fileName": "src\\ui-toolkit\\components\\VerticalList\\VerticalList.tsx",
@@ -870,7 +5692,7 @@ export default {
           "kind": "property",
           "name": "Item",
           "defaultValue": "VerticalItem",
-          "type": "any"
+          "type": "FunctionComponent<VerticalItemProps>"
         },
         {
           "fileName": "src\\ui-toolkit\\components\\VerticalList\\VerticalList.tsx",
@@ -921,7 +5743,7 @@ export default {
           "kind": "property",
           "name": "Title",
           "defaultValue": "Title",
-          "type": "any"
+          "type": "FunctionComponent<TitleProps>"
         }
       ],
       "accessors": []
@@ -1580,8 +6402,8 @@ export default {
         }
       ]
     },
-    "useScrollSync": {
-      "fileName": "src\\ui-toolkit\\components\\Filmstrip\\useScrollSync.ts",
+    "getHexColor": {
+      "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ThemeColorPicker.tsx",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -1593,12 +6415,12 @@ export default {
         "isStatic": false
       },
       "kind": "method",
-      "name": "useScrollSync",
+      "name": "getHexColor",
       "signatures": [
         {
-          "fileName": "src\\ui-toolkit\\components\\Filmstrip\\useScrollSync.ts",
+          "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ThemeColorPicker.tsx",
           "kind": "signature",
-          "name": "useScrollSync",
+          "name": "getHexColor",
           "parameters": [
             {
               "flags": {
@@ -1612,12 +6434,28 @@ export default {
                 "isStatic": false
               },
               "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
+              "name": "color",
+              "type": "string"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "namespace",
+              "defaultValue": "\"palette\"",
+              "type": "\"palette\" | \"global\" | \"semanticColors\""
             }
           ],
-          "returnType": "",
-          "type": "(__namedParameters: ) => "
+          "returnType": "string",
+          "type": "(color: string, namespace?: \"palette\" | \"global\" | \"semanticColors\") => string"
         }
       ]
     },
@@ -1641,8 +6479,8 @@ export default {
           "kind": "signature",
           "name": "render",
           "parameters": [],
-          "returnType": "any",
-          "type": "() => any"
+          "returnType": "Element<>",
+          "type": "() => Element<>"
         }
       ]
     },
@@ -1682,8 +6520,8 @@ export default {
               "type": ""
             }
           ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
         }
       ]
     },
@@ -1988,8 +6826,8 @@ export default {
               "type": ""
             }
           ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
         }
       ]
     },
@@ -2182,8 +7020,8 @@ export default {
               "type": ""
             }
           ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
         }
       ]
     },
@@ -2223,8 +7061,8 @@ export default {
               "type": ""
             }
           ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
         }
       ]
     },
@@ -2264,8 +7102,8 @@ export default {
               "type": ""
             }
           ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
         }
       ]
     },
@@ -2305,531 +7143,8 @@ export default {
               "type": ""
             }
           ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
-        }
-      ]
-    },
-    "SyntaxHighlighter": {
-      "fileName": "src\\docs\\CodeBlock\\CodeBlock.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "SyntaxHighlighter",
-      "signatures": [
-        {
-          "fileName": "src\\docs\\CodeBlock\\CodeBlock.tsx",
-          "kind": "signature",
-          "name": "SyntaxHighlighter",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
-        }
-      ]
-    },
-    "Playground": {
-      "fileName": "src\\docs\\CodeBlock\\CodeBlock.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "Playground",
-      "signatures": [
-        {
-          "fileName": "src\\docs\\CodeBlock\\CodeBlock.tsx",
-          "kind": "signature",
-          "name": "Playground",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
-        }
-      ]
-    },
-    "PropsTable": {
-      "fileName": "src\\docs\\PropsTable.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "PropsTable",
-      "signatures": [
-        {
-          "fileName": "src\\docs\\PropsTable.tsx",
-          "kind": "signature",
-          "name": "PropsTable",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
-        }
-      ]
-    },
-    "useQueryString": {
-      "fileName": "src\\ui-toolkit\\hooks\\useQueryString.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "useQueryString",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\hooks\\useQueryString.ts",
-          "kind": "signature",
-          "name": "useQueryString",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": false,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "key",
-              "type": "any"
-            },
-            {
-              "flags": {
-                "isExported": false,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "initialValue",
-              "type": "any"
-            }
-          ],
-          "returnType": "any[]",
-          "type": "(key: any, initialValue: any) => any[]"
-        }
-      ]
-    },
-    "getQueryStringValue": {
-      "fileName": "src\\ui-toolkit\\hooks\\useQueryString.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "getQueryStringValue",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\hooks\\useQueryString.ts",
-          "kind": "signature",
-          "name": "getQueryStringValue",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "key",
-              "type": "any"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "queryString",
-              "defaultValue": "(window.location.search || \"\").substr(1)",
-              "type": "string"
-            }
-          ],
-          "returnType": "string | string[]",
-          "type": "(key: any, queryString?: string) => string | string[]"
-        }
-      ]
-    },
-    "App": {
-      "fileName": "src\\App.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "App",
-      "signatures": [
-        {
-          "fileName": "src\\App.tsx",
-          "kind": "signature",
-          "name": "App",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": false,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
-        }
-      ]
-    },
-    "Shave": {
-      "fileName": "src\\ui-toolkit\\components\\Shave\\Shave.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "Shave",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\Shave\\Shave.tsx",
-          "kind": "signature",
-          "name": "Shave",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": false,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
-        }
-      ]
-    },
-    "useShave": {
-      "fileName": "src\\ui-toolkit\\hooks\\useShave.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "useShave",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\hooks\\useShave.ts",
-          "kind": "signature",
-          "name": "useShave",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "maxHeight",
-              "type": "any"
-            }
-          ],
-          "returnType": "any",
-          "type": "(maxHeight: any) => any"
-        }
-      ]
-    },
-    "CardDescription": {
-      "fileName": "src\\ui-toolkit\\components\\Card\\CardDescription.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "CardDescription",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\Card\\CardDescription.tsx",
-          "kind": "signature",
-          "name": "CardDescription",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
-        }
-      ]
-    },
-    "Tags": {
-      "fileName": "src\\ui-toolkit\\components\\primitives\\Tags.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "Tags",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Tags.tsx",
-          "kind": "signature",
-          "name": "Tags",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
-        }
-      ]
-    },
-    "Tag": {
-      "fileName": "src\\ui-toolkit\\components\\primitives\\Tags.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "Tag",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Tags.tsx",
-          "kind": "signature",
-          "name": "Tag",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
-        }
-      ]
-    },
-    "Info": {
-      "fileName": "src\\ui-toolkit\\components\\primitives\\Info.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "Info",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Info.tsx",
-          "kind": "signature",
-          "name": "Info",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": false,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
         }
       ]
     },
@@ -2869,916 +7184,8 @@ export default {
               "type": ""
             }
           ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
-        }
-      ]
-    },
-    "CardImage": {
-      "fileName": "src\\ui-toolkit\\components\\Card\\CardImage.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "CardImage",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\Card\\CardImage.tsx",
-          "kind": "signature",
-          "name": "CardImage",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
-        }
-      ]
-    },
-    "CardFooter": {
-      "fileName": "src\\ui-toolkit\\components\\Card\\CardFooter.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "CardFooter",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\Card\\CardFooter.tsx",
-          "kind": "signature",
-          "name": "CardFooter",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": false,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
-        }
-      ]
-    },
-    "Grid": {
-      "fileName": "src\\ui-toolkit\\components\\Grid\\Grid.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "Grid",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\Grid\\Grid.tsx",
-          "kind": "signature",
-          "name": "Grid",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": false,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
-        }
-      ]
-    },
-    "CardDemo": {
-      "fileName": "src\\ui-toolkit\\components\\Card\\CardDemo.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "CardDemo",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\Card\\CardDemo.tsx",
-          "kind": "signature",
-          "name": "CardDemo",
-          "parameters": [],
-          "returnType": "any",
-          "type": "() => any"
-        }
-      ]
-    },
-    "getHexColor": {
-      "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ThemeColorPicker.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "getHexColor",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ThemeColorPicker.tsx",
-          "kind": "signature",
-          "name": "getHexColor",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "color",
-              "type": "string"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "namespace",
-              "defaultValue": "\"palette\"",
-              "type": "\"palette\" | \"global\" | \"semanticColors\""
-            }
-          ],
-          "returnType": "string",
-          "type": "(color: string, namespace?: \"palette\" | \"global\" | \"semanticColors\") => string"
-        }
-      ]
-    },
-    "checkIsThemeColor": {
-      "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ThemeColorPicker.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "checkIsThemeColor",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ThemeColorPicker.tsx",
-          "kind": "signature",
-          "name": "checkIsThemeColor",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "color",
-              "type": "ThemeColor | string"
-            }
-          ],
-          "returnType": "boolean",
-          "type": "(color: ThemeColor | string) => boolean"
-        }
-      ]
-    },
-    "DateRangeText": {
-      "fileName": "src\\ui-toolkit\\components\\DateRangeText\\DateRangeText.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "DateRangeText",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\DateRangeText\\DateRangeText.tsx",
-          "kind": "signature",
-          "name": "DateRangeText",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "event",
-              "type": "DateRangeTextProps"
-            }
-          ],
-          "returnType": "any",
-          "type": "(event: DateRangeTextProps) => any"
-        }
-      ]
-    },
-    "useComponentSize": {
-      "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "useComponentSize",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
-          "kind": "signature",
-          "name": "useComponentSize",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "ref",
-              "type": "any"
-            }
-          ],
-          "returnType": "any",
-          "type": "(ref: any) => any"
-        }
-      ]
-    },
-    "useHowManyFit": {
-      "fileName": "src\\ui-toolkit\\hooks\\useHowManyFit.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "useHowManyFit",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\hooks\\useHowManyFit.ts",
-          "kind": "signature",
-          "name": "useHowManyFit",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "minWidth",
-              "type": "number"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "parentRef",
-              "type": "React.MutableRefObject<Element>"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "options",
-              "defaultValue": "defaults",
-              "type": "HowManyFitOptions"
-            }
-          ],
-          "returnType": "[number, number, number]",
-          "type": "(minWidth: number, parentRef: React.MutableRefObject<Element>, options?: HowManyFitOptions) => [number, number, number]"
-        }
-      ]
-    },
-    "usePaging": {
-      "fileName": "src\\ui-toolkit\\hooks\\usePaging.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "usePaging",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\hooks\\usePaging.ts",
-          "kind": "signature",
-          "name": "usePaging",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "totalPages",
-              "type": "number"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "initialPage",
-              "defaultValue": "1",
-              "type": "number"
-            }
-          ],
-          "returnType": "",
-          "type": "(totalPages: number, initialPage?: number) => "
-        }
-      ]
-    },
-    "usePagedItems": {
-      "fileName": "src\\ui-toolkit\\hooks\\usePaging.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "usePagedItems",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\hooks\\usePaging.ts",
-          "kind": "signature",
-          "name": "usePagedItems",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "allItems",
-              "type": "any"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "numItems",
-              "type": "any"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "intialPage",
-              "defaultValue": "1",
-              "type": "number"
-            }
-          ],
-          "returnType": "any[]",
-          "type": "(allItems: any, numItems: any, intialPage?: number) => any[]"
-        }
-      ]
-    },
-    "useHover": {
-      "fileName": "src\\ui-toolkit\\hooks\\useHover.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "useHover",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\hooks\\useHover.ts",
-          "kind": "signature",
-          "name": "useHover",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "hoverRef",
-              "type": "React.MutableRefObject<Element>"
-            }
-          ],
-          "returnType": "any",
-          "type": "(hoverRef: React.MutableRefObject<Element>) => any"
-        }
-      ]
-    },
-    "useInterval": {
-      "fileName": "src\\ui-toolkit\\hooks\\useInterval.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "useInterval",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\hooks\\useInterval.ts",
-          "kind": "signature",
-          "name": "useInterval",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "callback",
-              "type": "any"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "delay",
-              "type": "any"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": true,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "intervalKey",
-              "type": "any"
-            }
-          ],
-          "returnType": "void",
-          "type": "(callback: any, delay: any, intervalKey?: any) => void"
-        }
-      ]
-    },
-    "Menu": {
-      "fileName": "src\\docs\\Menu.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "Menu",
-      "signatures": [
-        {
-          "fileName": "src\\docs\\Menu.tsx",
-          "kind": "signature",
-          "name": "Menu",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
-        }
-      ]
-    },
-    "useFilmstrip": {
-      "fileName": "src\\ui-toolkit\\components\\Filmstrip\\useFilmstrip.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "useFilmstrip",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\Filmstrip\\useFilmstrip.ts",
-          "kind": "signature",
-          "name": "useFilmstrip",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "totalCount",
-              "type": "number"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "paneRef",
-              "type": "React.MutableRefObject<Element>"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "opts",
-              "defaultValue": "defaults",
-              "type": "FilmstripOptions"
-            }
-          ],
-          "returnType": "",
-          "type": "(totalCount: number, paneRef: React.MutableRefObject<Element>, opts?: FilmstripOptions) => "
-        }
-      ]
-    },
-    "Filmstrip": {
-      "fileName": "src\\ui-toolkit\\components\\Filmstrip\\Filmstrip.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "Filmstrip",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\Filmstrip\\Filmstrip.tsx",
-          "kind": "signature",
-          "name": "Filmstrip",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": false,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
-        }
-      ]
-    },
-    "IconImage": {
-      "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "IconImage",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "kind": "signature",
-          "name": "IconImage",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "props",
-              "type": "IconImageProps"
-            }
-          ],
-          "returnType": "any",
-          "type": "(props: IconImageProps) => any"
-        }
-      ]
-    },
-    "getIconFontSize": {
-      "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "getIconFontSize",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "kind": "signature",
-          "name": "getIconFontSize",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "width",
-              "type": "any"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "height",
-              "type": "any"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "percentage",
-              "defaultValue": "50",
-              "type": "number"
-            }
-          ],
-          "returnType": "string",
-          "type": "(width: any, height: any, percentage?: number) => string"
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
         }
       ]
     },
@@ -3818,8 +7225,8 @@ export default {
               "type": ""
             }
           ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
         }
       ]
     },
@@ -4134,6 +7541,1421 @@ export default {
         }
       ]
     },
+    "Shave": {
+      "fileName": "src\\ui-toolkit\\components\\Shave\\Shave.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "Shave",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\Shave\\Shave.tsx",
+          "kind": "signature",
+          "name": "Shave",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": false,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
+        }
+      ]
+    },
+    "useShave": {
+      "fileName": "src\\ui-toolkit\\hooks\\useShave.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "useShave",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useShave.ts",
+          "kind": "signature",
+          "name": "useShave",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "maxHeight",
+              "type": "any"
+            }
+          ],
+          "returnType": "any",
+          "type": "(maxHeight: any) => any"
+        }
+      ]
+    },
+    "CardDescription": {
+      "fileName": "src\\ui-toolkit\\components\\Card\\CardDescription.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "CardDescription",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\Card\\CardDescription.tsx",
+          "kind": "signature",
+          "name": "CardDescription",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
+        }
+      ]
+    },
+    "Tags": {
+      "fileName": "src\\ui-toolkit\\components\\primitives\\Tags.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "Tags",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Tags.tsx",
+          "kind": "signature",
+          "name": "Tags",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
+        }
+      ]
+    },
+    "Tag": {
+      "fileName": "src\\ui-toolkit\\components\\primitives\\Tags.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "Tag",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Tags.tsx",
+          "kind": "signature",
+          "name": "Tag",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
+        }
+      ]
+    },
+    "Info": {
+      "fileName": "src\\ui-toolkit\\components\\primitives\\Info.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "Info",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Info.tsx",
+          "kind": "signature",
+          "name": "Info",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": false,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
+        }
+      ]
+    },
+    "CardImage": {
+      "fileName": "src\\ui-toolkit\\components\\Card\\CardImage.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "CardImage",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\Card\\CardImage.tsx",
+          "kind": "signature",
+          "name": "CardImage",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
+        }
+      ]
+    },
+    "CardFooter": {
+      "fileName": "src\\ui-toolkit\\components\\Card\\CardFooter.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "CardFooter",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\Card\\CardFooter.tsx",
+          "kind": "signature",
+          "name": "CardFooter",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": false,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
+        }
+      ]
+    },
+    "Grid": {
+      "fileName": "src\\ui-toolkit\\components\\Grid\\Grid.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "Grid",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\Grid\\Grid.tsx",
+          "kind": "signature",
+          "name": "Grid",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": false,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
+        }
+      ]
+    },
+    "SyntaxHighlighter": {
+      "fileName": "src\\docs\\CodeBlock\\CodeBlock.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "SyntaxHighlighter",
+      "signatures": [
+        {
+          "fileName": "src\\docs\\CodeBlock\\CodeBlock.tsx",
+          "kind": "signature",
+          "name": "SyntaxHighlighter",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
+        }
+      ]
+    },
+    "Playground": {
+      "fileName": "src\\docs\\CodeBlock\\CodeBlock.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "Playground",
+      "signatures": [
+        {
+          "fileName": "src\\docs\\CodeBlock\\CodeBlock.tsx",
+          "kind": "signature",
+          "name": "Playground",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
+        }
+      ]
+    },
+    "PropsTable": {
+      "fileName": "src\\docs\\PropsTable.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "PropsTable",
+      "signatures": [
+        {
+          "fileName": "src\\docs\\PropsTable.tsx",
+          "kind": "signature",
+          "name": "PropsTable",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
+        }
+      ]
+    },
+    "useQueryString": {
+      "fileName": "src\\ui-toolkit\\hooks\\useQueryString.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "useQueryString",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useQueryString.ts",
+          "kind": "signature",
+          "name": "useQueryString",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": false,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "key",
+              "type": "any"
+            },
+            {
+              "flags": {
+                "isExported": false,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "initialValue",
+              "type": "any"
+            }
+          ],
+          "returnType": "any[]",
+          "type": "(key: any, initialValue: any) => any[]"
+        }
+      ]
+    },
+    "getQueryStringValue": {
+      "fileName": "src\\ui-toolkit\\hooks\\useQueryString.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "getQueryStringValue",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useQueryString.ts",
+          "kind": "signature",
+          "name": "getQueryStringValue",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "key",
+              "type": "any"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "queryString",
+              "defaultValue": "(window.location.search || \"\").substr(1)",
+              "type": "string"
+            }
+          ],
+          "returnType": "string | string[]",
+          "type": "(key: any, queryString?: string) => string | string[]"
+        }
+      ]
+    },
+    "App": {
+      "fileName": "src\\App.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "App",
+      "signatures": [
+        {
+          "fileName": "src\\App.tsx",
+          "kind": "signature",
+          "name": "App",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": false,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
+        }
+      ]
+    },
+    "CardDemo": {
+      "fileName": "src\\ui-toolkit\\components\\Card\\CardDemo.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "CardDemo",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\Card\\CardDemo.tsx",
+          "kind": "signature",
+          "name": "CardDemo",
+          "parameters": [],
+          "returnType": "Element<>",
+          "type": "() => Element<>"
+        }
+      ]
+    },
+    "Menu": {
+      "fileName": "src\\docs\\Menu.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "Menu",
+      "signatures": [
+        {
+          "fileName": "src\\docs\\Menu.tsx",
+          "kind": "signature",
+          "name": "Menu",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
+        }
+      ]
+    },
+    "checkIsThemeColor": {
+      "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ThemeColorPicker.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "checkIsThemeColor",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ThemeColorPicker.tsx",
+          "kind": "signature",
+          "name": "checkIsThemeColor",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "color",
+              "type": "ThemeColor | string"
+            }
+          ],
+          "returnType": "boolean",
+          "type": "(color: ThemeColor | string) => boolean"
+        }
+      ]
+    },
+    "DateRangeText": {
+      "fileName": "src\\ui-toolkit\\components\\DateRangeText\\DateRangeText.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "DateRangeText",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\DateRangeText\\DateRangeText.tsx",
+          "kind": "signature",
+          "name": "DateRangeText",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "event",
+              "type": "DateRangeTextProps"
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(event: DateRangeTextProps) => Element<>"
+        }
+      ]
+    },
+    "useComponentSize": {
+      "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "useComponentSize",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+          "kind": "signature",
+          "name": "useComponentSize",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "ref",
+              "type": "any"
+            }
+          ],
+          "returnType": "",
+          "type": "(ref: any) => "
+        }
+      ]
+    },
+    "useHowManyFit": {
+      "fileName": "src\\ui-toolkit\\hooks\\useHowManyFit.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "useHowManyFit",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useHowManyFit.ts",
+          "kind": "signature",
+          "name": "useHowManyFit",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "minWidth",
+              "type": "number"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "parentRef",
+              "type": "MutableRefObject<Element>"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "options",
+              "defaultValue": "defaults",
+              "type": "HowManyFitOptions"
+            }
+          ],
+          "returnType": "[number, number, number]",
+          "type": "(minWidth: number, parentRef: MutableRefObject<Element>, options?: HowManyFitOptions) => [number, number, number]"
+        }
+      ]
+    },
+    "usePaging": {
+      "fileName": "src\\ui-toolkit\\hooks\\usePaging.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "usePaging",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\usePaging.ts",
+          "kind": "signature",
+          "name": "usePaging",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "totalPages",
+              "type": "number"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "initialPage",
+              "defaultValue": "1",
+              "type": "number"
+            }
+          ],
+          "returnType": "",
+          "type": "(totalPages: number, initialPage?: number) => "
+        }
+      ]
+    },
+    "usePagedItems": {
+      "fileName": "src\\ui-toolkit\\hooks\\usePaging.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "usePagedItems",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\usePaging.ts",
+          "kind": "signature",
+          "name": "usePagedItems",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "allItems",
+              "type": "any"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "numItems",
+              "type": "any"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "intialPage",
+              "defaultValue": "1",
+              "type": "number"
+            }
+          ],
+          "returnType": "any[]",
+          "type": "(allItems: any, numItems: any, intialPage?: number) => any[]"
+        }
+      ]
+    },
+    "useHover": {
+      "fileName": "src\\ui-toolkit\\hooks\\useHover.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "useHover",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useHover.ts",
+          "kind": "signature",
+          "name": "useHover",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "hoverRef",
+              "type": "MutableRefObject<Element>"
+            }
+          ],
+          "returnType": "boolean",
+          "type": "(hoverRef: MutableRefObject<Element>) => boolean"
+        }
+      ]
+    },
+    "useInterval": {
+      "fileName": "src\\ui-toolkit\\hooks\\useInterval.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "useInterval",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useInterval.ts",
+          "kind": "signature",
+          "name": "useInterval",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "callback",
+              "type": "any"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "delay",
+              "type": "any"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": true,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "intervalKey",
+              "type": "any"
+            }
+          ],
+          "returnType": "void",
+          "type": "(callback: any, delay: any, intervalKey?: any) => void"
+        }
+      ]
+    },
+    "useScrollSync": {
+      "fileName": "src\\ui-toolkit\\components\\Filmstrip\\useScrollSync.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "useScrollSync",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\Filmstrip\\useScrollSync.ts",
+          "kind": "signature",
+          "name": "useScrollSync",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "",
+          "type": "(__namedParameters: ) => "
+        }
+      ]
+    },
+    "useFilmstrip": {
+      "fileName": "src\\ui-toolkit\\components\\Filmstrip\\useFilmstrip.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "useFilmstrip",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\Filmstrip\\useFilmstrip.ts",
+          "kind": "signature",
+          "name": "useFilmstrip",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "totalCount",
+              "type": "number"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "paneRef",
+              "type": "MutableRefObject<Element>"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "opts",
+              "defaultValue": "defaults",
+              "type": "FilmstripOptions"
+            }
+          ],
+          "returnType": "",
+          "type": "(totalCount: number, paneRef: MutableRefObject<Element>, opts?: FilmstripOptions) => "
+        }
+      ]
+    },
+    "Filmstrip": {
+      "fileName": "src\\ui-toolkit\\components\\Filmstrip\\Filmstrip.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "Filmstrip",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\Filmstrip\\Filmstrip.tsx",
+          "kind": "signature",
+          "name": "Filmstrip",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": false,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
+        }
+      ]
+    },
+    "IconImage": {
+      "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "IconImage",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
+          "kind": "signature",
+          "name": "IconImage",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "props",
+              "type": "IconImageProps"
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(props: IconImageProps) => Element<>"
+        }
+      ]
+    },
+    "getIconFontSize": {
+      "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "getIconFontSize",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
+          "kind": "signature",
+          "name": "getIconFontSize",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "width",
+              "type": "any"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "height",
+              "type": "any"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "percentage",
+              "defaultValue": "50",
+              "type": "number"
+            }
+          ],
+          "returnType": "string",
+          "type": "(width: any, height: any, percentage?: number) => string"
+        }
+      ]
+    },
     "useDebounce": {
       "fileName": "src\\ui-toolkit\\hooks\\useDebounce.ts",
       "flags": {
@@ -4226,8 +9048,8 @@ export default {
               "type": "SiteUrlInputProps"
             }
           ],
-          "returnType": "any",
-          "type": "(props: SiteUrlInputProps) => any"
+          "returnType": "Element<>",
+          "type": "(props: SiteUrlInputProps) => Element<>"
         }
       ]
     },
@@ -4251,8 +9073,8 @@ export default {
           "kind": "signature",
           "name": "ThemePreview",
           "parameters": [],
-          "returnType": "any",
-          "type": "() => any"
+          "returnType": "Element<>",
+          "type": "() => Element<>"
         }
       ]
     },
@@ -4292,8 +9114,8 @@ export default {
               "type": ""
             }
           ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
         }
       ]
     },
@@ -4333,8 +9155,8 @@ export default {
               "type": ""
             }
           ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
         }
       ]
     },
@@ -4374,8 +9196,8 @@ export default {
               "type": ""
             }
           ],
-          "returnType": "any",
-          "type": "(__namedParameters: ) => any"
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
         }
       ]
     },
@@ -5226,8 +10048,8 @@ export default {
               "type": "T"
             }
           ],
-          "returnType": "any",
-          "type": "(data: T) => any"
+          "returnType": "void",
+          "type": "(data: T) => void"
         }
       ]
     },
@@ -5570,8 +10392,8 @@ export default {
         }
       ]
     },
-    "LinkTileProps": {
-      "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
+    "FilmstripOptions": {
+      "fileName": "src\\ui-toolkit\\components\\Filmstrip\\useFilmstrip.ts",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -5583,38 +10405,11 @@ export default {
         "isStatic": false
       },
       "kind": "interface",
-      "name": "LinkTileProps",
-      "extends": [
-        "IconImageProps"
-      ],
-      "indexSignature": {
-        "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
-        "kind": "signature",
-        "name": "__index",
-        "parameters": [
-          {
-            "flags": {
-              "isExported": true,
-              "isExternal": false,
-              "isOptional": false,
-              "isPrivate": false,
-              "isProtected": false,
-              "isPublic": false,
-              "isRest": false,
-              "isStatic": false
-            },
-            "kind": "parameter",
-            "name": "key",
-            "type": "string"
-          }
-        ],
-        "returnType": "any",
-        "type": "{ [key: string]: any }"
-      },
+      "name": "FilmstripOptions",
       "methods": [],
       "properties": [
         {
-          "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
+          "fileName": "src\\ui-toolkit\\components\\Filmstrip\\useFilmstrip.ts",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -5626,128 +10421,11 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "hoverColor",
-          "type": "string"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "backgroundColor",
-          "inheritedFrom": "IconImageProps.backgroundColor",
-          "type": "string"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "circle",
-          "inheritedFrom": "IconImageProps.circle",
-          "type": "boolean"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "className",
-          "inheritedFrom": "IconImageProps.className",
-          "type": "string"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "height",
-          "inheritedFrom": "IconImageProps.height",
+          "name": "autopage",
           "type": "number"
         },
         {
-          "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "children",
-          "type": "any"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "href",
-          "type": "string"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "icon",
-          "inheritedFrom": "IconImageProps.icon",
-          "type": "string"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
+          "fileName": "src\\ui-toolkit\\components\\Filmstrip\\useFilmstrip.ts",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -5759,12 +10437,11 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "iconColor",
-          "inheritedFrom": "IconImageProps.iconColor",
-          "type": "string"
+          "name": "itemMinWidth",
+          "type": "number"
         },
         {
-          "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
+          "fileName": "src\\ui-toolkit\\components\\Filmstrip\\useFilmstrip.ts",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -5776,24 +10453,7 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "showHoverOverlay",
-          "type": "boolean"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "width",
-          "inheritedFrom": "IconImageProps.width",
+          "name": "spacing",
           "type": "number"
         }
       ]
@@ -5863,7 +10523,7 @@ export default {
       ]
     },
     "Window": {
-      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
+      "fileName": "src\\ui-toolkit\\components\\Grid\\Grid.tsx",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -5879,7 +10539,7 @@ export default {
       "methods": [],
       "properties": [
         {
-          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
+          "fileName": "src\\ui-toolkit\\components\\Grid\\Grid.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -5891,8 +10551,8 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "__portalsDev",
-          "type": ""
+          "name": "CSS",
+          "type": "any"
         }
       ]
     },
@@ -6317,6 +10977,384 @@ export default {
           },
           "kind": "property",
           "name": "url",
+          "type": "string"
+        }
+      ]
+    },
+    "ThumbnailProps": {
+      "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "ThumbnailProps",
+      "indexSignature": {
+        "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+        "kind": "signature",
+        "name": "__index",
+        "parameters": [
+          {
+            "flags": {
+              "isExported": true,
+              "isExternal": false,
+              "isOptional": false,
+              "isPrivate": false,
+              "isProtected": false,
+              "isPublic": false,
+              "isRest": false,
+              "isStatic": false
+            },
+            "kind": "parameter",
+            "name": "key",
+            "type": "string"
+          }
+        ],
+        "returnType": "any",
+        "type": "{ [key: string]: any }"
+      },
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "className",
+          "type": "string"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "height",
+          "type": "string"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "shape",
+          "type": "\"circle\" | \"rectangle\" | \"square\""
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "width",
+          "type": "string"
+        }
+      ]
+    },
+    "PersonaProps": {
+      "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "PersonaProps",
+      "indexSignature": {
+        "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
+        "kind": "signature",
+        "name": "__index",
+        "parameters": [
+          {
+            "flags": {
+              "isExported": true,
+              "isExternal": false,
+              "isOptional": false,
+              "isPrivate": false,
+              "isProtected": false,
+              "isPublic": false,
+              "isRest": false,
+              "isStatic": false
+            },
+            "kind": "parameter",
+            "name": "key",
+            "type": "string"
+          }
+        ],
+        "returnType": "any",
+        "type": "{ [key: string]: any }"
+      },
+      "methods": [],
+      "properties": [
+        {
+          "documentation": {
+            "contents": [
+              "<p>Control what is used as the Wrapper element. Defaults to DIV.</p>\n"
+            ],
+            "contentsRaw": "Control what is used as the Wrapper element. Defaults to DIV.",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "as",
+          "type": "any"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>This will render a button with the provided text below the title if and only if a linkUrl is provided.</p>\n"
+            ],
+            "contentsRaw": "This will render a button with the provided text below the title if and only if a linkUrl is provided.",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "callToAction",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>If you want to tack on your own class name.</p>\n"
+            ],
+            "contentsRaw": "If you want to tack on your own class name.",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "className",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>This is tertiary text, slightly smaller in size than subTitle.</p>\n"
+            ],
+            "contentsRaw": "This is tertiary text, slightly smaller in size than subTitle.",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "info",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>If provided this will wrap the persona in a link that will open the linkUrl provided in a new tab. If there is also a call to action provided, a button will render in the Persona instead of the whole Persona being clickable.</p>\n"
+            ],
+            "contentsRaw": "If provided this will wrap the persona in a link that will open the linkUrl provided in a new tab. If there is also a call to action provided, a button will render in the Persona instead of the whole Persona being clickable.",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "linkUrl",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defaults to horizontal, this changes the items orientation to render the details below the photo, &#39;vertical&#39; or beside it.</p>\n"
+            ],
+            "contentsRaw": "Defaults to horizontal, this changes the items orientation to render the details below the photo, 'vertical' or beside it.",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "orientation",
+          "type": "\"horizontal\" | \"vertical\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Renders a circle image</p>\n"
+            ],
+            "contentsRaw": "Renders a circle image",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "photo",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defaults to 100px, this sets the height and width of the photo to be the same height to maintain the correct aspect ratio</p>\n"
+            ],
+            "contentsRaw": "Defaults to 100px, this sets the height and width of the photo to be the same height to maintain the correct aspect ratio",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "photoSize",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>This is secondary text, slightly lighter in focus and size than title.</p>\n"
+            ],
+            "contentsRaw": "This is secondary text, slightly lighter in focus and size than title.",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "subTitle",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>This is the primary text, usually used for a users name.</p>\n"
+            ],
+            "contentsRaw": "This is the primary text, usually used for a users name.",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "title",
           "type": "string"
         }
       ]
@@ -7127,8 +12165,8 @@ export default {
         }
       ]
     },
-    "FilmstripOptions": {
-      "fileName": "src\\ui-toolkit\\components\\Filmstrip\\useFilmstrip.ts",
+    "PortalsThemeProviderProps": {
+      "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -7140,15 +12178,15 @@ export default {
         "isStatic": false
       },
       "kind": "interface",
-      "name": "FilmstripOptions",
+      "name": "PortalsThemeProviderProps",
       "methods": [],
       "properties": [
         {
-          "fileName": "src\\ui-toolkit\\components\\Filmstrip\\useFilmstrip.ts",
+          "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
-            "isOptional": true,
+            "isOptional": false,
             "isPrivate": false,
             "isProtected": false,
             "isPublic": false,
@@ -7156,40 +12194,8 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "autopage",
-          "type": "number"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\Filmstrip\\useFilmstrip.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "itemMinWidth",
-          "type": "number"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\Filmstrip\\useFilmstrip.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "spacing",
-          "type": "number"
+          "name": "theme",
+          "type": "IReadonlyTheme"
         }
       ]
     },
@@ -7429,8 +12435,8 @@ export default {
         }
       ]
     },
-    "PortalsThemeProviderProps": {
-      "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
+    "LinkTileProps": {
+      "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -7442,43 +12448,12 @@ export default {
         "isStatic": false
       },
       "kind": "interface",
-      "name": "PortalsThemeProviderProps",
-      "methods": [],
-      "properties": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "theme",
-          "type": "IReadonlyTheme"
-        }
-      ]
-    },
-    "ThumbnailProps": {
-      "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "interface",
-      "name": "ThumbnailProps",
+      "name": "LinkTileProps",
+      "extends": [
+        "IconImageProps"
+      ],
       "indexSignature": {
-        "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+        "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
         "kind": "signature",
         "name": "__index",
         "parameters": [
@@ -7504,7 +12479,57 @@ export default {
       "methods": [],
       "properties": [
         {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+          "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "hoverColor",
+          "type": "string"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "backgroundColor",
+          "inheritedFrom": "IconImageProps.backgroundColor",
+          "type": "string"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "circle",
+          "inheritedFrom": "IconImageProps.circle",
+          "type": "boolean"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -7517,10 +12542,11 @@ export default {
           },
           "kind": "property",
           "name": "className",
+          "inheritedFrom": "IconImageProps.className",
           "type": "string"
         },
         {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -7533,10 +12559,60 @@ export default {
           },
           "kind": "property",
           "name": "height",
+          "inheritedFrom": "IconImageProps.height",
+          "type": "number"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "children",
+          "type": "any"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "href",
           "type": "string"
         },
         {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "icon",
+          "inheritedFrom": "IconImageProps.icon",
+          "type": "string"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -7548,11 +12624,28 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "shape",
-          "type": "\"circle\" | \"rectangle\" | \"square\""
+          "name": "iconColor",
+          "inheritedFrom": "IconImageProps.iconColor",
+          "type": "string"
         },
         {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+          "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "showHoverOverlay",
+          "type": "boolean"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -7565,193 +12658,8 @@ export default {
           },
           "kind": "property",
           "name": "width",
-          "type": "string"
-        }
-      ]
-    },
-    "PersonaProps": {
-      "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "interface",
-      "name": "PersonaProps",
-      "indexSignature": {
-        "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
-        "kind": "signature",
-        "name": "__index",
-        "parameters": [
-          {
-            "flags": {
-              "isExported": true,
-              "isExternal": false,
-              "isOptional": false,
-              "isPrivate": false,
-              "isProtected": false,
-              "isPublic": false,
-              "isRest": false,
-              "isStatic": false
-            },
-            "kind": "parameter",
-            "name": "key",
-            "type": "string"
-          }
-        ],
-        "returnType": "any",
-        "type": "{ [key: string]: any }"
-      },
-      "methods": [],
-      "properties": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "as",
-          "type": "any"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "callToAction",
-          "type": "string"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "info",
-          "type": "string"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "linkUrl",
-          "type": "string"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "orientation",
-          "type": "\"horizontal\" | \"vertical\""
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "photo",
-          "type": "string"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "photoSize",
-          "type": "string"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "subTitle",
-          "type": "string"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "title",
-          "type": "string"
+          "inheritedFrom": "IconImageProps.width",
+          "type": "number"
         }
       ]
     },
@@ -8139,7 +13047,7 @@ export default {
           },
           "kind": "property",
           "name": "renderItem",
-          "type": "(item: T) => JSX.Element"
+          "type": "(item: T) => Element"
         }
       ]
     },
@@ -8279,7 +13187,7 @@ export default {
           },
           "kind": "property",
           "name": "renderItem",
-          "type": "(item: T, itemWidth: number, columnCount: number, gridWidth: number) => JSX.Element"
+          "type": "(item: T, itemWidth: number, columnCount: number, gridWidth: number) => Element"
         },
         {
           "fileName": "src\\ui-toolkit\\components\\VirtualizedGrid\\VirtualizedGrid.tsx",
@@ -8878,7 +13786,7 @@ export default {
           },
           "kind": "property",
           "name": "render",
-          "type": "() => React.ReactElement<any>"
+          "type": "() => ReactElement<any>"
         }
       ]
     },
@@ -8917,7 +13825,7 @@ export default {
           "kind": "property",
           "name": "render",
           "inheritedFrom": "PropertyFieldBlankProperties.render",
-          "type": "() => React.ReactElement<any>"
+          "type": "() => ReactElement<any>"
         }
       ]
     },
