@@ -10019,8 +10019,8 @@ export default {
               "type": "string"
             }
           ],
-          "returnType": "string | string[]",
-          "type": "(key: any, queryString?: string) => string | string[]"
+          "returnType": "any",
+          "type": "(key: any, queryString?: string) => any"
         }
       ]
     },

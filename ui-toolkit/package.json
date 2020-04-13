@@ -7,11 +7,10 @@
     "prestart": "npm run codegen",
     "start:offline": "parcel index.html",
     "start": "npm run start:offline",
-    "build:app": "parcel build src/entry.ts --out-dir ClientSideAssets --public-url /sites/apps/ClientSideAssets/ui-toolkit",
-    "build:spfx": "gulp bundle --ship",
-    "codegen": "node tasks/generateTypes && node tasks/generateMdxDocs",
-    "spfx:build": "gulp bundle --ship",
-    "spfx:app": "gulp small-serve"
+    "deploy": "powershell tasks/deploy.ps1",
+    "prebuild": "npm run codegen",
+    "build": "parcel build src/entry.ts --out-dir ClientSideAssets --public-url /sites/apps/ClientSideAssets/ui-toolkit",
+    "codegen": "node tasks/generateTypes && node tasks/generateMdxDocs"
   },
   "author": "Andrew Petersen",
   "license": "ISC",
@@ -20,6 +19,7 @@
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
     "@documentalist/compiler": "^2.7.0",
+    "@mdx-js/loader": "^1.5.8",
     "@mdx-js/parcel-plugin-mdx": "^1.5.8",
     "@mdx-js/react": "^1.0.0-rc.5",
     "@microsoft/rush-stack-compiler-3.7": "^0.2.9",
@@ -63,6 +63,7 @@
     "react-live": "^2.2.2",
     "shave": "^2.5.9",
     "spscript": "^4.2.0",
-    "styled-components": "^5.1.0"
+    "styled-components": "^5.1.0",
+    "ts-loader": "^6.2.2"
   }
 }

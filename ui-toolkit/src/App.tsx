@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import styled from "styled-components";
 import { Menu, docs } from "docs";
+import { Fabric } from "office-ui-fabric-react/lib/Fabric";
 import useQueryString from "ui-toolkit/hooks/useQueryString";
 import { MDXProvider } from "@mdx-js/react";
 import PortalsThemeProvider from "ui-toolkit/components/PortalsThemeProvider/PortalsThemeProvider";
@@ -16,22 +17,24 @@ function App({ theme }) {
   let [active, setActive] = useQueryString("active", "Home");
   let target = docs.find((d) => d.title === active);
   return (
-    <PortalsThemeProvider theme={theme}>
-      <StyledLayout className="app">
-        <div className="header">
-          <h1>PortalsDev UI Toolkit</h1>
-        </div>
-        <div className="side-menu">
-          <Menu setActive={setActive} />
-        </div>
-        <div className="content">
-          <Suspense fallback={<div>Loading...</div>}>
-            <MDXProvider components={components}>{target && target.render()}</MDXProvider>
-          </Suspense>
-        </div>
-      </StyledLayout>
-      <style>{`body { margin: 0; height: 100vh}`}</style>
-    </PortalsThemeProvider>
+    <Fabric>
+      <PortalsThemeProvider theme={theme}>
+        <StyledLayout className="app">
+          <div className="header">
+            <h1>PortalsDev UI Toolkit</h1>
+          </div>
+          <div className="side-menu">
+            <Menu setActive={setActive} />
+          </div>
+          <div className="content">
+            <Suspense fallback={<div>Loading...</div>}>
+              <MDXProvider components={components}>{target && target.render()}</MDXProvider>
+            </Suspense>
+          </div>
+        </StyledLayout>
+        <style>{`body { margin: 0; height: 100vh}`}</style>
+      </PortalsThemeProvider>
+    </Fabric>
   );
 }
 
