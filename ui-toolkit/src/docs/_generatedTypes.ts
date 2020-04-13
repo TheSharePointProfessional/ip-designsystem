@@ -6207,1401 +6207,6 @@ export default {
         ]
       }
     },
-    "DesignSystemWebPart": {
-      "fileName": "src\\webparts\\DesignSystem\\DesignSystemWebPart.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "class",
-      "name": "DesignSystemWebPart",
-      "extends": [
-        "BaseClientSideWebPart<WebPartProperties>"
-      ],
-      "implements": [
-        "ISPEventObserver",
-        "any"
-      ],
-      "methods": [
-        {
-          "fileName": "src\\webparts\\DesignSystem\\DesignSystemWebPart.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "method",
-          "name": "onDispose",
-          "signatures": [
-            {
-              "fileName": "src\\webparts\\DesignSystem\\DesignSystemWebPart.ts",
-              "kind": "signature",
-              "name": "onDispose",
-              "parameters": [],
-              "returnType": "void",
-              "type": "() => void"
-            }
-          ]
-        },
-        {
-          "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "method",
-          "name": "clearError",
-          "inheritedFrom": "BaseClientSideWebPart.clearError",
-          "signatures": [
-            {
-              "documentation": {
-                "contents": [
-                  "<p>This API should be used to clear the error message from the web part display area.</p>\n"
-                ],
-                "contentsRaw": "This API should be used to clear the error message from the web part display area.",
-                "metadata": {}
-              },
-              "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-              "kind": "signature",
-              "name": "clearError",
-              "parameters": [],
-              "returnType": "void",
-              "type": "() => void"
-            }
-          ]
-        },
-        {
-          "fileName": "src\\webparts\\DesignSystem\\DesignSystemWebPart.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "method",
-          "name": "getPropertyPaneConfiguration",
-          "signatures": [
-            {
-              "fileName": "src\\webparts\\DesignSystem\\DesignSystemWebPart.ts",
-              "kind": "signature",
-              "name": "getPropertyPaneConfiguration",
-              "parameters": [],
-              "returnType": "IPropertyPaneConfiguration",
-              "type": "() => IPropertyPaneConfiguration"
-            }
-          ]
-        },
-        {
-          "fileName": "src\\webparts\\DesignSystem\\DesignSystemWebPart.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "method",
-          "name": "handleUpdate",
-          "signatures": [
-            {
-              "fileName": "src\\webparts\\DesignSystem\\DesignSystemWebPart.ts",
-              "kind": "signature",
-              "name": "handleUpdate",
-              "parameters": [
-                {
-                  "flags": {
-                    "isExported": true,
-                    "isExternal": false,
-                    "isOptional": false,
-                    "isPrivate": false,
-                    "isProtected": false,
-                    "isPublic": false,
-                    "isRest": false,
-                    "isStatic": false
-                  },
-                  "kind": "parameter",
-                  "name": "property",
-                  "type": "any"
-                },
-                {
-                  "flags": {
-                    "isExported": true,
-                    "isExternal": false,
-                    "isOptional": false,
-                    "isPrivate": false,
-                    "isProtected": false,
-                    "isPublic": false,
-                    "isRest": false,
-                    "isStatic": false
-                  },
-                  "kind": "parameter",
-                  "name": "value",
-                  "type": "any"
-                }
-              ],
-              "returnType": "void",
-              "type": "(property: any, value: any) => void"
-            }
-          ]
-        },
-        {
-          "fileName": "src\\webparts\\DesignSystem\\DesignSystemWebPart.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "method",
-          "name": "initTheme",
-          "signatures": [
-            {
-              "fileName": "src\\webparts\\DesignSystem\\DesignSystemWebPart.ts",
-              "kind": "signature",
-              "name": "initTheme",
-              "parameters": [],
-              "returnType": "Promise<void>",
-              "type": "() => Promise<void>"
-            }
-          ]
-        },
-        {
-          "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "method",
-          "name": "onAfterDeserialize",
-          "inheritedFrom": "BaseWebPart.onAfterDeserialize",
-          "signatures": [
-            {
-              "documentation": {
-                "contents": [
-                  "<p>This API is called after the web part is deserialized to an object, right before the property bag is populated.</p>\n",
-                  {
-                    "tag": "remarks",
-                    "value": "The default implementation is a no-op. A web part developer can override this API if the deserialized object"
-                  },
-                  "<p>does not fully reflect the initial state of the property bag. This gives the web part developer a chance to\npopulate the property bag right after the data is deserialized to an object.</p>\n<p>An important scenario to use deserialize is upgrading. An upgraded web part may load the data\nthat was serialized by an older version of the web part that supported a different schema of the property bag,\nresulting the deserialized object to be incosistent with the current schema of the property bag. The developer\ncan use <code>onAfterDeserialize</code> to check the dataVersion and fix the property bag.</p>\n"
-                ],
-                "contentsRaw": "This API is called after the web part is deserialized to an object, right before the property bag is populated.\n\n@remarks \nThe default implementation is a no-op. A web part developer can override this API if the deserialized object\ndoes not fully reflect the initial state of the property bag. This gives the web part developer a chance to\npopulate the property bag right after the data is deserialized to an object.\n\nAn important scenario to use deserialize is upgrading. An upgraded web part may load the data\nthat was serialized by an older version of the web part that supported a different schema of the property bag,\nresulting the deserialized object to be incosistent with the current schema of the property bag. The developer\ncan use `onAfterDeserialize` to check the dataVersion and fix the property bag.",
-                "metadata": {}
-              },
-              "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-              "kind": "signature",
-              "name": "onAfterDeserialize",
-              "parameters": [
-                {
-                  "documentation": {
-                    "contents": [
-                      "<p>The object deserialized from the stored data. Note that the schema of  this object\nis not necessarily consistent with the current property bag, because the serialization could have been done by\nan older version of the web part</p>\n"
-                    ],
-                    "contentsRaw": "The object deserialized from the stored data. Note that the schema of  this object\nis not necessarily consistent with the current property bag, because the serialization could have been done by\nan older version of the web part",
-                    "metadata": {}
-                  },
-                  "flags": {
-                    "isExported": true,
-                    "isExternal": false,
-                    "isOptional": false,
-                    "isPrivate": false,
-                    "isProtected": false,
-                    "isPublic": false,
-                    "isRest": false,
-                    "isStatic": false
-                  },
-                  "kind": "parameter",
-                  "name": "deserializedObject",
-                  "type": "any"
-                },
-                {
-                  "documentation": {
-                    "contents": [
-                      "<p>The data version of the stored data being deserialized. You can use this value to determine\nif the data was serialized by an older web part. Web parts can define their data version by overriding the\ndataVersion property.</p>\n"
-                    ],
-                    "contentsRaw": "The data version of the stored data being deserialized. You can use this value to determine\nif the data was serialized by an older web part. Web parts can define their data version by overriding the\ndataVersion property.",
-                    "metadata": {}
-                  },
-                  "flags": {
-                    "isExported": true,
-                    "isExternal": false,
-                    "isOptional": false,
-                    "isPrivate": false,
-                    "isProtected": false,
-                    "isPublic": false,
-                    "isRest": false,
-                    "isStatic": false
-                  },
-                  "kind": "parameter",
-                  "name": "dataVersion",
-                  "type": "Version"
-                }
-              ],
-              "returnType": "WebPartProperties",
-              "type": "(deserializedObject: any, dataVersion: Version) => WebPartProperties"
-            }
-          ]
-        },
-        {
-          "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "method",
-          "name": "onAfterPropertyPaneChangesApplied",
-          "inheritedFrom": "BaseWebPart.onAfterPropertyPaneChangesApplied",
-          "signatures": [
-            {
-              "documentation": {
-                "contents": [
-                  "<p>This API is invoked after the changes made on the PropertyPane are applied when the PropertyPane is used in\nNon-Reactive mode. This API is not invoked when the PropertyPane is used in Reactive mode.</p>\n"
-                ],
-                "contentsRaw": "This API is invoked after the changes made on the PropertyPane are applied when the PropertyPane is used in\nNon-Reactive mode. This API is not invoked when the PropertyPane is used in Reactive mode.",
-                "metadata": {}
-              },
-              "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-              "kind": "signature",
-              "name": "onAfterPropertyPaneChangesApplied",
-              "parameters": [],
-              "returnType": "void",
-              "type": "() => void"
-            }
-          ]
-        },
-        {
-          "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "method",
-          "name": "onBeforeSerialize",
-          "inheritedFrom": "BaseWebPart.onBeforeSerialize",
-          "signatures": [
-            {
-              "documentation": {
-                "contents": [
-                  "<p>This event method is called before the web part is serialized.</p>\n",
-                  {
-                    "tag": "remarks",
-                    "value": "The default implementation is a no-op. The serialization"
-                  },
-                  "<p>process serializes the web part property bag i.e. this.properties. This API gives the web part a chance to\nupdate it&#39;s property bag before the serialization happens. Some web part&#39;s may keep their state other objects\nor even in the DOM. If a web part needs to persist some of that state, it needs to override this API and update\nthe web part property bag to the latest state. If a web part updates the property bag with invalid property\nvalues, those will get persisted. So that should be avoided. The web part property bag should always contain\nvalid property values.</p>\n"
-                ],
-                "contentsRaw": "This event method is called before the web part is serialized.\n\n@remarks \nThe default implementation is a no-op. The serialization\nprocess serializes the web part property bag i.e. this.properties. This API gives the web part a chance to\nupdate it's property bag before the serialization happens. Some web part's may keep their state other objects\nor even in the DOM. If a web part needs to persist some of that state, it needs to override this API and update\nthe web part property bag to the latest state. If a web part updates the property bag with invalid property\nvalues, those will get persisted. So that should be avoided. The web part property bag should always contain\nvalid property values.",
-                "metadata": {}
-              },
-              "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-              "kind": "signature",
-              "name": "onBeforeSerialize",
-              "parameters": [],
-              "returnType": "void",
-              "type": "() => void"
-            }
-          ]
-        },
-        {
-          "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "method",
-          "name": "onDisplayModeChanged",
-          "inheritedFrom": "BaseClientSideWebPart.onDisplayModeChanged",
-          "signatures": [
-            {
-              "documentation": {
-                "contents": [
-                  "<p>This event method is called when the display mode of a web part is changed.</p>\n",
-                  {
-                    "tag": "remarks",
-                    "value": "The default implementation of this API calls"
-                  },
-                  "<p>the web part render method to re-render the web part with the new display mode. If a web part developer does not\nwant a full re-render to happen on display mode change, they can override this API and perform specific updates\nto the web part DOM to switch its display mode.</p>\n",
-                  {
-                    "tag": "virtual"
-                  }
-                ],
-                "contentsRaw": "This event method is called when the display mode of a web part is changed.\n\n@remarks \nThe default implementation of this API calls\nthe web part render method to re-render the web part with the new display mode. If a web part developer does not\nwant a full re-render to happen on display mode change, they can override this API and perform specific updates\nto the web part DOM to switch its display mode.\n\n@virtual",
-                "metadata": {}
-              },
-              "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-              "kind": "signature",
-              "name": "onDisplayModeChanged",
-              "parameters": [
-                {
-                  "documentation": {
-                    "contents": [
-                      "<p>The old display mode.</p>\n"
-                    ],
-                    "contentsRaw": "The old display mode.",
-                    "metadata": {}
-                  },
-                  "flags": {
-                    "isExported": true,
-                    "isExternal": false,
-                    "isOptional": false,
-                    "isPrivate": false,
-                    "isProtected": false,
-                    "isPublic": false,
-                    "isRest": false,
-                    "isStatic": false
-                  },
-                  "kind": "parameter",
-                  "name": "oldDisplayMode",
-                  "type": "DisplayMode"
-                }
-              ],
-              "returnType": "void",
-              "type": "(oldDisplayMode: DisplayMode) => void"
-            }
-          ]
-        },
-        {
-          "fileName": "node_modules\\@microsoft\\sp-component-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "method",
-          "name": "dispose",
-          "inheritedFrom": "BaseComponent.dispose",
-          "signatures": [
-            {
-              "documentation": {
-                "contents": [
-                  "<p>Disposes the component.</p>\n",
-                  {
-                    "tag": "remarks",
-                    "value": "Third-party code generally does not need to call this method; it's invoked"
-                  },
-                  "<p>automatically when the lifecycle ends for a web part or extension.  To perform\ncustom cleanup when your component is disposed, override the {@link BaseComponent.onDispose}\nmethod.</p>\n"
-                ],
-                "contentsRaw": "Disposes the component.\n\n@remarks \nThird-party code generally does not need to call this method; it's invoked\nautomatically when the lifecycle ends for a web part or extension.  To perform\ncustom cleanup when your component is disposed, override the {@link BaseComponent.onDispose}\nmethod.",
-                "metadata": {}
-              },
-              "fileName": "node_modules\\@microsoft\\sp-component-base\\dist\\index-internal.d.ts",
-              "kind": "signature",
-              "name": "dispose",
-              "parameters": [],
-              "returnType": "void",
-              "type": "() => void"
-            }
-          ]
-        },
-        {
-          "fileName": "src\\webparts\\DesignSystem\\DesignSystemWebPart.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "method",
-          "name": "onInit",
-          "signatures": [
-            {
-              "fileName": "src\\webparts\\DesignSystem\\DesignSystemWebPart.ts",
-              "kind": "signature",
-              "name": "onInit",
-              "parameters": [],
-              "returnType": "Promise<void>",
-              "type": "() => Promise<void>"
-            }
-          ]
-        },
-        {
-          "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "method",
-          "name": "onPropertyPaneConfigurationComplete",
-          "inheritedFrom": "BaseWebPart.onPropertyPaneConfigurationComplete",
-          "signatures": [
-            {
-              "documentation": {
-                "contents": [
-                  "<p>This API is invoked when the configuration is completed on the PropertyPane.</p>\n",
-                  {
-                    "tag": "remarks",
-                    "value": "This event method is invoked in the following cases:"
-                  },
-                  "<ul>\n<li><p>When the CONFIGURATION_COMPLETE_TIMEOUT((currently the value is 5 secs) elapses after the last change.</p>\n</li>\n<li><p>When user clicks the &quot;X&quot; (close) button before the CONFIGURATION_COMPLETE_TIMEOUT elapses.</p>\n</li>\n<li><p>When user clicks the &#39;Apply&#39; button before the CONFIGURATION_COMPLETE_TIMEOUT elapses.</p>\n</li>\n<li><p>When the user switches web parts then the current web part gets this event.</p>\n</li>\n</ul>\n"
-                ],
-                "contentsRaw": "This API is invoked when the configuration is completed on the PropertyPane.\n\n@remarks \nThis event method is invoked in the following cases:\n\n - When the CONFIGURATION_COMPLETE_TIMEOUT((currently the value is 5 secs) elapses after the last change.\n\n - When user clicks the \"X\" (close) button before the CONFIGURATION_COMPLETE_TIMEOUT elapses.\n\n - When user clicks the 'Apply' button before the CONFIGURATION_COMPLETE_TIMEOUT elapses.\n\n - When the user switches web parts then the current web part gets this event.",
-                "metadata": {}
-              },
-              "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-              "kind": "signature",
-              "name": "onPropertyPaneConfigurationComplete",
-              "parameters": [],
-              "returnType": "void",
-              "type": "() => void"
-            }
-          ]
-        },
-        {
-          "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "method",
-          "name": "onPropertyPaneConfigurationStart",
-          "inheritedFrom": "BaseWebPart.onPropertyPaneConfigurationStart",
-          "signatures": [
-            {
-              "documentation": {
-                "contents": [
-                  "<p>This event method is invoked when the configuration starts on the PropertyPane.</p>\n",
-                  {
-                    "tag": "remarks",
-                    "value": "This event method is invoked in the following cases:"
-                  },
-                  "<ul>\n<li><p>When the PropertyPane is opened.</p>\n</li>\n<li><p>When the user switches web parts then the new web part gets this event.</p>\n</li>\n</ul>\n"
-                ],
-                "contentsRaw": "This event method is invoked when the configuration starts on the PropertyPane.\n\n@remarks \nThis event method is invoked in the following cases:\n\n - When the PropertyPane is opened.\n\n - When the user switches web parts then the new web part gets this event.",
-                "metadata": {}
-              },
-              "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-              "kind": "signature",
-              "name": "onPropertyPaneConfigurationStart",
-              "parameters": [],
-              "returnType": "void",
-              "type": "() => void"
-            }
-          ]
-        },
-        {
-          "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "method",
-          "name": "onPropertyPaneFieldChanged",
-          "inheritedFrom": "BaseWebPart.onPropertyPaneFieldChanged",
-          "signatures": [
-            {
-              "documentation": {
-                "contents": [
-                  "<p>This API is invoked after updating the new value of the property in the property bag when the PropertyPane\nis being used in Reactive mode.</p>\n"
-                ],
-                "contentsRaw": "This API is invoked after updating the new value of the property in the property bag when the PropertyPane\nis being used in Reactive mode.",
-                "metadata": {}
-              },
-              "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-              "kind": "signature",
-              "name": "onPropertyPaneFieldChanged",
-              "parameters": [
-                {
-                  "documentation": {
-                    "contents": [
-                      "<p>JSON path of the property in the property bag.\n In the case of custom field, if no target property is provided then a custom value is assigned,\n which will be in the form of <code>__CustomField_&lt;key provided when the custom field is created&gt;</code>.</p>\n"
-                    ],
-                    "contentsRaw": "JSON path of the property in the property bag.\n In the case of custom field, if no target property is provided then a custom value is assigned,\n which will be in the form of `__CustomField_<key provided when the custom field is created>`.",
-                    "metadata": {}
-                  },
-                  "flags": {
-                    "isExported": true,
-                    "isExternal": false,
-                    "isOptional": false,
-                    "isPrivate": false,
-                    "isProtected": false,
-                    "isPublic": false,
-                    "isRest": false,
-                    "isStatic": false
-                  },
-                  "kind": "parameter",
-                  "name": "propertyPath",
-                  "type": "string"
-                },
-                {
-                  "documentation": {
-                    "contents": [
-                      "<p>Old value of the property.\n This value could be undefined/empty in the case of custom field.</p>\n"
-                    ],
-                    "contentsRaw": "Old value of the property.\n This value could be undefined/empty in the case of custom field.",
-                    "metadata": {}
-                  },
-                  "flags": {
-                    "isExported": true,
-                    "isExternal": false,
-                    "isOptional": false,
-                    "isPrivate": false,
-                    "isProtected": false,
-                    "isPublic": false,
-                    "isRest": false,
-                    "isStatic": false
-                  },
-                  "kind": "parameter",
-                  "name": "oldValue",
-                  "type": "any"
-                },
-                {
-                  "documentation": {
-                    "contents": [
-                      "<p>New value of the property.\n This value could be undefined/empty in the case of custom field.</p>\n"
-                    ],
-                    "contentsRaw": "New value of the property.\n This value could be undefined/empty in the case of custom field.",
-                    "metadata": {}
-                  },
-                  "flags": {
-                    "isExported": true,
-                    "isExternal": false,
-                    "isOptional": false,
-                    "isPrivate": false,
-                    "isProtected": false,
-                    "isPublic": false,
-                    "isRest": false,
-                    "isStatic": false
-                  },
-                  "kind": "parameter",
-                  "name": "newValue",
-                  "type": "any"
-                }
-              ],
-              "returnType": "void",
-              "type": "(propertyPath: string, oldValue: any, newValue: any) => void"
-            }
-          ]
-        },
-        {
-          "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "method",
-          "name": "onPropertyPaneRendered",
-          "inheritedFrom": "BaseWebPart.onPropertyPaneRendered",
-          "signatures": [
-            {
-              "documentation": {
-                "contents": [
-                  "<p>This API is invoked when the PropertyPane is rendered.</p>\n",
-                  {
-                    "tag": "privateremarks",
-                    "value": "From framework standpoint, we do not want to allow this event handler to be passed in, and trigger it."
-                  },
-                  "<p>This api should be deprecated and then removed as part of refactoring.</p>\n"
-                ],
-                "contentsRaw": "This API is invoked when the PropertyPane is rendered.\n\n@privateremarks \nFrom framework standpoint, we do not want to allow this event handler to be passed in, and trigger it.\nThis api should be deprecated and then removed as part of refactoring.",
-                "metadata": {}
-              },
-              "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-              "kind": "signature",
-              "name": "onPropertyPaneRendered",
-              "parameters": [],
-              "returnType": "void",
-              "type": "() => void"
-            }
-          ]
-        },
-        {
-          "fileName": "src\\webparts\\DesignSystem\\DesignSystemWebPart.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": true,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "method",
-          "name": "render",
-          "signatures": [
-            {
-              "fileName": "src\\webparts\\DesignSystem\\DesignSystemWebPart.ts",
-              "kind": "signature",
-              "name": "render",
-              "parameters": [],
-              "returnType": "void",
-              "type": "() => void"
-            }
-          ]
-        },
-        {
-          "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "method",
-          "name": "renderCompleted",
-          "inheritedFrom": "BaseClientSideWebPart.renderCompleted",
-          "signatures": [
-            {
-              "documentation": {
-                "contents": [
-                  "<p>This API should be called by web parts that perform Async rendering. Those web part are required to override\nthe isRenderAsync API and return true. One such example is web parts that render content in an IFrame. The\nweb part initiates the IFrame rendering in the <code>render()</code> API but the actual rendering is complete only after\nthe iframe loading completes.</p>\n"
-                ],
-                "contentsRaw": "This API should be called by web parts that perform Async rendering. Those web part are required to override\nthe isRenderAsync API and return true. One such example is web parts that render content in an IFrame. The\nweb part initiates the IFrame rendering in the `render()` API but the actual rendering is complete only after\nthe iframe loading completes.",
-                "metadata": {}
-              },
-              "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-              "kind": "signature",
-              "name": "renderCompleted",
-              "parameters": [],
-              "returnType": "void",
-              "type": "() => void"
-            }
-          ]
-        },
-        {
-          "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "method",
-          "name": "renderError",
-          "inheritedFrom": "BaseClientSideWebPart.renderError",
-          "signatures": [
-            {
-              "documentation": {
-                "contents": [
-                  "<p>This API should be used to render an error message in the web part display area. Also logs the error message\nusing the trace logger.</p>\n"
-                ],
-                "contentsRaw": "This API should be used to render an error message in the web part display area. Also logs the error message\nusing the trace logger.",
-                "metadata": {}
-              },
-              "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-              "kind": "signature",
-              "name": "renderError",
-              "parameters": [
-                {
-                  "documentation": {
-                    "contents": [
-                      "<p>An error object containing the error message to render.</p>\n"
-                    ],
-                    "contentsRaw": "An error object containing the error message to render.",
-                    "metadata": {}
-                  },
-                  "flags": {
-                    "isExported": true,
-                    "isExternal": false,
-                    "isOptional": false,
-                    "isPrivate": false,
-                    "isProtected": false,
-                    "isPublic": false,
-                    "isRest": false,
-                    "isStatic": false
-                  },
-                  "kind": "parameter",
-                  "name": "error",
-                  "type": "Error"
-                }
-              ],
-              "returnType": "void",
-              "type": "(error: Error) => void"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "documentation": {
-            "contents": [
-              "<p>A unique identifier for the instance of the component.</p>\n",
-              {
-                "tag": "remarks",
-                "value": "A component implementation can be loaded multiple times on the page."
-              },
-              "<p>For example, if the component is a charting web part, multiple instances of this web part\ncould be added to the SharePoint canvas.  The instanceId uniquely identifies each\nof these instances.</p>\n"
-            ],
-            "contentsRaw": "A unique identifier for the instance of the component.\n\n@remarks \nA component implementation can be loaded multiple times on the page.\nFor example, if the component is a charting web part, multiple instances of this web part\ncould be added to the SharePoint canvas.  The instanceId uniquely identifies each\nof these instances.",
-            "metadata": {}
-          },
-          "fileName": "node_modules\\@microsoft\\sp-component-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "instanceId",
-          "inheritedFrom": "BaseComponent.instanceId",
-          "type": "string"
-        },
-        {
-          "fileName": "src\\webparts\\DesignSystem\\DesignSystemWebPart.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "_theme",
-          "type": "IReadonlyTheme"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>This property points to the accessible title of web part made available to screen readers. The base implementation\nreturns that default title in the manifest. Web parts that want to provide more descriptive title containing\ncontextual information need to override this API.</p>\n"
-            ],
-            "contentsRaw": "This property points to the accessible title of web part made available to screen readers. The base implementation\nreturns that default title in the manifest. Web parts that want to provide more descriptive title containing\ncontextual information need to override this API.",
-            "metadata": {}
-          },
-          "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "accessibleTitle",
-          "inheritedFrom": "BaseWebPart.accessibleTitle",
-          "type": "string"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>This property indicates whether a web part can open a popup on initial render.</p>\n",
-              {
-                "tag": "remarks",
-                "value": "In some environments the host"
-              },
-              "<p>re-renders the web parts frequently, and therefore opening popups during render will cause popups to open\nrepeatedly, which is a poor user experience. As an example, the classic SharePoint pages perform postbacks\ncausing the page to re-render on all button clicks.</p>\n<p>If a web part needs to open a popup on render, it should use this API before opening the popup. If this API\nreturns false, the web part should not open popup on initial render. Some web parts that open popups during\nrender are the document embed web part that pops up the file picker on initial render, embedded video web part\nthat pops up the PropertyPane on initial render.</p>\n",
-              {
-                "tag": "readonly"
-              }
-            ],
-            "contentsRaw": "This property indicates whether a web part can open a popup on initial render.\n\n@remarks \nIn some environments the host\nre-renders the web parts frequently, and therefore opening popups during render will cause popups to open\nrepeatedly, which is a poor user experience. As an example, the classic SharePoint pages perform postbacks\ncausing the page to re-render on all button clicks.\n\nIf a web part needs to open a popup on render, it should use this API before opening the popup. If this API\nreturns false, the web part should not open popup on initial render. Some web parts that open popups during\nrender are the document embed web part that pops up the file picker on initial render, embedded video web part\nthat pops up the PropertyPane on initial render.\n\n@readonly",
-            "metadata": {}
-          },
-          "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "canOpenPopupOnRender",
-          "inheritedFrom": "BaseClientSideWebPart.canOpenPopupOnRender",
-          "type": "boolean"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Returns the component identifier as defined in the component’s associated manifest.</p>\n",
-              {
-                "tag": "remarks",
-                "value": "Each client-side component has an associated manifest that is used by the sp-loader to load its scripts,"
-              },
-              "<p>and which may include additional metadata about the component.  The manifest is uniquely identified using\na text string containing a lower case GUID value.</p>\n"
-            ],
-            "contentsRaw": "Returns the component identifier as defined in the component’s associated manifest.\n\n@remarks \nEach client-side component has an associated manifest that is used by the sp-loader to load its scripts,\nand which may include additional metadata about the component.  The manifest is uniquely identified using\na text string containing a lower case GUID value.",
-            "metadata": {}
-          },
-          "fileName": "node_modules\\@microsoft\\sp-component-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "componentId",
-          "inheritedFrom": "BaseComponent.componentId",
-          "type": "string"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>{@inheritDoc @microsoft/sp-component-base#BaseComponent.context}</p>\n"
-            ],
-            "contentsRaw": "{@inheritDoc @microsoft/sp-component-base#BaseComponent.context}",
-            "metadata": {}
-          },
-          "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "context",
-          "inheritedFrom": "BaseClientSideWebPart.context",
-          "type": "WebPartContext"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Description of the WebPart</p>\n",
-              {
-                "tag": "readonly"
-              }
-            ],
-            "contentsRaw": "Description of the WebPart\n\n@readonly",
-            "metadata": {}
-          },
-          "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "description",
-          "inheritedFrom": "BaseWebPart.description",
-          "type": "string"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>This property is used to change the web part&#39;s property pane interaction from Reactive to NonReactive.</p>\n",
-              {
-                "tag": "remarks",
-                "value": "The default behavior is Reactive."
-              },
-              "<p>Reactive implies that changes made in the PropertyPane are transmitted to the web part instantly and the user can\nsee instant updates. This helps the page creator get instant feedback and decide if they should keep the new\nconfiguration changes or not.</p>\n<p>NonReactive implies that the configuration changes are transmitted to the web part only after &quot;Apply&quot; PropertyPane\nbutton is clicked.</p>\n"
-            ],
-            "contentsRaw": "This property is used to change the web part's property pane interaction from Reactive to NonReactive.\n\n@remarks \nThe default behavior is Reactive.\n\nReactive implies that changes made in the PropertyPane are transmitted to the web part instantly and the user can\nsee instant updates. This helps the page creator get instant feedback and decide if they should keep the new\nconfiguration changes or not.\n\nNonReactive implies that the configuration changes are transmitted to the web part only after \"Apply\" PropertyPane\nbutton is clicked.",
-            "metadata": {}
-          },
-          "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "disableReactivePropertyChanges",
-          "inheritedFrom": "BaseWebPart.disableReactivePropertyChanges",
-          "type": "boolean"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>This property is the current display mode of the web part.</p>\n",
-              {
-                "tag": "readonly"
-              }
-            ],
-            "contentsRaw": "This property is the current display mode of the web part.\n\n@readonly",
-            "metadata": {}
-          },
-          "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "displayMode",
-          "inheritedFrom": "BaseWebPart.displayMode",
-          "type": "DisplayMode"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>This property is a pointer to the root DOM element of the web part. This is a DIV element and contains the whole\nDOM subtree of the web part.</p>\n",
-              {
-                "tag": "readonly"
-              }
-            ],
-            "contentsRaw": "This property is a pointer to the root DOM element of the web part. This is a DIV element and contains the whole\nDOM subtree of the web part.\n\n@readonly",
-            "metadata": {}
-          },
-          "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "domElement",
-          "inheritedFrom": "BaseClientSideWebPart.domElement",
-          "type": "HTMLElement"
-        },
-        {
-          "fileName": "src\\webparts\\DesignSystem\\DesignSystemWebPart.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "_themeProvider",
-          "type": "ThemeProvider"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Returns true if the component has been already disposed.</p>\n"
-            ],
-            "contentsRaw": "Returns true if the component has been already disposed.",
-            "metadata": {}
-          },
-          "fileName": "node_modules\\@microsoft\\sp-component-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "isDisposed",
-          "inheritedFrom": "BaseComponent.isDisposed",
-          "type": "boolean"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Indicates whether the web part is rendering in Async mode.</p>\n",
-              {
-                "tag": "remarks",
-                "value": "If the web part overrides this field to return true, then it needs to call renderCompleted API"
-              },
-              "<p>after the web part rendering is complete.</p>\n<p>The default value is false.</p>\n",
-              {
-                "tag": "virtual"
-              }
-            ],
-            "contentsRaw": "Indicates whether the web part is rendering in Async mode.\n\n@remarks \nIf the web part overrides this field to return true, then it needs to call renderCompleted API\nafter the web part rendering is complete.\n\nThe default value is false.\n\n@virtual",
-            "metadata": {}
-          },
-          "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "isRenderAsync",
-          "inheritedFrom": "BaseClientSideWebPart.isRenderAsync",
-          "type": "boolean"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Provides access to the manifest for the client-side component.</p>\n",
-              {
-                "tag": "remarks",
-                "value": "Child classes can override this with more specialized manifest types."
-              }
-            ],
-            "contentsRaw": "Provides access to the manifest for the client-side component.\n\n@remarks \nChild classes can override this with more specialized manifest types.",
-            "metadata": {}
-          },
-          "fileName": "node_modules\\@microsoft\\sp-component-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "manifest",
-          "inheritedFrom": "BaseComponent.manifest",
-          "type": "IClientSideComponentManifest"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>This property points to the preview image for the web part. The base implementation returns undefined. Web parts\nthat want to provide a valid preview image url need to override this API. The preview image url can be used to\ncreate a preview of the web part or of the page on which the web part is present.</p>\n"
-            ],
-            "contentsRaw": "This property points to the preview image for the web part. The base implementation returns undefined. Web parts\nthat want to provide a valid preview image url need to override this API. The preview image url can be used to\ncreate a preview of the web part or of the page on which the web part is present.",
-            "metadata": {}
-          },
-          "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "previewImageUrl",
-          "inheritedFrom": "BaseWebPart.previewImageUrl",
-          "type": "string | undefined"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>This property is the pointer to the custom property bag of the web part.</p>\n",
-              {
-                "tag": "readonly"
-              }
-            ],
-            "contentsRaw": "This property is the pointer to the custom property bag of the web part.\n\n@readonly",
-            "metadata": {}
-          },
-          "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "properties",
-          "inheritedFrom": "BaseWebPart.properties",
-          "type": "WebPartProperties"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>This property defines metadata for the web part property bag. The metadata can help SharePoint understand\nthe content of the properties better and perform relevant services on the data.</p>\n",
-              {
-                "tag": "remarks",
-                "value": "See {@link IWebPartPropertiesMetadata} for more information about how to define metadata"
-              }
-            ],
-            "contentsRaw": "This property defines metadata for the web part property bag. The metadata can help SharePoint understand\nthe content of the properties better and perform relevant services on the data.\n\n@remarks \nSee {@link IWebPartPropertiesMetadata} for more information about how to define metadata",
-            "metadata": {}
-          },
-          "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "propertiesMetadata",
-          "inheritedFrom": "BaseWebPart.propertiesMetadata",
-          "type": "IWebPartPropertiesMetadata | undefined"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>This property indicates whether the web part was rendered from the persisted data (serialized state from the\nlast time that the web part was saved) or not.</p>\n",
-              {
-                "tag": "remarks",
-                "value": "Example: When web part is added for the first time using toolbox then the value is false."
-              },
-              {
-                "tag": "readonly"
-              }
-            ],
-            "contentsRaw": "This property indicates whether the web part was rendered from the persisted data (serialized state from the\nlast time that the web part was saved) or not.\n\n@remarks \nExample: When web part is added for the first time using toolbox then the value is false.\n\n@readonly",
-            "metadata": {}
-          },
-          "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "renderedFromPersistedData",
-          "inheritedFrom": "BaseClientSideWebPart.renderedFromPersistedData",
-          "type": "boolean"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>This property indicates whether the web part has been rendered once or not. After the first time rendering,\nthe value of this property is always true until a full re-render of the web part happens.</p>\n",
-              {
-                "tag": "readonly"
-              }
-            ],
-            "contentsRaw": "This property indicates whether the web part has been rendered once or not. After the first time rendering,\nthe value of this property is always true until a full re-render of the web part happens.\n\n@readonly",
-            "metadata": {}
-          },
-          "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "renderedOnce",
-          "inheritedFrom": "BaseClientSideWebPart.renderedOnce",
-          "type": "boolean"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Title of the WebPart</p>\n",
-              {
-                "tag": "readonly"
-              }
-            ],
-            "contentsRaw": "Title of the WebPart\n\n@readonly",
-            "metadata": {}
-          },
-          "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "title",
-          "inheritedFrom": "BaseWebPart.title",
-          "type": "string"
-        }
-      ],
-      "accessors": [
-        {
-          "fileName": "src\\webparts\\DesignSystem\\DesignSystemWebPart.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": true,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "accessor",
-          "name": "dataVersion",
-          "type": "Version"
-        }
-      ],
-      "constructorType": {
-        "documentation": {
-          "contents": [
-            "<p>Constructor for the BaseClientSideWebPart class.</p>\n",
-            {
-              "tag": "remarks",
-              "value": "It is highly recommended that the web part use the `onInit()` API to perform any web part specific"
-            },
-            "<p>initialization.  Most of the web part features like this.context and <code>this.properties</code> are not\navailable to be used before the the <code>onInit()</code> part of the web part loading lifecycle.</p>\n"
-          ],
-          "contentsRaw": "Constructor for the BaseClientSideWebPart class.\n\n@remarks \nIt is highly recommended that the web part use the `onInit()` API to perform any web part specific\ninitialization.  Most of the web part features like this.context and `this.properties` are not\navailable to be used before the the `onInit()` part of the web part loading lifecycle.",
-          "metadata": {}
-        },
-        "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-        "flags": {
-          "isExported": true,
-          "isExternal": false,
-          "isOptional": false,
-          "isPrivate": false,
-          "isProtected": false,
-          "isPublic": false,
-          "isRest": false,
-          "isStatic": false
-        },
-        "kind": "constructor",
-        "name": "constructor",
-        "inheritedFrom": "BaseClientSideWebPart.__constructor",
-        "signatures": [
-          {
-            "documentation": {
-              "contents": [
-                "<p>Constructor for the BaseClientSideWebPart class.</p>\n",
-                {
-                  "tag": "remarks",
-                  "value": "It is highly recommended that the web part use the `onInit()` API to perform any web part specific"
-                },
-                "<p>initialization.  Most of the web part features like this.context and <code>this.properties</code> are not\navailable to be used before the the <code>onInit()</code> part of the web part loading lifecycle.</p>\n"
-              ],
-              "contentsRaw": "Constructor for the BaseClientSideWebPart class.\n\n@remarks \nIt is highly recommended that the web part use the `onInit()` API to perform any web part specific\ninitialization.  Most of the web part features like this.context and `this.properties` are not\navailable to be used before the the `onInit()` part of the web part loading lifecycle.",
-              "metadata": {}
-            },
-            "fileName": "node_modules\\@microsoft\\sp-webpart-base\\dist\\index-internal.d.ts",
-            "kind": "signature",
-            "name": "new DesignSystemWebPart",
-            "parameters": [],
-            "returnType": "DesignSystemWebPart",
-            "type": "() => DesignSystemWebPart"
-          }
-        ]
-      }
-    },
     "ThemeColor": {
       "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ThemeColorPicker.tsx",
       "flags": {
@@ -7797,8 +6402,8 @@ export default {
         }
       ]
     },
-    "getHexColor": {
-      "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ThemeColorPicker.tsx",
+    "Thumbnail": {
+      "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -7810,16 +6415,16 @@ export default {
         "isStatic": false
       },
       "kind": "method",
-      "name": "getHexColor",
+      "name": "Thumbnail",
       "signatures": [
         {
-          "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ThemeColorPicker.tsx",
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
           "kind": "signature",
-          "name": "getHexColor",
+          "name": "Thumbnail",
           "parameters": [
             {
               "flags": {
-                "isExported": true,
+                "isExported": false,
                 "isExternal": false,
                 "isOptional": false,
                 "isPrivate": false,
@@ -7829,53 +6434,12 @@ export default {
                 "isStatic": false
               },
               "kind": "parameter",
-              "name": "color",
-              "type": "string"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "namespace",
-              "defaultValue": "\"palette\"",
-              "type": "\"palette\" | \"global\" | \"semanticColors\""
+              "name": "__namedParameters",
+              "type": ""
             }
           ],
-          "returnType": "string",
-          "type": "(color: string, namespace?: \"palette\" | \"global\" | \"semanticColors\") => string"
-        }
-      ]
-    },
-    "render": {
-      "fileName": "src\\docs\\_generatedMdxDocs.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "render",
-      "signatures": [
-        {
-          "fileName": "src\\docs\\_generatedMdxDocs.tsx",
-          "kind": "signature",
-          "name": "render",
-          "parameters": [],
           "returnType": "Element<>",
-          "type": "() => Element<>"
+          "type": "(__namedParameters: ) => Element<>"
         }
       ]
     },
@@ -7917,62 +6481,6 @@ export default {
           ],
           "returnType": "Element<>",
           "type": "(__namedParameters: ) => Element<>"
-        }
-      ]
-    },
-    "debounce": {
-      "fileName": "src\\ui-toolkit\\core\\utils\\utils.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "debounce",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\core\\utils\\utils.ts",
-          "kind": "signature",
-          "name": "debounce",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "func",
-              "type": "any"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "wait",
-              "type": "any"
-            }
-          ],
-          "returnType": "(Anonymous function)",
-          "type": "(func: any, wait: any) => (Anonymous function)"
         }
       ]
     },
@@ -8379,47 +6887,6 @@ export default {
         }
       ]
     },
-    "Text": {
-      "fileName": "src\\ui-toolkit\\components\\primitives\\Text.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "Text",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Text.tsx",
-          "kind": "signature",
-          "name": "Text",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "Element<>",
-          "type": "(__namedParameters: ) => Element<>"
-        }
-      ]
-    },
     "Link": {
       "fileName": "src\\ui-toolkit\\components\\primitives\\Link.tsx",
       "flags": {
@@ -8502,6 +6969,47 @@ export default {
         }
       ]
     },
+    "Text": {
+      "fileName": "src\\ui-toolkit\\components\\primitives\\Text.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "Text",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Text.tsx",
+          "kind": "signature",
+          "name": "Text",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
+        }
+      ]
+    },
     "Title": {
       "fileName": "src\\ui-toolkit\\components\\primitives\\Title.tsx",
       "flags": {
@@ -8540,399 +7048,6 @@ export default {
           ],
           "returnType": "Element<>",
           "type": "(__namedParameters: ) => Element<>"
-        }
-      ]
-    },
-    "BackgroundImage": {
-      "fileName": "src\\ui-toolkit\\components\\primitives\\BackgroundImage.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "BackgroundImage",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\BackgroundImage.tsx",
-          "kind": "signature",
-          "name": "BackgroundImage",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "Element<>",
-          "type": "(__namedParameters: ) => Element<>"
-        }
-      ]
-    },
-    "Thumbnail": {
-      "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "Thumbnail",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
-          "kind": "signature",
-          "name": "Thumbnail",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": false,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "Element<>",
-          "type": "(__namedParameters: ) => Element<>"
-        }
-      ]
-    },
-    "checkIsSharePointLink": {
-      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "checkIsSharePointLink",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
-          "kind": "signature",
-          "name": "checkIsSharePointLink",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "url",
-              "type": "string"
-            }
-          ],
-          "returnType": "boolean",
-          "type": "(url: string) => boolean"
-        }
-      ]
-    },
-    "getProfilePhoto": {
-      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "getProfilePhoto",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
-          "kind": "signature",
-          "name": "getProfilePhoto",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "email",
-              "type": "string"
-            }
-          ],
-          "returnType": "string",
-          "type": "(email: string) => string"
-        }
-      ]
-    },
-    "getDelveLink": {
-      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "getDelveLink",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
-          "kind": "signature",
-          "name": "getDelveLink",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "email",
-              "type": "string"
-            }
-          ],
-          "returnType": "string",
-          "type": "(email: string) => string"
-        }
-      ]
-    },
-    "getCurrentWebUrl": {
-      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "getCurrentWebUrl",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
-          "kind": "signature",
-          "name": "getCurrentWebUrl",
-          "parameters": [],
-          "returnType": "string",
-          "type": "() => string"
-        }
-      ]
-    },
-    "getCurrentSiteCollectionUrl": {
-      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "getCurrentSiteCollectionUrl",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
-          "kind": "signature",
-          "name": "getCurrentSiteCollectionUrl",
-          "parameters": [],
-          "returnType": "string",
-          "type": "() => string"
-        }
-      ]
-    },
-    "getSiteUrl": {
-      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "getSiteUrl",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
-          "kind": "signature",
-          "name": "getSiteUrl",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": true,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "url",
-              "type": "string"
-            }
-          ],
-          "returnType": "string",
-          "type": "(url?: string) => string"
-        }
-      ]
-    },
-    "getTenant": {
-      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "getTenant",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
-          "kind": "signature",
-          "name": "getTenant",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": true,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "url",
-              "type": "string"
-            }
-          ],
-          "returnType": "string",
-          "type": "(url?: string) => string"
-        }
-      ]
-    },
-    "checkListExists": {
-      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "checkListExists",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
-          "kind": "signature",
-          "name": "checkListExists",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "siteUrl",
-              "type": "string"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "listName",
-              "type": "string"
-            }
-          ],
-          "returnType": "Promise<boolean>",
-          "type": "(siteUrl: string, listName: string) => Promise<boolean>"
         }
       ]
     },
@@ -9182,6 +7297,47 @@ export default {
         }
       ]
     },
+    "BackgroundImage": {
+      "fileName": "src\\ui-toolkit\\components\\primitives\\BackgroundImage.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "BackgroundImage",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\primitives\\BackgroundImage.tsx",
+          "kind": "signature",
+          "name": "BackgroundImage",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
+        }
+      ]
+    },
     "CardImage": {
       "fileName": "src\\ui-toolkit\\components\\Card\\CardImage.tsx",
       "flags": {
@@ -9305,283 +7461,6 @@ export default {
         }
       ]
     },
-    "SyntaxHighlighter": {
-      "fileName": "src\\docs\\CodeBlock\\CodeBlock.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "SyntaxHighlighter",
-      "signatures": [
-        {
-          "fileName": "src\\docs\\CodeBlock\\CodeBlock.tsx",
-          "kind": "signature",
-          "name": "SyntaxHighlighter",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "Element<>",
-          "type": "(__namedParameters: ) => Element<>"
-        }
-      ]
-    },
-    "Playground": {
-      "fileName": "src\\docs\\CodeBlock\\CodeBlock.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "Playground",
-      "signatures": [
-        {
-          "fileName": "src\\docs\\CodeBlock\\CodeBlock.tsx",
-          "kind": "signature",
-          "name": "Playground",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "Element<>",
-          "type": "(__namedParameters: ) => Element<>"
-        }
-      ]
-    },
-    "PropsTable": {
-      "fileName": "src\\docs\\PropsTable.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "PropsTable",
-      "signatures": [
-        {
-          "fileName": "src\\docs\\PropsTable.tsx",
-          "kind": "signature",
-          "name": "PropsTable",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "Element<>",
-          "type": "(__namedParameters: ) => Element<>"
-        }
-      ]
-    },
-    "useQueryString": {
-      "fileName": "src\\ui-toolkit\\hooks\\useQueryString.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "useQueryString",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\hooks\\useQueryString.ts",
-          "kind": "signature",
-          "name": "useQueryString",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": false,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "key",
-              "type": "any"
-            },
-            {
-              "flags": {
-                "isExported": false,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "initialValue",
-              "type": "any"
-            }
-          ],
-          "returnType": "any[]",
-          "type": "(key: any, initialValue: any) => any[]"
-        }
-      ]
-    },
-    "getQueryStringValue": {
-      "fileName": "src\\ui-toolkit\\hooks\\useQueryString.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "getQueryStringValue",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\hooks\\useQueryString.ts",
-          "kind": "signature",
-          "name": "getQueryStringValue",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "key",
-              "type": "any"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "queryString",
-              "defaultValue": "(window.location.search || \"\").substr(1)",
-              "type": "string"
-            }
-          ],
-          "returnType": "string | string[]",
-          "type": "(key: any, queryString?: string) => string | string[]"
-        }
-      ]
-    },
-    "App": {
-      "fileName": "src\\App.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "App",
-      "signatures": [
-        {
-          "fileName": "src\\App.tsx",
-          "kind": "signature",
-          "name": "App",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": false,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "Element<>",
-          "type": "(__namedParameters: ) => Element<>"
-        }
-      ]
-    },
     "CardDemo": {
       "fileName": "src\\ui-toolkit\\components\\Card\\CardDemo.tsx",
       "flags": {
@@ -9607,8 +7486,8 @@ export default {
         }
       ]
     },
-    "Menu": {
-      "fileName": "src\\docs\\Menu.tsx",
+    "getHexColor": {
+      "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ThemeColorPicker.tsx",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -9620,12 +7499,12 @@ export default {
         "isStatic": false
       },
       "kind": "method",
-      "name": "Menu",
+      "name": "getHexColor",
       "signatures": [
         {
-          "fileName": "src\\docs\\Menu.tsx",
+          "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ThemeColorPicker.tsx",
           "kind": "signature",
-          "name": "Menu",
+          "name": "getHexColor",
           "parameters": [
             {
               "flags": {
@@ -9639,12 +7518,28 @@ export default {
                 "isStatic": false
               },
               "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
+              "name": "color",
+              "type": "string"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "namespace",
+              "defaultValue": "\"palette\"",
+              "type": "\"palette\" | \"global\" | \"semanticColors\""
             }
           ],
-          "returnType": "Element<>",
-          "type": "(__namedParameters: ) => Element<>"
+          "returnType": "string",
+          "type": "(color: string, namespace?: \"palette\" | \"global\" | \"semanticColors\") => string"
         }
       ]
     },
@@ -10348,6 +8243,373 @@ export default {
           ],
           "returnType": "string",
           "type": "(width: any, height: any, percentage?: number) => string"
+        }
+      ]
+    },
+    "debounce": {
+      "fileName": "src\\ui-toolkit\\core\\utils\\utils.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "debounce",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\core\\utils\\utils.ts",
+          "kind": "signature",
+          "name": "debounce",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "func",
+              "type": "any"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "wait",
+              "type": "any"
+            }
+          ],
+          "returnType": "(Anonymous function)",
+          "type": "(func: any, wait: any) => (Anonymous function)"
+        }
+      ]
+    },
+    "checkIsSharePointLink": {
+      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "checkIsSharePointLink",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
+          "kind": "signature",
+          "name": "checkIsSharePointLink",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "url",
+              "type": "string"
+            }
+          ],
+          "returnType": "boolean",
+          "type": "(url: string) => boolean"
+        }
+      ]
+    },
+    "getProfilePhoto": {
+      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "getProfilePhoto",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
+          "kind": "signature",
+          "name": "getProfilePhoto",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "email",
+              "type": "string"
+            }
+          ],
+          "returnType": "string",
+          "type": "(email: string) => string"
+        }
+      ]
+    },
+    "getDelveLink": {
+      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "getDelveLink",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
+          "kind": "signature",
+          "name": "getDelveLink",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "email",
+              "type": "string"
+            }
+          ],
+          "returnType": "string",
+          "type": "(email: string) => string"
+        }
+      ]
+    },
+    "getCurrentWebUrl": {
+      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "getCurrentWebUrl",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
+          "kind": "signature",
+          "name": "getCurrentWebUrl",
+          "parameters": [],
+          "returnType": "string",
+          "type": "() => string"
+        }
+      ]
+    },
+    "getCurrentSiteCollectionUrl": {
+      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "getCurrentSiteCollectionUrl",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
+          "kind": "signature",
+          "name": "getCurrentSiteCollectionUrl",
+          "parameters": [],
+          "returnType": "string",
+          "type": "() => string"
+        }
+      ]
+    },
+    "getSiteUrl": {
+      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "getSiteUrl",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
+          "kind": "signature",
+          "name": "getSiteUrl",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": true,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "url",
+              "type": "string"
+            }
+          ],
+          "returnType": "string",
+          "type": "(url?: string) => string"
+        }
+      ]
+    },
+    "getTenant": {
+      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "getTenant",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
+          "kind": "signature",
+          "name": "getTenant",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": true,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "url",
+              "type": "string"
+            }
+          ],
+          "returnType": "string",
+          "type": "(url?: string) => string"
+        }
+      ]
+    },
+    "checkListExists": {
+      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "checkListExists",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
+          "kind": "signature",
+          "name": "checkListExists",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "siteUrl",
+              "type": "string"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "listName",
+              "type": "string"
+            }
+          ],
+          "returnType": "Promise<boolean>",
+          "type": "(siteUrl: string, listName: string) => Promise<boolean>"
         }
       ]
     },
@@ -11649,6 +9911,119 @@ export default {
         }
       ]
     },
+    "useQueryString": {
+      "fileName": "src\\ui-toolkit\\hooks\\useQueryString.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "useQueryString",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useQueryString.ts",
+          "kind": "signature",
+          "name": "useQueryString",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": false,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "key",
+              "type": "any"
+            },
+            {
+              "flags": {
+                "isExported": false,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "initialValue",
+              "type": "any"
+            }
+          ],
+          "returnType": "any[]",
+          "type": "(key: any, initialValue: any) => any[]"
+        }
+      ]
+    },
+    "getQueryStringValue": {
+      "fileName": "src\\ui-toolkit\\hooks\\useQueryString.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "getQueryStringValue",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useQueryString.ts",
+          "kind": "signature",
+          "name": "getQueryStringValue",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "key",
+              "type": "any"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "queryString",
+              "defaultValue": "(window.location.search || \"\").substr(1)",
+              "type": "string"
+            }
+          ],
+          "returnType": "string | string[]",
+          "type": "(key: any, queryString?: string) => string | string[]"
+        }
+      ]
+    },
     "useSiteData": {
       "fileName": "src\\ui-toolkit\\hooks\\useSiteData.tsx",
       "flags": {
@@ -11787,79 +10162,8 @@ export default {
         }
       ]
     },
-    "getPropertyPane": {
-      "fileName": "src\\webparts\\DesignSystem\\DesignSystemProperties.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "getPropertyPane",
-      "signatures": [
-        {
-          "fileName": "src\\webparts\\DesignSystem\\DesignSystemProperties.ts",
-          "kind": "signature",
-          "name": "getPropertyPane",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "properties",
-              "type": "WebPartProperties"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "context",
-              "type": "WebPartContext"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "onUpdate",
-              "type": "Function"
-            }
-          ],
-          "returnType": "",
-          "type": "(properties: WebPartProperties, context: WebPartContext, onUpdate: Function) => "
-        }
-      ]
-    },
-    "FilmstripProps": {
-      "fileName": "src\\ui-toolkit\\components\\Filmstrip\\Filmstrip.tsx",
+    "ThumbnailProps": {
+      "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -11871,9 +10175,9 @@ export default {
         "isStatic": false
       },
       "kind": "interface",
-      "name": "FilmstripProps",
+      "name": "ThumbnailProps",
       "indexSignature": {
-        "fileName": "src\\ui-toolkit\\components\\Filmstrip\\Filmstrip.tsx",
+        "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
         "kind": "signature",
         "name": "__index",
         "parameters": [
@@ -11899,23 +10203,7 @@ export default {
       "methods": [],
       "properties": [
         {
-          "fileName": "src\\ui-toolkit\\components\\Filmstrip\\Filmstrip.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "autopage",
-          "type": "number"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\Filmstrip\\Filmstrip.tsx",
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -11931,7 +10219,7 @@ export default {
           "type": "string"
         },
         {
-          "fileName": "src\\ui-toolkit\\components\\Filmstrip\\Filmstrip.tsx",
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -11943,11 +10231,27 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "spacing",
-          "type": "number"
+          "name": "height",
+          "type": "string"
         },
         {
-          "fileName": "src\\ui-toolkit\\components\\Filmstrip\\Filmstrip.tsx",
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "shape",
+          "type": "\"circle\" | \"rectangle\" | \"square\""
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -11960,7 +10264,7 @@ export default {
           },
           "kind": "property",
           "name": "width",
-          "type": "number"
+          "type": "string"
         }
       ]
     },
@@ -12028,8 +10332,42 @@ export default {
         }
       ]
     },
+    "PortalsThemeProviderProps": {
+      "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "PortalsThemeProviderProps",
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "theme",
+          "type": "IReadonlyTheme"
+        }
+      ]
+    },
     "Window": {
-      "fileName": "src\\ui-toolkit\\components\\Grid\\Grid.tsx",
+      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -12045,7 +10383,7 @@ export default {
       "methods": [],
       "properties": [
         {
-          "fileName": "src\\ui-toolkit\\components\\Grid\\Grid.tsx",
+          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -12057,8 +10395,82 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "CSS",
-          "type": "any"
+          "name": "__portalsDev",
+          "type": ""
+        }
+      ]
+    },
+    "LinkProps": {
+      "fileName": "src\\ui-toolkit\\components\\primitives\\Link.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "LinkProps",
+      "indexSignature": {
+        "fileName": "src\\ui-toolkit\\components\\primitives\\Link.tsx",
+        "kind": "signature",
+        "name": "__index",
+        "parameters": [
+          {
+            "flags": {
+              "isExported": true,
+              "isExternal": false,
+              "isOptional": false,
+              "isPrivate": false,
+              "isProtected": false,
+              "isPublic": false,
+              "isRest": false,
+              "isStatic": false
+            },
+            "kind": "parameter",
+            "name": "key",
+            "type": "string"
+          }
+        ],
+        "returnType": "any",
+        "type": "{ [key: string]: any }"
+      },
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Link.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "href",
+          "type": "string"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Link.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "target",
+          "type": "string"
         }
       ]
     },
@@ -12169,186 +10581,6 @@ export default {
           },
           "kind": "property",
           "name": "color",
-          "type": "string"
-        }
-      ]
-    },
-    "PanelLinkProps": {
-      "fileName": "src\\ui-toolkit\\components\\PanelLink\\PanelLink.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "interface",
-      "name": "PanelLinkProps",
-      "indexSignature": {
-        "fileName": "src\\ui-toolkit\\components\\PanelLink\\PanelLink.tsx",
-        "kind": "signature",
-        "name": "__index",
-        "parameters": [
-          {
-            "flags": {
-              "isExported": true,
-              "isExternal": false,
-              "isOptional": false,
-              "isPrivate": false,
-              "isProtected": false,
-              "isPublic": false,
-              "isRest": false,
-              "isStatic": false
-            },
-            "kind": "parameter",
-            "name": "key",
-            "type": "string"
-          }
-        ],
-        "returnType": "any",
-        "type": "{ [key: string]: any }"
-      },
-      "methods": [],
-      "properties": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\PanelLink\\PanelLink.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "children",
-          "type": "any"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\PanelLink\\PanelLink.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "href",
-          "type": "string"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\PanelLink\\PanelLink.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "panelSize",
-          "type": "\"small\" | \"medium\" | \"large\" | number"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\PanelLink\\PanelLink.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "title",
-          "type": "string"
-        }
-      ]
-    },
-    "LinkProps": {
-      "fileName": "src\\ui-toolkit\\components\\primitives\\Link.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "interface",
-      "name": "LinkProps",
-      "indexSignature": {
-        "fileName": "src\\ui-toolkit\\components\\primitives\\Link.tsx",
-        "kind": "signature",
-        "name": "__index",
-        "parameters": [
-          {
-            "flags": {
-              "isExported": true,
-              "isExternal": false,
-              "isOptional": false,
-              "isPrivate": false,
-              "isProtected": false,
-              "isPublic": false,
-              "isRest": false,
-              "isStatic": false
-            },
-            "kind": "parameter",
-            "name": "key",
-            "type": "string"
-          }
-        ],
-        "returnType": "any",
-        "type": "{ [key: string]: any }"
-      },
-      "methods": [],
-      "properties": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Link.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "href",
-          "type": "string"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Link.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "target",
           "type": "string"
         }
       ]
@@ -12483,384 +10715,6 @@ export default {
           },
           "kind": "property",
           "name": "url",
-          "type": "string"
-        }
-      ]
-    },
-    "ThumbnailProps": {
-      "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "interface",
-      "name": "ThumbnailProps",
-      "indexSignature": {
-        "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
-        "kind": "signature",
-        "name": "__index",
-        "parameters": [
-          {
-            "flags": {
-              "isExported": true,
-              "isExternal": false,
-              "isOptional": false,
-              "isPrivate": false,
-              "isProtected": false,
-              "isPublic": false,
-              "isRest": false,
-              "isStatic": false
-            },
-            "kind": "parameter",
-            "name": "key",
-            "type": "string"
-          }
-        ],
-        "returnType": "any",
-        "type": "{ [key: string]: any }"
-      },
-      "methods": [],
-      "properties": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "className",
-          "type": "string"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "height",
-          "type": "string"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "shape",
-          "type": "\"circle\" | \"rectangle\" | \"square\""
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "width",
-          "type": "string"
-        }
-      ]
-    },
-    "PersonaProps": {
-      "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "interface",
-      "name": "PersonaProps",
-      "indexSignature": {
-        "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
-        "kind": "signature",
-        "name": "__index",
-        "parameters": [
-          {
-            "flags": {
-              "isExported": true,
-              "isExternal": false,
-              "isOptional": false,
-              "isPrivate": false,
-              "isProtected": false,
-              "isPublic": false,
-              "isRest": false,
-              "isStatic": false
-            },
-            "kind": "parameter",
-            "name": "key",
-            "type": "string"
-          }
-        ],
-        "returnType": "any",
-        "type": "{ [key: string]: any }"
-      },
-      "methods": [],
-      "properties": [
-        {
-          "documentation": {
-            "contents": [
-              "<p>Control what is used as the Wrapper element. Defaults to DIV.</p>\n"
-            ],
-            "contentsRaw": "Control what is used as the Wrapper element. Defaults to DIV.",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "as",
-          "type": "any"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>This will render a button with the provided text below the title if and only if a linkUrl is provided.</p>\n"
-            ],
-            "contentsRaw": "This will render a button with the provided text below the title if and only if a linkUrl is provided.",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "callToAction",
-          "type": "string"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>If you want to tack on your own class name.</p>\n"
-            ],
-            "contentsRaw": "If you want to tack on your own class name.",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "className",
-          "type": "string"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>This is tertiary text, slightly smaller in size than subTitle.</p>\n"
-            ],
-            "contentsRaw": "This is tertiary text, slightly smaller in size than subTitle.",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "info",
-          "type": "string"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>If provided this will wrap the persona in a link that will open the linkUrl provided in a new tab. If there is also a call to action provided, a button will render in the Persona instead of the whole Persona being clickable.</p>\n"
-            ],
-            "contentsRaw": "If provided this will wrap the persona in a link that will open the linkUrl provided in a new tab. If there is also a call to action provided, a button will render in the Persona instead of the whole Persona being clickable.",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "linkUrl",
-          "type": "string"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Defaults to horizontal, this changes the items orientation to render the details below the photo, &#39;vertical&#39; or beside it.</p>\n"
-            ],
-            "contentsRaw": "Defaults to horizontal, this changes the items orientation to render the details below the photo, 'vertical' or beside it.",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "orientation",
-          "type": "\"horizontal\" | \"vertical\""
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Renders a circle image</p>\n"
-            ],
-            "contentsRaw": "Renders a circle image",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "photo",
-          "type": "string"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Defaults to 100px, this sets the height and width of the photo to be the same height to maintain the correct aspect ratio</p>\n"
-            ],
-            "contentsRaw": "Defaults to 100px, this sets the height and width of the photo to be the same height to maintain the correct aspect ratio",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "photoSize",
-          "type": "string"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>This is secondary text, slightly lighter in focus and size than title.</p>\n"
-            ],
-            "contentsRaw": "This is secondary text, slightly lighter in focus and size than title.",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "subTitle",
-          "type": "string"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>This is the primary text, usually used for a users name.</p>\n"
-            ],
-            "contentsRaw": "This is the primary text, usually used for a users name.",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "title",
           "type": "string"
         }
       ]
@@ -13737,8 +11591,8 @@ export default {
         }
       ]
     },
-    "PortalsThemeProviderProps": {
-      "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
+    "FilmstripProps": {
+      "fileName": "src\\ui-toolkit\\components\\Filmstrip\\Filmstrip.tsx",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -13750,15 +11604,39 @@ export default {
         "isStatic": false
       },
       "kind": "interface",
-      "name": "PortalsThemeProviderProps",
+      "name": "FilmstripProps",
+      "indexSignature": {
+        "fileName": "src\\ui-toolkit\\components\\Filmstrip\\Filmstrip.tsx",
+        "kind": "signature",
+        "name": "__index",
+        "parameters": [
+          {
+            "flags": {
+              "isExported": true,
+              "isExternal": false,
+              "isOptional": false,
+              "isPrivate": false,
+              "isProtected": false,
+              "isPublic": false,
+              "isRest": false,
+              "isStatic": false
+            },
+            "kind": "parameter",
+            "name": "key",
+            "type": "string"
+          }
+        ],
+        "returnType": "any",
+        "type": "{ [key: string]: any }"
+      },
       "methods": [],
       "properties": [
         {
-          "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
+          "fileName": "src\\ui-toolkit\\components\\Filmstrip\\Filmstrip.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
-            "isOptional": false,
+            "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
             "isPublic": false,
@@ -13766,8 +11644,56 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "theme",
-          "type": "IReadonlyTheme"
+          "name": "autopage",
+          "type": "number"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\Filmstrip\\Filmstrip.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "className",
+          "type": "string"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\Filmstrip\\Filmstrip.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "spacing",
+          "type": "number"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\Filmstrip\\Filmstrip.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "width",
+          "type": "number"
         }
       ]
     },
@@ -13898,6 +11824,384 @@ export default {
           "kind": "property",
           "name": "width",
           "type": "number"
+        }
+      ]
+    },
+    "PanelLinkProps": {
+      "fileName": "src\\ui-toolkit\\components\\PanelLink\\PanelLink.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "PanelLinkProps",
+      "indexSignature": {
+        "fileName": "src\\ui-toolkit\\components\\PanelLink\\PanelLink.tsx",
+        "kind": "signature",
+        "name": "__index",
+        "parameters": [
+          {
+            "flags": {
+              "isExported": true,
+              "isExternal": false,
+              "isOptional": false,
+              "isPrivate": false,
+              "isProtected": false,
+              "isPublic": false,
+              "isRest": false,
+              "isStatic": false
+            },
+            "kind": "parameter",
+            "name": "key",
+            "type": "string"
+          }
+        ],
+        "returnType": "any",
+        "type": "{ [key: string]: any }"
+      },
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\PanelLink\\PanelLink.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "children",
+          "type": "any"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\PanelLink\\PanelLink.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "href",
+          "type": "string"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\PanelLink\\PanelLink.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "panelSize",
+          "type": "\"small\" | \"medium\" | \"large\" | number"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\PanelLink\\PanelLink.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "title",
+          "type": "string"
+        }
+      ]
+    },
+    "PersonaProps": {
+      "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "PersonaProps",
+      "indexSignature": {
+        "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
+        "kind": "signature",
+        "name": "__index",
+        "parameters": [
+          {
+            "flags": {
+              "isExported": true,
+              "isExternal": false,
+              "isOptional": false,
+              "isPrivate": false,
+              "isProtected": false,
+              "isPublic": false,
+              "isRest": false,
+              "isStatic": false
+            },
+            "kind": "parameter",
+            "name": "key",
+            "type": "string"
+          }
+        ],
+        "returnType": "any",
+        "type": "{ [key: string]: any }"
+      },
+      "methods": [],
+      "properties": [
+        {
+          "documentation": {
+            "contents": [
+              "<p>Control what is used as the Wrapper element. Defaults to DIV.</p>\n"
+            ],
+            "contentsRaw": "Control what is used as the Wrapper element. Defaults to DIV.",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "as",
+          "type": "any"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>This will render a button with the provided text below the title if and only if a linkUrl is provided.</p>\n"
+            ],
+            "contentsRaw": "This will render a button with the provided text below the title if and only if a linkUrl is provided.",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "callToAction",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>If you want to tack on your own class name.</p>\n"
+            ],
+            "contentsRaw": "If you want to tack on your own class name.",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "className",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>This is tertiary text, slightly smaller in size than subTitle.</p>\n"
+            ],
+            "contentsRaw": "This is tertiary text, slightly smaller in size than subTitle.",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "info",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>If provided this will wrap the persona in a link that will open the linkUrl provided in a new tab. If there is also a call to action provided, a button will render in the Persona instead of the whole Persona being clickable.</p>\n"
+            ],
+            "contentsRaw": "If provided this will wrap the persona in a link that will open the linkUrl provided in a new tab. If there is also a call to action provided, a button will render in the Persona instead of the whole Persona being clickable.",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "linkUrl",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defaults to horizontal, this changes the items orientation to render the details below the photo, &#39;vertical&#39; or beside it.</p>\n"
+            ],
+            "contentsRaw": "Defaults to horizontal, this changes the items orientation to render the details below the photo, 'vertical' or beside it.",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "orientation",
+          "type": "\"horizontal\" | \"vertical\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Renders a circle image</p>\n"
+            ],
+            "contentsRaw": "Renders a circle image",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "photo",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defaults to 100px, this sets the height and width of the photo to be the same height to maintain the correct aspect ratio</p>\n"
+            ],
+            "contentsRaw": "Defaults to 100px, this sets the height and width of the photo to be the same height to maintain the correct aspect ratio",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "photoSize",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>This is secondary text, slightly lighter in focus and size than title.</p>\n"
+            ],
+            "contentsRaw": "This is secondary text, slightly lighter in focus and size than title.",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "subTitle",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>This is the primary text, usually used for a users name.</p>\n"
+            ],
+            "contentsRaw": "This is the primary text, usually used for a users name.",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "title",
+          "type": "string"
         }
       ]
     },
@@ -15877,40 +14181,6 @@ export default {
           "kind": "property",
           "name": "value",
           "inheritedFrom": "PropertyFieldThemeColorProperties.value",
-          "type": "string"
-        }
-      ]
-    },
-    "WebPartProperties": {
-      "fileName": "src\\webparts\\DesignSystem\\DesignSystemProperties.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "interface",
-      "name": "WebPartProperties",
-      "methods": [],
-      "properties": [
-        {
-          "fileName": "src\\webparts\\DesignSystem\\DesignSystemProperties.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "title",
           "type": "string"
         }
       ]
