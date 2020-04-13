@@ -4,7 +4,7 @@ const { writeFileSync, readFileSync } = require("fs");
 const FILEPATH = "src/docs/_generatedTypes.ts";
 new Documentalist()
   .use(/\.tsx?$/, new TypescriptPlugin({ excludeNames: [/I.+State$/] }))
-  .documentGlobs("src/**/*") // ← async operation, returns a Promise
+  .documentGlobs("src/ui-toolkit/**/*") // ← async operation, returns a Promise
   .then((docs) => JSON.stringify(docs, null, 2))
   .then((json) => writeFileSync(FILEPATH, json))
   .then(() => {

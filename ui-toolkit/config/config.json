@@ -1,0 +1,24 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "ip-designsystem-bundle": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/DesignSystem/DesignSystemWebPart.js",
+          "manifest": "./src/webparts/DesignSystem/DesignSystemWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "@pnp/spfx-controls-react": "https://unpkg.com/@pnp/spfx-controls-react@1.15.0/lib/index.js",
+    "@pnp/spfx-property-controls": "https://unpkg.com/@pnp/spfx-property-controls@1.16.0/lib/index.js",
+    "@uifabric/fluent-theme": "https://unpkg.com/@uifabric/fluent-theme@^0.16.9/lib/index.js",
+    "office-ui-fabric-react": "https://unpkg.com/office-ui-fabric-react@^6.182.0/lib/index.js"
+  },
+  "localizedResources": {
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+  }
+}

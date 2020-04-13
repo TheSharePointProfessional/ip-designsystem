@@ -5,7 +5,6 @@ import { Menu, docs, CodeBlock } from "docs";
 import useQueryString from "ui-toolkit/hooks/useQueryString";
 import { MDXProvider } from "@mdx-js/react";
 import PortalsThemeProvider from "ui-toolkit/components/PortalsThemeProvider/PortalsThemeProvider";
-import mockTheme from "docs/mockTheme";
 
 const components = {
   pre: CodeBlock,
@@ -13,12 +12,12 @@ const components = {
   h2: ({ children }) => <h2 style={{ marginTop: "80px" }}>{children}</h2>,
 };
 
-function App({}) {
-  let [active, setActive] = useQueryString("active", "Intro");
+function App({ theme }) {
+  let [active, setActive] = useQueryString("active", "Home");
   let target = docs.find((d) => d.title === active);
   return (
     <Fabric>
-      <PortalsThemeProvider theme={mockTheme as any}>
+      <PortalsThemeProvider theme={theme}>
         <StyledLayout className="app">
           <div className="header">
             <h1>PortalsDev UI Toolkit</h1>

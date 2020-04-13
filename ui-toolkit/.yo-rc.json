@@ -1,0 +1,11 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "environment": "spo",
+    "framework": "react",
+    "isCreatingSolution": true,
+    "version": "1.10.0",
+    "packageManager": "npm",
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
