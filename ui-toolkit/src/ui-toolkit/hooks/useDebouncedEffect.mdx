@@ -13,8 +13,6 @@ import { useDebouncedEffect } from "ui-toolkit";
 useDebouncedEffect((debouncedValue) => any, value, 300);
 ```
 
-Under the covers, it leverages `useDebouncedValue` and then wraps that with `useEffect` and the effect function you pass in.
-
 ## Usage
 
 ```jsx
