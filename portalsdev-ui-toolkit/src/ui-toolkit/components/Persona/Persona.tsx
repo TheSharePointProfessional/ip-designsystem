@@ -3,6 +3,9 @@ import Thumbnail from "../primitives/Thumbnail";
 import Link from "../primitives/Link";
 import styled from "ui-toolkit/styled-components";
 import { getSiteUrl } from "../../core/utils/sharepointUtils";
+import Title from "../primitives/Title";
+import Text from "../primitives/Text";
+import { getThemeColor } from "../PortalsThemeProvider/PortalsThemeProvider";
 
 function Persona({
   photo,
@@ -34,9 +37,13 @@ function Persona({
           />
           <div className={"details"}>
             <div className="textWrapper">
-              <div className="title">{title}</div>
-              {subTitle && <div className="subtitle">{subTitle}</div>}
-              {info && <div className="info">{info}</div>}
+              <Title className="title">{title}</Title>
+              {subTitle && (
+                <Text color={"bodySubtext"} className="subtitle">
+                  {subTitle}
+                </Text>
+              )}
+              {info && <Text className="info">{info}</Text>}
             </div>
             {linkUrl && callToAction && (
               <Link href={linkUrl} className="callToAction">
@@ -113,25 +120,12 @@ const StyledPersona = styled.div`
     align-items: flex-start;
   }
   .title {
-    color: ${(props) => props.theme.semanticColors.bodyText};
     font-weight: 600;
-    font-size: 15px;
-    line-height: normal;
-  }
-  .subtitle {
-    color: ${(props) => props.theme.semanticColors.bodySubtext};
-    font-size: 13px;
-    line-height: normal;
-  }
-  .info {
-    color: ${(props) => props.theme.semanticColors.bodyText};
-    font-size: 12px;
-    line-height: normal;
   }
   .callToAction {
     margin-top: 10px;
-    color: #fff;
-    background: ${(props) => props.theme.palette.themePrimary};
+    color: ${(props) => getThemeColor("white")};
+    background: ${(props) => getThemeColor("themePrimary")};
     padding: 8px 20px;
     text-decoration: none;
     border-radius: 20px;
@@ -141,10 +135,18 @@ const StyledPersona = styled.div`
     &:hover,
     &:active,
     &:focus {
-      color: #fff;
-      background-color: ${(props) => props.theme.palette.themeSecondary};
+      color: ${(props) => getThemeColor("white")};
+      background: ${(props) => getThemeColor("themeSecondary")};
       outline: none;
       cursor: pointer;
+    }
+    .ignore-variant & {
+      color: ${(props) => getThemeColor("white", false)};
+      background: ${(props) => getThemeColor("themePrimary", false)};
+    }
+    .ignore-variant &:hover {
+      color: ${(props) => getThemeColor("white", false)};
+      background: ${(props) => getThemeColor("themeSecondary", false)};
     }
   }
 `;
