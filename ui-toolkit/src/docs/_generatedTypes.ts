@@ -11114,9 +11114,9 @@ export default {
         {
           "documentation": {
             "contents": [
-              "<p>Center align (horizonatally) the cards contents</p>\n"
+              "<p>Center align (horizonatally) the card&#39;s content</p>\n"
             ],
-            "contentsRaw": "Center align (horizonatally) the cards contents",
+            "contentsRaw": "Center align (horizonatally) the card's content",
             "metadata": {}
           },
           "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
