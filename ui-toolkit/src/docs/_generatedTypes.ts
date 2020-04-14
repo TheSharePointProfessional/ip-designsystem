@@ -9702,21 +9702,6 @@ export default {
                 "isStatic": false
               },
               "kind": "parameter",
-              "name": "initialValue",
-              "type": "T"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
               "name": "asyncFn",
               "type": "any"
             },
@@ -9734,10 +9719,25 @@ export default {
               "kind": "parameter",
               "name": "args",
               "type": "any[]"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "initialValue",
+              "type": "T"
             }
           ],
           "returnType": "",
-          "type": "(initialValue: T, asyncFn: any, args: any[]) => "
+          "type": "(asyncFn: any, args: any[], initialValue: T) => "
         }
       ]
     },
@@ -13244,6 +13244,13 @@ export default {
       "methods": [],
       "properties": [
         {
+          "documentation": {
+            "contents": [
+              "<p>Whatever your asncFn returns, assuming it succeeds</p>\n"
+            ],
+            "contentsRaw": "Whatever your asncFn returns, assuming it succeeds",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\hooks\\useAsyncData.ts",
           "flags": {
             "isExported": true,
@@ -13260,6 +13267,13 @@ export default {
           "type": "T"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>The error message if the asyncFn errors</p>\n"
+            ],
+            "contentsRaw": "The error message if the asyncFn errors",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\hooks\\useAsyncData.ts",
           "flags": {
             "isExported": true,
@@ -13276,6 +13290,13 @@ export default {
           "type": "string"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Indicates whether the asyncFn is done yet</p>\n"
+            ],
+            "contentsRaw": "Indicates whether the asyncFn is done yet",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\hooks\\useAsyncData.ts",
           "flags": {
             "isExported": true,

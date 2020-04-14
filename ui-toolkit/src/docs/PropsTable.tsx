@@ -2,29 +2,47 @@ import React from "react";
 import types from "./_generatedTypes";
 import styled from "styled-components";
 
-export default function PropsTable({ name = "" }) {
-  let match = types["typescript"][name];
-  if (!match || !match.properties) return null;
+export default function PropsTable({ name = "", properties = [] }: PropsTableProps) {
+  let props = properties;
+  console.log("PropsTable -> props", props);
+  if (name) {
+    let match = types["typescript"][name];
+    if (match) {
+      props = match.properties.map(parseProperty).sort(compareProperties);
+    }
+  }
+  if (!props || !props.length) return null;
   return (
     <>
       <StyledProps>
-        {match.properties
-          .map(parseProperty)
-          .sort(compareProperties)
-          .map(({ name, description, type, isRequired }) => (
-            <StyledRow className="row" key={name}>
-              <div className="name">{name}</div>
-              <div className="type">
-                <code>{type}</code>
-              </div>
-              <div className={isRequired}>{isRequired}</div>
-              <div className="description">{description}</div>
-            </StyledRow>
-          ))}
+        {props.map(({ name, description, type, isRequired }) => (
+          <StyledRow className="row" key={name}>
+            <div className="name">{name}</div>
+            <div className={isRequired}>{isRequired}</div>
+            <div className="type">
+              <code>{type}</code>
+            </div>
+            <div className="description">{description}</div>
+          </StyledRow>
+        ))}
       </StyledProps>
       {/* <pre>{JSON.stringify(match, null, 2)}</pre>; */}
     </>
   );
+}
+
+export interface PropsTableProps {
+  /** The name of the interface to show the props of */
+  name?: string;
+  /** Optional override to pass in your own props */
+  properties?: Property[];
+}
+
+export interface Property {
+  name: string;
+  description?: string;
+  isRequired: "Required" | "Optional";
+  type: string;
 }
 
 const StyledProps = styled.div`
@@ -35,11 +53,11 @@ const StyledProps = styled.div`
 `;
 const StyledRow = styled.div`
   display: grid;
-  grid-template-columns: 120px 120px 100px 1fr;
+  grid-template-columns: 110px 90px 200px 1fr;
   align-items: center;
   border-bottom: 1px solid #eee;
   min-height: 40px;
-
+  padding: 10px 0;
   > * {
     display: flex;
     align-items: center;
@@ -47,7 +65,7 @@ const StyledRow = styled.div`
   .name {
     font-weight: bold;
     font-size: 1.1em;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
   }
   code {
     color: #bd7a27;
@@ -58,10 +76,10 @@ const StyledRow = styled.div`
   }
 
   @media (max-width: 900px) {
-    grid-template-columns: 120px 120px 100px 1fr;
+    grid-template-columns: 120px 120px 1fr;
     grid-template-rows: 40px 1fr;
     .description {
-      grid-area: 2 / 1 / 3 / 5;
+      grid-area: 2 / 1 / 3 / 4;
       padding-bottom: 10px;
     }
   }

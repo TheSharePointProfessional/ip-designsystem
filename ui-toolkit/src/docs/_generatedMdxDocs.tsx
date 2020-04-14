@@ -4,6 +4,7 @@ import HomeDocs, { metadata as HomeMetadata } from "ui-toolkit/Home.mdx"
 import PersonaDocs, { metadata as PersonaMetadata } from "ui-toolkit/components/Persona/Persona.mdx"
 import TextDocs, { metadata as TextMetadata } from "ui-toolkit/components/primitives/Text.mdx"
 import TitleDocs, { metadata as TitleMetadata } from "ui-toolkit/components/primitives/Title.mdx"
+import UseAsyncDataDocs, { metadata as UseAsyncDataMetadata } from "ui-toolkit/hooks/useAsyncData.mdx"
 import UseDebouncedEffectDocs, { metadata as UseDebouncedEffectMetadata } from "ui-toolkit/hooks/useDebouncedEffect.mdx"
 import UseDebouncedValueDocs, { metadata as UseDebouncedValueMetadata } from "ui-toolkit/hooks/useDebouncedValue.mdx"
 
@@ -42,6 +43,13 @@ const docs = [
         sort: TitleMetadata?.sort ?? 9999,
         parent: TitleMetadata?.parent || "primitives",
         render: () => <TitleDocs />,
+    },
+   {
+        title: "UseAsyncData",
+        section: "hooks",
+        sort: UseAsyncDataMetadata?.sort ?? 9999,
+        parent: UseAsyncDataMetadata?.parent || "hooks",
+        render: () => <UseAsyncDataDocs />,
     },
    {
         title: "UseDebouncedEffect",

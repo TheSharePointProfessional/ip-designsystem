@@ -13,6 +13,33 @@ import { useDebouncedEffect } from "ui-toolkit";
 useDebouncedEffect((debouncedValue) => any, value, 300);
 ```
 
+## Params
+
+<PropsTable
+  properties={[
+    {
+      name: "effectFn",
+      type: `(debounceValue) => any`,
+      description:
+        "The function to run when the value as stopped updating. It will receive the debounced value as a param",
+      isRequired: "Required",
+    },
+    {
+      name: "value",
+      type: `any`,
+      description: "The value to watch",
+      isRequired: "Required",
+    },
+    {
+      name: "delay",
+      type: `number`,
+      description:
+        "How long to wait before triggering the effectFn. If the value gets updated before the wait is over, the wait restarts.",
+      isRequired: "Required",
+    },
+  ]}
+/>
+
 ## Usage
 
 ```jsx
