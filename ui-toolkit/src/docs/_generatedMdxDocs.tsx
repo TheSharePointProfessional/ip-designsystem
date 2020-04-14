@@ -1,5 +1,6 @@
 import React from "react";
 import BigDateDocs, { metadata as BigDateMetadata } from "ui-toolkit/components/BigDate/BigDate.mdx"
+import CardDocs, { metadata as CardMetadata } from "ui-toolkit/components/Card/Card.mdx"
 import HomeDocs, { metadata as HomeMetadata } from "ui-toolkit/Home.mdx"
 import PersonaDocs, { metadata as PersonaMetadata } from "ui-toolkit/components/Persona/Persona.mdx"
 import TextDocs, { metadata as TextMetadata } from "ui-toolkit/components/primitives/Text.mdx"
@@ -15,6 +16,13 @@ const docs = [
         sort: BigDateMetadata?.sort ?? 9999,
         parent: BigDateMetadata?.parent || "",
         render: () => <BigDateDocs />,
+    },
+   {
+        title: "Card",
+        section: "components",
+        sort: CardMetadata?.sort ?? 9999,
+        parent: CardMetadata?.parent || "",
+        render: () => <CardDocs />,
     },
    {
         title: "Home",

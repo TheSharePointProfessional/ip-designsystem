@@ -11112,6 +11112,13 @@ export default {
       "methods": [],
       "properties": [
         {
+          "documentation": {
+            "contents": [
+              "<p>Center align (horizonatally) the cards contents</p>\n"
+            ],
+            "contentsRaw": "Center align (horizonatally) the cards contents",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
           "flags": {
             "isExported": true,
@@ -11128,6 +11135,36 @@ export default {
           "type": "boolean"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>What to render inside the card</p>\n"
+            ],
+            "contentsRaw": "What to render inside the card",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "children",
+          "type": "ReactNode"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Optional class name used for style overrides</p>\n"
+            ],
+            "contentsRaw": "Optional class name used for style overrides",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
           "flags": {
             "isExported": true,
@@ -11142,22 +11179,6 @@ export default {
           "kind": "property",
           "name": "className",
           "type": "string"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "styles",
-          "type": "any"
         }
       ]
     },

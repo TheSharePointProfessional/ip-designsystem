@@ -4,9 +4,14 @@ import styled from "styled-components";
 import { DefaultButton } from "office-ui-fabric-react/lib/Button";
 import * as uiToolkit from "ui-toolkit";
 
+const images = [
+  "https://s27363.pcdn.co/wp-content/uploads/2017/09/Zebra-Slot-Canyon.jpg.optimal.jpg",
+];
+
 const scope = {
   React,
   ...uiToolkit,
+  images,
 };
 
 export default function Playground({ code }) {
