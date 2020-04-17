@@ -53,33 +53,15 @@ The Filmstrip component just expects an array of Children components. It shouldn
 Typically you'll probably map through an array of items and render each item however you want.
 
 ```tsx live=true
-() => {
-  const images = [
-    "https://thumbs-prod.si-cdn.com/EmpGS8PcTnjeik1JWjCHuDPPeyQ=/800x600/filters:no_upscale()/https://public-media.si-cdn.com/filer/cb/87/cb87fada-31dd-40eb-8d1d-e3b5d738d327/istock-120911394.jpg",
-    "https://adventureisoutthere-exploreidaho.weebly.com/uploads/2/7/8/4/27843901/8719353_orig.jpg",
-    "https://live.staticflickr.com/5826/30451145465_83cc33a27f_b.jpg",
-    "https://www.nationalgeographic.com/content/dam/expeditions/destinations/north-america/private/Yosemite/Hero-Yosemite.jpg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqBxpA4RYwsIVGWSXbO3xMTbNTjNXV9_O3ODGUSPrk7_dt2_Yd&s",
-  ];
-
-  let items = Array.from(new Array(10)).map((_, i) => ({
-    title: "Item " + (i + 1),
-    image: images[i % images.length],
-    description: "This is the items's description",
-  }));
-
-  return (
-    <Filmstrip autopage={2000}>
-      {items.map((item) => (
-        <Card className="virtualized-card" styles={{ width: "100%" }}>
-          <Card.Image src={item.image} />
-          <Card.Title>{item.title}</Card.Title>
-          <Card.Description>{item.description}</Card.Description>
-        </Card>
-      ))}
-    </Filmstrip>
-  );
-};
+<Filmstrip autopage={2000}>
+  {items.slice(0, 10).map((item) => (
+    <Card className="virtualized-card" styles={{ width: "100%" }}>
+      <Card.Image src={item.image} />
+      <Card.Title>{item.title}</Card.Title>
+      <Card.Description>{item.description}</Card.Description>
+    </Card>
+  ))}
+</Filmstrip>
 ```
 
 ## Layout Toggling
@@ -90,14 +72,6 @@ This example shows how you could toggle between Grid and Filmstrip
 () => {
   let [layout, setLayout] = React.useState("filmstrip");
   let [size, setSize] = React.useState(300);
-
-  const images = [
-    "https://thumbs-prod.si-cdn.com/EmpGS8PcTnjeik1JWjCHuDPPeyQ=/800x600/filters:no_upscale()/https://public-media.si-cdn.com/filer/cb/87/cb87fada-31dd-40eb-8d1d-e3b5d738d327/istock-120911394.jpg",
-    "https://adventureisoutthere-exploreidaho.weebly.com/uploads/2/7/8/4/27843901/8719353_orig.jpg",
-    "https://live.staticflickr.com/5826/30451145465_83cc33a27f_b.jpg",
-    "https://www.nationalgeographic.com/content/dam/expeditions/destinations/north-america/private/Yosemite/Hero-Yosemite.jpg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqBxpA4RYwsIVGWSXbO3xMTbNTjNXV9_O3ODGUSPrk7_dt2_Yd&s",
-  ];
 
   let items = Array.from(new Array(10)).map((_, i) => ({
     title: "Item " + (i + 1),
