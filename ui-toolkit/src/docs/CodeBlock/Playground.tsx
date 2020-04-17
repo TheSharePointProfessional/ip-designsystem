@@ -5,13 +5,24 @@ import { DefaultButton } from "office-ui-fabric-react/lib/Button";
 import * as uiToolkit from "ui-toolkit";
 
 const images = [
-  "https://s27363.pcdn.co/wp-content/uploads/2017/09/Zebra-Slot-Canyon.jpg.optimal.jpg",
+  "https://thumbs-prod.si-cdn.com/EmpGS8PcTnjeik1JWjCHuDPPeyQ=/800x600/filters:no_upscale()/https://public-media.si-cdn.com/filer/cb/87/cb87fada-31dd-40eb-8d1d-e3b5d738d327/istock-120911394.jpg",
+  "https://adventureisoutthere-exploreidaho.weebly.com/uploads/2/7/8/4/27843901/8719353_orig.jpg",
+  "https://live.staticflickr.com/5826/30451145465_83cc33a27f_b.jpg",
+  "https://www.nationalgeographic.com/content/dam/expeditions/destinations/north-america/private/Yosemite/Hero-Yosemite.jpg",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqBxpA4RYwsIVGWSXbO3xMTbNTjNXV9_O3ODGUSPrk7_dt2_Yd&s",
 ];
+
+const items = Array.from(new Array(50)).map((_, i) => ({
+  title: "Item " + (i + 1),
+  image: images[i % images.length],
+  description: "This is the items's description",
+}));
 
 const scope = {
   React,
   ...uiToolkit,
   images,
+  items,
 };
 
 export default function Playground({ code }) {
