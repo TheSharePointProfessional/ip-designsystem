@@ -10,24 +10,17 @@ import { Grid } from "ui-toolkit";
 A component for rendering a grid of items. It checks browser support and uses CSS Grid if possible, otherwise it falls back to flexbox which is compatible with IE11.
 
 ```tsx live=true
-() => {
-  let imageUrl =
-    "https://www.nationalgeographic.com/content/dam/expeditions/destinations/north-america/private/Yosemite/Hero-Yosemite.jpg";
-
-  return (
-    <Grid size={"300px"}>
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-    </Grid>
-  );
-};
+<Grid size={"300px"}>
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+</Grid>
 ```
 
 ## Props
@@ -37,24 +30,17 @@ A component for rendering a grid of items. It checks browser support and uses CS
 ## Basic Usage
 
 ```tsx live=true
-() => {
-  let imageUrl =
-    "https://www.nationalgeographic.com/content/dam/expeditions/destinations/north-america/private/Yosemite/Hero-Yosemite.jpg";
-
-  return (
-    <Grid size={"300px"}>
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-    </Grid>
-  );
-};
+<Grid size={"300px"}>
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+</Grid>
 ```
 
 ## No Flex
@@ -62,24 +48,17 @@ A component for rendering a grid of items. It checks browser support and uses CS
 Respect the size prop and don't stretch the column width to fill the available parent width.
 
 ```tsx live=true
-() => {
-  let imageUrl =
-    "https://www.nationalgeographic.com/content/dam/expeditions/destinations/north-america/private/Yosemite/Hero-Yosemite.jpg";
-
-  return (
-    <Grid size={"300px"} shouldFlex={false}>
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-    </Grid>
-  );
-};
+<Grid size={"300px"} shouldFlex={false}>
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+</Grid>
 ```
 
 ## Force Flexbox Mode
@@ -87,24 +66,17 @@ Respect the size prop and don't stretch the column width to fill the available p
 You can pass a mode of 'flex' to force it to use Flexbox instead of CSS Grid
 
 ```tsx live=true
-() => {
-  let imageUrl =
-    "https://www.nationalgeographic.com/content/dam/expeditions/destinations/north-america/private/Yosemite/Hero-Yosemite.jpg";
-
-  return (
-    <Grid mode="flex" size={"200px"} gap={1}>
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-      <BackgroundImage style={{ height: "150px" }} src={imageUrl} />
-    </Grid>
-  );
-};
+<Grid mode="flex" size={"200px"} gap={1}>
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+  <BackgroundImage style={{ height: "150px" }} src={images[0]} />
+</Grid>
 ```
 
 ## Interactive Demo

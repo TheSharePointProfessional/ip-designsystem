@@ -6909,7 +6909,7 @@ export default {
           "parameters": [
             {
               "flags": {
-                "isExported": false,
+                "isExported": true,
                 "isExternal": false,
                 "isOptional": false,
                 "isPrivate": false,
@@ -7442,7 +7442,7 @@ export default {
           "parameters": [
             {
               "flags": {
-                "isExported": false,
+                "isExported": true,
                 "isExternal": false,
                 "isOptional": false,
                 "isPrivate": false,
