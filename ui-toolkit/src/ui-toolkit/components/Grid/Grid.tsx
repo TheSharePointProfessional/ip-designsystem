@@ -8,7 +8,7 @@ declare global {
 }
 let supportsGrid = window.CSS && window.CSS.supports && window.CSS.supports("display", "grid");
 
-const Grid: React.FC<GridProps> = ({
+export const Grid: React.FC<GridProps> = ({
   gap = 20,
   size = "200px",
   children,
