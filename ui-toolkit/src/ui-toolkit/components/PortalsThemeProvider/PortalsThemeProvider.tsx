@@ -51,6 +51,15 @@ export function getPortalsTheme() {
 // getThemeColor("bodyText", true) => theme.global.bodyText
 
 export function getThemeColor(color: string, obeyVariant = true) {
+  if (color === "primary") {
+    color = "themePrimary";
+  }
+  if (color === "secondary") {
+    color = "themeSecondary";
+  }
+  if (color === "tertiary") {
+    color = "themeTertiary";
+  }
   if (!obeyVariant) {
     return getThemeColorByNamespace(color, null, "global") || color;
   }

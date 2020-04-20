@@ -1,7 +1,7 @@
 import React from "react";
 import { Dropdown } from "office-ui-fabric-react/lib/Dropdown";
 import styled from "ui-toolkit/styled-components";
-import { getThemeValue } from "../PortalsThemeProvider/PortalsThemeProvider";
+import { getThemeValue, getThemeColor } from "../PortalsThemeProvider/PortalsThemeProvider";
 
 import ColorPicker from "./ColorPicker";
 const options = [
@@ -13,30 +13,14 @@ const options = [
   { key: "other", text: "Other" },
 ];
 
-export const getHexColor = function(
-  color: string,
-  namespace: "palette" | "global" | "semanticColors" = "palette"
-): string {
-  // if (!checkIsThemeColor(color)) return color;
-  if (color === "primary") {
-    color = "themePrimary";
-  }
-  if (color === "secondary") {
-    color = "themeSecondary";
-  }
-  if (color === "tertiary") {
-    color = "themeTertiary";
-  }
-  return getThemeValue(namespace + "." + color, color);
-};
-export const checkIsThemeColor = function(color: ThemeColor | string): boolean {
+export const checkIsThemeColor = function (color: ThemeColor | string): boolean {
   if (!color) return false;
   let match = Object.keys(ThemeColor).find((key) => ThemeColor[key] === color);
   return !!match;
 };
 
 export default class ThemeColorPicker extends React.PureComponent<ThemeColorPickerProps, {}> {
-  static getHexColor = getHexColor;
+  static getHexColor = getThemeColor;
   static checkIsThemeColor = checkIsThemeColor;
 
   state = {
@@ -90,12 +74,12 @@ export interface ThemeColorPickerProps {
   disabled?: boolean;
   extraOptions?: { key: string; text: string }[];
 }
-const _getOtherColorValue = function(propValue = "primary") {
+const _getOtherColorValue = function (propValue = "primary") {
   // If the color string is passed in as the value, there will be no option matches
   // If a color string is passed in, use that to set state.otherColor otherwise use a pretty blue
   return options.map((o) => o.key).indexOf(propValue) === -1 ? propValue : "#2D5F9C";
 };
-const _getDropdownValue = function(propValue = "primary") {
+const _getDropdownValue = function (propValue = "primary") {
   // check for an option match,
   //if 'other', the value will be like rgba(123,231,133,1) so there won't be a match
   return options.map((o) => o.key).indexOf(propValue) > -1 ? propValue : "other";
