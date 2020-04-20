@@ -53,7 +53,7 @@ const StyledProps = styled.div`
 `;
 const StyledRow = styled.div`
   display: grid;
-  grid-template-columns: 110px 90px 200px 1fr;
+  grid-template-columns: 150px 90px 200px 1fr;
   align-items: center;
   border-bottom: 1px solid #eee;
   min-height: 40px;

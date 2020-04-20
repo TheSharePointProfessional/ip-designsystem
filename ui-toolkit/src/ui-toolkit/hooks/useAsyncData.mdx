@@ -13,8 +13,10 @@ Helps manage data fetching inside a React component.
 ```tsx
 // Import
 import { useAsyncData } from "ui-toolkit";
+
 // Basic Usage
 let { data, isLoading, error } = useAsyncData(getNews, [siteUrl, numItems], []);
+
 // Usage with typing so we'll know 'data' is NewsPage[].
 let { data, isLoading, error } = useAsyncData<NewsPage[]>(getNews, [siteUrl, numItems], []);
 ```

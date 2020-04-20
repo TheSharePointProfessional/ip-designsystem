@@ -15,6 +15,7 @@ import TitleDocs, { metadata as TitleMetadata } from "ui-toolkit/components/prim
 import UseAsyncDataDocs, { metadata as UseAsyncDataMetadata } from "ui-toolkit/hooks/useAsyncData.mdx"
 import UseDebouncedEffectDocs, { metadata as UseDebouncedEffectMetadata } from "ui-toolkit/hooks/useDebouncedEffect.mdx"
 import UseDebouncedValueDocs, { metadata as UseDebouncedValueMetadata } from "ui-toolkit/hooks/useDebouncedValue.mdx"
+import UseIntervalDocs, { metadata as UseIntervalMetadata } from "ui-toolkit/hooks/useInterval.mdx"
 
 const docs = [
        {
@@ -128,6 +129,13 @@ const docs = [
         sort: UseDebouncedValueMetadata?.sort ?? 9999,
         parent: UseDebouncedValueMetadata?.parent || "hooks",
         render: () => <UseDebouncedValueDocs />,
+    },
+   {
+        title: "UseInterval",
+        section: "hooks",
+        sort: UseIntervalMetadata?.sort ?? 9999,
+        parent: UseIntervalMetadata?.parent || "hooks",
+        render: () => <UseIntervalDocs />,
     },
 ];
 export default docs;

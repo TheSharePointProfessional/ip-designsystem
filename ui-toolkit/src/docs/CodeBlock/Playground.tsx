@@ -25,11 +25,11 @@ const scope = {
   items,
 };
 
-export default function Playground({ code }) {
+export default function Playground({ code, bordered = false }) {
   let [showCode, setShowCode] = React.useState(false);
   return (
     <LiveProvider code={code} scope={scope} theme={{ plain: {}, styles: [] }}>
-      <StyledPreview />
+      <StyledPreview className={bordered ? "bordered" : ""} />
       <StyledEditorContainer>
         {showCode && <StyledDivider />}
         {showCode && <StyledEditor className="styled-editor" />}
@@ -44,9 +44,11 @@ export default function Playground({ code }) {
 }
 
 const StyledPreview = styled(LivePreview)`
-  /* border: 1px solid #eee; */
-  border-radius: 4px 4px 0 0;
-  padding: 10px;
+  &.bordered {
+    border: 1px solid #eee;
+    border-radius: 4px 4px 0 0;
+    padding: 10px;
+  }
   min-height: 100px;
   font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system,
     BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
