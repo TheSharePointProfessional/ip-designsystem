@@ -10,7 +10,7 @@ declare global {
   }
 }
 
-const PortalsThemeProvider: React.FC<PortalsThemeProviderProps> = ({ children, theme }) => {
+export const PortalsThemeProvider: React.FC<PortalsThemeProviderProps> = ({ children, theme }) => {
   window._portalsTheme = {
     ...theme,
     global: (window as any).__themeState__.theme || {

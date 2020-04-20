@@ -2,15 +2,15 @@ import React from "react";
 import BackgroundImageDocs, { metadata as BackgroundImageMetadata } from "ui-toolkit/components/primitives/BackgroundImage.mdx"
 import BigDateDocs, { metadata as BigDateMetadata } from "ui-toolkit/components/BigDate/BigDate.mdx"
 import CardDocs, { metadata as CardMetadata } from "ui-toolkit/components/Card/Card.mdx"
-import ColorPickerDocs, { metadata as ColorPickerMetadata } from "ui-toolkit/components/ColorPicker/ColorPicker.mdx"
+import ColorPickerDocs, { metadata as ColorPickerMetadata } from "ui-toolkit/components/inputs/ColorPicker.mdx"
 import DateRangeTextDocs, { metadata as DateRangeTextMetadata } from "ui-toolkit/components/DateRangeText/DateRangeText.mdx"
-import FilmstripDocs, { metadata as FilmstripMetadata } from "ui-toolkit/components/Filmstrip/Filmstrip.mdx"
-import GridDocs, { metadata as GridMetadata } from "ui-toolkit/components/Grid/Grid.mdx"
+import FilmstripDocs, { metadata as FilmstripMetadata } from "ui-toolkit/components/layouts/Filmstrip/Filmstrip.mdx"
+import GridDocs, { metadata as GridMetadata } from "ui-toolkit/components/layouts/Grid/Grid.mdx"
 import HomeDocs, { metadata as HomeMetadata } from "ui-toolkit/Home.mdx"
 import IconImageDocs, { metadata as IconImageMetadata } from "ui-toolkit/components/IconImage/IconImage.mdx"
 import PersonaDocs, { metadata as PersonaMetadata } from "ui-toolkit/components/Persona/Persona.mdx"
 import TextDocs, { metadata as TextMetadata } from "ui-toolkit/components/primitives/Text.mdx"
-import ThemeColorPickerDocs, { metadata as ThemeColorPickerMetadata } from "ui-toolkit/components/ColorPicker/ThemeColorPicker.mdx"
+import ThemeColorPickerDocs, { metadata as ThemeColorPickerMetadata } from "ui-toolkit/components/inputs/ThemeColorPicker.mdx"
 import TitleDocs, { metadata as TitleMetadata } from "ui-toolkit/components/primitives/Title.mdx"
 import UseAsyncDataDocs, { metadata as UseAsyncDataMetadata } from "ui-toolkit/hooks/useAsyncData.mdx"
 import UseDebouncedEffectDocs, { metadata as UseDebouncedEffectMetadata } from "ui-toolkit/hooks/useDebouncedEffect.mdx"
@@ -43,7 +43,7 @@ const docs = [
         title: "ColorPicker",
         section: "components",
         sort: ColorPickerMetadata?.sort ?? 9999,
-        parent: ColorPickerMetadata?.parent || "",
+        parent: ColorPickerMetadata?.parent || "inputs",
         render: () => <ColorPickerDocs />,
     },
    {
@@ -99,7 +99,7 @@ const docs = [
         title: "ThemeColorPicker",
         section: "components",
         sort: ThemeColorPickerMetadata?.sort ?? 9999,
-        parent: ThemeColorPickerMetadata?.parent || "ColorPicker",
+        parent: ThemeColorPickerMetadata?.parent || "inputs",
         render: () => <ThemeColorPickerDocs />,
     },
    {

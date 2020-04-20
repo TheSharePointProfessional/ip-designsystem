@@ -7,7 +7,7 @@ import Tags, { Tag } from "../primitives/Tags";
 import Info from "../primitives/Info";
 import CardImage from "./CardImage";
 import CardFooter from "./CardFooter";
-import Grid from "../Grid/Grid";
+import { Grid } from "ui-toolkit";
 import { getThemeValue } from "../PortalsThemeProvider/PortalsThemeProvider";
 
 const CLASS_NAME = "card-ui-toolkit";

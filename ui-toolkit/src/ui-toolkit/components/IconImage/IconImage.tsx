@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "ui-toolkit/styled-components";
 import { Icon } from "office-ui-fabric-react/lib/Icon";
-import { getHexColor } from "../ColorPicker/ThemeColorPicker";
 import BackgroundImage from "../primitives/BackgroundImage";
+import { getThemeColor } from "../PortalsThemeProvider/PortalsThemeProvider";
 
 const CLASS_NAME = "icon-image";
 
@@ -35,12 +35,12 @@ export default function IconImage(props: IconImageProps) {
 }
 
 const wordRegex = /^\w+$/;
-const checkIsIconName = function(icon: string): boolean {
+const checkIsIconName = function (icon: string): boolean {
   if (!icon) return false;
   return wordRegex.test(icon);
 };
 
-export const getIconFontSize = function(width, height, percentage = 50) {
+export const getIconFontSize = function (width, height, percentage = 50) {
   let smallerDimension = width < height ? width : height;
   return smallerDimension * (percentage / 100) + "px";
 };
@@ -49,8 +49,8 @@ const StyledContainer = styled.div`
   position: relative;
   width: ${(props) => props.width}px;
   height: ${(props) => props.height}px;
-  background: ${(props) => getHexColor(props.backgroundColor)};
-  color: ${(props) => getHexColor(props.iconColor)};
+  background: ${(props) => getThemeColor(props.backgroundColor)};
+  color: ${(props) => getThemeColor(props.iconColor)};
   font-size: ${(props) => getIconFontSize(props.width, props.height)};
   overflow: hidden;
   display: flex;

@@ -5,7 +5,7 @@ import { TextField } from "office-ui-fabric-react/lib/TextField";
 import { Callout, DirectionalHint } from "office-ui-fabric-react/lib/Callout";
 import styled from "ui-toolkit/styled-components";
 import { getThemeValue } from "../PortalsThemeProvider/PortalsThemeProvider";
-export default class ColorPicker extends React.PureComponent<ColorPickerProps, ColorPickerState> {
+export class ColorPicker extends React.PureComponent<ColorPickerProps, ColorPickerState> {
   elem: HTMLDivElement;
   state = {
     pickerVisible: false,
@@ -57,6 +57,8 @@ export default class ColorPicker extends React.PureComponent<ColorPickerProps, C
     );
   }
 }
+
+export default ColorPicker;
 
 export interface ColorPickerState {
   pickerVisible: boolean;

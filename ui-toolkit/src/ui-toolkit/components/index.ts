@@ -1,10 +1,9 @@
 export { default as BigDate } from "./BigDate/BigDate";
 export * from "./primitives";
+export * from "./inputs";
+export * from "./layouts";
+
 export { default as Persona } from "./Persona/Persona";
 export { default as Card } from "./Card/Card";
-export { default as Grid } from "./Grid/Grid";
-export { default as ColorPicker } from "./ColorPicker/ColorPicker";
-export { default as ThemeColorPicker } from "./ColorPicker/ThemeColorPicker";
 export { default as DateRangeText } from "./DateRangeText/DateRangeText";
-export { default as Filmstrip } from "./Filmstrip/Filmstrip";
 export { default as IconImage } from "./IconImage/IconImage";

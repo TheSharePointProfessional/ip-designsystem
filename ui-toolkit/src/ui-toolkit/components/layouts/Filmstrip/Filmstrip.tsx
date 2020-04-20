@@ -2,11 +2,11 @@ import React, { useRef, useState, useEffect } from "react";
 import styled from "ui-toolkit/styled-components";
 import useFilmstrip from "./useFilmstrip";
 import { IconButton } from "office-ui-fabric-react/lib/Button";
-import { getThemeValue } from "../PortalsThemeProvider/PortalsThemeProvider";
+import { getThemeValue } from "ui-toolkit/components/PortalsThemeProvider/PortalsThemeProvider";
 
 const CLASS_NAME = "filmstrip";
 
-const Filmstrip: React.FC<FilmstripProps> = function({
+export const Filmstrip: React.FC<FilmstripProps> = function ({
   width = 400,
   spacing = 10,
   autopage = 0,
@@ -47,6 +47,7 @@ const Filmstrip: React.FC<FilmstripProps> = function({
     </StyledPane>
   );
 };
+
 export default Filmstrip;
 
 export interface FilmstripProps {

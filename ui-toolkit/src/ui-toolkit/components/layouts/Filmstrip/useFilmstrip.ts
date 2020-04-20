@@ -1,10 +1,9 @@
 import { useRef, useEffect, useState } from "react";
-import useHowManyFit from "../../hooks/useHowManyFit";
-import { usePaging, usePagedItems } from "../../hooks/usePaging";
-import useHover from "../../hooks/useHover";
-import useInterval from "../../hooks/useInterval";
-import useComponentSize from "../../hooks/useComponentSize";
 import useScrollSync from "./useScrollSync";
+import useHowManyFit from "ui-toolkit/hooks/useHowManyFit";
+import usePaging from "ui-toolkit/hooks/usePaging";
+import useHover from "ui-toolkit/hooks/useHover";
+import { useInterval } from "ui-toolkit";
 
 export interface FilmstripOptions {
   itemMinWidth?: number;
@@ -77,7 +76,7 @@ export default function useFilmstrip(
   };
 }
 
-const getItemHeight = function(itemsRef) {
+const getItemHeight = function (itemsRef) {
   if (
     itemsRef &&
     itemsRef.current &&

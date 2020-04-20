@@ -19,7 +19,7 @@ export const checkIsThemeColor = function (color: ThemeColor | string): boolean 
   return !!match;
 };
 
-export default class ThemeColorPicker extends React.PureComponent<ThemeColorPickerProps, {}> {
+export class ThemeColorPicker extends React.PureComponent<ThemeColorPickerProps, {}> {
   static getHexColor = getThemeColor;
   static checkIsThemeColor = checkIsThemeColor;
 
@@ -66,6 +66,8 @@ export default class ThemeColorPicker extends React.PureComponent<ThemeColorPick
     );
   }
 }
+
+export default ThemeColorPicker;
 
 export interface ThemeColorPickerProps {
   /** Any valid CSS color (hex, rgb, etc...) or a valid Theme Slot (themePrimary, bodySubtext, etc...) */

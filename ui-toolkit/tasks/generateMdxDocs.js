@@ -27,14 +27,15 @@ let processFile = (filepath) => {
   let menuPath = parsedFile.dir.replace("src/ui-toolkit", "").substr(1);
   let section = "";
   let parsedMenuPath = path.parse(menuPath);
+
   console.log("processFile -> parsedMenuPath", parsedMenuPath);
-  if (parsedMenuPath.dir === "components") {
+  if (filepath.startsWith("src/ui-toolkit/components")) {
     section = "components";
   }
-  if (parsedMenuPath.dir === "hooks" || parsedMenuPath.base === "hooks") {
+  if (filepath.startsWith("src/ui-toolkit/hooks")) {
     section = "hooks";
   }
-  if (parsedMenuPath.dir === "core") {
+  if (filepath.startsWith("src/ui-toolkit/core")) {
     section = "core";
   }
 
