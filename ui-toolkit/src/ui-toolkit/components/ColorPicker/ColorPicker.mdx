@@ -17,7 +17,7 @@ Lets you choose a custom color with either direct text entry or an advanced colo
     <div style={{ width: "200px" }}>
       <h1 style={{ color }}>{color}</h1>
 
-      <ColorPicker value={color} onChange={(newColor) => console.log(newColor)} />
+      <ColorPicker value={color} onChange={setColor} />
     </div>
   );
 };

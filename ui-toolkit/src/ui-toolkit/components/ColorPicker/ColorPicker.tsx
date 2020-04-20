@@ -22,7 +22,10 @@ export default class ColorPicker extends React.PureComponent<ColorPickerProps, C
         isBeakVisible={false}
         onDismiss={() => this.setState({ pickerVisible: false })}
       >
-        <FabricColorPicker color={this.getColor()} onColorChanged={this.props.onChange} />
+        <FabricColorPicker
+          color={this.getColor()}
+          onChange={(e, color) => this.props.onChange(color.str)}
+        />
       </Callout>
     );
   };
@@ -40,7 +43,7 @@ export default class ColorPicker extends React.PureComponent<ColorPickerProps, C
         <div className={"inputGrouping"}>
           <TextField
             value={this.getColor()}
-            onChanged={this.props.onChange}
+            onChange={(e, newValue) => this.props.onChange(newValue)}
             disabled={this.props.disabled}
           />
           <span
