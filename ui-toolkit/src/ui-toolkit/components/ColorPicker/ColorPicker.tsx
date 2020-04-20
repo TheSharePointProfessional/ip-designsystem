@@ -62,10 +62,15 @@ export interface ColorPickerState {
   pickerVisible: boolean;
 }
 export interface ColorPickerProps {
+  /** Any valid CSS color (hex, rgb, etc...) */
   value: string;
+  /** The function to call when the color changes */
   onChange: (newColor: string) => void;
+  /** Defaults to none. Label for the input */
   label?: string;
+  /** CSS class you can use for styling overrides */
   className?: string;
+  /** Control whether the input is disabled. */
   disabled?: boolean;
 }
 

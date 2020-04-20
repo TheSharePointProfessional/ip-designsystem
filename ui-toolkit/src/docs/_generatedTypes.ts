@@ -2754,8 +2754,8 @@ export default {
           },
           "kind": "property",
           "name": "getHexColor",
-          "defaultValue": "getHexColor",
-          "type": "getHexColor"
+          "defaultValue": "getThemeColor",
+          "type": "getThemeColor"
         }
       ],
       "accessors": []
@@ -6402,8 +6402,8 @@ export default {
         }
       ]
     },
-    "Thumbnail": {
-      "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+    "checkIsSharePointLink": {
+      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -6415,16 +6415,16 @@ export default {
         "isStatic": false
       },
       "kind": "method",
-      "name": "Thumbnail",
+      "name": "checkIsSharePointLink",
       "signatures": [
         {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
           "kind": "signature",
-          "name": "Thumbnail",
+          "name": "checkIsSharePointLink",
           "parameters": [
             {
               "flags": {
-                "isExported": false,
+                "isExported": true,
                 "isExternal": false,
                 "isOptional": false,
                 "isPrivate": false,
@@ -6434,12 +6434,12 @@ export default {
                 "isStatic": false
               },
               "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
+              "name": "url",
+              "type": "string"
             }
           ],
-          "returnType": "Element<>",
-          "type": "(__namedParameters: ) => Element<>"
+          "returnType": "boolean",
+          "type": "(url: string) => boolean"
         }
       ]
     },
@@ -7486,63 +7486,6 @@ export default {
         }
       ]
     },
-    "getHexColor": {
-      "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ThemeColorPicker.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "getHexColor",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ThemeColorPicker.tsx",
-          "kind": "signature",
-          "name": "getHexColor",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "color",
-              "type": "string"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "namespace",
-              "defaultValue": "\"palette\"",
-              "type": "\"palette\" | \"global\" | \"semanticColors\""
-            }
-          ],
-          "returnType": "string",
-          "type": "(color: string, namespace?: \"palette\" | \"global\" | \"semanticColors\") => string"
-        }
-      ]
-    },
     "checkIsThemeColor": {
       "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ThemeColorPicker.tsx",
       "flags": {
@@ -8246,6 +8189,47 @@ export default {
         }
       ]
     },
+    "Thumbnail": {
+      "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "Thumbnail",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+          "kind": "signature",
+          "name": "Thumbnail",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": false,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
+        }
+      ]
+    },
     "debounce": {
       "fileName": "src\\ui-toolkit\\core\\utils\\utils.ts",
       "flags": {
@@ -8299,47 +8283,6 @@ export default {
           ],
           "returnType": "(Anonymous function)",
           "type": "(func: any, wait: any) => (Anonymous function)"
-        }
-      ]
-    },
-    "checkIsSharePointLink": {
-      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "checkIsSharePointLink",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
-          "kind": "signature",
-          "name": "checkIsSharePointLink",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "url",
-              "type": "string"
-            }
-          ],
-          "returnType": "boolean",
-          "type": "(url: string) => boolean"
         }
       ]
     },
@@ -11233,6 +11176,13 @@ export default {
       "methods": [],
       "properties": [
         {
+          "documentation": {
+            "contents": [
+              "<p>CSS class you can use for styling overrides</p>\n"
+            ],
+            "contentsRaw": "CSS class you can use for styling overrides",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ColorPicker.tsx",
           "flags": {
             "isExported": true,
@@ -11249,6 +11199,13 @@ export default {
           "type": "string"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Control whether the input is disabled.</p>\n"
+            ],
+            "contentsRaw": "Control whether the input is disabled.",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ColorPicker.tsx",
           "flags": {
             "isExported": true,
@@ -11265,6 +11222,13 @@ export default {
           "type": "boolean"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Defaults to none. Label for the input</p>\n"
+            ],
+            "contentsRaw": "Defaults to none. Label for the input",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ColorPicker.tsx",
           "flags": {
             "isExported": true,
@@ -11281,6 +11245,13 @@ export default {
           "type": "string"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>The function to call when the color changes</p>\n"
+            ],
+            "contentsRaw": "The function to call when the color changes",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ColorPicker.tsx",
           "flags": {
             "isExported": true,
@@ -11297,6 +11268,13 @@ export default {
           "type": "(newColor: string) => void"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Any valid CSS color (hex, rgb, etc...)</p>\n"
+            ],
+            "contentsRaw": "Any valid CSS color (hex, rgb, etc...)",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ColorPicker.tsx",
           "flags": {
             "isExported": true,
@@ -11331,6 +11309,13 @@ export default {
       "methods": [],
       "properties": [
         {
+          "documentation": {
+            "contents": [
+              "<p>Control whether the input is disabled.</p>\n"
+            ],
+            "contentsRaw": "Control whether the input is disabled.",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ThemeColorPicker.tsx",
           "flags": {
             "isExported": true,
@@ -11347,6 +11332,13 @@ export default {
           "type": "boolean"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Add any extra pre-defined choices to the colors dropdown. Expects an array of { key, text }.</p>\n"
+            ],
+            "contentsRaw": "Add any extra pre-defined choices to the colors dropdown. Expects an array of { key, text }.",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ThemeColorPicker.tsx",
           "flags": {
             "isExported": true,
@@ -11363,6 +11355,13 @@ export default {
           "type": "object[]"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Defaults to none. Label for the input</p>\n"
+            ],
+            "contentsRaw": "Defaults to none. Label for the input",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ThemeColorPicker.tsx",
           "flags": {
             "isExported": true,
@@ -11379,6 +11378,13 @@ export default {
           "type": "string"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>The function to call when the color changes</p>\n"
+            ],
+            "contentsRaw": "The function to call when the color changes",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ThemeColorPicker.tsx",
           "flags": {
             "isExported": true,
@@ -11395,6 +11401,13 @@ export default {
           "type": "(value: string) => void"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Any valid CSS color (hex, rgb, etc...) or a valid Theme Slot (themePrimary, bodySubtext, etc...)</p>\n"
+            ],
+            "contentsRaw": "Any valid CSS color (hex, rgb, etc...) or a valid Theme Slot (themePrimary, bodySubtext, etc...)",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\ColorPicker\\ThemeColorPicker.tsx",
           "flags": {
             "isExported": true,

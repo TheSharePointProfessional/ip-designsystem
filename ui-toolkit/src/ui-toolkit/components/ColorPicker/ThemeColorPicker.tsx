@@ -68,10 +68,15 @@ export default class ThemeColorPicker extends React.PureComponent<ThemeColorPick
 }
 
 export interface ThemeColorPickerProps {
+  /** Any valid CSS color (hex, rgb, etc...) or a valid Theme Slot (themePrimary, bodySubtext, etc...) */
   value: string;
-  label?: string;
+  /** The function to call when the color changes */
   onChange: (value: string) => void;
+  /** Defaults to none. Label for the input */
+  label?: string;
+  /** Control whether the input is disabled. */
   disabled?: boolean;
+  /** Add any extra pre-defined choices to the colors dropdown. Expects an array of { key, text }. */
   extraOptions?: { key: string; text: string }[];
 }
 const _getOtherColorValue = function (propValue = "primary") {
