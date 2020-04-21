@@ -1,17 +1,25 @@
 import { useState, useCallback } from "react";
 import * as qs from "querystring";
+import { useDebouncedEffect } from "./useDebounce";
 
-function useQueryString(key, initialValue) {
-  const [value, setValue] = useState(getQueryStringValue(key) || initialValue);
+function useQueryString<T>(key, initialValue: T, delay = 0) {
+  const [value, setValue] = useState<T>(getQueryStringValue(key) || initialValue);
+  useDebouncedEffect(
+    (debouncedValue) => {
+      setQueryStringValue(key, debouncedValue);
+    },
+    value,
+    delay
+  );
+
   const onSetValue = useCallback(
     (newValue) => {
       setValue(newValue);
-      setQueryStringValue(key, newValue);
     },
     [key]
   );
 
-  return [value, onSetValue];
+  return [value, onSetValue] as [T, React.Dispatch<React.SetStateAction<T>>];
 }
 
 export default useQueryString;
@@ -38,6 +46,5 @@ export const getQueryStringValue = (
   queryString = (window.location.search || "").substr(1)
 ) => {
   const values = qs.parse(queryString);
-  console.log("getQueryStringValue -> values", values);
   return values[key];
 };

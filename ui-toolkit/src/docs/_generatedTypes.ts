@@ -8771,6 +8771,135 @@ export default {
         }
       ]
     },
+    "useQueryString": {
+      "fileName": "src\\ui-toolkit\\hooks\\useQueryString.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "useQueryString",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useQueryString.ts",
+          "kind": "signature",
+          "name": "useQueryString",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": false,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "key",
+              "type": "any"
+            },
+            {
+              "flags": {
+                "isExported": false,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "initialValue",
+              "type": "T"
+            },
+            {
+              "flags": {
+                "isExported": false,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "delay",
+              "defaultValue": "0",
+              "type": "number"
+            }
+          ],
+          "returnType": "[T, function]",
+          "type": "(key: any, initialValue: T, delay?: number) => [T, function]"
+        }
+      ]
+    },
+    "getQueryStringValue": {
+      "fileName": "src\\ui-toolkit\\hooks\\useQueryString.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "getQueryStringValue",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useQueryString.ts",
+          "kind": "signature",
+          "name": "getQueryStringValue",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "key",
+              "type": "any"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "queryString",
+              "defaultValue": "(window.location.search || \"\").substr(1)",
+              "type": "string"
+            }
+          ],
+          "returnType": "any",
+          "type": "(key: any, queryString?: string) => any"
+        }
+      ]
+    },
     "CardDemo": {
       "fileName": "src\\ui-toolkit\\components\\Card\\CardDemo.tsx",
       "flags": {
@@ -9923,119 +10052,6 @@ export default {
           ],
           "returnType": "any[]",
           "type": "(defaultValue: T, key: string, storage?: Storage) => any[]"
-        }
-      ]
-    },
-    "useQueryString": {
-      "fileName": "src\\ui-toolkit\\hooks\\useQueryString.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "useQueryString",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\hooks\\useQueryString.ts",
-          "kind": "signature",
-          "name": "useQueryString",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": false,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "key",
-              "type": "any"
-            },
-            {
-              "flags": {
-                "isExported": false,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "initialValue",
-              "type": "any"
-            }
-          ],
-          "returnType": "any[]",
-          "type": "(key: any, initialValue: any) => any[]"
-        }
-      ]
-    },
-    "getQueryStringValue": {
-      "fileName": "src\\ui-toolkit\\hooks\\useQueryString.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "getQueryStringValue",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\hooks\\useQueryString.ts",
-          "kind": "signature",
-          "name": "getQueryStringValue",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "key",
-              "type": "any"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "queryString",
-              "defaultValue": "(window.location.search || \"\").substr(1)",
-              "type": "string"
-            }
-          ],
-          "returnType": "any",
-          "type": "(key: any, queryString?: string) => any"
         }
       ]
     },

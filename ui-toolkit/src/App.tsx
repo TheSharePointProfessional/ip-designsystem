@@ -59,6 +59,13 @@ const StyledLayout = styled.div`
     padding: 0 20px 50px;
     max-width: 1100px;
   }
+  blockquote {
+    margin-left: 10px;
+    padding: 1px 10px;
+    margin: 0;
+    border-left: 4px solid steelblue;
+    background: #f1f7fb;
+  }
 
   .header {
     grid-area: header;

@@ -16,6 +16,7 @@ import UseAsyncDataDocs, { metadata as UseAsyncDataMetadata } from "ui-toolkit/h
 import UseDebouncedEffectDocs, { metadata as UseDebouncedEffectMetadata } from "ui-toolkit/hooks/useDebouncedEffect.mdx"
 import UseDebouncedValueDocs, { metadata as UseDebouncedValueMetadata } from "ui-toolkit/hooks/useDebouncedValue.mdx"
 import UseIntervalDocs, { metadata as UseIntervalMetadata } from "ui-toolkit/hooks/useInterval.mdx"
+import UseQueryStringDocs, { metadata as UseQueryStringMetadata } from "ui-toolkit/hooks/useQueryString.mdx"
 
 const docs = [
        {
@@ -136,6 +137,13 @@ const docs = [
         sort: UseIntervalMetadata?.sort ?? 9999,
         parent: UseIntervalMetadata?.parent || "hooks",
         render: () => <UseIntervalDocs />,
+    },
+   {
+        title: "UseQueryString",
+        section: "hooks",
+        sort: UseQueryStringMetadata?.sort ?? 9999,
+        parent: UseQueryStringMetadata?.parent || "hooks",
+        render: () => <UseQueryStringDocs />,
     },
 ];
 export default docs;
