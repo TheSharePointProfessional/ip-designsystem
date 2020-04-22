@@ -65,11 +65,18 @@ const StyledContainer = styled.div`
 `;
 
 export interface IconImageProps {
+  /** A Fabric Icon name or an image url */
   icon: string;
+  /** Width in pixels */
   width?: number;
+  /** Height in pixels */
   height?: number;
+  /** Supports CSS color or a theme param */
   backgroundColor?: string;
+  /** Supports CSS color or a theme param */
   iconColor?: string;
+  /** Render as a circle */
   circle?: boolean;
+  /** Class name to help with CSS overrides */
   className?: string;
 }

@@ -10210,6 +10210,13 @@ export default {
       "methods": [],
       "properties": [
         {
+          "documentation": {
+            "contents": [
+              "<p>Supports CSS color or a theme param</p>\n"
+            ],
+            "contentsRaw": "Supports CSS color or a theme param",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
           "flags": {
             "isExported": true,
@@ -10226,6 +10233,13 @@ export default {
           "type": "string"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Render as a circle</p>\n"
+            ],
+            "contentsRaw": "Render as a circle",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
           "flags": {
             "isExported": true,
@@ -10242,6 +10256,13 @@ export default {
           "type": "boolean"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Class name to help with CSS overrides</p>\n"
+            ],
+            "contentsRaw": "Class name to help with CSS overrides",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
           "flags": {
             "isExported": true,
@@ -10258,6 +10279,13 @@ export default {
           "type": "string"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Height in pixels</p>\n"
+            ],
+            "contentsRaw": "Height in pixels",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
           "flags": {
             "isExported": true,
@@ -10274,6 +10302,13 @@ export default {
           "type": "number"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>A Fabric Icon name or an image url</p>\n"
+            ],
+            "contentsRaw": "A Fabric Icon name or an image url",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
           "flags": {
             "isExported": true,
@@ -10290,6 +10325,13 @@ export default {
           "type": "string"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Supports CSS color or a theme param</p>\n"
+            ],
+            "contentsRaw": "Supports CSS color or a theme param",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
           "flags": {
             "isExported": true,
@@ -10306,6 +10348,13 @@ export default {
           "type": "string"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Width in pixels</p>\n"
+            ],
+            "contentsRaw": "Width in pixels",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
           "flags": {
             "isExported": true,
@@ -11751,6 +11800,13 @@ export default {
       "methods": [],
       "properties": [
         {
+          "documentation": {
+            "contents": [
+              "<p>Default is 0. Passing a value (milliseconds) greater than 0 enables auto paging.</p>\n"
+            ],
+            "contentsRaw": "Default is 0. Passing a value (milliseconds) greater than 0 enables auto paging.",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\layouts\\Filmstrip\\Filmstrip.tsx",
           "flags": {
             "isExported": true,
@@ -11767,6 +11823,13 @@ export default {
           "type": "number"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Class name to help with CSS overrides.</p>\n"
+            ],
+            "contentsRaw": "Class name to help with CSS overrides.",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\layouts\\Filmstrip\\Filmstrip.tsx",
           "flags": {
             "isExported": true,
@@ -11783,6 +11846,13 @@ export default {
           "type": "string"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Default is 10. Space between items. Pass a number but it is eventually converted to <code>px</code></p>\n"
+            ],
+            "contentsRaw": "Default is 10. Space between items. Pass a number but it is eventually converted to `px`",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\layouts\\Filmstrip\\Filmstrip.tsx",
           "flags": {
             "isExported": true,
@@ -11799,6 +11869,13 @@ export default {
           "type": "number"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Default is 400. It will try to fit as many items in the parent container as it can without being smaller than the specified width.</p>\n"
+            ],
+            "contentsRaw": "Default is 400. It will try to fit as many items in the parent container as it can without being smaller than the specified width.",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\layouts\\Filmstrip\\Filmstrip.tsx",
           "flags": {
             "isExported": true,
@@ -13130,6 +13207,13 @@ export default {
           "type": "string"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Supports CSS color or a theme param</p>\n"
+            ],
+            "contentsRaw": "Supports CSS color or a theme param",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
           "flags": {
             "isExported": true,
@@ -13147,6 +13231,13 @@ export default {
           "type": "string"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Render as a circle</p>\n"
+            ],
+            "contentsRaw": "Render as a circle",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
           "flags": {
             "isExported": true,
@@ -13164,6 +13255,13 @@ export default {
           "type": "boolean"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Class name to help with CSS overrides</p>\n"
+            ],
+            "contentsRaw": "Class name to help with CSS overrides",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
           "flags": {
             "isExported": true,
@@ -13181,6 +13279,13 @@ export default {
           "type": "string"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Height in pixels</p>\n"
+            ],
+            "contentsRaw": "Height in pixels",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
           "flags": {
             "isExported": true,
@@ -13230,6 +13335,13 @@ export default {
           "type": "string"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>A Fabric Icon name or an image url</p>\n"
+            ],
+            "contentsRaw": "A Fabric Icon name or an image url",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
           "flags": {
             "isExported": true,
@@ -13247,6 +13359,13 @@ export default {
           "type": "string"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Supports CSS color or a theme param</p>\n"
+            ],
+            "contentsRaw": "Supports CSS color or a theme param",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
           "flags": {
             "isExported": true,
@@ -13280,6 +13399,13 @@ export default {
           "type": "boolean"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Width in pixels</p>\n"
+            ],
+            "contentsRaw": "Width in pixels",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
           "flags": {
             "isExported": true,
