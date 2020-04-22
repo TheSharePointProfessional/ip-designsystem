@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "ui-toolkit/styled-components";
-import Thumbnail from "../primitives/Thumbnail";
-import Title from "../primitives/Title";
-import Tags, { Tag } from "../primitives/Tags";
+import Thumbnail from "../../primitives/Thumbnail";
+import Title from "../../primitives/Title";
+import Tags, { Tag } from "../../primitives/Tags";
 import VerticalItemDescription from "./VerticalItemDescription";
 
-import Info from "../primitives/Info";
+import Info from "../../primitives/Info";
 
 let StyledFooter = styled.div`
   display: flex;
@@ -25,7 +25,7 @@ export interface VerticalListProps<T> {
 }
 
 const CLASS_NAME = "vertical-item";
-export const VerticalItem: React.FC<VerticalItemProps> = function({
+export const VerticalItem: React.FC<VerticalItemProps> = function ({
   children,
   className = "",
   ...rest
@@ -64,7 +64,7 @@ let StyledVerticalItem = styled.div`
   }
 `;
 
-export default class VerticalList<T> extends React.PureComponent<VerticalListProps<T>, {}> {
+export class VerticalList<T> extends React.PureComponent<VerticalListProps<T>, {}> {
   static Item = VerticalItem;
   static Title = Title;
   static Image = Thumbnail;
@@ -75,3 +75,5 @@ export default class VerticalList<T> extends React.PureComponent<VerticalListPro
   static Content = StyledContent;
   static Footer = StyledFooter;
 }
+
+export default VerticalList;
