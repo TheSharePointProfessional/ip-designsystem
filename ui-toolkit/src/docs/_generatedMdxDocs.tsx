@@ -7,7 +7,7 @@ import DateRangeTextDocs, { metadata as DateRangeTextMetadata } from "ui-toolkit
 import FilmstripDocs, { metadata as FilmstripMetadata } from "ui-toolkit/components/layouts/Filmstrip/Filmstrip.mdx"
 import GridDocs, { metadata as GridMetadata } from "ui-toolkit/components/layouts/Grid/Grid.mdx"
 import HomeDocs, { metadata as HomeMetadata } from "ui-toolkit/Home.mdx"
-import IconImageDocs, { metadata as IconImageMetadata } from "ui-toolkit/components/IconImage/IconImage.mdx"
+import IconImageDocs, { metadata as IconImageMetadata } from "ui-toolkit/components/primitives/IconImage.mdx"
 import PersonaDocs, { metadata as PersonaMetadata } from "ui-toolkit/components/Persona/Persona.mdx"
 import TextDocs, { metadata as TextMetadata } from "ui-toolkit/components/primitives/Text.mdx"
 import ThemeColorPickerDocs, { metadata as ThemeColorPickerMetadata } from "ui-toolkit/components/inputs/ThemeColorPicker.mdx"
@@ -83,7 +83,7 @@ const docs = [
         title: "IconImage",
         section: "components",
         sort: IconImageMetadata?.sort ?? 9999,
-        parent: IconImageMetadata?.parent || "",
+        parent: IconImageMetadata?.parent || "primitives",
         render: () => <IconImageDocs />,
     },
    {

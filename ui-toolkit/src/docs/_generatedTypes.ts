@@ -6402,7 +6402,7 @@ export default {
         }
       ]
     },
-    "getSiteUrl": {
+    "getCurrentWebUrl": {
       "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
       "flags": {
         "isExported": true,
@@ -6415,31 +6415,15 @@ export default {
         "isStatic": false
       },
       "kind": "method",
-      "name": "getSiteUrl",
+      "name": "getCurrentWebUrl",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
           "kind": "signature",
-          "name": "getSiteUrl",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": true,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "url",
-              "type": "string"
-            }
-          ],
+          "name": "getCurrentWebUrl",
+          "parameters": [],
           "returnType": "string",
-          "type": "(url?: string) => string"
+          "type": "() => string"
         }
       ]
     },
@@ -7420,6 +7404,119 @@ export default {
         }
       ]
     },
+    "IconImage": {
+      "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "IconImage",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
+          "kind": "signature",
+          "name": "IconImage",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "props",
+              "type": "IconImageProps"
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(props: IconImageProps) => Element<>"
+        }
+      ]
+    },
+    "getIconFontSize": {
+      "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "getIconFontSize",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
+          "kind": "signature",
+          "name": "getIconFontSize",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "width",
+              "type": "any"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "height",
+              "type": "any"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "percentage",
+              "defaultValue": "50",
+              "type": "number"
+            }
+          ],
+          "returnType": "string",
+          "type": "(width: any, height: any, percentage?: number) => string"
+        }
+      ]
+    },
     "checkIsThemeColor": {
       "fileName": "src\\ui-toolkit\\components\\inputs\\ThemeColorPicker.tsx",
       "flags": {
@@ -8103,56 +8200,6 @@ export default {
         }
       ]
     },
-    "getCurrentWebUrl": {
-      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "getCurrentWebUrl",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
-          "kind": "signature",
-          "name": "getCurrentWebUrl",
-          "parameters": [],
-          "returnType": "string",
-          "type": "() => string"
-        }
-      ]
-    },
-    "getCurrentSiteCollectionUrl": {
-      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "getCurrentSiteCollectionUrl",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
-          "kind": "signature",
-          "name": "getCurrentSiteCollectionUrl",
-          "parameters": [],
-          "returnType": "string",
-          "type": "() => string"
-        }
-      ]
-    },
     "debounce": {
       "fileName": "src\\ui-toolkit\\core\\utils\\utils.ts",
       "flags": {
@@ -8206,6 +8253,72 @@ export default {
           ],
           "returnType": "(Anonymous function)",
           "type": "(func: any, wait: any) => (Anonymous function)"
+        }
+      ]
+    },
+    "getCurrentSiteCollectionUrl": {
+      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "getCurrentSiteCollectionUrl",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
+          "kind": "signature",
+          "name": "getCurrentSiteCollectionUrl",
+          "parameters": [],
+          "returnType": "string",
+          "type": "() => string"
+        }
+      ]
+    },
+    "getSiteUrl": {
+      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "getSiteUrl",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
+          "kind": "signature",
+          "name": "getSiteUrl",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": true,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "url",
+              "type": "string"
+            }
+          ],
+          "returnType": "string",
+          "type": "(url?: string) => string"
         }
       ]
     },
@@ -8344,119 +8457,6 @@ export default {
           ],
           "returnType": "Element<>",
           "type": "(event: DateRangeTextProps) => Element<>"
-        }
-      ]
-    },
-    "IconImage": {
-      "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "IconImage",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "kind": "signature",
-          "name": "IconImage",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "props",
-              "type": "IconImageProps"
-            }
-          ],
-          "returnType": "Element<>",
-          "type": "(props: IconImageProps) => Element<>"
-        }
-      ]
-    },
-    "getIconFontSize": {
-      "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "getIconFontSize",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "kind": "signature",
-          "name": "getIconFontSize",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "width",
-              "type": "any"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "height",
-              "type": "any"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "percentage",
-              "defaultValue": "50",
-              "type": "number"
-            }
-          ],
-          "returnType": "string",
-          "type": "(width: any, height: any, percentage?: number) => string"
         }
       ]
     },
@@ -10193,8 +10193,8 @@ export default {
         }
       ]
     },
-    "IconImageProps": {
-      "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
+    "DateRangeTextProps": {
+      "fileName": "src\\ui-toolkit\\components\\DateRangeText\\DateRangeText.tsx",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -10206,110 +10206,11 @@ export default {
         "isStatic": false
       },
       "kind": "interface",
-      "name": "IconImageProps",
+      "name": "DateRangeTextProps",
       "methods": [],
       "properties": [
         {
-          "documentation": {
-            "contents": [
-              "<p>Supports CSS color or a theme param</p>\n"
-            ],
-            "contentsRaw": "Supports CSS color or a theme param",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "backgroundColor",
-          "type": "string"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Render as a circle</p>\n"
-            ],
-            "contentsRaw": "Render as a circle",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "circle",
-          "type": "boolean"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Class name to help with CSS overrides</p>\n"
-            ],
-            "contentsRaw": "Class name to help with CSS overrides",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "className",
-          "type": "string"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Height in pixels</p>\n"
-            ],
-            "contentsRaw": "Height in pixels",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "height",
-          "type": "number"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>A Fabric Icon name or an image url</p>\n"
-            ],
-            "contentsRaw": "A Fabric Icon name or an image url",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
+          "fileName": "src\\ui-toolkit\\components\\DateRangeText\\DateRangeText.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -10321,22 +10222,15 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "icon",
-          "type": "string"
+          "name": "end",
+          "type": "Date"
         },
         {
-          "documentation": {
-            "contents": [
-              "<p>Supports CSS color or a theme param</p>\n"
-            ],
-            "contentsRaw": "Supports CSS color or a theme param",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
+          "fileName": "src\\ui-toolkit\\components\\DateRangeText\\DateRangeText.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
-            "isOptional": true,
+            "isOptional": false,
             "isPrivate": false,
             "isProtected": false,
             "isPublic": false,
@@ -10344,31 +10238,8 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "iconColor",
-          "type": "string"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Width in pixels</p>\n"
-            ],
-            "contentsRaw": "Width in pixels",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "width",
-          "type": "number"
+          "name": "start",
+          "type": "Date"
         }
       ]
     },
@@ -11124,6 +10995,185 @@ export default {
           "kind": "property",
           "name": "className",
           "type": "string"
+        }
+      ]
+    },
+    "IconImageProps": {
+      "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "IconImageProps",
+      "methods": [],
+      "properties": [
+        {
+          "documentation": {
+            "contents": [
+              "<p>Supports CSS color or a theme param</p>\n"
+            ],
+            "contentsRaw": "Supports CSS color or a theme param",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "backgroundColor",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Render as a circle</p>\n"
+            ],
+            "contentsRaw": "Render as a circle",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "circle",
+          "type": "boolean"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Class name to help with CSS overrides</p>\n"
+            ],
+            "contentsRaw": "Class name to help with CSS overrides",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "className",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Height in pixels</p>\n"
+            ],
+            "contentsRaw": "Height in pixels",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "height",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>A Fabric Icon name or an image url</p>\n"
+            ],
+            "contentsRaw": "A Fabric Icon name or an image url",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "icon",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Supports CSS color or a theme param</p>\n"
+            ],
+            "contentsRaw": "Supports CSS color or a theme param",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "iconColor",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Width in pixels</p>\n"
+            ],
+            "contentsRaw": "Width in pixels",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "width",
+          "type": "number"
         }
       ]
     },
@@ -12271,58 +12321,8 @@ export default {
         }
       ]
     },
-    "DateRangeTextProps": {
-      "fileName": "src\\ui-toolkit\\components\\DateRangeText\\DateRangeText.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "interface",
-      "name": "DateRangeTextProps",
-      "methods": [],
-      "properties": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\DateRangeText\\DateRangeText.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "end",
-          "type": "Date"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\DateRangeText\\DateRangeText.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "start",
-          "type": "Date"
-        }
-      ]
-    },
     "PanelLinkProps": {
-      "fileName": "src\\ui-toolkit\\components\\PanelLink\\PanelLink.tsx",
+      "fileName": "src\\ui-toolkit\\components\\primitives\\PanelLink.tsx",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -12336,7 +12336,7 @@ export default {
       "kind": "interface",
       "name": "PanelLinkProps",
       "indexSignature": {
-        "fileName": "src\\ui-toolkit\\components\\PanelLink\\PanelLink.tsx",
+        "fileName": "src\\ui-toolkit\\components\\primitives\\PanelLink.tsx",
         "kind": "signature",
         "name": "__index",
         "parameters": [
@@ -12362,7 +12362,7 @@ export default {
       "methods": [],
       "properties": [
         {
-          "fileName": "src\\ui-toolkit\\components\\PanelLink\\PanelLink.tsx",
+          "fileName": "src\\ui-toolkit\\components\\primitives\\PanelLink.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -12378,7 +12378,7 @@ export default {
           "type": "any"
         },
         {
-          "fileName": "src\\ui-toolkit\\components\\PanelLink\\PanelLink.tsx",
+          "fileName": "src\\ui-toolkit\\components\\primitives\\PanelLink.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -12394,7 +12394,7 @@ export default {
           "type": "string"
         },
         {
-          "fileName": "src\\ui-toolkit\\components\\PanelLink\\PanelLink.tsx",
+          "fileName": "src\\ui-toolkit\\components\\primitives\\PanelLink.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -12410,7 +12410,7 @@ export default {
           "type": "\"small\" | \"medium\" | \"large\" | number"
         },
         {
-          "fileName": "src\\ui-toolkit\\components\\PanelLink\\PanelLink.tsx",
+          "fileName": "src\\ui-toolkit\\components\\primitives\\PanelLink.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -13162,7 +13162,7 @@ export default {
       "kind": "interface",
       "name": "LinkTileProps",
       "extends": [
-        "IconImageProps"
+        "any"
       ],
       "indexSignature": {
         "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
@@ -13195,118 +13195,6 @@ export default {
           "flags": {
             "isExported": true,
             "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "hoverColor",
-          "type": "string"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Supports CSS color or a theme param</p>\n"
-            ],
-            "contentsRaw": "Supports CSS color or a theme param",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "backgroundColor",
-          "inheritedFrom": "IconImageProps.backgroundColor",
-          "type": "string"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Render as a circle</p>\n"
-            ],
-            "contentsRaw": "Render as a circle",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "circle",
-          "inheritedFrom": "IconImageProps.circle",
-          "type": "boolean"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Class name to help with CSS overrides</p>\n"
-            ],
-            "contentsRaw": "Class name to help with CSS overrides",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "className",
-          "inheritedFrom": "IconImageProps.className",
-          "type": "string"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Height in pixels</p>\n"
-            ],
-            "contentsRaw": "Height in pixels",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "height",
-          "inheritedFrom": "IconImageProps.height",
-          "type": "number"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
             "isOptional": false,
             "isPrivate": false,
             "isProtected": false,
@@ -13317,6 +13205,22 @@ export default {
           "kind": "property",
           "name": "children",
           "type": "any"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "hoverColor",
+          "type": "string"
         },
         {
           "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
@@ -13335,54 +13239,6 @@ export default {
           "type": "string"
         },
         {
-          "documentation": {
-            "contents": [
-              "<p>A Fabric Icon name or an image url</p>\n"
-            ],
-            "contentsRaw": "A Fabric Icon name or an image url",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "icon",
-          "inheritedFrom": "IconImageProps.icon",
-          "type": "string"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Supports CSS color or a theme param</p>\n"
-            ],
-            "contentsRaw": "Supports CSS color or a theme param",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "iconColor",
-          "inheritedFrom": "IconImageProps.iconColor",
-          "type": "string"
-        },
-        {
           "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
           "flags": {
             "isExported": true,
@@ -13397,30 +13253,6 @@ export default {
           "kind": "property",
           "name": "showHoverOverlay",
           "type": "boolean"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Width in pixels</p>\n"
-            ],
-            "contentsRaw": "Width in pixels",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "width",
-          "inheritedFrom": "IconImageProps.width",
-          "type": "number"
         }
       ]
     },

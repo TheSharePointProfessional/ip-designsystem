@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "ui-toolkit/styled-components";
 import { parse as parseUrl } from "url";
-import PanelLink from "../PanelLink/PanelLink";
+import PanelLink from "./PanelLink";
 import { getThemeValue } from "../PortalsThemeProvider/PortalsThemeProvider";
 
 const CLASS_NAME = "custom-link";
