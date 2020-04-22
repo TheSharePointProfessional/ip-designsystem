@@ -13,6 +13,7 @@ import TextDocs, { metadata as TextMetadata } from "ui-toolkit/components/primit
 import ThemeColorPickerDocs, { metadata as ThemeColorPickerMetadata } from "ui-toolkit/components/inputs/ThemeColorPicker.mdx"
 import TitleDocs, { metadata as TitleMetadata } from "ui-toolkit/components/primitives/Title.mdx"
 import UseAsyncDataDocs, { metadata as UseAsyncDataMetadata } from "ui-toolkit/hooks/useAsyncData.mdx"
+import UseAutoPagingDocs, { metadata as UseAutoPagingMetadata } from "ui-toolkit/hooks/useAutoPaging.mdx"
 import UseDebouncedEffectDocs, { metadata as UseDebouncedEffectMetadata } from "ui-toolkit/hooks/useDebouncedEffect.mdx"
 import UseDebouncedValueDocs, { metadata as UseDebouncedValueMetadata } from "ui-toolkit/hooks/useDebouncedValue.mdx"
 import UseIntervalDocs, { metadata as UseIntervalMetadata } from "ui-toolkit/hooks/useInterval.mdx"
@@ -119,6 +120,13 @@ const docs = [
         sort: UseAsyncDataMetadata?.sort ?? 9999,
         parent: UseAsyncDataMetadata?.parent || "hooks",
         render: () => <UseAsyncDataDocs />,
+    },
+   {
+        title: "UseAutoPaging",
+        section: "hooks",
+        sort: UseAutoPagingMetadata?.sort ?? 9999,
+        parent: UseAutoPagingMetadata?.parent || "hooks",
+        render: () => <UseAutoPagingDocs />,
     },
    {
         title: "UseDebouncedEffect",

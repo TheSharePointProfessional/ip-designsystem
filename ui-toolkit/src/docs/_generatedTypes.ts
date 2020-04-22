@@ -8972,6 +8972,79 @@ export default {
         }
       ]
     },
+    "useAutoPaging": {
+      "fileName": "src\\ui-toolkit\\hooks\\useAutoPaging.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "useAutoPaging",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useAutoPaging.ts",
+          "kind": "signature",
+          "name": "useAutoPaging",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "totalPages",
+              "type": "number"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "delay",
+              "defaultValue": "5000",
+              "type": "number"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "defaultPage",
+              "defaultValue": "1",
+              "type": "number"
+            }
+          ],
+          "returnType": "AutoPagingContext",
+          "type": "(totalPages: number, delay?: number, defaultPage?: number) => AutoPagingContext"
+        }
+      ]
+    },
     "CardDemo": {
       "fileName": "src\\ui-toolkit\\components\\Card\\CardDemo.tsx",
       "flags": {
@@ -9926,79 +9999,6 @@ export default {
         }
       ]
     },
-    "useAutoPaging": {
-      "fileName": "src\\ui-toolkit\\hooks\\useAutoPaging.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "useAutoPaging",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\hooks\\useAutoPaging.ts",
-          "kind": "signature",
-          "name": "useAutoPaging",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "totalPages",
-              "type": "number"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "delay",
-              "defaultValue": "5000",
-              "type": "number"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "defaultPage",
-              "defaultValue": "1",
-              "type": "number"
-            }
-          ],
-          "returnType": "",
-          "type": "(totalPages: number, delay?: number, defaultPage?: number) => "
-        }
-      ]
-    },
     "useOnClickOutside": {
       "fileName": "src\\ui-toolkit\\hooks\\useOnClickOutside.ts",
       "flags": {
@@ -10193,8 +10193,8 @@ export default {
         }
       ]
     },
-    "DateRangeTextProps": {
-      "fileName": "src\\ui-toolkit\\components\\DateRangeText\\DateRangeText.tsx",
+    "IconImageProps": {
+      "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -10206,15 +10206,15 @@ export default {
         "isStatic": false
       },
       "kind": "interface",
-      "name": "DateRangeTextProps",
+      "name": "IconImageProps",
       "methods": [],
       "properties": [
         {
-          "fileName": "src\\ui-toolkit\\components\\DateRangeText\\DateRangeText.tsx",
+          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
-            "isOptional": false,
+            "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
             "isPublic": false,
@@ -10222,11 +10222,59 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "end",
-          "type": "Date"
+          "name": "backgroundColor",
+          "type": "string"
         },
         {
-          "fileName": "src\\ui-toolkit\\components\\DateRangeText\\DateRangeText.tsx",
+          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "circle",
+          "type": "boolean"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "className",
+          "type": "string"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "height",
+          "type": "number"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -10238,8 +10286,40 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "start",
-          "type": "Date"
+          "name": "icon",
+          "type": "string"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "iconColor",
+          "type": "string"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "width",
+          "type": "number"
         }
       ]
     },
@@ -12114,6 +12194,56 @@ export default {
         }
       ]
     },
+    "DateRangeTextProps": {
+      "fileName": "src\\ui-toolkit\\components\\DateRangeText\\DateRangeText.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "DateRangeTextProps",
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\DateRangeText\\DateRangeText.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "end",
+          "type": "Date"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\DateRangeText\\DateRangeText.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "start",
+          "type": "Date"
+        }
+      ]
+    },
     "PanelLinkProps": {
       "fileName": "src\\ui-toolkit\\components\\PanelLink\\PanelLink.tsx",
       "flags": {
@@ -12217,136 +12347,6 @@ export default {
           "kind": "property",
           "name": "title",
           "type": "string"
-        }
-      ]
-    },
-    "IconImageProps": {
-      "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "interface",
-      "name": "IconImageProps",
-      "methods": [],
-      "properties": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "backgroundColor",
-          "type": "string"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "circle",
-          "type": "boolean"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "className",
-          "type": "string"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "height",
-          "type": "number"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "icon",
-          "type": "string"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "iconColor",
-          "type": "string"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\IconImage\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "width",
-          "type": "number"
         }
       ]
     },
@@ -12498,6 +12498,192 @@ export default {
           "kind": "property",
           "name": "isLoading",
           "type": "boolean"
+        }
+      ]
+    },
+    "AutoPagingContext": {
+      "fileName": "src\\ui-toolkit\\hooks\\useAutoPaging.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "AutoPagingContext",
+      "extends": [
+        "PagingContext"
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "documentation": {
+            "contents": [
+              "<p>The current page in state</p>\n"
+            ],
+            "contentsRaw": "The current page in state",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\hooks\\usePaging.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "currentPage",
+          "inheritedFrom": "PagingContext.currentPage",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Go backwards one page. If you go below page 1, you will be sent to the last page.</p>\n"
+            ],
+            "contentsRaw": "Go backwards one page. If you go below page 1, you will be sent to the last page.",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\hooks\\usePaging.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "goBack",
+          "inheritedFrom": "PagingContext.goBack",
+          "type": "() => void"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Go forwards one page. If you exceed the max page, it will go back to the first page.</p>\n"
+            ],
+            "contentsRaw": "Go forwards one page. If you exceed the max page, it will go back to the first page.",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\hooks\\usePaging.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "goForward",
+          "inheritedFrom": "PagingContext.goForward",
+          "type": "() => void"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Jump to a specific page number</p>\n"
+            ],
+            "contentsRaw": "Jump to a specific page number",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\hooks\\usePaging.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "goTo",
+          "inheritedFrom": "PagingContext.goTo",
+          "type": "(page: number) => void"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Events to spread onto the element that should pause when hovered</p>\n"
+            ],
+            "contentsRaw": "Events to spread onto the element that should pause when hovered",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\hooks\\useAutoPaging.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "pauseEvents",
+          "type": ""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Begin auto paging</p>\n"
+            ],
+            "contentsRaw": "Begin auto paging",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\hooks\\useAutoPaging.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "startPaging",
+          "type": "() => void"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Pause auto paging</p>\n"
+            ],
+            "contentsRaw": "Pause auto paging",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\hooks\\useAutoPaging.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "stopPaging",
+          "type": "() => void"
         }
       ]
     },
