@@ -8900,6 +8900,78 @@ export default {
         }
       ]
     },
+    "usePersistedState": {
+      "fileName": "src\\ui-toolkit\\hooks\\usePersistedState.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "usePersistedState",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\usePersistedState.ts",
+          "kind": "signature",
+          "name": "usePersistedState",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "defaultValue",
+              "type": "T"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "key",
+              "type": "string"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "storage",
+              "defaultValue": "window.localStorage",
+              "type": "Storage"
+            }
+          ],
+          "returnType": "any[]",
+          "type": "(defaultValue: T, key: string, storage?: Storage) => any[]"
+        }
+      ]
+    },
     "CardDemo": {
       "fileName": "src\\ui-toolkit\\components\\Card\\CardDemo.tsx",
       "flags": {
@@ -9980,78 +10052,6 @@ export default {
           ],
           "returnType": "void",
           "type": "(ref: any, handler: any) => void"
-        }
-      ]
-    },
-    "usePersistedState": {
-      "fileName": "src\\ui-toolkit\\hooks\\usePersistedState.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "usePersistedState",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\hooks\\usePersistedState.ts",
-          "kind": "signature",
-          "name": "usePersistedState",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "defaultValue",
-              "type": "T"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "key",
-              "type": "string"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "storage",
-              "defaultValue": "window.localStorage",
-              "type": "Storage"
-            }
-          ],
-          "returnType": "any[]",
-          "type": "(defaultValue: T, key: string, storage?: Storage) => any[]"
         }
       ]
     },
