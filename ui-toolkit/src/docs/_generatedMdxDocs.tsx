@@ -9,6 +9,7 @@ import GridDocs, { metadata as GridMetadata } from "ui-toolkit/components/layout
 import HomeDocs, { metadata as HomeMetadata } from "ui-toolkit/Home.mdx"
 import IconImageDocs, { metadata as IconImageMetadata } from "ui-toolkit/components/primitives/IconImage.mdx"
 import PersonaDocs, { metadata as PersonaMetadata } from "ui-toolkit/components/Persona/Persona.mdx"
+import ShaveDocs, { metadata as ShaveMetadata } from "ui-toolkit/components/Shave/Shave.mdx"
 import TextDocs, { metadata as TextMetadata } from "ui-toolkit/components/primitives/Text.mdx"
 import ThemeColorPickerDocs, { metadata as ThemeColorPickerMetadata } from "ui-toolkit/components/inputs/ThemeColorPicker.mdx"
 import TitleDocs, { metadata as TitleMetadata } from "ui-toolkit/components/primitives/Title.mdx"
@@ -92,6 +93,13 @@ const docs = [
         sort: PersonaMetadata?.sort ?? 9999,
         parent: PersonaMetadata?.parent || "",
         render: () => <PersonaDocs />,
+    },
+   {
+        title: "Shave",
+        section: "components",
+        sort: ShaveMetadata?.sort ?? 9999,
+        parent: ShaveMetadata?.parent || "",
+        render: () => <ShaveDocs />,
     },
    {
         title: "Text",

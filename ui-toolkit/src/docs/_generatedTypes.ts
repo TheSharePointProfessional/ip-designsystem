@@ -7057,7 +7057,7 @@ export default {
           "parameters": [
             {
               "flags": {
-                "isExported": false,
+                "isExported": true,
                 "isExternal": false,
                 "isOptional": false,
                 "isPrivate": false,
@@ -10735,6 +10735,13 @@ export default {
       "methods": [],
       "properties": [
         {
+          "documentation": {
+            "contents": [
+              "<p>Class name for CSS overrides</p>\n"
+            ],
+            "contentsRaw": "Class name for CSS overrides",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\Shave\\Shave.tsx",
           "flags": {
             "isExported": true,
@@ -10751,6 +10758,13 @@ export default {
           "type": "string"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Default is div. The type of element to use</p>\n"
+            ],
+            "contentsRaw": "Default is div. The type of element to use",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\Shave\\Shave.tsx",
           "flags": {
             "isExported": true,
@@ -10767,6 +10781,13 @@ export default {
           "type": "any"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Default is true. Allows you to toggle the shave on and off</p>\n"
+            ],
+            "contentsRaw": "Default is true. Allows you to toggle the shave on and off",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\Shave\\Shave.tsx",
           "flags": {
             "isExported": true,
@@ -10783,11 +10804,18 @@ export default {
           "type": "boolean"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>The max height of the element. The component will fit as many lines of text as it can.</p>\n"
+            ],
+            "contentsRaw": "The max height of the element. The component will fit as many lines of text as it can.",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\components\\Shave\\Shave.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
-            "isOptional": true,
+            "isOptional": false,
             "isPrivate": false,
             "isProtected": false,
             "isPublic": false,
