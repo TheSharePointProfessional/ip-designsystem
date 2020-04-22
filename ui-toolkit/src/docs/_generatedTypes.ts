@@ -8460,6 +8460,113 @@ export default {
         }
       ]
     },
+    "LinkTile": {
+      "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "LinkTile",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
+          "kind": "signature",
+          "name": "LinkTile",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "props",
+              "type": "LinkTileProps"
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(props: LinkTileProps) => Element<>"
+        }
+      ]
+    },
+    "ThemePreview": {
+      "fileName": "src\\ui-toolkit\\components\\ThemePreview\\ThemePreview.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "ThemePreview",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\ThemePreview\\ThemePreview.tsx",
+          "kind": "signature",
+          "name": "ThemePreview",
+          "parameters": [],
+          "returnType": "Element<>",
+          "type": "() => Element<>"
+        }
+      ]
+    },
+    "ColorPreview": {
+      "fileName": "src\\ui-toolkit\\components\\ThemePreview\\ThemePreview.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "ColorPreview",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\ThemePreview\\ThemePreview.tsx",
+          "kind": "signature",
+          "name": "ColorPreview",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
+        }
+      ]
+    },
     "useDebouncedValue": {
       "fileName": "src\\ui-toolkit\\hooks\\useDebounce.ts",
       "flags": {
@@ -9190,72 +9297,6 @@ export default {
           ],
           "returnType": "Element<>",
           "type": "(props: SiteUrlInputProps) => Element<>"
-        }
-      ]
-    },
-    "ThemePreview": {
-      "fileName": "src\\ui-toolkit\\components\\ThemePreview\\ThemePreview.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "ThemePreview",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\ThemePreview\\ThemePreview.tsx",
-          "kind": "signature",
-          "name": "ThemePreview",
-          "parameters": [],
-          "returnType": "Element<>",
-          "type": "() => Element<>"
-        }
-      ]
-    },
-    "ColorPreview": {
-      "fileName": "src\\ui-toolkit\\components\\ThemePreview\\ThemePreview.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "ColorPreview",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\ThemePreview\\ThemePreview.tsx",
-          "kind": "signature",
-          "name": "ColorPreview",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "Element<>",
-          "type": "(__namedParameters: ) => Element<>"
         }
       ]
     },
@@ -12455,6 +12496,311 @@ export default {
         }
       ]
     },
+    "LinkTileProps": {
+      "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "LinkTileProps",
+      "extends": [
+        "IconImageProps"
+      ],
+      "indexSignature": {
+        "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
+        "kind": "signature",
+        "name": "__index",
+        "parameters": [
+          {
+            "flags": {
+              "isExported": true,
+              "isExternal": false,
+              "isOptional": false,
+              "isPrivate": false,
+              "isProtected": false,
+              "isPublic": false,
+              "isRest": false,
+              "isStatic": false
+            },
+            "kind": "parameter",
+            "name": "key",
+            "type": "string"
+          }
+        ],
+        "returnType": "any",
+        "type": "{ [key: string]: any }"
+      },
+      "methods": [],
+      "properties": [
+        {
+          "documentation": {
+            "contents": [
+              "<p>CSS Color or Theme Param</p>\n"
+            ],
+            "contentsRaw": "CSS Color or Theme Param",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "hoverColor",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Supports CSS color or a theme param</p>\n"
+            ],
+            "contentsRaw": "Supports CSS color or a theme param",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "backgroundColor",
+          "inheritedFrom": "IconImageProps.backgroundColor",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Render as a circle</p>\n"
+            ],
+            "contentsRaw": "Render as a circle",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "circle",
+          "inheritedFrom": "IconImageProps.circle",
+          "type": "boolean"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Class name to help with CSS overrides</p>\n"
+            ],
+            "contentsRaw": "Class name to help with CSS overrides",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "className",
+          "inheritedFrom": "IconImageProps.className",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Height in pixels</p>\n"
+            ],
+            "contentsRaw": "Height in pixels",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "height",
+          "inheritedFrom": "IconImageProps.height",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>The child element will be rendered as the caption and appear in the hover animation if showHoverOverlay prop is true.</p>\n"
+            ],
+            "contentsRaw": "The child element will be rendered as the caption and appear in the hover animation if showHoverOverlay prop is true.",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "children",
+          "type": "any"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Url to the link</p>\n"
+            ],
+            "contentsRaw": "Url to the link",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "href",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>A Fabric Icon name or an image url</p>\n"
+            ],
+            "contentsRaw": "A Fabric Icon name or an image url",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "icon",
+          "inheritedFrom": "IconImageProps.icon",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Supports CSS color or a theme param</p>\n"
+            ],
+            "contentsRaw": "Supports CSS color or a theme param",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "iconColor",
+          "inheritedFrom": "IconImageProps.iconColor",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Enables slide up animation on hover if set to true</p>\n"
+            ],
+            "contentsRaw": "Enables slide up animation on hover if set to true",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "showHoverOverlay",
+          "type": "boolean"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Width in pixels</p>\n"
+            ],
+            "contentsRaw": "Width in pixels",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "width",
+          "inheritedFrom": "IconImageProps.width",
+          "type": "number"
+        }
+      ]
+    },
     "UseDebounceParams": {
       "fileName": "src\\ui-toolkit\\hooks\\useDebounce.ts",
       "flags": {
@@ -13171,311 +13517,6 @@ export default {
           },
           "kind": "property",
           "name": "size",
-          "type": "number"
-        }
-      ]
-    },
-    "LinkTileProps": {
-      "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "interface",
-      "name": "LinkTileProps",
-      "extends": [
-        "IconImageProps"
-      ],
-      "indexSignature": {
-        "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
-        "kind": "signature",
-        "name": "__index",
-        "parameters": [
-          {
-            "flags": {
-              "isExported": true,
-              "isExternal": false,
-              "isOptional": false,
-              "isPrivate": false,
-              "isProtected": false,
-              "isPublic": false,
-              "isRest": false,
-              "isStatic": false
-            },
-            "kind": "parameter",
-            "name": "key",
-            "type": "string"
-          }
-        ],
-        "returnType": "any",
-        "type": "{ [key: string]: any }"
-      },
-      "methods": [],
-      "properties": [
-        {
-          "documentation": {
-            "contents": [
-              "<p>CSS Color or Theme Param</p>\n"
-            ],
-            "contentsRaw": "CSS Color or Theme Param",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "hoverColor",
-          "type": "string"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Supports CSS color or a theme param</p>\n"
-            ],
-            "contentsRaw": "Supports CSS color or a theme param",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "backgroundColor",
-          "inheritedFrom": "IconImageProps.backgroundColor",
-          "type": "string"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Render as a circle</p>\n"
-            ],
-            "contentsRaw": "Render as a circle",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "circle",
-          "inheritedFrom": "IconImageProps.circle",
-          "type": "boolean"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Class name to help with CSS overrides</p>\n"
-            ],
-            "contentsRaw": "Class name to help with CSS overrides",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "className",
-          "inheritedFrom": "IconImageProps.className",
-          "type": "string"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Height in pixels</p>\n"
-            ],
-            "contentsRaw": "Height in pixels",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "height",
-          "inheritedFrom": "IconImageProps.height",
-          "type": "number"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>The child element will be rendered as the caption and appear in the hover animation if showHoverOverlay prop is true.</p>\n"
-            ],
-            "contentsRaw": "The child element will be rendered as the caption and appear in the hover animation if showHoverOverlay prop is true.",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "children",
-          "type": "any"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Url to the link</p>\n"
-            ],
-            "contentsRaw": "Url to the link",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "href",
-          "type": "string"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>A Fabric Icon name or an image url</p>\n"
-            ],
-            "contentsRaw": "A Fabric Icon name or an image url",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "icon",
-          "inheritedFrom": "IconImageProps.icon",
-          "type": "string"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Supports CSS color or a theme param</p>\n"
-            ],
-            "contentsRaw": "Supports CSS color or a theme param",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "iconColor",
-          "inheritedFrom": "IconImageProps.iconColor",
-          "type": "string"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Enables slide up animation on hover if set to true</p>\n"
-            ],
-            "contentsRaw": "Enables slide up animation on hover if set to true",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "showHoverOverlay",
-          "type": "boolean"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Width in pixels</p>\n"
-            ],
-            "contentsRaw": "Width in pixels",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "width",
-          "inheritedFrom": "IconImageProps.width",
           "type": "number"
         }
       ]

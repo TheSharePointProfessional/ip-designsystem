@@ -13,6 +13,7 @@ import PersonaDocs, { metadata as PersonaMetadata } from "ui-toolkit/components/
 import ShaveDocs, { metadata as ShaveMetadata } from "ui-toolkit/components/Shave/Shave.mdx"
 import TextDocs, { metadata as TextMetadata } from "ui-toolkit/components/primitives/Text.mdx"
 import ThemeColorPickerDocs, { metadata as ThemeColorPickerMetadata } from "ui-toolkit/components/inputs/ThemeColorPicker.mdx"
+import ThemePreviewDocs, { metadata as ThemePreviewMetadata } from "ui-toolkit/components/ThemePreview/ThemePreview.mdx"
 import TitleDocs, { metadata as TitleMetadata } from "ui-toolkit/components/primitives/Title.mdx"
 import UseAsyncDataDocs, { metadata as UseAsyncDataMetadata } from "ui-toolkit/hooks/useAsyncData.mdx"
 import UseAutoPagingDocs, { metadata as UseAutoPagingMetadata } from "ui-toolkit/hooks/useAutoPaging.mdx"
@@ -122,6 +123,13 @@ const docs = [
         sort: ThemeColorPickerMetadata?.sort ?? 9999,
         parent: ThemeColorPickerMetadata?.parent || "inputs",
         render: () => <ThemeColorPickerDocs />,
+    },
+   {
+        title: "ThemePreview",
+        section: "components",
+        sort: ThemePreviewMetadata?.sort ?? 9999,
+        parent: ThemePreviewMetadata?.parent || "",
+        render: () => <ThemePreviewDocs />,
     },
    {
         title: "Title",

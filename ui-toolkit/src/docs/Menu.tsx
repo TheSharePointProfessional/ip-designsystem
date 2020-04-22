@@ -11,6 +11,7 @@ export default function Menu({ setActive, active }) {
 
   let hooksItems = docs.filter((d) => d.section === "hooks");
   let coreItems = docs.filter((d) => d.section === "core");
+  let propertyFields = docs.filter((d) => d.section === "propertyfields");
   return (
     <StyledSideMenu className="menu">
       <MenuItems items={topLevelItems} setActive={setActive} active={active}>
