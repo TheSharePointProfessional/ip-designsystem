@@ -8,6 +8,7 @@ import FilmstripDocs, { metadata as FilmstripMetadata } from "ui-toolkit/compone
 import GridDocs, { metadata as GridMetadata } from "ui-toolkit/components/layouts/Grid/Grid.mdx"
 import HomeDocs, { metadata as HomeMetadata } from "ui-toolkit/Home.mdx"
 import IconImageDocs, { metadata as IconImageMetadata } from "ui-toolkit/components/primitives/IconImage.mdx"
+import LinkTileDocs, { metadata as LinkTileMetadata } from "ui-toolkit/components/LinkTile/LinkTile.mdx"
 import PersonaDocs, { metadata as PersonaMetadata } from "ui-toolkit/components/Persona/Persona.mdx"
 import ShaveDocs, { metadata as ShaveMetadata } from "ui-toolkit/components/Shave/Shave.mdx"
 import TextDocs, { metadata as TextMetadata } from "ui-toolkit/components/primitives/Text.mdx"
@@ -86,6 +87,13 @@ const docs = [
         sort: IconImageMetadata?.sort ?? 9999,
         parent: IconImageMetadata?.parent || "primitives",
         render: () => <IconImageDocs />,
+    },
+   {
+        title: "LinkTile",
+        section: "components",
+        sort: LinkTileMetadata?.sort ?? 9999,
+        parent: LinkTileMetadata?.parent || "",
+        render: () => <LinkTileDocs />,
     },
    {
         title: "Persona",

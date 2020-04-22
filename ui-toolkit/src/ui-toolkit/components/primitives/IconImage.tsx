@@ -16,7 +16,7 @@ export const defaultIconImageProps: IconImageProps = {
   className: "",
 };
 
-export default function IconImage(props: IconImageProps) {
+export function IconImage(props: IconImageProps) {
   let fullProps = { ...defaultIconImageProps, ...props };
 
   let cssClass = [CLASS_NAME, fullProps.className, fullProps.circle ? "circle" : ""]
@@ -33,6 +33,8 @@ export default function IconImage(props: IconImageProps) {
     </StyledContainer>
   );
 }
+
+export default IconImage;
 
 const wordRegex = /^\w+$/;
 const checkIsIconName = function (icon: string): boolean {
