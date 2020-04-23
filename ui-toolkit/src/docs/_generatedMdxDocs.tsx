@@ -19,6 +19,7 @@ import UseDebouncedValueDocs, { metadata as UseDebouncedValueMetadata } from "ui
 import UseIntervalDocs, { metadata as UseIntervalMetadata } from "ui-toolkit/hooks/useInterval.mdx"
 import UsePagedItemsDocs, { metadata as UsePagedItemsMetadata } from "ui-toolkit/hooks/usePagedItems.mdx"
 import UsePagingDocs, { metadata as UsePagingMetadata } from "ui-toolkit/hooks/usePaging.mdx"
+import UsePanelDocs, { metadata as UsePanelMetadata } from "ui-toolkit/components/Panel/usePanel.mdx"
 import UsePersistedStateDocs, { metadata as UsePersistedStateMetadata } from "ui-toolkit/hooks/usePersistedState.mdx"
 import UseQueryStringDocs, { metadata as UseQueryStringMetadata } from "ui-toolkit/hooks/useQueryString.mdx"
 
@@ -162,6 +163,13 @@ const docs = [
         sort: UsePagingMetadata?.sort ?? 9999,
         parent: UsePagingMetadata?.parent || "hooks",
         render: () => <UsePagingDocs />,
+    },
+   {
+        title: "UsePanel",
+        section: "components",
+        sort: UsePanelMetadata?.sort ?? 9999,
+        parent: UsePanelMetadata?.parent || "Panel",
+        render: () => <UsePanelDocs />,
     },
    {
         title: "UsePersistedState",

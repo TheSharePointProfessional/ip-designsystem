@@ -1,10 +1,12 @@
 import React, { useState, useCallback, useEffect } from "react";
 import styled from "ui-toolkit/styled-components";
 import { IconButton } from "office-ui-fabric-react/lib/Button";
-import { PanelType } from "office-ui-fabric-react/lib/Panel";
+import { PanelType, Panel, IPanelProps } from "office-ui-fabric-react/lib/Panel";
 
 export interface PanelOptions {
+  /** Defaults to false. Should the panel be open by default? */
   startOpen?: boolean;
+  /** The size of the panel. "small", "medium", "large", or a Number */
   size?: PanelSize;
 }
 let defaults: PanelOptions = {
@@ -39,10 +41,25 @@ export function usePanel(opts: PanelOptions = {}) {
   };
 
   return {
+    isOpen,
     openPanel,
     closePanel,
     panelProps,
-  };
+    Panel,
+  } as UsePanelResult;
+}
+
+export interface UsePanelResult {
+  /** Whether the panel is currently open */
+  isOpen: boolean;
+  /** A function you can call to open the panel */
+  openPanel: () => void;
+  /** A function you can call to close the panel */
+  closePanel: () => void;
+  /** The props you should spread onto the Panel component */
+  panelProps: IPanelProps;
+  /** The hook returns the UI Fabric Panel component as a nicety so you don't have to mess with importing it */
+  Panel?: any;
 }
 
 export type PanelSize = "small" | "medium" | "large" | number;
