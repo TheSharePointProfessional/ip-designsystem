@@ -6,7 +6,7 @@ export * from "./layouts";
 export { default as Persona } from "./Persona/Persona";
 export { default as Card } from "./Card/Card";
 export { default as DateRangeText } from "./DateRangeText/DateRangeText";
-export * from "./Panel";
+export * from "./panel";
 export * from "./Shave/Shave";
 export * from "./LinkTile/LinkTile";
 export * from "./ThemePreview/ThemePreview";
