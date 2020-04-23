@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
 import styled from "ui-toolkit/styled-components";
-import Shave from "../Shave/Shave";
+import Shave from "../../Shave/Shave";
 
 const CLASS_NAME = "vertical-item-description";
 
