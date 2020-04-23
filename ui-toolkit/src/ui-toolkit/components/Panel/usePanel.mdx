@@ -2,14 +2,20 @@ import { PropsTable } from "docs";
 
 # usePanel
 
-A hook that helps you setup all the `props` for a UI Fabric usePanel
-
 ```javascript
 import { usePanel } from "ui-toolkit";
 
 // The hook returns the Component, the props, and the panel methods you might need
 let { Panel, panelProps, isOpen, openPanel, closePanel } = usePanel();
 ```
+
+A hook that helps you setup all the `props` for a UI Fabric usePanel.
+
+- It sets up the React state for tracking whether the panel is open and provides methods to open and close.
+- It sets up all the default UI Fabric Panel props for you.
+- It provides the Fabric UI Panel Component so you don't have to mess with importing it.
+- It overrides the default Panel Header to let the Panel content touch the top of the panel.
+- It wires up a specific `PostMessage` listener to that IFramed windows can send the parent a message telling it to close the panel.
 
 ```jsx live=true bordered=true
 () => {
