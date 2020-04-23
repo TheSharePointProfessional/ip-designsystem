@@ -16,7 +16,7 @@ export const defaultIconImageProps: IconImageProps = {
   className: "",
 };
 
-export default function IconImage(props: IconImageProps) {
+export function IconImage(props: IconImageProps) {
   let fullProps = { ...defaultIconImageProps, ...props };
 
   let cssClass = [CLASS_NAME, fullProps.className, fullProps.circle ? "circle" : ""]
@@ -33,6 +33,8 @@ export default function IconImage(props: IconImageProps) {
     </StyledContainer>
   );
 }
+
+export default IconImage;
 
 const wordRegex = /^\w+$/;
 const checkIsIconName = function (icon: string): boolean {
@@ -65,11 +67,18 @@ const StyledContainer = styled.div`
 `;
 
 export interface IconImageProps {
+  /** A Fabric Icon name or an image url */
   icon: string;
+  /** Width in pixels */
   width?: number;
+  /** Height in pixels */
   height?: number;
+  /** Supports CSS color or a theme param */
   backgroundColor?: string;
+  /** Supports CSS color or a theme param */
   iconColor?: string;
+  /** Render as a circle */
   circle?: boolean;
+  /** Class name to help with CSS overrides */
   className?: string;
 }

@@ -7,10 +7,13 @@ import DateRangeTextDocs, { metadata as DateRangeTextMetadata } from "ui-toolkit
 import FilmstripDocs, { metadata as FilmstripMetadata } from "ui-toolkit/components/layouts/Filmstrip/Filmstrip.mdx"
 import GridDocs, { metadata as GridMetadata } from "ui-toolkit/components/layouts/Grid/Grid.mdx"
 import HomeDocs, { metadata as HomeMetadata } from "ui-toolkit/Home.mdx"
-import IconImageDocs, { metadata as IconImageMetadata } from "ui-toolkit/components/IconImage/IconImage.mdx"
+import IconImageDocs, { metadata as IconImageMetadata } from "ui-toolkit/components/primitives/IconImage.mdx"
+import LinkTileDocs, { metadata as LinkTileMetadata } from "ui-toolkit/components/LinkTile/LinkTile.mdx"
 import PersonaDocs, { metadata as PersonaMetadata } from "ui-toolkit/components/Persona/Persona.mdx"
+import ShaveDocs, { metadata as ShaveMetadata } from "ui-toolkit/components/Shave/Shave.mdx"
 import TextDocs, { metadata as TextMetadata } from "ui-toolkit/components/primitives/Text.mdx"
 import ThemeColorPickerDocs, { metadata as ThemeColorPickerMetadata } from "ui-toolkit/components/inputs/ThemeColorPicker.mdx"
+import ThemePreviewDocs, { metadata as ThemePreviewMetadata } from "ui-toolkit/components/ThemePreview/ThemePreview.mdx"
 import TitleDocs, { metadata as TitleMetadata } from "ui-toolkit/components/primitives/Title.mdx"
 import UseAsyncDataDocs, { metadata as UseAsyncDataMetadata } from "ui-toolkit/hooks/useAsyncData.mdx"
 import UseAutoPagingDocs, { metadata as UseAutoPagingMetadata } from "ui-toolkit/hooks/useAutoPaging.mdx"
@@ -84,8 +87,15 @@ const docs = [
         title: "IconImage",
         section: "components",
         sort: IconImageMetadata?.sort ?? 9999,
-        parent: IconImageMetadata?.parent || "",
+        parent: IconImageMetadata?.parent || "primitives",
         render: () => <IconImageDocs />,
+    },
+   {
+        title: "LinkTile",
+        section: "components",
+        sort: LinkTileMetadata?.sort ?? 9999,
+        parent: LinkTileMetadata?.parent || "",
+        render: () => <LinkTileDocs />,
     },
    {
         title: "Persona",
@@ -93,6 +103,13 @@ const docs = [
         sort: PersonaMetadata?.sort ?? 9999,
         parent: PersonaMetadata?.parent || "",
         render: () => <PersonaDocs />,
+    },
+   {
+        title: "Shave",
+        section: "components",
+        sort: ShaveMetadata?.sort ?? 9999,
+        parent: ShaveMetadata?.parent || "",
+        render: () => <ShaveDocs />,
     },
    {
         title: "Text",
@@ -107,6 +124,13 @@ const docs = [
         sort: ThemeColorPickerMetadata?.sort ?? 9999,
         parent: ThemeColorPickerMetadata?.parent || "inputs",
         render: () => <ThemeColorPickerDocs />,
+    },
+   {
+        title: "ThemePreview",
+        section: "components",
+        sort: ThemePreviewMetadata?.sort ?? 9999,
+        parent: ThemePreviewMetadata?.parent || "",
+        render: () => <ThemePreviewDocs />,
     },
    {
         title: "Title",

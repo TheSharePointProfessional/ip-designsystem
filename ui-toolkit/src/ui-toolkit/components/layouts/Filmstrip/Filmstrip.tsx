@@ -51,9 +51,13 @@ export const Filmstrip: React.FC<FilmstripProps> = function ({
 export default Filmstrip;
 
 export interface FilmstripProps {
+  /** Default is 400. It will try to fit as many items in the parent container as it can without being smaller than the specified width. */
   width?: number;
+  /** Default is 10. Space between items. Pass a number but it is eventually converted to `px` */
   spacing?: number;
+  /** Default is 0. Passing a value (milliseconds) greater than 0 enables auto paging. */
   autopage?: number;
+  /** Class name to help with CSS overrides. */
   className?: string;
   [key: string]: any;
 }

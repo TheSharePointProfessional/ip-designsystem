@@ -3,7 +3,7 @@ import styled from "ui-toolkit/styled-components";
 import { List } from "office-ui-fabric-react/lib/List";
 import { IRectangle } from "office-ui-fabric-react/lib/Utilities";
 
-function VirtualizedGrid<T>({
+export function VirtualizedGrid<T>({
   items,
   renderItem,
   size = 300,
@@ -88,7 +88,7 @@ const calculateItemWidth = ({ gridWidth, gridGap, columnCount }) => {
   return itemWidth;
 };
 
-export default React.memo(VirtualizedGrid);
+export default VirtualizedGrid;
 
 // SIMPLE USAGE
 // <VirtualizedGrid
