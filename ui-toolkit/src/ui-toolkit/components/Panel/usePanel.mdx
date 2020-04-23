@@ -25,6 +25,7 @@ A hook that helps you setup all the `props` for a UI Fabric usePanel.
     <div>
       {!isOpen && <button onClick={openPanel}>Open Panel</button>}
       {isOpen && <button onClick={closePanel}>Close Panel</button>}
+
       <Panel {...panelProps}>
         <h1>I am in a panel!</h1>
         <p>You can put whatever you want in here</p>
@@ -46,20 +47,100 @@ The hooks returns an object with the following properties (usually you'll destru
 
 <PropsTable name="UsePanelResult" />
 
-## IFrame Panel
+## Panel with an IFrame
 
-Here is an example of using the same hook to render our custom `IFramePanel`
+You can pass a `url` (instead of passing `children`) to the `Panel` component, and it will render an IFrame.
 
 ```jsx live=true bordered=true
 () => {
   let url = "https://skylinespark.sharepoint.com/sites/devshowcase";
   let { panelProps, openPanel, closePanel, isOpen } = usePanel({ size: "large" });
+
   return (
     <div>
       {!isOpen && <button onClick={openPanel}>Open Panel</button>}
       {isOpen && <button onClick={closePanel}>Close Panel</button>}
+
       <IFramePanel {...panelProps} url={url} />
     </div>
   );
 };
+```
+
+## Without the hook
+
+If you didn't use the Hook you'd have to write all this code.
+
+```jsx
+import { Panel } from "office-ui-fabric-react/lib/Panel";
+import { IconButton } from "office-ui-fabric-react/lib/Button";
+import styled from "styled-components";
+
+function ThingWithPanel() {
+
+  let [isOpen, setIsOpen] = useState(startOpen);
+
+  let openPanel = useCallback(() => {
+    setIsOpen(true);
+  }, [setIsOpen]);
+
+  let closePanel = useCallback(() => {
+    setIsOpen(false);
+  }, [setIsOpen]);
+
+
+  // If dealing with IFrames in the Panel,
+  // usually want to wire up a way for the Iframed page
+  // to tell the Parent to close the panel
+  useEffect(() => {
+    let handler = (event) => {
+      try {
+        let msg = JSON.parse(event.data);
+        if (msg.type === "CLOSE_PANEL") {
+          closePanel();
+        }
+      } catch (err) {
+        // Couldn't parse json
+      }
+    };
+    window.addEventListener("message", handler, false);
+    return () => {
+      window.removeEventListener("message", handler);
+    };
+  });
+
+  return (
+    <div>
+      {!isOpen && <button onClick={openPanel}>Open Panel</button>}
+      {isOpen && <button onClick={closePanel}>Close Panel</button>}
+
+      <Panel
+        isOpen={isOpen}
+        isLightDismiss={true}
+        onDismiss={closePanel}
+        {/* Override the default Panel Header */}
+        onRenderNavigation={() => (
+          <StyledClose>
+            <IconButton iconProps={{ iconName: "ChromeClose" }} onClick={closePanel} />
+          </StyledClose>
+        )}
+      >
+        <div>I am stuff in a panel</div>
+      </Panel>
+    </div>
+  );
+}
+
+const StyledClose = styled.div`
+  position: absolute;
+  top: 5px;
+  right: 23px;
+  z-index: 10;
+  background: #ffffffbf;
+  border-radius: 50%;
+  opacity: 0.85;
+  &:hover {
+    opacity: 1;
+  }
+`;
 ```

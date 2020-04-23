@@ -6484,6 +6484,47 @@ export default {
         }
       ]
     },
+    "Panel": {
+      "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "Panel",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
+          "kind": "signature",
+          "name": "Panel",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
+        }
+      ]
+    },
     "listenForPanelClose": {
       "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
       "flags": {
@@ -10716,139 +10757,6 @@ export default {
           "kind": "property",
           "name": "date",
           "type": "Date"
-        }
-      ]
-    },
-    "UsePanelResult": {
-      "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "interface",
-      "name": "UsePanelResult",
-      "methods": [],
-      "properties": [
-        {
-          "documentation": {
-            "contents": [
-              "<p>The hook returns the UI Fabric Panel component as a nicety so you don&#39;t have to mess with importing it</p>\n"
-            ],
-            "contentsRaw": "The hook returns the UI Fabric Panel component as a nicety so you don't have to mess with importing it",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "Panel",
-          "type": "any"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>A function you can call to close the panel</p>\n"
-            ],
-            "contentsRaw": "A function you can call to close the panel",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "closePanel",
-          "type": "() => void"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Whether the panel is currently open</p>\n"
-            ],
-            "contentsRaw": "Whether the panel is currently open",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "isOpen",
-          "type": "boolean"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>A function you can call to open the panel</p>\n"
-            ],
-            "contentsRaw": "A function you can call to open the panel",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "openPanel",
-          "type": "() => void"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>The props you should spread onto the Panel component</p>\n"
-            ],
-            "contentsRaw": "The props you should spread onto the Panel component",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "panelProps",
-          "type": "IPanelProps"
         }
       ]
     },
@@ -15260,6 +15168,139 @@ export default {
           "name": "vocab",
           "inheritedFrom": "HTMLAttributes.vocab",
           "type": "string"
+        }
+      ]
+    },
+    "UsePanelResult": {
+      "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "UsePanelResult",
+      "methods": [],
+      "properties": [
+        {
+          "documentation": {
+            "contents": [
+              "<p>The hook returns the UI Fabric Panel component as a nicety so you don&#39;t have to mess with importing it</p>\n"
+            ],
+            "contentsRaw": "The hook returns the UI Fabric Panel component as a nicety so you don't have to mess with importing it",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "Panel",
+          "type": "any"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>A function you can call to close the panel</p>\n"
+            ],
+            "contentsRaw": "A function you can call to close the panel",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "closePanel",
+          "type": "() => void"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Whether the panel is currently open</p>\n"
+            ],
+            "contentsRaw": "Whether the panel is currently open",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "isOpen",
+          "type": "boolean"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>A function you can call to open the panel</p>\n"
+            ],
+            "contentsRaw": "A function you can call to open the panel",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "openPanel",
+          "type": "() => void"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>The props you should spread onto the Panel component</p>\n"
+            ],
+            "contentsRaw": "The props you should spread onto the Panel component",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "panelProps",
+          "type": "IPanelProps"
         }
       ]
     },

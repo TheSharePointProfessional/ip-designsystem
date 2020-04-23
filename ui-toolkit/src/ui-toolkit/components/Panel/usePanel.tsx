@@ -1,7 +1,8 @@
 import React, { useState, useCallback, useEffect } from "react";
 import styled from "ui-toolkit/styled-components";
 import { IconButton } from "office-ui-fabric-react/lib/Button";
-import { PanelType, Panel, IPanelProps } from "office-ui-fabric-react/lib/Panel";
+import { PanelType, Panel as FabricPanel, IPanelProps } from "office-ui-fabric-react/lib/Panel";
+import IFramePanel from "./IFramePanel";
 
 export interface PanelOptions {
   /** Defaults to false. Should the panel be open by default? */
@@ -49,6 +50,15 @@ export function usePanel(opts: PanelOptions = {}) {
   } as UsePanelResult;
 }
 
+export interface PanelProps extends IPanelProps {
+  url?: string;
+}
+
+export const Panel: React.FC<PanelProps> = function ({ url, ...panelProps }) {
+  if (url) return <IFramePanel url={url} {...panelProps} />;
+
+  return <FabricPanel {...panelProps} />;
+};
 export interface UsePanelResult {
   /** Whether the panel is currently open */
   isOpen: boolean;
