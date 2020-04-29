@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState, useCallback, useEffect, useMemo } from "react";
 import styled from "ui-toolkit/styled-components";
 import { IconButton } from "office-ui-fabric-react/lib/Button";
 import { PanelType, Panel as FabricPanel, IPanelProps } from "office-ui-fabric-react/lib/Panel";
@@ -9,6 +9,10 @@ export interface PanelOptions {
   startOpen?: boolean;
   /** The size of the panel. "small", "medium", "large", or a Number */
   size?: PanelSize;
+
+  close?: () => void;
+  open?: () => void;
+  controlledIsOpen?: boolean;
 }
 let defaults: PanelOptions = {
   startOpen: false,
@@ -16,15 +20,22 @@ let defaults: PanelOptions = {
 };
 
 export function usePanel(opts: PanelOptions = {}) {
-  let { startOpen, size } = { ...defaults, ...opts };
+  let { startOpen, size, open, close, controlledIsOpen } = { ...defaults, ...opts };
   let [isOpen, setIsOpen] = useState(startOpen);
-  let openPanel = useCallback(() => {
-    setIsOpen(true);
-  }, [setIsOpen]);
 
-  let closePanel = useCallback(() => {
-    setIsOpen(false);
-  }, [setIsOpen]);
+  let openPanel = useMemo(() => {
+    if (open) return open;
+    return () => setIsOpen(true);
+  }, [setIsOpen, open]);
+
+  let closePanel = useMemo(() => {
+    if (close) return close;
+    return () => setIsOpen(false);
+  }, [setIsOpen, close]);
+
+  useEffect(() => {
+    setIsOpen(controlledIsOpen);
+  }, [controlledIsOpen]);
 
   useEffect(() => listenForPanelClose(closePanel));
 
