@@ -1,13 +1,13 @@
 export const metadata = {
   parent: "surfaces",
 };
-import BigDate from "./BigDate.tsx";
+import { BigDate, BigDateRange } from "./BigDate.tsx";
 import { PropsTable, Showcase } from "docs";
 
 # BigDate
 
 ```tsx
-import { BigDate } from "ui-toolkit";
+import { BigDate, BigDateRange } from "ui-toolkit";
 ```
 
 Displays a date nice and big with white text and a text shadows. <b>Looks good over images or
@@ -22,9 +22,13 @@ background colors</b>.
   </div>
 </Showcase>
 
-## Props
+## BigDate Props
 
 <PropsTable name="BigDateProps" />
+
+## BigDateRange Props
+
+<PropsTable name="BigDateRangeProps" />
 
 ## Basic Usage
 
@@ -47,4 +51,23 @@ You can pass a `style` object to style things directly.
 
   <BigDate date={new Date()} style={{ fontSize: "36px", color: "#387c9c", textShadow: "none" }} />
 </div>
+```
+
+## Multi Date
+
+```jsx live=true
+() => {
+  let endDate = new Date();
+  let newEndDate = endDate.setDate(endDate.getDate() + 2);
+  return (
+    <div style={{ display: "flex" }}>
+      <BigDateRange start={new Date()} style={{ background: "steelblue", margin: "5px" }} />
+      <BigDateRange
+        start={new Date()}
+        end={newEndDate}
+        style={{ background: "steelblue", margin: "5px" }}
+      />
+    </div>
+  );
+};
 ```
