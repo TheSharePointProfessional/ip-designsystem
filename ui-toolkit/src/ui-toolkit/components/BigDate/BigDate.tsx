@@ -106,9 +106,9 @@ export interface BigDateProps {
 }
 
 export interface BigDateRangeProps {
-  /** The start date */
+  /** The start date, the date that displays if there is no end date */
   start: Date;
-  /** The end date is optional, if not passed a BigDate will render */
+  /** The end date is optional, if not passed a BigDate component will render */
   end?: Date;
   /** An optional class name to help with style overrides */
   className?: string;
