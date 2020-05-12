@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prestart": "npm run codegen",
+    "prestart": "npm run clean && npm run codegen",
     "start:offline": "parcel index.html",
     "start": "concurrently \"gulp small-serve\" \"parcel src/entry.ts --out-dir ClientSideAssets\"",
     "deploy": "powershell tasks/deploy.ps1",
     "prebuild": "npm run codegen",
     "build": "parcel build src/entry.ts --out-dir ClientSideAssets --public-url /sites/apps/ClientSideAssets/ui-toolkit",
-    "codegen": "node tasks/generateTypes && node tasks/generateMdxDocs"
+    "codegen": "node tasks/generateTypes && node tasks/generateMdxDocs",
+    "clean": "rimraf .cache"
   },
   "author": "Andrew Petersen",
   "license": "ISC",
