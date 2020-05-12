@@ -6402,8 +6402,8 @@ export default {
         }
       ]
     },
-    "VerticalItem": {
-      "fileName": "src\\ui-toolkit\\components\\layouts\\VerticalList\\VerticalList.tsx",
+    "VerticalItemDescription": {
+      "fileName": "src\\ui-toolkit\\components\\layouts\\VerticalList\\VerticalItemDescription.tsx",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -6415,246 +6415,16 @@ export default {
         "isStatic": false
       },
       "kind": "method",
-      "name": "VerticalItem",
+      "name": "VerticalItemDescription",
       "signatures": [
         {
-          "fileName": "src\\ui-toolkit\\components\\layouts\\VerticalList\\VerticalList.tsx",
+          "fileName": "src\\ui-toolkit\\components\\layouts\\VerticalList\\VerticalItemDescription.tsx",
           "kind": "signature",
-          "name": "VerticalItem",
+          "name": "VerticalItemDescription",
           "parameters": [
             {
               "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "Element<>",
-          "type": "(__namedParameters: ) => Element<>"
-        }
-      ]
-    },
-    "BigDate": {
-      "fileName": "src\\ui-toolkit\\components\\BigDate\\BigDate.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "BigDate",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\BigDate\\BigDate.tsx",
-          "kind": "signature",
-          "name": "BigDate",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "Element<>",
-          "type": "(__namedParameters: ) => Element<>"
-        }
-      ]
-    },
-    "Panel": {
-      "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": true,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "Panel",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
-          "kind": "signature",
-          "name": "Panel",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "Element<>",
-          "type": "(__namedParameters: ) => Element<>"
-        }
-      ]
-    },
-    "listenForPanelClose": {
-      "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": true,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "listenForPanelClose",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
-          "kind": "signature",
-          "name": "listenForPanelClose",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "cb",
-              "type": "() => void"
-            }
-          ],
-          "returnType": "(Anonymous function)",
-          "type": "(cb: () => void) => (Anonymous function)"
-        }
-      ]
-    },
-    "triggerPanelClose": {
-      "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": true,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "triggerPanelClose",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
-          "kind": "signature",
-          "name": "triggerPanelClose",
-          "parameters": [],
-          "returnType": "void",
-          "type": "() => void"
-        }
-      ]
-    },
-    "IFramePanel": {
-      "fileName": "src\\ui-toolkit\\components\\Panel\\IFramePanel.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": true,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "IFramePanel",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\Panel\\IFramePanel.tsx",
-          "kind": "signature",
-          "name": "IFramePanel",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "Element<>",
-          "type": "(__namedParameters: ) => Element<>"
-        }
-      ]
-    },
-    "PanelLink": {
-      "fileName": "src\\ui-toolkit\\components\\panel\\PanelLink.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "PanelLink",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\panel\\PanelLink.tsx",
-          "kind": "signature",
-          "name": "PanelLink",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
+                "isExported": false,
                 "isExternal": false,
                 "isOptional": false,
                 "isPrivate": false,
@@ -6726,62 +6496,6 @@ export default {
           ],
           "returnType": "(Anonymous function)",
           "type": "(func: any, wait: any) => (Anonymous function)"
-        }
-      ]
-    },
-    "ensureProperty": {
-      "fileName": "src\\ui-toolkit\\core\\utils\\utils.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "ensureProperty",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\core\\utils\\utils.ts",
-          "kind": "signature",
-          "name": "ensureProperty",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "obj",
-              "type": "Object"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "path",
-              "type": "string"
-            }
-          ],
-          "returnType": "boolean",
-          "type": "(obj: Object, path: string) => boolean"
         }
       ]
     },
@@ -7129,6 +6843,319 @@ export default {
           ],
           "returnType": "any",
           "type": "(path: string, fallback: string, theme?: any) => any"
+        }
+      ]
+    },
+    "BigDate": {
+      "fileName": "src\\ui-toolkit\\components\\BigDate\\BigDate.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "BigDate",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\BigDate\\BigDate.tsx",
+          "kind": "signature",
+          "name": "BigDate",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
+        }
+      ]
+    },
+    "BigDateRange": {
+      "fileName": "src\\ui-toolkit\\components\\BigDate\\BigDate.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "BigDateRange",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\BigDate\\BigDate.tsx",
+          "kind": "signature",
+          "name": "BigDateRange",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
+        }
+      ]
+    },
+    "usePanel": {
+      "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "usePanel",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
+          "kind": "signature",
+          "name": "usePanel",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "opts",
+              "defaultValue": "{}",
+              "type": "PanelOptions"
+            }
+          ],
+          "returnType": "UsePanelResult",
+          "type": "(opts?: PanelOptions) => UsePanelResult"
+        }
+      ]
+    },
+    "Panel": {
+      "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "Panel",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
+          "kind": "signature",
+          "name": "Panel",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
+        }
+      ]
+    },
+    "listenForPanelClose": {
+      "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "listenForPanelClose",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
+          "kind": "signature",
+          "name": "listenForPanelClose",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "cb",
+              "type": "() => void"
+            }
+          ],
+          "returnType": "(Anonymous function)",
+          "type": "(cb: () => void) => (Anonymous function)"
+        }
+      ]
+    },
+    "triggerPanelClose": {
+      "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "triggerPanelClose",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
+          "kind": "signature",
+          "name": "triggerPanelClose",
+          "parameters": [],
+          "returnType": "void",
+          "type": "() => void"
+        }
+      ]
+    },
+    "IFramePanel": {
+      "fileName": "src\\ui-toolkit\\components\\Panel\\IFramePanel.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "IFramePanel",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\Panel\\IFramePanel.tsx",
+          "kind": "signature",
+          "name": "IFramePanel",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
+        }
+      ]
+    },
+    "PanelLink": {
+      "fileName": "src\\ui-toolkit\\components\\panel\\PanelLink.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "PanelLink",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\panel\\PanelLink.tsx",
+          "kind": "signature",
+          "name": "PanelLink",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
         }
       ]
     },
@@ -8338,8 +8365,8 @@ export default {
         }
       ]
     },
-    "VerticalItemDescription": {
-      "fileName": "src\\ui-toolkit\\components\\layouts\\VerticalList\\VerticalItemDescription.tsx",
+    "ensureProperty": {
+      "fileName": "src\\ui-toolkit\\core\\utils\\utils.ts",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -8351,16 +8378,72 @@ export default {
         "isStatic": false
       },
       "kind": "method",
-      "name": "VerticalItemDescription",
+      "name": "ensureProperty",
       "signatures": [
         {
-          "fileName": "src\\ui-toolkit\\components\\layouts\\VerticalList\\VerticalItemDescription.tsx",
+          "fileName": "src\\ui-toolkit\\core\\utils\\utils.ts",
           "kind": "signature",
-          "name": "VerticalItemDescription",
+          "name": "ensureProperty",
           "parameters": [
             {
               "flags": {
-                "isExported": false,
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "obj",
+              "type": "Object"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "path",
+              "type": "string"
+            }
+          ],
+          "returnType": "boolean",
+          "type": "(obj: Object, path: string) => boolean"
+        }
+      ]
+    },
+    "VerticalItem": {
+      "fileName": "src\\ui-toolkit\\components\\layouts\\VerticalList\\VerticalList.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "VerticalItem",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\layouts\\VerticalList\\VerticalList.tsx",
+          "kind": "signature",
+          "name": "VerticalItem",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
                 "isExternal": false,
                 "isOptional": false,
                 "isPrivate": false,
@@ -8376,48 +8459,6 @@ export default {
           ],
           "returnType": "Element<>",
           "type": "(__namedParameters: ) => Element<>"
-        }
-      ]
-    },
-    "usePanel": {
-      "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": true,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "usePanel",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
-          "kind": "signature",
-          "name": "usePanel",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "opts",
-              "defaultValue": "{}",
-              "type": "PanelOptions"
-            }
-          ],
-          "returnType": "UsePanelResult",
-          "type": "(opts?: PanelOptions) => UsePanelResult"
         }
       ]
     },
@@ -10506,8 +10547,8 @@ export default {
         }
       ]
     },
-    "VerticalItemDescriptionProps": {
-      "fileName": "src\\ui-toolkit\\components\\layouts\\VerticalList\\VerticalItemDescription.tsx",
+    "ThumbnailProps": {
+      "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -10519,9 +10560,9 @@ export default {
         "isStatic": false
       },
       "kind": "interface",
-      "name": "VerticalItemDescriptionProps",
+      "name": "ThumbnailProps",
       "indexSignature": {
-        "fileName": "src\\ui-toolkit\\components\\layouts\\VerticalList\\VerticalItemDescription.tsx",
+        "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
         "kind": "signature",
         "name": "__index",
         "parameters": [
@@ -10547,7 +10588,7 @@ export default {
       "methods": [],
       "properties": [
         {
-          "fileName": "src\\ui-toolkit\\components\\layouts\\VerticalList\\VerticalItemDescription.tsx",
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -10563,7 +10604,7 @@ export default {
           "type": "string"
         },
         {
-          "fileName": "src\\ui-toolkit\\components\\layouts\\VerticalList\\VerticalItemDescription.tsx",
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -10575,8 +10616,74 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "shave",
-          "type": "number"
+          "name": "height",
+          "type": "string"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "shape",
+          "type": "\"circle\" | \"rectangle\" | \"square\""
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "width",
+          "type": "string"
+        }
+      ]
+    },
+    "PortalsThemeProviderProps": {
+      "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "PortalsThemeProviderProps",
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "theme",
+          "type": "IReadonlyTheme"
         }
       ]
     },
@@ -10594,6 +10701,30 @@ export default {
       },
       "kind": "interface",
       "name": "BigDateProps",
+      "indexSignature": {
+        "fileName": "src\\ui-toolkit\\components\\BigDate\\BigDate.tsx",
+        "kind": "signature",
+        "name": "__index",
+        "parameters": [
+          {
+            "flags": {
+              "isExported": true,
+              "isExternal": false,
+              "isOptional": false,
+              "isPrivate": false,
+              "isProtected": false,
+              "isPublic": false,
+              "isRest": false,
+              "isStatic": false
+            },
+            "kind": "parameter",
+            "name": "key",
+            "type": "string"
+          }
+        ],
+        "returnType": "any",
+        "type": "{ [key: string]: any }"
+      },
       "methods": [],
       "properties": [
         {
@@ -10644,11 +10775,234 @@ export default {
         }
       ]
     },
+    "BigDateRangeProps": {
+      "fileName": "src\\ui-toolkit\\components\\BigDate\\BigDate.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "BigDateRangeProps",
+      "indexSignature": {
+        "fileName": "src\\ui-toolkit\\components\\BigDate\\BigDate.tsx",
+        "kind": "signature",
+        "name": "__index",
+        "parameters": [
+          {
+            "flags": {
+              "isExported": true,
+              "isExternal": false,
+              "isOptional": false,
+              "isPrivate": false,
+              "isProtected": false,
+              "isPublic": false,
+              "isRest": false,
+              "isStatic": false
+            },
+            "kind": "parameter",
+            "name": "key",
+            "type": "string"
+          }
+        ],
+        "returnType": "any",
+        "type": "{ [key: string]: any }"
+      },
+      "methods": [],
+      "properties": [
+        {
+          "documentation": {
+            "contents": [
+              "<p>An optional class name to help with style overrides</p>\n"
+            ],
+            "contentsRaw": "An optional class name to help with style overrides",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\BigDate\\BigDate.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "className",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>The end date is optional, if not passed a BigDate component will render</p>\n"
+            ],
+            "contentsRaw": "The end date is optional, if not passed a BigDate component will render",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\BigDate\\BigDate.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "end",
+          "type": "Date"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>The start date, the date that displays if there is no end date</p>\n"
+            ],
+            "contentsRaw": "The start date, the date that displays if there is no end date",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\BigDate\\BigDate.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "start",
+          "type": "Date"
+        }
+      ]
+    },
+    "PanelOptions": {
+      "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "PanelOptions",
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "close",
+          "type": "() => void"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "controlledIsOpen",
+          "type": "boolean"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "open",
+          "type": "() => void"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>The size of the panel. &quot;small&quot;, &quot;medium&quot;, &quot;large&quot;, or a Number</p>\n"
+            ],
+            "contentsRaw": "The size of the panel. \"small\", \"medium\", \"large\", or a Number",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "size",
+          "type": "PanelSize"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defaults to false. Should the panel be open by default?</p>\n"
+            ],
+            "contentsRaw": "Defaults to false. Should the panel be open by default?",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "startOpen",
+          "type": "boolean"
+        }
+      ]
+    },
     "PanelProps": {
       "fileName": "src\\ui-toolkit\\components\\Panel\\IFramePanel.tsx",
       "flags": {
         "isExported": true,
-        "isExternal": true,
+        "isExternal": false,
         "isOptional": false,
         "isPrivate": false,
         "isProtected": false,
@@ -10667,7 +11021,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -10684,7 +11038,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -10712,7 +11066,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -10729,7 +11083,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -10746,7 +11100,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -10763,7 +11117,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -10780,7 +11134,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -10808,7 +11162,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -10832,7 +11186,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -10849,7 +11203,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -10874,7 +11228,7 @@ export default {
           "flags": {
             "isDeprecated": "Serves no function.",
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -10898,7 +11252,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -10915,7 +11269,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -10932,7 +11286,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -10956,7 +11310,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -10973,7 +11327,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -10990,7 +11344,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11007,7 +11361,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11024,7 +11378,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11041,7 +11395,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11058,7 +11412,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11086,7 +11440,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11111,7 +11465,7 @@ export default {
           "flags": {
             "isDeprecated": "Use `focusTrapZoneProps`.",
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11135,7 +11489,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11160,7 +11514,7 @@ export default {
           "flags": {
             "isDeprecated": "Use `focusTrapZoneProps`.",
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11188,7 +11542,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11212,7 +11566,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11240,7 +11594,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11264,7 +11618,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11281,7 +11635,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11298,7 +11652,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11327,7 +11681,7 @@ export default {
           "flags": {
             "isDeprecated": "Use `focusTrapZoneProps`.",
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11344,7 +11698,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11361,7 +11715,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11378,7 +11732,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11406,7 +11760,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11434,7 +11788,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11462,7 +11816,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11490,7 +11844,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11518,7 +11872,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11535,7 +11889,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11552,7 +11906,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11569,7 +11923,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11586,7 +11940,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11603,7 +11957,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11620,7 +11974,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11644,7 +11998,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11661,7 +12015,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11678,7 +12032,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11695,7 +12049,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11712,7 +12066,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11729,7 +12083,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11746,7 +12100,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11763,7 +12117,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11780,7 +12134,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11797,7 +12151,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11814,7 +12168,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11831,7 +12185,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11848,7 +12202,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11865,7 +12219,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11882,7 +12236,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11899,7 +12253,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11916,7 +12270,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11933,7 +12287,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11950,7 +12304,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11967,7 +12321,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -11984,7 +12338,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12001,7 +12355,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12018,7 +12372,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12035,7 +12389,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12052,7 +12406,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12069,7 +12423,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12086,7 +12440,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12103,7 +12457,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12120,7 +12474,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12137,7 +12491,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12154,7 +12508,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12171,7 +12525,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12188,7 +12542,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12212,7 +12566,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12236,7 +12590,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12253,7 +12607,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12270,7 +12624,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12287,7 +12641,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12304,7 +12658,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12321,7 +12675,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12338,7 +12692,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12355,7 +12709,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12372,7 +12726,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12389,7 +12743,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12406,7 +12760,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12423,7 +12777,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12440,7 +12794,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12457,7 +12811,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12474,7 +12828,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12491,7 +12845,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12508,7 +12862,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12525,7 +12879,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12542,7 +12896,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12559,7 +12913,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12576,7 +12930,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12593,7 +12947,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12610,7 +12964,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12627,7 +12981,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12644,7 +12998,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12661,7 +13015,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12678,7 +13032,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12695,7 +13049,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12712,7 +13066,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12729,7 +13083,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12746,7 +13100,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12763,7 +13117,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12780,7 +13134,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12797,7 +13151,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12814,7 +13168,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12831,7 +13185,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12848,7 +13202,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12865,7 +13219,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12882,7 +13236,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12899,7 +13253,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12916,7 +13270,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12933,7 +13287,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12950,7 +13304,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12974,7 +13328,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -12991,7 +13345,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13008,7 +13362,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13025,7 +13379,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13042,7 +13396,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13059,7 +13413,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13076,7 +13430,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13093,7 +13447,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13110,7 +13464,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13127,7 +13481,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13144,7 +13498,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13161,7 +13515,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13178,7 +13532,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13195,7 +13549,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13212,7 +13566,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13229,7 +13583,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13246,7 +13600,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13263,7 +13617,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13280,7 +13634,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13297,7 +13651,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13314,7 +13668,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13331,7 +13685,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13348,7 +13702,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13372,7 +13726,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13396,7 +13750,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13420,7 +13774,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13437,7 +13791,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13454,7 +13808,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13471,7 +13825,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13488,7 +13842,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13505,7 +13859,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13522,7 +13876,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13539,7 +13893,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13556,7 +13910,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13573,7 +13927,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13590,7 +13944,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13607,7 +13961,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13624,7 +13978,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13641,7 +13995,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13658,7 +14012,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13675,7 +14029,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13692,7 +14046,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13709,7 +14063,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13726,7 +14080,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13743,7 +14097,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13760,7 +14114,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13777,7 +14131,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13794,7 +14148,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13811,7 +14165,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13828,7 +14182,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13845,7 +14199,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13862,7 +14216,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13879,7 +14233,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13896,7 +14250,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13920,7 +14274,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13944,7 +14298,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13968,7 +14322,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -13992,7 +14346,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14016,7 +14370,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14040,7 +14394,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14057,7 +14411,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14074,7 +14428,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14091,7 +14445,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14108,7 +14462,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14125,7 +14479,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14142,7 +14496,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14159,7 +14513,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14176,7 +14530,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14193,7 +14547,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14210,7 +14564,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14227,7 +14581,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14244,7 +14598,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14261,7 +14615,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14278,7 +14632,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14295,7 +14649,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14312,7 +14666,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14329,7 +14683,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14346,7 +14700,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14363,7 +14717,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14380,7 +14734,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14397,7 +14751,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14414,7 +14768,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14431,7 +14785,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14448,7 +14802,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14465,7 +14819,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14482,7 +14836,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14499,7 +14853,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14516,7 +14870,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14533,7 +14887,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14550,7 +14904,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14567,7 +14921,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14584,7 +14938,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14601,7 +14955,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14618,7 +14972,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14642,7 +14996,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14659,7 +15013,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14676,7 +15030,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14693,7 +15047,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14710,7 +15064,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14727,7 +15081,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14744,7 +15098,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14761,7 +15115,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14778,7 +15132,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14795,7 +15149,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14812,7 +15166,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14829,7 +15183,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14853,7 +15207,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14870,7 +15224,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14887,7 +15241,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14904,7 +15258,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14928,7 +15282,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14945,7 +15299,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14973,7 +15327,7 @@ export default {
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -14990,7 +15344,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -15007,7 +15361,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -15024,7 +15378,7 @@ export default {
           "fileName": "src\\ui-toolkit\\components\\Panel\\IFramePanel.tsx",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": false,
             "isPrivate": false,
             "isProtected": false,
@@ -15040,7 +15394,7 @@ export default {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -15059,7 +15413,7 @@ export default {
       "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
       "flags": {
         "isExported": true,
-        "isExternal": true,
+        "isExternal": false,
         "isOptional": false,
         "isPrivate": false,
         "isProtected": false,
@@ -15082,7 +15436,7 @@ export default {
           "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -15105,7 +15459,7 @@ export default {
           "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": false,
             "isPrivate": false,
             "isProtected": false,
@@ -15128,7 +15482,7 @@ export default {
           "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": false,
             "isPrivate": false,
             "isProtected": false,
@@ -15151,7 +15505,7 @@ export default {
           "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": false,
             "isPrivate": false,
             "isProtected": false,
@@ -15174,7 +15528,7 @@ export default {
           "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": false,
             "isPrivate": false,
             "isProtected": false,
@@ -15192,7 +15546,7 @@ export default {
       "fileName": "src\\ui-toolkit\\components\\panel\\PanelLink.tsx",
       "flags": {
         "isExported": true,
-        "isExternal": false,
+        "isExternal": true,
         "isOptional": false,
         "isPrivate": false,
         "isProtected": false,
@@ -15232,7 +15586,7 @@ export default {
           "fileName": "src\\ui-toolkit\\components\\panel\\PanelLink.tsx",
           "flags": {
             "isExported": true,
-            "isExternal": false,
+            "isExternal": true,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -15248,7 +15602,7 @@ export default {
           "fileName": "src\\ui-toolkit\\components\\panel\\PanelLink.tsx",
           "flags": {
             "isExported": true,
-            "isExternal": false,
+            "isExternal": true,
             "isOptional": false,
             "isPrivate": false,
             "isProtected": false,
@@ -15264,7 +15618,7 @@ export default {
           "fileName": "src\\ui-toolkit\\components\\panel\\PanelLink.tsx",
           "flags": {
             "isExported": true,
-            "isExternal": false,
+            "isExternal": true,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -15280,7 +15634,7 @@ export default {
           "fileName": "src\\ui-toolkit\\components\\panel\\PanelLink.tsx",
           "flags": {
             "isExported": true,
-            "isExternal": false,
+            "isExternal": true,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -15291,74 +15645,6 @@ export default {
           "kind": "property",
           "name": "title",
           "type": "string"
-        }
-      ]
-    },
-    "PortalsThemeProviderProps": {
-      "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "interface",
-      "name": "PortalsThemeProviderProps",
-      "methods": [],
-      "properties": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "theme",
-          "type": "IReadonlyTheme"
-        }
-      ]
-    },
-    "Window": {
-      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "interface",
-      "name": "Window",
-      "methods": [],
-      "properties": [
-        {
-          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "__portalsDev",
-          "type": ""
         }
       ]
     },
@@ -16598,6 +16884,40 @@ export default {
         }
       ]
     },
+    "Window": {
+      "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "Window",
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "__portalsDev",
+          "type": ""
+        }
+      ]
+    },
     "HowManyFitOptions": {
       "fileName": "src\\ui-toolkit\\hooks\\useHowManyFit.ts",
       "flags": {
@@ -16958,8 +17278,8 @@ export default {
         }
       ]
     },
-    "ThumbnailProps": {
-      "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+    "VerticalItemDescriptionProps": {
+      "fileName": "src\\ui-toolkit\\components\\layouts\\VerticalList\\VerticalItemDescription.tsx",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -16971,9 +17291,9 @@ export default {
         "isStatic": false
       },
       "kind": "interface",
-      "name": "ThumbnailProps",
+      "name": "VerticalItemDescriptionProps",
       "indexSignature": {
-        "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+        "fileName": "src\\ui-toolkit\\components\\layouts\\VerticalList\\VerticalItemDescription.tsx",
         "kind": "signature",
         "name": "__index",
         "parameters": [
@@ -16999,7 +17319,7 @@ export default {
       "methods": [],
       "properties": [
         {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+          "fileName": "src\\ui-toolkit\\components\\layouts\\VerticalList\\VerticalItemDescription.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -17015,7 +17335,7 @@ export default {
           "type": "string"
         },
         {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
+          "fileName": "src\\ui-toolkit\\components\\layouts\\VerticalList\\VerticalItemDescription.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -17027,104 +17347,8 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "height",
-          "type": "string"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "shape",
-          "type": "\"circle\" | \"rectangle\" | \"square\""
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "width",
-          "type": "string"
-        }
-      ]
-    },
-    "PanelOptions": {
-      "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": true,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "interface",
-      "name": "PanelOptions",
-      "methods": [],
-      "properties": [
-        {
-          "documentation": {
-            "contents": [
-              "<p>The size of the panel. &quot;small&quot;, &quot;medium&quot;, &quot;large&quot;, or a Number</p>\n"
-            ],
-            "contentsRaw": "The size of the panel. \"small\", \"medium\", \"large\", or a Number",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": true,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "size",
-          "type": "PanelSize"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Defaults to false. Should the panel be open by default?</p>\n"
-            ],
-            "contentsRaw": "Defaults to false. Should the panel be open by default?",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": true,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "startOpen",
-          "type": "boolean"
+          "name": "shave",
+          "type": "number"
         }
       ]
     },
@@ -19795,7 +20019,7 @@ export default {
       "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
       "flags": {
         "isExported": true,
-        "isExternal": true,
+        "isExternal": false,
         "isOptional": false,
         "isPrivate": false,
         "isProtected": false,
