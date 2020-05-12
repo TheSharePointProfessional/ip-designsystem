@@ -8,6 +8,57 @@ import startOfDay from "date-fns/startOfDay";
 const DATE_FORMAT = "EEE, MMM do";
 
 const getTimeFormat = (date: Date) => (getMinutes(date) === 0 ? "haaaa" : "h:mmaaaa");
+type DateRangeType =
+  | "single-day-time"
+  | "single-day-times"
+  | "single-all-day"
+  | "multi-day-time"
+  | "multi-all-day";
+
+export function getDateRangeType(start: Date, end?: Date): DateRangeType {
+  if (!isValid(start)) return null;
+
+  //single-day-time
+  // no end date, start time not midnight
+  if (!isValid(end) && !checkIsMidnight(start)) {
+    return "single-day-time";
+  }
+
+  //"single-all-day"
+  // no end date, time is midnight
+  if (!isValid(end) && checkIsMidnight(start)) {
+    return "single-all-day";
+  }
+
+  //single-day-times
+  // has end date, start and end are the same day
+  if (isValid(end) && checkSameDay(start, end)) {
+    return "single-day-times";
+  }
+
+  //multi-day-time
+  // both start date and end date, start and end are different, both times are not midnight
+  if (
+    isValid(end) &&
+    !checkSameDay(start, end) &&
+    !(checkIsMidnight(start) && checkIsMidnight(end))
+  ) {
+    return "multi-day-time";
+  }
+  //multi-all-day
+  // both start date and end date, start and end are different, both times are midnight
+  if (isValid(end) && !checkSameDay(start, end) && checkIsMidnight(start) && checkIsMidnight(end)) {
+    return "multi-all-day";
+  }
+}
+
+function checkSameDay(start, end) {
+  return isEqual(startOfDay(start), startOfDay(end));
+}
+
+function checkIsMidnight(date) {
+  return isEqual(startOfDay(date), date);
+}
 
 export default function DateRangeText(event: DateRangeTextProps) {
   if (!isValid(event.start)) return null;
