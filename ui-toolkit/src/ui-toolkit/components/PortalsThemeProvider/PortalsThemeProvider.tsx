@@ -48,7 +48,7 @@ export function getPortalsTheme() {
 // getThemeColor("red") => "#f00"
 // getThemeColor("bodyText") => theme.semanticColor.bodyText
 // getThemeColor("themePrimary") => theme.palette.themePrimary
-// getThemeColor("bodyText", true) => theme.global.bodyText
+// getThemeColor("bodyText", false) => theme.global.bodyText
 
 export function getThemeColor(color: string, obeyVariant = true) {
   if (color === "primary") {

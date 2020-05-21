@@ -10,3 +10,4 @@ export * from "./Panel";
 export * from "./Shave/Shave";
 export * from "./LinkTile/LinkTile";
 export * from "./ThemePreview/ThemePreview";
+export * from "./PortalsThemeProvider/PortalsThemeProvider";

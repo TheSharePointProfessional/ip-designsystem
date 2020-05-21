@@ -10,6 +10,7 @@ import HomeDocs, { metadata as HomeMetadata } from "ui-toolkit/Home.mdx"
 import IconImageDocs, { metadata as IconImageMetadata } from "ui-toolkit/components/primitives/IconImage.mdx"
 import LinkTileDocs, { metadata as LinkTileMetadata } from "ui-toolkit/components/LinkTile/LinkTile.mdx"
 import PersonaDocs, { metadata as PersonaMetadata } from "ui-toolkit/components/Persona/Persona.mdx"
+import PortalsThemeProviderDocs, { metadata as PortalsThemeProviderMetadata } from "ui-toolkit/components/PortalsThemeProvider/PortalsThemeProvider.mdx"
 import ShaveDocs, { metadata as ShaveMetadata } from "ui-toolkit/components/Shave/Shave.mdx"
 import TextDocs, { metadata as TextMetadata } from "ui-toolkit/components/primitives/Text.mdx"
 import ThemeColorPickerDocs, { metadata as ThemeColorPickerMetadata } from "ui-toolkit/components/inputs/ThemeColorPicker.mdx"
@@ -22,7 +23,7 @@ import UseDebouncedValueDocs, { metadata as UseDebouncedValueMetadata } from "ui
 import UseIntervalDocs, { metadata as UseIntervalMetadata } from "ui-toolkit/hooks/useInterval.mdx"
 import UsePagedItemsDocs, { metadata as UsePagedItemsMetadata } from "ui-toolkit/hooks/usePagedItems.mdx"
 import UsePagingDocs, { metadata as UsePagingMetadata } from "ui-toolkit/hooks/usePaging.mdx"
-import UsePanelDocs, { metadata as UsePanelMetadata } from "ui-toolkit/components/panel/usePanel.mdx"
+import UsePanelDocs, { metadata as UsePanelMetadata } from "ui-toolkit/components/Panel/usePanel.mdx"
 import UsePersistedStateDocs, { metadata as UsePersistedStateMetadata } from "ui-toolkit/hooks/usePersistedState.mdx"
 import UseQueryStringDocs, { metadata as UseQueryStringMetadata } from "ui-toolkit/hooks/useQueryString.mdx"
 
@@ -103,6 +104,13 @@ const docs = [
         sort: PersonaMetadata?.sort ?? 9999,
         parent: PersonaMetadata?.parent || "",
         render: () => <PersonaDocs />,
+    },
+   {
+        title: "PortalsThemeProvider",
+        section: "components",
+        sort: PortalsThemeProviderMetadata?.sort ?? 9999,
+        parent: PortalsThemeProviderMetadata?.parent || "",
+        render: () => <PortalsThemeProviderDocs />,
     },
    {
         title: "Shave",
@@ -192,7 +200,7 @@ const docs = [
         title: "UsePanel",
         section: "components",
         sort: UsePanelMetadata?.sort ?? 9999,
-        parent: UsePanelMetadata?.parent || "panel",
+        parent: UsePanelMetadata?.parent || "Panel",
         render: () => <UsePanelDocs />,
     },
    {
