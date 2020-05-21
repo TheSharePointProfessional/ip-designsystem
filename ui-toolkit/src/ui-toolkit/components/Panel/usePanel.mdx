@@ -82,14 +82,14 @@ You can pass a `url` (instead of passing `children`) to the `Panel` component, a
 ```jsx live=true bordered=true
 () => {
   let url = "https://skylinespark.sharepoint.com/sites/devshowcase";
-  let { panelProps, openPanel, closePanel, isOpen } = usePanel({ size: 900 });
+  let { Panel, panelProps, openPanel, closePanel, isOpen } = usePanel({ size: "large" });
 
   return (
     <div>
       {!isOpen && <button onClick={openPanel}>Open Panel</button>}
       {isOpen && <button onClick={closePanel}>Close Panel</button>}
 
-      <IFramePanel {...panelProps} url={url} />
+      <Panel {...panelProps} url={url} />
     </div>
   );
 };
