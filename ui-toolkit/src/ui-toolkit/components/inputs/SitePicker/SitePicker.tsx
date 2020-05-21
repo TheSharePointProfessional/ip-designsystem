@@ -1,16 +1,16 @@
 import * as React from "react";
 import SiteChoiceGroup, { SiteChoiceType } from "./siteChoiceGroup";
 import SiteUrlInput from "./SiteUrlInput";
-import { getCurrentWebUrl as getCurrentSiteUrl } from "../../core/utils/sharepointUtils";
+import { getCurrentWebUrl as getCurrentSiteUrl } from "ui-toolkit/core/utils/sharepointUtils";
 import styled from "ui-toolkit/styled-components";
 
-const checkIsThisSite = function(siteUrl, currentSiteUrl) {
+const checkIsThisSite = function (siteUrl, currentSiteUrl) {
   return !siteUrl || siteUrl.toLowerCase() === currentSiteUrl.toLowerCase();
 };
 
-export default class SitePicker extends React.Component<SitePickerProps, SitePickerState> {
+export class SitePicker extends React.Component<SitePickerProps, SitePickerState> {
   state = {
-    siteChoice: checkIsThisSite(this.props.siteUrl, getCurrentSiteUrl())
+    siteChoice: checkIsThisSite(this.props.value, getCurrentSiteUrl())
       ? SiteChoiceType.ThisSite
       : SiteChoiceType.Other,
     urlIsValid: false,
@@ -33,7 +33,9 @@ export default class SitePicker extends React.Component<SitePickerProps, SitePic
 
     return (
       <StyledContainer className="site-picker">
-        <span className="connected-to">Currently Connected to: {this.props.siteUrl}</span>
+        <span className="connected-to">
+          Currently Connected to: {getRelativeUrl(this.props.value)}
+        </span>
         <SiteChoiceGroup
           label={this.props.label}
           value={siteChoice}
@@ -41,7 +43,7 @@ export default class SitePicker extends React.Component<SitePickerProps, SitePic
         />
         <SiteUrlInput
           disabled={siteChoice === SiteChoiceType.ThisSite}
-          url={this.props.siteUrl}
+          url={this.props.value}
           onChange={this.onChange}
         />
       </StyledContainer>
@@ -49,6 +51,13 @@ export default class SitePicker extends React.Component<SitePickerProps, SitePic
   }
 }
 
+const getRelativeUrl = (siteUrl: string) => {
+  try {
+    return siteUrl.toLowerCase().split(".sharepoint.com")[1];
+  } catch (err) {
+    return siteUrl;
+  }
+};
 const StyledContainer = styled.div`
   position: relative;
   box-sizing: border-box;
@@ -57,9 +66,9 @@ const StyledContainer = styled.div`
   }
 `;
 export interface SitePickerProps {
-  //props
-  siteUrl: string;
-  onChange: (newValue) => void;
+  /** The site url value (Reac) */
+  value: string;
+  onChange: (siteUrl) => void;
   label: string;
 }
 

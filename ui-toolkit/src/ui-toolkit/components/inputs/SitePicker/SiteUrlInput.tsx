@@ -1,12 +1,9 @@
 import * as React from "react";
 import { TextField } from "office-ui-fabric-react/lib/TextField";
 import styled from "ui-toolkit/styled-components";
-
+import { useDebouncedValue, getThemeValue } from "ui-toolkit";
 import * as SPScript from "spscript";
-import { debounce } from "../../core/utils/utils";
-import { getThemeValue } from "../PortalsThemeProvider/PortalsThemeProvider";
 import { useState, useReducer } from "react";
-import useDebounce from "../../hooks/useDebounce";
 
 function reducer(state, action) {
   switch (action.type) {
@@ -46,7 +43,7 @@ export default function SiteUrlInput(props: SiteUrlInputProps) {
 
   // Validate the site after waiting for user to finish typing
   // Debounced effect for the text box changing
-  let debouncedValue = useDebounce(state.value, 600);
+  let debouncedValue = useDebouncedValue(state.value, 600);
   React.useEffect(() => {
     let isMounted = true;
     let doAsync = async () => {
@@ -151,7 +148,7 @@ const getSitePath = (absoluteUrl: string) => {
   return absoluteUrl.substring(siteUrlIndex);
 };
 
-const validateUrl = async function(url) {
+const validateUrl = async function (url) {
   if (!url) return false;
   try {
     let ctx = SPScript.createContext(url);
@@ -168,6 +165,6 @@ const processUrl = (value) => {
   return getUrlPrefix() + value;
 };
 
-const getUrlPrefix = function() {
+const getUrlPrefix = function () {
   return `https://${window.location.host}`;
 };

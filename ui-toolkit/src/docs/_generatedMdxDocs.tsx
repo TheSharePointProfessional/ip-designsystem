@@ -12,6 +12,7 @@ import LinkTileDocs, { metadata as LinkTileMetadata } from "ui-toolkit/component
 import PersonaDocs, { metadata as PersonaMetadata } from "ui-toolkit/components/Persona/Persona.mdx"
 import PortalsThemeProviderDocs, { metadata as PortalsThemeProviderMetadata } from "ui-toolkit/components/PortalsThemeProvider/PortalsThemeProvider.mdx"
 import ShaveDocs, { metadata as ShaveMetadata } from "ui-toolkit/components/Shave/Shave.mdx"
+import SitePickerDocs, { metadata as SitePickerMetadata } from "ui-toolkit/components/inputs/SitePicker/SitePicker.mdx"
 import TextDocs, { metadata as TextMetadata } from "ui-toolkit/components/primitives/Text.mdx"
 import ThemeColorPickerDocs, { metadata as ThemeColorPickerMetadata } from "ui-toolkit/components/inputs/ThemeColorPicker.mdx"
 import ThemePreviewDocs, { metadata as ThemePreviewMetadata } from "ui-toolkit/components/ThemePreview/ThemePreview.mdx"
@@ -118,6 +119,13 @@ const docs = [
         sort: ShaveMetadata?.sort ?? 9999,
         parent: ShaveMetadata?.parent || "",
         render: () => <ShaveDocs />,
+    },
+   {
+        title: "SitePicker",
+        section: "components",
+        sort: SitePickerMetadata?.sort ?? 9999,
+        parent: SitePickerMetadata?.parent || "",
+        render: () => <SitePickerDocs />,
     },
    {
         title: "Text",
