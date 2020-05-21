@@ -83,6 +83,8 @@ export interface UsePanelResult {
   Panel?: any;
 }
 
+export interface FabricPanelProps extends IPanelProps {}
+
 export type PanelSize = "small" | "medium" | "large" | number;
 
 const getPanelType = (size) => {

@@ -6,7 +6,9 @@ import { PropsTable } from "docs";
 
 # usePanel
 
-I know... it's a **hook** but it's under **Components**?! It's because this hook returns a Panel component, and that's the panel component you should use in your JSX (instead of import the Panel component from UI Fabric).
+A hook that helps you create a customized Fabric UI Panel.
+
+Don't actually import and use a `Panel` component, instead use the `usePanel` hook, which returns a `Panel` component.
 
 ```javascript
 import { usePanel } from "ui-toolkit";
@@ -14,8 +16,6 @@ import { usePanel } from "ui-toolkit";
 // The hook returns the Component, the props, and the panel methods you might need
 let { Panel, panelProps, isOpen, openPanel, closePanel } = usePanel();
 ```
-
-A hook that helps you setup all the `props` for a UI Fabric usePanel.
 
 - It sets up the React state for tracking whether the panel is open and provides methods to open and close.
 - It sets up all the default UI Fabric Panel props for you.
@@ -180,4 +180,6 @@ const StyledClose = styled.div`
 
 ## IPanelProps
 
-<PropsTable name="IPanelProps" />
+These are the Fabric UI Panel's props. The Panel component that the `usePanel` hook returns extends this interface.
+
+<PropsTable name="FabricPanelProps" />
