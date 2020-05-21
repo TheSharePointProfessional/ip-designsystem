@@ -18,6 +18,7 @@ A hook that helps you setup all the `props` for a UI Fabric usePanel.
 - It provides the Fabric UI Panel Component so you don't have to mess with importing it.
 - It overrides the default Panel Header to let the Panel content touch the top of the panel.
 - It wires up a specific `PostMessage` listener to that IFramed windows can send the parent a message telling it to close the panel.
+- It provides an extra `url` prop on the `Panel` component so you can easily show an `IFrame` in a Panel.
 
 ```jsx live=true bordered=true
 () => {
