@@ -21550,6 +21550,56 @@ export default {
         }
       ]
     },
+    "ComponentSizeData": {
+      "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "ComponentSizeData",
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "height",
+          "type": "number"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "width",
+          "type": "number"
+        }
+      ]
+    },
     "HowManyFitOptions": {
       "fileName": "src\\ui-toolkit\\hooks\\useHowManyFit.ts",
       "flags": {

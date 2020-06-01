@@ -20,6 +20,7 @@ import ThemePreviewDocs, { metadata as ThemePreviewMetadata } from "ui-toolkit/c
 import TitleDocs, { metadata as TitleMetadata } from "ui-toolkit/components/primitives/Title.mdx"
 import UseAsyncDataDocs, { metadata as UseAsyncDataMetadata } from "ui-toolkit/hooks/useAsyncData.mdx"
 import UseAutoPagingDocs, { metadata as UseAutoPagingMetadata } from "ui-toolkit/hooks/useAutoPaging.mdx"
+import UseComponentSizeDocs, { metadata as UseComponentSizeMetadata } from "ui-toolkit/hooks/useComponentSize.mdx"
 import UseDebouncedEffectDocs, { metadata as UseDebouncedEffectMetadata } from "ui-toolkit/hooks/useDebouncedEffect.mdx"
 import UseDebouncedValueDocs, { metadata as UseDebouncedValueMetadata } from "ui-toolkit/hooks/useDebouncedValue.mdx"
 import UseIntervalDocs, { metadata as UseIntervalMetadata } from "ui-toolkit/hooks/useInterval.mdx"
@@ -175,6 +176,13 @@ const docs = [
         sort: UseAutoPagingMetadata?.sort ?? 9999,
         parent: UseAutoPagingMetadata?.parent || "hooks",
         render: () => <UseAutoPagingDocs />,
+    },
+   {
+        title: "UseComponentSize",
+        section: "hooks",
+        sort: UseComponentSizeMetadata?.sort ?? 9999,
+        parent: UseComponentSizeMetadata?.parent || "hooks",
+        render: () => <UseComponentSizeDocs />,
     },
    {
         title: "UseDebouncedEffect",
