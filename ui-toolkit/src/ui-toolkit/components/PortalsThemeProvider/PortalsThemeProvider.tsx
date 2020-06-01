@@ -24,8 +24,6 @@ export const PortalsThemeProvider: React.FC<PortalsThemeProviderProps> = ({ chil
   return <ThemeProvider theme={window._portalsTheme}>{children}</ThemeProvider>;
 };
 
-export default PortalsThemeProvider;
-
 export interface PortalsThemeProviderProps {
   theme: IReadonlyTheme;
 }
