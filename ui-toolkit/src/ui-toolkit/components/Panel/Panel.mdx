@@ -1,8 +1,14 @@
+export const metadata = {
+  parent: "surfaces",
+};
+
 import { PropsTable } from "docs";
 
 # usePanel
 
-I know... it's a **hook** but it's under **Components**?! It's because this hook returns a Panel component, and that's the panel component you should use in your JSX (instead of import the Panel component from UI Fabric).
+A hook that helps you create a customized Fabric UI Panel.
+
+Don't actually import and use a `Panel` component, instead use the `usePanel` hook, which returns a `Panel` component.
 
 ```javascript
 import { usePanel } from "ui-toolkit";
@@ -11,13 +17,12 @@ import { usePanel } from "ui-toolkit";
 let { Panel, panelProps, isOpen, openPanel, closePanel } = usePanel();
 ```
 
-A hook that helps you setup all the `props` for a UI Fabric usePanel.
-
 - It sets up the React state for tracking whether the panel is open and provides methods to open and close.
 - It sets up all the default UI Fabric Panel props for you.
 - It provides the Fabric UI Panel Component so you don't have to mess with importing it.
 - It overrides the default Panel Header to let the Panel content touch the top of the panel.
 - It wires up a specific `PostMessage` listener to that IFramed windows can send the parent a message telling it to close the panel.
+- It provides an extra `url` prop on the `Panel` component so you can easily show an `IFrame` in a Panel.
 
 ```jsx live=true bordered=true
 () => {
@@ -82,14 +87,14 @@ You can pass a `url` (instead of passing `children`) to the `Panel` component, a
 ```jsx live=true bordered=true
 () => {
   let url = "https://skylinespark.sharepoint.com/sites/devshowcase";
-  let { panelProps, openPanel, closePanel, isOpen } = usePanel({ size: 900 });
+  let { Panel, panelProps, openPanel, closePanel, isOpen } = usePanel({ size: "large" });
 
   return (
     <div>
       {!isOpen && <button onClick={openPanel}>Open Panel</button>}
       {isOpen && <button onClick={closePanel}>Close Panel</button>}
 
-      <IFramePanel {...panelProps} url={url} />
+      <Panel {...panelProps} url={url} />
     </div>
   );
 };
@@ -175,4 +180,6 @@ const StyledClose = styled.div`
 
 ## IPanelProps
 
-<PropsTable name="IPanelProps" />
+These are the Fabric UI Panel's props. The Panel component that the `usePanel` hook returns extends this interface.
+
+<PropsTable name="FabricPanelProps" />

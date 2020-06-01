@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import docs from "./_generatedMdxDocs";
 import styled from "styled-components";
 import useQueryString from "ui-toolkit/hooks/useQueryString";
+import { Icon } from "office-ui-fabric-react/lib/Icon";
+import { getThemeColor } from "ui-toolkit";
 
 export default function Menu({ setActive, active }) {
   console.log("docs", docs);
@@ -15,11 +17,10 @@ export default function Menu({ setActive, active }) {
   return (
     <StyledSideMenu className="menu">
       <MenuItems items={topLevelItems} setActive={setActive} active={active}>
-        <li className="label">
-          Components
+        <FirstLevelMenuSection title="Components">
           <MenuItems items={componentsWithoutParents} setActive={setActive} active={active}>
             {componentParents.map((parent) => (
-              <li className="label">
+              <li className="grouping">
                 {parent}
                 <MenuItems
                   items={componentItems.filter((i) => i.parent === parent)}
@@ -29,50 +30,33 @@ export default function Menu({ setActive, active }) {
               </li>
             ))}
           </MenuItems>
-        </li>
+        </FirstLevelMenuSection>
 
-        <li className="label">
-          Hooks
+        <FirstLevelMenuSection title="Hooks">
           <MenuItems items={hooksItems} setActive={setActive} active={active}></MenuItems>
-        </li>
+        </FirstLevelMenuSection>
       </MenuItems>
     </StyledSideMenu>
   );
 }
 
+function FirstLevelMenuSection({ title, children }) {
+  let [expanded, setExpanded] = useState(false);
+  return (
+    <li className="first-level">
+      <div className="title expandable" onClick={() => setExpanded((val) => !val)}>
+        <Icon iconName={expanded ? "ChevronDown" : "ChevronRight"} />
+        {title}
+      </div>
+      {expanded && children}
+    </li>
+  );
+}
 const MenuItems: React.FC<any> = ({ items, setActive, children, active }) => {
   return (
     <ul className="menu__list">
       {items.map((file) => (
         <li key={file.title} className={file.title === active ? "active" : ""}>
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              setActive(file.title);
-            }}
-          >
-            {file.title}
-          </a>
-        </li>
-      ))}
-      {children}
-    </ul>
-  );
-};
-
-const MenuItemList: React.FC<any> = ({ section = "", setActive, children }) => {
-  let items = docs.filter((d) => d.section === section).sort(compareFiles);
-  let parents = Array.from(new Set(items.map((i) => i.parent)))
-    .filter(Boolean)
-    .sort();
-  let itemsWithoutParents = items.filter((i) => !i.parent);
-  console.log("parents", parents);
-
-  return (
-    <ul className="menu__list">
-      {itemsWithoutParents.map((file) => (
-        <li key={file.title}>
           <a
             href="#"
             onClick={(e) => {
@@ -104,8 +88,6 @@ const compareFiles = (a, b) => {
   return a.sort < b.sort ? -1 : 1;
 };
 
-function groupMenu(flatMenu: MenuItem[]) {}
-
 interface MenuItem {
   title: string;
   sort: number;
@@ -115,6 +97,25 @@ interface MenuItem {
 }
 
 const StyledSideMenu = styled.div`
+  .first-level {
+    > .expandable {
+      user-select: none;
+      font-weight: bold;
+      &:hover {
+        cursor: pointer;
+        color: ${(props) => getThemeColor("themePrimary")};
+      }
+      i {
+        margin-right: 5px;
+        position: relative;
+        top: 2px;
+      }
+    }
+    > ul {
+      padding-left: 20px;
+    }
+  }
+
   a {
     font-weight: normal;
     text-decoration: none;
@@ -128,13 +129,13 @@ const StyledSideMenu = styled.div`
   ul {
     padding-left: 0;
     list-style: none;
-    li.label {
-      font-weight: bold;
+    li.grouping {
       margin: 5px 0 3px 0;
       text-transform: capitalize;
+      font-weight: 600;
     }
     ul {
-      padding-left: 10px;
+      padding-left: 5px;
     }
   }
   li {
@@ -148,3 +149,31 @@ const StyledSideMenu = styled.div`
     border-right: 4px solid steelblue;
   }
 `;
+
+const MenuItemList: React.FC<any> = ({ section = "", setActive, children }) => {
+  let items = docs.filter((d) => d.section === section).sort(compareFiles);
+  let parents = Array.from(new Set(items.map((i) => i.parent)))
+    .filter(Boolean)
+    .sort();
+  let itemsWithoutParents = items.filter((i) => !i.parent);
+  console.log("parents", parents);
+
+  return (
+    <ul className="menu__list">
+      {itemsWithoutParents.map((file) => (
+        <li key={file.title}>
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              setActive(file.title);
+            }}
+          >
+            {file.title}
+          </a>
+        </li>
+      ))}
+      {children}
+    </ul>
+  );
+};

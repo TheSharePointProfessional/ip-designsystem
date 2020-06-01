@@ -9644,6 +9644,200 @@ export default {
         }
       ]
     },
+    "useOnClickOutside": {
+      "fileName": "src\\ui-toolkit\\hooks\\useOnClickOutside.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "useOnClickOutside",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useOnClickOutside.ts",
+          "kind": "signature",
+          "name": "useOnClickOutside",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "ref",
+              "type": "any"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "handler",
+              "type": "any"
+            }
+          ],
+          "returnType": "void",
+          "type": "(ref: any, handler: any) => void"
+        }
+      ]
+    },
+    "useSiteData": {
+      "fileName": "src\\ui-toolkit\\hooks\\useSiteData.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "useSiteData",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useSiteData.tsx",
+          "kind": "signature",
+          "name": "useSiteData",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "params",
+              "type": "SiteDataParams<T>"
+            }
+          ],
+          "returnType": "SiteDataState<T>",
+          "type": "(params: SiteDataParams<T>) => SiteDataState<T>"
+        }
+      ]
+    },
+    "validateListExists": {
+      "fileName": "src\\ui-toolkit\\hooks\\useSiteData.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "validateListExists",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useSiteData.tsx",
+          "kind": "signature",
+          "name": "validateListExists",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "siteUrl",
+              "type": "any"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "listTitle",
+              "type": "any"
+            }
+          ],
+          "returnType": "Promise<boolean>",
+          "type": "(siteUrl: any, listTitle: any) => Promise<boolean>"
+        }
+      ]
+    },
+    "validateSiteExists": {
+      "fileName": "src\\ui-toolkit\\hooks\\useSiteData.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "validateSiteExists",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useSiteData.tsx",
+          "kind": "signature",
+          "name": "validateSiteExists",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "siteUrl",
+              "type": "string"
+            }
+          ],
+          "returnType": "Promise<boolean>",
+          "type": "(siteUrl: string) => Promise<boolean>"
+        }
+      ]
+    },
     "CardDemo": {
       "fileName": "src\\ui-toolkit\\components\\Card\\CardDemo.tsx",
       "flags": {
@@ -10406,200 +10600,6 @@ export default {
           ],
           "returnType": "any[]",
           "type": "(elem: Element, selectorFilter: string) => any[]"
-        }
-      ]
-    },
-    "useOnClickOutside": {
-      "fileName": "src\\ui-toolkit\\hooks\\useOnClickOutside.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "useOnClickOutside",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\hooks\\useOnClickOutside.ts",
-          "kind": "signature",
-          "name": "useOnClickOutside",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "ref",
-              "type": "any"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "handler",
-              "type": "any"
-            }
-          ],
-          "returnType": "void",
-          "type": "(ref: any, handler: any) => void"
-        }
-      ]
-    },
-    "useSiteData": {
-      "fileName": "src\\ui-toolkit\\hooks\\useSiteData.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "useSiteData",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\hooks\\useSiteData.tsx",
-          "kind": "signature",
-          "name": "useSiteData",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "params",
-              "type": "SiteDataParams<T>"
-            }
-          ],
-          "returnType": "SiteDataState<T>",
-          "type": "(params: SiteDataParams<T>) => SiteDataState<T>"
-        }
-      ]
-    },
-    "validateListExists": {
-      "fileName": "src\\ui-toolkit\\hooks\\useSiteData.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "validateListExists",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\hooks\\useSiteData.tsx",
-          "kind": "signature",
-          "name": "validateListExists",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "siteUrl",
-              "type": "any"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "listTitle",
-              "type": "any"
-            }
-          ],
-          "returnType": "Promise<boolean>",
-          "type": "(siteUrl: any, listTitle: any) => Promise<boolean>"
-        }
-      ]
-    },
-    "validateSiteExists": {
-      "fileName": "src\\ui-toolkit\\hooks\\useSiteData.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "validateSiteExists",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\hooks\\useSiteData.tsx",
-          "kind": "signature",
-          "name": "validateSiteExists",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "siteUrl",
-              "type": "string"
-            }
-          ],
-          "returnType": "Promise<boolean>",
-          "type": "(siteUrl: string) => Promise<boolean>"
         }
       ]
     },
@@ -15542,6 +15542,4401 @@ export default {
         }
       ]
     },
+    "FabricPanelProps": {
+      "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "FabricPanelProps",
+      "extends": [
+        "IPanelProps"
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onKeyPress",
+          "inheritedFrom": "DOMAttributes.onKeyPress",
+          "type": "KeyboardEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "about",
+          "inheritedFrom": "HTMLAttributes.about",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Allow body scroll on content and overlay on touch devices. Changing after mounting has no effect.</p>\n",
+              {
+                "tag": "defaultvalue",
+                "value": "false"
+              }
+            ],
+            "contentsRaw": "Allow body scroll on content and overlay on touch devices. Changing after mounting has no effect.\n\n@defaultvalue false",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "allowTouchBodyScroll",
+          "inheritedFrom": "IPanelProps.allowTouchBodyScroll",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "autoCapitalize",
+          "inheritedFrom": "HTMLAttributes.autoCapitalize",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "autoCorrect",
+          "inheritedFrom": "HTMLAttributes.autoCorrect",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "autoSave",
+          "inheritedFrom": "HTMLAttributes.autoSave",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "children",
+          "inheritedFrom": "DOMAttributes.children",
+          "type": "ReactNode"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Additional css class to apply to the Panel</p>\n",
+              {
+                "tag": "defaultvalue",
+                "value": "undefined"
+              }
+            ],
+            "contentsRaw": "Additional css class to apply to the Panel\n\n@defaultvalue undefined",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "className",
+          "inheritedFrom": "IPanelProps.className",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Aria label on close button</p>\n"
+            ],
+            "contentsRaw": "Aria label on close button",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "closeButtonAriaLabel",
+          "inheritedFrom": "IPanelProps.closeButtonAriaLabel",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "color",
+          "inheritedFrom": "HTMLAttributes.color",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Deprecated property. Serves no function.</p>\n"
+            ],
+            "contentsRaw": "Deprecated property. Serves no function.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isDeprecated": "Serves no function.",
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "componentId",
+          "inheritedFrom": "IPanelProps.componentId",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Optional callback to access the IPanel interface. Use this instead of ref for accessing\nthe public methods and properties of the component.</p>\n"
+            ],
+            "contentsRaw": "Optional callback to access the IPanel interface. Use this instead of ref for accessing\nthe public methods and properties of the component.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "componentRef",
+          "inheritedFrom": "IPanelProps.componentRef",
+          "type": "IRefObject<IPanel>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "contentEditable",
+          "inheritedFrom": "HTMLAttributes.contentEditable",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "contextMenu",
+          "inheritedFrom": "HTMLAttributes.contextMenu",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Custom panel width, used only when <code>type</code> is set to <code>PanelType.custom</code>.</p>\n"
+            ],
+            "contentsRaw": "Custom panel width, used only when `type` is set to `PanelType.custom`.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "customWidth",
+          "inheritedFrom": "IPanelProps.customWidth",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "dangerouslySetInnerHTML",
+          "inheritedFrom": "DOMAttributes.dangerouslySetInnerHTML",
+          "type": ""
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "datatype",
+          "inheritedFrom": "HTMLAttributes.datatype",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "defaultChecked",
+          "inheritedFrom": "HTMLAttributes.defaultChecked",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "defaultValue",
+          "inheritedFrom": "HTMLAttributes.defaultValue",
+          "type": "string | string[]"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "dir",
+          "inheritedFrom": "HTMLAttributes.dir",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "draggable",
+          "inheritedFrom": "HTMLAttributes.draggable",
+          "type": "boolean"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Sets the HTMLElement to focus on when exiting the FocusTrapZone.</p>\n",
+              {
+                "tag": "defaultvalue",
+                "value": "The element.target that triggered the Panel."
+              }
+            ],
+            "contentsRaw": "Sets the HTMLElement to focus on when exiting the FocusTrapZone.\n\n@defaultvalue The element.target that triggered the Panel.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "elementToFocusOnDismiss",
+          "inheritedFrom": "IPanelProps.elementToFocusOnDismiss",
+          "type": "HTMLElement"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates the selector for first focusable item.\nDeprecated, use <code>focusTrapZoneProps</code>.</p>\n"
+            ],
+            "contentsRaw": "Indicates the selector for first focusable item.\nDeprecated, use `focusTrapZoneProps`.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isDeprecated": "Use `focusTrapZoneProps`.",
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "firstFocusableSelector",
+          "inheritedFrom": "IPanelProps.firstFocusableSelector",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Optional props to pass to the FocusTrapZone component to manage focus in the panel.</p>\n"
+            ],
+            "contentsRaw": "Optional props to pass to the FocusTrapZone component to manage focus in the panel.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "focusTrapZoneProps",
+          "inheritedFrom": "IPanelProps.focusTrapZoneProps",
+          "type": "IFocusTrapZoneProps"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates whether Panel should force focus inside the focus trap zone.\nIf not explicitly specified, behavior aligns with FocusTrapZone&#39;s default behavior.\nDeprecated, use <code>focusTrapZoneProps</code>.</p>\n"
+            ],
+            "contentsRaw": "Indicates whether Panel should force focus inside the focus trap zone.\nIf not explicitly specified, behavior aligns with FocusTrapZone's default behavior.\nDeprecated, use `focusTrapZoneProps`.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isDeprecated": "Use `focusTrapZoneProps`.",
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "forceFocusInsideTrap",
+          "inheritedFrom": "IPanelProps.forceFocusInsideTrap",
+          "type": "boolean"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Has the close button visible.</p>\n",
+              {
+                "tag": "defaultvalue",
+                "value": "true"
+              }
+            ],
+            "contentsRaw": "Has the close button visible.\n\n@defaultvalue true",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "hasCloseButton",
+          "inheritedFrom": "IPanelProps.hasCloseButton",
+          "type": "boolean"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Optional parameter to provider the class name for header text</p>\n"
+            ],
+            "contentsRaw": "Optional parameter to provider the class name for header text",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "headerClassName",
+          "inheritedFrom": "IPanelProps.headerClassName",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Header text for the Panel.</p>\n",
+              {
+                "tag": "defaultvalue",
+                "value": "\"\""
+              }
+            ],
+            "contentsRaw": "Header text for the Panel.\n\n@defaultvalue \"\"",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "headerText",
+          "inheritedFrom": "IPanelProps.headerText",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>The props for header text container.</p>\n"
+            ],
+            "contentsRaw": "The props for header text container.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "headerTextProps",
+          "inheritedFrom": "IPanelProps.headerTextProps",
+          "type": "HTMLAttributes<HTMLDivElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "hidden",
+          "inheritedFrom": "HTMLAttributes.hidden",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "id",
+          "inheritedFrom": "HTMLAttributes.id",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates if this Panel will ignore keeping track of HTMLElement that activated the Zone.\nDeprecated, use <code>focusTrapZoneProps</code>.</p>\n",
+              {
+                "tag": "defaultvalue",
+                "value": "false"
+              }
+            ],
+            "contentsRaw": "Indicates if this Panel will ignore keeping track of HTMLElement that activated the Zone.\nDeprecated, use `focusTrapZoneProps`.\n\n@defaultvalue false",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isDeprecated": "Use `focusTrapZoneProps`.",
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "ignoreExternalFocusing",
+          "inheritedFrom": "IPanelProps.ignoreExternalFocusing",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "inlist",
+          "inheritedFrom": "HTMLAttributes.inlist",
+          "type": "any"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "inputMode",
+          "inheritedFrom": "HTMLAttributes.inputMode",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "is",
+          "inheritedFrom": "HTMLAttributes.is",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Whether the panel uses a modal overlay or not</p>\n",
+              {
+                "tag": "defaultvalue",
+                "value": "true"
+              }
+            ],
+            "contentsRaw": "Whether the panel uses a modal overlay or not\n\n@defaultvalue true",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "isBlocking",
+          "inheritedFrom": "IPanelProps.isBlocking",
+          "type": "boolean"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Determines if content should stretch to fill available space putting footer at the bottom of the page</p>\n",
+              {
+                "tag": "defaultvalue",
+                "value": "false"
+              }
+            ],
+            "contentsRaw": "Determines if content should stretch to fill available space putting footer at the bottom of the page\n\n@defaultvalue false",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "isFooterAtBottom",
+          "inheritedFrom": "IPanelProps.isFooterAtBottom",
+          "type": "boolean"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Whether the panel is hidden on dismiss, instead of destroyed in the DOM.\nProtects the contents from being destroyed when the panel is dismissed.</p>\n",
+              {
+                "tag": "defaultvalue",
+                "value": "false"
+              }
+            ],
+            "contentsRaw": "Whether the panel is hidden on dismiss, instead of destroyed in the DOM.\nProtects the contents from being destroyed when the panel is dismissed.\n\n@defaultvalue false",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "isHiddenOnDismiss",
+          "inheritedFrom": "IPanelProps.isHiddenOnDismiss",
+          "type": "boolean"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Whether the panel can be light dismissed.</p>\n",
+              {
+                "tag": "defaultvalue",
+                "value": "false"
+              }
+            ],
+            "contentsRaw": "Whether the panel can be light dismissed.\n\n@defaultvalue false",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "isLightDismiss",
+          "inheritedFrom": "IPanelProps.isLightDismiss",
+          "type": "boolean"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Whether the panel is displayed.\nIf true, will cause panel to stay open even if dismissed.\nIf false, will cause panel to stay hidden.\nIf undefined, will allow the panel to control its own visility through open/dismiss methods.</p>\n",
+              {
+                "tag": "defaultvalue",
+                "value": "undefined"
+              }
+            ],
+            "contentsRaw": "Whether the panel is displayed.\nIf true, will cause panel to stay open even if dismissed.\nIf false, will cause panel to stay hidden.\nIf undefined, will allow the panel to control its own visility through open/dismiss methods.\n\n@defaultvalue undefined",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "isOpen",
+          "inheritedFrom": "IPanelProps.isOpen",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "itemID",
+          "inheritedFrom": "HTMLAttributes.itemID",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "itemProp",
+          "inheritedFrom": "HTMLAttributes.itemProp",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "itemRef",
+          "inheritedFrom": "HTMLAttributes.itemRef",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "itemScope",
+          "inheritedFrom": "HTMLAttributes.itemScope",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "itemType",
+          "inheritedFrom": "HTMLAttributes.itemType",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "lang",
+          "inheritedFrom": "HTMLAttributes.lang",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Optional props to pass to the Layer component hosting the panel.</p>\n"
+            ],
+            "contentsRaw": "Optional props to pass to the Layer component hosting the panel.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "layerProps",
+          "inheritedFrom": "IPanelProps.layerProps",
+          "type": "ILayerProps"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onAbort",
+          "inheritedFrom": "DOMAttributes.onAbort",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onAbortCapture",
+          "inheritedFrom": "DOMAttributes.onAbortCapture",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onAnimationEnd",
+          "inheritedFrom": "DOMAttributes.onAnimationEnd",
+          "type": "AnimationEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onAnimationEndCapture",
+          "inheritedFrom": "DOMAttributes.onAnimationEndCapture",
+          "type": "AnimationEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onAnimationIteration",
+          "inheritedFrom": "DOMAttributes.onAnimationIteration",
+          "type": "AnimationEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onAnimationIterationCapture",
+          "inheritedFrom": "DOMAttributes.onAnimationIterationCapture",
+          "type": "AnimationEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onAnimationStart",
+          "inheritedFrom": "DOMAttributes.onAnimationStart",
+          "type": "AnimationEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onAnimationStartCapture",
+          "inheritedFrom": "DOMAttributes.onAnimationStartCapture",
+          "type": "AnimationEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onBeforeInput",
+          "inheritedFrom": "DOMAttributes.onBeforeInput",
+          "type": "FormEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onBeforeInputCapture",
+          "inheritedFrom": "DOMAttributes.onBeforeInputCapture",
+          "type": "FormEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onBlur",
+          "inheritedFrom": "DOMAttributes.onBlur",
+          "type": "FocusEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onBlurCapture",
+          "inheritedFrom": "DOMAttributes.onBlurCapture",
+          "type": "FocusEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCanPlay",
+          "inheritedFrom": "DOMAttributes.onCanPlay",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCanPlayCapture",
+          "inheritedFrom": "DOMAttributes.onCanPlayCapture",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCanPlayThrough",
+          "inheritedFrom": "DOMAttributes.onCanPlayThrough",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCanPlayThroughCapture",
+          "inheritedFrom": "DOMAttributes.onCanPlayThroughCapture",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onChange",
+          "inheritedFrom": "DOMAttributes.onChange",
+          "type": "FormEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onChangeCapture",
+          "inheritedFrom": "DOMAttributes.onChangeCapture",
+          "type": "FormEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onClick",
+          "inheritedFrom": "DOMAttributes.onClick",
+          "type": "MouseEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onClickCapture",
+          "inheritedFrom": "DOMAttributes.onClickCapture",
+          "type": "MouseEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCompositionEnd",
+          "inheritedFrom": "DOMAttributes.onCompositionEnd",
+          "type": "CompositionEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCompositionEndCapture",
+          "inheritedFrom": "DOMAttributes.onCompositionEndCapture",
+          "type": "CompositionEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCompositionStart",
+          "inheritedFrom": "DOMAttributes.onCompositionStart",
+          "type": "CompositionEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCompositionStartCapture",
+          "inheritedFrom": "DOMAttributes.onCompositionStartCapture",
+          "type": "CompositionEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCompositionUpdate",
+          "inheritedFrom": "DOMAttributes.onCompositionUpdate",
+          "type": "CompositionEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCompositionUpdateCapture",
+          "inheritedFrom": "DOMAttributes.onCompositionUpdateCapture",
+          "type": "CompositionEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onContextMenu",
+          "inheritedFrom": "DOMAttributes.onContextMenu",
+          "type": "MouseEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onContextMenuCapture",
+          "inheritedFrom": "DOMAttributes.onContextMenuCapture",
+          "type": "MouseEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCopy",
+          "inheritedFrom": "DOMAttributes.onCopy",
+          "type": "ClipboardEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCopyCapture",
+          "inheritedFrom": "DOMAttributes.onCopyCapture",
+          "type": "ClipboardEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCut",
+          "inheritedFrom": "DOMAttributes.onCut",
+          "type": "ClipboardEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCutCapture",
+          "inheritedFrom": "DOMAttributes.onCutCapture",
+          "type": "ClipboardEventHandler<PanelBase>"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>A callback function for when the panel is closed, before the animation completes.\nIf the panel should NOT be dismissed based on some keyboard event, then simply call ev.preventDefault() on it</p>\n"
+            ],
+            "contentsRaw": "A callback function for when the panel is closed, before the animation completes.\nIf the panel should NOT be dismissed based on some keyboard event, then simply call ev.preventDefault() on it",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDismiss",
+          "inheritedFrom": "IPanelProps.onDismiss",
+          "type": "(ev?: SyntheticEvent<HTMLElement>) => void"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>A callback function which is called <strong>after</strong> the Panel is dismissed and the animation is complete.\n(If you need to update the Panel&#39;s <code>isOpen</code> prop in response to a dismiss event, use <code>onDismiss</code> instead.)</p>\n"
+            ],
+            "contentsRaw": "A callback function which is called **after** the Panel is dismissed and the animation is complete.\n(If you need to update the Panel's `isOpen` prop in response to a dismiss event, use `onDismiss` instead.)",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDismissed",
+          "inheritedFrom": "IPanelProps.onDismissed",
+          "type": "() => void"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDoubleClick",
+          "inheritedFrom": "DOMAttributes.onDoubleClick",
+          "type": "MouseEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDoubleClickCapture",
+          "inheritedFrom": "DOMAttributes.onDoubleClickCapture",
+          "type": "MouseEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDrag",
+          "inheritedFrom": "DOMAttributes.onDrag",
+          "type": "DragEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDragCapture",
+          "inheritedFrom": "DOMAttributes.onDragCapture",
+          "type": "DragEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDragEnd",
+          "inheritedFrom": "DOMAttributes.onDragEnd",
+          "type": "DragEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDragEndCapture",
+          "inheritedFrom": "DOMAttributes.onDragEndCapture",
+          "type": "DragEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDragEnter",
+          "inheritedFrom": "DOMAttributes.onDragEnter",
+          "type": "DragEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDragEnterCapture",
+          "inheritedFrom": "DOMAttributes.onDragEnterCapture",
+          "type": "DragEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDragExit",
+          "inheritedFrom": "DOMAttributes.onDragExit",
+          "type": "DragEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDragExitCapture",
+          "inheritedFrom": "DOMAttributes.onDragExitCapture",
+          "type": "DragEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDragLeave",
+          "inheritedFrom": "DOMAttributes.onDragLeave",
+          "type": "DragEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDragLeaveCapture",
+          "inheritedFrom": "DOMAttributes.onDragLeaveCapture",
+          "type": "DragEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDragOver",
+          "inheritedFrom": "DOMAttributes.onDragOver",
+          "type": "DragEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDragOverCapture",
+          "inheritedFrom": "DOMAttributes.onDragOverCapture",
+          "type": "DragEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDragStart",
+          "inheritedFrom": "DOMAttributes.onDragStart",
+          "type": "DragEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDragStartCapture",
+          "inheritedFrom": "DOMAttributes.onDragStartCapture",
+          "type": "DragEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDrop",
+          "inheritedFrom": "DOMAttributes.onDrop",
+          "type": "DragEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDropCapture",
+          "inheritedFrom": "DOMAttributes.onDropCapture",
+          "type": "DragEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDurationChange",
+          "inheritedFrom": "DOMAttributes.onDurationChange",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDurationChangeCapture",
+          "inheritedFrom": "DOMAttributes.onDurationChangeCapture",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onEmptied",
+          "inheritedFrom": "DOMAttributes.onEmptied",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onEmptiedCapture",
+          "inheritedFrom": "DOMAttributes.onEmptiedCapture",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onEncrypted",
+          "inheritedFrom": "DOMAttributes.onEncrypted",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onEncryptedCapture",
+          "inheritedFrom": "DOMAttributes.onEncryptedCapture",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onEnded",
+          "inheritedFrom": "DOMAttributes.onEnded",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onEndedCapture",
+          "inheritedFrom": "DOMAttributes.onEndedCapture",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onError",
+          "inheritedFrom": "DOMAttributes.onError",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onErrorCapture",
+          "inheritedFrom": "DOMAttributes.onErrorCapture",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onFocus",
+          "inheritedFrom": "DOMAttributes.onFocus",
+          "type": "FocusEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onFocusCapture",
+          "inheritedFrom": "DOMAttributes.onFocusCapture",
+          "type": "FocusEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onGotPointerCapture",
+          "inheritedFrom": "DOMAttributes.onGotPointerCapture",
+          "type": "PointerEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onGotPointerCaptureCapture",
+          "inheritedFrom": "DOMAttributes.onGotPointerCaptureCapture",
+          "type": "PointerEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onInput",
+          "inheritedFrom": "DOMAttributes.onInput",
+          "type": "FormEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onInputCapture",
+          "inheritedFrom": "DOMAttributes.onInputCapture",
+          "type": "FormEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onInvalid",
+          "inheritedFrom": "DOMAttributes.onInvalid",
+          "type": "FormEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onInvalidCapture",
+          "inheritedFrom": "DOMAttributes.onInvalidCapture",
+          "type": "FormEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onKeyDown",
+          "inheritedFrom": "DOMAttributes.onKeyDown",
+          "type": "KeyboardEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onKeyDownCapture",
+          "inheritedFrom": "DOMAttributes.onKeyDownCapture",
+          "type": "KeyboardEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "accessKey",
+          "inheritedFrom": "HTMLAttributes.accessKey",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onKeyPressCapture",
+          "inheritedFrom": "DOMAttributes.onKeyPressCapture",
+          "type": "KeyboardEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onKeyUp",
+          "inheritedFrom": "DOMAttributes.onKeyUp",
+          "type": "KeyboardEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onKeyUpCapture",
+          "inheritedFrom": "DOMAttributes.onKeyUpCapture",
+          "type": "KeyboardEventHandler<PanelBase>"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Optional custom function to handle clicks outside the panel in lightdismiss mode</p>\n"
+            ],
+            "contentsRaw": "Optional custom function to handle clicks outside the panel in lightdismiss mode",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onLightDismissClick",
+          "inheritedFrom": "IPanelProps.onLightDismissClick",
+          "type": "() => void"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onLoad",
+          "inheritedFrom": "DOMAttributes.onLoad",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onLoadCapture",
+          "inheritedFrom": "DOMAttributes.onLoadCapture",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onLoadStart",
+          "inheritedFrom": "DOMAttributes.onLoadStart",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onLoadStartCapture",
+          "inheritedFrom": "DOMAttributes.onLoadStartCapture",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onLoadedData",
+          "inheritedFrom": "DOMAttributes.onLoadedData",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onLoadedDataCapture",
+          "inheritedFrom": "DOMAttributes.onLoadedDataCapture",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onLoadedMetadata",
+          "inheritedFrom": "DOMAttributes.onLoadedMetadata",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onLoadedMetadataCapture",
+          "inheritedFrom": "DOMAttributes.onLoadedMetadataCapture",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onLostPointerCapture",
+          "inheritedFrom": "DOMAttributes.onLostPointerCapture",
+          "type": "PointerEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onLostPointerCaptureCapture",
+          "inheritedFrom": "DOMAttributes.onLostPointerCaptureCapture",
+          "type": "PointerEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onMouseDown",
+          "inheritedFrom": "DOMAttributes.onMouseDown",
+          "type": "MouseEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onMouseDownCapture",
+          "inheritedFrom": "DOMAttributes.onMouseDownCapture",
+          "type": "MouseEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onMouseEnter",
+          "inheritedFrom": "DOMAttributes.onMouseEnter",
+          "type": "MouseEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onMouseLeave",
+          "inheritedFrom": "DOMAttributes.onMouseLeave",
+          "type": "MouseEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onMouseMove",
+          "inheritedFrom": "DOMAttributes.onMouseMove",
+          "type": "MouseEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onMouseMoveCapture",
+          "inheritedFrom": "DOMAttributes.onMouseMoveCapture",
+          "type": "MouseEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onMouseOut",
+          "inheritedFrom": "DOMAttributes.onMouseOut",
+          "type": "MouseEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onMouseOutCapture",
+          "inheritedFrom": "DOMAttributes.onMouseOutCapture",
+          "type": "MouseEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onMouseOver",
+          "inheritedFrom": "DOMAttributes.onMouseOver",
+          "type": "MouseEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onMouseOverCapture",
+          "inheritedFrom": "DOMAttributes.onMouseOverCapture",
+          "type": "MouseEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onMouseUp",
+          "inheritedFrom": "DOMAttributes.onMouseUp",
+          "type": "MouseEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onMouseUpCapture",
+          "inheritedFrom": "DOMAttributes.onMouseUpCapture",
+          "type": "MouseEventHandler<PanelBase>"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>A callback function for when the Panel is opened, before the animation completes.</p>\n"
+            ],
+            "contentsRaw": "A callback function for when the Panel is opened, before the animation completes.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onOpen",
+          "inheritedFrom": "IPanelProps.onOpen",
+          "type": "() => void"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>A callback function for when the Panel is opened, after the animation completes.</p>\n"
+            ],
+            "contentsRaw": "A callback function for when the Panel is opened, after the animation completes.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onOpened",
+          "inheritedFrom": "IPanelProps.onOpened",
+          "type": "() => void"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Optional custom function to handle clicks outside this component</p>\n"
+            ],
+            "contentsRaw": "Optional custom function to handle clicks outside this component",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onOuterClick",
+          "inheritedFrom": "IPanelProps.onOuterClick",
+          "type": "() => void"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPaste",
+          "inheritedFrom": "DOMAttributes.onPaste",
+          "type": "ClipboardEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPasteCapture",
+          "inheritedFrom": "DOMAttributes.onPasteCapture",
+          "type": "ClipboardEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPause",
+          "inheritedFrom": "DOMAttributes.onPause",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPauseCapture",
+          "inheritedFrom": "DOMAttributes.onPauseCapture",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPlay",
+          "inheritedFrom": "DOMAttributes.onPlay",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPlayCapture",
+          "inheritedFrom": "DOMAttributes.onPlayCapture",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPlaying",
+          "inheritedFrom": "DOMAttributes.onPlaying",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPlayingCapture",
+          "inheritedFrom": "DOMAttributes.onPlayingCapture",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerCancel",
+          "inheritedFrom": "DOMAttributes.onPointerCancel",
+          "type": "PointerEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerCancelCapture",
+          "inheritedFrom": "DOMAttributes.onPointerCancelCapture",
+          "type": "PointerEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerDown",
+          "inheritedFrom": "DOMAttributes.onPointerDown",
+          "type": "PointerEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerDownCapture",
+          "inheritedFrom": "DOMAttributes.onPointerDownCapture",
+          "type": "PointerEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerEnter",
+          "inheritedFrom": "DOMAttributes.onPointerEnter",
+          "type": "PointerEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerEnterCapture",
+          "inheritedFrom": "DOMAttributes.onPointerEnterCapture",
+          "type": "PointerEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerLeave",
+          "inheritedFrom": "DOMAttributes.onPointerLeave",
+          "type": "PointerEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerLeaveCapture",
+          "inheritedFrom": "DOMAttributes.onPointerLeaveCapture",
+          "type": "PointerEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerMove",
+          "inheritedFrom": "DOMAttributes.onPointerMove",
+          "type": "PointerEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerMoveCapture",
+          "inheritedFrom": "DOMAttributes.onPointerMoveCapture",
+          "type": "PointerEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerOut",
+          "inheritedFrom": "DOMAttributes.onPointerOut",
+          "type": "PointerEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerOutCapture",
+          "inheritedFrom": "DOMAttributes.onPointerOutCapture",
+          "type": "PointerEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerOver",
+          "inheritedFrom": "DOMAttributes.onPointerOver",
+          "type": "PointerEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerOverCapture",
+          "inheritedFrom": "DOMAttributes.onPointerOverCapture",
+          "type": "PointerEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerUp",
+          "inheritedFrom": "DOMAttributes.onPointerUp",
+          "type": "PointerEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerUpCapture",
+          "inheritedFrom": "DOMAttributes.onPointerUpCapture",
+          "type": "PointerEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onProgress",
+          "inheritedFrom": "DOMAttributes.onProgress",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onProgressCapture",
+          "inheritedFrom": "DOMAttributes.onProgressCapture",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onRateChange",
+          "inheritedFrom": "DOMAttributes.onRateChange",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onRateChangeCapture",
+          "inheritedFrom": "DOMAttributes.onRateChangeCapture",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Optional custom renderer for body region. Replaces any children passed into the component.</p>\n"
+            ],
+            "contentsRaw": "Optional custom renderer for body region. Replaces any children passed into the component.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onRenderBody",
+          "inheritedFrom": "IPanelProps.onRenderBody",
+          "type": "IRenderFunction<IPanelProps>"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Optional custom renderer for footer region. Replaces sticky footer.</p>\n"
+            ],
+            "contentsRaw": "Optional custom renderer for footer region. Replaces sticky footer.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onRenderFooter",
+          "inheritedFrom": "IPanelProps.onRenderFooter",
+          "type": "IRenderFunction<IPanelProps>"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Custom renderer for content in the sticky footer</p>\n"
+            ],
+            "contentsRaw": "Custom renderer for content in the sticky footer",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onRenderFooterContent",
+          "inheritedFrom": "IPanelProps.onRenderFooterContent",
+          "type": "IRenderFunction<IPanelProps>"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Optional custom renderer for header region. Replaces current title</p>\n"
+            ],
+            "contentsRaw": "Optional custom renderer for header region. Replaces current title",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onRenderHeader",
+          "inheritedFrom": "IPanelProps.onRenderHeader",
+          "type": "IPanelHeaderRenderer"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Optional custom renderer navigation region. Replaces the region that contains the close button.</p>\n"
+            ],
+            "contentsRaw": "Optional custom renderer navigation region. Replaces the region that contains the close button.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onRenderNavigation",
+          "inheritedFrom": "IPanelProps.onRenderNavigation",
+          "type": "IRenderFunction<IPanelProps>"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Optional custom renderer for content in the navigation region. Replaces current close button.</p>\n"
+            ],
+            "contentsRaw": "Optional custom renderer for content in the navigation region. Replaces current close button.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onRenderNavigationContent",
+          "inheritedFrom": "IPanelProps.onRenderNavigationContent",
+          "type": "IRenderFunction<IPanelProps>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onReset",
+          "inheritedFrom": "DOMAttributes.onReset",
+          "type": "FormEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onResetCapture",
+          "inheritedFrom": "DOMAttributes.onResetCapture",
+          "type": "FormEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onScroll",
+          "inheritedFrom": "DOMAttributes.onScroll",
+          "type": "UIEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onScrollCapture",
+          "inheritedFrom": "DOMAttributes.onScrollCapture",
+          "type": "UIEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onSeeked",
+          "inheritedFrom": "DOMAttributes.onSeeked",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onSeekedCapture",
+          "inheritedFrom": "DOMAttributes.onSeekedCapture",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onSeeking",
+          "inheritedFrom": "DOMAttributes.onSeeking",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onSeekingCapture",
+          "inheritedFrom": "DOMAttributes.onSeekingCapture",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onSelect",
+          "inheritedFrom": "DOMAttributes.onSelect",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onSelectCapture",
+          "inheritedFrom": "DOMAttributes.onSelectCapture",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onStalled",
+          "inheritedFrom": "DOMAttributes.onStalled",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onStalledCapture",
+          "inheritedFrom": "DOMAttributes.onStalledCapture",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onSubmit",
+          "inheritedFrom": "DOMAttributes.onSubmit",
+          "type": "FormEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onSubmitCapture",
+          "inheritedFrom": "DOMAttributes.onSubmitCapture",
+          "type": "FormEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onSuspend",
+          "inheritedFrom": "DOMAttributes.onSuspend",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onSuspendCapture",
+          "inheritedFrom": "DOMAttributes.onSuspendCapture",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onTimeUpdate",
+          "inheritedFrom": "DOMAttributes.onTimeUpdate",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onTimeUpdateCapture",
+          "inheritedFrom": "DOMAttributes.onTimeUpdateCapture",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onTouchCancel",
+          "inheritedFrom": "DOMAttributes.onTouchCancel",
+          "type": "TouchEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onTouchCancelCapture",
+          "inheritedFrom": "DOMAttributes.onTouchCancelCapture",
+          "type": "TouchEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onTouchEnd",
+          "inheritedFrom": "DOMAttributes.onTouchEnd",
+          "type": "TouchEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onTouchEndCapture",
+          "inheritedFrom": "DOMAttributes.onTouchEndCapture",
+          "type": "TouchEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onTouchMove",
+          "inheritedFrom": "DOMAttributes.onTouchMove",
+          "type": "TouchEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onTouchMoveCapture",
+          "inheritedFrom": "DOMAttributes.onTouchMoveCapture",
+          "type": "TouchEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onTouchStart",
+          "inheritedFrom": "DOMAttributes.onTouchStart",
+          "type": "TouchEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onTouchStartCapture",
+          "inheritedFrom": "DOMAttributes.onTouchStartCapture",
+          "type": "TouchEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onTransitionEnd",
+          "inheritedFrom": "DOMAttributes.onTransitionEnd",
+          "type": "TransitionEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onTransitionEndCapture",
+          "inheritedFrom": "DOMAttributes.onTransitionEndCapture",
+          "type": "TransitionEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onVolumeChange",
+          "inheritedFrom": "DOMAttributes.onVolumeChange",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onVolumeChangeCapture",
+          "inheritedFrom": "DOMAttributes.onVolumeChangeCapture",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onWaiting",
+          "inheritedFrom": "DOMAttributes.onWaiting",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onWaitingCapture",
+          "inheritedFrom": "DOMAttributes.onWaitingCapture",
+          "type": "ReactEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onWheel",
+          "inheritedFrom": "DOMAttributes.onWheel",
+          "type": "WheelEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onWheelCapture",
+          "inheritedFrom": "DOMAttributes.onWheelCapture",
+          "type": "WheelEventHandler<PanelBase>"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Optional props to pass to the Overlay component that the panel uses.</p>\n"
+            ],
+            "contentsRaw": "Optional props to pass to the Overlay component that the panel uses.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "overlayProps",
+          "inheritedFrom": "IPanelProps.overlayProps",
+          "type": "IOverlayProps"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "placeholder",
+          "inheritedFrom": "HTMLAttributes.placeholder",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "prefix",
+          "inheritedFrom": "HTMLAttributes.prefix",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "property",
+          "inheritedFrom": "HTMLAttributes.property",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "radioGroup",
+          "inheritedFrom": "HTMLAttributes.radioGroup",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "resource",
+          "inheritedFrom": "HTMLAttributes.resource",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "results",
+          "inheritedFrom": "HTMLAttributes.results",
+          "type": "number"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "role",
+          "inheritedFrom": "HTMLAttributes.role",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "security",
+          "inheritedFrom": "HTMLAttributes.security",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "slot",
+          "inheritedFrom": "HTMLAttributes.slot",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "spellCheck",
+          "inheritedFrom": "HTMLAttributes.spellCheck",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "style",
+          "inheritedFrom": "HTMLAttributes.style",
+          "type": "CSSProperties"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Call to provide customized styling that will layer on top of the variant rules.</p>\n"
+            ],
+            "contentsRaw": "Call to provide customized styling that will layer on top of the variant rules.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "styles",
+          "inheritedFrom": "IPanelProps.styles",
+          "type": "IStyleFunctionOrObject<IPanelStyleProps, IPanelStyles>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "suppressContentEditableWarning",
+          "inheritedFrom": "HTMLAttributes.suppressContentEditableWarning",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "suppressHydrationWarning",
+          "inheritedFrom": "HTMLAttributes.suppressHydrationWarning",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "tabIndex",
+          "inheritedFrom": "HTMLAttributes.tabIndex",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Theme provided by High-Order Component.</p>\n"
+            ],
+            "contentsRaw": "Theme provided by High-Order Component.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "theme",
+          "inheritedFrom": "IPanelProps.theme",
+          "type": "ITheme"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "title",
+          "inheritedFrom": "HTMLAttributes.title",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Type of the panel.</p>\n",
+              {
+                "tag": "defaultvalue",
+                "value": "PanelType.smallFixedFar"
+              }
+            ],
+            "contentsRaw": "Type of the panel.\n\n@defaultvalue PanelType.smallFixedFar",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "type",
+          "inheritedFrom": "IPanelProps.type",
+          "type": "PanelType"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "typeof",
+          "inheritedFrom": "HTMLAttributes.typeof",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "unselectable",
+          "inheritedFrom": "HTMLAttributes.unselectable",
+          "type": "\"on\" | \"off\""
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "vocab",
+          "inheritedFrom": "HTMLAttributes.vocab",
+          "type": "string"
+        }
+      ]
+    },
     "PanelLinkProps": {
       "fileName": "src\\ui-toolkit\\components\\panel\\PanelLink.tsx",
       "flags": {
@@ -17155,6 +21550,56 @@ export default {
         }
       ]
     },
+    "ComponentSizeData": {
+      "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "ComponentSizeData",
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "height",
+          "type": "number"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "width",
+          "type": "number"
+        }
+      ]
+    },
     "HowManyFitOptions": {
       "fileName": "src\\ui-toolkit\\hooks\\useHowManyFit.ts",
       "flags": {
@@ -17172,6 +21617,13 @@ export default {
       "methods": [],
       "properties": [
         {
+          "documentation": {
+            "contents": [
+              "<p>Allows you to cut off how many items will fit. Defaults to nothing.</p>\n"
+            ],
+            "contentsRaw": "Allows you to cut off how many items will fit. Defaults to nothing.",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\hooks\\useHowManyFit.ts",
           "flags": {
             "isExported": true,
@@ -17188,6 +21640,13 @@ export default {
           "type": "number"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Defaults to 0. Allows you to account for space between elements. You&#39;ll have</p>\n"
+            ],
+            "contentsRaw": "Defaults to 0. Allows you to account for space between elements. You'll have",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\hooks\\useHowManyFit.ts",
           "flags": {
             "isExported": true,
@@ -18881,191 +23340,6 @@ export default {
         }
       ]
     },
-    "CardProps": {
-      "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "interface",
-      "name": "CardProps",
-      "methods": [],
-      "properties": [
-        {
-          "documentation": {
-            "contents": [
-              "<p>Center align (horizonatally) the card&#39;s content</p>\n"
-            ],
-            "contentsRaw": "Center align (horizonatally) the card's content",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "centered",
-          "type": "boolean"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>What to render inside the card</p>\n"
-            ],
-            "contentsRaw": "What to render inside the card",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "children",
-          "type": "ReactNode"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Optional class name used for style overrides</p>\n"
-            ],
-            "contentsRaw": "Optional class name used for style overrides",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "className",
-          "type": "string"
-        }
-      ]
-    },
-    "CacheOptions": {
-      "fileName": "src\\ui-toolkit\\core\\utils\\cache.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "interface",
-      "name": "CacheOptions",
-      "methods": [],
-      "properties": [
-        {
-          "fileName": "src\\ui-toolkit\\core\\utils\\cache.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "cacheBustKey",
-          "type": "string"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\core\\utils\\cache.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "duration",
-          "type": "number"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\core\\utils\\cache.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "getCacheKey",
-          "type": "(...providedParams: any[]) => string"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\core\\utils\\cache.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "key",
-          "type": "string"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\core\\utils\\cache.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "location",
-          "type": "Storage"
-        }
-      ]
-    },
     "SiteDataParams": {
       "fileName": "src\\ui-toolkit\\hooks\\useSiteData.tsx",
       "flags": {
@@ -19293,6 +23567,191 @@ export default {
           "kind": "property",
           "name": "validation",
           "type": "SiteDataValidation"
+        }
+      ]
+    },
+    "CardProps": {
+      "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "CardProps",
+      "methods": [],
+      "properties": [
+        {
+          "documentation": {
+            "contents": [
+              "<p>Center align (horizonatally) the card&#39;s content</p>\n"
+            ],
+            "contentsRaw": "Center align (horizonatally) the card's content",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "centered",
+          "type": "boolean"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>What to render inside the card</p>\n"
+            ],
+            "contentsRaw": "What to render inside the card",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "children",
+          "type": "ReactNode"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Optional class name used for style overrides</p>\n"
+            ],
+            "contentsRaw": "Optional class name used for style overrides",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "className",
+          "type": "string"
+        }
+      ]
+    },
+    "CacheOptions": {
+      "fileName": "src\\ui-toolkit\\core\\utils\\cache.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "CacheOptions",
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "src\\ui-toolkit\\core\\utils\\cache.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "cacheBustKey",
+          "type": "string"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\core\\utils\\cache.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "duration",
+          "type": "number"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\core\\utils\\cache.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "getCacheKey",
+          "type": "(...providedParams: any[]) => string"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\core\\utils\\cache.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\core\\utils\\cache.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "location",
+          "type": "Storage"
         }
       ]
     },
