@@ -23,6 +23,7 @@ import UseAutoPagingDocs, { metadata as UseAutoPagingMetadata } from "ui-toolkit
 import UseComponentSizeDocs, { metadata as UseComponentSizeMetadata } from "ui-toolkit/hooks/useComponentSize.mdx"
 import UseDebouncedEffectDocs, { metadata as UseDebouncedEffectMetadata } from "ui-toolkit/hooks/useDebouncedEffect.mdx"
 import UseDebouncedValueDocs, { metadata as UseDebouncedValueMetadata } from "ui-toolkit/hooks/useDebouncedValue.mdx"
+import UseHoverDocs, { metadata as UseHoverMetadata } from "ui-toolkit/hooks/useHover.mdx"
 import UseIntervalDocs, { metadata as UseIntervalMetadata } from "ui-toolkit/hooks/useInterval.mdx"
 import UsePagedItemsDocs, { metadata as UsePagedItemsMetadata } from "ui-toolkit/hooks/usePagedItems.mdx"
 import UsePagingDocs, { metadata as UsePagingMetadata } from "ui-toolkit/hooks/usePaging.mdx"
@@ -197,6 +198,13 @@ const docs = [
         sort: UseDebouncedValueMetadata?.sort ?? 9999,
         parent: UseDebouncedValueMetadata?.parent || "hooks",
         render: () => <UseDebouncedValueDocs />,
+    },
+   {
+        title: "UseHover",
+        section: "hooks",
+        sort: UseHoverMetadata?.sort ?? 9999,
+        parent: UseHoverMetadata?.parent || "hooks",
+        render: () => <UseHoverDocs />,
     },
    {
         title: "UseInterval",
