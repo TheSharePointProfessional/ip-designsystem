@@ -1,10 +1,9 @@
 import { useRef, useEffect, useState } from "react";
-import useHowManyFit from "../../hooks/useHowManyFit";
-import { usePaging, usePagedItems } from "../../hooks/usePaging";
-import useHover from "../../hooks/useHover";
-import useInterval from "../../hooks/useInterval";
-import useComponentSize from "../../hooks/useComponentSize";
 import useScrollSync from "./useScrollSync";
+import useHowManyFit from "ui-toolkit/hooks/useHowManyFit";
+import usePaging from "ui-toolkit/hooks/usePaging";
+import useHover from "ui-toolkit/hooks/useHover";
+import { useInterval } from "ui-toolkit";
 
 export interface FilmstripOptions {
   itemMinWidth?: number;
@@ -49,7 +48,7 @@ export default function useFilmstrip(
     // Ex: 10 items w/ 3 per frame
     // When current page is 8, we'll see 8,9,10. If we hit "next", we want to go back to 1.
     if (paging.currentPage + numItemsThatFit > totalCount + 1) {
-      // console.log(paging.currentPage, numItemsThatFit, totalCount);
+      console.log(paging.currentPage, numItemsThatFit, totalCount);
       paging.goTo(1);
     }
   }, [paging.currentPage, numItemsThatFit, totalCount]);

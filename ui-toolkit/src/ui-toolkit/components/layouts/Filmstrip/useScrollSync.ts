@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from "react";
-import "ui-toolkit/core/polyfills/element.scroll";
 
 // Everything to do with scrolling based on the the Paging
 export default function useScrollSync({ itemsRef, itemWidth, paging }) {
@@ -18,7 +17,7 @@ export default function useScrollSync({ itemsRef, itemWidth, paging }) {
   // Actually scroll the DOM element to match the tracked scroll position
   useEffect(() => {
     if (itemsRef.current) {
-      // console.log("Scrolling to", scrollPosition);
+      console.log("Scrolling to", scrollPosition);
       itemsRef.current.scrollTo(scrollPosition, 0);
     }
   }, [scrollPosition]);
@@ -38,7 +37,7 @@ export default function useScrollSync({ itemsRef, itemWidth, paging }) {
       }
 
       // Setup the new handler
-      timeoutRef.current = setTimeout(function () {
+      timeoutRef.current = setTimeout(function() {
         // Run our scroll functions
         // console.log(
         //   "currentPage = scrollLeft / itemWidth",
