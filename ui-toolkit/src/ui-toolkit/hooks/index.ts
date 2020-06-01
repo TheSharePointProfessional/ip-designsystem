@@ -7,5 +7,7 @@ export { default as useAutoPaging } from "./useAutoPaging";
 export { default as useComponentSize } from "./useComponentSize";
 export { default as useHowManyFit } from "./useHowManyFit";
 export { default as useHover } from "./useHover";
+export { default as useOnClickOutside } from "./useOnClickOutside";
+export * from "./useSiteData";
 
 export * from "./usePaging";
