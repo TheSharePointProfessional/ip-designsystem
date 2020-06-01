@@ -21617,6 +21617,13 @@ export default {
       "methods": [],
       "properties": [
         {
+          "documentation": {
+            "contents": [
+              "<p>Allows you to cut off how many items will fit. Defaults to nothing.</p>\n"
+            ],
+            "contentsRaw": "Allows you to cut off how many items will fit. Defaults to nothing.",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\hooks\\useHowManyFit.ts",
           "flags": {
             "isExported": true,
@@ -21633,6 +21640,13 @@ export default {
           "type": "number"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Defaults to 0. Allows you to account for space between elements. You&#39;ll have</p>\n"
+            ],
+            "contentsRaw": "Defaults to 0. Allows you to account for space between elements. You'll have",
+            "metadata": {}
+          },
           "fileName": "src\\ui-toolkit\\hooks\\useHowManyFit.ts",
           "flags": {
             "isExported": true,

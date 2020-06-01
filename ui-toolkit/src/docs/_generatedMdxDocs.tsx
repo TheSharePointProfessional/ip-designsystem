@@ -24,6 +24,7 @@ import UseComponentSizeDocs, { metadata as UseComponentSizeMetadata } from "ui-t
 import UseDebouncedEffectDocs, { metadata as UseDebouncedEffectMetadata } from "ui-toolkit/hooks/useDebouncedEffect.mdx"
 import UseDebouncedValueDocs, { metadata as UseDebouncedValueMetadata } from "ui-toolkit/hooks/useDebouncedValue.mdx"
 import UseHoverDocs, { metadata as UseHoverMetadata } from "ui-toolkit/hooks/useHover.mdx"
+import UseHowManyFitDocs, { metadata as UseHowManyFitMetadata } from "ui-toolkit/hooks/useHowManyFit.mdx"
 import UseIntervalDocs, { metadata as UseIntervalMetadata } from "ui-toolkit/hooks/useInterval.mdx"
 import UsePagedItemsDocs, { metadata as UsePagedItemsMetadata } from "ui-toolkit/hooks/usePagedItems.mdx"
 import UsePagingDocs, { metadata as UsePagingMetadata } from "ui-toolkit/hooks/usePaging.mdx"
@@ -205,6 +206,13 @@ const docs = [
         sort: UseHoverMetadata?.sort ?? 9999,
         parent: UseHoverMetadata?.parent || "hooks",
         render: () => <UseHoverDocs />,
+    },
+   {
+        title: "UseHowManyFit",
+        section: "hooks",
+        sort: UseHowManyFitMetadata?.sort ?? 9999,
+        parent: UseHowManyFitMetadata?.parent || "hooks",
+        render: () => <UseHowManyFitDocs />,
     },
    {
         title: "UseInterval",
