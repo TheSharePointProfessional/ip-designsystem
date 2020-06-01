@@ -49,7 +49,7 @@ export default function useFilmstrip(
     // Ex: 10 items w/ 3 per frame
     // When current page is 8, we'll see 8,9,10. If we hit "next", we want to go back to 1.
     if (paging.currentPage + numItemsThatFit > totalCount + 1) {
-      console.log(paging.currentPage, numItemsThatFit, totalCount);
+      // console.log(paging.currentPage, numItemsThatFit, totalCount);
       paging.goTo(1);
     }
   }, [paging.currentPage, numItemsThatFit, totalCount]);
@@ -77,7 +77,7 @@ export default function useFilmstrip(
   };
 }
 
-const getItemHeight = function(itemsRef) {
+const getItemHeight = function (itemsRef) {
   if (
     itemsRef &&
     itemsRef.current &&
