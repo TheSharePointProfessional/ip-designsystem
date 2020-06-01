@@ -1,5 +1,5 @@
 import React from "react";
-import { usePanel } from "./usePanel";
+import { usePanel, PanelProps } from "./usePanel";
 import { Panel as FabricPanel, IPanelProps } from "office-ui-fabric-react/lib/Panel";
 import styled from "ui-toolkit/styled-components";
 
@@ -12,9 +12,7 @@ export const IFramePanel: React.FC<PanelProps> = function ({ url, ...panelProps 
     </FabricPanel>
   );
 };
-export interface PanelProps extends IPanelProps {
-  url: string;
-}
+
 export default IFramePanel;
 
 const StyledIFrameWrapper = styled.div`
