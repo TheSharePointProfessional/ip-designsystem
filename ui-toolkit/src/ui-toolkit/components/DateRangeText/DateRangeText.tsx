@@ -1,14 +1,11 @@
 import React from "react";
-import format from "date-fns/format";
-import isValid from "date-fns/isValid";
-import getMinutes from "date-fns/getMinutes";
-import isEqual from "date-fns/isEqual";
-import startOfDay from "date-fns/startOfDay";
+import dayjs from "dayjs";
 
-const DATE_FORMAT = "EEE, MMM do";
+const DATE_FORMAT = "ddd, MMM D";
 
-const getTimeFormat = (date: Date) => (getMinutes(date) === 0 ? "haaaa" : "h:mmaaaa");
-type DateRangeType =
+const getTimeFormat = (date: Date) => (getMinutes(date) === 0 ? "ha" : "h:mma");
+
+export type DateRangeType =
   | "single-day-time"
   | "single-day-times"
   | "single-all-day"
@@ -51,6 +48,14 @@ export function getDateRangeType(start: Date, end?: Date): DateRangeType {
     return "multi-all-day";
   }
 }
+
+const format = (date, formatStr) => {
+  return dayjs(date).format(formatStr);
+};
+const isValid = (date) => dayjs(date).isValid();
+const getMinutes = (date) => dayjs(date).get("minute");
+const isEqual = (dateA, dateB) => dayjs(dateA).isSame(dateB);
+const startOfDay = (date) => dayjs(date).startOf("day");
 
 function checkSameDay(start, end) {
   return isEqual(startOfDay(start), startOfDay(end));
@@ -103,7 +108,7 @@ const renderMultiDayAllDay = (event) => (
 // Multi day event render StartDateTime - EndDateTime
 const renderMultiDay = (event) => (
   <span>
-    {format(event.start, DATE_FORMAT + ", " + getTimeFormat(event.start))} {" \u2192 "}
+    {format(event.start, DATE_FORMAT + ", " + getTimeFormat(event.start))} {" - "}
     {format(event.end, DATE_FORMAT + ", " + getTimeFormat(event.end))}
   </span>
 );

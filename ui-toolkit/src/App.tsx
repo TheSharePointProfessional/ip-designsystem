@@ -4,7 +4,7 @@ import { Menu, docs } from "docs";
 import { Fabric } from "office-ui-fabric-react/lib/Fabric";
 import useQueryString from "ui-toolkit/hooks/useQueryString";
 import { MDXProvider } from "@mdx-js/react";
-import PortalsThemeProvider from "ui-toolkit/components/PortalsThemeProvider/PortalsThemeProvider";
+import { PortalsThemeProvider } from "ui-toolkit/components/PortalsThemeProvider/PortalsThemeProvider";
 import CodeBlock from "docs/CodeBlock/CodeBlock";
 
 const components = {

@@ -1,14 +1,16 @@
 import React from "react";
 import styled from "ui-toolkit/styled-components";
-import format from "date-fns/format";
-import isValid from "date-fns/isValid";
 import { getThemeValue } from "../PortalsThemeProvider/PortalsThemeProvider";
+import dayjs from "dayjs";
 
 const CLASS_NAME = "big-date";
 const DATE_FORMAT = "EEE, MMM do";
 
+const format = (date, formatStr) => {
+  return dayjs(date).format(formatStr);
+};
 export function BigDate({ date = new Date(), className = "", ...rest }: BigDateProps) {
-  if (!isValid(date)) {
+  if (!dayjs(date).isValid()) {
     //console.log("BigDate: Invalid Date");
     return null;
   }
@@ -16,7 +18,7 @@ export function BigDate({ date = new Date(), className = "", ...rest }: BigDateP
   return (
     <StyledBigDate className={cssClass} {...rest}>
       <div className="month">{format(date, "MMM")}</div>
-      <div className="date">{format(date, "d")}</div>
+      <div className="date">{format(date, "D")}</div>
     </StyledBigDate>
   );
 }
@@ -27,7 +29,7 @@ export function BigDateRange({
   className = "",
   ...rest
 }: BigDateRangeProps) {
-  if (!isValid(start)) {
+  if (!dayjs(start).isValid()) {
     return null;
   }
   let singleDay =
@@ -42,12 +44,12 @@ export function BigDateRange({
     <StyledBigMultiDate className={cssClass} {...rest}>
       <div className="start">
         <span className="month">{format(start, "MMM")} </span>
-        <span className="date">{format(start, "d")}</span>
+        <span className="date">{format(start, "D")}</span>
       </div>
       <div className="divider"></div>
       <div className="end">
         <span className="month">{format(end, "MMM")} </span>
-        <span className="date">{format(end, "d")}</span>
+        <span className="date">{format(end, "D")}</span>
       </div>
     </StyledBigMultiDate>
   );
