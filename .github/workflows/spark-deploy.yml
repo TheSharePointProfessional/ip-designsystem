@@ -21,10 +21,8 @@ jobs:
         with:
           node-version: 10.x
 
-      # npm install
-
       - name: NPM Install
-      - uses: bahmutov/npm-install@v1
+        uses: bahmutov/npm-install@v1
         with:
           working-directory: ui-toolkit
 
