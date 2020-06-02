@@ -1,4 +1,4 @@
-name: "Spark Deploy"
+name: "UI Toolkit - Spark Deploy"
 
 env:
   SITE_URL: "https://skylinespark.sharepoint.com/sites/apps"
@@ -23,12 +23,15 @@ jobs:
 
       # npm install
       - name: NPM Install
+        working-directory: ui-toolkit
         run: npm install
 
       - name: Build
         run: npm run build
+        working-directory: ui-toolkit
 
       - name: Deploy
+        working-directory: ui-toolkit
         shell: powershell
         run: |
           Install-Module SharePointPnPPowershellOnline -SkipPublisherCheck -Force -AllowClobber
@@ -36,7 +39,6 @@ jobs:
           $secureString = ConvertTo-SecureString -AsPlainText -Force -String ${{ secrets.SPARK_PASSWORD }}
           $credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList "${{ secrets.SPARK_USERNAME }}",$secureString
           Connect-PnPOnline -Url ${{ env.SITE_URL }} -Credentials $credential
-          Set-Location .\ui-toolkit\
           Write-Host "Uploading the ClientSideAssets..."
           Get-ChildItem -Path "ClientSideAssets" | ForEach-Object {
               Add-PnPFile -Path  $_.FullName -Folder "ClientSideAssets/ui-toolkit"
