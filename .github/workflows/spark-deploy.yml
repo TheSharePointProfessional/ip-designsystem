@@ -22,9 +22,11 @@ jobs:
           node-version: 10.x
 
       # npm install
+
       - name: NPM Install
-        working-directory: ui-toolkit
-        run: npm install
+      - uses: bahmutov/npm-install@v1
+        with:
+          working-directory: ui-toolkit
 
       - name: Build
         run: npm run build
@@ -43,3 +45,16 @@ jobs:
           Get-ChildItem -Path "ClientSideAssets" | ForEach-Object {
               Add-PnPFile -Path  $_.FullName -Folder "ClientSideAssets/ui-toolkit"
           }
+
+      - name: Microsoft Teams Notification
+        uses: aliencube/microsoft-teams-actions@v0.8.0
+        if: always()
+        with:
+          # Incoming webhook URI to Microsoft Teams
+          webhook_uri: https://outlook.office.com/webhook/ff934007-21a9-4567-bf1e-4326482e46f4@59a2b115-db55-4735-a4d0-96c18208604f/IncomingWebhook/9ab749107563490b95197136996faca1/064e3647-a206-4a50-8fc6-c8a6614fb66a
+          # Message title
+          title: UI Toolkit Spark Deploy - Status=${{ job.status }}
+          # Message summary
+          summary: The UI Toolkit Spark Deploy job has completed with a status of ${{job.status}}
+          # Message text
+          text: The UI Toolkit Spark Deploy job has completed with a status of ${{job.status}}
