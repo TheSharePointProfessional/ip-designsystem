@@ -1,0 +1,43 @@
+name: "Spark Deploy"
+
+env:
+  SITE_URL: "https://skylinespark.sharepoint.com/sites/apps"
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  deploy:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js 10.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
+
+      # npm install
+      - name: NPM Install
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy
+        shell: powershell
+        run: |
+          Install-Module SharePointPnPPowershellOnline -SkipPublisherCheck -Force -AllowClobber
+          Import-Module SharePointPnPPowerShellOnline
+          $secureString = ConvertTo-SecureString -AsPlainText -Force -String ${{ secrets.SPARK_PASSWORD }}
+          $credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList "${{ secrets.SPARK_USERNAME }}",$secureString
+          Connect-PnPOnline -Url ${{ env.SITE_URL }} -Credentials $credential
+          Set-Location .\ui-toolkit\
+          Write-Host "Uploading the ClientSideAssets..."
+          Get-ChildItem -Path "ClientSideAssets" | ForEach-Object {
+              Add-PnPFile -Path  $_.FullName -Folder "ClientSideAssets/ui-toolkit"
+          }

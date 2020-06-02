@@ -7119,10 +7119,10 @@ export default {
       ]
     },
     "PanelLink": {
-      "fileName": "src\\ui-toolkit\\components\\panel\\PanelLink.tsx",
+      "fileName": "src\\ui-toolkit\\components\\Panel\\PanelLink.tsx",
       "flags": {
         "isExported": true,
-        "isExternal": true,
+        "isExternal": false,
         "isOptional": false,
         "isPrivate": false,
         "isProtected": false,
@@ -7134,7 +7134,7 @@ export default {
       "name": "PanelLink",
       "signatures": [
         {
-          "fileName": "src\\ui-toolkit\\components\\panel\\PanelLink.tsx",
+          "fileName": "src\\ui-toolkit\\components\\Panel\\PanelLink.tsx",
           "kind": "signature",
           "name": "PanelLink",
           "parameters": [
@@ -9838,31 +9838,6 @@ export default {
         }
       ]
     },
-    "CardDemo": {
-      "fileName": "src\\ui-toolkit\\components\\Card\\CardDemo.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "CardDemo",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\Card\\CardDemo.tsx",
-          "kind": "signature",
-          "name": "CardDemo",
-          "parameters": [],
-          "returnType": "Element<>",
-          "type": "() => Element<>"
-        }
-      ]
-    },
     "getCache": {
       "fileName": "src\\ui-toolkit\\core\\utils\\cache.ts",
       "flags": {
@@ -10029,6 +10004,31 @@ export default {
           ],
           "returnType": "(Anonymous function)",
           "type": "(asyncFn: any, cacheConfig: CacheOptions, context?: any) => (Anonymous function)"
+        }
+      ]
+    },
+    "CardDemo": {
+      "fileName": "src\\ui-toolkit\\components\\Card\\CardDemo.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "CardDemo",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\Card\\CardDemo.tsx",
+          "kind": "signature",
+          "name": "CardDemo",
+          "parameters": [],
+          "returnType": "Element<>",
+          "type": "() => Element<>"
         }
       ]
     },
@@ -10603,8 +10603,8 @@ export default {
         }
       ]
     },
-    "Window": {
-      "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
+    "ComponentSizeData": {
+      "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -10616,11 +10616,11 @@ export default {
         "isStatic": false
       },
       "kind": "interface",
-      "name": "Window",
+      "name": "ComponentSizeData",
       "methods": [],
       "properties": [
         {
-          "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
+          "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -10632,11 +10632,11 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "__themeState__",
-          "type": "any"
+          "name": "height",
+          "type": "number"
         },
         {
-          "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
+          "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -10648,8 +10648,8 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "_portalsTheme",
-          "type": "any"
+          "name": "width",
+          "type": "number"
         }
       ]
     },
@@ -10999,7 +10999,7 @@ export default {
       ]
     },
     "PanelProps": {
-      "fileName": "src\\ui-toolkit\\components\\Panel\\IFramePanel.tsx",
+      "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -15375,11 +15375,11 @@ export default {
           "type": "\"on\" | \"off\""
         },
         {
-          "fileName": "src\\ui-toolkit\\components\\Panel\\IFramePanel.tsx",
+          "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
-            "isOptional": false,
+            "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
             "isPublic": false,
@@ -19938,10 +19938,10 @@ export default {
       ]
     },
     "PanelLinkProps": {
-      "fileName": "src\\ui-toolkit\\components\\panel\\PanelLink.tsx",
+      "fileName": "src\\ui-toolkit\\components\\Panel\\PanelLink.tsx",
       "flags": {
         "isExported": true,
-        "isExternal": true,
+        "isExternal": false,
         "isOptional": false,
         "isPrivate": false,
         "isProtected": false,
@@ -19952,7 +19952,7 @@ export default {
       "kind": "interface",
       "name": "PanelLinkProps",
       "indexSignature": {
-        "fileName": "src\\ui-toolkit\\components\\panel\\PanelLink.tsx",
+        "fileName": "src\\ui-toolkit\\components\\Panel\\PanelLink.tsx",
         "kind": "signature",
         "name": "__index",
         "parameters": [
@@ -19978,10 +19978,10 @@ export default {
       "methods": [],
       "properties": [
         {
-          "fileName": "src\\ui-toolkit\\components\\panel\\PanelLink.tsx",
+          "fileName": "src\\ui-toolkit\\components\\Panel\\PanelLink.tsx",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -19994,10 +19994,10 @@ export default {
           "type": "any"
         },
         {
-          "fileName": "src\\ui-toolkit\\components\\panel\\PanelLink.tsx",
+          "fileName": "src\\ui-toolkit\\components\\Panel\\PanelLink.tsx",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": false,
             "isPrivate": false,
             "isProtected": false,
@@ -20010,10 +20010,10 @@ export default {
           "type": "string"
         },
         {
-          "fileName": "src\\ui-toolkit\\components\\panel\\PanelLink.tsx",
+          "fileName": "src\\ui-toolkit\\components\\Panel\\PanelLink.tsx",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -20026,10 +20026,10 @@ export default {
           "type": "\"small\" | \"medium\" | \"large\" | number"
         },
         {
-          "fileName": "src\\ui-toolkit\\components\\panel\\PanelLink.tsx",
+          "fileName": "src\\ui-toolkit\\components\\Panel\\PanelLink.tsx",
           "flags": {
             "isExported": true,
-            "isExternal": true,
+            "isExternal": false,
             "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
@@ -21321,6 +21321,56 @@ export default {
         }
       ]
     },
+    "Window": {
+      "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "Window",
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "__themeState__",
+          "type": "any"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "_portalsTheme",
+          "type": "any"
+        }
+      ]
+    },
     "SitePickerProps": {
       "fileName": "src\\ui-toolkit\\components\\inputs\\SitePicker\\SitePicker.tsx",
       "flags": {
@@ -21547,56 +21597,6 @@ export default {
           "kind": "property",
           "name": "size",
           "type": "string"
-        }
-      ]
-    },
-    "ComponentSizeData": {
-      "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "interface",
-      "name": "ComponentSizeData",
-      "methods": [],
-      "properties": [
-        {
-          "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "height",
-          "type": "number"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "width",
-          "type": "number"
         }
       ]
     },
@@ -23570,93 +23570,6 @@ export default {
         }
       ]
     },
-    "CardProps": {
-      "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "interface",
-      "name": "CardProps",
-      "methods": [],
-      "properties": [
-        {
-          "documentation": {
-            "contents": [
-              "<p>Center align (horizonatally) the card&#39;s content</p>\n"
-            ],
-            "contentsRaw": "Center align (horizonatally) the card's content",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "centered",
-          "type": "boolean"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>What to render inside the card</p>\n"
-            ],
-            "contentsRaw": "What to render inside the card",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "children",
-          "type": "ReactNode"
-        },
-        {
-          "documentation": {
-            "contents": [
-              "<p>Optional class name used for style overrides</p>\n"
-            ],
-            "contentsRaw": "Optional class name used for style overrides",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "className",
-          "type": "string"
-        }
-      ]
-    },
     "CacheOptions": {
       "fileName": "src\\ui-toolkit\\core\\utils\\cache.ts",
       "flags": {
@@ -23752,6 +23665,93 @@ export default {
           "kind": "property",
           "name": "location",
           "type": "Storage"
+        }
+      ]
+    },
+    "CardProps": {
+      "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "CardProps",
+      "methods": [],
+      "properties": [
+        {
+          "documentation": {
+            "contents": [
+              "<p>Center align (horizonatally) the card&#39;s content</p>\n"
+            ],
+            "contentsRaw": "Center align (horizonatally) the card's content",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "centered",
+          "type": "boolean"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>What to render inside the card</p>\n"
+            ],
+            "contentsRaw": "What to render inside the card",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "children",
+          "type": "ReactNode"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Optional class name used for style overrides</p>\n"
+            ],
+            "contentsRaw": "Optional class name used for style overrides",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "className",
+          "type": "string"
         }
       ]
     },
@@ -24568,6 +24568,22 @@ export default {
       "kind": "type alias",
       "name": "PanelSize",
       "type": "\"small\" | \"medium\" | \"large\" | number"
+    },
+    "DateRangeType": {
+      "fileName": "src\\ui-toolkit\\components\\DateRangeText\\DateRangeText.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "type alias",
+      "name": "DateRangeType",
+      "type": "\"single-day-time\" | \"single-day-times\" | \"single-all-day\" | \"multi-day-time\" | \"multi-all-day\""
     }
   }
 }
