@@ -128,7 +128,7 @@ const StyledPersona = styled.div`
   display: inline-flex;
   align-items: center;
   padding: 5px;
-
+  max-width: 100%;
   &.vertical {
     flex-direction: column;
     justify-content: space-around;

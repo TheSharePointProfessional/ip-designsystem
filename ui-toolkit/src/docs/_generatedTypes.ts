@@ -6402,8 +6402,8 @@ export default {
         }
       ]
     },
-    "useComponentSize": {
-      "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+    "useScrollSync": {
+      "fileName": "src\\ui-toolkit\\components\\layouts\\Filmstrip\\useScrollSync.ts",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -6415,12 +6415,12 @@ export default {
         "isStatic": false
       },
       "kind": "method",
-      "name": "useComponentSize",
+      "name": "useScrollSync",
       "signatures": [
         {
-          "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+          "fileName": "src\\ui-toolkit\\components\\layouts\\Filmstrip\\useScrollSync.ts",
           "kind": "signature",
-          "name": "useComponentSize",
+          "name": "useScrollSync",
           "parameters": [
             {
               "flags": {
@@ -6434,12 +6434,12 @@ export default {
                 "isStatic": false
               },
               "kind": "parameter",
-              "name": "ref",
-              "type": "any"
+              "name": "__namedParameters",
+              "type": ""
             }
           ],
           "returnType": "",
-          "type": "(ref: any) => "
+          "type": "(__namedParameters: ) => "
         }
       ]
     },
@@ -8198,6 +8198,47 @@ export default {
         }
       ]
     },
+    "Editable": {
+      "fileName": "src\\ui-toolkit\\components\\inputs\\Editable\\Editable.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "Editable",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\inputs\\Editable\\Editable.tsx",
+          "kind": "signature",
+          "name": "Editable",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
+        }
+      ]
+    },
     "Grid": {
       "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
       "flags": {
@@ -8236,47 +8277,6 @@ export default {
           ],
           "returnType": "Element<>",
           "type": "(__namedParameters: ) => Element<>"
-        }
-      ]
-    },
-    "useScrollSync": {
-      "fileName": "src\\ui-toolkit\\components\\layouts\\Filmstrip\\useScrollSync.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "useScrollSync",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\layouts\\Filmstrip\\useScrollSync.ts",
-          "kind": "signature",
-          "name": "useScrollSync",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "",
-          "type": "(__namedParameters: ) => "
         }
       ]
     },
@@ -8333,6 +8333,47 @@ export default {
           ],
           "returnType": "boolean",
           "type": "(obj: Object, path: string) => boolean"
+        }
+      ]
+    },
+    "useComponentSize": {
+      "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "useComponentSize",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+          "kind": "signature",
+          "name": "useComponentSize",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "ref",
+              "type": "any"
+            }
+          ],
+          "returnType": "",
+          "type": "(ref: any) => "
         }
       ]
     },
@@ -10603,8 +10644,8 @@ export default {
         }
       ]
     },
-    "ComponentSizeData": {
-      "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+    "Window": {
+      "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -10616,11 +10657,11 @@ export default {
         "isStatic": false
       },
       "kind": "interface",
-      "name": "ComponentSizeData",
+      "name": "Window",
       "methods": [],
       "properties": [
         {
-          "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+          "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -10632,11 +10673,11 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "height",
-          "type": "number"
+          "name": "__themeState__",
+          "type": "any"
         },
         {
-          "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+          "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -10648,8 +10689,8 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "width",
-          "type": "number"
+          "name": "_portalsTheme",
+          "type": "any"
         }
       ]
     },
@@ -21321,56 +21362,6 @@ export default {
         }
       ]
     },
-    "Window": {
-      "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "interface",
-      "name": "Window",
-      "methods": [],
-      "properties": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "__themeState__",
-          "type": "any"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "_portalsTheme",
-          "type": "any"
-        }
-      ]
-    },
     "SitePickerProps": {
       "fileName": "src\\ui-toolkit\\components\\inputs\\SitePicker\\SitePicker.tsx",
       "flags": {
@@ -21494,6 +21485,185 @@ export default {
         }
       ]
     },
+    "EditableProps": {
+      "fileName": "src\\ui-toolkit\\components\\inputs\\Editable\\Editable.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "EditableProps",
+      "methods": [],
+      "properties": [
+        {
+          "documentation": {
+            "contents": [
+              "<p>Allows you to control who can see the edit controls</p>\n"
+            ],
+            "contentsRaw": "Allows you to control who can see the edit controls",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\inputs\\Editable\\Editable.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "canEdit",
+          "type": "boolean"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Optional classname</p>\n"
+            ],
+            "contentsRaw": "Optional classname",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\inputs\\Editable\\Editable.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "className",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>&#39;text&#39; or &#39;html&#39;. Helps you handle rich text scenarios.</p>\n"
+            ],
+            "contentsRaw": "'text' or 'html'. Helps you handle rich text scenarios.",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\inputs\\Editable\\Editable.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "contentType",
+          "type": "\"text\" | \"html\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defaults to &#39;div&#39;. What kind HTML element?</p>\n"
+            ],
+            "contentsRaw": "Defaults to 'div'. What kind HTML element?",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\inputs\\Editable\\Editable.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "elementType",
+          "type": "\"div\" | \"p\" | \"span\" | \"h1\" | \"h2\" | \"h3\" | \"h4\" | \"li\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Fires when they click the save icon.</p>\n"
+            ],
+            "contentsRaw": "Fires when they click the save icon.",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\inputs\\Editable\\Editable.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onChange",
+          "type": "(value: string) => void"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>The text to display when there is no value</p>\n"
+            ],
+            "contentsRaw": "The text to display when there is no value",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\inputs\\Editable\\Editable.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "placeholder",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>The value, can be text or html string depending on contentType prop</p>\n"
+            ],
+            "contentsRaw": "The value, can be text or html string depending on contentType prop",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\inputs\\Editable\\Editable.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "value",
+          "type": "string"
+        }
+      ]
+    },
     "GridProps": {
       "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
       "flags": {
@@ -21597,6 +21767,56 @@ export default {
           "kind": "property",
           "name": "size",
           "type": "string"
+        }
+      ]
+    },
+    "ComponentSizeData": {
+      "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "ComponentSizeData",
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "height",
+          "type": "number"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "width",
+          "type": "number"
         }
       ]
     },
