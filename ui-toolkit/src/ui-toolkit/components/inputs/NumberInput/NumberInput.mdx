@@ -9,7 +9,7 @@ import { PropsTable, Showcase } from "docs";
 import { NumberInput } from "ui-toolkit";
 ```
 
-NumberInput stuff...
+An input component for only numbers. Allows setting step to increment with buttons.
 
 ```tsx live=true bordered=true
 () => {
@@ -31,7 +31,50 @@ Scroll down to the bottom for full list of props.
 
 <PropsTable name="NumberInputProps" />
 
-## Basic Usage
+## Basic Usage with Step of 5
+
+```tsx live=true bordered=true
+() => {
+  let [value, setValue] = React.useState(0);
+
+  return (
+    <>
+      <NumberInput value={value} onChange={setValue} step={5} />
+      <h1>{value}</h1>
+    </>
+  );
+};
+```
+
+## Disabled
+
+```tsx live=true bordered=true
+() => {
+  let [value, setValue] = React.useState(0);
+
+  return (
+    <>
+      <NumberInput value={value} onChange={setValue} disabled />
+      <h1>{value}</h1>
+    </>
+  );
+};
+```
+
+## Using a min and max
+
+```tsx live=true bordered=true
+() => {
+  let [value, setValue] = React.useState(0);
+
+  return (
+    <>
+      <NumberInput value={value} onChange={setValue} step={5} min={0} max={15} />
+      <h1>{value}</h1>
+    </>
+  );
+};
+```
 
 ## Fabric Textfield Props
 
