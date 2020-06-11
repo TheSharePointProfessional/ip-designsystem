@@ -6402,8 +6402,8 @@ export default {
         }
       ]
     },
-    "useComponentSize": {
-      "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+    "useScrollSync": {
+      "fileName": "src\\ui-toolkit\\components\\layouts\\Filmstrip\\useScrollSync.ts",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -6415,12 +6415,12 @@ export default {
         "isStatic": false
       },
       "kind": "method",
-      "name": "useComponentSize",
+      "name": "useScrollSync",
       "signatures": [
         {
-          "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+          "fileName": "src\\ui-toolkit\\components\\layouts\\Filmstrip\\useScrollSync.ts",
           "kind": "signature",
-          "name": "useComponentSize",
+          "name": "useScrollSync",
           "parameters": [
             {
               "flags": {
@@ -6434,12 +6434,12 @@ export default {
                 "isStatic": false
               },
               "kind": "parameter",
-              "name": "ref",
-              "type": "any"
+              "name": "__namedParameters",
+              "type": ""
             }
           ],
           "returnType": "",
-          "type": "(ref: any) => "
+          "type": "(__namedParameters: ) => "
         }
       ]
     },
@@ -7805,6 +7805,47 @@ export default {
         }
       ]
     },
+    "NumberInput": {
+      "fileName": "src\\ui-toolkit\\components\\inputs\\NumberInput\\NumberInput.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "NumberInput",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\inputs\\NumberInput\\NumberInput.tsx",
+          "kind": "signature",
+          "name": "NumberInput",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
+        }
+      ]
+    },
     "checkIsThemeColor": {
       "fileName": "src\\ui-toolkit\\components\\inputs\\ThemeColorPicker.tsx",
       "flags": {
@@ -8239,47 +8280,6 @@ export default {
         }
       ]
     },
-    "useScrollSync": {
-      "fileName": "src\\ui-toolkit\\components\\layouts\\Filmstrip\\useScrollSync.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "useScrollSync",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\layouts\\Filmstrip\\useScrollSync.ts",
-          "kind": "signature",
-          "name": "useScrollSync",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "",
-          "type": "(__namedParameters: ) => "
-        }
-      ]
-    },
     "ensureProperty": {
       "fileName": "src\\ui-toolkit\\core\\utils\\utils.ts",
       "flags": {
@@ -8333,6 +8333,47 @@ export default {
           ],
           "returnType": "boolean",
           "type": "(obj: Object, path: string) => boolean"
+        }
+      ]
+    },
+    "useComponentSize": {
+      "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "useComponentSize",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+          "kind": "signature",
+          "name": "useComponentSize",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "ref",
+              "type": "any"
+            }
+          ],
+          "returnType": "",
+          "type": "(ref: any) => "
         }
       ]
     },
@@ -10603,8 +10644,8 @@ export default {
         }
       ]
     },
-    "ComponentSizeData": {
-      "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+    "Window": {
+      "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -10616,11 +10657,11 @@ export default {
         "isStatic": false
       },
       "kind": "interface",
-      "name": "ComponentSizeData",
+      "name": "Window",
       "methods": [],
       "properties": [
         {
-          "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+          "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -10632,11 +10673,11 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "height",
-          "type": "number"
+          "name": "__themeState__",
+          "type": "any"
         },
         {
-          "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+          "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -10648,8 +10689,8 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "width",
-          "type": "number"
+          "name": "_portalsTheme",
+          "type": "any"
         }
       ]
     },
@@ -21040,6 +21081,6126 @@ export default {
         }
       ]
     },
+    "FabricTextFieldProps": {
+      "fileName": "src\\ui-toolkit\\components\\inputs\\NumberInput\\NumberInput.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "FabricTextFieldProps",
+      "extends": [
+        "ITextFieldProps"
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onError",
+          "inheritedFrom": "DOMAttributes.onError",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "about",
+          "inheritedFrom": "HTMLAttributes.about",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "acceptCharset",
+          "inheritedFrom": "AllHTMLAttributes.acceptCharset",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "accessKey",
+          "inheritedFrom": "HTMLAttributes.accessKey",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "action",
+          "inheritedFrom": "AllHTMLAttributes.action",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "allowFullScreen",
+          "inheritedFrom": "AllHTMLAttributes.allowFullScreen",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "allowTransparency",
+          "inheritedFrom": "AllHTMLAttributes.allowTransparency",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "alt",
+          "inheritedFrom": "AllHTMLAttributes.alt",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Aria label for the text field.</p>\n"
+            ],
+            "contentsRaw": "Aria label for the text field.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "ariaLabel",
+          "inheritedFrom": "ITextFieldProps.ariaLabel",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "as",
+          "inheritedFrom": "AllHTMLAttributes.as",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "async",
+          "inheritedFrom": "AllHTMLAttributes.async",
+          "type": "boolean"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>For multiline text fields, whether or not to auto adjust text field height.</p>\n",
+              {
+                "tag": "defaultvalue",
+                "value": "false"
+              }
+            ],
+            "contentsRaw": "For multiline text fields, whether or not to auto adjust text field height.\n\n@defaultvalue false",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "autoAdjustHeight",
+          "inheritedFrom": "ITextFieldProps.autoAdjustHeight",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "autoCapitalize",
+          "inheritedFrom": "HTMLAttributes.autoCapitalize",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Whether the input field should have autocomplete enabled.\nThis tells the browser to display options based on earlier typed values.\nCommon values are &#39;on&#39; and &#39;off&#39; but for all possible values see the following links:\n<a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#Values\">https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#Values</a>\n<a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill\">https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill</a></p>\n"
+            ],
+            "contentsRaw": "Whether the input field should have autocomplete enabled.\nThis tells the browser to display options based on earlier typed values.\nCommon values are 'on' and 'off' but for all possible values see the following links:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#Values\nhttps://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "autoComplete",
+          "inheritedFrom": "ITextFieldProps.autoComplete",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "autoCorrect",
+          "inheritedFrom": "HTMLAttributes.autoCorrect",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "autoFocus",
+          "inheritedFrom": "AllHTMLAttributes.autoFocus",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "autoPlay",
+          "inheritedFrom": "AllHTMLAttributes.autoPlay",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "autoSave",
+          "inheritedFrom": "HTMLAttributes.autoSave",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Whether or not the text field is borderless.</p>\n",
+              {
+                "tag": "defaultvalue",
+                "value": "false"
+              }
+            ],
+            "contentsRaw": "Whether or not the text field is borderless.\n\n@defaultvalue false",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "borderless",
+          "inheritedFrom": "ITextFieldProps.borderless",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "capture",
+          "inheritedFrom": "AllHTMLAttributes.capture",
+          "type": "boolean | string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "cellPadding",
+          "inheritedFrom": "AllHTMLAttributes.cellPadding",
+          "type": "number | string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "cellSpacing",
+          "inheritedFrom": "AllHTMLAttributes.cellSpacing",
+          "type": "number | string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "challenge",
+          "inheritedFrom": "AllHTMLAttributes.challenge",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "charSet",
+          "inheritedFrom": "AllHTMLAttributes.charSet",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "checked",
+          "inheritedFrom": "AllHTMLAttributes.checked",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "children",
+          "inheritedFrom": "DOMAttributes.children",
+          "type": "ReactNode"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "cite",
+          "inheritedFrom": "AllHTMLAttributes.cite",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "classID",
+          "inheritedFrom": "AllHTMLAttributes.classID",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Optional class name that is added to the container of the component.</p>\n"
+            ],
+            "contentsRaw": "Optional class name that is added to the container of the component.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "className",
+          "inheritedFrom": "ITextFieldProps.className",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "colSpan",
+          "inheritedFrom": "AllHTMLAttributes.colSpan",
+          "type": "number"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "color",
+          "inheritedFrom": "HTMLAttributes.color",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "cols",
+          "inheritedFrom": "AllHTMLAttributes.cols",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Optional callback to access the ITextField component. Use this instead of ref for accessing\nthe public methods and properties of the component.</p>\n"
+            ],
+            "contentsRaw": "Optional callback to access the ITextField component. Use this instead of ref for accessing\nthe public methods and properties of the component.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "componentRef",
+          "inheritedFrom": "ITextFieldProps.componentRef",
+          "type": "IRefObject<ITextField>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "content",
+          "inheritedFrom": "AllHTMLAttributes.content",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "contentEditable",
+          "inheritedFrom": "HTMLAttributes.contentEditable",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "contextMenu",
+          "inheritedFrom": "HTMLAttributes.contextMenu",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "controls",
+          "inheritedFrom": "AllHTMLAttributes.controls",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "coords",
+          "inheritedFrom": "AllHTMLAttributes.coords",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "crossOrigin",
+          "inheritedFrom": "AllHTMLAttributes.crossOrigin",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "dangerouslySetInnerHTML",
+          "inheritedFrom": "DOMAttributes.dangerouslySetInnerHTML",
+          "type": ""
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "data",
+          "inheritedFrom": "AllHTMLAttributes.data",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "datatype",
+          "inheritedFrom": "HTMLAttributes.datatype",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "dateTime",
+          "inheritedFrom": "AllHTMLAttributes.dateTime",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "default",
+          "inheritedFrom": "AllHTMLAttributes.default",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "defaultChecked",
+          "inheritedFrom": "HTMLAttributes.defaultChecked",
+          "type": "boolean"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Default value of the text field. Only provide this if the text field is an uncontrolled component;\notherwise, use the <code>value</code> property.</p>\n"
+            ],
+            "contentsRaw": "Default value of the text field. Only provide this if the text field is an uncontrolled component;\notherwise, use the `value` property.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "defaultValue",
+          "inheritedFrom": "ITextFieldProps.defaultValue",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "defer",
+          "inheritedFrom": "AllHTMLAttributes.defer",
+          "type": "boolean"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Text field will start to validate after users stop typing for <code>deferredValidationTime</code> milliseconds.\nUpdates to this prop will not be respected.</p>\n",
+              {
+                "tag": "defaultvalue",
+                "value": "200"
+              }
+            ],
+            "contentsRaw": "Text field will start to validate after users stop typing for `deferredValidationTime` milliseconds.\nUpdates to this prop will not be respected.\n\n@defaultvalue 200",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "deferredValidationTime",
+          "inheritedFrom": "ITextFieldProps.deferredValidationTime",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Description displayed below the text field to provide additional details about what text to enter.</p>\n"
+            ],
+            "contentsRaw": "Description displayed below the text field to provide additional details about what text to enter.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "description",
+          "inheritedFrom": "ITextFieldProps.description",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "dir",
+          "inheritedFrom": "HTMLAttributes.dir",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Disabled state of the text field.</p>\n",
+              {
+                "tag": "defaultvalue",
+                "value": "false"
+              }
+            ],
+            "contentsRaw": "Disabled state of the text field.\n\n@defaultvalue false",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "disabled",
+          "inheritedFrom": "ITextFieldProps.disabled",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "download",
+          "inheritedFrom": "AllHTMLAttributes.download",
+          "type": "any"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "draggable",
+          "inheritedFrom": "HTMLAttributes.draggable",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "encType",
+          "inheritedFrom": "AllHTMLAttributes.encType",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Static error message displayed below the text field. Use <code>onGetErrorMessage</code> to dynamically\nchange the error message displayed (if any) based on the current value. <code>errorMessage</code> and\n<code>onGetErrorMessage</code> are mutually exclusive (<code>errorMessage</code> takes precedence).</p>\n"
+            ],
+            "contentsRaw": "Static error message displayed below the text field. Use `onGetErrorMessage` to dynamically\nchange the error message displayed (if any) based on the current value. `errorMessage` and\n`onGetErrorMessage` are mutually exclusive (`errorMessage` takes precedence).",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "errorMessage",
+          "inheritedFrom": "ITextFieldProps.errorMessage",
+          "type": "string | Element"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "form",
+          "inheritedFrom": "AllHTMLAttributes.form",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "formAction",
+          "inheritedFrom": "AllHTMLAttributes.formAction",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "formEncType",
+          "inheritedFrom": "AllHTMLAttributes.formEncType",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "formMethod",
+          "inheritedFrom": "AllHTMLAttributes.formMethod",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "formNoValidate",
+          "inheritedFrom": "AllHTMLAttributes.formNoValidate",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "formTarget",
+          "inheritedFrom": "AllHTMLAttributes.formTarget",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "frameBorder",
+          "inheritedFrom": "AllHTMLAttributes.frameBorder",
+          "type": "number | string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "headers",
+          "inheritedFrom": "AllHTMLAttributes.headers",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "height",
+          "inheritedFrom": "AllHTMLAttributes.height",
+          "type": "number | string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "hidden",
+          "inheritedFrom": "HTMLAttributes.hidden",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "high",
+          "inheritedFrom": "AllHTMLAttributes.high",
+          "type": "number"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "href",
+          "inheritedFrom": "AllHTMLAttributes.href",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "hrefLang",
+          "inheritedFrom": "AllHTMLAttributes.hrefLang",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "htmlFor",
+          "inheritedFrom": "AllHTMLAttributes.htmlFor",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "httpEquiv",
+          "inheritedFrom": "AllHTMLAttributes.httpEquiv",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Props for an optional icon, displayed in the far right end of the text field.</p>\n"
+            ],
+            "contentsRaw": "Props for an optional icon, displayed in the far right end of the text field.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "iconProps",
+          "inheritedFrom": "ITextFieldProps.iconProps",
+          "type": "IIconProps"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "id",
+          "inheritedFrom": "HTMLAttributes.id",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "inlist",
+          "inheritedFrom": "HTMLAttributes.inlist",
+          "type": "any"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Optional class name that is added specifically to the input/textarea element.</p>\n"
+            ],
+            "contentsRaw": "Optional class name that is added specifically to the input/textarea element.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "inputClassName",
+          "inheritedFrom": "ITextFieldProps.inputClassName",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "inputMode",
+          "inheritedFrom": "HTMLAttributes.inputMode",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "integrity",
+          "inheritedFrom": "AllHTMLAttributes.integrity",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "is",
+          "inheritedFrom": "HTMLAttributes.is",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "itemID",
+          "inheritedFrom": "HTMLAttributes.itemID",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "itemProp",
+          "inheritedFrom": "HTMLAttributes.itemProp",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "itemRef",
+          "inheritedFrom": "HTMLAttributes.itemRef",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "itemScope",
+          "inheritedFrom": "HTMLAttributes.itemScope",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "itemType",
+          "inheritedFrom": "HTMLAttributes.itemType",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "keyParams",
+          "inheritedFrom": "AllHTMLAttributes.keyParams",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "keyType",
+          "inheritedFrom": "AllHTMLAttributes.keyType",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "kind",
+          "inheritedFrom": "AllHTMLAttributes.kind",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Label displayed above the text field (and read by screen readers).</p>\n"
+            ],
+            "contentsRaw": "Label displayed above the text field (and read by screen readers).",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "label",
+          "inheritedFrom": "ITextFieldProps.label",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "lang",
+          "inheritedFrom": "HTMLAttributes.lang",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "list",
+          "inheritedFrom": "AllHTMLAttributes.list",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "loop",
+          "inheritedFrom": "AllHTMLAttributes.loop",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "low",
+          "inheritedFrom": "AllHTMLAttributes.low",
+          "type": "number"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "manifest",
+          "inheritedFrom": "AllHTMLAttributes.manifest",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "marginHeight",
+          "inheritedFrom": "AllHTMLAttributes.marginHeight",
+          "type": "number"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "marginWidth",
+          "inheritedFrom": "AllHTMLAttributes.marginWidth",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Only used by MaskedTextField:\nThe masking string that defines the mask&#39;s behavior.\nA backslash will escape any character.\nSpecial format characters are:\n&#39;9&#39;: [0-9]\n&#39;a&#39;: [a-zA-Z]\n&#39;*&#39;: [a-zA-Z0-9]</p>\n",
+              {
+                "tag": "example",
+                "value": "`Phone Number: (999) 999-9999`"
+              }
+            ],
+            "contentsRaw": "Only used by MaskedTextField:\nThe masking string that defines the mask's behavior.\nA backslash will escape any character.\nSpecial format characters are:\n'9': [0-9]\n'a': [a-zA-Z]\n'*': [a-zA-Z0-9]\n\n@example `Phone Number: (999) 999-9999`",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "mask",
+          "inheritedFrom": "ITextFieldProps.mask",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Only used by MaskedTextField:\nThe character to show in place of unfilled characters of the mask.</p>\n",
+              {
+                "tag": "defaultvalue",
+                "value": "'_'"
+              }
+            ],
+            "contentsRaw": "Only used by MaskedTextField:\nThe character to show in place of unfilled characters of the mask.\n\n@defaultvalue '_'",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "maskChar",
+          "inheritedFrom": "ITextFieldProps.maskChar",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Only used by MaskedTextField:\nAn object defining the format characters and corresponding regexp values.\nDefault format characters: {\n &#39;9&#39;: /[0-9]/,\n &#39;a&#39;: /[a-zA-Z]/,\n &#39;*&#39;: /[a-zA-Z0-9]/\n}</p>\n"
+            ],
+            "contentsRaw": "Only used by MaskedTextField:\nAn object defining the format characters and corresponding regexp values.\nDefault format characters: \\{\n '9': /[0-9]/,\n 'a': /[a-zA-Z]/,\n '*': /[a-zA-Z0-9]/\n\\}",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "maskFormat",
+          "inheritedFrom": "ITextFieldProps.maskFormat",
+          "type": "{ [key: string]: RegExp }"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "max",
+          "inheritedFrom": "AllHTMLAttributes.max",
+          "type": "number | string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "maxLength",
+          "inheritedFrom": "AllHTMLAttributes.maxLength",
+          "type": "number"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "media",
+          "inheritedFrom": "AllHTMLAttributes.media",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "mediaGroup",
+          "inheritedFrom": "AllHTMLAttributes.mediaGroup",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "method",
+          "inheritedFrom": "AllHTMLAttributes.method",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "min",
+          "inheritedFrom": "AllHTMLAttributes.min",
+          "type": "number | string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "minLength",
+          "inheritedFrom": "AllHTMLAttributes.minLength",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Whether or not the text field is a multiline text field.</p>\n",
+              {
+                "tag": "defaultvalue",
+                "value": "false"
+              }
+            ],
+            "contentsRaw": "Whether or not the text field is a multiline text field.\n\n@defaultvalue false",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "multiline",
+          "inheritedFrom": "ITextFieldProps.multiline",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "multiple",
+          "inheritedFrom": "AllHTMLAttributes.multiple",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "muted",
+          "inheritedFrom": "AllHTMLAttributes.muted",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "name",
+          "inheritedFrom": "AllHTMLAttributes.name",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "noValidate",
+          "inheritedFrom": "AllHTMLAttributes.noValidate",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "nonce",
+          "inheritedFrom": "AllHTMLAttributes.nonce",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onAbort",
+          "inheritedFrom": "DOMAttributes.onAbort",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onAbortCapture",
+          "inheritedFrom": "DOMAttributes.onAbortCapture",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onAnimationEnd",
+          "inheritedFrom": "DOMAttributes.onAnimationEnd",
+          "type": "AnimationEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onAnimationEndCapture",
+          "inheritedFrom": "DOMAttributes.onAnimationEndCapture",
+          "type": "AnimationEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onAnimationIteration",
+          "inheritedFrom": "DOMAttributes.onAnimationIteration",
+          "type": "AnimationEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onAnimationIterationCapture",
+          "inheritedFrom": "DOMAttributes.onAnimationIterationCapture",
+          "type": "AnimationEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onAnimationStart",
+          "inheritedFrom": "DOMAttributes.onAnimationStart",
+          "type": "AnimationEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onAnimationStartCapture",
+          "inheritedFrom": "DOMAttributes.onAnimationStartCapture",
+          "type": "AnimationEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onBeforeInput",
+          "inheritedFrom": "DOMAttributes.onBeforeInput",
+          "type": "FormEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onBeforeInputCapture",
+          "inheritedFrom": "DOMAttributes.onBeforeInputCapture",
+          "type": "FormEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onBlur",
+          "inheritedFrom": "DOMAttributes.onBlur",
+          "type": "FocusEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onBlurCapture",
+          "inheritedFrom": "DOMAttributes.onBlurCapture",
+          "type": "FocusEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCanPlay",
+          "inheritedFrom": "DOMAttributes.onCanPlay",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCanPlayCapture",
+          "inheritedFrom": "DOMAttributes.onCanPlayCapture",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCanPlayThrough",
+          "inheritedFrom": "DOMAttributes.onCanPlayThrough",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCanPlayThroughCapture",
+          "inheritedFrom": "DOMAttributes.onCanPlayThroughCapture",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Callback for when the input value changes.\nThis is called on both <code>input</code> and <code>change</code> events.\n(In a later version, this will probably only be called for the <code>change</code> event.)</p>\n"
+            ],
+            "contentsRaw": "Callback for when the input value changes.\nThis is called on both `input` and `change` events.\n(In a later version, this will probably only be called for the `change` event.)",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onChange",
+          "inheritedFrom": "ITextFieldProps.onChange",
+          "type": "(event: FormEvent<HTMLInputElement | HTMLTextAreaElement>, newValue?: string) => void"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onChangeCapture",
+          "inheritedFrom": "DOMAttributes.onChangeCapture",
+          "type": "FormEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onClick",
+          "inheritedFrom": "DOMAttributes.onClick",
+          "type": "MouseEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onClickCapture",
+          "inheritedFrom": "DOMAttributes.onClickCapture",
+          "type": "MouseEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCompositionEnd",
+          "inheritedFrom": "DOMAttributes.onCompositionEnd",
+          "type": "CompositionEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCompositionEndCapture",
+          "inheritedFrom": "DOMAttributes.onCompositionEndCapture",
+          "type": "CompositionEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCompositionStart",
+          "inheritedFrom": "DOMAttributes.onCompositionStart",
+          "type": "CompositionEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCompositionStartCapture",
+          "inheritedFrom": "DOMAttributes.onCompositionStartCapture",
+          "type": "CompositionEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCompositionUpdate",
+          "inheritedFrom": "DOMAttributes.onCompositionUpdate",
+          "type": "CompositionEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCompositionUpdateCapture",
+          "inheritedFrom": "DOMAttributes.onCompositionUpdateCapture",
+          "type": "CompositionEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onContextMenu",
+          "inheritedFrom": "DOMAttributes.onContextMenu",
+          "type": "MouseEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onContextMenuCapture",
+          "inheritedFrom": "DOMAttributes.onContextMenuCapture",
+          "type": "MouseEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCopy",
+          "inheritedFrom": "DOMAttributes.onCopy",
+          "type": "ClipboardEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCopyCapture",
+          "inheritedFrom": "DOMAttributes.onCopyCapture",
+          "type": "ClipboardEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCut",
+          "inheritedFrom": "DOMAttributes.onCut",
+          "type": "ClipboardEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onCutCapture",
+          "inheritedFrom": "DOMAttributes.onCutCapture",
+          "type": "ClipboardEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDoubleClick",
+          "inheritedFrom": "DOMAttributes.onDoubleClick",
+          "type": "MouseEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDoubleClickCapture",
+          "inheritedFrom": "DOMAttributes.onDoubleClickCapture",
+          "type": "MouseEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDrag",
+          "inheritedFrom": "DOMAttributes.onDrag",
+          "type": "DragEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDragCapture",
+          "inheritedFrom": "DOMAttributes.onDragCapture",
+          "type": "DragEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDragEnd",
+          "inheritedFrom": "DOMAttributes.onDragEnd",
+          "type": "DragEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDragEndCapture",
+          "inheritedFrom": "DOMAttributes.onDragEndCapture",
+          "type": "DragEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDragEnter",
+          "inheritedFrom": "DOMAttributes.onDragEnter",
+          "type": "DragEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDragEnterCapture",
+          "inheritedFrom": "DOMAttributes.onDragEnterCapture",
+          "type": "DragEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDragExit",
+          "inheritedFrom": "DOMAttributes.onDragExit",
+          "type": "DragEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDragExitCapture",
+          "inheritedFrom": "DOMAttributes.onDragExitCapture",
+          "type": "DragEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDragLeave",
+          "inheritedFrom": "DOMAttributes.onDragLeave",
+          "type": "DragEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDragLeaveCapture",
+          "inheritedFrom": "DOMAttributes.onDragLeaveCapture",
+          "type": "DragEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDragOver",
+          "inheritedFrom": "DOMAttributes.onDragOver",
+          "type": "DragEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDragOverCapture",
+          "inheritedFrom": "DOMAttributes.onDragOverCapture",
+          "type": "DragEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDragStart",
+          "inheritedFrom": "DOMAttributes.onDragStart",
+          "type": "DragEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDragStartCapture",
+          "inheritedFrom": "DOMAttributes.onDragStartCapture",
+          "type": "DragEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDrop",
+          "inheritedFrom": "DOMAttributes.onDrop",
+          "type": "DragEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDropCapture",
+          "inheritedFrom": "DOMAttributes.onDropCapture",
+          "type": "DragEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDurationChange",
+          "inheritedFrom": "DOMAttributes.onDurationChange",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onDurationChangeCapture",
+          "inheritedFrom": "DOMAttributes.onDurationChangeCapture",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onEmptied",
+          "inheritedFrom": "DOMAttributes.onEmptied",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onEmptiedCapture",
+          "inheritedFrom": "DOMAttributes.onEmptiedCapture",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onEncrypted",
+          "inheritedFrom": "DOMAttributes.onEncrypted",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onEncryptedCapture",
+          "inheritedFrom": "DOMAttributes.onEncryptedCapture",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onEnded",
+          "inheritedFrom": "DOMAttributes.onEnded",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onEndedCapture",
+          "inheritedFrom": "DOMAttributes.onEndedCapture",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "accept",
+          "inheritedFrom": "AllHTMLAttributes.accept",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onErrorCapture",
+          "inheritedFrom": "DOMAttributes.onErrorCapture",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onFocus",
+          "inheritedFrom": "DOMAttributes.onFocus",
+          "type": "FocusEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onFocusCapture",
+          "inheritedFrom": "DOMAttributes.onFocusCapture",
+          "type": "FocusEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Function used to determine whether the input value is valid and get an error message if not.\nMutually exclusive with the static string <code>errorMessage</code> (it will take precedence over this).</p>\n<p>When it returns <code>string | JSX.Element</code>:</p>\n<ul>\n<li>If valid, it returns empty string.</li>\n<li>If invalid, it returns the error message and the text field will\nshow a red border and show an error message below the text field.</li>\n</ul>\n<p>When it returns <code>Promise&lt;string | JSX.Element&gt;</code>:</p>\n<ul>\n<li>The resolved value is displayed as the error message.</li>\n<li>If rejected, the value is thrown away.</li>\n</ul>\n"
+            ],
+            "contentsRaw": "Function used to determine whether the input value is valid and get an error message if not.\nMutually exclusive with the static string `errorMessage` (it will take precedence over this).\n\nWhen it returns `string | JSX.Element`:\n- If valid, it returns empty string.\n- If invalid, it returns the error message and the text field will\n  show a red border and show an error message below the text field.\n\nWhen it returns `Promise<string | JSX.Element>`:\n- The resolved value is displayed as the error message.\n- If rejected, the value is thrown away.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onGetErrorMessage",
+          "inheritedFrom": "ITextFieldProps.onGetErrorMessage",
+          "type": "(value: string) => string | Element | PromiseLike<string | Element> | undefined"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onGotPointerCapture",
+          "inheritedFrom": "DOMAttributes.onGotPointerCapture",
+          "type": "PointerEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onGotPointerCaptureCapture",
+          "inheritedFrom": "DOMAttributes.onGotPointerCaptureCapture",
+          "type": "PointerEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onInput",
+          "inheritedFrom": "DOMAttributes.onInput",
+          "type": "FormEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onInputCapture",
+          "inheritedFrom": "DOMAttributes.onInputCapture",
+          "type": "FormEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onInvalid",
+          "inheritedFrom": "DOMAttributes.onInvalid",
+          "type": "FormEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onInvalidCapture",
+          "inheritedFrom": "DOMAttributes.onInvalidCapture",
+          "type": "FormEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onKeyDown",
+          "inheritedFrom": "DOMAttributes.onKeyDown",
+          "type": "KeyboardEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onKeyDownCapture",
+          "inheritedFrom": "DOMAttributes.onKeyDownCapture",
+          "type": "KeyboardEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onKeyPress",
+          "inheritedFrom": "DOMAttributes.onKeyPress",
+          "type": "KeyboardEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onKeyPressCapture",
+          "inheritedFrom": "DOMAttributes.onKeyPressCapture",
+          "type": "KeyboardEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onKeyUp",
+          "inheritedFrom": "DOMAttributes.onKeyUp",
+          "type": "KeyboardEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onKeyUpCapture",
+          "inheritedFrom": "DOMAttributes.onKeyUpCapture",
+          "type": "KeyboardEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onLoad",
+          "inheritedFrom": "DOMAttributes.onLoad",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onLoadCapture",
+          "inheritedFrom": "DOMAttributes.onLoadCapture",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onLoadStart",
+          "inheritedFrom": "DOMAttributes.onLoadStart",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onLoadStartCapture",
+          "inheritedFrom": "DOMAttributes.onLoadStartCapture",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onLoadedData",
+          "inheritedFrom": "DOMAttributes.onLoadedData",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onLoadedDataCapture",
+          "inheritedFrom": "DOMAttributes.onLoadedDataCapture",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onLoadedMetadata",
+          "inheritedFrom": "DOMAttributes.onLoadedMetadata",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onLoadedMetadataCapture",
+          "inheritedFrom": "DOMAttributes.onLoadedMetadataCapture",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onLostPointerCapture",
+          "inheritedFrom": "DOMAttributes.onLostPointerCapture",
+          "type": "PointerEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onLostPointerCaptureCapture",
+          "inheritedFrom": "DOMAttributes.onLostPointerCaptureCapture",
+          "type": "PointerEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onMouseDown",
+          "inheritedFrom": "DOMAttributes.onMouseDown",
+          "type": "MouseEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onMouseDownCapture",
+          "inheritedFrom": "DOMAttributes.onMouseDownCapture",
+          "type": "MouseEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onMouseEnter",
+          "inheritedFrom": "DOMAttributes.onMouseEnter",
+          "type": "MouseEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onMouseLeave",
+          "inheritedFrom": "DOMAttributes.onMouseLeave",
+          "type": "MouseEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onMouseMove",
+          "inheritedFrom": "DOMAttributes.onMouseMove",
+          "type": "MouseEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onMouseMoveCapture",
+          "inheritedFrom": "DOMAttributes.onMouseMoveCapture",
+          "type": "MouseEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onMouseOut",
+          "inheritedFrom": "DOMAttributes.onMouseOut",
+          "type": "MouseEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onMouseOutCapture",
+          "inheritedFrom": "DOMAttributes.onMouseOutCapture",
+          "type": "MouseEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onMouseOver",
+          "inheritedFrom": "DOMAttributes.onMouseOver",
+          "type": "MouseEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onMouseOverCapture",
+          "inheritedFrom": "DOMAttributes.onMouseOverCapture",
+          "type": "MouseEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onMouseUp",
+          "inheritedFrom": "DOMAttributes.onMouseUp",
+          "type": "MouseEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onMouseUpCapture",
+          "inheritedFrom": "DOMAttributes.onMouseUpCapture",
+          "type": "MouseEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Function called after validation completes.</p>\n"
+            ],
+            "contentsRaw": "Function called after validation completes.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onNotifyValidationResult",
+          "inheritedFrom": "ITextFieldProps.onNotifyValidationResult",
+          "type": "(errorMessage: string | Element, value: string | undefined) => void"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPaste",
+          "inheritedFrom": "DOMAttributes.onPaste",
+          "type": "ClipboardEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPasteCapture",
+          "inheritedFrom": "DOMAttributes.onPasteCapture",
+          "type": "ClipboardEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPause",
+          "inheritedFrom": "DOMAttributes.onPause",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPauseCapture",
+          "inheritedFrom": "DOMAttributes.onPauseCapture",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPlay",
+          "inheritedFrom": "DOMAttributes.onPlay",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPlayCapture",
+          "inheritedFrom": "DOMAttributes.onPlayCapture",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPlaying",
+          "inheritedFrom": "DOMAttributes.onPlaying",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPlayingCapture",
+          "inheritedFrom": "DOMAttributes.onPlayingCapture",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerCancel",
+          "inheritedFrom": "DOMAttributes.onPointerCancel",
+          "type": "PointerEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerCancelCapture",
+          "inheritedFrom": "DOMAttributes.onPointerCancelCapture",
+          "type": "PointerEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerDown",
+          "inheritedFrom": "DOMAttributes.onPointerDown",
+          "type": "PointerEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerDownCapture",
+          "inheritedFrom": "DOMAttributes.onPointerDownCapture",
+          "type": "PointerEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerEnter",
+          "inheritedFrom": "DOMAttributes.onPointerEnter",
+          "type": "PointerEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerEnterCapture",
+          "inheritedFrom": "DOMAttributes.onPointerEnterCapture",
+          "type": "PointerEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerLeave",
+          "inheritedFrom": "DOMAttributes.onPointerLeave",
+          "type": "PointerEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerLeaveCapture",
+          "inheritedFrom": "DOMAttributes.onPointerLeaveCapture",
+          "type": "PointerEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerMove",
+          "inheritedFrom": "DOMAttributes.onPointerMove",
+          "type": "PointerEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerMoveCapture",
+          "inheritedFrom": "DOMAttributes.onPointerMoveCapture",
+          "type": "PointerEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerOut",
+          "inheritedFrom": "DOMAttributes.onPointerOut",
+          "type": "PointerEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerOutCapture",
+          "inheritedFrom": "DOMAttributes.onPointerOutCapture",
+          "type": "PointerEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerOver",
+          "inheritedFrom": "DOMAttributes.onPointerOver",
+          "type": "PointerEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerOverCapture",
+          "inheritedFrom": "DOMAttributes.onPointerOverCapture",
+          "type": "PointerEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerUp",
+          "inheritedFrom": "DOMAttributes.onPointerUp",
+          "type": "PointerEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onPointerUpCapture",
+          "inheritedFrom": "DOMAttributes.onPointerUpCapture",
+          "type": "PointerEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onProgress",
+          "inheritedFrom": "DOMAttributes.onProgress",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onProgressCapture",
+          "inheritedFrom": "DOMAttributes.onProgressCapture",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onRateChange",
+          "inheritedFrom": "DOMAttributes.onRateChange",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onRateChangeCapture",
+          "inheritedFrom": "DOMAttributes.onRateChangeCapture",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Custom renderer for the description.</p>\n"
+            ],
+            "contentsRaw": "Custom renderer for the description.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onRenderDescription",
+          "inheritedFrom": "ITextFieldProps.onRenderDescription",
+          "type": "IRenderFunction<ITextFieldProps>"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Custom renderer for the label.\nIf you don&#39;t call defaultRender, ensure that you give your custom-rendered label an id and that\nyou set the textfield&#39;s aria-labelledby prop to that id.</p>\n"
+            ],
+            "contentsRaw": "Custom renderer for the label.\nIf you don't call defaultRender, ensure that you give your custom-rendered label an id and that\nyou set the textfield's aria-labelledby prop to that id.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onRenderLabel",
+          "inheritedFrom": "ITextFieldProps.onRenderLabel",
+          "type": "IRenderFunction<ITextFieldProps>"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Custom render function for prefix.</p>\n"
+            ],
+            "contentsRaw": "Custom render function for prefix.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onRenderPrefix",
+          "inheritedFrom": "ITextFieldProps.onRenderPrefix",
+          "type": "IRenderFunction<ITextFieldProps>"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Custom render function for suffix.</p>\n"
+            ],
+            "contentsRaw": "Custom render function for suffix.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onRenderSuffix",
+          "inheritedFrom": "ITextFieldProps.onRenderSuffix",
+          "type": "IRenderFunction<ITextFieldProps>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onReset",
+          "inheritedFrom": "DOMAttributes.onReset",
+          "type": "FormEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onResetCapture",
+          "inheritedFrom": "DOMAttributes.onResetCapture",
+          "type": "FormEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onScroll",
+          "inheritedFrom": "DOMAttributes.onScroll",
+          "type": "UIEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onScrollCapture",
+          "inheritedFrom": "DOMAttributes.onScrollCapture",
+          "type": "UIEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onSeeked",
+          "inheritedFrom": "DOMAttributes.onSeeked",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onSeekedCapture",
+          "inheritedFrom": "DOMAttributes.onSeekedCapture",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onSeeking",
+          "inheritedFrom": "DOMAttributes.onSeeking",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onSeekingCapture",
+          "inheritedFrom": "DOMAttributes.onSeekingCapture",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onSelect",
+          "inheritedFrom": "DOMAttributes.onSelect",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onSelectCapture",
+          "inheritedFrom": "DOMAttributes.onSelectCapture",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onStalled",
+          "inheritedFrom": "DOMAttributes.onStalled",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onStalledCapture",
+          "inheritedFrom": "DOMAttributes.onStalledCapture",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onSubmit",
+          "inheritedFrom": "DOMAttributes.onSubmit",
+          "type": "FormEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onSubmitCapture",
+          "inheritedFrom": "DOMAttributes.onSubmitCapture",
+          "type": "FormEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onSuspend",
+          "inheritedFrom": "DOMAttributes.onSuspend",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onSuspendCapture",
+          "inheritedFrom": "DOMAttributes.onSuspendCapture",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onTimeUpdate",
+          "inheritedFrom": "DOMAttributes.onTimeUpdate",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onTimeUpdateCapture",
+          "inheritedFrom": "DOMAttributes.onTimeUpdateCapture",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onTouchCancel",
+          "inheritedFrom": "DOMAttributes.onTouchCancel",
+          "type": "TouchEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onTouchCancelCapture",
+          "inheritedFrom": "DOMAttributes.onTouchCancelCapture",
+          "type": "TouchEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onTouchEnd",
+          "inheritedFrom": "DOMAttributes.onTouchEnd",
+          "type": "TouchEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onTouchEndCapture",
+          "inheritedFrom": "DOMAttributes.onTouchEndCapture",
+          "type": "TouchEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onTouchMove",
+          "inheritedFrom": "DOMAttributes.onTouchMove",
+          "type": "TouchEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onTouchMoveCapture",
+          "inheritedFrom": "DOMAttributes.onTouchMoveCapture",
+          "type": "TouchEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onTouchStart",
+          "inheritedFrom": "DOMAttributes.onTouchStart",
+          "type": "TouchEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onTouchStartCapture",
+          "inheritedFrom": "DOMAttributes.onTouchStartCapture",
+          "type": "TouchEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onTransitionEnd",
+          "inheritedFrom": "DOMAttributes.onTransitionEnd",
+          "type": "TransitionEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onTransitionEndCapture",
+          "inheritedFrom": "DOMAttributes.onTransitionEndCapture",
+          "type": "TransitionEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onVolumeChange",
+          "inheritedFrom": "DOMAttributes.onVolumeChange",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onVolumeChangeCapture",
+          "inheritedFrom": "DOMAttributes.onVolumeChangeCapture",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onWaiting",
+          "inheritedFrom": "DOMAttributes.onWaiting",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onWaitingCapture",
+          "inheritedFrom": "DOMAttributes.onWaitingCapture",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onWheel",
+          "inheritedFrom": "DOMAttributes.onWheel",
+          "type": "WheelEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onWheelCapture",
+          "inheritedFrom": "DOMAttributes.onWheelCapture",
+          "type": "WheelEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "open",
+          "inheritedFrom": "AllHTMLAttributes.open",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "optimum",
+          "inheritedFrom": "AllHTMLAttributes.optimum",
+          "type": "number"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "pattern",
+          "inheritedFrom": "AllHTMLAttributes.pattern",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "placeholder",
+          "inheritedFrom": "AllHTMLAttributes.placeholder",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "playsInline",
+          "inheritedFrom": "AllHTMLAttributes.playsInline",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "poster",
+          "inheritedFrom": "AllHTMLAttributes.poster",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Prefix displayed before the text field contents. This is not included in the value.\nEnsure a descriptive label is present to assist screen readers, as the value does not include the prefix.</p>\n"
+            ],
+            "contentsRaw": "Prefix displayed before the text field contents. This is not included in the value.\nEnsure a descriptive label is present to assist screen readers, as the value does not include the prefix.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "prefix",
+          "inheritedFrom": "ITextFieldProps.prefix",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "preload",
+          "inheritedFrom": "AllHTMLAttributes.preload",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "property",
+          "inheritedFrom": "HTMLAttributes.property",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "radioGroup",
+          "inheritedFrom": "HTMLAttributes.radioGroup",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>If true, the text field is readonly.</p>\n",
+              {
+                "tag": "defaultvalue",
+                "value": "false"
+              }
+            ],
+            "contentsRaw": "If true, the text field is readonly.\n\n@defaultvalue false",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "readOnly",
+          "inheritedFrom": "ITextFieldProps.readOnly",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "rel",
+          "inheritedFrom": "AllHTMLAttributes.rel",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "required",
+          "inheritedFrom": "AllHTMLAttributes.required",
+          "type": "boolean"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>For multiline text fields, whether or not the field is resizable.</p>\n",
+              {
+                "tag": "defaultvalue",
+                "value": "true"
+              }
+            ],
+            "contentsRaw": "For multiline text fields, whether or not the field is resizable.\n\n@defaultvalue true",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "resizable",
+          "inheritedFrom": "ITextFieldProps.resizable",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "resource",
+          "inheritedFrom": "HTMLAttributes.resource",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "results",
+          "inheritedFrom": "HTMLAttributes.results",
+          "type": "number"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "reversed",
+          "inheritedFrom": "AllHTMLAttributes.reversed",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "role",
+          "inheritedFrom": "HTMLAttributes.role",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "rowSpan",
+          "inheritedFrom": "AllHTMLAttributes.rowSpan",
+          "type": "number"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "rows",
+          "inheritedFrom": "AllHTMLAttributes.rows",
+          "type": "number"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "sandbox",
+          "inheritedFrom": "AllHTMLAttributes.sandbox",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "scope",
+          "inheritedFrom": "AllHTMLAttributes.scope",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "scoped",
+          "inheritedFrom": "AllHTMLAttributes.scoped",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "scrolling",
+          "inheritedFrom": "AllHTMLAttributes.scrolling",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "seamless",
+          "inheritedFrom": "AllHTMLAttributes.seamless",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "security",
+          "inheritedFrom": "HTMLAttributes.security",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "selected",
+          "inheritedFrom": "AllHTMLAttributes.selected",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "shape",
+          "inheritedFrom": "AllHTMLAttributes.shape",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "size",
+          "inheritedFrom": "AllHTMLAttributes.size",
+          "type": "number"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "sizes",
+          "inheritedFrom": "AllHTMLAttributes.sizes",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "slot",
+          "inheritedFrom": "HTMLAttributes.slot",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "span",
+          "inheritedFrom": "AllHTMLAttributes.span",
+          "type": "number"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "spellCheck",
+          "inheritedFrom": "HTMLAttributes.spellCheck",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "src",
+          "inheritedFrom": "AllHTMLAttributes.src",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "srcDoc",
+          "inheritedFrom": "AllHTMLAttributes.srcDoc",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "srcLang",
+          "inheritedFrom": "AllHTMLAttributes.srcLang",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "srcSet",
+          "inheritedFrom": "AllHTMLAttributes.srcSet",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "start",
+          "inheritedFrom": "AllHTMLAttributes.start",
+          "type": "number"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "step",
+          "inheritedFrom": "AllHTMLAttributes.step",
+          "type": "number | string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "style",
+          "inheritedFrom": "HTMLAttributes.style",
+          "type": "CSSProperties"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Call to provide customized styling that will layer on top of the variant rules.</p>\n"
+            ],
+            "contentsRaw": "Call to provide customized styling that will layer on top of the variant rules.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "styles",
+          "inheritedFrom": "ITextFieldProps.styles",
+          "type": "IStyleFunctionOrObject<ITextFieldStyleProps, ITextFieldStyles>"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Suffix displayed after the text field contents. This is not included in the value.\nEnsure a descriptive label is present to assist screen readers, as the value does not include the suffix.</p>\n"
+            ],
+            "contentsRaw": "Suffix displayed after the text field contents. This is not included in the value.\nEnsure a descriptive label is present to assist screen readers, as the value does not include the suffix.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "suffix",
+          "inheritedFrom": "ITextFieldProps.suffix",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "summary",
+          "inheritedFrom": "AllHTMLAttributes.summary",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "suppressContentEditableWarning",
+          "inheritedFrom": "HTMLAttributes.suppressContentEditableWarning",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "suppressHydrationWarning",
+          "inheritedFrom": "HTMLAttributes.suppressHydrationWarning",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "tabIndex",
+          "inheritedFrom": "HTMLAttributes.tabIndex",
+          "type": "number"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "target",
+          "inheritedFrom": "AllHTMLAttributes.target",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Theme (provided through customization).</p>\n"
+            ],
+            "contentsRaw": "Theme (provided through customization).",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "theme",
+          "inheritedFrom": "ITextFieldProps.theme",
+          "type": "ITheme"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "title",
+          "inheritedFrom": "HTMLAttributes.title",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "type",
+          "inheritedFrom": "AllHTMLAttributes.type",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "typeof",
+          "inheritedFrom": "HTMLAttributes.typeof",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Whether or not the text field is underlined.</p>\n",
+              {
+                "tag": "defaultvalue",
+                "value": "false"
+              }
+            ],
+            "contentsRaw": "Whether or not the text field is underlined.\n\n@defaultvalue false",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "underlined",
+          "inheritedFrom": "ITextFieldProps.underlined",
+          "type": "boolean"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "unselectable",
+          "inheritedFrom": "HTMLAttributes.unselectable",
+          "type": "\"on\" | \"off\""
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "useMap",
+          "inheritedFrom": "AllHTMLAttributes.useMap",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Run validation when focus moves into the input, and <strong>do not</strong> validate on change.</p>\n<p>(Unless this prop and/or <code>validateOnFocusOut</code> is set to true, validation will run on every change.)</p>\n",
+              {
+                "tag": "defaultvalue",
+                "value": "false"
+              }
+            ],
+            "contentsRaw": "Run validation when focus moves into the input, and **do not** validate on change.\n\n(Unless this prop and/or `validateOnFocusOut` is set to true, validation will run on every change.)\n\n@defaultvalue false",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "validateOnFocusIn",
+          "inheritedFrom": "ITextFieldProps.validateOnFocusIn",
+          "type": "boolean"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Run validation when focus moves out of the input, and <strong>do not</strong> validate on change.</p>\n<p>(Unless this prop and/or <code>validateOnFocusIn</code> is set to true, validation will run on every change.)</p>\n",
+              {
+                "tag": "defaultvalue",
+                "value": "false"
+              }
+            ],
+            "contentsRaw": "Run validation when focus moves out of the input, and **do not** validate on change.\n\n(Unless this prop and/or `validateOnFocusIn` is set to true, validation will run on every change.)\n\n@defaultvalue false",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "validateOnFocusOut",
+          "inheritedFrom": "ITextFieldProps.validateOnFocusOut",
+          "type": "boolean"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Whether validation should run when the input is initially rendered.</p>\n",
+              {
+                "tag": "defaultvalue",
+                "value": "true"
+              }
+            ],
+            "contentsRaw": "Whether validation should run when the input is initially rendered.\n\n@defaultvalue true",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "validateOnLoad",
+          "inheritedFrom": "ITextFieldProps.validateOnLoad",
+          "type": "boolean"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Current value of the text field. Only provide this if the text field is a controlled component where you\nare maintaining its current state; otherwise, use the <code>defaultValue</code> property.</p>\n"
+            ],
+            "contentsRaw": "Current value of the text field. Only provide this if the text field is a controlled component where you\nare maintaining its current state; otherwise, use the `defaultValue` property.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "value",
+          "inheritedFrom": "ITextFieldProps.value",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "vocab",
+          "inheritedFrom": "HTMLAttributes.vocab",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "width",
+          "inheritedFrom": "AllHTMLAttributes.width",
+          "type": "number | string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "wmode",
+          "inheritedFrom": "AllHTMLAttributes.wmode",
+          "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "wrap",
+          "inheritedFrom": "AllHTMLAttributes.wrap",
+          "type": "string"
+        }
+      ]
+    },
+    "NumberInputProps": {
+      "fileName": "src\\ui-toolkit\\components\\inputs\\NumberInput\\NumberInput.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "NumberInputProps",
+      "extends": [
+        ""
+      ],
+      "indexSignature": {
+        "fileName": "src\\ui-toolkit\\components\\inputs\\NumberInput\\NumberInput.tsx",
+        "kind": "signature",
+        "name": "__index",
+        "parameters": [
+          {
+            "flags": {
+              "isExported": true,
+              "isExternal": false,
+              "isOptional": false,
+              "isPrivate": false,
+              "isProtected": false,
+              "isPublic": false,
+              "isRest": false,
+              "isStatic": false
+            },
+            "kind": "parameter",
+            "name": "key",
+            "type": "string"
+          }
+        ],
+        "returnType": "any",
+        "type": "{ [key: string]: any }"
+      },
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\inputs\\NumberInput\\NumberInput.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onChange",
+          "type": "(newValue: number) => void"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Number to increment/decrement by</p>\n"
+            ],
+            "contentsRaw": "Number to increment/decrement by",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\inputs\\NumberInput\\NumberInput.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "step",
+          "type": "number"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\inputs\\NumberInput\\NumberInput.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "value",
+          "type": "number"
+        }
+      ]
+    },
     "ThemeColorPickerProps": {
       "fileName": "src\\ui-toolkit\\components\\inputs\\ThemeColorPicker.tsx",
       "flags": {
@@ -21321,56 +27482,6 @@ export default {
         }
       ]
     },
-    "Window": {
-      "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "interface",
-      "name": "Window",
-      "methods": [],
-      "properties": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "__themeState__",
-          "type": "any"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "_portalsTheme",
-          "type": "any"
-        }
-      ]
-    },
     "SitePickerProps": {
       "fileName": "src\\ui-toolkit\\components\\inputs\\SitePicker\\SitePicker.tsx",
       "flags": {
@@ -21597,6 +27708,56 @@ export default {
           "kind": "property",
           "name": "size",
           "type": "string"
+        }
+      ]
+    },
+    "ComponentSizeData": {
+      "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "ComponentSizeData",
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "height",
+          "type": "number"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "width",
+          "type": "number"
         }
       ]
     },
