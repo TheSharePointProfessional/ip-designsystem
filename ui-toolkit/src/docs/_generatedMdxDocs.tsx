@@ -10,6 +10,7 @@ import GridDocs, { metadata as GridMetadata } from "ui-toolkit/components/layout
 import HomeDocs, { metadata as HomeMetadata } from "ui-toolkit/Home.mdx"
 import IconImageDocs, { metadata as IconImageMetadata } from "ui-toolkit/components/primitives/IconImage.mdx"
 import LinkTileDocs, { metadata as LinkTileMetadata } from "ui-toolkit/components/LinkTile/LinkTile.mdx"
+import NumberInputDocs, { metadata as NumberInputMetadata } from "ui-toolkit/components/inputs/NumberInput/NumberInput.mdx"
 import PanelDocs, { metadata as PanelMetadata } from "ui-toolkit/components/Panel/Panel.mdx"
 import PersonaDocs, { metadata as PersonaMetadata } from "ui-toolkit/components/Persona/Persona.mdx"
 import PortalsThemeProviderDocs, { metadata as PortalsThemeProviderMetadata } from "ui-toolkit/components/PortalsThemeProvider/PortalsThemeProvider.mdx"
@@ -109,6 +110,13 @@ const docs = [
         sort: LinkTileMetadata?.sort ?? 9999,
         parent: LinkTileMetadata?.parent || "",
         render: () => <LinkTileDocs />,
+    },
+   {
+        title: "NumberInput",
+        section: "components",
+        sort: NumberInputMetadata?.sort ?? 9999,
+        parent: NumberInputMetadata?.parent || "",
+        render: () => <NumberInputDocs />,
     },
    {
         title: "Panel",
