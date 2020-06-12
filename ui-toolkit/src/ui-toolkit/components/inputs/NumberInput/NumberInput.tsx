@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "ui-toolkit/styled-components";
 import { IconButton } from "office-ui-fabric-react/lib/Button";
 import { TextField, ITextFieldProps } from "office-ui-fabric-react/lib/TextField";
@@ -12,12 +12,25 @@ export function NumberInput({
   max,
   ...rest
 }: NumberInputProps) {
+  const [inputStr, setInputStr] = React.useState(value + "");
+
+  let inputNumber = parseFloat(inputStr);
+  //   Current number will be 0 if current inputNumber is NaN to help with increment and decriment buttons when empty field or just "-"
+  let currentNumber = isNaN(inputNumber) ? 0 : inputNumber;
   const incrementValue = () => {
-    onChange(value + step);
+    setInputStr(currentNumber + step + "");
   };
   const decrementValue = () => {
-    onChange(value - step);
+    setInputStr(currentNumber - step + "");
   };
+
+  useEffect(() => {
+    onChange(inputNumber);
+  }, [inputNumber]);
+
+  useEffect(() => {
+    setInputStr(value + "");
+  }, [value]);
 
   const UpDownButtons = () => {
     return (
@@ -32,12 +45,10 @@ export function NumberInput({
     );
   };
 
-  // TODO: deal with min max and show message
-
-  const getErrorMessage = (value: number) => {
-    if (min && value < min) {
+  const getErrorMessage = () => {
+    if (min !== undefined && inputNumber < min) {
       return `Value must be greater than or equal to ${min}`;
-    } else if (max && value > max) {
+    } else if (max !== undefined && inputNumber > max) {
       return `Value must be less than or equal to ${max}`;
     } else {
       return "";
@@ -46,19 +57,22 @@ export function NumberInput({
 
   return (
     <StyledNumberInput>
+      <h1>{inputNumber}</h1>
       <TextField
         type="number"
-        value={value + ""}
-        onChange={(event, newValue) => onChange(parseFloat(newValue))}
+        value={inputStr}
+        onChange={(event, newValue) => setInputStr(newValue)}
         onRenderSuffix={() => UpDownButtons()}
         disabled={disabled}
-        onGetErrorMessage={() => getErrorMessage(value)}
+        onGetErrorMessage={getErrorMessage}
+        deferredValidationTime={400}
+        step={step}
         {...rest}
       />
     </StyledNumberInput>
   );
 }
-export default React.memo(NumberInput);
+export default NumberInput;
 
 export interface FabricTextFieldProps extends ITextFieldProps {}
 
