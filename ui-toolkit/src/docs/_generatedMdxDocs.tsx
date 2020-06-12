@@ -4,6 +4,7 @@ import BigDateDocs, { metadata as BigDateMetadata } from "ui-toolkit/components/
 import CardDocs, { metadata as CardMetadata } from "ui-toolkit/components/Card/Card.mdx"
 import ColorPickerDocs, { metadata as ColorPickerMetadata } from "ui-toolkit/components/inputs/ColorPicker.mdx"
 import DateRangeTextDocs, { metadata as DateRangeTextMetadata } from "ui-toolkit/components/DateRangeText/DateRangeText.mdx"
+import EditableDocs, { metadata as EditableMetadata } from "ui-toolkit/components/inputs/Editable/Editable.mdx"
 import FilmstripDocs, { metadata as FilmstripMetadata } from "ui-toolkit/components/layouts/Filmstrip/Filmstrip.mdx"
 import GridDocs, { metadata as GridMetadata } from "ui-toolkit/components/layouts/Grid/Grid.mdx"
 import HomeDocs, { metadata as HomeMetadata } from "ui-toolkit/Home.mdx"
@@ -67,6 +68,13 @@ const docs = [
         sort: DateRangeTextMetadata?.sort ?? 9999,
         parent: DateRangeTextMetadata?.parent || "",
         render: () => <DateRangeTextDocs />,
+    },
+   {
+        title: "Editable",
+        section: "components",
+        sort: EditableMetadata?.sort ?? 9999,
+        parent: EditableMetadata?.parent || "",
+        render: () => <EditableDocs />,
     },
    {
         title: "Filmstrip",

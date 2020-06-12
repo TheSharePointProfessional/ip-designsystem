@@ -8239,6 +8239,47 @@ export default {
         }
       ]
     },
+    "Editable": {
+      "fileName": "src\\ui-toolkit\\components\\inputs\\Editable\\Editable.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "Editable",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\inputs\\Editable\\Editable.tsx",
+          "kind": "signature",
+          "name": "Editable",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "__namedParameters",
+              "type": ""
+            }
+          ],
+          "returnType": "Element<>",
+          "type": "(__namedParameters: ) => Element<>"
+        }
+      ]
+    },
     "Grid": {
       "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
       "flags": {
@@ -10644,8 +10685,8 @@ export default {
         }
       ]
     },
-    "Window": {
-      "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
+    "GridProps": {
+      "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -10657,15 +10698,39 @@ export default {
         "isStatic": false
       },
       "kind": "interface",
-      "name": "Window",
+      "name": "GridProps",
+      "indexSignature": {
+        "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
+        "kind": "signature",
+        "name": "__index",
+        "parameters": [
+          {
+            "flags": {
+              "isExported": true,
+              "isExternal": false,
+              "isOptional": false,
+              "isPrivate": false,
+              "isProtected": false,
+              "isPublic": false,
+              "isRest": false,
+              "isStatic": false
+            },
+            "kind": "parameter",
+            "name": "key",
+            "type": "string"
+          }
+        ],
+        "returnType": "any",
+        "type": "{ [key: string]: any }"
+      },
       "methods": [],
       "properties": [
         {
-          "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
+          "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
-            "isOptional": false,
+            "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
             "isPublic": false,
@@ -10673,15 +10738,15 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "__themeState__",
-          "type": "any"
+          "name": "gap",
+          "type": "number"
         },
         {
-          "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
+          "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
-            "isOptional": false,
+            "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
             "isPublic": false,
@@ -10689,8 +10754,40 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "_portalsTheme",
-          "type": "any"
+          "name": "mode",
+          "type": "\"best\" | \"grid\" | \"flex\""
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "shouldFlex",
+          "type": "boolean"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "size",
+          "type": "string"
         }
       ]
     },
@@ -27482,6 +27579,40 @@ export default {
         }
       ]
     },
+    "Window": {
+      "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "Window",
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "CSS",
+          "type": "any"
+        }
+      ]
+    },
     "SitePickerProps": {
       "fileName": "src\\ui-toolkit\\components\\inputs\\SitePicker\\SitePicker.tsx",
       "flags": {
@@ -27605,8 +27736,8 @@ export default {
         }
       ]
     },
-    "GridProps": {
-      "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
+    "EditableProps": {
+      "fileName": "src\\ui-toolkit\\components\\inputs\\Editable\\Editable.tsx",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -27618,35 +27749,18 @@ export default {
         "isStatic": false
       },
       "kind": "interface",
-      "name": "GridProps",
-      "indexSignature": {
-        "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
-        "kind": "signature",
-        "name": "__index",
-        "parameters": [
-          {
-            "flags": {
-              "isExported": true,
-              "isExternal": false,
-              "isOptional": false,
-              "isPrivate": false,
-              "isProtected": false,
-              "isPublic": false,
-              "isRest": false,
-              "isStatic": false
-            },
-            "kind": "parameter",
-            "name": "key",
-            "type": "string"
-          }
-        ],
-        "returnType": "any",
-        "type": "{ [key: string]: any }"
-      },
+      "name": "EditableProps",
       "methods": [],
       "properties": [
         {
-          "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
+          "documentation": {
+            "contents": [
+              "<p>Allows you to control who can see the edit controls</p>\n"
+            ],
+            "contentsRaw": "Allows you to control who can see the edit controls",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\inputs\\Editable\\Editable.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -27658,43 +27772,18 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "gap",
-          "type": "number"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "mode",
-          "type": "\"best\" | \"grid\" | \"flex\""
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "shouldFlex",
+          "name": "canEdit",
           "type": "boolean"
         },
         {
-          "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
+          "documentation": {
+            "contents": [
+              "<p>Optional classname</p>\n"
+            ],
+            "contentsRaw": "Optional classname",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\inputs\\Editable\\Editable.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
@@ -27706,7 +27795,122 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "size",
+          "name": "className",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defaults to &#39;text&#39;. Helps you handle rich text scenarios.</p>\n"
+            ],
+            "contentsRaw": "Defaults to 'text'. Helps you handle rich text scenarios.",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\inputs\\Editable\\Editable.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "contentType",
+          "type": "\"text\" | \"html\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defaults to &#39;div&#39;. What kind HTML element?</p>\n"
+            ],
+            "contentsRaw": "Defaults to 'div'. What kind HTML element?",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\inputs\\Editable\\Editable.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "element",
+          "type": "\"div\" | \"p\" | \"span\" | \"h1\" | \"h2\" | \"h3\" | \"h4\" | \"li\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Fires when they click the save icon.</p>\n"
+            ],
+            "contentsRaw": "Fires when they click the save icon.",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\inputs\\Editable\\Editable.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onChange",
+          "type": "(value: string) => void"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>The text to display when there is no value</p>\n"
+            ],
+            "contentsRaw": "The text to display when there is no value",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\inputs\\Editable\\Editable.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "placeholder",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>The value, can be text or html string depending on contentType prop</p>\n"
+            ],
+            "contentsRaw": "The value, can be text or html string depending on contentType prop",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\inputs\\Editable\\Editable.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "value",
           "type": "string"
         }
       ]
