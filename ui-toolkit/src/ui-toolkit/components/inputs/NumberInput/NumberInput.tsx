@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import styled from "ui-toolkit/styled-components";
+import { useDebouncedEffect } from "ui-toolkit";
 import { IconButton } from "office-ui-fabric-react/lib/Button";
 import { TextField, ITextFieldProps } from "office-ui-fabric-react/lib/TextField";
 
@@ -10,6 +11,7 @@ export function NumberInput({
   disabled,
   min,
   max,
+  onChangeDelay = 300,
   ...rest
 }: NumberInputProps) {
   const [inputStr, setInputStr] = React.useState(value + "");
@@ -24,9 +26,13 @@ export function NumberInput({
     setInputStr(currentNumber - step + "");
   };
 
-  useEffect(() => {
-    onChange(inputNumber);
-  }, [inputNumber]);
+  useDebouncedEffect(
+    (debouncedValue) => {
+      onChange(debouncedValue);
+    },
+    inputNumber,
+    onChangeDelay
+  );
 
   useEffect(() => {
     setInputStr(value + "");
@@ -81,6 +87,8 @@ export interface NumberInputProps extends Omit<ITextFieldProps, "value" | "onCha
   /**Number to increment/decrement by */
   step?: number;
   [key: string]: any;
+  /** Delay in ms for onChange event to delay notifying parent when values have stopped changing */
+  onChangeDelay?: number;
 }
 
 const StyledNumberInput = styled.div`
