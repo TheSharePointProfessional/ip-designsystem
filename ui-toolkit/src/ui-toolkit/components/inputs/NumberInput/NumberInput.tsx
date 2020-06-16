@@ -63,7 +63,6 @@ export function NumberInput({
 
   return (
     <StyledNumberInput>
-      <h1>{inputNumber}</h1>
       <TextField
         type="number"
         value={inputStr}
