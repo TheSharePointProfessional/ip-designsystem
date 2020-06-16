@@ -30,7 +30,12 @@ export function useDebouncedEffect(effectFn, value, delay = 250) {
   let effectRef = useRef(effectFn);
   // Leverage the hook we just created above
   let debouncedValue = useDebouncedValue(value, delay);
-
+  
+  // Keep the Effect Function in sync
+  useEffect(() => {
+    effectRef.current = effectFn; 
+  });
+  
   // Run an effect whenever the debounced value
   useEffect(() => {
     if (effectRef.current) {
