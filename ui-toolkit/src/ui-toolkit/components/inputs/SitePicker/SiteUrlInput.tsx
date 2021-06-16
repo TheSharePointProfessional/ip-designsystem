@@ -54,7 +54,9 @@ export default function SiteUrlInput(props: SiteUrlInputProps) {
       dispatch({ type: "validate:complete", isValid });
     };
     doAsync();
-    return () => (isMounted = false);
+    return () => {
+      (isMounted = false);
+    }
   }, [debouncedValue]);
 
   // If it's done loading, trigger the parent change event
