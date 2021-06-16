@@ -1,3 +1,8 @@
+# Dependencies
+
+Uses SPFX 1.12.1
+Node 12+ and gulp v4
+
 # UI Toolkit
 
 ## Commands / Tasks
