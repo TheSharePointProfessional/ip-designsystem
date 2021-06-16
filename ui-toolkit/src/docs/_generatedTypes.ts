@@ -14,43 +14,11 @@ export default {
       },
       "kind": "class",
       "name": "ColorPicker",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ColorPicker.tsx#L8",
       "extends": [
         "PureComponent<ColorPickerProps, ColorPickerState>"
       ],
       "methods": [
-        {
-          "fileName": "node_modules\\@types\\react\\index.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "method",
-          "name": "componentWillUnmount",
-          "inheritedFrom": "ComponentLifecycle.componentWillUnmount",
-          "signatures": [
-            {
-              "documentation": {
-                "contents": [
-                  "<p>Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as\ncancelled network requests, or cleaning up any DOM elements created in <code>componentDidMount</code>.</p>\n"
-                ],
-                "contentsRaw": "Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as\ncancelled network requests, or cleaning up any DOM elements created in `componentDidMount`.",
-                "metadata": {}
-              },
-              "fileName": "node_modules\\@types\\react\\index.d.ts",
-              "kind": "signature",
-              "name": "componentWillUnmount",
-              "parameters": [],
-              "returnType": "void",
-              "type": "() => void"
-            }
-          ]
-        },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
@@ -89,6 +57,78 @@ export default {
               "parameters": [],
               "returnType": "void",
               "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "UNSAFE_componentWillReceiveProps",
+          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillReceiveProps",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "UNSAFE_componentWillReceiveProps",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<ColorPickerProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<ColorPickerProps>, nextContext: any) => void"
             }
           ]
         },
@@ -481,62 +521,23 @@ export default {
             "isStatic": false
           },
           "kind": "method",
-          "name": "UNSAFE_componentWillReceiveProps",
-          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillReceiveProps",
+          "name": "componentWillUnmount",
+          "inheritedFrom": "ComponentLifecycle.componentWillUnmount",
           "signatures": [
             {
               "documentation": {
                 "contents": [
-                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
-                  {
-                    "tag": "see",
-                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
-                  },
-                  {
-                    "tag": "see",
-                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
-                  }
+                  "<p>Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as\ncancelled network requests, or cleaning up any DOM elements created in <code>componentDidMount</code>.</p>\n"
                 ],
-                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "contentsRaw": "Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as\ncancelled network requests, or cleaning up any DOM elements created in `componentDidMount`.",
                 "metadata": {}
               },
               "fileName": "node_modules\\@types\\react\\index.d.ts",
               "kind": "signature",
-              "name": "UNSAFE_componentWillReceiveProps",
-              "parameters": [
-                {
-                  "flags": {
-                    "isExported": true,
-                    "isExternal": false,
-                    "isOptional": false,
-                    "isPrivate": false,
-                    "isProtected": false,
-                    "isPublic": false,
-                    "isRest": false,
-                    "isStatic": false
-                  },
-                  "kind": "parameter",
-                  "name": "nextProps",
-                  "type": "Readonly<ColorPickerProps>"
-                },
-                {
-                  "flags": {
-                    "isExported": true,
-                    "isExternal": false,
-                    "isOptional": false,
-                    "isPrivate": false,
-                    "isProtected": false,
-                    "isPublic": false,
-                    "isRest": false,
-                    "isStatic": false
-                  },
-                  "kind": "parameter",
-                  "name": "nextContext",
-                  "type": "any"
-                }
-              ],
+              "name": "componentWillUnmount",
+              "parameters": [],
               "returnType": "void",
-              "type": "(nextProps: Readonly<ColorPickerProps>, nextContext: any) => void"
+              "type": "() => void"
             }
           ]
         },
@@ -641,11 +642,13 @@ export default {
           },
           "kind": "method",
           "name": "getColor",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ColorPicker.tsx#L32",
           "signatures": [
             {
               "fileName": "src\\ui-toolkit\\components\\inputs\\ColorPicker.tsx",
               "kind": "signature",
               "name": "getColor",
+              "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ColorPicker.tsx#L32",
               "parameters": [],
               "returnType": "string",
               "type": "() => string"
@@ -730,11 +733,13 @@ export default {
           },
           "kind": "method",
           "name": "openPicker",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ColorPicker.tsx#L35",
           "signatures": [
             {
               "fileName": "src\\ui-toolkit\\components\\inputs\\ColorPicker.tsx",
               "kind": "signature",
               "name": "openPicker",
+              "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ColorPicker.tsx#L35",
               "parameters": [],
               "returnType": "void",
               "type": "() => void"
@@ -755,11 +760,13 @@ export default {
           },
           "kind": "method",
           "name": "render",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ColorPicker.tsx#L38",
           "signatures": [
             {
               "fileName": "src\\ui-toolkit\\components\\inputs\\ColorPicker.tsx",
               "kind": "signature",
               "name": "render",
+              "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ColorPicker.tsx#L38",
               "parameters": [],
               "returnType": "Element<>",
               "type": "() => Element<>"
@@ -780,11 +787,13 @@ export default {
           },
           "kind": "method",
           "name": "renderPicker",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ColorPicker.tsx#L13",
           "signatures": [
             {
               "fileName": "src\\ui-toolkit\\components\\inputs\\ColorPicker.tsx",
               "kind": "signature",
               "name": "renderPicker",
+              "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ColorPicker.tsx#L13",
               "parameters": [],
               "returnType": "Element<>",
               "type": "() => Element<>"
@@ -886,6 +895,7 @@ export default {
           },
           "kind": "property",
           "name": "elem",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ColorPicker.tsx#L9",
           "type": "HTMLDivElement"
         }
       ],
@@ -905,82 +915,11 @@ export default {
       },
       "kind": "class",
       "name": "ThemeColorPicker",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ThemeColorPicker.tsx#L22",
       "extends": [
         "PureComponent<ThemeColorPickerProps, >"
       ],
       "methods": [
-        {
-          "fileName": "node_modules\\@types\\react\\index.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "method",
-          "name": "componentWillReceiveProps",
-          "inheritedFrom": "DeprecatedLifecycle.componentWillReceiveProps",
-          "signatures": [
-            {
-              "documentation": {
-                "contents": [
-                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
-                  {
-                    "tag": "see",
-                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
-                  },
-                  {
-                    "tag": "see",
-                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
-                  }
-                ],
-                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
-                "metadata": {}
-              },
-              "fileName": "node_modules\\@types\\react\\index.d.ts",
-              "kind": "signature",
-              "name": "componentWillReceiveProps",
-              "parameters": [
-                {
-                  "flags": {
-                    "isExported": true,
-                    "isExternal": false,
-                    "isOptional": false,
-                    "isPrivate": false,
-                    "isProtected": false,
-                    "isPublic": false,
-                    "isRest": false,
-                    "isStatic": false
-                  },
-                  "kind": "parameter",
-                  "name": "nextProps",
-                  "type": "Readonly<ThemeColorPickerProps>"
-                },
-                {
-                  "flags": {
-                    "isExported": true,
-                    "isExternal": false,
-                    "isOptional": false,
-                    "isPrivate": false,
-                    "isProtected": false,
-                    "isPublic": false,
-                    "isRest": false,
-                    "isStatic": false
-                  },
-                  "kind": "parameter",
-                  "name": "nextContext",
-                  "type": "any"
-                }
-              ],
-              "returnType": "void",
-              "type": "(nextProps: Readonly<ThemeColorPickerProps>, nextContext: any) => void"
-            }
-          ]
-        },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
@@ -1019,6 +958,78 @@ export default {
               "parameters": [],
               "returnType": "void",
               "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "UNSAFE_componentWillReceiveProps",
+          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillReceiveProps",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "UNSAFE_componentWillReceiveProps",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<ThemeColorPickerProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<ThemeColorPickerProps>, nextContext: any) => void"
             }
           ]
         },
@@ -1339,13 +1350,13 @@ export default {
             "isStatic": false
           },
           "kind": "method",
-          "name": "UNSAFE_componentWillReceiveProps",
-          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillReceiveProps",
+          "name": "componentWillReceiveProps",
+          "inheritedFrom": "DeprecatedLifecycle.componentWillReceiveProps",
           "signatures": [
             {
               "documentation": {
                 "contents": [
-                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
                   {
                     "tag": "see",
                     "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
@@ -1355,12 +1366,12 @@ export default {
                     "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
                   }
                 ],
-                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
                 "metadata": {}
               },
               "fileName": "node_modules\\@types\\react\\index.d.ts",
               "kind": "signature",
-              "name": "UNSAFE_componentWillReceiveProps",
+              "name": "componentWillReceiveProps",
               "parameters": [
                 {
                   "flags": {
@@ -1596,11 +1607,13 @@ export default {
           },
           "kind": "method",
           "name": "onDropdownChange",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ThemeColorPicker.tsx#L30",
           "signatures": [
             {
               "fileName": "src\\ui-toolkit\\components\\inputs\\ThemeColorPicker.tsx",
               "kind": "signature",
               "name": "onDropdownChange",
+              "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ThemeColorPicker.tsx#L30",
               "parameters": [
                 {
                   "flags": {
@@ -1637,11 +1650,13 @@ export default {
           },
           "kind": "method",
           "name": "onOtherColorChange",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ThemeColorPicker.tsx#L37",
           "signatures": [
             {
               "fileName": "src\\ui-toolkit\\components\\inputs\\ThemeColorPicker.tsx",
               "kind": "signature",
               "name": "onOtherColorChange",
+              "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ThemeColorPicker.tsx#L37",
               "parameters": [
                 {
                   "flags": {
@@ -1678,11 +1693,13 @@ export default {
           },
           "kind": "method",
           "name": "render",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ThemeColorPicker.tsx#L41",
           "signatures": [
             {
               "fileName": "src\\ui-toolkit\\components\\inputs\\ThemeColorPicker.tsx",
               "kind": "signature",
               "name": "render",
+              "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ThemeColorPicker.tsx#L41",
               "parameters": [],
               "returnType": "Element<>",
               "type": "() => Element<>"
@@ -1784,6 +1801,7 @@ export default {
           },
           "kind": "property",
           "name": "checkIsThemeColor",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ThemeColorPicker.tsx#L24",
           "defaultValue": "checkIsThemeColor",
           "type": "checkIsThemeColor"
         },
@@ -1801,6 +1819,7 @@ export default {
           },
           "kind": "property",
           "name": "getHexColor",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ThemeColorPicker.tsx#L23",
           "defaultValue": "getThemeColor",
           "type": "getThemeColor"
         }
@@ -1821,82 +1840,11 @@ export default {
       },
       "kind": "class",
       "name": "SiteChoiceGroup",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/siteChoiceGroup.tsx#L4",
       "extends": [
         "PureComponent<SiteChoiceGroupProps, >"
       ],
       "methods": [
-        {
-          "fileName": "node_modules\\@types\\react\\index.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "method",
-          "name": "componentWillReceiveProps",
-          "inheritedFrom": "DeprecatedLifecycle.componentWillReceiveProps",
-          "signatures": [
-            {
-              "documentation": {
-                "contents": [
-                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
-                  {
-                    "tag": "see",
-                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
-                  },
-                  {
-                    "tag": "see",
-                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
-                  }
-                ],
-                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
-                "metadata": {}
-              },
-              "fileName": "node_modules\\@types\\react\\index.d.ts",
-              "kind": "signature",
-              "name": "componentWillReceiveProps",
-              "parameters": [
-                {
-                  "flags": {
-                    "isExported": true,
-                    "isExternal": false,
-                    "isOptional": false,
-                    "isPrivate": false,
-                    "isProtected": false,
-                    "isPublic": false,
-                    "isRest": false,
-                    "isStatic": false
-                  },
-                  "kind": "parameter",
-                  "name": "nextProps",
-                  "type": "Readonly<SiteChoiceGroupProps>"
-                },
-                {
-                  "flags": {
-                    "isExported": true,
-                    "isExternal": false,
-                    "isOptional": false,
-                    "isPrivate": false,
-                    "isProtected": false,
-                    "isPublic": false,
-                    "isRest": false,
-                    "isStatic": false
-                  },
-                  "kind": "parameter",
-                  "name": "nextContext",
-                  "type": "any"
-                }
-              ],
-              "returnType": "void",
-              "type": "(nextProps: Readonly<SiteChoiceGroupProps>, nextContext: any) => void"
-            }
-          ]
-        },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
@@ -1935,6 +1883,78 @@ export default {
               "parameters": [],
               "returnType": "void",
               "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "UNSAFE_componentWillReceiveProps",
+          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillReceiveProps",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "UNSAFE_componentWillReceiveProps",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<SiteChoiceGroupProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<SiteChoiceGroupProps>, nextContext: any) => void"
             }
           ]
         },
@@ -2255,13 +2275,13 @@ export default {
             "isStatic": false
           },
           "kind": "method",
-          "name": "UNSAFE_componentWillReceiveProps",
-          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillReceiveProps",
+          "name": "componentWillReceiveProps",
+          "inheritedFrom": "DeprecatedLifecycle.componentWillReceiveProps",
           "signatures": [
             {
               "documentation": {
                 "contents": [
-                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
                   {
                     "tag": "see",
                     "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
@@ -2271,12 +2291,12 @@ export default {
                     "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
                   }
                 ],
-                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
                 "metadata": {}
               },
               "fileName": "node_modules\\@types\\react\\index.d.ts",
               "kind": "signature",
-              "name": "UNSAFE_componentWillReceiveProps",
+              "name": "componentWillReceiveProps",
               "parameters": [
                 {
                   "flags": {
@@ -2512,11 +2532,13 @@ export default {
           },
           "kind": "method",
           "name": "onChange",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/siteChoiceGroup.tsx#L5",
           "signatures": [
             {
               "fileName": "src\\ui-toolkit\\components\\inputs\\SitePicker\\siteChoiceGroup.tsx",
               "kind": "signature",
               "name": "onChange",
+              "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/siteChoiceGroup.tsx#L5",
               "parameters": [
                 {
                   "flags": {
@@ -2568,11 +2590,13 @@ export default {
           },
           "kind": "method",
           "name": "render",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/siteChoiceGroup.tsx#L8",
           "signatures": [
             {
               "fileName": "src\\ui-toolkit\\components\\inputs\\SitePicker\\siteChoiceGroup.tsx",
               "kind": "signature",
               "name": "render",
+              "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/siteChoiceGroup.tsx#L8",
               "parameters": [],
               "returnType": "Element<>",
               "type": "() => Element<>"
@@ -2676,43 +2700,11 @@ export default {
       },
       "kind": "class",
       "name": "SitePicker",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/SitePicker.tsx#L11",
       "extends": [
         "Component<SitePickerProps, SitePickerState>"
       ],
       "methods": [
-        {
-          "fileName": "node_modules\\@types\\react\\index.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "method",
-          "name": "componentWillUnmount",
-          "inheritedFrom": "ComponentLifecycle.componentWillUnmount",
-          "signatures": [
-            {
-              "documentation": {
-                "contents": [
-                  "<p>Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as\ncancelled network requests, or cleaning up any DOM elements created in <code>componentDidMount</code>.</p>\n"
-                ],
-                "contentsRaw": "Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as\ncancelled network requests, or cleaning up any DOM elements created in `componentDidMount`.",
-                "metadata": {}
-              },
-              "fileName": "node_modules\\@types\\react\\index.d.ts",
-              "kind": "signature",
-              "name": "componentWillUnmount",
-              "parameters": [],
-              "returnType": "void",
-              "type": "() => void"
-            }
-          ]
-        },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
@@ -2751,6 +2743,78 @@ export default {
               "parameters": [],
               "returnType": "void",
               "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "UNSAFE_componentWillReceiveProps",
+          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillReceiveProps",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "UNSAFE_componentWillReceiveProps",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<SitePickerProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<SitePickerProps>, nextContext: any) => void"
             }
           ]
         },
@@ -3143,62 +3207,23 @@ export default {
             "isStatic": false
           },
           "kind": "method",
-          "name": "UNSAFE_componentWillReceiveProps",
-          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillReceiveProps",
+          "name": "componentWillUnmount",
+          "inheritedFrom": "ComponentLifecycle.componentWillUnmount",
           "signatures": [
             {
               "documentation": {
                 "contents": [
-                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
-                  {
-                    "tag": "see",
-                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
-                  },
-                  {
-                    "tag": "see",
-                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
-                  }
+                  "<p>Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as\ncancelled network requests, or cleaning up any DOM elements created in <code>componentDidMount</code>.</p>\n"
                 ],
-                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "contentsRaw": "Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as\ncancelled network requests, or cleaning up any DOM elements created in `componentDidMount`.",
                 "metadata": {}
               },
               "fileName": "node_modules\\@types\\react\\index.d.ts",
               "kind": "signature",
-              "name": "UNSAFE_componentWillReceiveProps",
-              "parameters": [
-                {
-                  "flags": {
-                    "isExported": true,
-                    "isExternal": false,
-                    "isOptional": false,
-                    "isPrivate": false,
-                    "isProtected": false,
-                    "isPublic": false,
-                    "isRest": false,
-                    "isStatic": false
-                  },
-                  "kind": "parameter",
-                  "name": "nextProps",
-                  "type": "Readonly<SitePickerProps>"
-                },
-                {
-                  "flags": {
-                    "isExported": true,
-                    "isExternal": false,
-                    "isOptional": false,
-                    "isPrivate": false,
-                    "isProtected": false,
-                    "isPublic": false,
-                    "isRest": false,
-                    "isStatic": false
-                  },
-                  "kind": "parameter",
-                  "name": "nextContext",
-                  "type": "any"
-                }
-              ],
+              "name": "componentWillUnmount",
+              "parameters": [],
               "returnType": "void",
-              "type": "(nextProps: Readonly<SitePickerProps>, nextContext: any) => void"
+              "type": "() => void"
             }
           ]
         },
@@ -3322,12 +3347,12 @@ export default {
                     "isStatic": false
                   },
                   "kind": "parameter",
-                  "name": "callBack",
+                  "name": "callback",
                   "type": "() => void"
                 }
               ],
               "returnType": "void",
-              "type": "(callBack?: () => void) => void"
+              "type": "(callback?: () => void) => void"
             }
           ]
         },
@@ -3409,11 +3434,13 @@ export default {
           },
           "kind": "method",
           "name": "onChange",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/SitePicker.tsx#L18",
           "signatures": [
             {
               "fileName": "src\\ui-toolkit\\components\\inputs\\SitePicker\\SitePicker.tsx",
               "kind": "signature",
               "name": "onChange",
+              "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/SitePicker.tsx#L18",
               "parameters": [
                 {
                   "flags": {
@@ -3465,11 +3492,13 @@ export default {
           },
           "kind": "method",
           "name": "onChoiceGroupChange",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/SitePicker.tsx#L25",
           "signatures": [
             {
               "fileName": "src\\ui-toolkit\\components\\inputs\\SitePicker\\SitePicker.tsx",
               "kind": "signature",
               "name": "onChoiceGroupChange",
+              "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/SitePicker.tsx#L25",
               "parameters": [
                 {
                   "flags": {
@@ -3506,11 +3535,13 @@ export default {
           },
           "kind": "method",
           "name": "render",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/SitePicker.tsx#L31",
           "signatures": [
             {
               "fileName": "src\\ui-toolkit\\components\\inputs\\SitePicker\\SitePicker.tsx",
               "kind": "signature",
               "name": "render",
+              "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/SitePicker.tsx#L31",
               "parameters": [],
               "returnType": "Element<>",
               "type": "() => Element<>"
@@ -3551,7 +3582,7 @@ export default {
                   },
                   "kind": "parameter",
                   "name": "state",
-                  "type": "(prevState: Readonly<SitePickerState>, props: Readonly<SitePickerProps>) => S |  | S | "
+                  "type": "(prevState: Readonly<SitePickerState>, props: Readonly<SitePickerProps>) => S | Pick<S, K> | S | Pick<S, K>"
                 },
                 {
                   "flags": {
@@ -3570,7 +3601,7 @@ export default {
                 }
               ],
               "returnType": "void",
-              "type": "(state: (prevState: Readonly<SitePickerState>, props: Readonly<SitePickerProps>) => S |  | S | , callback?: () => void) => void"
+              "type": "(state: (prevState: Readonly<SitePickerState>, props: Readonly<SitePickerProps>) => S | Pick<S, K> | S | Pick<S, K>, callback?: () => void) => void"
             }
           ]
         },
@@ -3686,18 +3717,17 @@ export default {
         {
           "documentation": {
             "contents": [
-              "<p>If using the new style context, re-declare this in your class to be the\n<code>React.ContextType</code> of your <code>static contextType</code>.</p>\n<pre><code class=\"language-ts\">static contextType = MyContext\ncontext!: React.ContextType&lt;typeof MyContext&gt;</code></pre>\n",
+              "<p>If using the new style context, re-declare this in your class to be the\n<code>React.ContextType</code> of your <code>static contextType</code>.\nShould be used with type annotation or static contextType.</p>\n<pre><code class=\"language-ts\">static contextType = MyContext\n// For TS pre-3.7:\ncontext!: React.ContextType&lt;typeof MyContext&gt;\n// For TS 3.7 and above:\ndeclare context: React.ContextType&lt;typeof MyContext&gt;</code></pre>\n",
               {
                 "tag": "see",
-                "value": "https://reactjs.org/docs/legacy-context.html"
+                "value": "https://reactjs.org/docs/context.html"
               }
             ],
-            "contentsRaw": "If using the new style context, re-declare this in your class to be the\n`React.ContextType` of your `static contextType`.\n\n```ts\nstatic contextType = MyContext\ncontext!: React.ContextType<typeof MyContext>\n```\n\n\n@see https://reactjs.org/docs/legacy-context.html",
+            "contentsRaw": "If using the new style context, re-declare this in your class to be the\n`React.ContextType` of your `static contextType`.\nShould be used with type annotation or static contextType.\n\n```ts\nstatic contextType = MyContext\n// For TS pre-3.7:\ncontext!: React.ContextType<typeof MyContext>\n// For TS 3.7 and above:\ndeclare context: React.ContextType<typeof MyContext>\n```\n\n\n@see https://reactjs.org/docs/context.html",
             "metadata": {}
           },
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
-            "isDeprecated": "if used without a type annotation, or without static contextType",
             "isExported": true,
             "isExternal": false,
             "isOptional": false,
@@ -3809,11 +3839,11 @@ export default {
                 },
                 "kind": "parameter",
                 "name": "props",
-                "type": "Readonly<SitePickerProps>"
+                "type": "Readonly<SitePickerProps> | SitePickerProps"
               }
             ],
             "returnType": "SitePicker",
-            "type": "(props: Readonly<SitePickerProps>) => SitePicker"
+            "type": "(props: Readonly<SitePickerProps> | SitePickerProps) => SitePicker"
           },
           {
             "documentation": {
@@ -3849,7 +3879,7 @@ export default {
                 "flags": {
                   "isExported": true,
                   "isExternal": false,
-                  "isOptional": true,
+                  "isOptional": false,
                   "isPrivate": false,
                   "isProtected": false,
                   "isPublic": false,
@@ -3862,7 +3892,7 @@ export default {
               }
             ],
             "returnType": "SitePicker",
-            "type": "(props: SitePickerProps, context?: any) => SitePicker"
+            "type": "(props: SitePickerProps, context: any) => SitePicker"
           }
         ]
       }
@@ -3881,51 +3911,11 @@ export default {
       },
       "kind": "class",
       "name": "VerticalList",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VerticalList/VerticalList.tsx#L67",
       "extends": [
         "PureComponent<VerticalListProps<T>, >"
       ],
       "methods": [
-        {
-          "fileName": "node_modules\\@types\\react\\index.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "method",
-          "name": "componentWillMount",
-          "inheritedFrom": "DeprecatedLifecycle.componentWillMount",
-          "signatures": [
-            {
-              "documentation": {
-                "contents": [
-                  "<p>Called immediately before mounting occurs, and before <code>Component#render</code>.\nAvoid introducing any side-effects or subscriptions in this method.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
-                  {
-                    "tag": "see",
-                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state"
-                  },
-                  {
-                    "tag": "see",
-                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
-                  }
-                ],
-                "contentsRaw": "Called immediately before mounting occurs, and before `Component#render`.\nAvoid introducing any side-effects or subscriptions in this method.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
-                "metadata": {}
-              },
-              "fileName": "node_modules\\@types\\react\\index.d.ts",
-              "kind": "signature",
-              "name": "componentWillMount",
-              "parameters": [],
-              "returnType": "void",
-              "type": "() => void"
-            }
-          ]
-        },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
@@ -3964,6 +3954,78 @@ export default {
               "parameters": [],
               "returnType": "void",
               "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "UNSAFE_componentWillReceiveProps",
+          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillReceiveProps",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "UNSAFE_componentWillReceiveProps",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<VerticalListProps<T>>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<VerticalListProps<T>>, nextContext: any) => void"
             }
           ]
         },
@@ -4243,62 +4305,31 @@ export default {
             "isStatic": false
           },
           "kind": "method",
-          "name": "UNSAFE_componentWillReceiveProps",
-          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillReceiveProps",
+          "name": "componentWillMount",
+          "inheritedFrom": "DeprecatedLifecycle.componentWillMount",
           "signatures": [
             {
               "documentation": {
                 "contents": [
-                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  "<p>Called immediately before mounting occurs, and before <code>Component#render</code>.\nAvoid introducing any side-effects or subscriptions in this method.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
                   {
                     "tag": "see",
-                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state"
                   },
                   {
                     "tag": "see",
                     "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
                   }
                 ],
-                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "contentsRaw": "Called immediately before mounting occurs, and before `Component#render`.\nAvoid introducing any side-effects or subscriptions in this method.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
                 "metadata": {}
               },
               "fileName": "node_modules\\@types\\react\\index.d.ts",
               "kind": "signature",
-              "name": "UNSAFE_componentWillReceiveProps",
-              "parameters": [
-                {
-                  "flags": {
-                    "isExported": true,
-                    "isExternal": false,
-                    "isOptional": false,
-                    "isPrivate": false,
-                    "isProtected": false,
-                    "isPublic": false,
-                    "isRest": false,
-                    "isStatic": false
-                  },
-                  "kind": "parameter",
-                  "name": "nextProps",
-                  "type": "Readonly<VerticalListProps<T>>"
-                },
-                {
-                  "flags": {
-                    "isExported": true,
-                    "isExternal": false,
-                    "isOptional": false,
-                    "isPrivate": false,
-                    "isProtected": false,
-                    "isPublic": false,
-                    "isRest": false,
-                    "isStatic": false
-                  },
-                  "kind": "parameter",
-                  "name": "nextContext",
-                  "type": "any"
-                }
-              ],
+              "name": "componentWillMount",
+              "parameters": [],
               "returnType": "void",
-              "type": "(nextProps: Readonly<VerticalListProps<T>>, nextContext: any) => void"
+              "type": "() => void"
             }
           ]
         },
@@ -4653,6 +4684,7 @@ export default {
           },
           "kind": "property",
           "name": "Content",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VerticalList/VerticalList.tsx#L75",
           "defaultValue": "StyledContent",
           "type": "any"
         },
@@ -4670,8 +4702,9 @@ export default {
           },
           "kind": "property",
           "name": "Description",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VerticalList/VerticalList.tsx#L73",
           "defaultValue": "VerticalItemDescription",
-          "type": "FunctionComponent<VerticalItemDescriptionProps>"
+          "type": "FC<VerticalItemDescriptionProps>"
         },
         {
           "fileName": "src\\ui-toolkit\\components\\layouts\\VerticalList\\VerticalList.tsx",
@@ -4687,6 +4720,7 @@ export default {
           },
           "kind": "property",
           "name": "Footer",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VerticalList/VerticalList.tsx#L76",
           "defaultValue": "StyledFooter",
           "type": "any"
         },
@@ -4704,8 +4738,9 @@ export default {
           },
           "kind": "property",
           "name": "Image",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VerticalList/VerticalList.tsx#L70",
           "defaultValue": "Thumbnail",
-          "type": "FunctionComponent<ThumbnailProps>"
+          "type": "FC<ThumbnailProps>"
         },
         {
           "fileName": "src\\ui-toolkit\\components\\layouts\\VerticalList\\VerticalList.tsx",
@@ -4721,8 +4756,9 @@ export default {
           },
           "kind": "property",
           "name": "Info",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VerticalList/VerticalList.tsx#L74",
           "defaultValue": "Info",
-          "type": "FunctionComponent<InfoProps>"
+          "type": "FC<InfoProps>"
         },
         {
           "fileName": "src\\ui-toolkit\\components\\layouts\\VerticalList\\VerticalList.tsx",
@@ -4738,8 +4774,9 @@ export default {
           },
           "kind": "property",
           "name": "Item",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VerticalList/VerticalList.tsx#L68",
           "defaultValue": "VerticalItem",
-          "type": "FunctionComponent<VerticalItemProps>"
+          "type": "FC<VerticalItemProps>"
         },
         {
           "fileName": "src\\ui-toolkit\\components\\layouts\\VerticalList\\VerticalList.tsx",
@@ -4755,6 +4792,7 @@ export default {
           },
           "kind": "property",
           "name": "Tag",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VerticalList/VerticalList.tsx#L72",
           "defaultValue": "Tag",
           "type": "Tag"
         },
@@ -4772,6 +4810,7 @@ export default {
           },
           "kind": "property",
           "name": "Tags",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VerticalList/VerticalList.tsx#L71",
           "defaultValue": "Tags",
           "type": "Tags"
         },
@@ -4789,8 +4828,9 @@ export default {
           },
           "kind": "property",
           "name": "Title",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VerticalList/VerticalList.tsx#L69",
           "defaultValue": "Title",
-          "type": "FunctionComponent<TitleProps>"
+          "type": "FC<TitleProps>"
         }
       ],
       "accessors": []
@@ -4809,51 +4849,11 @@ export default {
       },
       "kind": "class",
       "name": "Card",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/Card.tsx#L15",
       "extends": [
         "PureComponent<CardProps, >"
       ],
       "methods": [
-        {
-          "fileName": "node_modules\\@types\\react\\index.d.ts",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "method",
-          "name": "componentWillMount",
-          "inheritedFrom": "DeprecatedLifecycle.componentWillMount",
-          "signatures": [
-            {
-              "documentation": {
-                "contents": [
-                  "<p>Called immediately before mounting occurs, and before <code>Component#render</code>.\nAvoid introducing any side-effects or subscriptions in this method.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
-                  {
-                    "tag": "see",
-                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state"
-                  },
-                  {
-                    "tag": "see",
-                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
-                  }
-                ],
-                "contentsRaw": "Called immediately before mounting occurs, and before `Component#render`.\nAvoid introducing any side-effects or subscriptions in this method.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
-                "metadata": {}
-              },
-              "fileName": "node_modules\\@types\\react\\index.d.ts",
-              "kind": "signature",
-              "name": "componentWillMount",
-              "parameters": [],
-              "returnType": "void",
-              "type": "() => void"
-            }
-          ]
-        },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
@@ -4892,6 +4892,78 @@ export default {
               "parameters": [],
               "returnType": "void",
               "type": "() => void"
+            }
+          ]
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "method",
+          "name": "UNSAFE_componentWillReceiveProps",
+          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillReceiveProps",
+          "signatures": [
+            {
+              "documentation": {
+                "contents": [
+                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
+                  },
+                  {
+                    "tag": "see",
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+                  }
+                ],
+                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "metadata": {}
+              },
+              "fileName": "node_modules\\@types\\react\\index.d.ts",
+              "kind": "signature",
+              "name": "UNSAFE_componentWillReceiveProps",
+              "parameters": [
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextProps",
+                  "type": "Readonly<CardProps>"
+                },
+                {
+                  "flags": {
+                    "isExported": true,
+                    "isExternal": false,
+                    "isOptional": false,
+                    "isPrivate": false,
+                    "isProtected": false,
+                    "isPublic": false,
+                    "isRest": false,
+                    "isStatic": false
+                  },
+                  "kind": "parameter",
+                  "name": "nextContext",
+                  "type": "any"
+                }
+              ],
+              "returnType": "void",
+              "type": "(nextProps: Readonly<CardProps>, nextContext: any) => void"
             }
           ]
         },
@@ -5171,62 +5243,31 @@ export default {
             "isStatic": false
           },
           "kind": "method",
-          "name": "UNSAFE_componentWillReceiveProps",
-          "inheritedFrom": "DeprecatedLifecycle.UNSAFE_componentWillReceiveProps",
+          "name": "componentWillMount",
+          "inheritedFrom": "DeprecatedLifecycle.componentWillMount",
           "signatures": [
             {
               "documentation": {
                 "contents": [
-                  "<p>Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.</p>\n<p>Calling <code>Component#setState</code> generally does not trigger this method.</p>\n<p>This method will not stop working in React 17.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
+                  "<p>Called immediately before mounting occurs, and before <code>Component#render</code>.\nAvoid introducing any side-effects or subscriptions in this method.</p>\n<p>Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.</p>\n",
                   {
                     "tag": "see",
-                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
+                    "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state"
                   },
                   {
                     "tag": "see",
                     "value": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
                   }
                 ],
-                "contentsRaw": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling `Component#setState` generally does not trigger this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
+                "contentsRaw": "Called immediately before mounting occurs, and before `Component#render`.\nAvoid introducing any side-effects or subscriptions in this method.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n\n\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state\n@see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path",
                 "metadata": {}
               },
               "fileName": "node_modules\\@types\\react\\index.d.ts",
               "kind": "signature",
-              "name": "UNSAFE_componentWillReceiveProps",
-              "parameters": [
-                {
-                  "flags": {
-                    "isExported": true,
-                    "isExternal": false,
-                    "isOptional": false,
-                    "isPrivate": false,
-                    "isProtected": false,
-                    "isPublic": false,
-                    "isRest": false,
-                    "isStatic": false
-                  },
-                  "kind": "parameter",
-                  "name": "nextProps",
-                  "type": "Readonly<CardProps>"
-                },
-                {
-                  "flags": {
-                    "isExported": true,
-                    "isExternal": false,
-                    "isOptional": false,
-                    "isPrivate": false,
-                    "isProtected": false,
-                    "isPublic": false,
-                    "isRest": false,
-                    "isStatic": false
-                  },
-                  "kind": "parameter",
-                  "name": "nextContext",
-                  "type": "any"
-                }
-              ],
+              "name": "componentWillMount",
+              "parameters": [],
               "returnType": "void",
-              "type": "(nextProps: Readonly<CardProps>, nextContext: any) => void"
+              "type": "() => void"
             }
           ]
         },
@@ -5500,11 +5541,13 @@ export default {
           },
           "kind": "method",
           "name": "render",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/Card.tsx#L25",
           "signatures": [
             {
               "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
               "kind": "signature",
               "name": "render",
+              "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/Card.tsx#L25",
               "parameters": [],
               "returnType": "Element<>",
               "type": "() => Element<>"
@@ -5606,6 +5649,7 @@ export default {
           },
           "kind": "property",
           "name": "Description",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/Card.tsx#L17",
           "defaultValue": "CardDescription",
           "type": "CardDescription"
         },
@@ -5623,8 +5667,9 @@ export default {
           },
           "kind": "property",
           "name": "Footer",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/Card.tsx#L23",
           "defaultValue": "CardFooter",
-          "type": "FunctionComponent<CardFooterProps>"
+          "type": "FC<CardFooterProps>"
         },
         {
           "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
@@ -5640,8 +5685,9 @@ export default {
           },
           "kind": "property",
           "name": "Grid",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/Card.tsx#L24",
           "defaultValue": "Grid",
-          "type": "FunctionComponent<GridProps>"
+          "type": "FC<GridProps>"
         },
         {
           "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
@@ -5657,6 +5703,7 @@ export default {
           },
           "kind": "property",
           "name": "Image",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/Card.tsx#L22",
           "defaultValue": "CardImage",
           "type": "CardImage"
         },
@@ -5674,8 +5721,9 @@ export default {
           },
           "kind": "property",
           "name": "Info",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/Card.tsx#L21",
           "defaultValue": "Info",
-          "type": "FunctionComponent<InfoProps>"
+          "type": "FC<InfoProps>"
         },
         {
           "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
@@ -5691,8 +5739,9 @@ export default {
           },
           "kind": "property",
           "name": "Link",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/Card.tsx#L18",
           "defaultValue": "Link",
-          "type": "FunctionComponent<LinkProps>"
+          "type": "FC<LinkProps>"
         },
         {
           "fileName": "src\\ui-toolkit\\components\\Card\\Card.tsx",
@@ -5708,6 +5757,7 @@ export default {
           },
           "kind": "property",
           "name": "Tag",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/Card.tsx#L20",
           "defaultValue": "Tag",
           "type": "Tag"
         },
@@ -5725,6 +5775,7 @@ export default {
           },
           "kind": "property",
           "name": "Tags",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/Card.tsx#L19",
           "defaultValue": "Tags",
           "type": "Tags"
         },
@@ -5742,8 +5793,9 @@ export default {
           },
           "kind": "property",
           "name": "Title",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/Card.tsx#L16",
           "defaultValue": "Title",
-          "type": "FunctionComponent<TitleProps>"
+          "type": "FC<TitleProps>"
         }
       ],
       "accessors": []
@@ -5762,6 +5814,7 @@ export default {
       },
       "kind": "class",
       "name": "PropertyFieldSitePicker",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/propertyfield_sitepicker/PropertyFieldSitePicker.ts#L21",
       "implements": [
         "IPropertyPaneField<PropertyFieldSitePickerProperties>"
       ],
@@ -5780,11 +5833,13 @@ export default {
           },
           "kind": "method",
           "name": "render",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/propertyfield_sitepicker/PropertyFieldSitePicker.ts#L39",
           "signatures": [
             {
               "fileName": "src\\ui-toolkit\\propertyfields\\propertyfield_sitepicker\\PropertyFieldSitePicker.ts",
               "kind": "signature",
               "name": "render",
+              "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/propertyfield_sitepicker/PropertyFieldSitePicker.ts#L39",
               "parameters": [],
               "returnType": "any",
               "type": "() => any"
@@ -5807,6 +5862,7 @@ export default {
           },
           "kind": "property",
           "name": "properties",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/propertyfield_sitepicker/PropertyFieldSitePicker.ts#L25",
           "type": "_PropertyFieldSitePickerProperties"
         },
         {
@@ -5823,6 +5879,7 @@ export default {
           },
           "kind": "property",
           "name": "targetProperty",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/propertyfield_sitepicker/PropertyFieldSitePicker.ts#L24",
           "type": "string"
         },
         {
@@ -5839,6 +5896,7 @@ export default {
           },
           "kind": "property",
           "name": "type",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/propertyfield_sitepicker/PropertyFieldSitePicker.ts#L23",
           "defaultValue": "PropertyPaneFieldType.Custom",
           "type": "PropertyPaneFieldType"
         }
@@ -5858,11 +5916,13 @@ export default {
         },
         "kind": "constructor",
         "name": "constructor",
+        "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/propertyfield_sitepicker/PropertyFieldSitePicker.ts#L26",
         "signatures": [
           {
             "fileName": "src\\ui-toolkit\\propertyfields\\propertyfield_sitepicker\\PropertyFieldSitePicker.ts",
             "kind": "signature",
             "name": "new PropertyFieldSitePicker",
+            "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/propertyfield_sitepicker/PropertyFieldSitePicker.ts#L26",
             "parameters": [
               {
                 "flags": {
@@ -5915,6 +5975,7 @@ export default {
       },
       "kind": "class",
       "name": "PropertyFieldBlank",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldBlank/PropertyFieldBlank.ts#L16",
       "implements": [
         "IPropertyPaneField<PropertyFieldBlankProperties>"
       ],
@@ -5933,11 +5994,13 @@ export default {
           },
           "kind": "method",
           "name": "render",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldBlank/PropertyFieldBlank.ts#L33",
           "signatures": [
             {
               "fileName": "src\\ui-toolkit\\propertyfields\\PropertyFieldBlank\\PropertyFieldBlank.ts",
               "kind": "signature",
               "name": "render",
+              "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldBlank/PropertyFieldBlank.ts#L33",
               "parameters": [],
               "returnType": "any",
               "type": "() => any"
@@ -5960,6 +6023,7 @@ export default {
           },
           "kind": "property",
           "name": "properties",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldBlank/PropertyFieldBlank.ts#L19",
           "type": "_BlankPropertyPaneFieldProperties"
         },
         {
@@ -5976,6 +6040,7 @@ export default {
           },
           "kind": "property",
           "name": "targetProperty",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldBlank/PropertyFieldBlank.ts#L18",
           "type": "string"
         },
         {
@@ -5992,6 +6057,7 @@ export default {
           },
           "kind": "property",
           "name": "type",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldBlank/PropertyFieldBlank.ts#L17",
           "defaultValue": "PropertyPaneFieldType.Custom",
           "type": "PropertyPaneFieldType"
         }
@@ -6011,11 +6077,13 @@ export default {
         },
         "kind": "constructor",
         "name": "constructor",
+        "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldBlank/PropertyFieldBlank.ts#L20",
         "signatures": [
           {
             "fileName": "src\\ui-toolkit\\propertyfields\\PropertyFieldBlank\\PropertyFieldBlank.ts",
             "kind": "signature",
             "name": "new PropertyFieldBlank",
+            "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldBlank/PropertyFieldBlank.ts#L20",
             "parameters": [
               {
                 "flags": {
@@ -6068,6 +6136,7 @@ export default {
       },
       "kind": "class",
       "name": "PropertyFieldThemeColor",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldThemeColorPicker/PropertyFieldThemeColorPicker.ts#L23",
       "implements": [
         "IPropertyPaneField<PropertyFieldThemeColorProperties>"
       ],
@@ -6086,11 +6155,13 @@ export default {
           },
           "kind": "method",
           "name": "render",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldThemeColorPicker/PropertyFieldThemeColorPicker.ts#L41",
           "signatures": [
             {
               "fileName": "src\\ui-toolkit\\propertyfields\\PropertyFieldThemeColorPicker\\PropertyFieldThemeColorPicker.ts",
               "kind": "signature",
               "name": "render",
+              "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldThemeColorPicker/PropertyFieldThemeColorPicker.ts#L41",
               "parameters": [],
               "returnType": "any",
               "type": "() => any"
@@ -6113,6 +6184,7 @@ export default {
           },
           "kind": "property",
           "name": "properties",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldThemeColorPicker/PropertyFieldThemeColorPicker.ts#L27",
           "type": "_PropertyFieldThemeColorProperties"
         },
         {
@@ -6129,6 +6201,7 @@ export default {
           },
           "kind": "property",
           "name": "targetProperty",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldThemeColorPicker/PropertyFieldThemeColorPicker.ts#L26",
           "type": "string"
         },
         {
@@ -6145,6 +6218,7 @@ export default {
           },
           "kind": "property",
           "name": "type",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldThemeColorPicker/PropertyFieldThemeColorPicker.ts#L25",
           "defaultValue": "PropertyPaneFieldType.Custom",
           "type": "PropertyPaneFieldType"
         }
@@ -6164,11 +6238,13 @@ export default {
         },
         "kind": "constructor",
         "name": "constructor",
+        "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldThemeColorPicker/PropertyFieldThemeColorPicker.ts#L28",
         "signatures": [
           {
             "fileName": "src\\ui-toolkit\\propertyfields\\PropertyFieldThemeColorPicker\\PropertyFieldThemeColorPicker.ts",
             "kind": "signature",
             "name": "new PropertyFieldThemeColor",
+            "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldThemeColorPicker/PropertyFieldThemeColorPicker.ts#L28",
             "parameters": [
               {
                 "flags": {
@@ -6221,6 +6297,7 @@ export default {
       },
       "kind": "enum",
       "name": "ThemeColor",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ThemeColorPicker.tsx#L95",
       "members": [
         {
           "fileName": "src\\ui-toolkit\\components\\inputs\\ThemeColorPicker.tsx",
@@ -6236,6 +6313,7 @@ export default {
           },
           "kind": "enum member",
           "name": "Primary",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ThemeColorPicker.tsx#L96",
           "defaultValue": "\"primary\""
         },
         {
@@ -6252,6 +6330,7 @@ export default {
           },
           "kind": "enum member",
           "name": "Secondary",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ThemeColorPicker.tsx#L97",
           "defaultValue": "\"secondary\""
         },
         {
@@ -6268,6 +6347,7 @@ export default {
           },
           "kind": "enum member",
           "name": "Tertiary",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ThemeColorPicker.tsx#L98",
           "defaultValue": "\"tertiary\""
         }
       ]
@@ -6286,6 +6366,7 @@ export default {
       },
       "kind": "enum",
       "name": "SiteChoiceType",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/siteChoiceGroup.tsx#L39",
       "members": [
         {
           "fileName": "src\\ui-toolkit\\components\\inputs\\SitePicker\\siteChoiceGroup.tsx",
@@ -6301,6 +6382,7 @@ export default {
           },
           "kind": "enum member",
           "name": "Other",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/siteChoiceGroup.tsx#L41",
           "defaultValue": "\"other\""
         },
         {
@@ -6317,6 +6399,7 @@ export default {
           },
           "kind": "enum member",
           "name": "ThisSite",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/siteChoiceGroup.tsx#L40",
           "defaultValue": "\"this-site\""
         }
       ]
@@ -6335,6 +6418,7 @@ export default {
       },
       "kind": "enum",
       "name": "SiteValidationResult",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useSiteData.tsx#L20",
       "members": [
         {
           "fileName": "src\\ui-toolkit\\hooks\\useSiteData.tsx",
@@ -6350,6 +6434,7 @@ export default {
           },
           "kind": "enum member",
           "name": "MissingDependencies",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useSiteData.tsx#L23",
           "defaultValue": "\"missing-dependencies\""
         },
         {
@@ -6366,6 +6451,7 @@ export default {
           },
           "kind": "enum member",
           "name": "NoExists",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useSiteData.tsx#L22",
           "defaultValue": "\"no-exists\""
         },
         {
@@ -6382,6 +6468,7 @@ export default {
           },
           "kind": "enum member",
           "name": "Other",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useSiteData.tsx#L24",
           "defaultValue": "\"other\""
         },
         {
@@ -6398,48 +6485,8 @@ export default {
           },
           "kind": "enum member",
           "name": "Valid",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useSiteData.tsx#L21",
           "defaultValue": "\"valid\""
-        }
-      ]
-    },
-    "useScrollSync": {
-      "fileName": "src\\ui-toolkit\\components\\layouts\\Filmstrip\\useScrollSync.ts",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "method",
-      "name": "useScrollSync",
-      "signatures": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\layouts\\Filmstrip\\useScrollSync.ts",
-          "kind": "signature",
-          "name": "useScrollSync",
-          "parameters": [
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "__namedParameters",
-              "type": ""
-            }
-          ],
-          "returnType": "",
-          "type": "(__namedParameters: ) => "
         }
       ]
     },
@@ -6457,11 +6504,13 @@ export default {
       },
       "kind": "method",
       "name": "debounce",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/utils.ts#L1",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\utils.ts",
           "kind": "signature",
           "name": "debounce",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/utils.ts#L1",
           "parameters": [
             {
               "flags": {
@@ -6499,6 +6548,64 @@ export default {
         }
       ]
     },
+    "ensureProperty": {
+      "fileName": "src\\ui-toolkit\\core\\utils\\utils.ts",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "method",
+      "name": "ensureProperty",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/utils.ts#L14",
+      "signatures": [
+        {
+          "fileName": "src\\ui-toolkit\\core\\utils\\utils.ts",
+          "kind": "signature",
+          "name": "ensureProperty",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/utils.ts#L14",
+          "parameters": [
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "obj",
+              "type": "Object"
+            },
+            {
+              "flags": {
+                "isExported": true,
+                "isExternal": false,
+                "isOptional": false,
+                "isPrivate": false,
+                "isProtected": false,
+                "isPublic": false,
+                "isRest": false,
+                "isStatic": false
+              },
+              "kind": "parameter",
+              "name": "path",
+              "type": "string"
+            }
+          ],
+          "returnType": "boolean",
+          "type": "(obj: Object, path: string) => boolean"
+        }
+      ]
+    },
     "hasLength": {
       "fileName": "src\\ui-toolkit\\core\\utils\\utils.ts",
       "flags": {
@@ -6513,11 +6620,13 @@ export default {
       },
       "kind": "method",
       "name": "hasLength",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/utils.ts#L19",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\utils.ts",
           "kind": "signature",
           "name": "hasLength",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/utils.ts#L19",
           "parameters": [
             {
               "flags": {
@@ -6569,11 +6678,13 @@ export default {
       },
       "kind": "method",
       "name": "getValue",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/utils.ts#L24",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\utils.ts",
           "kind": "signature",
           "name": "getValue",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/utils.ts#L24",
           "parameters": [
             {
               "flags": {
@@ -6625,11 +6736,13 @@ export default {
       },
       "kind": "method",
       "name": "getValues",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/utils.ts#L40",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\utils.ts",
           "kind": "signature",
           "name": "getValues",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/utils.ts#L40",
           "parameters": [
             {
               "flags": {
@@ -6666,11 +6779,13 @@ export default {
       },
       "kind": "method",
       "name": "PortalsThemeProvider",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/PortalsThemeProvider/PortalsThemeProvider.tsx#L13",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
           "kind": "signature",
           "name": "PortalsThemeProvider",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/PortalsThemeProvider/PortalsThemeProvider.tsx#L13",
           "parameters": [
             {
               "flags": {
@@ -6707,11 +6822,13 @@ export default {
       },
       "kind": "method",
       "name": "getPortalsTheme",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/PortalsThemeProvider/PortalsThemeProvider.tsx#L35",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
           "kind": "signature",
           "name": "getPortalsTheme",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/PortalsThemeProvider/PortalsThemeProvider.tsx#L35",
           "parameters": [],
           "returnType": "any",
           "type": "() => any"
@@ -6732,11 +6849,13 @@ export default {
       },
       "kind": "method",
       "name": "getThemeColor",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/PortalsThemeProvider/PortalsThemeProvider.tsx#L51",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
           "kind": "signature",
           "name": "getThemeColor",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/PortalsThemeProvider/PortalsThemeProvider.tsx#L51",
           "parameters": [
             {
               "flags": {
@@ -6789,11 +6908,13 @@ export default {
       },
       "kind": "method",
       "name": "getThemeValue",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/PortalsThemeProvider/PortalsThemeProvider.tsx#L74",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
           "kind": "signature",
           "name": "getThemeValue",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/PortalsThemeProvider/PortalsThemeProvider.tsx#L74",
           "parameters": [
             {
               "flags": {
@@ -6860,11 +6981,13 @@ export default {
       },
       "kind": "method",
       "name": "BigDate",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/BigDate/BigDate.tsx#L12",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\BigDate\\BigDate.tsx",
           "kind": "signature",
           "name": "BigDate",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/BigDate/BigDate.tsx#L12",
           "parameters": [
             {
               "flags": {
@@ -6901,11 +7024,13 @@ export default {
       },
       "kind": "method",
       "name": "BigDateRange",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/BigDate/BigDate.tsx#L26",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\BigDate\\BigDate.tsx",
           "kind": "signature",
           "name": "BigDateRange",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/BigDate/BigDate.tsx#L26",
           "parameters": [
             {
               "flags": {
@@ -6942,11 +7067,13 @@ export default {
       },
       "kind": "method",
       "name": "usePanel",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/usePanel.tsx#L22",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
           "kind": "signature",
           "name": "usePanel",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/usePanel.tsx#L22",
           "parameters": [
             {
               "flags": {
@@ -6984,11 +7111,13 @@ export default {
       },
       "kind": "method",
       "name": "Panel",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/usePanel.tsx#L68",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
           "kind": "signature",
           "name": "Panel",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/usePanel.tsx#L68",
           "parameters": [
             {
               "flags": {
@@ -7025,11 +7154,13 @@ export default {
       },
       "kind": "method",
       "name": "listenForPanelClose",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/usePanel.tsx#L109",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
           "kind": "signature",
           "name": "listenForPanelClose",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/usePanel.tsx#L109",
           "parameters": [
             {
               "flags": {
@@ -7066,11 +7197,13 @@ export default {
       },
       "kind": "method",
       "name": "triggerPanelClose",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/usePanel.tsx#L126",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\Panel\\usePanel.tsx",
           "kind": "signature",
           "name": "triggerPanelClose",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/usePanel.tsx#L126",
           "parameters": [],
           "returnType": "void",
           "type": "() => void"
@@ -7091,11 +7224,13 @@ export default {
       },
       "kind": "method",
       "name": "IFramePanel",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/IFramePanel.tsx#L6",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\Panel\\IFramePanel.tsx",
           "kind": "signature",
           "name": "IFramePanel",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/IFramePanel.tsx#L6",
           "parameters": [
             {
               "flags": {
@@ -7132,11 +7267,13 @@ export default {
       },
       "kind": "method",
       "name": "PanelLink",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/PanelLink.tsx#L9",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\Panel\\PanelLink.tsx",
           "kind": "signature",
           "name": "PanelLink",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/PanelLink.tsx#L9",
           "parameters": [
             {
               "flags": {
@@ -7173,11 +7310,13 @@ export default {
       },
       "kind": "method",
       "name": "Link",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Link.tsx#L14",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\primitives\\Link.tsx",
           "kind": "signature",
           "name": "Link",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Link.tsx#L14",
           "parameters": [
             {
               "flags": {
@@ -7214,11 +7353,13 @@ export default {
       },
       "kind": "method",
       "name": "HyperLink",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Link.tsx#L38",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\primitives\\Link.tsx",
           "kind": "signature",
           "name": "HyperLink",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Link.tsx#L38",
           "parameters": [
             {
               "flags": {
@@ -7255,11 +7396,13 @@ export default {
       },
       "kind": "method",
       "name": "Text",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Text.tsx#L17",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\primitives\\Text.tsx",
           "kind": "signature",
           "name": "Text",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Text.tsx#L17",
           "parameters": [
             {
               "flags": {
@@ -7296,11 +7439,13 @@ export default {
       },
       "kind": "method",
       "name": "Title",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Title.tsx#L21",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\primitives\\Title.tsx",
           "kind": "signature",
           "name": "Title",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Title.tsx#L21",
           "parameters": [
             {
               "flags": {
@@ -7337,11 +7482,13 @@ export default {
       },
       "kind": "method",
       "name": "Shave",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Shave/Shave.tsx#L37",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\Shave\\Shave.tsx",
           "kind": "signature",
           "name": "Shave",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Shave/Shave.tsx#L37",
           "parameters": [
             {
               "flags": {
@@ -7378,11 +7525,13 @@ export default {
       },
       "kind": "method",
       "name": "useShave",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useShave.ts#L4",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\hooks\\useShave.ts",
           "kind": "signature",
           "name": "useShave",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useShave.ts#L4",
           "parameters": [
             {
               "flags": {
@@ -7419,11 +7568,13 @@ export default {
       },
       "kind": "method",
       "name": "CardDescription",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/CardDescription.tsx#L8",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\Card\\CardDescription.tsx",
           "kind": "signature",
           "name": "CardDescription",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/CardDescription.tsx#L8",
           "parameters": [
             {
               "flags": {
@@ -7460,11 +7611,13 @@ export default {
       },
       "kind": "method",
       "name": "Tags",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Tags.tsx#L8",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\primitives\\Tags.tsx",
           "kind": "signature",
           "name": "Tags",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Tags.tsx#L8",
           "parameters": [
             {
               "flags": {
@@ -7501,11 +7654,13 @@ export default {
       },
       "kind": "method",
       "name": "Tag",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Tags.tsx#L31",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\primitives\\Tags.tsx",
           "kind": "signature",
           "name": "Tag",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Tags.tsx#L31",
           "parameters": [
             {
               "flags": {
@@ -7542,11 +7697,13 @@ export default {
       },
       "kind": "method",
       "name": "Info",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Info.tsx#L13",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\primitives\\Info.tsx",
           "kind": "signature",
           "name": "Info",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Info.tsx#L13",
           "parameters": [
             {
               "flags": {
@@ -7583,11 +7740,13 @@ export default {
       },
       "kind": "method",
       "name": "BackgroundImage",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/BackgroundImage.tsx#L7",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\primitives\\BackgroundImage.tsx",
           "kind": "signature",
           "name": "BackgroundImage",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/BackgroundImage.tsx#L7",
           "parameters": [
             {
               "flags": {
@@ -7624,11 +7783,13 @@ export default {
       },
       "kind": "method",
       "name": "CardImage",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/CardImage.tsx#L7",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\Card\\CardImage.tsx",
           "kind": "signature",
           "name": "CardImage",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/CardImage.tsx#L7",
           "parameters": [
             {
               "flags": {
@@ -7665,11 +7826,13 @@ export default {
       },
       "kind": "method",
       "name": "CardFooter",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/CardFooter.tsx#L12",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\Card\\CardFooter.tsx",
           "kind": "signature",
           "name": "CardFooter",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/CardFooter.tsx#L12",
           "parameters": [
             {
               "flags": {
@@ -7706,11 +7869,13 @@ export default {
       },
       "kind": "method",
       "name": "IconImage",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/IconImage.tsx#L19",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
           "kind": "signature",
           "name": "IconImage",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/IconImage.tsx#L19",
           "parameters": [
             {
               "flags": {
@@ -7747,11 +7912,13 @@ export default {
       },
       "kind": "method",
       "name": "getIconFontSize",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/IconImage.tsx#L45",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\primitives\\IconImage.tsx",
           "kind": "signature",
           "name": "getIconFontSize",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/IconImage.tsx#L45",
           "parameters": [
             {
               "flags": {
@@ -7819,11 +7986,13 @@ export default {
       },
       "kind": "method",
       "name": "NumberInput",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/NumberInput/NumberInput.tsx#L7",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\inputs\\NumberInput\\NumberInput.tsx",
           "kind": "signature",
           "name": "NumberInput",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/NumberInput/NumberInput.tsx#L7",
           "parameters": [
             {
               "flags": {
@@ -7860,11 +8029,13 @@ export default {
       },
       "kind": "method",
       "name": "checkIsThemeColor",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ThemeColorPicker.tsx#L16",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\inputs\\ThemeColorPicker.tsx",
           "kind": "signature",
           "name": "checkIsThemeColor",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ThemeColorPicker.tsx#L16",
           "parameters": [
             {
               "flags": {
@@ -7901,11 +8072,13 @@ export default {
       },
       "kind": "method",
       "name": "SiteUrlInput",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/SiteUrlInput.tsx#L41",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\inputs\\SitePicker\\SiteUrlInput.tsx",
           "kind": "signature",
           "name": "SiteUrlInput",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/SiteUrlInput.tsx#L41",
           "parameters": [
             {
               "flags": {
@@ -7942,11 +8115,13 @@ export default {
       },
       "kind": "method",
       "name": "checkIsSharePointLink",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/sharepointUtils.ts#L3",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
           "kind": "signature",
           "name": "checkIsSharePointLink",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/sharepointUtils.ts#L3",
           "parameters": [
             {
               "flags": {
@@ -7983,11 +8158,13 @@ export default {
       },
       "kind": "method",
       "name": "getProfilePhoto",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/sharepointUtils.ts#L7",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
           "kind": "signature",
           "name": "getProfilePhoto",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/sharepointUtils.ts#L7",
           "parameters": [
             {
               "flags": {
@@ -8024,11 +8201,13 @@ export default {
       },
       "kind": "method",
       "name": "getDelveLink",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/sharepointUtils.ts#L11",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
           "kind": "signature",
           "name": "getDelveLink",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/sharepointUtils.ts#L11",
           "parameters": [
             {
               "flags": {
@@ -8065,11 +8244,13 @@ export default {
       },
       "kind": "method",
       "name": "getCurrentWebUrl",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/sharepointUtils.ts#L15",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
           "kind": "signature",
           "name": "getCurrentWebUrl",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/sharepointUtils.ts#L15",
           "parameters": [],
           "returnType": "string",
           "type": "() => string"
@@ -8090,11 +8271,13 @@ export default {
       },
       "kind": "method",
       "name": "getCurrentSiteCollectionUrl",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/sharepointUtils.ts#L20",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
           "kind": "signature",
           "name": "getCurrentSiteCollectionUrl",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/sharepointUtils.ts#L20",
           "parameters": [],
           "returnType": "string",
           "type": "() => string"
@@ -8115,11 +8298,13 @@ export default {
       },
       "kind": "method",
       "name": "getSiteUrl",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/sharepointUtils.ts#L24",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
           "kind": "signature",
           "name": "getSiteUrl",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/sharepointUtils.ts#L24",
           "parameters": [
             {
               "flags": {
@@ -8156,11 +8341,13 @@ export default {
       },
       "kind": "method",
       "name": "getTenant",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/sharepointUtils.ts#L44",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
           "kind": "signature",
           "name": "getTenant",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/sharepointUtils.ts#L44",
           "parameters": [
             {
               "flags": {
@@ -8197,11 +8384,13 @@ export default {
       },
       "kind": "method",
       "name": "checkListExists",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/sharepointUtils.ts#L57",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\sharepointUtils.ts",
           "kind": "signature",
           "name": "checkListExists",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/sharepointUtils.ts#L57",
           "parameters": [
             {
               "flags": {
@@ -8253,11 +8442,13 @@ export default {
       },
       "kind": "method",
       "name": "Editable",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/Editable/Editable.tsx#L5",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\inputs\\Editable\\Editable.tsx",
           "kind": "signature",
           "name": "Editable",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/Editable/Editable.tsx#L5",
           "parameters": [
             {
               "flags": {
@@ -8294,11 +8485,13 @@ export default {
       },
       "kind": "method",
       "name": "Grid",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/Grid/Grid.tsx#L11",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
           "kind": "signature",
           "name": "Grid",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/Grid/Grid.tsx#L11",
           "parameters": [
             {
               "flags": {
@@ -8321,8 +8514,8 @@ export default {
         }
       ]
     },
-    "ensureProperty": {
-      "fileName": "src\\ui-toolkit\\core\\utils\\utils.ts",
+    "useScrollSync": {
+      "fileName": "src\\ui-toolkit\\components\\layouts\\Filmstrip\\useScrollSync.ts",
       "flags": {
         "isExported": true,
         "isExternal": false,
@@ -8334,12 +8527,14 @@ export default {
         "isStatic": false
       },
       "kind": "method",
-      "name": "ensureProperty",
+      "name": "useScrollSync",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/Filmstrip/useScrollSync.ts#L4",
       "signatures": [
         {
-          "fileName": "src\\ui-toolkit\\core\\utils\\utils.ts",
+          "fileName": "src\\ui-toolkit\\components\\layouts\\Filmstrip\\useScrollSync.ts",
           "kind": "signature",
-          "name": "ensureProperty",
+          "name": "useScrollSync",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/Filmstrip/useScrollSync.ts#L4",
           "parameters": [
             {
               "flags": {
@@ -8353,27 +8548,12 @@ export default {
                 "isStatic": false
               },
               "kind": "parameter",
-              "name": "obj",
-              "type": "Object"
-            },
-            {
-              "flags": {
-                "isExported": true,
-                "isExternal": false,
-                "isOptional": false,
-                "isPrivate": false,
-                "isProtected": false,
-                "isPublic": false,
-                "isRest": false,
-                "isStatic": false
-              },
-              "kind": "parameter",
-              "name": "path",
-              "type": "string"
+              "name": "__namedParameters",
+              "type": ""
             }
           ],
-          "returnType": "boolean",
-          "type": "(obj: Object, path: string) => boolean"
+          "returnType": "",
+          "type": "(__namedParameters: ) => "
         }
       ]
     },
@@ -8391,11 +8571,13 @@ export default {
       },
       "kind": "method",
       "name": "useComponentSize",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useComponentSize.ts#L22",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\hooks\\useComponentSize.ts",
           "kind": "signature",
           "name": "useComponentSize",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useComponentSize.ts#L22",
           "parameters": [
             {
               "flags": {
@@ -8432,11 +8614,13 @@ export default {
       },
       "kind": "method",
       "name": "useHowManyFit",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useHowManyFit.ts#L14",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\hooks\\useHowManyFit.ts",
           "kind": "signature",
           "name": "useHowManyFit",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useHowManyFit.ts#L14",
           "parameters": [
             {
               "flags": {
@@ -8504,11 +8688,13 @@ export default {
       },
       "kind": "method",
       "name": "usePaging",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/usePaging.ts#L3",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\hooks\\usePaging.ts",
           "kind": "signature",
           "name": "usePaging",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/usePaging.ts#L3",
           "parameters": [
             {
               "flags": {
@@ -8561,11 +8747,13 @@ export default {
       },
       "kind": "method",
       "name": "usePagedItems",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/usePaging.ts#L30",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\hooks\\usePaging.ts",
           "kind": "signature",
           "name": "usePagedItems",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/usePaging.ts#L30",
           "parameters": [
             {
               "flags": {
@@ -8633,11 +8821,13 @@ export default {
       },
       "kind": "method",
       "name": "useHover",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useHover.ts#L3",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\hooks\\useHover.ts",
           "kind": "signature",
           "name": "useHover",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useHover.ts#L3",
           "parameters": [
             {
               "flags": {
@@ -8674,11 +8864,13 @@ export default {
       },
       "kind": "method",
       "name": "useFilmstrip",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/Filmstrip/useFilmstrip.ts#L20",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\layouts\\Filmstrip\\useFilmstrip.ts",
           "kind": "signature",
           "name": "useFilmstrip",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/Filmstrip/useFilmstrip.ts#L20",
           "parameters": [
             {
               "flags": {
@@ -8746,11 +8938,13 @@ export default {
       },
       "kind": "method",
       "name": "Filmstrip",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/Filmstrip/Filmstrip.tsx#L9",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\layouts\\Filmstrip\\Filmstrip.tsx",
           "kind": "signature",
           "name": "Filmstrip",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/Filmstrip/Filmstrip.tsx#L9",
           "parameters": [
             {
               "flags": {
@@ -8787,11 +8981,13 @@ export default {
       },
       "kind": "method",
       "name": "Thumbnail",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Thumbnail.tsx#L15",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
           "kind": "signature",
           "name": "Thumbnail",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Thumbnail.tsx#L15",
           "parameters": [
             {
               "flags": {
@@ -8828,11 +9024,13 @@ export default {
       },
       "kind": "method",
       "name": "VerticalItemDescription",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VerticalList/VerticalItemDescription.tsx#L14",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\layouts\\VerticalList\\VerticalItemDescription.tsx",
           "kind": "signature",
           "name": "VerticalItemDescription",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VerticalList/VerticalItemDescription.tsx#L14",
           "parameters": [
             {
               "flags": {
@@ -8869,11 +9067,13 @@ export default {
       },
       "kind": "method",
       "name": "VerticalItem",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VerticalList/VerticalList.tsx#L28",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\layouts\\VerticalList\\VerticalList.tsx",
           "kind": "signature",
           "name": "VerticalItem",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VerticalList/VerticalList.tsx#L28",
           "parameters": [
             {
               "flags": {
@@ -8910,11 +9110,13 @@ export default {
       },
       "kind": "method",
       "name": "VirtualizedGrid",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VirtualizedGrid/VirtualizedGrid.tsx#L6",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\layouts\\VirtualizedGrid\\VirtualizedGrid.tsx",
           "kind": "signature",
           "name": "VirtualizedGrid",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VirtualizedGrid/VirtualizedGrid.tsx#L6",
           "parameters": [
             {
               "flags": {
@@ -8951,11 +9153,13 @@ export default {
       },
       "kind": "method",
       "name": "getDateRangeType",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/DateRangeText/DateRangeText.tsx#L15",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\DateRangeText\\DateRangeText.tsx",
           "kind": "signature",
           "name": "getDateRangeType",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/DateRangeText/DateRangeText.tsx#L15",
           "parameters": [
             {
               "flags": {
@@ -9007,11 +9211,13 @@ export default {
       },
       "kind": "method",
       "name": "DateRangeText",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/DateRangeText/DateRangeText.tsx#L68",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\DateRangeText\\DateRangeText.tsx",
           "kind": "signature",
           "name": "DateRangeText",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/DateRangeText/DateRangeText.tsx#L68",
           "parameters": [
             {
               "flags": {
@@ -9048,11 +9254,13 @@ export default {
       },
       "kind": "method",
       "name": "LinkTile",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/LinkTile/LinkTile.tsx#L14",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
           "kind": "signature",
           "name": "LinkTile",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/LinkTile/LinkTile.tsx#L14",
           "parameters": [
             {
               "flags": {
@@ -9089,11 +9297,13 @@ export default {
       },
       "kind": "method",
       "name": "ThemePreview",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/ThemePreview/ThemePreview.tsx#L7",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\ThemePreview\\ThemePreview.tsx",
           "kind": "signature",
           "name": "ThemePreview",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/ThemePreview/ThemePreview.tsx#L7",
           "parameters": [],
           "returnType": "Element<>",
           "type": "() => Element<>"
@@ -9114,11 +9324,13 @@ export default {
       },
       "kind": "method",
       "name": "ColorPreview",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/ThemePreview/ThemePreview.tsx#L51",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\ThemePreview\\ThemePreview.tsx",
           "kind": "signature",
           "name": "ColorPreview",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/ThemePreview/ThemePreview.tsx#L51",
           "parameters": [
             {
               "flags": {
@@ -9155,11 +9367,13 @@ export default {
       },
       "kind": "method",
       "name": "useDebouncedValue",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useDebounce.ts#L3",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\hooks\\useDebounce.ts",
           "kind": "signature",
           "name": "useDebouncedValue",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useDebounce.ts#L3",
           "parameters": [
             {
               "flags": {
@@ -9211,11 +9425,13 @@ export default {
       },
       "kind": "method",
       "name": "useDebouncedEffect",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useDebounce.ts#L27",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\hooks\\useDebounce.ts",
           "kind": "signature",
           "name": "useDebouncedEffect",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useDebounce.ts#L27",
           "parameters": [
             {
               "flags": {
@@ -9283,11 +9499,13 @@ export default {
       },
       "kind": "method",
       "name": "useAsyncData",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useAsyncData.ts#L49",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\hooks\\useAsyncData.ts",
           "kind": "signature",
           "name": "useAsyncData",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useAsyncData.ts#L49",
           "parameters": [
             {
               "flags": {
@@ -9354,11 +9572,13 @@ export default {
       },
       "kind": "method",
       "name": "replace",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useAsyncData.ts#L72",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\hooks\\useAsyncData.ts",
           "kind": "signature",
           "name": "replace",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useAsyncData.ts#L72",
           "parameters": [
             {
               "flags": {
@@ -9395,11 +9615,13 @@ export default {
       },
       "kind": "method",
       "name": "useInterval",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useInterval.ts#L3",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\hooks\\useInterval.ts",
           "kind": "signature",
           "name": "useInterval",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useInterval.ts#L3",
           "parameters": [
             {
               "flags": {
@@ -9466,11 +9688,13 @@ export default {
       },
       "kind": "method",
       "name": "useQueryString",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useQueryString.ts#L5",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\hooks\\useQueryString.ts",
           "kind": "signature",
           "name": "useQueryString",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useQueryString.ts#L5",
           "parameters": [
             {
               "flags": {
@@ -9519,8 +9743,8 @@ export default {
               "type": "number"
             }
           ],
-          "returnType": "[T, function]",
-          "type": "(key: any, initialValue: T, delay?: number) => [T, function]"
+          "returnType": "[T, Dispatch<SetStateAction<T>>]",
+          "type": "(key: any, initialValue: T, delay?: number) => [T, Dispatch<SetStateAction<T>>]"
         }
       ]
     },
@@ -9538,11 +9762,13 @@ export default {
       },
       "kind": "method",
       "name": "getQueryStringValue",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useQueryString.ts#L44",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\hooks\\useQueryString.ts",
           "kind": "signature",
           "name": "getQueryStringValue",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useQueryString.ts#L44",
           "parameters": [
             {
               "flags": {
@@ -9595,11 +9821,13 @@ export default {
       },
       "kind": "method",
       "name": "usePersistedState",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/usePersistedState.ts#L3",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\hooks\\usePersistedState.ts",
           "kind": "signature",
           "name": "usePersistedState",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/usePersistedState.ts#L3",
           "parameters": [
             {
               "flags": {
@@ -9648,8 +9876,8 @@ export default {
               "type": "Storage"
             }
           ],
-          "returnType": "(T | function)[]",
-          "type": "(key: string, defaultValue: T, storage?: Storage) => (T | function)[]"
+          "returnType": "(T | Dispatch<SetStateAction<T>>)[]",
+          "type": "(key: string, defaultValue: T, storage?: Storage) => (T | Dispatch<SetStateAction<T>>)[]"
         }
       ]
     },
@@ -9667,11 +9895,13 @@ export default {
       },
       "kind": "method",
       "name": "useAutoPaging",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useAutoPaging.ts#L6",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\hooks\\useAutoPaging.ts",
           "kind": "signature",
           "name": "useAutoPaging",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useAutoPaging.ts#L6",
           "parameters": [
             {
               "flags": {
@@ -9740,11 +9970,13 @@ export default {
       },
       "kind": "method",
       "name": "useOnClickOutside",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useOnClickOutside.ts#L3",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\hooks\\useOnClickOutside.ts",
           "kind": "signature",
           "name": "useOnClickOutside",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useOnClickOutside.ts#L3",
           "parameters": [
             {
               "flags": {
@@ -9796,11 +10028,13 @@ export default {
       },
       "kind": "method",
       "name": "useSiteData",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useSiteData.tsx#L75",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\hooks\\useSiteData.tsx",
           "kind": "signature",
           "name": "useSiteData",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useSiteData.tsx#L75",
           "parameters": [
             {
               "flags": {
@@ -9837,11 +10071,13 @@ export default {
       },
       "kind": "method",
       "name": "validateListExists",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useSiteData.tsx#L133",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\hooks\\useSiteData.tsx",
           "kind": "signature",
           "name": "validateListExists",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useSiteData.tsx#L133",
           "parameters": [
             {
               "flags": {
@@ -9893,11 +10129,13 @@ export default {
       },
       "kind": "method",
       "name": "validateSiteExists",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useSiteData.tsx#L142",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\hooks\\useSiteData.tsx",
           "kind": "signature",
           "name": "validateSiteExists",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useSiteData.tsx#L142",
           "parameters": [
             {
               "flags": {
@@ -9934,11 +10172,13 @@ export default {
       },
       "kind": "method",
       "name": "getCache",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/cache.ts#L54",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\cache.ts",
           "kind": "signature",
           "name": "getCache",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/cache.ts#L54",
           "parameters": [
             {
               "flags": {
@@ -9975,11 +10215,13 @@ export default {
       },
       "kind": "method",
       "name": "setCache",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/cache.ts#L70",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\cache.ts",
           "kind": "signature",
           "name": "setCache",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/cache.ts#L70",
           "parameters": [
             {
               "flags": {
@@ -10031,11 +10273,13 @@ export default {
       },
       "kind": "method",
       "name": "cachify",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/cache.ts#L82",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\cache.ts",
           "kind": "signature",
           "name": "cachify",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/cache.ts#L82",
           "parameters": [
             {
               "flags": {
@@ -10103,11 +10347,13 @@ export default {
       },
       "kind": "method",
       "name": "CardDemo",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/CardDemo.tsx#L6",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\components\\Card\\CardDemo.tsx",
           "kind": "signature",
           "name": "CardDemo",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/CardDemo.tsx#L6",
           "parameters": [],
           "returnType": "Element<>",
           "type": "() => Element<>"
@@ -10128,11 +10374,13 @@ export default {
       },
       "kind": "method",
       "name": "getElements",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/domUtils.ts#L1",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\domUtils.ts",
           "kind": "signature",
           "name": "getElements",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/domUtils.ts#L1",
           "parameters": [
             {
               "flags": {
@@ -10169,11 +10417,13 @@ export default {
       },
       "kind": "method",
       "name": "getClassList",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/domUtils.ts#L4",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\domUtils.ts",
           "kind": "signature",
           "name": "getClassList",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/domUtils.ts#L4",
           "parameters": [
             {
               "flags": {
@@ -10210,11 +10460,13 @@ export default {
       },
       "kind": "method",
       "name": "hasClass",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/domUtils.ts#L8",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\domUtils.ts",
           "kind": "signature",
           "name": "hasClass",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/domUtils.ts#L8",
           "parameters": [
             {
               "flags": {
@@ -10266,11 +10518,13 @@ export default {
       },
       "kind": "method",
       "name": "addClass",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/domUtils.ts#L12",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\domUtils.ts",
           "kind": "signature",
           "name": "addClass",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/domUtils.ts#L12",
           "parameters": [
             {
               "flags": {
@@ -10322,11 +10576,13 @@ export default {
       },
       "kind": "method",
       "name": "removeClass",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/domUtils.ts#L21",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\domUtils.ts",
           "kind": "signature",
           "name": "removeClass",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/domUtils.ts#L21",
           "parameters": [
             {
               "flags": {
@@ -10378,11 +10634,13 @@ export default {
       },
       "kind": "method",
       "name": "toggleClass",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/domUtils.ts#L27",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\domUtils.ts",
           "kind": "signature",
           "name": "toggleClass",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/domUtils.ts#L27",
           "parameters": [
             {
               "flags": {
@@ -10434,11 +10692,13 @@ export default {
       },
       "kind": "method",
       "name": "addStyle",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/domUtils.ts#L33",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\domUtils.ts",
           "kind": "signature",
           "name": "addStyle",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/domUtils.ts#L33",
           "parameters": [
             {
               "flags": {
@@ -10490,11 +10750,13 @@ export default {
       },
       "kind": "method",
       "name": "removeStyle",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/domUtils.ts#L41",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\domUtils.ts",
           "kind": "signature",
           "name": "removeStyle",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/domUtils.ts#L41",
           "parameters": [
             {
               "flags": {
@@ -10546,11 +10808,13 @@ export default {
       },
       "kind": "method",
       "name": "removeElement",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/domUtils.ts#L49",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\domUtils.ts",
           "kind": "signature",
           "name": "removeElement",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/domUtils.ts#L49",
           "parameters": [
             {
               "flags": {
@@ -10587,11 +10851,13 @@ export default {
       },
       "kind": "method",
       "name": "getClosest",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/domUtils.ts#L56",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\domUtils.ts",
           "kind": "signature",
           "name": "getClosest",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/domUtils.ts#L56",
           "parameters": [
             {
               "flags": {
@@ -10643,11 +10909,13 @@ export default {
       },
       "kind": "method",
       "name": "getNextSiblings",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/domUtils.ts#L68",
       "signatures": [
         {
           "fileName": "src\\ui-toolkit\\core\\utils\\domUtils.ts",
           "kind": "signature",
           "name": "getNextSiblings",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/domUtils.ts#L68",
           "parameters": [
             {
               "flags": {
@@ -10685,112 +10953,6 @@ export default {
         }
       ]
     },
-    "GridProps": {
-      "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "interface",
-      "name": "GridProps",
-      "indexSignature": {
-        "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
-        "kind": "signature",
-        "name": "__index",
-        "parameters": [
-          {
-            "flags": {
-              "isExported": true,
-              "isExternal": false,
-              "isOptional": false,
-              "isPrivate": false,
-              "isProtected": false,
-              "isPublic": false,
-              "isRest": false,
-              "isStatic": false
-            },
-            "kind": "parameter",
-            "name": "key",
-            "type": "string"
-          }
-        ],
-        "returnType": "any",
-        "type": "{ [key: string]: any }"
-      },
-      "methods": [],
-      "properties": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "gap",
-          "type": "number"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "mode",
-          "type": "\"best\" | \"grid\" | \"flex\""
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "shouldFlex",
-          "type": "boolean"
-        },
-        {
-          "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "size",
-          "type": "string"
-        }
-      ]
-    },
     "PortalsThemeProviderProps": {
       "fileName": "src\\ui-toolkit\\components\\PortalsThemeProvider\\PortalsThemeProvider.tsx",
       "flags": {
@@ -10805,6 +10967,7 @@ export default {
       },
       "kind": "interface",
       "name": "PortalsThemeProviderProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/PortalsThemeProvider/PortalsThemeProvider.tsx#L27",
       "methods": [],
       "properties": [
         {
@@ -10821,7 +10984,44 @@ export default {
           },
           "kind": "property",
           "name": "theme",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/PortalsThemeProvider/PortalsThemeProvider.tsx#L28",
           "type": "IReadonlyTheme"
+        }
+      ]
+    },
+    "Window": {
+      "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "Window",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/Grid/Grid.tsx#L5",
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "CSS",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/Grid/Grid.tsx#L6",
+          "type": "any"
         }
       ]
     },
@@ -10839,10 +11039,12 @@ export default {
       },
       "kind": "interface",
       "name": "BigDateProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/BigDate/BigDate.tsx#L102",
       "indexSignature": {
         "fileName": "src\\ui-toolkit\\components\\BigDate\\BigDate.tsx",
         "kind": "signature",
         "name": "__index",
+        "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/BigDate/BigDate.tsx#L106",
         "parameters": [
           {
             "flags": {
@@ -10886,6 +11088,7 @@ export default {
           },
           "kind": "property",
           "name": "className",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/BigDate/BigDate.tsx#L106",
           "type": "string"
         },
         {
@@ -10909,6 +11112,7 @@ export default {
           },
           "kind": "property",
           "name": "date",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/BigDate/BigDate.tsx#L104",
           "type": "Date"
         }
       ]
@@ -10927,10 +11131,12 @@ export default {
       },
       "kind": "interface",
       "name": "BigDateRangeProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/BigDate/BigDate.tsx#L110",
       "indexSignature": {
         "fileName": "src\\ui-toolkit\\components\\BigDate\\BigDate.tsx",
         "kind": "signature",
         "name": "__index",
+        "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/BigDate/BigDate.tsx#L116",
         "parameters": [
           {
             "flags": {
@@ -10974,6 +11180,7 @@ export default {
           },
           "kind": "property",
           "name": "className",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/BigDate/BigDate.tsx#L116",
           "type": "string"
         },
         {
@@ -10997,6 +11204,7 @@ export default {
           },
           "kind": "property",
           "name": "end",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/BigDate/BigDate.tsx#L114",
           "type": "Date"
         },
         {
@@ -11020,6 +11228,7 @@ export default {
           },
           "kind": "property",
           "name": "start",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/BigDate/BigDate.tsx#L112",
           "type": "Date"
         }
       ]
@@ -11038,6 +11247,7 @@ export default {
       },
       "kind": "interface",
       "name": "PanelOptions",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/usePanel.tsx#L7",
       "methods": [],
       "properties": [
         {
@@ -11054,6 +11264,7 @@ export default {
           },
           "kind": "property",
           "name": "close",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/usePanel.tsx#L13",
           "type": "() => void"
         },
         {
@@ -11070,6 +11281,7 @@ export default {
           },
           "kind": "property",
           "name": "controlledIsOpen",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/usePanel.tsx#L15",
           "type": "boolean"
         },
         {
@@ -11086,6 +11298,7 @@ export default {
           },
           "kind": "property",
           "name": "open",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/usePanel.tsx#L14",
           "type": "() => void"
         },
         {
@@ -11109,6 +11322,7 @@ export default {
           },
           "kind": "property",
           "name": "size",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/usePanel.tsx#L11",
           "type": "PanelSize"
         },
         {
@@ -11132,6 +11346,7 @@ export default {
           },
           "kind": "property",
           "name": "startOpen",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/usePanel.tsx#L9",
           "type": "boolean"
         }
       ]
@@ -11150,6 +11365,7 @@ export default {
       },
       "kind": "interface",
       "name": "PanelProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/usePanel.tsx#L64",
       "extends": [
         "IPanelProps"
       ],
@@ -11168,9 +11384,9 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "onKeyPressCapture",
-          "inheritedFrom": "DOMAttributes.onKeyPressCapture",
-          "type": "KeyboardEventHandler<PanelBase>"
+          "name": "about",
+          "inheritedFrom": "HTMLAttributes.about",
+          "type": "string"
         },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
@@ -11185,8 +11401,8 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "about",
-          "inheritedFrom": "HTMLAttributes.about",
+          "name": "accessKey",
+          "inheritedFrom": "HTMLAttributes.accessKey",
           "type": "string"
         },
         {
@@ -11216,6 +11432,1256 @@ export default {
           "name": "allowTouchBodyScroll",
           "inheritedFrom": "IPanelProps.allowTouchBodyScroll",
           "type": "boolean"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application.</p>\n"
+            ],
+            "contentsRaw": "Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-activedescendant",
+          "inheritedFrom": "AriaAttributes.'aria-activedescendant'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the aria-relevant attribute.</p>\n"
+            ],
+            "contentsRaw": "Indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the aria-relevant attribute.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-atomic",
+          "inheritedFrom": "AriaAttributes.'aria-atomic'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates whether inputting text could trigger display of one or more predictions of the user&#39;s intended value for an input and specifies how predictions would be\npresented if they are made.</p>\n"
+            ],
+            "contentsRaw": "Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be\npresented if they are made.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-autocomplete",
+          "inheritedFrom": "AriaAttributes.'aria-autocomplete'",
+          "type": "\"none\" | \"inline\" | \"list\" | \"both\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user.</p>\n"
+            ],
+            "contentsRaw": "Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-busy",
+          "inheritedFrom": "AriaAttributes.'aria-busy'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates the current &quot;checked&quot; state of checkboxes, radio buttons, and other widgets.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-pressed @see aria-selected."
+              }
+            ],
+            "contentsRaw": "Indicates the current \"checked\" state of checkboxes, radio buttons, and other widgets.\n\n@see aria-pressed @see aria-selected.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-checked",
+          "inheritedFrom": "AriaAttributes.'aria-checked'",
+          "type": "boolean | \"false\" | \"mixed\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the total number of columns in a table, grid, or treegrid.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-colindex."
+              }
+            ],
+            "contentsRaw": "Defines the total number of columns in a table, grid, or treegrid.\n\n@see aria-colindex.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-colcount",
+          "inheritedFrom": "AriaAttributes.'aria-colcount'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines an element&#39;s column index or position with respect to the total number of columns within a table, grid, or treegrid.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-colcount @see aria-colspan."
+              }
+            ],
+            "contentsRaw": "Defines an element's column index or position with respect to the total number of columns within a table, grid, or treegrid.\n\n@see aria-colcount @see aria-colspan.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-colindex",
+          "inheritedFrom": "AriaAttributes.'aria-colindex'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the number of columns spanned by a cell or gridcell within a table, grid, or treegrid.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-colindex @see aria-rowspan."
+              }
+            ],
+            "contentsRaw": "Defines the number of columns spanned by a cell or gridcell within a table, grid, or treegrid.\n\n@see aria-colindex @see aria-rowspan.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-colspan",
+          "inheritedFrom": "AriaAttributes.'aria-colspan'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Identifies the element (or elements) whose contents or presence are controlled by the current element.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-owns."
+              }
+            ],
+            "contentsRaw": "Identifies the element (or elements) whose contents or presence are controlled by the current element.\n\n@see aria-owns.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-controls",
+          "inheritedFrom": "AriaAttributes.'aria-controls'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates the element that represents the current item within a container or set of related elements.</p>\n"
+            ],
+            "contentsRaw": "Indicates the element that represents the current item within a container or set of related elements.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-current",
+          "inheritedFrom": "AriaAttributes.'aria-current'",
+          "type": "boolean | \"false\" | \"true\" | \"page\" | \"step\" | \"location\" | \"date\" | \"time\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Identifies the element (or elements) that describes the object.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-labelledby"
+              }
+            ],
+            "contentsRaw": "Identifies the element (or elements) that describes the object.\n\n@see aria-labelledby",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-describedby",
+          "inheritedFrom": "AriaAttributes.'aria-describedby'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Identifies the element that provides a detailed, extended description for the object.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-describedby."
+              }
+            ],
+            "contentsRaw": "Identifies the element that provides a detailed, extended description for the object.\n\n@see aria-describedby.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-details",
+          "inheritedFrom": "AriaAttributes.'aria-details'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-hidden @see aria-readonly."
+              }
+            ],
+            "contentsRaw": "Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.\n\n@see aria-hidden @see aria-readonly.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-disabled",
+          "inheritedFrom": "AriaAttributes.'aria-disabled'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates what functions can be performed when a dragged object is released on the drop target.</p>\n"
+            ],
+            "contentsRaw": "Indicates what functions can be performed when a dragged object is released on the drop target.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isDeprecated": "in ARIA 1.1",
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-dropeffect",
+          "inheritedFrom": "AriaAttributes.'aria-dropeffect'",
+          "type": "\"none\" | \"copy\" | \"execute\" | \"link\" | \"move\" | \"popup\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Identifies the element that provides an error message for the object.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-invalid @see aria-describedby."
+              }
+            ],
+            "contentsRaw": "Identifies the element that provides an error message for the object.\n\n@see aria-invalid @see aria-describedby.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-errormessage",
+          "inheritedFrom": "AriaAttributes.'aria-errormessage'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed.</p>\n"
+            ],
+            "contentsRaw": "Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-expanded",
+          "inheritedFrom": "AriaAttributes.'aria-expanded'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Identifies the next element (or elements) in an alternate reading order of content which, at the user&#39;s discretion,\nallows assistive technology to override the general default of reading in document source order.</p>\n"
+            ],
+            "contentsRaw": "Identifies the next element (or elements) in an alternate reading order of content which, at the user's discretion,\nallows assistive technology to override the general default of reading in document source order.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-flowto",
+          "inheritedFrom": "AriaAttributes.'aria-flowto'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates an element&#39;s &quot;grabbed&quot; state in a drag-and-drop operation.</p>\n"
+            ],
+            "contentsRaw": "Indicates an element's \"grabbed\" state in a drag-and-drop operation.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isDeprecated": "in ARIA 1.1",
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-grabbed",
+          "inheritedFrom": "AriaAttributes.'aria-grabbed'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element.</p>\n"
+            ],
+            "contentsRaw": "Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-haspopup",
+          "inheritedFrom": "AriaAttributes.'aria-haspopup'",
+          "type": "boolean | \"false\" | \"true\" | \"menu\" | \"listbox\" | \"tree\" | \"grid\" | \"dialog\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates whether the element is exposed to an accessibility API.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-disabled."
+              }
+            ],
+            "contentsRaw": "Indicates whether the element is exposed to an accessibility API.\n\n@see aria-disabled.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-hidden",
+          "inheritedFrom": "AriaAttributes.'aria-hidden'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates the entered value does not conform to the format expected by the application.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-errormessage."
+              }
+            ],
+            "contentsRaw": "Indicates the entered value does not conform to the format expected by the application.\n\n@see aria-errormessage.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-invalid",
+          "inheritedFrom": "AriaAttributes.'aria-invalid'",
+          "type": "boolean | \"false\" | \"true\" | \"grammar\" | \"spelling\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element.</p>\n"
+            ],
+            "contentsRaw": "Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-keyshortcuts",
+          "inheritedFrom": "AriaAttributes.'aria-keyshortcuts'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines a string value that labels the current element.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-labelledby."
+              }
+            ],
+            "contentsRaw": "Defines a string value that labels the current element.\n\n@see aria-labelledby.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-label",
+          "inheritedFrom": "AriaAttributes.'aria-label'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Identifies the element (or elements) that labels the current element.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-describedby."
+              }
+            ],
+            "contentsRaw": "Identifies the element (or elements) that labels the current element.\n\n@see aria-describedby.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-labelledby",
+          "inheritedFrom": "AriaAttributes.'aria-labelledby'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the hierarchical level of an element within a structure.</p>\n"
+            ],
+            "contentsRaw": "Defines the hierarchical level of an element within a structure.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-level",
+          "inheritedFrom": "AriaAttributes.'aria-level'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region.</p>\n"
+            ],
+            "contentsRaw": "Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-live",
+          "inheritedFrom": "AriaAttributes.'aria-live'",
+          "type": "\"off\" | \"assertive\" | \"polite\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates whether an element is modal when displayed.</p>\n"
+            ],
+            "contentsRaw": "Indicates whether an element is modal when displayed.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-modal",
+          "inheritedFrom": "AriaAttributes.'aria-modal'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates whether a text box accepts multiple lines of input or only a single line.</p>\n"
+            ],
+            "contentsRaw": "Indicates whether a text box accepts multiple lines of input or only a single line.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-multiline",
+          "inheritedFrom": "AriaAttributes.'aria-multiline'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates that the user may select more than one item from the current selectable descendants.</p>\n"
+            ],
+            "contentsRaw": "Indicates that the user may select more than one item from the current selectable descendants.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-multiselectable",
+          "inheritedFrom": "AriaAttributes.'aria-multiselectable'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates whether the element&#39;s orientation is horizontal, vertical, or unknown/ambiguous.</p>\n"
+            ],
+            "contentsRaw": "Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-orientation",
+          "inheritedFrom": "AriaAttributes.'aria-orientation'",
+          "type": "\"horizontal\" | \"vertical\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Identifies an element (or elements) in order to define a visual, functional, or contextual parent/child relationship\nbetween DOM elements where the DOM hierarchy cannot be used to represent the relationship.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-controls."
+              }
+            ],
+            "contentsRaw": "Identifies an element (or elements) in order to define a visual, functional, or contextual parent/child relationship\nbetween DOM elements where the DOM hierarchy cannot be used to represent the relationship.\n\n@see aria-controls.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-owns",
+          "inheritedFrom": "AriaAttributes.'aria-owns'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines a short hint (a word or short phrase) intended to aid the user with data entry when the control has no value.\nA hint could be a sample value or a brief description of the expected format.</p>\n"
+            ],
+            "contentsRaw": "Defines a short hint (a word or short phrase) intended to aid the user with data entry when the control has no value.\nA hint could be a sample value or a brief description of the expected format.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-placeholder",
+          "inheritedFrom": "AriaAttributes.'aria-placeholder'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines an element&#39;s number or position in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-setsize."
+              }
+            ],
+            "contentsRaw": "Defines an element's number or position in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.\n\n@see aria-setsize.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-posinset",
+          "inheritedFrom": "AriaAttributes.'aria-posinset'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates the current &quot;pressed&quot; state of toggle buttons.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-checked @see aria-selected."
+              }
+            ],
+            "contentsRaw": "Indicates the current \"pressed\" state of toggle buttons.\n\n@see aria-checked @see aria-selected.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-pressed",
+          "inheritedFrom": "AriaAttributes.'aria-pressed'",
+          "type": "boolean | \"false\" | \"mixed\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates that the element is not editable, but is otherwise operable.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-disabled."
+              }
+            ],
+            "contentsRaw": "Indicates that the element is not editable, but is otherwise operable.\n\n@see aria-disabled.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-readonly",
+          "inheritedFrom": "AriaAttributes.'aria-readonly'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-atomic."
+              }
+            ],
+            "contentsRaw": "Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified.\n\n@see aria-atomic.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-relevant",
+          "inheritedFrom": "AriaAttributes.'aria-relevant'",
+          "type": "\"additions\" | \"additions removals\" | \"additions text\" | \"all\" | \"removals\" | \"removals additions\" | \"removals text\" | \"text\" | \"text additions\" | \"text removals\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates that user input is required on the element before a form may be submitted.</p>\n"
+            ],
+            "contentsRaw": "Indicates that user input is required on the element before a form may be submitted.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-required",
+          "inheritedFrom": "AriaAttributes.'aria-required'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines a human-readable, author-localized description for the role of an element.</p>\n"
+            ],
+            "contentsRaw": "Defines a human-readable, author-localized description for the role of an element.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-roledescription",
+          "inheritedFrom": "AriaAttributes.'aria-roledescription'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the total number of rows in a table, grid, or treegrid.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-rowindex."
+              }
+            ],
+            "contentsRaw": "Defines the total number of rows in a table, grid, or treegrid.\n\n@see aria-rowindex.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-rowcount",
+          "inheritedFrom": "AriaAttributes.'aria-rowcount'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines an element&#39;s row index or position with respect to the total number of rows within a table, grid, or treegrid.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-rowcount @see aria-rowspan."
+              }
+            ],
+            "contentsRaw": "Defines an element's row index or position with respect to the total number of rows within a table, grid, or treegrid.\n\n@see aria-rowcount @see aria-rowspan.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-rowindex",
+          "inheritedFrom": "AriaAttributes.'aria-rowindex'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the number of rows spanned by a cell or gridcell within a table, grid, or treegrid.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-rowindex @see aria-colspan."
+              }
+            ],
+            "contentsRaw": "Defines the number of rows spanned by a cell or gridcell within a table, grid, or treegrid.\n\n@see aria-rowindex @see aria-colspan.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-rowspan",
+          "inheritedFrom": "AriaAttributes.'aria-rowspan'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates the current &quot;selected&quot; state of various widgets.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-checked @see aria-pressed."
+              }
+            ],
+            "contentsRaw": "Indicates the current \"selected\" state of various widgets.\n\n@see aria-checked @see aria-pressed.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-selected",
+          "inheritedFrom": "AriaAttributes.'aria-selected'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-posinset."
+              }
+            ],
+            "contentsRaw": "Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.\n\n@see aria-posinset.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-setsize",
+          "inheritedFrom": "AriaAttributes.'aria-setsize'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates if items in a table or grid are sorted in ascending or descending order.</p>\n"
+            ],
+            "contentsRaw": "Indicates if items in a table or grid are sorted in ascending or descending order.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-sort",
+          "inheritedFrom": "AriaAttributes.'aria-sort'",
+          "type": "\"none\" | \"ascending\" | \"descending\" | \"other\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the maximum allowed value for a range widget.</p>\n"
+            ],
+            "contentsRaw": "Defines the maximum allowed value for a range widget.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-valuemax",
+          "inheritedFrom": "AriaAttributes.'aria-valuemax'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the minimum allowed value for a range widget.</p>\n"
+            ],
+            "contentsRaw": "Defines the minimum allowed value for a range widget.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-valuemin",
+          "inheritedFrom": "AriaAttributes.'aria-valuemin'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the current value for a range widget.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-valuetext."
+              }
+            ],
+            "contentsRaw": "Defines the current value for a range widget.\n\n@see aria-valuetext.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-valuenow",
+          "inheritedFrom": "AriaAttributes.'aria-valuenow'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the human readable text alternative of aria-valuenow for a range widget.</p>\n"
+            ],
+            "contentsRaw": "Defines the human readable text alternative of aria-valuenow for a range widget.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-valuetext",
+          "inheritedFrom": "AriaAttributes.'aria-valuetext'",
+          "type": "string"
         },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
@@ -11418,7 +12884,7 @@ export default {
           "kind": "property",
           "name": "contentEditable",
           "inheritedFrom": "HTMLAttributes.contentEditable",
-          "type": "boolean"
+          "type": "Booleanish | \"inherit\""
         },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
@@ -11527,7 +12993,7 @@ export default {
           "kind": "property",
           "name": "defaultValue",
           "inheritedFrom": "HTMLAttributes.defaultValue",
-          "type": "string | string[]"
+          "type": "string | number | ReadonlyArray<string>"
         },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
@@ -11561,7 +13027,7 @@ export default {
           "kind": "property",
           "name": "draggable",
           "inheritedFrom": "HTMLAttributes.draggable",
-          "type": "boolean"
+          "type": "Booleanish"
         },
         {
           "documentation": {
@@ -11850,6 +13316,17 @@ export default {
           "type": "any"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Hints at the type of data that might be entered by the user while editing the element or its contents</p>\n",
+              {
+                "tag": "see",
+                "value": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute"
+              }
+            ],
+            "contentsRaw": "Hints at the type of data that might be entered by the user while editing the element or its contents\n\n@see https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute",
+            "metadata": {}
+          },
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
@@ -11864,9 +13341,20 @@ export default {
           "kind": "property",
           "name": "inputMode",
           "inheritedFrom": "HTMLAttributes.inputMode",
-          "type": "string"
+          "type": "\"none\" | \"text\" | \"tel\" | \"url\" | \"email\" | \"numeric\" | \"decimal\" | \"search\""
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Specify that a standard HTML element should behave like a defined custom built-in element</p>\n",
+              {
+                "tag": "see",
+                "value": "https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is"
+              }
+            ],
+            "contentsRaw": "Specify that a standard HTML element should behave like a defined custom built-in element\n\n@see https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is",
+            "metadata": {}
+          },
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
@@ -12284,6 +13772,40 @@ export default {
           "name": "onAnimationStartCapture",
           "inheritedFrom": "DOMAttributes.onAnimationStartCapture",
           "type": "AnimationEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onAuxClick",
+          "inheritedFrom": "DOMAttributes.onAuxClick",
+          "type": "MouseEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onAuxClickCapture",
+          "inheritedFrom": "DOMAttributes.onAuxClickCapture",
+          "type": "MouseEventHandler<PanelBase>"
         },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
@@ -13417,9 +14939,9 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "accessKey",
-          "inheritedFrom": "HTMLAttributes.accessKey",
-          "type": "string"
+          "name": "onKeyPressCapture",
+          "inheritedFrom": "DOMAttributes.onKeyPressCapture",
+          "type": "KeyboardEventHandler<PanelBase>"
         },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
@@ -13923,7 +15445,7 @@ export default {
           "kind": "property",
           "name": "onOuterClick",
           "inheritedFrom": "IPanelProps.onOuterClick",
-          "type": "() => void"
+          "type": "(ev?: MouseEvent<HTMLDivElement>) => void"
         },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
@@ -15165,6 +16687,30 @@ export default {
           "type": "string"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Optional props to pass the Popup component that the panel uses.</p>\n"
+            ],
+            "contentsRaw": "Optional props to pass the Popup component that the panel uses.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "popupProps",
+          "inheritedFrom": "IPanelProps.popupProps",
+          "type": "IPopupProps"
+        },
+        {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
@@ -15264,7 +16810,7 @@ export default {
           "kind": "property",
           "name": "role",
           "inheritedFrom": "HTMLAttributes.role",
-          "type": "string"
+          "type": "AriaRole"
         },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
@@ -15315,7 +16861,7 @@ export default {
           "kind": "property",
           "name": "spellCheck",
           "inheritedFrom": "HTMLAttributes.spellCheck",
-          "type": "boolean"
+          "type": "Booleanish"
         },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
@@ -15449,6 +16995,23 @@ export default {
           "name": "title",
           "inheritedFrom": "HTMLAttributes.title",
           "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "translate",
+          "inheritedFrom": "HTMLAttributes.translate",
+          "type": "\"yes\" | \"no\""
         },
         {
           "documentation": {
@@ -15526,6 +17089,7 @@ export default {
           },
           "kind": "property",
           "name": "url",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/usePanel.tsx#L65",
           "type": "string"
         },
         {
@@ -15561,6 +17125,7 @@ export default {
       },
       "kind": "interface",
       "name": "UsePanelResult",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/usePanel.tsx#L73",
       "methods": [],
       "properties": [
         {
@@ -15584,6 +17149,7 @@ export default {
           },
           "kind": "property",
           "name": "Panel",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/usePanel.tsx#L83",
           "type": "any"
         },
         {
@@ -15607,6 +17173,7 @@ export default {
           },
           "kind": "property",
           "name": "closePanel",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/usePanel.tsx#L79",
           "type": "() => void"
         },
         {
@@ -15630,6 +17197,7 @@ export default {
           },
           "kind": "property",
           "name": "isOpen",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/usePanel.tsx#L75",
           "type": "boolean"
         },
         {
@@ -15653,6 +17221,7 @@ export default {
           },
           "kind": "property",
           "name": "openPanel",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/usePanel.tsx#L77",
           "type": "() => void"
         },
         {
@@ -15676,6 +17245,7 @@ export default {
           },
           "kind": "property",
           "name": "panelProps",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/usePanel.tsx#L81",
           "type": "IPanelProps"
         }
       ]
@@ -15694,6 +17264,7 @@ export default {
       },
       "kind": "interface",
       "name": "FabricPanelProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/usePanel.tsx#L86",
       "extends": [
         "IPanelProps"
       ],
@@ -15712,9 +17283,9 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "onKeyPress",
-          "inheritedFrom": "DOMAttributes.onKeyPress",
-          "type": "KeyboardEventHandler<PanelBase>"
+          "name": "about",
+          "inheritedFrom": "HTMLAttributes.about",
+          "type": "string"
         },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
@@ -15729,8 +17300,8 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "about",
-          "inheritedFrom": "HTMLAttributes.about",
+          "name": "accessKey",
+          "inheritedFrom": "HTMLAttributes.accessKey",
           "type": "string"
         },
         {
@@ -15760,6 +17331,1256 @@ export default {
           "name": "allowTouchBodyScroll",
           "inheritedFrom": "IPanelProps.allowTouchBodyScroll",
           "type": "boolean"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application.</p>\n"
+            ],
+            "contentsRaw": "Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-activedescendant",
+          "inheritedFrom": "AriaAttributes.'aria-activedescendant'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the aria-relevant attribute.</p>\n"
+            ],
+            "contentsRaw": "Indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the aria-relevant attribute.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-atomic",
+          "inheritedFrom": "AriaAttributes.'aria-atomic'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates whether inputting text could trigger display of one or more predictions of the user&#39;s intended value for an input and specifies how predictions would be\npresented if they are made.</p>\n"
+            ],
+            "contentsRaw": "Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be\npresented if they are made.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-autocomplete",
+          "inheritedFrom": "AriaAttributes.'aria-autocomplete'",
+          "type": "\"none\" | \"inline\" | \"list\" | \"both\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user.</p>\n"
+            ],
+            "contentsRaw": "Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-busy",
+          "inheritedFrom": "AriaAttributes.'aria-busy'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates the current &quot;checked&quot; state of checkboxes, radio buttons, and other widgets.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-pressed @see aria-selected."
+              }
+            ],
+            "contentsRaw": "Indicates the current \"checked\" state of checkboxes, radio buttons, and other widgets.\n\n@see aria-pressed @see aria-selected.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-checked",
+          "inheritedFrom": "AriaAttributes.'aria-checked'",
+          "type": "boolean | \"false\" | \"mixed\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the total number of columns in a table, grid, or treegrid.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-colindex."
+              }
+            ],
+            "contentsRaw": "Defines the total number of columns in a table, grid, or treegrid.\n\n@see aria-colindex.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-colcount",
+          "inheritedFrom": "AriaAttributes.'aria-colcount'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines an element&#39;s column index or position with respect to the total number of columns within a table, grid, or treegrid.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-colcount @see aria-colspan."
+              }
+            ],
+            "contentsRaw": "Defines an element's column index or position with respect to the total number of columns within a table, grid, or treegrid.\n\n@see aria-colcount @see aria-colspan.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-colindex",
+          "inheritedFrom": "AriaAttributes.'aria-colindex'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the number of columns spanned by a cell or gridcell within a table, grid, or treegrid.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-colindex @see aria-rowspan."
+              }
+            ],
+            "contentsRaw": "Defines the number of columns spanned by a cell or gridcell within a table, grid, or treegrid.\n\n@see aria-colindex @see aria-rowspan.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-colspan",
+          "inheritedFrom": "AriaAttributes.'aria-colspan'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Identifies the element (or elements) whose contents or presence are controlled by the current element.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-owns."
+              }
+            ],
+            "contentsRaw": "Identifies the element (or elements) whose contents or presence are controlled by the current element.\n\n@see aria-owns.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-controls",
+          "inheritedFrom": "AriaAttributes.'aria-controls'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates the element that represents the current item within a container or set of related elements.</p>\n"
+            ],
+            "contentsRaw": "Indicates the element that represents the current item within a container or set of related elements.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-current",
+          "inheritedFrom": "AriaAttributes.'aria-current'",
+          "type": "boolean | \"false\" | \"true\" | \"page\" | \"step\" | \"location\" | \"date\" | \"time\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Identifies the element (or elements) that describes the object.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-labelledby"
+              }
+            ],
+            "contentsRaw": "Identifies the element (or elements) that describes the object.\n\n@see aria-labelledby",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-describedby",
+          "inheritedFrom": "AriaAttributes.'aria-describedby'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Identifies the element that provides a detailed, extended description for the object.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-describedby."
+              }
+            ],
+            "contentsRaw": "Identifies the element that provides a detailed, extended description for the object.\n\n@see aria-describedby.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-details",
+          "inheritedFrom": "AriaAttributes.'aria-details'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-hidden @see aria-readonly."
+              }
+            ],
+            "contentsRaw": "Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.\n\n@see aria-hidden @see aria-readonly.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-disabled",
+          "inheritedFrom": "AriaAttributes.'aria-disabled'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates what functions can be performed when a dragged object is released on the drop target.</p>\n"
+            ],
+            "contentsRaw": "Indicates what functions can be performed when a dragged object is released on the drop target.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isDeprecated": "in ARIA 1.1",
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-dropeffect",
+          "inheritedFrom": "AriaAttributes.'aria-dropeffect'",
+          "type": "\"none\" | \"copy\" | \"execute\" | \"link\" | \"move\" | \"popup\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Identifies the element that provides an error message for the object.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-invalid @see aria-describedby."
+              }
+            ],
+            "contentsRaw": "Identifies the element that provides an error message for the object.\n\n@see aria-invalid @see aria-describedby.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-errormessage",
+          "inheritedFrom": "AriaAttributes.'aria-errormessage'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed.</p>\n"
+            ],
+            "contentsRaw": "Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-expanded",
+          "inheritedFrom": "AriaAttributes.'aria-expanded'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Identifies the next element (or elements) in an alternate reading order of content which, at the user&#39;s discretion,\nallows assistive technology to override the general default of reading in document source order.</p>\n"
+            ],
+            "contentsRaw": "Identifies the next element (or elements) in an alternate reading order of content which, at the user's discretion,\nallows assistive technology to override the general default of reading in document source order.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-flowto",
+          "inheritedFrom": "AriaAttributes.'aria-flowto'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates an element&#39;s &quot;grabbed&quot; state in a drag-and-drop operation.</p>\n"
+            ],
+            "contentsRaw": "Indicates an element's \"grabbed\" state in a drag-and-drop operation.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isDeprecated": "in ARIA 1.1",
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-grabbed",
+          "inheritedFrom": "AriaAttributes.'aria-grabbed'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element.</p>\n"
+            ],
+            "contentsRaw": "Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-haspopup",
+          "inheritedFrom": "AriaAttributes.'aria-haspopup'",
+          "type": "boolean | \"false\" | \"true\" | \"menu\" | \"listbox\" | \"tree\" | \"grid\" | \"dialog\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates whether the element is exposed to an accessibility API.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-disabled."
+              }
+            ],
+            "contentsRaw": "Indicates whether the element is exposed to an accessibility API.\n\n@see aria-disabled.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-hidden",
+          "inheritedFrom": "AriaAttributes.'aria-hidden'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates the entered value does not conform to the format expected by the application.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-errormessage."
+              }
+            ],
+            "contentsRaw": "Indicates the entered value does not conform to the format expected by the application.\n\n@see aria-errormessage.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-invalid",
+          "inheritedFrom": "AriaAttributes.'aria-invalid'",
+          "type": "boolean | \"false\" | \"true\" | \"grammar\" | \"spelling\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element.</p>\n"
+            ],
+            "contentsRaw": "Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-keyshortcuts",
+          "inheritedFrom": "AriaAttributes.'aria-keyshortcuts'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines a string value that labels the current element.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-labelledby."
+              }
+            ],
+            "contentsRaw": "Defines a string value that labels the current element.\n\n@see aria-labelledby.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-label",
+          "inheritedFrom": "AriaAttributes.'aria-label'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Identifies the element (or elements) that labels the current element.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-describedby."
+              }
+            ],
+            "contentsRaw": "Identifies the element (or elements) that labels the current element.\n\n@see aria-describedby.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-labelledby",
+          "inheritedFrom": "AriaAttributes.'aria-labelledby'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the hierarchical level of an element within a structure.</p>\n"
+            ],
+            "contentsRaw": "Defines the hierarchical level of an element within a structure.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-level",
+          "inheritedFrom": "AriaAttributes.'aria-level'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region.</p>\n"
+            ],
+            "contentsRaw": "Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-live",
+          "inheritedFrom": "AriaAttributes.'aria-live'",
+          "type": "\"off\" | \"assertive\" | \"polite\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates whether an element is modal when displayed.</p>\n"
+            ],
+            "contentsRaw": "Indicates whether an element is modal when displayed.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-modal",
+          "inheritedFrom": "AriaAttributes.'aria-modal'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates whether a text box accepts multiple lines of input or only a single line.</p>\n"
+            ],
+            "contentsRaw": "Indicates whether a text box accepts multiple lines of input or only a single line.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-multiline",
+          "inheritedFrom": "AriaAttributes.'aria-multiline'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates that the user may select more than one item from the current selectable descendants.</p>\n"
+            ],
+            "contentsRaw": "Indicates that the user may select more than one item from the current selectable descendants.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-multiselectable",
+          "inheritedFrom": "AriaAttributes.'aria-multiselectable'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates whether the element&#39;s orientation is horizontal, vertical, or unknown/ambiguous.</p>\n"
+            ],
+            "contentsRaw": "Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-orientation",
+          "inheritedFrom": "AriaAttributes.'aria-orientation'",
+          "type": "\"horizontal\" | \"vertical\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Identifies an element (or elements) in order to define a visual, functional, or contextual parent/child relationship\nbetween DOM elements where the DOM hierarchy cannot be used to represent the relationship.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-controls."
+              }
+            ],
+            "contentsRaw": "Identifies an element (or elements) in order to define a visual, functional, or contextual parent/child relationship\nbetween DOM elements where the DOM hierarchy cannot be used to represent the relationship.\n\n@see aria-controls.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-owns",
+          "inheritedFrom": "AriaAttributes.'aria-owns'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines a short hint (a word or short phrase) intended to aid the user with data entry when the control has no value.\nA hint could be a sample value or a brief description of the expected format.</p>\n"
+            ],
+            "contentsRaw": "Defines a short hint (a word or short phrase) intended to aid the user with data entry when the control has no value.\nA hint could be a sample value or a brief description of the expected format.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-placeholder",
+          "inheritedFrom": "AriaAttributes.'aria-placeholder'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines an element&#39;s number or position in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-setsize."
+              }
+            ],
+            "contentsRaw": "Defines an element's number or position in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.\n\n@see aria-setsize.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-posinset",
+          "inheritedFrom": "AriaAttributes.'aria-posinset'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates the current &quot;pressed&quot; state of toggle buttons.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-checked @see aria-selected."
+              }
+            ],
+            "contentsRaw": "Indicates the current \"pressed\" state of toggle buttons.\n\n@see aria-checked @see aria-selected.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-pressed",
+          "inheritedFrom": "AriaAttributes.'aria-pressed'",
+          "type": "boolean | \"false\" | \"mixed\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates that the element is not editable, but is otherwise operable.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-disabled."
+              }
+            ],
+            "contentsRaw": "Indicates that the element is not editable, but is otherwise operable.\n\n@see aria-disabled.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-readonly",
+          "inheritedFrom": "AriaAttributes.'aria-readonly'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-atomic."
+              }
+            ],
+            "contentsRaw": "Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified.\n\n@see aria-atomic.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-relevant",
+          "inheritedFrom": "AriaAttributes.'aria-relevant'",
+          "type": "\"additions\" | \"additions removals\" | \"additions text\" | \"all\" | \"removals\" | \"removals additions\" | \"removals text\" | \"text\" | \"text additions\" | \"text removals\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates that user input is required on the element before a form may be submitted.</p>\n"
+            ],
+            "contentsRaw": "Indicates that user input is required on the element before a form may be submitted.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-required",
+          "inheritedFrom": "AriaAttributes.'aria-required'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines a human-readable, author-localized description for the role of an element.</p>\n"
+            ],
+            "contentsRaw": "Defines a human-readable, author-localized description for the role of an element.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-roledescription",
+          "inheritedFrom": "AriaAttributes.'aria-roledescription'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the total number of rows in a table, grid, or treegrid.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-rowindex."
+              }
+            ],
+            "contentsRaw": "Defines the total number of rows in a table, grid, or treegrid.\n\n@see aria-rowindex.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-rowcount",
+          "inheritedFrom": "AriaAttributes.'aria-rowcount'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines an element&#39;s row index or position with respect to the total number of rows within a table, grid, or treegrid.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-rowcount @see aria-rowspan."
+              }
+            ],
+            "contentsRaw": "Defines an element's row index or position with respect to the total number of rows within a table, grid, or treegrid.\n\n@see aria-rowcount @see aria-rowspan.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-rowindex",
+          "inheritedFrom": "AriaAttributes.'aria-rowindex'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the number of rows spanned by a cell or gridcell within a table, grid, or treegrid.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-rowindex @see aria-colspan."
+              }
+            ],
+            "contentsRaw": "Defines the number of rows spanned by a cell or gridcell within a table, grid, or treegrid.\n\n@see aria-rowindex @see aria-colspan.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-rowspan",
+          "inheritedFrom": "AriaAttributes.'aria-rowspan'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates the current &quot;selected&quot; state of various widgets.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-checked @see aria-pressed."
+              }
+            ],
+            "contentsRaw": "Indicates the current \"selected\" state of various widgets.\n\n@see aria-checked @see aria-pressed.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-selected",
+          "inheritedFrom": "AriaAttributes.'aria-selected'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-posinset."
+              }
+            ],
+            "contentsRaw": "Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.\n\n@see aria-posinset.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-setsize",
+          "inheritedFrom": "AriaAttributes.'aria-setsize'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates if items in a table or grid are sorted in ascending or descending order.</p>\n"
+            ],
+            "contentsRaw": "Indicates if items in a table or grid are sorted in ascending or descending order.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-sort",
+          "inheritedFrom": "AriaAttributes.'aria-sort'",
+          "type": "\"none\" | \"ascending\" | \"descending\" | \"other\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the maximum allowed value for a range widget.</p>\n"
+            ],
+            "contentsRaw": "Defines the maximum allowed value for a range widget.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-valuemax",
+          "inheritedFrom": "AriaAttributes.'aria-valuemax'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the minimum allowed value for a range widget.</p>\n"
+            ],
+            "contentsRaw": "Defines the minimum allowed value for a range widget.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-valuemin",
+          "inheritedFrom": "AriaAttributes.'aria-valuemin'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the current value for a range widget.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-valuetext."
+              }
+            ],
+            "contentsRaw": "Defines the current value for a range widget.\n\n@see aria-valuetext.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-valuenow",
+          "inheritedFrom": "AriaAttributes.'aria-valuenow'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the human readable text alternative of aria-valuenow for a range widget.</p>\n"
+            ],
+            "contentsRaw": "Defines the human readable text alternative of aria-valuenow for a range widget.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-valuetext",
+          "inheritedFrom": "AriaAttributes.'aria-valuetext'",
+          "type": "string"
         },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
@@ -15962,7 +18783,7 @@ export default {
           "kind": "property",
           "name": "contentEditable",
           "inheritedFrom": "HTMLAttributes.contentEditable",
-          "type": "boolean"
+          "type": "Booleanish | \"inherit\""
         },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
@@ -16071,7 +18892,7 @@ export default {
           "kind": "property",
           "name": "defaultValue",
           "inheritedFrom": "HTMLAttributes.defaultValue",
-          "type": "string | string[]"
+          "type": "string | number | ReadonlyArray<string>"
         },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
@@ -16105,7 +18926,7 @@ export default {
           "kind": "property",
           "name": "draggable",
           "inheritedFrom": "HTMLAttributes.draggable",
-          "type": "boolean"
+          "type": "Booleanish"
         },
         {
           "documentation": {
@@ -16394,6 +19215,17 @@ export default {
           "type": "any"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Hints at the type of data that might be entered by the user while editing the element or its contents</p>\n",
+              {
+                "tag": "see",
+                "value": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute"
+              }
+            ],
+            "contentsRaw": "Hints at the type of data that might be entered by the user while editing the element or its contents\n\n@see https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute",
+            "metadata": {}
+          },
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
@@ -16408,9 +19240,20 @@ export default {
           "kind": "property",
           "name": "inputMode",
           "inheritedFrom": "HTMLAttributes.inputMode",
-          "type": "string"
+          "type": "\"none\" | \"text\" | \"tel\" | \"url\" | \"email\" | \"numeric\" | \"decimal\" | \"search\""
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Specify that a standard HTML element should behave like a defined custom built-in element</p>\n",
+              {
+                "tag": "see",
+                "value": "https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is"
+              }
+            ],
+            "contentsRaw": "Specify that a standard HTML element should behave like a defined custom built-in element\n\n@see https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is",
+            "metadata": {}
+          },
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
@@ -16828,6 +19671,40 @@ export default {
           "name": "onAnimationStartCapture",
           "inheritedFrom": "DOMAttributes.onAnimationStartCapture",
           "type": "AnimationEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onAuxClick",
+          "inheritedFrom": "DOMAttributes.onAuxClick",
+          "type": "MouseEventHandler<PanelBase>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onAuxClickCapture",
+          "inheritedFrom": "DOMAttributes.onAuxClickCapture",
+          "type": "MouseEventHandler<PanelBase>"
         },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
@@ -17944,9 +20821,9 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "accessKey",
-          "inheritedFrom": "HTMLAttributes.accessKey",
-          "type": "string"
+          "name": "onKeyPress",
+          "inheritedFrom": "DOMAttributes.onKeyPress",
+          "type": "KeyboardEventHandler<PanelBase>"
         },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
@@ -18467,7 +21344,7 @@ export default {
           "kind": "property",
           "name": "onOuterClick",
           "inheritedFrom": "IPanelProps.onOuterClick",
-          "type": "() => void"
+          "type": "(ev?: MouseEvent<HTMLDivElement>) => void"
         },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
@@ -19709,6 +22586,30 @@ export default {
           "type": "string"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Optional props to pass the Popup component that the panel uses.</p>\n"
+            ],
+            "contentsRaw": "Optional props to pass the Popup component that the panel uses.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\Panel\\Panel.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "popupProps",
+          "inheritedFrom": "IPanelProps.popupProps",
+          "type": "IPopupProps"
+        },
+        {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
@@ -19808,7 +22709,7 @@ export default {
           "kind": "property",
           "name": "role",
           "inheritedFrom": "HTMLAttributes.role",
-          "type": "string"
+          "type": "AriaRole"
         },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
@@ -19859,7 +22760,7 @@ export default {
           "kind": "property",
           "name": "spellCheck",
           "inheritedFrom": "HTMLAttributes.spellCheck",
-          "type": "boolean"
+          "type": "Booleanish"
         },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
@@ -19993,6 +22894,23 @@ export default {
           "name": "title",
           "inheritedFrom": "HTMLAttributes.title",
           "type": "string"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "translate",
+          "inheritedFrom": "HTMLAttributes.translate",
+          "type": "\"yes\" | \"no\""
         },
         {
           "documentation": {
@@ -20089,10 +23007,12 @@ export default {
       },
       "kind": "interface",
       "name": "PanelLinkProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/PanelLink.tsx#L38",
       "indexSignature": {
         "fileName": "src\\ui-toolkit\\components\\Panel\\PanelLink.tsx",
         "kind": "signature",
         "name": "__index",
+        "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/PanelLink.tsx#L42",
         "parameters": [
           {
             "flags": {
@@ -20129,6 +23049,7 @@ export default {
           },
           "kind": "property",
           "name": "children",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/PanelLink.tsx#L42",
           "type": "any"
         },
         {
@@ -20145,6 +23066,7 @@ export default {
           },
           "kind": "property",
           "name": "href",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/PanelLink.tsx#L39",
           "type": "string"
         },
         {
@@ -20161,6 +23083,7 @@ export default {
           },
           "kind": "property",
           "name": "panelSize",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/PanelLink.tsx#L41",
           "type": "\"small\" | \"medium\" | \"large\" | number"
         },
         {
@@ -20177,6 +23100,7 @@ export default {
           },
           "kind": "property",
           "name": "title",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/PanelLink.tsx#L40",
           "type": "string"
         }
       ]
@@ -20195,10 +23119,12 @@ export default {
       },
       "kind": "interface",
       "name": "LinkProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Link.tsx#L8",
       "indexSignature": {
         "fileName": "src\\ui-toolkit\\components\\primitives\\Link.tsx",
         "kind": "signature",
         "name": "__index",
+        "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Link.tsx#L10",
         "parameters": [
           {
             "flags": {
@@ -20235,6 +23161,7 @@ export default {
           },
           "kind": "property",
           "name": "href",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Link.tsx#L9",
           "type": "string"
         },
         {
@@ -20251,6 +23178,7 @@ export default {
           },
           "kind": "property",
           "name": "target",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Link.tsx#L10",
           "type": "string"
         }
       ]
@@ -20269,10 +23197,12 @@ export default {
       },
       "kind": "interface",
       "name": "TextProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Text.tsx#L7",
       "indexSignature": {
         "fileName": "src\\ui-toolkit\\components\\primitives\\Text.tsx",
         "kind": "signature",
         "name": "__index",
+        "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Text.tsx#L13",
         "parameters": [
           {
             "flags": {
@@ -20316,6 +23246,7 @@ export default {
           },
           "kind": "property",
           "name": "as",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Text.tsx#L11",
           "type": "string"
         },
         {
@@ -20339,6 +23270,7 @@ export default {
           },
           "kind": "property",
           "name": "className",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Text.tsx#L13",
           "type": "string"
         },
         {
@@ -20362,6 +23294,7 @@ export default {
           },
           "kind": "property",
           "name": "color",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Text.tsx#L9",
           "type": "string"
         }
       ]
@@ -20380,10 +23313,12 @@ export default {
       },
       "kind": "interface",
       "name": "TitleProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Title.tsx#L9",
       "indexSignature": {
         "fileName": "src\\ui-toolkit\\components\\primitives\\Title.tsx",
         "kind": "signature",
         "name": "__index",
+        "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Title.tsx#L17",
         "parameters": [
           {
             "flags": {
@@ -20427,6 +23362,7 @@ export default {
           },
           "kind": "property",
           "name": "as",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Title.tsx#L13",
           "type": "string"
         },
         {
@@ -20450,6 +23386,7 @@ export default {
           },
           "kind": "property",
           "name": "className",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Title.tsx#L17",
           "type": "string"
         },
         {
@@ -20473,6 +23410,7 @@ export default {
           },
           "kind": "property",
           "name": "color",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Title.tsx#L15",
           "type": "any"
         },
         {
@@ -20496,6 +23434,7 @@ export default {
           },
           "kind": "property",
           "name": "url",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Title.tsx#L11",
           "type": "string"
         }
       ]
@@ -20514,10 +23453,12 @@ export default {
       },
       "kind": "interface",
       "name": "ShaveProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Shave/Shave.tsx#L24",
       "indexSignature": {
         "fileName": "src\\ui-toolkit\\components\\Shave\\Shave.tsx",
         "kind": "signature",
         "name": "__index",
+        "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Shave/Shave.tsx#L33",
         "parameters": [
           {
             "flags": {
@@ -20561,6 +23502,7 @@ export default {
           },
           "kind": "property",
           "name": "className",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Shave/Shave.tsx#L33",
           "type": "string"
         },
         {
@@ -20584,6 +23526,7 @@ export default {
           },
           "kind": "property",
           "name": "el",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Shave/Shave.tsx#L29",
           "type": "any"
         },
         {
@@ -20607,6 +23550,7 @@ export default {
           },
           "kind": "property",
           "name": "enabled",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Shave/Shave.tsx#L31",
           "type": "boolean"
         },
         {
@@ -20630,6 +23574,7 @@ export default {
           },
           "kind": "property",
           "name": "maxHeight",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Shave/Shave.tsx#L27",
           "type": "number"
         }
       ]
@@ -20648,6 +23593,7 @@ export default {
       },
       "kind": "interface",
       "name": "TagProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Tags.tsx#L24",
       "methods": [],
       "properties": [
         {
@@ -20664,6 +23610,7 @@ export default {
           },
           "kind": "property",
           "name": "children",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Tags.tsx#L27",
           "type": "any"
         },
         {
@@ -20680,6 +23627,7 @@ export default {
           },
           "kind": "property",
           "name": "className",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Tags.tsx#L25",
           "type": "string"
         },
         {
@@ -20696,6 +23644,7 @@ export default {
           },
           "kind": "property",
           "name": "tags",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Tags.tsx#L26",
           "type": "object[]"
         }
       ]
@@ -20714,10 +23663,12 @@ export default {
       },
       "kind": "interface",
       "name": "InfoProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Info.tsx#L7",
       "indexSignature": {
         "fileName": "src\\ui-toolkit\\components\\primitives\\Info.tsx",
         "kind": "signature",
         "name": "__index",
+        "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Info.tsx#L9",
         "parameters": [
           {
             "flags": {
@@ -20754,6 +23705,7 @@ export default {
           },
           "kind": "property",
           "name": "as",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Info.tsx#L9",
           "type": "string"
         },
         {
@@ -20770,6 +23722,7 @@ export default {
           },
           "kind": "property",
           "name": "className",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Info.tsx#L8",
           "type": "string"
         }
       ]
@@ -20788,10 +23741,12 @@ export default {
       },
       "kind": "interface",
       "name": "CardFooterProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/CardFooter.tsx#L6",
       "indexSignature": {
         "fileName": "src\\ui-toolkit\\components\\Card\\CardFooter.tsx",
         "kind": "signature",
         "name": "__index",
+        "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/CardFooter.tsx#L8",
         "parameters": [
           {
             "flags": {
@@ -20828,6 +23783,7 @@ export default {
           },
           "kind": "property",
           "name": "className",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/CardFooter.tsx#L8",
           "type": "string"
         }
       ]
@@ -20846,6 +23802,7 @@ export default {
       },
       "kind": "interface",
       "name": "IconImageProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/IconImage.tsx#L69",
       "methods": [],
       "properties": [
         {
@@ -20869,6 +23826,7 @@ export default {
           },
           "kind": "property",
           "name": "backgroundColor",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/IconImage.tsx#L77",
           "type": "string"
         },
         {
@@ -20892,6 +23850,7 @@ export default {
           },
           "kind": "property",
           "name": "circle",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/IconImage.tsx#L81",
           "type": "boolean"
         },
         {
@@ -20915,6 +23874,7 @@ export default {
           },
           "kind": "property",
           "name": "className",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/IconImage.tsx#L83",
           "type": "string"
         },
         {
@@ -20938,6 +23898,7 @@ export default {
           },
           "kind": "property",
           "name": "height",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/IconImage.tsx#L75",
           "type": "number"
         },
         {
@@ -20961,6 +23922,7 @@ export default {
           },
           "kind": "property",
           "name": "icon",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/IconImage.tsx#L71",
           "type": "string"
         },
         {
@@ -20984,6 +23946,7 @@ export default {
           },
           "kind": "property",
           "name": "iconColor",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/IconImage.tsx#L79",
           "type": "string"
         },
         {
@@ -21007,6 +23970,7 @@ export default {
           },
           "kind": "property",
           "name": "width",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/IconImage.tsx#L73",
           "type": "number"
         }
       ]
@@ -21025,6 +23989,7 @@ export default {
       },
       "kind": "interface",
       "name": "ColorPickerState",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ColorPicker.tsx#L63",
       "methods": [],
       "properties": [
         {
@@ -21041,6 +24006,7 @@ export default {
           },
           "kind": "property",
           "name": "pickerVisible",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ColorPicker.tsx#L64",
           "type": "boolean"
         }
       ]
@@ -21059,6 +24025,7 @@ export default {
       },
       "kind": "interface",
       "name": "ColorPickerProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ColorPicker.tsx#L66",
       "methods": [],
       "properties": [
         {
@@ -21082,6 +24049,7 @@ export default {
           },
           "kind": "property",
           "name": "className",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ColorPicker.tsx#L74",
           "type": "string"
         },
         {
@@ -21105,6 +24073,7 @@ export default {
           },
           "kind": "property",
           "name": "disabled",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ColorPicker.tsx#L76",
           "type": "boolean"
         },
         {
@@ -21128,6 +24097,7 @@ export default {
           },
           "kind": "property",
           "name": "label",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ColorPicker.tsx#L72",
           "type": "string"
         },
         {
@@ -21151,6 +24121,7 @@ export default {
           },
           "kind": "property",
           "name": "onChange",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ColorPicker.tsx#L70",
           "type": "(newColor: string) => void"
         },
         {
@@ -21174,6 +24145,7 @@ export default {
           },
           "kind": "property",
           "name": "value",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ColorPicker.tsx#L68",
           "type": "string"
         }
       ]
@@ -21192,6 +24164,7 @@ export default {
       },
       "kind": "interface",
       "name": "FabricTextFieldProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/NumberInput/NumberInput.tsx#L82",
       "extends": [
         "ITextFieldProps"
       ],
@@ -21210,9 +24183,9 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "onError",
-          "inheritedFrom": "DOMAttributes.onError",
-          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+          "name": "about",
+          "inheritedFrom": "HTMLAttributes.about",
+          "type": "string"
         },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
@@ -21227,8 +24200,8 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "about",
-          "inheritedFrom": "HTMLAttributes.about",
+          "name": "accept",
+          "inheritedFrom": "AllHTMLAttributes.accept",
           "type": "string"
         },
         {
@@ -21331,6 +24304,1256 @@ export default {
           "kind": "property",
           "name": "alt",
           "inheritedFrom": "AllHTMLAttributes.alt",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application.</p>\n"
+            ],
+            "contentsRaw": "Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-activedescendant",
+          "inheritedFrom": "AriaAttributes.'aria-activedescendant'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the aria-relevant attribute.</p>\n"
+            ],
+            "contentsRaw": "Indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the aria-relevant attribute.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-atomic",
+          "inheritedFrom": "AriaAttributes.'aria-atomic'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates whether inputting text could trigger display of one or more predictions of the user&#39;s intended value for an input and specifies how predictions would be\npresented if they are made.</p>\n"
+            ],
+            "contentsRaw": "Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be\npresented if they are made.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-autocomplete",
+          "inheritedFrom": "AriaAttributes.'aria-autocomplete'",
+          "type": "\"none\" | \"inline\" | \"list\" | \"both\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user.</p>\n"
+            ],
+            "contentsRaw": "Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-busy",
+          "inheritedFrom": "AriaAttributes.'aria-busy'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates the current &quot;checked&quot; state of checkboxes, radio buttons, and other widgets.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-pressed @see aria-selected."
+              }
+            ],
+            "contentsRaw": "Indicates the current \"checked\" state of checkboxes, radio buttons, and other widgets.\n\n@see aria-pressed @see aria-selected.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-checked",
+          "inheritedFrom": "AriaAttributes.'aria-checked'",
+          "type": "boolean | \"false\" | \"mixed\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the total number of columns in a table, grid, or treegrid.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-colindex."
+              }
+            ],
+            "contentsRaw": "Defines the total number of columns in a table, grid, or treegrid.\n\n@see aria-colindex.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-colcount",
+          "inheritedFrom": "AriaAttributes.'aria-colcount'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines an element&#39;s column index or position with respect to the total number of columns within a table, grid, or treegrid.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-colcount @see aria-colspan."
+              }
+            ],
+            "contentsRaw": "Defines an element's column index or position with respect to the total number of columns within a table, grid, or treegrid.\n\n@see aria-colcount @see aria-colspan.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-colindex",
+          "inheritedFrom": "AriaAttributes.'aria-colindex'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the number of columns spanned by a cell or gridcell within a table, grid, or treegrid.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-colindex @see aria-rowspan."
+              }
+            ],
+            "contentsRaw": "Defines the number of columns spanned by a cell or gridcell within a table, grid, or treegrid.\n\n@see aria-colindex @see aria-rowspan.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-colspan",
+          "inheritedFrom": "AriaAttributes.'aria-colspan'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Identifies the element (or elements) whose contents or presence are controlled by the current element.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-owns."
+              }
+            ],
+            "contentsRaw": "Identifies the element (or elements) whose contents or presence are controlled by the current element.\n\n@see aria-owns.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-controls",
+          "inheritedFrom": "AriaAttributes.'aria-controls'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates the element that represents the current item within a container or set of related elements.</p>\n"
+            ],
+            "contentsRaw": "Indicates the element that represents the current item within a container or set of related elements.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-current",
+          "inheritedFrom": "AriaAttributes.'aria-current'",
+          "type": "boolean | \"false\" | \"true\" | \"page\" | \"step\" | \"location\" | \"date\" | \"time\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Identifies the element (or elements) that describes the object.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-labelledby"
+              }
+            ],
+            "contentsRaw": "Identifies the element (or elements) that describes the object.\n\n@see aria-labelledby",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-describedby",
+          "inheritedFrom": "AriaAttributes.'aria-describedby'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Identifies the element that provides a detailed, extended description for the object.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-describedby."
+              }
+            ],
+            "contentsRaw": "Identifies the element that provides a detailed, extended description for the object.\n\n@see aria-describedby.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-details",
+          "inheritedFrom": "AriaAttributes.'aria-details'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-hidden @see aria-readonly."
+              }
+            ],
+            "contentsRaw": "Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.\n\n@see aria-hidden @see aria-readonly.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-disabled",
+          "inheritedFrom": "AriaAttributes.'aria-disabled'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates what functions can be performed when a dragged object is released on the drop target.</p>\n"
+            ],
+            "contentsRaw": "Indicates what functions can be performed when a dragged object is released on the drop target.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isDeprecated": "in ARIA 1.1",
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-dropeffect",
+          "inheritedFrom": "AriaAttributes.'aria-dropeffect'",
+          "type": "\"none\" | \"copy\" | \"execute\" | \"link\" | \"move\" | \"popup\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Identifies the element that provides an error message for the object.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-invalid @see aria-describedby."
+              }
+            ],
+            "contentsRaw": "Identifies the element that provides an error message for the object.\n\n@see aria-invalid @see aria-describedby.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-errormessage",
+          "inheritedFrom": "AriaAttributes.'aria-errormessage'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed.</p>\n"
+            ],
+            "contentsRaw": "Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-expanded",
+          "inheritedFrom": "AriaAttributes.'aria-expanded'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Identifies the next element (or elements) in an alternate reading order of content which, at the user&#39;s discretion,\nallows assistive technology to override the general default of reading in document source order.</p>\n"
+            ],
+            "contentsRaw": "Identifies the next element (or elements) in an alternate reading order of content which, at the user's discretion,\nallows assistive technology to override the general default of reading in document source order.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-flowto",
+          "inheritedFrom": "AriaAttributes.'aria-flowto'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates an element&#39;s &quot;grabbed&quot; state in a drag-and-drop operation.</p>\n"
+            ],
+            "contentsRaw": "Indicates an element's \"grabbed\" state in a drag-and-drop operation.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isDeprecated": "in ARIA 1.1",
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-grabbed",
+          "inheritedFrom": "AriaAttributes.'aria-grabbed'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element.</p>\n"
+            ],
+            "contentsRaw": "Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-haspopup",
+          "inheritedFrom": "AriaAttributes.'aria-haspopup'",
+          "type": "boolean | \"false\" | \"true\" | \"menu\" | \"listbox\" | \"tree\" | \"grid\" | \"dialog\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates whether the element is exposed to an accessibility API.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-disabled."
+              }
+            ],
+            "contentsRaw": "Indicates whether the element is exposed to an accessibility API.\n\n@see aria-disabled.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-hidden",
+          "inheritedFrom": "AriaAttributes.'aria-hidden'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates the entered value does not conform to the format expected by the application.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-errormessage."
+              }
+            ],
+            "contentsRaw": "Indicates the entered value does not conform to the format expected by the application.\n\n@see aria-errormessage.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-invalid",
+          "inheritedFrom": "AriaAttributes.'aria-invalid'",
+          "type": "boolean | \"false\" | \"true\" | \"grammar\" | \"spelling\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element.</p>\n"
+            ],
+            "contentsRaw": "Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-keyshortcuts",
+          "inheritedFrom": "AriaAttributes.'aria-keyshortcuts'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines a string value that labels the current element.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-labelledby."
+              }
+            ],
+            "contentsRaw": "Defines a string value that labels the current element.\n\n@see aria-labelledby.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-label",
+          "inheritedFrom": "AriaAttributes.'aria-label'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Identifies the element (or elements) that labels the current element.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-describedby."
+              }
+            ],
+            "contentsRaw": "Identifies the element (or elements) that labels the current element.\n\n@see aria-describedby.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-labelledby",
+          "inheritedFrom": "AriaAttributes.'aria-labelledby'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the hierarchical level of an element within a structure.</p>\n"
+            ],
+            "contentsRaw": "Defines the hierarchical level of an element within a structure.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-level",
+          "inheritedFrom": "AriaAttributes.'aria-level'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region.</p>\n"
+            ],
+            "contentsRaw": "Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-live",
+          "inheritedFrom": "AriaAttributes.'aria-live'",
+          "type": "\"off\" | \"assertive\" | \"polite\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates whether an element is modal when displayed.</p>\n"
+            ],
+            "contentsRaw": "Indicates whether an element is modal when displayed.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-modal",
+          "inheritedFrom": "AriaAttributes.'aria-modal'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates whether a text box accepts multiple lines of input or only a single line.</p>\n"
+            ],
+            "contentsRaw": "Indicates whether a text box accepts multiple lines of input or only a single line.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-multiline",
+          "inheritedFrom": "AriaAttributes.'aria-multiline'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates that the user may select more than one item from the current selectable descendants.</p>\n"
+            ],
+            "contentsRaw": "Indicates that the user may select more than one item from the current selectable descendants.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-multiselectable",
+          "inheritedFrom": "AriaAttributes.'aria-multiselectable'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates whether the element&#39;s orientation is horizontal, vertical, or unknown/ambiguous.</p>\n"
+            ],
+            "contentsRaw": "Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-orientation",
+          "inheritedFrom": "AriaAttributes.'aria-orientation'",
+          "type": "\"horizontal\" | \"vertical\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Identifies an element (or elements) in order to define a visual, functional, or contextual parent/child relationship\nbetween DOM elements where the DOM hierarchy cannot be used to represent the relationship.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-controls."
+              }
+            ],
+            "contentsRaw": "Identifies an element (or elements) in order to define a visual, functional, or contextual parent/child relationship\nbetween DOM elements where the DOM hierarchy cannot be used to represent the relationship.\n\n@see aria-controls.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-owns",
+          "inheritedFrom": "AriaAttributes.'aria-owns'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines a short hint (a word or short phrase) intended to aid the user with data entry when the control has no value.\nA hint could be a sample value or a brief description of the expected format.</p>\n"
+            ],
+            "contentsRaw": "Defines a short hint (a word or short phrase) intended to aid the user with data entry when the control has no value.\nA hint could be a sample value or a brief description of the expected format.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-placeholder",
+          "inheritedFrom": "AriaAttributes.'aria-placeholder'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines an element&#39;s number or position in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-setsize."
+              }
+            ],
+            "contentsRaw": "Defines an element's number or position in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.\n\n@see aria-setsize.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-posinset",
+          "inheritedFrom": "AriaAttributes.'aria-posinset'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates the current &quot;pressed&quot; state of toggle buttons.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-checked @see aria-selected."
+              }
+            ],
+            "contentsRaw": "Indicates the current \"pressed\" state of toggle buttons.\n\n@see aria-checked @see aria-selected.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-pressed",
+          "inheritedFrom": "AriaAttributes.'aria-pressed'",
+          "type": "boolean | \"false\" | \"mixed\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates that the element is not editable, but is otherwise operable.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-disabled."
+              }
+            ],
+            "contentsRaw": "Indicates that the element is not editable, but is otherwise operable.\n\n@see aria-disabled.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-readonly",
+          "inheritedFrom": "AriaAttributes.'aria-readonly'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-atomic."
+              }
+            ],
+            "contentsRaw": "Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified.\n\n@see aria-atomic.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-relevant",
+          "inheritedFrom": "AriaAttributes.'aria-relevant'",
+          "type": "\"additions\" | \"additions removals\" | \"additions text\" | \"all\" | \"removals\" | \"removals additions\" | \"removals text\" | \"text\" | \"text additions\" | \"text removals\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates that user input is required on the element before a form may be submitted.</p>\n"
+            ],
+            "contentsRaw": "Indicates that user input is required on the element before a form may be submitted.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-required",
+          "inheritedFrom": "AriaAttributes.'aria-required'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines a human-readable, author-localized description for the role of an element.</p>\n"
+            ],
+            "contentsRaw": "Defines a human-readable, author-localized description for the role of an element.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-roledescription",
+          "inheritedFrom": "AriaAttributes.'aria-roledescription'",
+          "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the total number of rows in a table, grid, or treegrid.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-rowindex."
+              }
+            ],
+            "contentsRaw": "Defines the total number of rows in a table, grid, or treegrid.\n\n@see aria-rowindex.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-rowcount",
+          "inheritedFrom": "AriaAttributes.'aria-rowcount'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines an element&#39;s row index or position with respect to the total number of rows within a table, grid, or treegrid.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-rowcount @see aria-rowspan."
+              }
+            ],
+            "contentsRaw": "Defines an element's row index or position with respect to the total number of rows within a table, grid, or treegrid.\n\n@see aria-rowcount @see aria-rowspan.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-rowindex",
+          "inheritedFrom": "AriaAttributes.'aria-rowindex'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the number of rows spanned by a cell or gridcell within a table, grid, or treegrid.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-rowindex @see aria-colspan."
+              }
+            ],
+            "contentsRaw": "Defines the number of rows spanned by a cell or gridcell within a table, grid, or treegrid.\n\n@see aria-rowindex @see aria-colspan.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-rowspan",
+          "inheritedFrom": "AriaAttributes.'aria-rowspan'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates the current &quot;selected&quot; state of various widgets.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-checked @see aria-pressed."
+              }
+            ],
+            "contentsRaw": "Indicates the current \"selected\" state of various widgets.\n\n@see aria-checked @see aria-pressed.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-selected",
+          "inheritedFrom": "AriaAttributes.'aria-selected'",
+          "type": "boolean | \"false\" | \"true\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-posinset."
+              }
+            ],
+            "contentsRaw": "Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.\n\n@see aria-posinset.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-setsize",
+          "inheritedFrom": "AriaAttributes.'aria-setsize'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Indicates if items in a table or grid are sorted in ascending or descending order.</p>\n"
+            ],
+            "contentsRaw": "Indicates if items in a table or grid are sorted in ascending or descending order.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-sort",
+          "inheritedFrom": "AriaAttributes.'aria-sort'",
+          "type": "\"none\" | \"ascending\" | \"descending\" | \"other\""
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the maximum allowed value for a range widget.</p>\n"
+            ],
+            "contentsRaw": "Defines the maximum allowed value for a range widget.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-valuemax",
+          "inheritedFrom": "AriaAttributes.'aria-valuemax'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the minimum allowed value for a range widget.</p>\n"
+            ],
+            "contentsRaw": "Defines the minimum allowed value for a range widget.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-valuemin",
+          "inheritedFrom": "AriaAttributes.'aria-valuemin'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the current value for a range widget.</p>\n",
+              {
+                "tag": "see",
+                "value": "aria-valuetext."
+              }
+            ],
+            "contentsRaw": "Defines the current value for a range widget.\n\n@see aria-valuetext.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-valuenow",
+          "inheritedFrom": "AriaAttributes.'aria-valuenow'",
+          "type": "number"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Defines the human readable text alternative of aria-valuenow for a range widget.</p>\n"
+            ],
+            "contentsRaw": "Defines the human readable text alternative of aria-valuenow for a range widget.",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "aria-valuetext",
+          "inheritedFrom": "AriaAttributes.'aria-valuetext'",
           "type": "string"
         },
         {
@@ -21554,6 +25777,30 @@ export default {
           "kind": "property",
           "name": "borderless",
           "inheritedFrom": "ITextFieldProps.borderless",
+          "type": "boolean"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Whether to show the reveal password button for input type <code>&#39;password&#39;</code> (will be ignored unless\nthe <code>type</code> prop is set to <code>&#39;password&#39;</code>).</p>\n"
+            ],
+            "contentsRaw": "Whether to show the reveal password button for input type `'password'` (will be ignored unless\nthe `type` prop is set to `'password'`).",
+            "metadata": {}
+          },
+          "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "canRevealPassword",
+          "inheritedFrom": "ITextFieldProps.canRevealPassword",
           "type": "boolean"
         },
         {
@@ -21840,7 +26087,7 @@ export default {
           "kind": "property",
           "name": "contentEditable",
           "inheritedFrom": "HTMLAttributes.contentEditable",
-          "type": "boolean"
+          "type": "Booleanish | \"inherit\""
         },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
@@ -22182,7 +26429,7 @@ export default {
           "kind": "property",
           "name": "draggable",
           "inheritedFrom": "HTMLAttributes.draggable",
-          "type": "boolean"
+          "type": "Booleanish"
         },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
@@ -22563,6 +26810,17 @@ export default {
           "type": "string"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Hints at the type of data that might be entered by the user while editing the element or its contents</p>\n",
+              {
+                "tag": "see",
+                "value": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute"
+              }
+            ],
+            "contentsRaw": "Hints at the type of data that might be entered by the user while editing the element or its contents\n\n@see https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute",
+            "metadata": {}
+          },
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
@@ -22577,7 +26835,7 @@ export default {
           "kind": "property",
           "name": "inputMode",
           "inheritedFrom": "HTMLAttributes.inputMode",
-          "type": "string"
+          "type": "\"none\" | \"text\" | \"tel\" | \"url\" | \"email\" | \"numeric\" | \"decimal\" | \"search\""
         },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
@@ -22597,6 +26855,17 @@ export default {
           "type": "string"
         },
         {
+          "documentation": {
+            "contents": [
+              "<p>Specify that a standard HTML element should behave like a defined custom built-in element</p>\n",
+              {
+                "tag": "see",
+                "value": "https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is"
+              }
+            ],
+            "contentsRaw": "Specify that a standard HTML element should behave like a defined custom built-in element\n\n@see https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is",
+            "metadata": {}
+          },
           "fileName": "node_modules\\@types\\react\\index.d.ts",
           "flags": {
             "isExported": true,
@@ -22894,18 +27163,13 @@ export default {
         },
         {
           "documentation": {
-            "contents": [
-              "<p>Only used by MaskedTextField:\nThe masking string that defines the mask&#39;s behavior.\nA backslash will escape any character.\nSpecial format characters are:\n&#39;9&#39;: [0-9]\n&#39;a&#39;: [a-zA-Z]\n&#39;*&#39;: [a-zA-Z0-9]</p>\n",
-              {
-                "tag": "example",
-                "value": "`Phone Number: (999) 999-9999`"
-              }
-            ],
-            "contentsRaw": "Only used by MaskedTextField:\nThe masking string that defines the mask's behavior.\nA backslash will escape any character.\nSpecial format characters are:\n'9': [0-9]\n'a': [a-zA-Z]\n'*': [a-zA-Z0-9]\n\n@example `Phone Number: (999) 999-9999`",
+            "contents": [],
+            "contentsRaw": "",
             "metadata": {}
           },
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
           "flags": {
+            "isDeprecated": "Only used by `MaskedTextField`, which now has a separate `IMaskedTextFieldProps` interface.",
             "isExported": true,
             "isExternal": false,
             "isOptional": true,
@@ -22922,18 +27186,13 @@ export default {
         },
         {
           "documentation": {
-            "contents": [
-              "<p>Only used by MaskedTextField:\nThe character to show in place of unfilled characters of the mask.</p>\n",
-              {
-                "tag": "defaultvalue",
-                "value": "'_'"
-              }
-            ],
-            "contentsRaw": "Only used by MaskedTextField:\nThe character to show in place of unfilled characters of the mask.\n\n@defaultvalue '_'",
+            "contents": [],
+            "contentsRaw": "",
             "metadata": {}
           },
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
           "flags": {
+            "isDeprecated": "Only used by `MaskedTextField`, which now has a separate `IMaskedTextFieldProps` interface.",
             "isExported": true,
             "isExternal": false,
             "isOptional": true,
@@ -22950,14 +27209,13 @@ export default {
         },
         {
           "documentation": {
-            "contents": [
-              "<p>Only used by MaskedTextField:\nAn object defining the format characters and corresponding regexp values.\nDefault format characters: {\n &#39;9&#39;: /[0-9]/,\n &#39;a&#39;: /[a-zA-Z]/,\n &#39;*&#39;: /[a-zA-Z0-9]/\n}</p>\n"
-            ],
-            "contentsRaw": "Only used by MaskedTextField:\nAn object defining the format characters and corresponding regexp values.\nDefault format characters: \\{\n '9': /[0-9]/,\n 'a': /[a-zA-Z]/,\n '*': /[a-zA-Z0-9]/\n\\}",
+            "contents": [],
+            "contentsRaw": "",
             "metadata": {}
           },
           "fileName": "node_modules\\office-ui-fabric-react\\lib\\components\\TextField\\TextField.types.d.ts",
           "flags": {
+            "isDeprecated": "Only used by `MaskedTextField`, which now has a separate `IMaskedTextFieldProps` interface.",
             "isExported": true,
             "isExternal": false,
             "isOptional": true,
@@ -23339,6 +27597,40 @@ export default {
           "name": "onAnimationStartCapture",
           "inheritedFrom": "DOMAttributes.onAnimationStartCapture",
           "type": "AnimationEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onAuxClick",
+          "inheritedFrom": "DOMAttributes.onAuxClick",
+          "type": "MouseEventHandler<HTMLInputElement | HTMLTextAreaElement>"
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onAuxClickCapture",
+          "inheritedFrom": "DOMAttributes.onAuxClickCapture",
+          "type": "MouseEventHandler<HTMLInputElement | HTMLTextAreaElement>"
         },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
@@ -24210,9 +28502,9 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "accept",
-          "inheritedFrom": "AllHTMLAttributes.accept",
-          "type": "string"
+          "name": "onError",
+          "inheritedFrom": "DOMAttributes.onError",
+          "type": "ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>"
         },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
@@ -26374,7 +30666,7 @@ export default {
           "kind": "property",
           "name": "role",
           "inheritedFrom": "HTMLAttributes.role",
-          "type": "string"
+          "type": "AriaRole"
         },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
@@ -26629,7 +30921,7 @@ export default {
           "kind": "property",
           "name": "spellCheck",
           "inheritedFrom": "HTMLAttributes.spellCheck",
-          "type": "boolean"
+          "type": "Booleanish"
         },
         {
           "fileName": "node_modules\\@types\\react\\index.d.ts",
@@ -26937,6 +31229,23 @@ export default {
             "isStatic": false
           },
           "kind": "property",
+          "name": "translate",
+          "inheritedFrom": "HTMLAttributes.translate",
+          "type": "\"yes\" | \"no\""
+        },
+        {
+          "fileName": "node_modules\\@types\\react\\index.d.ts",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
           "name": "type",
           "inheritedFrom": "AllHTMLAttributes.type",
           "type": "string"
@@ -27212,6 +31521,7 @@ export default {
       },
       "kind": "interface",
       "name": "NumberInputProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/NumberInput/NumberInput.tsx#L84",
       "extends": [
         ""
       ],
@@ -27219,6 +31529,7 @@ export default {
         "fileName": "src\\ui-toolkit\\components\\inputs\\NumberInput\\NumberInput.tsx",
         "kind": "signature",
         "name": "__index",
+        "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/NumberInput/NumberInput.tsx#L88",
         "parameters": [
           {
             "flags": {
@@ -27255,7 +31566,32 @@ export default {
           },
           "kind": "property",
           "name": "onChange",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/NumberInput/NumberInput.tsx#L86",
           "type": "(newValue: number) => void"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>Delay in ms for onChange event to delay notifying parent when values have stopped changing</p>\n"
+            ],
+            "contentsRaw": "Delay in ms for onChange event to delay notifying parent when values have stopped changing",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\inputs\\NumberInput\\NumberInput.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "onChangeDelay",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/NumberInput/NumberInput.tsx#L91",
+          "type": "number"
         },
         {
           "documentation": {
@@ -27278,6 +31614,7 @@ export default {
           },
           "kind": "property",
           "name": "step",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/NumberInput/NumberInput.tsx#L88",
           "type": "number"
         },
         {
@@ -27294,6 +31631,7 @@ export default {
           },
           "kind": "property",
           "name": "value",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/NumberInput/NumberInput.tsx#L85",
           "type": "number"
         }
       ]
@@ -27312,6 +31650,7 @@ export default {
       },
       "kind": "interface",
       "name": "ThemeColorPickerProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ThemeColorPicker.tsx#L72",
       "methods": [],
       "properties": [
         {
@@ -27335,6 +31674,7 @@ export default {
           },
           "kind": "property",
           "name": "disabled",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ThemeColorPicker.tsx#L80",
           "type": "boolean"
         },
         {
@@ -27358,6 +31698,7 @@ export default {
           },
           "kind": "property",
           "name": "extraOptions",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ThemeColorPicker.tsx#L82",
           "type": "object[]"
         },
         {
@@ -27381,6 +31722,7 @@ export default {
           },
           "kind": "property",
           "name": "label",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ThemeColorPicker.tsx#L78",
           "type": "string"
         },
         {
@@ -27404,6 +31746,7 @@ export default {
           },
           "kind": "property",
           "name": "onChange",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ThemeColorPicker.tsx#L76",
           "type": "(value: string) => void"
         },
         {
@@ -27427,6 +31770,7 @@ export default {
           },
           "kind": "property",
           "name": "value",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/ThemeColorPicker.tsx#L74",
           "type": "string"
         }
       ]
@@ -27445,6 +31789,7 @@ export default {
       },
       "kind": "interface",
       "name": "SiteChoiceGroupProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/siteChoiceGroup.tsx#L32",
       "methods": [],
       "properties": [
         {
@@ -27461,6 +31806,7 @@ export default {
           },
           "kind": "property",
           "name": "label",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/siteChoiceGroup.tsx#L36",
           "type": "string"
         },
         {
@@ -27477,6 +31823,7 @@ export default {
           },
           "kind": "property",
           "name": "onChange",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/siteChoiceGroup.tsx#L35",
           "type": "(choiceKey: any) => void"
         },
         {
@@ -27493,6 +31840,7 @@ export default {
           },
           "kind": "property",
           "name": "value",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/siteChoiceGroup.tsx#L34",
           "type": "SiteChoiceType"
         }
       ]
@@ -27511,6 +31859,7 @@ export default {
       },
       "kind": "interface",
       "name": "SiteUrlInputProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/SiteUrlInput.tsx#L106",
       "methods": [],
       "properties": [
         {
@@ -27527,6 +31876,7 @@ export default {
           },
           "kind": "property",
           "name": "disabled",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/SiteUrlInput.tsx#L110",
           "type": "boolean"
         },
         {
@@ -27543,6 +31893,7 @@ export default {
           },
           "kind": "property",
           "name": "label",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/SiteUrlInput.tsx#L109",
           "type": "string"
         },
         {
@@ -27559,6 +31910,7 @@ export default {
           },
           "kind": "property",
           "name": "onChange",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/SiteUrlInput.tsx#L108",
           "type": "(url: any, isValid: any) => void"
         },
         {
@@ -27575,41 +31927,8 @@ export default {
           },
           "kind": "property",
           "name": "url",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/SiteUrlInput.tsx#L107",
           "type": "string"
-        }
-      ]
-    },
-    "Window": {
-      "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
-      "flags": {
-        "isExported": true,
-        "isExternal": false,
-        "isOptional": false,
-        "isPrivate": false,
-        "isProtected": false,
-        "isPublic": false,
-        "isRest": false,
-        "isStatic": false
-      },
-      "kind": "interface",
-      "name": "Window",
-      "methods": [],
-      "properties": [
-        {
-          "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": false,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "CSS",
-          "type": "any"
         }
       ]
     },
@@ -27627,6 +31946,7 @@ export default {
       },
       "kind": "interface",
       "name": "SitePickerProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/SitePicker.tsx#L68",
       "methods": [],
       "properties": [
         {
@@ -27643,6 +31963,7 @@ export default {
           },
           "kind": "property",
           "name": "label",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/SitePicker.tsx#L72",
           "type": "string"
         },
         {
@@ -27659,6 +31980,7 @@ export default {
           },
           "kind": "property",
           "name": "onChange",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/SitePicker.tsx#L71",
           "type": "(siteUrl: any) => void"
         },
         {
@@ -27682,6 +32004,7 @@ export default {
           },
           "kind": "property",
           "name": "value",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/SitePicker.tsx#L70",
           "type": "string"
         }
       ]
@@ -27700,6 +32023,7 @@ export default {
       },
       "kind": "interface",
       "name": "SitePickerState",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/SitePicker.tsx#L75",
       "methods": [],
       "properties": [
         {
@@ -27716,6 +32040,7 @@ export default {
           },
           "kind": "property",
           "name": "siteChoice",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/SitePicker.tsx#L77",
           "type": "SiteChoiceType"
         },
         {
@@ -27732,6 +32057,7 @@ export default {
           },
           "kind": "property",
           "name": "urlIsValid",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/SitePicker/SitePicker.tsx#L76",
           "type": "boolean"
         }
       ]
@@ -27750,6 +32076,7 @@ export default {
       },
       "kind": "interface",
       "name": "EditableProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/Editable/Editable.tsx#L90",
       "methods": [],
       "properties": [
         {
@@ -27773,6 +32100,7 @@ export default {
           },
           "kind": "property",
           "name": "canEdit",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/Editable/Editable.tsx#L102",
           "type": "boolean"
         },
         {
@@ -27796,6 +32124,7 @@ export default {
           },
           "kind": "property",
           "name": "className",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/Editable/Editable.tsx#L98",
           "type": "string"
         },
         {
@@ -27819,6 +32148,7 @@ export default {
           },
           "kind": "property",
           "name": "contentType",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/Editable/Editable.tsx#L100",
           "type": "\"text\" | \"html\""
         },
         {
@@ -27842,6 +32172,7 @@ export default {
           },
           "kind": "property",
           "name": "element",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/Editable/Editable.tsx#L104",
           "type": "\"div\" | \"p\" | \"span\" | \"h1\" | \"h2\" | \"h3\" | \"h4\" | \"li\""
         },
         {
@@ -27865,6 +32196,7 @@ export default {
           },
           "kind": "property",
           "name": "onChange",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/Editable/Editable.tsx#L94",
           "type": "(value: string) => void"
         },
         {
@@ -27888,6 +32220,7 @@ export default {
           },
           "kind": "property",
           "name": "placeholder",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/Editable/Editable.tsx#L96",
           "type": "string"
         },
         {
@@ -27911,6 +32244,119 @@ export default {
           },
           "kind": "property",
           "name": "value",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/inputs/Editable/Editable.tsx#L92",
+          "type": "string"
+        }
+      ]
+    },
+    "GridProps": {
+      "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": false,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "GridProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/Grid/Grid.tsx#L32",
+      "indexSignature": {
+        "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
+        "kind": "signature",
+        "name": "__index",
+        "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/Grid/Grid.tsx#L36",
+        "parameters": [
+          {
+            "flags": {
+              "isExported": true,
+              "isExternal": false,
+              "isOptional": false,
+              "isPrivate": false,
+              "isProtected": false,
+              "isPublic": false,
+              "isRest": false,
+              "isStatic": false
+            },
+            "kind": "parameter",
+            "name": "key",
+            "type": "string"
+          }
+        ],
+        "returnType": "any",
+        "type": "{ [key: string]: any }"
+      },
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "gap",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/Grid/Grid.tsx#L33",
+          "type": "number"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "mode",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/Grid/Grid.tsx#L35",
+          "type": "\"best\" | \"grid\" | \"flex\""
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "shouldFlex",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/Grid/Grid.tsx#L36",
+          "type": "boolean"
+        },
+        {
+          "fileName": "src\\ui-toolkit\\components\\layouts\\Grid\\Grid.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "size",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/Grid/Grid.tsx#L34",
           "type": "string"
         }
       ]
@@ -27929,6 +32375,7 @@ export default {
       },
       "kind": "interface",
       "name": "ComponentSizeData",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useComponentSize.ts#L17",
       "methods": [],
       "properties": [
         {
@@ -27945,6 +32392,7 @@ export default {
           },
           "kind": "property",
           "name": "height",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useComponentSize.ts#L19",
           "type": "number"
         },
         {
@@ -27961,6 +32409,7 @@ export default {
           },
           "kind": "property",
           "name": "width",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useComponentSize.ts#L18",
           "type": "number"
         }
       ]
@@ -27979,6 +32428,7 @@ export default {
       },
       "kind": "interface",
       "name": "HowManyFitOptions",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useHowManyFit.ts#L3",
       "methods": [],
       "properties": [
         {
@@ -28002,6 +32452,7 @@ export default {
           },
           "kind": "property",
           "name": "maxItems",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useHowManyFit.ts#L5",
           "type": "number"
         },
         {
@@ -28025,6 +32476,7 @@ export default {
           },
           "kind": "property",
           "name": "spacing",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useHowManyFit.ts#L7",
           "type": "number"
         }
       ]
@@ -28043,6 +32495,7 @@ export default {
       },
       "kind": "interface",
       "name": "PagingContext",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/usePaging.ts#L46",
       "methods": [],
       "properties": [
         {
@@ -28066,6 +32519,7 @@ export default {
           },
           "kind": "property",
           "name": "currentPage",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/usePaging.ts#L54",
           "type": "number"
         },
         {
@@ -28089,6 +32543,7 @@ export default {
           },
           "kind": "property",
           "name": "goBack",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/usePaging.ts#L48",
           "type": "() => void"
         },
         {
@@ -28112,6 +32567,7 @@ export default {
           },
           "kind": "property",
           "name": "goForward",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/usePaging.ts#L50",
           "type": "() => void"
         },
         {
@@ -28135,6 +32591,7 @@ export default {
           },
           "kind": "property",
           "name": "goTo",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/usePaging.ts#L52",
           "type": "(page: number) => void"
         }
       ]
@@ -28153,6 +32610,7 @@ export default {
       },
       "kind": "interface",
       "name": "FilmstripOptions",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/Filmstrip/useFilmstrip.ts#L8",
       "methods": [],
       "properties": [
         {
@@ -28169,6 +32627,7 @@ export default {
           },
           "kind": "property",
           "name": "autopage",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/Filmstrip/useFilmstrip.ts#L11",
           "type": "number"
         },
         {
@@ -28185,6 +32644,7 @@ export default {
           },
           "kind": "property",
           "name": "itemMinWidth",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/Filmstrip/useFilmstrip.ts#L9",
           "type": "number"
         },
         {
@@ -28201,6 +32661,7 @@ export default {
           },
           "kind": "property",
           "name": "spacing",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/Filmstrip/useFilmstrip.ts#L10",
           "type": "number"
         }
       ]
@@ -28219,10 +32680,12 @@ export default {
       },
       "kind": "interface",
       "name": "FilmstripProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/Filmstrip/Filmstrip.tsx#L53",
       "indexSignature": {
         "fileName": "src\\ui-toolkit\\components\\layouts\\Filmstrip\\Filmstrip.tsx",
         "kind": "signature",
         "name": "__index",
+        "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/Filmstrip/Filmstrip.tsx#L61",
         "parameters": [
           {
             "flags": {
@@ -28266,6 +32729,7 @@ export default {
           },
           "kind": "property",
           "name": "autopage",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/Filmstrip/Filmstrip.tsx#L59",
           "type": "number"
         },
         {
@@ -28289,6 +32753,7 @@ export default {
           },
           "kind": "property",
           "name": "className",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/Filmstrip/Filmstrip.tsx#L61",
           "type": "string"
         },
         {
@@ -28312,6 +32777,7 @@ export default {
           },
           "kind": "property",
           "name": "spacing",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/Filmstrip/Filmstrip.tsx#L57",
           "type": "number"
         },
         {
@@ -28335,6 +32801,7 @@ export default {
           },
           "kind": "property",
           "name": "width",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/Filmstrip/Filmstrip.tsx#L55",
           "type": "number"
         }
       ]
@@ -28353,10 +32820,12 @@ export default {
       },
       "kind": "interface",
       "name": "ThumbnailProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Thumbnail.tsx#L5",
       "indexSignature": {
         "fileName": "src\\ui-toolkit\\components\\primitives\\Thumbnail.tsx",
         "kind": "signature",
         "name": "__index",
+        "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Thumbnail.tsx#L9",
         "parameters": [
           {
             "flags": {
@@ -28393,6 +32862,7 @@ export default {
           },
           "kind": "property",
           "name": "className",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Thumbnail.tsx#L9",
           "type": "string"
         },
         {
@@ -28409,6 +32879,7 @@ export default {
           },
           "kind": "property",
           "name": "height",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Thumbnail.tsx#L8",
           "type": "string"
         },
         {
@@ -28425,6 +32896,7 @@ export default {
           },
           "kind": "property",
           "name": "shape",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Thumbnail.tsx#L6",
           "type": "\"circle\" | \"rectangle\" | \"square\""
         },
         {
@@ -28441,6 +32913,7 @@ export default {
           },
           "kind": "property",
           "name": "width",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/Thumbnail.tsx#L7",
           "type": "string"
         }
       ]
@@ -28459,10 +32932,12 @@ export default {
       },
       "kind": "interface",
       "name": "VerticalItemDescriptionProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VerticalList/VerticalItemDescription.tsx#L7",
       "indexSignature": {
         "fileName": "src\\ui-toolkit\\components\\layouts\\VerticalList\\VerticalItemDescription.tsx",
         "kind": "signature",
         "name": "__index",
+        "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VerticalList/VerticalItemDescription.tsx#L10",
         "parameters": [
           {
             "flags": {
@@ -28499,6 +32974,7 @@ export default {
           },
           "kind": "property",
           "name": "className",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VerticalList/VerticalItemDescription.tsx#L9",
           "type": "string"
         },
         {
@@ -28515,6 +32991,7 @@ export default {
           },
           "kind": "property",
           "name": "shave",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VerticalList/VerticalItemDescription.tsx#L10",
           "type": "number"
         }
       ]
@@ -28533,6 +33010,7 @@ export default {
       },
       "kind": "interface",
       "name": "VerticalListProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VerticalList/VerticalList.tsx#L22",
       "methods": [],
       "properties": [
         {
@@ -28549,6 +33027,7 @@ export default {
           },
           "kind": "property",
           "name": "items",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VerticalList/VerticalList.tsx#L23",
           "type": "T"
         },
         {
@@ -28565,6 +33044,7 @@ export default {
           },
           "kind": "property",
           "name": "renderItem",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VerticalList/VerticalList.tsx#L24",
           "type": "(item: T) => Element"
         }
       ]
@@ -28583,10 +33063,12 @@ export default {
       },
       "kind": "interface",
       "name": "VerticalItemProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VerticalList/VerticalList.tsx#L41",
       "indexSignature": {
         "fileName": "src\\ui-toolkit\\components\\layouts\\VerticalList\\VerticalList.tsx",
         "kind": "signature",
         "name": "__index",
+        "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VerticalList/VerticalList.tsx#L42",
         "parameters": [
           {
             "flags": {
@@ -28623,6 +33105,7 @@ export default {
           },
           "kind": "property",
           "name": "className",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VerticalList/VerticalList.tsx#L42",
           "type": "string"
         }
       ]
@@ -28641,6 +33124,7 @@ export default {
       },
       "kind": "interface",
       "name": "VirtualizedGridProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VirtualizedGrid/VirtualizedGrid.tsx#L76",
       "methods": [],
       "properties": [
         {
@@ -28657,6 +33141,7 @@ export default {
           },
           "kind": "property",
           "name": "getKey",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VirtualizedGrid/VirtualizedGrid.tsx#L78",
           "type": "(item: T) => string | number"
         },
         {
@@ -28673,6 +33158,7 @@ export default {
           },
           "kind": "property",
           "name": "gridGap",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VirtualizedGrid/VirtualizedGrid.tsx#L81",
           "type": "number"
         },
         {
@@ -28689,6 +33175,7 @@ export default {
           },
           "kind": "property",
           "name": "items",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VirtualizedGrid/VirtualizedGrid.tsx#L77",
           "type": "T[]"
         },
         {
@@ -28705,6 +33192,7 @@ export default {
           },
           "kind": "property",
           "name": "renderItem",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VirtualizedGrid/VirtualizedGrid.tsx#L82",
           "type": "(item: T, itemWidth: number, columnCount: number, gridWidth: number) => Element"
         },
         {
@@ -28721,6 +33209,7 @@ export default {
           },
           "kind": "property",
           "name": "rowsPerPage",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VirtualizedGrid/VirtualizedGrid.tsx#L79",
           "type": "number"
         },
         {
@@ -28737,6 +33226,7 @@ export default {
           },
           "kind": "property",
           "name": "size",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/layouts/VirtualizedGrid/VirtualizedGrid.tsx#L80",
           "type": "number"
         }
       ]
@@ -28755,10 +33245,12 @@ export default {
       },
       "kind": "interface",
       "name": "PersonaProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Persona/Persona.tsx#L62",
       "indexSignature": {
         "fileName": "src\\ui-toolkit\\components\\Persona\\Persona.tsx",
         "kind": "signature",
         "name": "__index",
+        "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Persona/Persona.tsx#L102",
         "parameters": [
           {
             "flags": {
@@ -28802,6 +33294,7 @@ export default {
           },
           "kind": "property",
           "name": "as",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Persona/Persona.tsx#L102",
           "type": "any"
         },
         {
@@ -28825,6 +33318,7 @@ export default {
           },
           "kind": "property",
           "name": "callToAction",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Persona/Persona.tsx#L86",
           "type": "string"
         },
         {
@@ -28848,6 +33342,7 @@ export default {
           },
           "kind": "property",
           "name": "className",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Persona/Persona.tsx#L98",
           "type": "string"
         },
         {
@@ -28871,6 +33366,7 @@ export default {
           },
           "kind": "property",
           "name": "info",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Persona/Persona.tsx#L78",
           "type": "string"
         },
         {
@@ -28894,6 +33390,7 @@ export default {
           },
           "kind": "property",
           "name": "linkUrl",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Persona/Persona.tsx#L82",
           "type": "string"
         },
         {
@@ -28917,6 +33414,7 @@ export default {
           },
           "kind": "property",
           "name": "orientation",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Persona/Persona.tsx#L90",
           "type": "\"horizontal\" | \"vertical\""
         },
         {
@@ -28940,6 +33438,7 @@ export default {
           },
           "kind": "property",
           "name": "photo",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Persona/Persona.tsx#L70",
           "type": "string"
         },
         {
@@ -28963,6 +33462,7 @@ export default {
           },
           "kind": "property",
           "name": "photoSize",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Persona/Persona.tsx#L94",
           "type": "string"
         },
         {
@@ -28986,6 +33486,7 @@ export default {
           },
           "kind": "property",
           "name": "subTitle",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Persona/Persona.tsx#L74",
           "type": "string"
         },
         {
@@ -29009,6 +33510,7 @@ export default {
           },
           "kind": "property",
           "name": "title",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Persona/Persona.tsx#L66",
           "type": "string"
         }
       ]
@@ -29027,6 +33529,7 @@ export default {
       },
       "kind": "interface",
       "name": "DateRangeTextProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/DateRangeText/DateRangeText.tsx#L116",
       "methods": [],
       "properties": [
         {
@@ -29043,6 +33546,7 @@ export default {
           },
           "kind": "property",
           "name": "end",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/DateRangeText/DateRangeText.tsx#L118",
           "type": "Date"
         },
         {
@@ -29059,6 +33563,7 @@ export default {
           },
           "kind": "property",
           "name": "start",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/DateRangeText/DateRangeText.tsx#L117",
           "type": "Date"
         }
       ]
@@ -29077,6 +33582,7 @@ export default {
       },
       "kind": "interface",
       "name": "LinkTileProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/LinkTile/LinkTile.tsx#L69",
       "extends": [
         "IconImageProps"
       ],
@@ -29084,6 +33590,7 @@ export default {
         "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
         "kind": "signature",
         "name": "__index",
+        "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/LinkTile/LinkTile.tsx#L77",
         "parameters": [
           {
             "flags": {
@@ -29109,29 +33616,6 @@ export default {
         {
           "documentation": {
             "contents": [
-              "<p>CSS Color or Theme Param</p>\n"
-            ],
-            "contentsRaw": "CSS Color or Theme Param",
-            "metadata": {}
-          },
-          "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
-          "flags": {
-            "isExported": true,
-            "isExternal": false,
-            "isOptional": true,
-            "isPrivate": false,
-            "isProtected": false,
-            "isPublic": false,
-            "isRest": false,
-            "isStatic": false
-          },
-          "kind": "property",
-          "name": "hoverColor",
-          "type": "string"
-        },
-        {
-          "documentation": {
-            "contents": [
               "<p>Supports CSS color or a theme param</p>\n"
             ],
             "contentsRaw": "Supports CSS color or a theme param",
@@ -29150,8 +33634,33 @@ export default {
           },
           "kind": "property",
           "name": "backgroundColor",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/IconImage.tsx#L77",
           "inheritedFrom": "IconImageProps.backgroundColor",
           "type": "string"
+        },
+        {
+          "documentation": {
+            "contents": [
+              "<p>The child element will be rendered as the caption and appear in the hover animation if showHoverOverlay prop is true.</p>\n"
+            ],
+            "contentsRaw": "The child element will be rendered as the caption and appear in the hover animation if showHoverOverlay prop is true.",
+            "metadata": {}
+          },
+          "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": false,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "children",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/LinkTile/LinkTile.tsx#L73",
+          "type": "any"
         },
         {
           "documentation": {
@@ -29174,6 +33683,7 @@ export default {
           },
           "kind": "property",
           "name": "circle",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/IconImage.tsx#L81",
           "inheritedFrom": "IconImageProps.circle",
           "type": "boolean"
         },
@@ -29198,6 +33708,7 @@ export default {
           },
           "kind": "property",
           "name": "className",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/IconImage.tsx#L83",
           "inheritedFrom": "IconImageProps.className",
           "type": "string"
         },
@@ -29222,22 +33733,23 @@ export default {
           },
           "kind": "property",
           "name": "height",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/IconImage.tsx#L75",
           "inheritedFrom": "IconImageProps.height",
           "type": "number"
         },
         {
           "documentation": {
             "contents": [
-              "<p>The child element will be rendered as the caption and appear in the hover animation if showHoverOverlay prop is true.</p>\n"
+              "<p>CSS Color or Theme Param</p>\n"
             ],
-            "contentsRaw": "The child element will be rendered as the caption and appear in the hover animation if showHoverOverlay prop is true.",
+            "contentsRaw": "CSS Color or Theme Param",
             "metadata": {}
           },
           "fileName": "src\\ui-toolkit\\components\\LinkTile\\LinkTile.tsx",
           "flags": {
             "isExported": true,
             "isExternal": false,
-            "isOptional": false,
+            "isOptional": true,
             "isPrivate": false,
             "isProtected": false,
             "isPublic": false,
@@ -29245,8 +33757,9 @@ export default {
             "isStatic": false
           },
           "kind": "property",
-          "name": "children",
-          "type": "any"
+          "name": "hoverColor",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/LinkTile/LinkTile.tsx#L77",
+          "type": "string"
         },
         {
           "documentation": {
@@ -29269,6 +33782,7 @@ export default {
           },
           "kind": "property",
           "name": "href",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/LinkTile/LinkTile.tsx#L71",
           "type": "string"
         },
         {
@@ -29292,6 +33806,7 @@ export default {
           },
           "kind": "property",
           "name": "icon",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/IconImage.tsx#L71",
           "inheritedFrom": "IconImageProps.icon",
           "type": "string"
         },
@@ -29316,6 +33831,7 @@ export default {
           },
           "kind": "property",
           "name": "iconColor",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/IconImage.tsx#L79",
           "inheritedFrom": "IconImageProps.iconColor",
           "type": "string"
         },
@@ -29340,6 +33856,7 @@ export default {
           },
           "kind": "property",
           "name": "showHoverOverlay",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/LinkTile/LinkTile.tsx#L75",
           "type": "boolean"
         },
         {
@@ -29363,6 +33880,7 @@ export default {
           },
           "kind": "property",
           "name": "width",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/primitives/IconImage.tsx#L73",
           "inheritedFrom": "IconImageProps.width",
           "type": "number"
         }
@@ -29382,6 +33900,7 @@ export default {
       },
       "kind": "interface",
       "name": "UseDebounceParams",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useDebounce.ts#L48",
       "methods": [],
       "properties": [
         {
@@ -29405,6 +33924,7 @@ export default {
           },
           "kind": "property",
           "name": "delay",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useDebounce.ts#L52",
           "type": "number"
         },
         {
@@ -29428,6 +33948,7 @@ export default {
           },
           "kind": "property",
           "name": "value",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useDebounce.ts#L50",
           "type": "any"
         }
       ]
@@ -29446,6 +33967,7 @@ export default {
       },
       "kind": "interface",
       "name": "AsyncDataState",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useAsyncData.ts#L6",
       "methods": [],
       "properties": [
         {
@@ -29469,6 +33991,7 @@ export default {
           },
           "kind": "property",
           "name": "data",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useAsyncData.ts#L10",
           "type": "T"
         },
         {
@@ -29492,6 +34015,7 @@ export default {
           },
           "kind": "property",
           "name": "error",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useAsyncData.ts#L12",
           "type": "string"
         },
         {
@@ -29515,6 +34039,7 @@ export default {
           },
           "kind": "property",
           "name": "isLoading",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useAsyncData.ts#L8",
           "type": "boolean"
         }
       ]
@@ -29533,6 +34058,7 @@ export default {
       },
       "kind": "interface",
       "name": "AutoPagingContext",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useAutoPaging.ts#L33",
       "extends": [
         "PagingContext"
       ],
@@ -29559,6 +34085,7 @@ export default {
           },
           "kind": "property",
           "name": "currentPage",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/usePaging.ts#L54",
           "inheritedFrom": "PagingContext.currentPage",
           "type": "number"
         },
@@ -29583,6 +34110,7 @@ export default {
           },
           "kind": "property",
           "name": "goBack",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/usePaging.ts#L48",
           "inheritedFrom": "PagingContext.goBack",
           "type": "() => void"
         },
@@ -29607,6 +34135,7 @@ export default {
           },
           "kind": "property",
           "name": "goForward",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/usePaging.ts#L50",
           "inheritedFrom": "PagingContext.goForward",
           "type": "() => void"
         },
@@ -29631,6 +34160,7 @@ export default {
           },
           "kind": "property",
           "name": "goTo",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/usePaging.ts#L52",
           "inheritedFrom": "PagingContext.goTo",
           "type": "(page: number) => void"
         },
@@ -29655,6 +34185,7 @@ export default {
           },
           "kind": "property",
           "name": "pauseEvents",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useAutoPaging.ts#L39",
           "type": ""
         },
         {
@@ -29678,6 +34209,7 @@ export default {
           },
           "kind": "property",
           "name": "startPaging",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useAutoPaging.ts#L35",
           "type": "() => void"
         },
         {
@@ -29701,6 +34233,7 @@ export default {
           },
           "kind": "property",
           "name": "stopPaging",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useAutoPaging.ts#L37",
           "type": "() => void"
         }
       ]
@@ -29719,6 +34252,7 @@ export default {
       },
       "kind": "interface",
       "name": "SiteDataParams",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useSiteData.tsx#L7",
       "methods": [],
       "properties": [
         {
@@ -29735,6 +34269,7 @@ export default {
           },
           "kind": "property",
           "name": "dataKey",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useSiteData.tsx#L8",
           "type": "string"
         },
         {
@@ -29751,6 +34286,7 @@ export default {
           },
           "kind": "property",
           "name": "debounceDelay",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useSiteData.tsx#L12",
           "type": "number"
         },
         {
@@ -29767,6 +34303,7 @@ export default {
           },
           "kind": "property",
           "name": "getData",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useSiteData.tsx#L10",
           "type": "(siteUrl: string) => Promise<T>"
         },
         {
@@ -29783,6 +34320,7 @@ export default {
           },
           "kind": "property",
           "name": "siteUrl",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useSiteData.tsx#L9",
           "type": "string"
         },
         {
@@ -29799,6 +34337,7 @@ export default {
           },
           "kind": "property",
           "name": "validate",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useSiteData.tsx#L11",
           "type": "(siteUrl: any) => Promise<boolean>"
         }
       ]
@@ -29817,6 +34356,7 @@ export default {
       },
       "kind": "interface",
       "name": "SiteDataValidation",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useSiteData.tsx#L15",
       "methods": [],
       "properties": [
         {
@@ -29833,6 +34373,7 @@ export default {
           },
           "kind": "property",
           "name": "isValid",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useSiteData.tsx#L17",
           "type": "boolean"
         },
         {
@@ -29849,6 +34390,7 @@ export default {
           },
           "kind": "property",
           "name": "result",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useSiteData.tsx#L16",
           "type": "SiteValidationResult"
         }
       ]
@@ -29867,6 +34409,7 @@ export default {
       },
       "kind": "interface",
       "name": "SiteDataState",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useSiteData.tsx#L27",
       "methods": [],
       "properties": [
         {
@@ -29883,6 +34426,7 @@ export default {
           },
           "kind": "property",
           "name": "data",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useSiteData.tsx#L30",
           "type": "T"
         },
         {
@@ -29899,6 +34443,7 @@ export default {
           },
           "kind": "property",
           "name": "error",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useSiteData.tsx#L31",
           "type": "string"
         },
         {
@@ -29915,6 +34460,7 @@ export default {
           },
           "kind": "property",
           "name": "isLoading",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useSiteData.tsx#L29",
           "type": "boolean"
         },
         {
@@ -29931,6 +34477,7 @@ export default {
           },
           "kind": "property",
           "name": "validation",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/hooks/useSiteData.tsx#L28",
           "type": "SiteDataValidation"
         }
       ]
@@ -29949,6 +34496,7 @@ export default {
       },
       "kind": "interface",
       "name": "CacheOptions",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/cache.ts#L3",
       "methods": [],
       "properties": [
         {
@@ -29965,6 +34513,7 @@ export default {
           },
           "kind": "property",
           "name": "cacheBustKey",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/cache.ts#L9",
           "type": "string"
         },
         {
@@ -29981,6 +34530,7 @@ export default {
           },
           "kind": "property",
           "name": "duration",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/cache.ts#L4",
           "type": "number"
         },
         {
@@ -29997,6 +34547,7 @@ export default {
           },
           "kind": "property",
           "name": "getCacheKey",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/cache.ts#L8",
           "type": "(...providedParams: any[]) => string"
         },
         {
@@ -30013,6 +34564,7 @@ export default {
           },
           "kind": "property",
           "name": "key",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/cache.ts#L6",
           "type": "string"
         },
         {
@@ -30029,6 +34581,7 @@ export default {
           },
           "kind": "property",
           "name": "location",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/core/utils/cache.ts#L5",
           "type": "Storage"
         }
       ]
@@ -30047,6 +34600,7 @@ export default {
       },
       "kind": "interface",
       "name": "CardProps",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/Card.tsx#L40",
       "methods": [],
       "properties": [
         {
@@ -30070,6 +34624,7 @@ export default {
           },
           "kind": "property",
           "name": "centered",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/Card.tsx#L44",
           "type": "boolean"
         },
         {
@@ -30093,6 +34648,7 @@ export default {
           },
           "kind": "property",
           "name": "children",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/Card.tsx#L46",
           "type": "ReactNode"
         },
         {
@@ -30116,6 +34672,7 @@ export default {
           },
           "kind": "property",
           "name": "className",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Card/Card.tsx#L42",
           "type": "string"
         }
       ]
@@ -30134,6 +34691,7 @@ export default {
       },
       "kind": "interface",
       "name": "PropertyFieldSitePickerProperties",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/propertyfield_sitepicker/PropertyFieldSitePicker.ts#L11",
       "methods": [],
       "properties": [
         {
@@ -30150,6 +34708,7 @@ export default {
           },
           "kind": "property",
           "name": "label",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/propertyfield_sitepicker/PropertyFieldSitePicker.ts#L14",
           "type": "string"
         },
         {
@@ -30166,6 +34725,7 @@ export default {
           },
           "kind": "property",
           "name": "onUpdate",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/propertyfield_sitepicker/PropertyFieldSitePicker.ts#L13",
           "type": "(targetProp: string, newValue: any) => void"
         },
         {
@@ -30182,6 +34742,7 @@ export default {
           },
           "kind": "property",
           "name": "value",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/propertyfield_sitepicker/PropertyFieldSitePicker.ts#L12",
           "type": "any"
         }
       ]
@@ -30200,6 +34761,7 @@ export default {
       },
       "kind": "interface",
       "name": "_PropertyFieldSitePickerProperties",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/propertyfield_sitepicker/PropertyFieldSitePicker.ts#L17",
       "extends": [
         "PropertyFieldSitePickerProperties",
         "IPropertyPaneCustomFieldProps"
@@ -30268,6 +34830,7 @@ export default {
           },
           "kind": "property",
           "name": "label",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/propertyfield_sitepicker/PropertyFieldSitePicker.ts#L14",
           "inheritedFrom": "PropertyFieldSitePickerProperties.label",
           "type": "string"
         },
@@ -30364,6 +34927,7 @@ export default {
           },
           "kind": "property",
           "name": "onUpdate",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/propertyfield_sitepicker/PropertyFieldSitePicker.ts#L13",
           "inheritedFrom": "PropertyFieldSitePickerProperties.onUpdate",
           "type": "(targetProp: string, newValue: any) => void"
         },
@@ -30381,6 +34945,7 @@ export default {
           },
           "kind": "property",
           "name": "value",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/propertyfield_sitepicker/PropertyFieldSitePicker.ts#L12",
           "inheritedFrom": "PropertyFieldSitePickerProperties.value",
           "type": "any"
         }
@@ -30400,6 +34965,7 @@ export default {
       },
       "kind": "interface",
       "name": "PropertyFieldBlankProperties",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldBlank/PropertyFieldBlank.ts#L10",
       "methods": [],
       "properties": [
         {
@@ -30416,6 +34982,7 @@ export default {
           },
           "kind": "property",
           "name": "render",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldBlank/PropertyFieldBlank.ts#L11",
           "type": "() => ReactElement<any>"
         }
       ]
@@ -30434,6 +35001,7 @@ export default {
       },
       "kind": "interface",
       "name": "_BlankPropertyPaneFieldProperties",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldBlank/PropertyFieldBlank.ts#L14",
       "extends": [
         "PropertyFieldBlankProperties",
         "IPropertyPaneCustomFieldProps"
@@ -30581,6 +35149,7 @@ export default {
           },
           "kind": "property",
           "name": "render",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldBlank/PropertyFieldBlank.ts#L11",
           "inheritedFrom": "PropertyFieldBlankProperties.render",
           "type": "() => ReactElement<any>"
         }
@@ -30600,6 +35169,7 @@ export default {
       },
       "kind": "interface",
       "name": "PropertyFieldThemeColorProperties",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldThemeColorPicker/PropertyFieldThemeColorPicker.ts#L11",
       "methods": [],
       "properties": [
         {
@@ -30616,6 +35186,7 @@ export default {
           },
           "kind": "property",
           "name": "disabled",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldThemeColorPicker/PropertyFieldThemeColorPicker.ts#L15",
           "type": "boolean"
         },
         {
@@ -30632,6 +35203,7 @@ export default {
           },
           "kind": "property",
           "name": "extraOptions",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldThemeColorPicker/PropertyFieldThemeColorPicker.ts#L16",
           "type": "object[]"
         },
         {
@@ -30648,6 +35220,7 @@ export default {
           },
           "kind": "property",
           "name": "label",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldThemeColorPicker/PropertyFieldThemeColorPicker.ts#L14",
           "type": "string"
         },
         {
@@ -30664,6 +35237,7 @@ export default {
           },
           "kind": "property",
           "name": "onUpdate",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldThemeColorPicker/PropertyFieldThemeColorPicker.ts#L12",
           "type": "(targetProp: string, newValue: any) => void"
         },
         {
@@ -30680,6 +35254,7 @@ export default {
           },
           "kind": "property",
           "name": "value",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldThemeColorPicker/PropertyFieldThemeColorPicker.ts#L13",
           "type": "string"
         }
       ]
@@ -30698,6 +35273,7 @@ export default {
       },
       "kind": "interface",
       "name": "_PropertyFieldThemeColorProperties",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldThemeColorPicker/PropertyFieldThemeColorPicker.ts#L19",
       "extends": [
         "PropertyFieldThemeColorProperties",
         "IPropertyPaneCustomFieldProps"
@@ -30742,6 +35318,7 @@ export default {
           },
           "kind": "property",
           "name": "disabled",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldThemeColorPicker/PropertyFieldThemeColorPicker.ts#L15",
           "inheritedFrom": "PropertyFieldThemeColorProperties.disabled",
           "type": "boolean"
         },
@@ -30759,6 +35336,7 @@ export default {
           },
           "kind": "property",
           "name": "extraOptions",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldThemeColorPicker/PropertyFieldThemeColorPicker.ts#L16",
           "inheritedFrom": "PropertyFieldThemeColorProperties.extraOptions",
           "type": "object[]"
         },
@@ -30800,6 +35378,7 @@ export default {
           },
           "kind": "property",
           "name": "label",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldThemeColorPicker/PropertyFieldThemeColorPicker.ts#L14",
           "inheritedFrom": "PropertyFieldThemeColorProperties.label",
           "type": "string"
         },
@@ -30896,6 +35475,7 @@ export default {
           },
           "kind": "property",
           "name": "onUpdate",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldThemeColorPicker/PropertyFieldThemeColorPicker.ts#L12",
           "inheritedFrom": "PropertyFieldThemeColorProperties.onUpdate",
           "type": "(targetProp: string, newValue: any) => void"
         },
@@ -30913,6 +35493,7 @@ export default {
           },
           "kind": "property",
           "name": "value",
+          "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/propertyfields/PropertyFieldThemeColorPicker/PropertyFieldThemeColorPicker.ts#L13",
           "inheritedFrom": "PropertyFieldThemeColorProperties.value",
           "type": "string"
         }
@@ -30932,6 +35513,7 @@ export default {
       },
       "kind": "type alias",
       "name": "PanelSize",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/Panel/usePanel.tsx#L88",
       "type": "\"small\" | \"medium\" | \"large\" | number"
     },
     "DateRangeType": {
@@ -30948,6 +35530,7 @@ export default {
       },
       "kind": "type alias",
       "name": "DateRangeType",
+      "sourceUrl": "https://github.com/skyline-modernworkplace/ip-designsystem/blob/64a4a18/ui-toolkit/src/ui-toolkit/components/DateRangeText/DateRangeText.tsx#L8",
       "type": "\"single-day-time\" | \"single-day-times\" | \"single-all-day\" | \"multi-day-time\" | \"multi-all-day\""
     }
   }
